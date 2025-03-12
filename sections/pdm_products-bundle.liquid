@@ -1,0 +1,167 @@
+{% liquid
+  assign is_used = false
+  for item in cart.items
+    if item.title == section.settings.bundle_info.name 
+      assign is_used = true
+    endif
+  endfor
+%}
+<products-bundle id="products_bundle_custom_section"
+                 class="products-bundle"
+                 data-bundle-name="{{ section.settings.bundle_info.name }}"
+                 data-bundle-id="{{ section.settings.bundle_products.local_storage_name }}"
+                 data-bundle-array="[]"
+                 data-bundle-used={{ is_used }}
+                 bundle-info={% render 'pdm_bundle-info' id: section.settings.bundle_products.local_storage_name, info: section.settings.bundle_info %}>
+  <div class="container-mb-pb ">
+  {% assign products = section.settings.bundle_products.list_products.value | reverse | reverse %} 
+  {% for card in section.blocks %}
+    {% assign index_product = forloop.index | minus: 1 %}
+    {% assign product_object = products[index_product] %}
+    {% render 'pdm_card-bundle-mobile'
+    product: product_object,
+    product-name: card.settings.custom_name,
+    product-img: card.settings.image_product,
+    show-rated: card.settings.show_top_rated,
+    show-badge: card.settings.show_badge,
+    btn-text: section.settings.button_card
+    %}
+  {% endfor %}
+  </div>
+  <div class="container-pb popup-hidden">
+  {% assign products = section.settings.bundle_products.list_products.value | reverse | reverse %} 
+  {% for card in section.blocks %}
+    {% assign index_product = forloop.index | minus: 1 %}
+    {% assign product_object = products[index_product] %}
+    {% render 'pdm_card-bundle'
+    product: product_object,
+    product-name: card.settings.custom_name,
+    product-img: card.settings.image_product,
+    result-img: card.settings.image_results,
+    show-rated: card.settings.show_top_rated,
+    video: card.settings.video,
+    text-checks: card.settings.text_check,
+    doctor-name: card.settings.doctor_name,
+    doctor-image: card.settings.doctor_image,
+    doctor-text: card.settings.doctor_text,
+    doctor-certificated: card.settings.doctor_certificated,
+    btn-text: section.settings.button_card
+    %}
+  {% endfor %}
+  </div>
+
+  <div class="btn-section">
+    {{ section.settings.text_button_section }}
+    <span class="price"></span>
+  </div>
+</products-bundle>
+
+{% schema %}
+{
+  "name": "Products Bundle (PDM)",
+  "tag": "section",
+  "class": "section-products-bundle",
+  "settings": [
+    {
+      "type": "metaobject",
+      "id": "bundle_info",
+      "label": "Bundle Info",
+      "metaobject_type": "bundle_skincare_plan_results"
+    },
+    {
+      "type": "metaobject",
+      "id": "bundle_products",
+      "label": "Bundle Products",
+      "metaobject_type": "products_for_bundle_skincare_plan"
+    },
+    {
+      "type": "text",
+      "id": "text_button_section",
+      "label": "Text Button Save Bundle",
+      "default": "Bundle all 4 and save"
+    },
+    {
+      "type": "text",
+      "id": "button_card",
+      "label": "Text Button Card",
+      "default": "Add to your bundle"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card Product",
+      "settings": [
+        {
+          "type": "text",
+          "id": "custom_name",
+          "label": "custom Product Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_product",
+          "label": "Product' Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_results",
+          "label": "Results' Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_top_rated",
+          "label": "Show Top Rated",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_badge",
+          "label": "Show Badge Dermatologist",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "text_check",
+          "label": "Text's Checks"
+        },
+        {
+          "type": "text",
+          "id": "doctor_name",
+          "label": "Doctor's Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "doctor_image",
+          "label": "Doctor's Image'"
+        },
+        {
+          "type": "text",
+          "id": "doctor_text",
+          "label": "Doctos's review"
+        },
+        {
+          "type": "text",
+          "id": "doctor_certificated",
+          "label": "Doctor's certificated"
+        }  
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Bundle (PDM)",
+      "blocks": [
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

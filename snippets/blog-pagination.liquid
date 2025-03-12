@@ -1,0 +1,44 @@
+{% comment %}
+    Renders a set of links for paginated results. Must be used within paginate tags.
+
+    Usage:
+    {% paginate results by 2 %}
+      {% render 'blog-pagination', paginate: paginate, anchor: '#yourID' %}
+    {% endpaginate %}
+
+    Accepts:
+    - paginate: {Object}
+    - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
+{% endcomment %}
+
+{%- if paginate.parts.size > 0 -%}
+    <nav aria-label="Blog pagination">
+        <ul class="pagination">
+            {%- if paginate.previous -%}                
+                <li class="page-item prev">
+                    <a class="pagination_navigation mb-0 pb-0" href="{{ paginate.previous.url }}{{ anchor }}" aria-label="Prev">
+                        <div class="swiper-button swiper-button-prev position-static"></div>
+                    </a>
+                </li>
+            {%- endif -%}
+
+            {%- for page in paginate.parts -%}
+                {%- if page.is_link -%}
+                    <li class="page-item"><a class="page-link" href="{{ page.url }}{{ anchor }}" aria-label="{{ page.title | escape }}">{{ page.title }}</a></li>
+                {%- else -%}
+                    {%- if page.title == paginate.current_page -%}
+                        <li class="page-item active"><a class="page-link" href="{{ page.url }}{{ anchor }}">{{ page.title }}</a></li>
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endfor -%}
+
+            {%- if paginate.next -%}
+                <li class="page-item next">
+                    <a class="pagination_navigation mb-0 pb-0" href="{{ paginate.next.url }}{{ anchor }}" aria-label="Next">
+                        <div class="swiper-button swiper-button-next position-static"></div>
+                    </a>
+                </li>
+            {%- endif -%}
+        </ul>
+    </nav>
+{%- endif -%}

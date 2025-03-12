@@ -1,0 +1,213 @@
+<!-- ===== main banner start ===== -->
+<div class="contact_wrapper section">
+    <div class="container">
+        <div class="contact_help">
+            <div class="section_header text-md-center ms-0 ms-md-auto">
+                {% if section.settings.heading != blank %}
+                    <h2 class="title-xl mb-3">{{ section.settings.heading }}</h2>
+                {% endif %}
+                <h5>{{ section.settings.text }}</h5>
+            </div>
+            <div class="contact_info">
+                {%- for block in section.blocks -%}
+                    <div class="cnt_item">
+                        <div class="cnt_img">
+                            <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
+                        </div>
+                        <div class="cnt_desc">
+                            <h6>{{ block.settings.heading }}</h6>
+                            {{ block.settings.text 
+                                |  replace: '<strong>', '<u>'  
+                                |  replace: '</strong>', '</u>'  
+                            }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-success {
+        color: red;
+        padding: 10px;
+    }
+</style>
+
+<div class="contact_form qure_form">
+    <div class="container">
+        {% form 'contact' %}
+
+            {% if form.posted_successfully? %}
+                <p class="form-success">Thanks for contacting us. We'll get back to you as soon as possible.</p>
+            {% endif %}
+
+            {{ form.errors | default_errors }}
+
+            <div class="contact_form_grid mb-4">
+                <div class="qure_input">
+                    <input 
+                        type="text"
+                        name="contact[name]"
+                        id="ContactFormName"
+                        value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                        class="qure_input_field"
+                        placeholder="Name"
+                    >
+                    <label for="ContactFormName" class="qure_input_label"></label>
+                </div>
+                <div class="qure_input">
+                    <input 
+                        type="email"
+                        name="contact[email]"
+                        id="ContactFormEmail"
+                        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                        spellcheck="false"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        class="qure_input_field"
+                        placeholder="Email"
+                    >
+                    <label for="ContactFormEmail" class="qure_input_label"></label>
+                </div>
+            </div>
+            <div class="contact_form_grid mb-4">
+                <div class="qure_input">
+                    <input 
+                        type="text"
+                        name="contact[order]"
+                        id="ContactFormOrder"
+                        value=""
+                        class="qure_input_field"
+                        placeholder="Order number"
+                    >
+                    <label for="ContactFormOrder" class="qure_input_label"></label>
+                </div>
+                <div class="qure_input">
+                    <input 
+                        type="phone"
+                        name="contact[phone]"
+                        id="ContactFormPhone"
+                        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                        spellcheck="false"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        class="qure_input_field"
+                        placeholder="Telephone number"
+                    > 
+                    <label for="ContactFormPhone" class="qure_input_label"></label>
+                </div>
+            </div>
+            <div class="qure_input mb-4">
+                <select id="ContactFormAbout" name="contact[about]" class="form-select qure_input_field" aria-label="Contacting about">
+                    <option selected>Contacting about</option>
+                    <option value="order_tracking">Order Tracking</option>
+                    <option value="order_issue">Order Issue</option>
+                    <option value="product">Product Inquiry</option>
+                    <option value="discounts">Discounts and Promotions</option>
+                    <option value="subscription">Subscription</option>
+                    <option value="rewards">Rewards</option>
+                    <option value="app">Qure App</option>
+                    <option value="website">Website</option>
+                </select>
+            </div>
+            <div class="qure_input mb-4" id="product_select_container" style="display: none;">
+                <select id="ContactFormProduct" name="contact[product]" class="form-select qure_input_field" aria-label="Product selection">
+                    <option selected>Product</option>
+                    <option value="face_serum">All-In-One Face Serum</option>
+                    <option value="facial_system">Micro-Infusion Facial System</option>
+                    <option value="patches">Micro-Infusion Target Patches</option>
+                    <option value="neck_decolletage">Neck & Decolletage</option>
+                    <option value="pro_facewear">Q-Rejuvalight Pro Facewear</option>
+                    <option value="water_filter">Faucet Water Filter</option>
+                    <option value="dermal_mist">Dermal mist</option>
+                    <option value="silk_pillowcase">Silk Pillowcase</option>
+                </select>
+            </div>
+            <div class="qure_input">
+                <label for="ContactFormMessage" class="form-label qure_input_label"></label>
+                <textarea 
+                    rows="6"
+                    name="contact[body]"
+                    id="ContactFormMessage"
+                    class="qure_input_field"
+                    placeholder="What's on your mind?">
+                    {%- if form.body -%}
+                        {{- form.body -}}
+                    {%- endif -%}
+                </textarea>
+            </div>
+            <div class="qure_form_btn my-4 d-block">
+                <button type="submit" class="btn btn-lg btn-primary">Send</button>
+            </div>
+
+        {% endform %}
+    </div>
+</div>
+
+<div class="customer_details">
+    <div class="container">
+        <div class="c_d_wrapper">
+            <p><strong>ADDITIONAL CUSTOMER SERVICE</strong></p>
+            <p>International FAQ<span class="mx-4"></span>Returns and Exchanges</p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // JavaScript to toggle the visibility of the second select field
+    document.getElementById('ContactFormAbout').addEventListener('change', function () {
+        var productSelectContainer = document.getElementById('product_select_container');
+        if (this.value === 'product') {
+            productSelectContainer.style.display = 'block';
+        } else {
+            productSelectContainer.style.display = 'none';
+        }
+    });
+</script>
+
+
+{% schema %}
+{
+    "name": "t:sections.contact-us.name",
+    "class": "section-contact-us",
+    "settings": [
+        {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "object",
+            "name": "t:common.object.label",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image.label"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.heading.label"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text.label"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

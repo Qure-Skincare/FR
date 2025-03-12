@@ -1,0 +1,186 @@
+{% comment %} 
+  Render Purchase Step 1 Inputs
+
+  Note: This snippet is used to render the inputs of the first step of the purchase process.
+  Need:
+
+  Accepts:
+  - name: {String} - The input name.
+  - productOne: {Object} - The first product data to be rendered.
+  - productTwo: {Object} - The second product data to be rendered.
+  - productThree: {Object} - The third product data to be rendered.
+  - productOneInfo: {Object} - The first product info to be rendered.
+  - productTwoInfo: {Object} - The second product info to be rendered.
+  - productThreeInfo: {Object} - The third product info to be rendered.
+  - checkIcon: {String} - The check icon.
+  - crossIcon: {String} - The cross icon.
+  - starIcon: {String} - The star icon.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step1-inputs',
+    name: 'products1',
+    productOne: products1_product_3_month.data.value,
+    productTwo: products1_product_2_month.data.value,
+    productThree: products1_product_1_month.data.value,
+    productOneInfo:  products1_product_3_month.data.value,
+    productTwoInfo: products1_product_2_month.data.value,
+    productThreeInfo: products1_product_1_month.data.value,
+    checkIcon: checkIcon,
+    crossIcon: crossIcon,
+    starIcon: starIcon
+  %}
+
+ {% endcomment %}
+
+
+
+{% liquid
+
+  ###price 1
+
+  assign price_1_discount = productOne.price | money_without_trailing_zeros
+  if price_1_discount == blank
+    assign price_1_discount = 0
+  endif
+
+  assign price_1 = productOne.compare_at_price | money_without_trailing_zeros
+  if price_1 == blank
+    assign price_1 = 0
+  endif
+
+  assign price_1_quota = productOne.price |  divided_by: 4 | money_without_trailing_zeros
+
+  ### price 2 
+
+  assign price_2_discount = productTwo.price | money_without_trailing_zeros
+  if price_2_discount == blank
+    assign price_2_discount = 0
+  endif
+
+  assign price_2 = productTwo.compare_at_price | money_without_trailing_zeros
+  if price_2 == blank
+    assign price_2 = 0
+  endif
+
+  assign price_2_quota = productTwo.price |  divided_by: 4 | money_without_trailing_zeros
+
+  ### price 3
+
+
+  assign price_3_discount = productThree.compare_at_price | money_without_trailing_zeros
+  if price_3_discount == blank
+    assign price_3_discount = 0
+  endif
+
+
+  assign price_3 = productThree.price | money_without_trailing_zeros
+  if price_3 == blank
+    assign price_3 = 0
+  endif
+
+  assign price_3_quota = productThree.price |  divided_by: 4 | money_without_trailing_zeros
+
+
+  assign dropdownId1 = name | append: '-collapse-' | append: '1'
+  assign dropdownId2 = name | append: '-collapse-' | append: '2'
+  assign dropdownId3 = name | append: '-collapse-' | append: '3'
+
+%}
+
+<div
+  id="inputs-{{ name }}"
+  class="inputs-{{ name }} landing-one-container {% if name == 'products1' %} show-inputs {% endif %}"
+>
+  <input
+    data-id-product="{{ productOne.selected_variant.id }}"
+    data-identifier="1"
+    data-position:="1"
+    type="radio"
+    id="{{name}}-one"
+    name="{{ name }}"
+    value='{
+      "position":1,
+      "titleBundle":"{{ productOneInfo.title_product }}", 
+      "id":{{ productOne.selected_or_first_available_variant.id }}, 
+      "discountPrice":"{{ price_1_discount }}",
+      "price":"{{ price_1 }}", 
+      "discountPriceQuota":"{{ price_1_quota }}",
+      "discountPercent":"{{ productOneInfo.discount_product }}",
+      "input": "{{ name }}",
+      "name":"{{ productOneInfo.name }}"
+    }'
+    checked
+  >
+  <label for="{{name}}-one">
+    {% render 'pdm_landing-purchase-step1-card', 
+      productData: productOne, 
+      productInfo: productOneInfo
+      uniqueId: 'collapse1'
+      parentContainer: dropdownId1,
+      checkIcon: checkIcon,
+      crossIcon: crossIcon,
+      starIcon: starIcon
+    %}
+  </label>
+  <input
+    data-id-product="{{ productTwo.id }}"
+    data-identifier="2"
+    data-position:="2"
+    type="radio"
+    id="{{name}}-two"
+    name="{{ name }}"
+    value='{
+      "position":2,
+      "titleBundle":"{{ productTwoInfo.title_product }}",
+      "id":{{ productTwo.selected_or_first_available_variant.id }}, 
+      "discountPrice":"{{ price_2_discount }}",
+      "price":"{{ price_2 }}", 
+      "discountPriceQuota":"{{ price_2_quota }}",
+      "discountPercent":"{{ productTwoInfo.discount_product }}",
+      "input":"{{ name }}",
+      "name":"{{ productTwoInfo.name }}"
+    }'
+  >
+  <label for="{{name}}-two">
+    {% render 'pdm_landing-purchase-step1-card', 
+      productData: productTwo, 
+      productInfo: productTwoInfo 
+      uniqueId: 'collapseTwo'
+      parentContainer: dropdownId2,
+      checkIcon: checkIcon,
+      crossIcon: crossIcon,
+      starIcon: starIcon
+    %}
+  </label>
+  <input
+    data-id-product="{{ productThree.id }}"
+    data-identifier="3"
+    data-position:="3"
+    type="radio"
+    id="{{name}}-three"
+    name="{{ name }}"
+    value='{
+      "position":3,
+      "titleBundle":"{{ productThreeInfo.title_product }}",
+      "id":{{ productThree.selected_or_first_available_variant.id }}, 
+      "discountPrice":"{{ price_3 }}",
+      "price":"{{ price_3_discount }}", 
+      "discountPriceQuota":"{{ price_3_quota }}",
+      "discountPercent":"{{ productThreeInfo.discount_product }}",
+      "input":"{{ name }}",
+      "name":"{{ productThreeInfo.name }}"
+    }'
+  >
+  <label for="{{name}}-three">
+    {% render 'pdm_landing-purchase-step1-card', 
+      productData: productThree, 
+      productInfo: productThreeInfo 
+      uniqueId: 'collapseThree'
+      parentContainer: dropdownId3,
+      checkIcon: checkIcon,
+      crossIcon: crossIcon,
+      starIcon: starIcon
+    %}
+  </label>
+  </div>
+  

@@ -1,0 +1,183 @@
+{% assign random_number='now' | date: "%s" | modulo: 100 | plus: 1 %}
+<!-- -- how to use start -- -->
+<div class="howUseSection section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="section_header d-block d-md-none">
+            {% if section.settings.heading != blank %}
+              <h2 class="title-lg">{{ section.settings.heading }}</h2>
+            {% endif %}
+          </div>
+          <div class="howUseSection_bl pe-md-5">
+            <div
+              style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+              class="swiper howUse_img-{{ random_number }}"
+            >
+              <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                  <div class="swiper-slide">
+                    <img src="{{ block.settings.image | img_url:'master' }}" class="img-fluid">
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="section_header d-none d-md-block">
+            {% if section.settings.heading != blank %}
+              <h2 class="title-lg">{{ section.settings.heading }}</h2>
+            {% endif %}
+          </div>
+          <div thumbsSlider="" class="swiper howUse_slider" id="howUse_slider-{{ random_number }}">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+                <div class="swiper-slide">
+                  {% if block.settings.heading != blank %}
+                    <h6 class="d-none d-md-block">
+                      {{ block.settings.heading }}
+                    </h6>
+                    {% if block.settings.heading_mob != blank %}
+                      <h6 class="d-block d-md-none">{{ block.settings.heading_mob }}</h6>
+                    {% endif %}
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div
+            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+            class="swiper howUse_info-{{ random_number }} dot_pagination"
+          >
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+                <div class="swiper-slide">
+                  {% if block.settings.tab_content != blank %}
+                    {{ block.settings.tab_content }}
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+            <!--
+            <div class="pagination_navigation mt-3 mt-md-5">
+              <div class="swiper-pagination"></div>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -- how to use end -- -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiperThumbs = new Swiper('#howUse_slider-{{ random_number }}', {
+        spaceBetween: 0,
+        slidesPerView: 3,
+        // freeMode: true,
+        // watchSlidesProgress: true,
+        grabCursor: true,
+        breakpoints: {
+          640: {
+            spaceBetween: 20,
+          },
+        },
+      });
+  
+      var swiper2 = new Swiper('.howUse_info-{{ random_number }}', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        thumbs: {
+          swiper: swiperThumbs,
+        },
+        touchRatio: 0,
+      });
+  
+      var swiper3 = new Swiper('.howUse_img-{{ random_number }}', {
+        spaceBetween: 20,
+        slidesPerView: 1.2,
+        thumbs: {
+          swiper: swiperThumbs,
+        },
+        effect: 'fade',
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
+        touchRatio: 0,
+      });
+  
+      swiperThumbs.on('slideChange', function () {
+        swiper2.slideTo(swiperThumbs.activeIndex);
+        swiper3.slideTo(swiperThumbs.activeIndex);
+      });
+  
+      swiper2.on('slideChange', function () {
+        swiperThumbs.slideTo(swiper2.activeIndex);
+        swiper3.slideTo(swiper2.activeIndex);
+      });
+  
+      swiper3.on('slideChange', function () {
+        swiperThumbs.slideTo(swiper3.activeIndex);
+        swiper2.slideTo(swiper3.activeIndex);
+      });
+    });
+  </script>
+  {% schema %}
+  {
+    "name": "t:sections.how_to_use.two",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.heading.label",
+        "default": "How to use"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "tab",
+        "name": "t:common.tab.tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label",
+            "default": "How to use"
+          },
+          {
+            "type": "text",
+            "id": "heading_mob",
+            "label": "t:common.heading.mobile.label",
+            "default": "How to use"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image.label"
+          },
+          {
+            "type": "richtext",
+            "id": "tab_content",
+            "label": "t:common.text.content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.how_to_use.two"
+      }
+    ]
+  }
+  {% endschema %}

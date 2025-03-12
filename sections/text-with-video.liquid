@@ -1,0 +1,215 @@
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  #shopify-section-{{ section.id }}.trusted_bl.trustedVerified {
+    padding:0;
+  }
+  #shopify-section-{{ section.id }} .title-lg {
+    color:var(--ttl-color);
+  }
+  #shopify-section-{{ section.id }} .title-lg strong{
+    font-weight:500;
+    color:var(--title_strong_clr);
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding">
+    <div class="container">
+        
+        <div class="row align-items-center">
+            {%- for block in section.blocks -%}
+                {% assign bs = block.settings %}
+                {%- case block.type -%}
+                    {%- when 'text_content' -%}
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="trusted_left mw-600">
+                            <div class="section_header pt-0 mw-100" style="--ttl-color:{{ bs.title_clr }}; --title_strong_clr:{{ bs.title_strong_clr }}">
+                                {% if bs.trust_des != blank %}
+                                    <div class="trusted_verified">
+                                        {% if bs.trust_icon != blank %}
+                                            <img src="{{ bs.trust_icon | img_url:'20x' }}" alt="">
+                                        {%- endif -%}
+                                        <p>{{bs.trust_des}}</p>
+                                    </div>
+                                {% endif %}
+                                {% if bs.title != blank %}
+                                    <h2 class="title-lg">
+                                        {{ bs.title }}
+                                    </h2>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {%- when 'video' -%}
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="trusted_cl_m mb-2 mb-md-0">
+                            {%- if bs.image != blank -%}
+                                <img src="{{ bs.image | img_url:'master' }}" alt="" class="img-fluid t_m_img">
+                            {%- else -%}
+                                {%- render 'placeholder-render' -%}
+                            {%- endif -%}
+                            <div class="play_btn trustedVerified_Play">
+                                {% if bs.title != blank %}
+                                    <div>
+                                        <h5>{{ bs.title }}</h5>
+                                        {% if bs.des != blank %}
+                                            <h6> {{bs.des}}</h6>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                                {% if bs.video != blank %}
+                                    <a class="popup-youtube" href=" {{ bs.video }}">
+                                        <span>
+                                            {% render 'icon-play' %}
+                                        </span>
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+            {% endcase -%}
+        {% endfor -%}
+        </div>
+    </div>
+</div>
+{%- schema -%}
+{
+    "name":"t:sections.text_video.label",
+    "class":"trusted_bl section pb-0 trustedVerified",
+    "max_blocks": 2,
+    "settings":[
+
+        {
+            "type": "header",
+            "content": "t:sections.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "label": "t:sections.padding.padding_top",
+            "default": 0,
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "label": "t:sections.padding.padding_bottom",
+            "default": 0,
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px"
+        }
+    ],
+    "blocks":[
+        {
+            "type":"video",
+            "name":"t:common.video.label",
+            "limit": 1,
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"image",
+                    "label":"t:common.image.label"
+                },
+                {
+                    "type": "video_url",
+                    "id": "video",
+                    "label": "t:common.video.label",
+                    "accept": [
+                      "youtube"
+                    ],
+                    "default":"https://www.youtube.com/watch?v=I2Fe-kP-2Jg"
+                },
+                {
+                    "type":"header",
+                    "content":"DR Texts"
+                },
+                {
+                    "type":"inline_richtext",
+                    "id":"title",
+                    "label":"t:common.card.doctor.name",
+                    "default":"Dr Shah, MD"
+                },
+                {
+                    "type":"inline_richtext",
+                    "id":"des",
+                    "label":"t:common.desc.label",
+                    "default":"Board certified dermatologist"
+                }
+
+            ]
+        },
+        {
+            "type":"text_content",
+            "name":"t:common.text.content",
+            "limit": 1,
+            "settings":[
+                {
+                    "type":"header",
+                    "content":"t:sections.trusted.header"
+                },
+                {
+                    "type":"image_picker",
+                    "id":"trust_icon",
+                    "label":"t:sections.trusted.icon"
+                },
+                {
+                    "type":"inline_richtext",
+                    "id":"trust_des",
+                    "label":"t:sections.trusted.text",
+                    "default":"Trusted and recommended by world leading Dermatologists"
+                },
+                {
+                    "type":"header",
+                    "content":"Heading settings"
+                },
+                {
+                    "type":"inline_richtext",
+                    "id":"title",
+                    "label":"t:common.heading.label",
+                },
+                {
+                    "type":"color",
+                    "id":"title_clr",
+                    "label":"t:common.title.color",
+                    "default":"#000"
+                },
+                {
+                    "type":"color",
+                    "id":"title_strong_clr",
+                    "label":"t:common.title.strong",
+                    "default":"#797D7C"
+                }
+                
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"t:sections.text_video.label",
+                "blocks": [
+                {
+                    "type": "video"
+                },
+                {
+                    "type": "text_content"
+                }
+            ] 
+        }
+    ]
+}
+{%- endschema -%}

@@ -1,0 +1,119 @@
+<style>
+    .dek-menu ul {
+        gap: 12px !important;
+    }
+    .dek-menu .menu {
+        width: 38.33% !important;
+    }
+    .dek-menu .logo {
+        width: 28.33% !important;
+    }
+    @media(max-width:767px) {
+        #video_mobile {
+            min-height: 430px;
+        }
+    }
+</style>
+
+<!-- -- craetive guide start -- -->
+<div class="creative_guide section pt-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="c_guide_infos h-100">
+                    {% if section.settings.heading != blank %}
+                        <h1 class="title-lg mb-4 mb-md-5">{{ section.settings.heading }}</h1>
+                    {% endif %}
+
+                    {{ section.settings.text }}
+                    
+                    {%- for block in section.blocks -%}
+                        <p class="mt-3 text-decoration-underline text-dark learn_more-content">
+                            <img src="{{ 'correct_circle.svg' | asset_url }}" alt="correct_circle" class="img-fluid me-2">
+                            <a href="{{ block.settings.button_url }}" class="text-decoration-underline text-dark">{{ block.settings.button_label }}</a>
+                        </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="offset-md-1 col-md-5 order-1 order-md-2">
+                <div class="c_guide_img mw-mob-100">
+                    {% if section.settings.wistia_id != blank %}
+                        <div class="wistia_responsive_padding" style="position:relative;">
+                            <div class="wistia_responsive_wrapper"
+                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                <div class="wistia_embed wistia_async_{{ section.settings.wistia_id }} seo=false videoFoam=true"
+                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
+                            </div>
+                        </div>   
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- craetive guide end -- -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.guide-header.name",
+        "class": "section-videos-list",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "wistia_id",
+                "label": "t:common.wistia.id.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.guide-header.name",
+                "settings": {
+                    "heading": "Micro-Infusion Targeted Patches Creative Content Guide",
+                    "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Our creative guide will help you showcase the magic of the Qure Micro-Infusion Targeted Patches. Let's create stunning, engaging content that highlights how this game-changing product transforms skincare routines!</p>",
+                    "wistia_id": "0gi4vtjhzc"
+                },
+                "blocks": [
+                    {
+                        "type": "button",
+                        "settings": {
+                            "button_label": "Learn more about Micro-Infusion Targeted Patches",
+                            "button_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

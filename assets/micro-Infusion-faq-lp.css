@@ -1,0 +1,206 @@
+.faq_banner_wrap {
+    max-width: 924px;
+}
+
+.faq_banner .title-xl {
+    font-size: 45px;
+    font-family: 'Canela Web';
+    letter-spacing: 0.36px;
+    /* margin: 33px 0; */
+}
+
+.faq_banner .section_header h5 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.3px;
+}
+
+.stamping_skin-row {
+    padding-left: 40px;
+}
+
+.stamping_skin-content:not(:last-child) {
+    padding: 0 0 30px 0;
+}
+
+.how_work {
+    padding: 50px 20px;
+}
+
+.faq_mi .section_header {
+    padding: 30px 0;
+}
+
+.faq_mi .section_header p {
+    padding: 0;
+}
+
+.faq_mi .try_yourself p span {
+    background-color: #C7E7DC;
+    font-weight: 600;
+    text-align: center;
+    line-height: 26px;
+    width: 100%;
+    max-width: 69px;
+    height: fit-content;
+}
+
+.faq_mi .try_yourself p {
+    display: flex;
+    gap: 15px;
+    padding-top: 25px;
+}
+
+.limited_offer_faq {
+    padding: 40px 80px !important;
+    border: 2px solid #000;
+    background: linear-gradient(0deg, rgba(199, 231, 220, 0.30) -22.21%, #FFF 41.13%);
+}
+
+.limited_offer_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.limited_offer_wrap_list ul li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.limited_offer_faq .buy_btn {
+    padding: 9px;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.limited_offer_wrap_list {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.offering_period {
+    padding: 27px 54px;
+}
+
+.miLP_faq_use .actVideo_block {
+    max-width: 330px;
+}
+
+.miLP_faq_use .stamping_skin-content {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 20px;
+}
+
+.video_cnt {
+    border-radius: 8px;
+    background: #C7E7DC;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.video_cnt p {
+    font-size: 13px;
+}
+
+.miLP_faq_use .actVideo_block .ctmVideo__block {
+    height: unset;
+}
+
+.section_header p:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.section_header .paddingB {
+    padding-bottom: 25px;
+}
+
+.result_s .buy_btn {
+    font-size: 20px;
+    padding: 14px 0;
+}
+
+@media(max-width:767px) {
+    .limited_offer_wrap {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .limited_offer_faq {
+        padding: 14px !important;
+    }
+
+    .limited_offer_wrap_list ul li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .offering_period {
+        padding: 11px 15px;
+    }
+
+    .miLPfaq,
+    .mySwiperFAQ2 {
+        overflow: unset;
+    }
+
+    .miLP_faq_use .actVideo_block {
+        max-width: 100%;
+    }
+
+    .miLP_faq_use .stamping_content-main a {
+        font-size: 13px;
+        margin-bottom: 3px;
+        display: inline-block;
+    }
+
+    .miLP_faq_use .stamping_skin-content {
+        margin-top: 20px;
+    }
+
+    .stamping_skin-row {
+        padding-left: 0;
+    }
+
+    .faq_banner .title-xl {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+    }
+
+    .faq_banner .section_header h5 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+    }
+
+    .how_work {
+        padding: 30px 15px;
+    }
+
+    .result_s .buy_btn {
+        font-size: 18px;
+        padding: 3px 0;
+    }
+
+    .limited_offer_faq .buy_btn {
+        padding: 10px;
+        font-size: 18px;
+        margin: 0;
+    }
+    .faq_mi .mi_infusion-system{
+        padding-top: 16px;
+    }
+    .laptop_img {
+        padding-bottom: 40px;
+    }
+    .faq_mi .mi_landing_result .result_content p{
+        font-size: 12px;
+    }
+}

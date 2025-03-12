@@ -1,0 +1,481 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [
+    {
+      "key": "custom_canonical_url",
+      "namespace": "custom",
+      "name": "Custom canonical url",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "cc-creator-drop-data",
+      "namespace": "creator",
+      "name": "CC Drop Data",
+      "description": null,
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "cc-creator-drop-product-enhancement-notes",
+      "namespace": "creator",
+      "name": "CC Drop Product Enhancement Notes",
+      "description": null,
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "cc-creator-drop-products",
+      "namespace": "creator",
+      "name": "CC Drop Products",
+      "description": null,
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cc-creator-drop-creator",
+      "namespace": "creator",
+      "name": "CC Drop Creator",
+      "description": null,
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cc-creator-drop-product-enhancement-media",
+      "namespace": "creator",
+      "name": "CC Drop Product Enhancement Media",
+      "description": null,
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [
+    {
+      "key": "tax_id",
+      "namespace": "checkoutblocks",
+      "name": "Tax ID",
+      "description": null,
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "page": [
+    {
+      "key": "cross_sell",
+      "namespace": "custom",
+      "name": "Cross Sell",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "landing_product_one",
+      "namespace": "custom",
+      "name": "landing product 1",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "landing_product_2",
+      "namespace": "custom",
+      "name": "landing product 2",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "landing_product_3",
+      "namespace": "custom",
+      "name": "landing product 3",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "general_information_purchase_process",
+      "namespace": "custom",
+      "name": "general information purchase process",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "carousel_media",
+      "namespace": "custom",
+      "name": "carousel_media",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "upsell_popup",
+      "namespace": "custom",
+      "name": "upsell popup",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "product": [
+    {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skin_concerns",
+      "namespace": "custom",
+      "name": "Skin Concerns",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "skin_type",
+      "namespace": "custom",
+      "name": "Skin type",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_product",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Product",
+      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "custom_canonical_url",
+      "namespace": "custom",
+      "name": "Custom canonical url",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "cross_sell",
+      "namespace": "custom",
+      "name": "Cross Sell",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "category",
+      "namespace": "custom",
+      "name": "Category",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "cross_sell_header",
+      "namespace": "custom",
+      "name": "Cross Sell Header",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "enable_corner_treatment_bfcm",
+      "namespace": "custom",
+      "name": "enable corner treatment bfcm",
+      "description": "enable corner treatment bfcm",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "category_displaying",
+      "namespace": "custom",
+      "name": "category_displaying",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "carousel_media",
+      "namespace": "custom",
+      "name": "carousel_media",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "popup_discount",
+      "namespace": "custom",
+      "name": "popup discount",
+      "description": "discount percent 0 - 100, 2 decimals",
+      "type": {
+        "name": "number_decimal",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "bundle_product",
+      "namespace": "custom",
+      "name": "bundle product",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "variant": [
+    {
+      "key": "restock_date",
+      "namespace": "fulfil",
+      "name": "Restock Date",
+      "description": "The date when the product would be restocked",
+      "type": {
+        "name": "date",
+        "category": "DATE_TIME"
+      }
+    },
+    {
+      "key": "custom_label_4",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 4",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_3",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 3",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_2",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 2",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_1",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 1",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_0",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 0",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_system",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size System",
+      "description": "The country of the size system used by your product.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_type",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size Type",
+      "description": "Your apparel product’s cut.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mpn",
+      "namespace": "mm-google-shopping",
+      "name": "Google: MPN",
+      "description": "Your product’s Manufacturer Part Number (MPN).",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "gender",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Gender",
+      "description": "The gender for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "condition",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Condition",
+      "description": "The condition of your product at time of sale.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "age_group",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Age Group",
+      "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "is_free",
+      "namespace": "free",
+      "name": "is_free",
+      "description": "PDM for gamification -  Validate if the product is enabled to be a gift with a price of 0",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    }
+  ],
+  "shop": [
+    {
+      "key": "fastbundleconf",
+      "namespace": "rbrfb",
+      "name": "Fast Bundle Conf",
+      "description": "App's config for the widgets",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "blocks_list_checkout_custom_field",
+      "namespace": "checkoutblocks",
+      "name": "Checkout Blocks: Blocks List for: checkout_custom_field",
+      "description": null,
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ]
+}

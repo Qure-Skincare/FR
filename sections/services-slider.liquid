@@ -1,0 +1,160 @@
+<!-- -- feature promotion slider start -- -->
+<div class="featured_p_slider">
+    <div class="rtt__page-scrolling-content d-flex align-items-center overflow-hidden">
+        <div class=" d-flex align-items-center">
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide1 -%}
+                    <img src="{{ section.settings.slide1 | img_url: '35px' }}" alt="{{section.settings.slide1.alt}}">
+                    {%- endif -%}
+                    {%- if section.settings.text1 -%}
+                    <p>{{ section.settings.text1 }}</p>
+                    {%- endif -%}
+                </div> <span class="scroll-line"></span>
+            </a>
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide2 -%}
+                        <img src="{{ section.settings.slide2 | img_url: '35px' }}" alt="{{section.settings.slide2.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text2 -%}
+                        <p>{{ section.settings.text2 }}</p>
+                        {%- endif -%}
+                </div><span class="scroll-line"></span>
+            </a>
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide3 -%}
+                        <img src="{{ section.settings.slide3 | img_url: '35px' }}" alt="{{section.settings.slide3.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text3 -%}
+                        <p>{{ section.settings.text3 }}</p>
+                        {%- endif -%}
+                </div><span class="scroll-line"></span>
+            </a>
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide4 -%}
+                        <img src="{{ section.settings.slide4 | img_url: '35px' }}" alt="{{section.settings.slide4.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text4 -%}
+                        <p>{{ section.settings.text4 }}</p>
+                        {%- endif -%}
+                </div><span class="scroll-line"></span>
+            </a>
+        </div>
+        <div class=" d-flex align-items-center">
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide1 -%}
+                        <img src="{{ section.settings.slide1 | img_url: '35px' }}" alt="{{section.settings.slide1.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text1 -%}
+                        <p>{{ section.settings.text1 }}</p>
+                        {%- endif -%}
+                </div> <span class="scroll-line"></span>
+            </a>
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide2 -%}
+                        <img src="{{ section.settings.slide2 | img_url: '35px' }}" alt="{{section.settings.slide2.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text2 -%}
+                        <p>{{ section.settings.text2 }}</p>
+                        {%- endif -%}
+                </div><span class="scroll-line"></span>
+            </a>
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide3 -%}
+                        <img src="{{ section.settings.slide3 | img_url: '35px' }}" alt="{{section.settings.slide3.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text3 -%}
+                        <p>{{ section.settings.text3 }}</p>
+                        {%- endif -%}
+                </div><span class="scroll-line"></span>
+            </a>
+            <a aria-label="scrolling-text" role="link" aria-disabled="true">
+                <div class="fp_s_item">
+                    {%- if section.settings.slide4 -%}
+                        <img src="{{ section.settings.slide4 | img_url: '35px' }}" alt="{{section.settings.slide4.alt}}">
+                        {%- endif -%}
+                        {%- if section.settings.text4 -%}
+                        <p>{{ section.settings.text4 }}</p>
+                        {%- endif -%}
+                </div><span class="scroll-line"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- -- feature promotion slider start -- -->
+
+{% schema %}
+{
+"name": "Services Slider",
+"settings": [
+    {
+        "type": "header",
+        "content": "Service 1"
+    },
+    {
+        "type": "image_picker",
+        "id": "slide1",
+        "label": "t:common.icon.label"
+    },
+    {
+        "type": "text",
+        "default": "heading",
+        "id": "text1",
+        "label": "t:common.text.label"
+    },
+    {
+        "type": "header",
+        "content": "Service 2"
+    },
+    {
+        "type": "image_picker",
+        "id": "slide2",
+        "label": "t:common.icon.label"
+    },
+    {
+        "type": "text",
+        "id": "text2",
+        "label": "t:common.text.label"
+    },
+    {
+        "type": "header",
+        "content": "Service 3"
+    },
+    {
+        "type": "image_picker",
+        "id": "slide3",
+        "label": "t:common.icon.label"
+    },
+    {
+        "type": "text",
+        "id": "text3",
+        "label": "t:common.text.label"
+    },
+    {
+        "type": "header",
+        "content": "Service 4"
+    },
+    {
+        "type": "image_picker",
+        "id": "slide4",
+        "label": "t:common.icon.label"
+    },
+    {
+        "type": "text",
+        "id": "text4",
+        "label": "t:common.text.label"
+    }
+],
+"presets": [
+        {
+            "name": "Services Slider"
+        }
+    ]
+}
+{% endschema %}

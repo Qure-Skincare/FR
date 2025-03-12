@@ -1,0 +1,23 @@
+.order_history a {
+    color: #000;
+}
+
+.order_history tr td,
+.order_history tr th {
+    font-size: 14px;
+}
+
+@media(max-width:767px) {
+    .order_history tr td {
+        font-size: 12px;
+        font-weight: 400;
+        padding: 10px 5px;
+    }
+
+    .order_history tr th {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 10px 5px;
+        vertical-align: middle;
+    }
+}

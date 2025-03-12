@@ -1,0 +1,66 @@
+<div class="dual-text-img">
+    <div class="container-info">
+        <div class="info">
+            <div class="header">
+                <h2 class="title">{{ section.settings.section_title }}</h2>
+                <p class="subtitle">{{ section.settings.section_subtitle }}</p>
+            </div>
+            <div class="text-body" data-id="{{ section.id }}" data-open="false">
+                {{ section.settings.paragraph }}
+            </div>
+            <div data-id="{{ section.id }}" class="cont-btn">{{ section.settings.button_text }}</div>
+        </div>
+    </div>
+    <div class="container-img">
+      {{ section.settings.dual_img | image_url: width: 840 |  image_tag: alt: 'img',loading:"eager" }}
+    </div>
+</div>
+  
+{% schema %}
+{
+  "name": "Dual Text & Image (PDM)",
+  "tag": "section",
+  "class": "section-dual-text-img",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Text"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Heading",
+      "default": "Feeling you look younger and having positive aging experiences are linked,"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Text",
+      "default": "say 59% of participants in a study by the University of Oklahoma"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "<p>A recent study by the University of Oklahoma found t that those who felt they looked younger than they were also reported having more positive experiences related to aging, such as being asked for advice and wisdom and having a strong sense of purpose.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Road More"
+    },
+    {
+      "type": "image_picker",
+      "id": "dual_img",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dual Text & Image (PDM)",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

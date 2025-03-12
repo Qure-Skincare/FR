@@ -1,0 +1,38 @@
+<div class="step {{ class }} {% if active-card == index %}active{% endif %}" index="{{ index }}" length="{{ length }}" > 
+    <div class="cont-text">
+        <div class="full-text">
+            {% if metaobjectinfo['title'] != blank %}
+            <div class="title">
+                <h3 class="h3"> {{ metaobjectinfo['title'] }}</h3>
+                {% if metaobjectinfo['subtitle'] != blank %}
+                <div class="description"> {{ metaobjectinfo['subtitle'] }} </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <div class="metaobject-content">
+                {% for block in metaobjectinfo.info_test.value %}
+                    {% assign img_icon = shop.metaobjects[ block.system.type ][ block.system.handle ].icon.value %}
+                    {% assign block_text = shop.metaobjects[ block.system.type ][ block.system.handle ].text %}
+                    {% assign block_space = shop.metaobjects[ block.system.type ][ block.system.handle ].space %}
+                    {% assign font_size = shop.metaobjects[ block.system.type ][ block.system.handle ].big_subtitle %}
+                    <div class="{{ block.system.type }} {{ block.system.handle }} {% if font_size == true %}big-text{% endif %}" style="margin-bottom:{{ block_space }}px;">
+                        {% if img_icon != blank %}
+                            <img src="{{ img_icon  | img_url: 'original' }}" alt="icon"/>
+                        {% endif %}
+                        {% if block_text != blank %}
+                            {{ block_text | metafield_tag }}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="cont-image">
+    {% if video %}
+        {{ video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+    {% else %}
+        <img src="{{ image | image_url: width:614, crop: 'center' }}" alt="picture for {{ metaobjectinfo['title'] }}" />
+    {% endif %}
+    </div>
+</div>

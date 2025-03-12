@@ -1,0 +1,276 @@
+.micro_safety .guideline_content .guideline_left p {
+    padding-top: 0px !important;
+}
+
+.micro_safety .guideline_content .guideline_left p:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.para_heading {
+    color: #CB0000;
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.precautions_text {
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.micro_safety .care_detail .care_content p {
+    margin: 0 0 25px;
+}
+
+.micro_safety .care_detail .care_content h6 {
+    color: #CB0000;
+}
+
+.micro_safety .care_detail .care_content p:before {
+    background: #CB0000;
+}
+
+/* new change */
+/* .micro_safety .step_diffrent {
+    margin-top: 0;
+} */
+
+.micro_safety .step_diffrent .step-serum img {
+    max-height: 86px;
+}
+
+.micro_safety .safety_content {
+    padding: 20px 30px;
+}
+
+.micro_safety .safety_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.q-urify_safety.micro_safety .tab_con.tab_con_4 {
+    width: 947px;
+}
+
+.q-urify_safety.micro_safety .safety_content .safety_tab {
+    padding: 5px 20px;
+}
+
+.ss_list.incorrect ul li:before {
+    position: absolute;
+    content: url(./incorrect_circle.svg);
+    left: 0;
+    top: 8px;
+}
+
+.q-urify_safety.micro_safety .tab_con_5 {
+    width: 1120px;
+}
+
+.micro_safety .care_detail .care_content.color_green h6 {
+    color: #c7e7dc;
+}
+
+.care_detail .care_content.color_green p:before {
+    background-color: #c7e7dc;
+}
+
+.q-urify_safety.micro_safety .micro_tips span {
+    width: fit-content;
+}
+
+.tab_section_header h6 {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.q-urify_safety.micro_safety .step_diffrent h4:before,
+.q-urify_safety.micro_safety .step_diffrent h4:after,
+.q-urify_safety.micro_safety .step_diffrent .step-serum:before,
+.q-urify_safety.micro_safety .step_diffrent .step-serum:before {
+    border: 1px solid #C7E7DC;
+}
+
+.q-urify_safety.micro_safety .u_item_wrapper .u_item_header h3 {
+    margin-bottom: 20px;
+}
+
+.treat_icon_main .treat_icon_main_icon {
+    height: 70px;
+}
+
+.q-urify_safety.micro_safety .new-class img {
+    width: 207px;
+}
+
+.q-urify_safety.micro_safety .step_diffrent .step-serum .unique_c_item>img {
+    max-height: 100%;
+}
+
+@media(max-width:991px) {
+    .step_diffrent h4 {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .q-urify_safety.micro_safety .safety_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .q-urify_safety.micro_safety .safety-banner .safety-banner-cnt {
+        display: flex;
+        align-items: end;
+    }
+
+    .q-urify_safety.micro_safety .safety-banner-cont {
+        margin-bottom: 0;
+    }
+
+    .q-urify_safety.micro_safety .new-class ul {
+        margin: 10px 0 30px;
+        order: 1;
+    }
+
+    .q-urify_safety.micro_safety .new-class img {
+        width: 135px;
+    }
+
+    .q-urify_safety.micro_safety .new-class {
+        justify-content: flex-start;
+        margin-bottom: -20px;
+    }
+
+    .q-urify_safety.micro_safety .new-class {
+        display: grid;
+        grid-template-columns: 1fr 135px;
+    }
+
+
+
+    .q-urify_safety.micro_safety .step_diffrent h4:before {
+        content: "";
+        border: 1px solid #C7E7DC;
+        width: 37px;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: rotate(90deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .q-urify_safety.micro_safety .step_diffrent .step-serum:before {
+        border: none;
+        top: 0;
+    }
+
+    .q-urify_safety.micro_safety .step_diffrent {
+        margin-top: 0;
+    }
+
+    .q-urify_safety.micro_safety .step-serum.hydra {
+        margin-top: 40px;
+    }
+
+    .q-urify_safety.micro_safety .tab_step2 {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .q-urify_safety.micro_safety .tab_step2 .device-img {
+        padding: 0 10px;
+    }
+
+    .q-urify_safety.micro_safety .step_diffrent .step-serum {
+        padding: 0;
+    }
+
+    .q-urify_safety.micro_safety .safety_content {
+        padding: 15px 15px;
+    }
+
+    .q-urify_safety.micro_safety .tab_con {
+        padding: 0 20px !important;
+    }
+
+    .q-urify_safety.micro_safety .guideline_content {
+        padding: 0;
+    }
+
+    .q-urify_safety.micro_safety .guide_safty {
+        margin: 0;
+    }
+
+    .q-urify_safety.micro_safety .tabing-new .safety_content .safety_tab {
+        right: -1px;
+        left: auto;
+    }
+
+    .q-urify_safety.micro_safety .tabing-new .safety_content {
+        border-radius: 8px 0px 8px 8px;
+    }
+
+    .q-urify_safety.micro_safety .pre_treat_icon {
+        padding: 0 8px;
+    }
+
+    .q-urify_safety.micro_safety .tab_button a.next-btn {
+        padding: 12px 0;
+    }
+
+    .q-urify_safety.micro_safety .pre_treat_icon .treat_icon_main {
+        align-items: flex-start;
+    }
+
+    .q-urify_safety.micro_safety .tab_section_header h6 {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .q-urify_safety.micro_safety .care_detail .care_content p {
+        font-size: 13px;
+    }
+
+    .q-urify_safety.micro_safety .u_item_wrapper .u_item_header h3 {
+        margin-bottom: 10px;
+    }
+
+    .q-urify_safety.micro_safety .treat_icon_main .treat_icon_main_icon img {
+        width: auto;
+    }
+
+    .q-urify_safety.micro_safety .treat_icon_main .treat_icon_main_icon {
+        width: 60px;
+    }
+
+    .q-urify_safety.micro_safety .care_detail .care_content p {
+        margin: 0 0 15px;
+    }
+
+    /* .q-urify_safety.micro_safety .tabing-new .tab_con h2 {
+        max-width: 322px;
+        margin: 20px auto;
+    } */
+
+    .q-urify_safety.micro_safety .tabing-new .tab_con h2 {
+        max-width: 332px;
+        margin: 20px auto;
+    }
+
+    .q-urify_safety.micro_safety .care_detail .care_content h6 {
+        margin: 0 0 12px;
+    }
+
+    .q-urify_safety.micro_safety .u_item_wrapper {
+        padding: 27px 13px;
+    }
+}

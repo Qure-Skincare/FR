@@ -1,0 +1,293 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "header_landing_pFmaRH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_qLHgyD": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CONTENT REQUIREMENTS",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs1.webp"
+          }
+        },
+        "navigation_link_DgYaFx": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs2.webp"
+          }
+        },
+        "navigation_link_3X4mrf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "INSPIRING CONTENT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qLHgyD",
+        "navigation_link_DgYaFx",
+        "navigation_link_3X4mrf"
+      ],
+      "settings": {
+      }
+    },
+    "section1": {
+      "type": "guide-header",
+      "blocks": {
+        "button_LUpm3B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about Micro-Infusion Targeted Patches",
+            "button_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
+          }
+        }
+      },
+      "block_order": [
+        "button_LUpm3B"
+      ],
+      "settings": {
+        "heading": "Micro-Infusion Targeted Patches Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Our creative guide will help you showcase the magic of the Qure Micro-Infusion Targeted Patches. Let's create stunning, engaging content that highlights how this game-changing product transforms skincare routines!</p>",
+        "wistia_id": "0gi4vtjhzc"
+      }
+    },
+    "qure_founder_LkfQUT": {
+      "type": "qure-founder",
+      "settings": {
+        "heading": "“To have argireline in a very targeted patch is GENIUS; it’s a botox-like peptide that really helps with fine lines”",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "image": "shopify://shop_images/dr.shah_new.webp",
+        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
+      }
+    },
+    "section3": {
+      "type": "guide-columns",
+      "blocks": {
+        "header_RA46tw": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 1",
+            "text": "Merge Qure into your creatives",
+            "image": "shopify://shop_images/ac_pro4.webp",
+            "button_label": "Content Requirements"
+          }
+        },
+        "description_mHnPFA": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Key Messages",
+            "image": "shopify://shop_images/key_message.svg",
+            "content": "<p>Key Points to include in the messaging:</p>",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_aNzhwA": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Deeper Delivery",
+            "content": "<ul><li>Self-dissolving micro-darts infuse serum below the skin's surface for enhanced absorption and faster results.</li></ul>",
+            "show": true
+          }
+        },
+        "collapsed_aNzhwB": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Quick Application",
+            "content": "<ul><li>Patches self-dissolve in as little as two hours, providing powerful results quickly.</li></ul>",
+            "show": false
+          }
+        },
+        "collapsed_aNzhwC": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Target Multiple Concerns",
+            "content": "<ul><li>Effectively treats fine lines, wrinkles, dark circles, puffiness, and under-eye bags. </li></ul>",
+            "show": false
+          }
+        },
+        "collapsed_aNzhwD": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Versatile Treatment",
+            "content": "<ul><li>Ultimate all-in-one patches that contain <strong>science backed,</strong> age-defying ingredients such as <strong>retinol, caffeine, niacinamide, licorice, and peptides</strong> for brighter-looking, smoother-feeling skin.</li></ul>",
+            "show": false
+          }
+        },
+        "description_tVQDHe": {
+          "type": "description",
+          "settings": {
+            "heading": "Creative Direction",
+            "image": "shopify://shop_images/direction.svg",
+            "content": "<ul><li>High quality, bright lighting and high-resolution imagery/videography to be supplied. No obvious filters.</li><li>Micro-Infusion Targeted Patches to be the feature of the post. The background must be clean and bright.</li><li>When wearing the product, please do not wear any make-up, or no visible/noticeable makeup.</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_cpREQp": {
+          "type": "description",
+          "settings": {
+            "heading": "Inclusion",
+            "image": "shopify://shop_images/inclusion.svg",
+            "content": "<ul><li>Tag and mention @qureskincare, #qureskincare, #microinfusion, #eyepatches, #targetedpatches, #skincare, #skincaretips, #skincarehacks, #qurepatches for a chance to be featured on Qure Skincare social media pages.</li><li>Please include your affiliate link or link provided by Qure in Instagram stories and in captions of YouTube videos. If can’t be placed in BIO then please include in linktr.ee or similar.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_LhpN6x": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 2",
+            "text": "Get to know Micro-Infusion Targeted Patches",
+            "image": "shopify://shop_images/ac_pro5.webp",
+            "button_label": "Product Information"
+          }
+        },
+        "description_6WtF8b": {
+          "type": "description",
+          "settings": {
+            "heading": "Product Details",
+            "image": "shopify://shop_images/search.svg",
+            "content": "<ul><li>80 self-dissolving micro-darts in each patch that melt into the skin for deeper ingredient delivery</li><li>Stay comfortably for 2-6 hours, or overnight for best results</li><li>Continually works to give a rejuvenated look to your skin</li></ul><p><br/><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">Learn more about Micro-Infusion Targeted Patches &gt;</a></p>",
+            "wistia_id": ""
+          }
+        },
+        "description_BNpxL3": {
+          "type": "description",
+          "settings": {
+            "heading": "Usage Instructions",
+            "image": "shopify://shop_images/usage_dir.svg",
+            "content": "<ul><li>After cleansing, simply peel off the adhesive strips.</li><li>Gently press for 5-10 seconds. The micro-cones dissolve the concentrated serum directly into the skin!</li><li>Wear for at least two hours. For best results, leave them on overnight!</li></ul>",
+            "wistia_id": "yy9nv8vwsn"
+          }
+        },
+        "description_GE3PNL": {
+          "type": "description",
+          "settings": {
+            "classname": "ingredient_text",
+            "heading": "Ingredient Details",
+            "image": "shopify://shop_images/product_claims.svg",
+            "content": "<p><strong>Retinol</strong><br/>A natural derivative of vitamin A, this hero ingredient speeds up the removal of old skin cells to reveal your best, most rejuvenated skin underneath.</p><p><strong>Niacinamide</strong><br/>A type of vitamin B3, this powerhouse ingredient helps maintain skin health for a brighter, more even skin tone. It also helps smooth the look of wrinkles – especially when combined with retinol.</p><p><strong>Caffeine</strong><br/>Caffeine works through micro-circulation, helping to fade the look of dark circles and under-eye bags – like a pick-me-up for the skin.</p><p><strong>Acetyl Hexapeptide-8-Peptides</strong><br/>This safe, synthetic form of Botox visibly reduces the appearance of fine lines and wrinkles & boosts collagen production. It’s the first peptide designed to target expression lines.</p><p><strong>Copper Peptides</strong><br/>Copper peptides promote collagen and elastin production which helps plump and tighten the skin. They also serve as an antioxidant, working to protect the skin against further barrier damage.</p><p><strong>Licorice</strong><br/>Licorice boasts anti-inflammatory properties that work wonders in reducing puffiness and soothing irritated skin.</p><p><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">See FAQs for more information here</a></p>",
+            "wistia_id": ""
+          }
+        },
+        "header_AwT6ji": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 3",
+            "text": "Get inspired by other content creators",
+            "image": "shopify://shop_images/ac_pro6.webp",
+            "button_label": "Inspiring Content"
+          }
+        },
+        "heading_YiyFGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show how it works for you"
+          }
+        },
+        "video_4Jjjcm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video28.webp",
+            "wistia_id": "3u50hzflb5"
+          }
+        },
+        "video_iHceHC": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video29.webp",
+            "wistia_id": "x7arp1lpjb"
+          }
+        },
+        "video_DmtewU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video31.webp",
+            "wistia_id": "lssl9248yq"
+          }
+        },
+        "video_aRhpbz": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video30.webp",
+            "wistia_id": "f7bqwcqxef"
+          }
+        },
+        "heading_fUcJta": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explain the science behind"
+          }
+        },
+        "video_H9fmrV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video32.webp",
+            "wistia_id": "627d3cjaf0"
+          }
+        },
+        "video_dpGpUm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video33.webp",
+            "wistia_id": "9bv0lzoi1d"
+          }
+        },
+        "video_6gLP6V": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video34.webp",
+            "wistia_id": "o80k9gu5x2"
+          }
+        }
+      },
+      "block_order": [
+        "header_RA46tw",
+        "description_mHnPFA",
+        "collapsed_aNzhwA",
+        "collapsed_aNzhwB",
+        "collapsed_aNzhwC",
+        "collapsed_aNzhwD",
+        "description_tVQDHe",
+        "description_cpREQp",
+        "header_LhpN6x",
+        "description_6WtF8b",
+        "description_BNpxL3",
+        "description_GE3PNL",
+        "header_AwT6ji",
+        "heading_YiyFGP",
+        "video_4Jjjcm",
+        "video_iHceHC",
+        "video_DmtewU",
+        "video_aRhpbz",
+        "heading_fUcJta",
+        "video_H9fmrV",
+        "video_dpGpUm",
+        "video_6gLP6V"
+      ],
+      "settings": {
+        "heading": "All you need to know before you start creating your amazing content"
+      }
+    }
+  },
+  "order": [
+    "header_landing_pFmaRH",
+    "section1",
+    "qure_founder_LkfQUT",
+    "section3"
+  ]
+}

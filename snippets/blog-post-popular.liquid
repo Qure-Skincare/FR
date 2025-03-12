@@ -1,0 +1,11 @@
+{% for article in blogs[blog_handle].articles limit:limit offset: offset %}
+    <a class="m_p_item" href="{{ article.url }}" aria-label="{{ article.title | truncatewords: 8 | escape }}">
+        <div class="m_p_img">
+            <img src="{{ article.image | img_url: '120x120', crop: 'center' }}" alt="" class="img-fluid">
+        </div>
+        <div class="m_p_content">
+            <div class="m_p_info">#{{ blogs[blog_handle].title }}</div>
+            <div class="m_p_title">{{ article.title | truncatewords: 8 }}</div>
+        </div>
+    </a>
+{% endfor %}

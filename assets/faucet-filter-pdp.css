@@ -1,0 +1,691 @@
+.led_mask .mask_select_clr h5 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+
+.refill_bl .refill_info .buy_btn {
+    font-size: 18px;
+}
+
+.refill_bl .mask_select_clr h5 {
+    font-weight: 600;
+}
+
+.row.subscribe_save_bx {
+    --bs-gutter-x: 0;
+}
+
+.mask_select_clr .form-check-input:checked+label img {
+    border: 2px solid #C7E7DC;
+}
+
+/* .subscribe_save_wrapper .noSubscription .noSubscriptionPrice{
+    font-size: 14px;
+} */
+.subscribe_save_bx p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.refill_bl .mask_select_clr h5 {
+    font-size: 14px;
+}
+
+.subscribe_save_wrapper .subscribeInfo .subscribeInfoDesc {
+    max-width: 300px;
+}
+
+/* .subscribe_save_wrapper .subscribePrice p,
+.subscribe_save_wrapper .subscribePrice p span {
+    font-size: 14px;
+} */
+.press_bl .ps_wrapper .ps_item {
+    margin: 0;
+}
+
+.mask_select_clr input {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mask_select_clr .clr_options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mask_select_clr img {
+    max-width: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(176, 176, 176, 0.25);
+    border: 2px solid transparent;
+    height: 80px;
+    object-fit: contain;
+}
+
+.led_mask .mask_select_clr h6 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.led_mask .mask_select_clr h6 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.faucet_filter .mask_select_clr h6 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 6px 0 0;
+}
+
+.faucet_filter .subscribeInfo .service_list li {
+    position: relative;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left: 20px;
+}
+
+.faucet_filter .subscribeInfo .service_list li:not(:last-child) {
+    padding-bottom: 5px;
+}
+
+.faucet_filter .subscribeInfo .service_list li::before {
+    content: url(../assets/correct_circle-black.svg);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/* ---------- 6 reasons section start --------------  */
+.faucet_filter .reasons .rs_item {
+    border-radius: 10px;
+    border: 2.5px solid rgba(217, 217, 217, 0.50);
+    background: var(--White, #FFF);
+    padding: 20px 7px;
+    height: 100%;
+}
+
+.faucet_filter .reasons .reasons_wrapper {
+    justify-content: center;
+    gap: 20px;
+}
+
+.reasons .reasons_wrapper .rs_item-main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ---------- 6 reasons section end --------------  */
+
+/* ---------- result section start --------------  */
+.read-more-content {
+    display: none;
+    padding-top: 22px;
+}
+
+.faucet_filter .result_content p {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    padding-bottom: 0;
+}
+
+.faucet_filter .read-more {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    text-decoration-line: underline;
+    color: #000;
+}
+
+.faucet_filter .mi_landing_result .result_item_info {
+    padding: 0 19px 19px;
+}
+
+.faucet_filter .timeline-info {
+    position: relative;
+    background: #f3f1f1;
+    padding: 24px 20px 5px;
+    margin-bottom: 12px;
+    border: 1px solid #f3f1f1;
+    border-radius: 8px;
+    margin-left: 54px;
+}
+
+.result_s_wrapper .swiper-button-lock {
+    display: none;
+}
+
+/* ---------- result section end --------------  */
+
+/* ---------- ingredients list start --------------  */
+.ingredients_list .ingredients_img {
+    margin: 32px 0;
+    text-align: center;
+}
+
+.ingredients_list .section_header a {
+    color: #000;
+}
+
+.ingredients_list .ingredient {
+    border-radius: 8px;
+    padding: 24px 16px;
+    box-shadow: 0px 5px 15px 0px rgba(176, 176, 176, 0.25);
+    position: relative;
+    height: 100%;
+}
+
+.ingredients_list .ingredient .ingredient_flag {
+    color: #fff;
+    position: absolute;
+    top: -39px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 6px 26px;
+    right: 13px;
+}
+
+.ingredients_list .ingredient .ingredient_flag.flag1 {
+    background-color: #C92127;
+}
+
+.ingredients_list .ingredient .ingredient_flag.flag2 {
+    background-color: #FA6F0B;
+}
+
+.ingredients_list .ingredient .ingredient_flag.flag3 {
+    background-color: #F9C91D;
+}
+
+.ingredients_list .ingredients_content {
+    padding-top: 40px;
+}
+
+.section_header .n_sub-heading {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.ingredients_list .skin_problems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.skin_problems .problem_inner p {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.ingredients_list .ingredient p {
+    opacity: .8;
+}
+
+.ingredients_list .ingredients_img p {
+    font-size: 13px;
+}
+
+/* ---------- ingredients list end --------------  */
+
+/* ---------- how to install start --------------  */
+.how_to-install .step_cards {
+    filter: drop-shadow(0px 5px 15px rgba(176, 176, 176, 0.25));
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    padding: 24px 16px;
+    position: relative;
+    height: 100%;
+}
+
+.how_to-install .step_cards .step_flag {
+    position: absolute;
+    top: -38px;
+    right: 13px;
+    border-radius: 8px 8px 0px 0px;
+    background: #C7E7DC;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 6px 53px;
+}
+
+.how_to-install .step_cards .step_flag p {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.step_cards .step_text p {
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+.how_to-install .nav-tabs .nav-link.active {
+    background-color: #C7E7DC;
+}
+
+.how_to-install .nav-tabs .nav-link {
+    padding: 6px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    color: #000;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.how_to-install .steps_tabs {
+    padding-top: 30px;
+}
+.w-css-reset[data-handle="bigPlayButton"] > div {
+    transform: translateX(-50%) translateY(-50%) !important;
+    margin: 0 !important;
+}
+/* ---------- how to install end --------------  */
+
+/* ---------- advanced filtration start --------------  */
+.advanced-filtration .filter_benefit p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.advanced-filtration .comparsion {
+    display: grid;
+    place-items: center;
+}
+
+.advanced-filtration .comparsion_inner {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    --position: 50%;
+}
+
+.advanced-filtration .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.advanced-filtration .image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+    filter: grayscale(100%)
+}
+
+.advanced-filtration .slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    /* for Firefox */
+    width: 100%;
+    height: 100%;
+}
+
+.slider:focus-visible~.slider-button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
+
+.advanced-filtration .slider-line {
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #fff;
+    /* z-index: 10; */
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.advanced-filtration .slider-button {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.filter_comparsion .filter_info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #FBFBFB;
+    padding: 17px 8px 17px 8px;
+    border-left: 5px solid #C7E7DC;
+}
+
+.filter_comparsion .filter_info h5 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    opacity: 0.8;
+}
+
+.filter_comparsion .filter_info p {
+    font-weight: 600;
+}
+
+.advanced-filtration .filter_benefit h6 {
+    font-size: 14px;
+}
+
+/* ---------- advanced filtration end --------------  */
+.new::after {
+    content: 'New';
+    position: absolute;
+    color: #000;
+    background: #C7E7DC;
+    top: 5px;
+    right: 5px;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.094px;
+    text-transform: uppercase;
+    padding: 2px 4px 0;
+    border-radius: 15px;
+}
+
+.beauty_skincare .bs_content h4 {
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0.101px;
+}
+
+.faucet_filter .qure_MI_ftr_wrap .nozzel_benefit p {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.faucet_filter .cp_ftr_wrapper {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.faucet_filter .cp_item {
+    max-width: 206px;
+}
+.faucet_filter .dot_pagination .swiper-pagination-bullet {
+    margin: 0 10px !important;
+    height: 14px;
+    width: 14px;
+}
+.replacment .mask_select_clr .form-check-input:checked+label img {
+    box-shadow: 0px 0px 0px 2px #C7E7DC;
+    border: unset;
+}
+.replacment .mask_select_clr img{
+    border: unset;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+.replacement_info .replacement_pill {
+    border-radius: 32px;
+    background: #F5F5F5;
+    padding: 4px 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.ingredients_list .ingredients_img .ing_img-inner {
+    min-height: 47px;
+}
+.skincare_slider_n .skincare_percent:not(:last-child) {
+    margin-bottom: 10px;
+}
+.skincare_slider_n .skin_item_n_tag .sn_tag {
+    background-color: #C7E7DC;
+    border-radius: 30px;
+    padding: 2px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin: 5px;
+    line-height: 30px;
+}
+.skincare_slider_n .progessInfo {
+    font-size: 14px;
+}
+.skincare_slider_n .skin_item_n_tag p {
+    margin: 12px 0;
+}
+.more_effective_indiv ul li:last-child {
+    border-bottom: 1px solid #EDE7DD;
+}
+.faucet_filter_replacement .refill_info {
+    max-width: 100% !important;
+}
+.ctm_rch_txt a {
+    text-decoration: underline;
+}
+.ctm_rch_txt a:hover {
+    color: #000;
+}
+
+
+
+@media(max-width: 767px) {
+    .subscribe_save_wrapper .subscribeInfo .subscribeInfoDesc{
+        font-size: 10px;
+    }
+    .refill_bl .refill_info .buy_btn {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .shipping.shipping_bg{
+        padding: 7px;
+    }
+    .faucet_filter .cp_ftr_wrapper {
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .faucet_filter .cp_item {
+        max-width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .refill_bl .mask_select_clr h5 {
+        font-size: 13px;
+    }
+
+    .refill_review p {
+        font-size: 13px;
+        line-height: 16px;
+        margin-left: 4px;
+    }
+
+    .refill_bl.tabSlider .refill_info .section_header .title-xl {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .reasons .reasons_wrapper {
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 20px;
+        padding: 0;
+    }
+
+    .reasons .reasons_wrapper .rs_item-main {
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .faucet_filter .reasons .rs_item {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 8px;
+        margin: 0 10px;
+        min-height: 133px;
+    }
+
+    .reasons_wrapper .rs_item .rs_item_content p {
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0.11px;
+        text-align: center;
+    }
+
+    .faucet_filter .reasons .rs_item img {
+        height: 35px;
+        width: 40px;
+    }
+
+    .faucet_filter .section_header h2.title-lg {
+        font-size: 24px;
+    }
+
+    .mi_landing_result .result_content p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .ingredients_list .ingredient .ingredient_flag {
+        top: -34px;
+    }
+
+    .ingredients_list .ingredient p {
+        font-size: 14px;
+    }
+
+    .ingredients_list .skin_problems {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .trusted_bl.trustedVerified .trusted_left .section_header h2.title-lg {
+        line-height: 34px;
+    }
+
+    .how_to-install .step_cards {
+        filter: unset;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .advanced-filtration .filter_benefit {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .advanced-filtration .filter_benefit h6 {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .advanced-filtration .filter_benefit p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .filter_comparsion {
+        padding-top: 40px;
+    }
+
+    .faucet_filter .beauty_skincare .bs_versace span {
+        font-size: 8px;
+    }
+
+    .faucet_filter .beauty_skincare .bs_versace {
+        width: 28px;
+        height: 28px;
+    }
+
+    .faucet_filter .beauty_skincare .bs_item ul li {
+        font-size: 10px;
+    }
+
+    .faucet_filter .beauty_skincare .bs_vs_item {
+        width: 20px;
+        padding: 0;
+    }
+
+    .faucet_filter .beauty_skincare .bs_img img {
+        padding: 15px;
+    }
+
+    .faucet_filter .beauty_skincare .bs_item ul li {
+        height: 44px !important;
+        padding: 5px 0 5px 24px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    .skin_problems .problem_inner p {
+        font-size: 11px;
+    }
+
+    .faucet_filter .subscribe_save_wrapper .subscribe_save_bx {
+        padding: 10px 15px;
+        grid-template-columns: auto 34%;
+    }
+    .faucet_filter .reasons .reasons_wrapper {
+        display: flex;
+        gap: 0;
+    }
+    .replacement_info .replacement_pill p {
+        font-size: 12px;
+    }
+    .skincare_slider_n .skin_item_n_tag .sn_tag {
+        font-size: 11px;
+        padding: 0 12px;
+        margin: 4px 1px;
+    }
+    .faucet_filter .dot_pagination .swiper-pagination-bullet {
+        margin: 0 4px !important;
+        height: 10px;
+        width: 10px; 
+    }
+}

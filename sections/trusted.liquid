@@ -1,0 +1,427 @@
+{%- assign videos_count = 0 -%}
+{%- assign was_feedback = false -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'video' -%}
+            {%- assign videos_count = videos_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<style>
+    .trusted_cl .t_c_info h6 strong {
+        font-size: 12px;
+        line-height: 26px;
+        font-weight: 600;
+        color: var(--clr-green);
+        padding-right: 5px;
+    }
+</style>
+
+
+<!-- -- trusted section start -- -->
+<div class="{{ section.settings.classname }} {% if template == 'index'%}new_trusted_bl{% endif %}" id="trusted_section">
+    <div class="trusted_cl">
+        <div class="container">
+            {% if section.settings.heading != blank %}
+                <div class="section_header d-block d-lg-none original-copy">
+                    <h2 class="title-lg">
+                        {{ section.settings.heading }}
+                    </h2>
+                </div>                
+                <div class="section_header d-block d-lg-none reduced-copy">
+                    <h2 class="title-lg">
+                        {{ section.settings.heading_reduced }}
+                    </h2>
+                </div>                
+            {% endif %}
+            {% if template == 'index' %}
+                <div id="new-dermatolgist">
+                    {% render 'pdm_new_dermatologist' settings: section.settings %}
+                </div>
+            {% endif %}
+            <div class="row {% if template == 'index' %} original-dermatologist {% endif %}">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="trusted_left">
+                        {% if section.settings.heading != blank %}
+                            <div class="section_header d-none d-lg-block pb-5 original-copy">
+                                <h2 class="title-lg mb-0">
+                                    {{ section.settings.heading }}
+                                </h2>
+                            </div>
+                        {% endif %}
+                        {% if section.settings.heading_reduced != blank %}
+                            <div class="section_header d-none d-lg-block pb-5 reduced-copy">
+                                <h2 class="title-lg mb-0">
+                                    {{ section.settings.heading_reduced }}
+                                </h2>
+                            </div>
+                        {% endif %}
+                        {% if section.blocks.size > 0 %}
+                        <div class="t_c_wrapper">
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'feedback' %}
+                                    {% if was_feedback == blank %}
+                                        {% assign was_feedback = true %}
+                                        <div class="t_c_info mb-3 d-flex">
+                                            <div class="c_img">
+                                                <img src="{{ block.settings.image | img_url: '150x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                            </div>
+                                            {% if block.settings.text != blank %}
+                                                <div class="c_desc ps-2">
+                                                    {{ block.settings.text 
+                                                    | replace:  '<strong>', '<span>' 
+                                                    | replace:  '</strong>', '</span>' 
+                                                    }}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    {% else %}
+                                        <div class="t_c_info d-flex t_c_right">
+                                            {% if block.settings.text != blank %}
+                                                <div class="c_desc pe-2 text-end">
+                                                    {{ block.settings.text 
+                                                    | replace:  '<strong>', '<span>' 
+                                                    | replace:  '</strong>', '</span>' 
+                                                    }}
+                                                </div>
+                                            {% endif %}
+                                            <div class="c_img">
+                                                <img src="{{ block.settings.image | img_url: '150x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            {%- endfor -%}
+                        </div>
+                        {% endif %}
+                    </div>                    
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="trusted_cl_m mb-2 mb-md-0">
+                        <div class="trusted_tag">
+                            <div class="t_like_img pe-2">
+                                <img src="{{ 'trusted_thumb.svg' | asset_url }}" alt="">
+                            </div>
+                            <p class="border-r pe-2">{{ section.settings.likes }}</p>
+                            <p class="px-2">{{ section.settings.views }}</p>
+                        </div>
+                        {% if section.settings.image %}
+                            <img class="img-fluid t_m_img" src="{{ section.settings.image | img_url: '600x' }}" alt="{{ section.settings.image.alt | escape }}">
+                        {% endif %}
+
+                        {% if section.settings.video_url != blank %}
+                            <div class="play_btn">
+                                <a class="popup-youtube" rel="nofollow" href="{{ section.settings.video_url }}">
+                                    <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
+                                        <h6>{{ section.settings.video_label }}</h6>
+                                    </span>
+                                </a>
+                            </div>   
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if videos_count > 0 %}
+        <div class="container">
+            <div class="trusted_wrapper py-5">
+                <div class="swiper dot_pagination trustedSwipper twa__swiper" 
+                    id="twa__swiper-trustedSwipper"
+                    data-section-id="trustedSwipper" 
+                    data-autoplay="false" 
+                    data-loop="false"
+                    data-centerslide="false" 
+                    data-mobile="1" 
+                    data-tablet="3" 
+                    data-desktop="3" 
+                    data-spacing="20"
+                    data-arrowleft="trustedSwipper-swiper-prev" 
+                    data-arrowright="trustedSwipper-swiper-next">
+                    <div class="swiper-wrapper">
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'video' %}
+                                <div class="swiper-slide">
+                                    <div class="trust_item">
+                                        {% if block.settings.image != blank %}
+                                            <div class="trust_img">
+                                                <img class="img-fluid" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                                {% if block.settings.video_url != blank and block.settings.wistia_id == blank %}
+                                                    <div class="play_btn">
+                                                        <a class="popup-youtube {% if template == 'index' %}popyoutube_original_dermatologist{% endif %}" href="{{ block.settings.video_url }}">
+                                                            <span>
+                                                                <img src="{{ 'trusted_play.svg' | asset_url }}" alt="" class="w-auto">
+                                                                <h6>{{ block.settings.video_label }}</h6>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                {% endif %}
+                                                {% if block.settings.wistia_id != blank and block.settings.video_url == blank %}
+                                                    <div class="play_btn">
+                                                        <a class="popup-youtube">
+                                                            <div class="wistia_responsive_padding" style="position:relative;">
+                                                                <div class="wistia_responsive_wrapper"
+                                                                    style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                                    <span
+                                                                        class="wistia_embed wistia_async_{{ block.settings.wistia_id }} popover=true videoFoam=true"
+                                                                        style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+                                                                </div>
+                                                                <span><img src="{{ 'trusted_play.svg' | asset_url }}" alt="" class="w-auto">
+                                                                    <h6>{{ block.settings.video_label }}</h6>
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                                                {% endif %}
+                                            </div> 
+                                        {% endif %}
+        
+                                        {% if block.settings.text != blank %}
+                                            <div class="trust_item_info">
+                                                <div class="quote {% if template == 'index' %}quote_original_dermatologist {% endif %}">
+                                                    <img src="{{ 'quote.svg' | asset_url }}" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="result_content">
+                                                    {{ block.settings.text }}
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+            
+                                </div>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+<!-- -- trusted section end -- -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.trusted.name",
+        "class": "section-trusted",
+        "settings": [
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "trusted_bl"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading_reduced",
+                "label": "Heading Reduced"
+            },
+            {
+                "type": "text",
+                "id": "likes",
+                "label": "t:common.likes.label"
+            },
+            {
+                "type": "text",
+                "id": "views",
+                "label": "t:common.views.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "text",
+                "id": "video_url",
+                "label": "t:common.video.url.label"
+            },
+            {
+                "type": "text",
+                "id": "video_label",
+                "label": "t:common.video.cta.label",
+                "default": "Click To Watch Review"
+            },
+            {
+                "type": "header",
+                "content": "Dermatologist home page",
+                "info": "This is the dermatologist section for the home page."
+            },
+            {
+                "type": "header",
+                "content": "left side",
+                "info": "left side"
+            },
+            {
+                "type": "image_picker",
+                "id": "dermatoglis_check",
+                "label": "dermatoglist check image"
+            },
+            {
+                "type": "text",
+                "id": "dermatoglist_check_text",
+                "label": "dermatoglist check text",
+                "default": "Trusted and recommended by world leading Dermatologists"
+            },
+            {
+                "type": "richtext",
+                "id": "dermatoglist_left_subtext",
+                "label": "dermatoglistleft subtext"
+            },
+            {
+                "type": "header",
+                "content": "right side",
+                "info": "right side"
+            },
+            {
+                "type": "image_picker",
+                "id": "dermatoglist_right_image",
+                "label": "dermatoglis image"
+            },
+            {
+                "type": "text",
+                "id": "dermatoglist_right_name",
+                "label": "dermatoglist name",
+                "default": "Dr Shah, MD"
+            },
+            {
+                "type": "text",
+                "id": "dermatoglist_right_especiality",
+                "label": "dermatoglist especiality",
+                "default": "Board certified dermatologist"
+            },
+            {
+                "type": "image_picker",
+                "id": "dermatoglist_right_play",
+                "label": "dermatoglist play icon"
+            },
+            {
+                "type": "text",
+                "id": "dermatoglist_right_video_url",
+                "label": "dermatoglist right video url",
+                "default": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "feedback",
+                "name": "t:common.feedback.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "limit": 12,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_url",
+                        "label": "t:common.video.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_label",
+                        "label": "t:common.video.cta.label",
+                        "default": "Watch Video"
+                    },
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.trusted.name",
+                "settings": {
+                    "heading": "Trusted and recommended by world leading Dermatologists",
+                    "likes": "4.8K",
+                    "views": "192K views",
+                    "image": "shopify:\/\/shop_images\/trusted_2.jpg",
+                    "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+                },
+                "blocks": [
+                    {
+                        "type": "feedback",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/cl_shah.webp",
+                            "text": "<p>\"The <strong>best LED mask the market<\/strong> in my opinion at this time,that being said you do need to use this consistently to see results...\"<\/p><h6><strong>Dr Shah, MD Certified<\/strong> Dermatologist<\/h6>"
+                        }
+                    },
+                    {
+                        "type": "feedback",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/cl_max.webp",
+                            "text": "<p>\"<strong>The Qure mask wins<\/strong> the LED device mask went off..\"<\/p><h6><strong>Dr Maxfield, MD<\/strong> Certified Dermatologist<\/h6>"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/trusted_shah_max.jpg",
+                            "text": "<p>\"This will definitely work and there have been studies to show that<br\/>this will definitely work...\"<\/p><h6><strong>Dr Shah & Dr Maxfield<\/strong>, Certified Dermatologist<br\/>                                    <\/h6>",
+                            "video_url": "https:\/\/www.youtube.com\/watch?v=JPWycy8cwN8"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/trusted_maren.webp",
+                            "text": "<p>\"There are actually many of these on the market but I love this one<br\/>for several reasons. It's well made, it has a comfortable adjustable<br\/>headband, it comes with an app..\"<\/p><h6><strong>Dr. Maren Locke<\/strong>, Board Certified Dermatologist<br\/>                                    <\/h6>",
+                            "video_url": "https:\/\/www.youtube.com\/watch?v=DvA8FkhJqso"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/trusted_maxfield.webp",
+                            "text": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"<\/p><h6><strong>Dr. Maxfield<\/strong>, Board Certified Dermatologist<\/h6>",
+                            "video_url": "https:\/\/www.youtube.com\/watch?v=AeksxRPZyrA"
+                        }
+                    },    
+                    {
+                        "type": "video",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/trusted_greeney.webp",
+                            "text": "<p>\"Qure's anti-ageing treatment gets down deep into your skin to<br\/>stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles.\"<\/p><h6><strong>Dr Greeney<\/strong>, Board Certified Dermatologist<\/h6>",
+                            "video_url": "https:\/\/www.youtube.com\/watch?v=1iXBgh7WPOY"
+                        }
+                    }       
+                ]
+			}
+        ]
+    }
+{% endschema %}

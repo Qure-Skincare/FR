@@ -1,0 +1,49 @@
+<div id="announcement_bar_replaced" style="display: none;">
+    <p>
+        {{ section.settings.heading |  replace: '<p>', '' |  replace: '</p>', '' }}
+        {% if section.settings.button_label %}
+            <a href="{{ section.settings.button_url }}" aria-label="{{ section.settings.button_label | escape }}" class="bar_shop-btn text-white">{{ section.settings.button_label }}</a>
+        {% endif %}
+    </p>
+</div>
+
+<script>
+    const targetDiv = document.querySelector(".announcement_bar");
+    const sourceDiv = document.getElementById("announcement_bar_replaced");
+
+    if (sourceDiv && targetDiv) {
+        targetDiv.innerHTML = sourceDiv.innerHTML;
+    }
+</script>
+
+
+{% schema %}
+    {
+        "name": "t:sections.header.blocks.announcement.name",
+        "class": "section-header-sales",
+        "settings": [
+            {
+                "type" : "richtext",
+                "id" : "heading",
+                "label" : "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "t:common.button.label",
+                "info": "t:common.button.info"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.header.blocks.announcement.name"
+			}
+        ]       
+    }
+{% endschema %}

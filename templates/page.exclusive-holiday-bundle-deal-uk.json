@@ -1,0 +1,1992 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header_sales": {
+      "type": "header-sales",
+      "blocks": {
+        "announcement_JyMH8T": {
+          "type": "announcement",
+          "settings": {
+            "heading": "Limited Time Only:",
+            "timer": "2025-03-07T23:59:59",
+            "timer_next": 7
+          }
+        },
+        "navigation_link_4YHENL": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "SHOP BUNDLES",
+            "link_url": "#bf-bundles",
+            "image": "shopify://shop_images/header_1.webp"
+          }
+        },
+        "navigation_link_4hxD8e": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "RESULTS",
+            "link_url": "#result_section",
+            "image": "shopify://shop_images/header_2.webp"
+          }
+        },
+        "navigation_link_qcGPUL": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCTS",
+            "link_url": "#skin_promise",
+            "image": "shopify://shop_images/header_3.webp"
+          }
+        },
+        "navigation_link_rmYfWw": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQs",
+            "link_url": "#faq_section",
+            "image": "shopify://shop_images/header_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_JyMH8T",
+        "navigation_link_4YHENL",
+        "navigation_link_4hxD8e",
+        "navigation_link_qcGPUL",
+        "navigation_link_rmYfWw"
+      ],
+      "settings": {
+        "button_label": "SAVE UP TO 55%",
+        "button_url": "#bf-bundles"
+      }
+    },
+    "header": {
+      "type": "exclusive-holiday-bundle-deal-header",
+      "blocks": {
+        "badge_bNNHbU": {
+          "type": "badge",
+          "settings": {
+            "heading": "HOLIDAY",
+            "text": "BUNDLES",
+            "color_main": "#c4121a",
+            "color": "#0a0a0a"
+          }
+        },
+        "link_Xz3LeQ": {
+          "type": "link",
+          "settings": {
+            "link_label": "Shop & SAVE UP TO 55%",
+            "link_label_mobile": "Shop & SAVE UP TO 55%",
+            "link_url": "#bf-bundles"
+          }
+        },
+        "product_L8TbkG": {
+          "type": "product",
+          "settings": {
+            "heading": "Mother's day bundle",
+            "discount": 60,
+            "image": "shopify://shop_images/MD-Bundle-hero.png",
+            "product_url": "#mothers-day-bundle-1"
+          }
+        },
+        "product_YzAr6q": {
+          "type": "product",
+          "settings": {
+            "heading": "Line Refine Bundle Pro",
+            "discount": 47,
+            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_NEWslider.png",
+            "product_url": "#line-refine-bundle-pro"
+          }
+        },
+        "product_iEprpi": {
+          "type": "product",
+          "settings": {
+            "heading": "Line Refine Bundle Advanced",
+            "discount": 55,
+            "image": "shopify://shop_images/Line_Refine_Bundle_Advanced_NEW_slider_191680ce-254a-45e0-a8fb-25a94f523af6.png",
+            "product_url": "#line-refine-bundle-advanced-1"
+          }
+        },
+        "product_QVwGAe": {
+          "type": "product",
+          "settings": {
+            "heading": "Line Refine Bundle Essentials",
+            "discount": 32,
+            "image": "shopify://shop_images/bf_mh_3.webp",
+            "product_url": "#line-refine-bundle-essentials"
+          }
+        },
+        "product_exRwKt": {
+          "type": "product",
+          "settings": {
+            "heading": "Fade & Firm Bundle Pro",
+            "discount": 55,
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Pro1.png",
+            "product_url": "#fade-firm-bundle-pro"
+          }
+        },
+        "product_AKXwNe": {
+          "type": "product",
+          "settings": {
+            "heading": "Fade & Firm Bundle Advanced",
+            "discount": 43,
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_sliderNEW.png",
+            "product_url": "#fade-firm-bundle-advance"
+          }
+        },
+        "product_rep6dJ": {
+          "type": "product",
+          "settings": {
+            "heading": "Fade & Firm Bundle Essentials",
+            "discount": 55,
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Essentials3.png",
+            "product_url": "#fade-firm-bundle-essentials"
+          }
+        },
+        "product_D8AA7r": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infustion Limited Edition Bundle",
+            "discount": 52,
+            "image": "shopify://shop_images/bf_mh_7.webp",
+            "product_url": "#micro-infusion-limited-edition-bundle"
+          }
+        },
+        "product_VXCeRt": {
+          "type": "product",
+          "settings": {
+            "heading": "Filter Family Bundle",
+            "discount": 52,
+            "image": "shopify://shop_images/bf_mh_8.webp",
+            "product_url": "#filter-family-bundle"
+          }
+        },
+        "product_EkTrHA": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Pro",
+            "discount": 40,
+            "image": "shopify://shop_images/bf_mh_9.webp",
+            "product_url": "#breakout-control-pro-1"
+          }
+        },
+        "product_3EW9Y4": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Advanced",
+            "discount": 33,
+            "image": "shopify://shop_images/bf_mh_10.webp",
+            "product_url": "#breakout-control-advanced"
+          }
+        },
+        "product_MxRW8i": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Starter",
+            "discount": 52,
+            "image": "shopify://shop_images/bf_mh_11.webp",
+            "product_url": "#breakout-control-starter"
+          }
+        },
+        "product_LgpibG": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Essentials",
+            "discount": 30,
+            "image": "shopify://shop_images/bf_mh_12.webp",
+            "product_url": "#breakout-control-essentials"
+          }
+        }
+      },
+      "block_order": [
+        "badge_bNNHbU",
+        "link_Xz3LeQ",
+        "product_L8TbkG",
+        "product_YzAr6q",
+        "product_iEprpi",
+        "product_QVwGAe",
+        "product_exRwKt",
+        "product_AKXwNe",
+        "product_rep6dJ",
+        "product_D8AA7r",
+        "product_VXCeRt",
+        "product_EkTrHA",
+        "product_3EW9Y4",
+        "product_MxRW8i",
+        "product_LgpibG"
+      ],
+      "settings": {
+        "seo_heading": "",
+        "heading": "Save Up to 55% on \\n Certified Skincare Solutions",
+        "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals </strong>and <strong>scientific studies </strong>that prove; Qure’s skincare <strong>works.</strong></p>"
+      }
+    },
+    "icons_list": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_E3nayg": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/science-ftr-lg.svg",
+            "text": "<p>Science-Backed,</p><p>Dermatologist Approved</p>"
+          }
+        },
+        "icon_PKBzbi": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/derma-ft-lg.svg",
+            "text": "<p>Safe & Easy to</p><p>Use Devices</p>"
+          }
+        },
+        "icon_MAhtJW": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/money_time.svg",
+            "text": "<p>Saves You Time,</p><p>and Money</p>"
+          }
+        },
+        "icon_PncCDy": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/treat-skin-lg.svg",
+            "text": "<p>Treat Multiple</p><p>Skin Concerns</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_E3nayg",
+        "icon_PKBzbi",
+        "icon_MAhtJW",
+        "icon_PncCDy"
+      ],
+      "settings": {
+        "background": "bg-white"
+      }
+    },
+    "featuredin_extended": {
+      "type": "featuredin_extended",
+      "blocks": {
+        "text_hjVp7i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Treatment time is only three minutes—among the fastest \\n of all devices.\"</p>"
+          }
+        },
+        "image_XrzjQ3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womenshealth_e1cfba2e-29da-4232-9235-69184bd9d1a3.svg"
+          }
+        },
+        "text_t9tnXK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"A multi-use LED mask with five different light setting options to plump, smooth and rejuvenate all skin types.\"</p>"
+          }
+        },
+        "image_PmUxLt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-black_af7c0fb6-1535-4d44-b64c-b96b7d90bf08.svg"
+          }
+        },
+        "text_bxTn4H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”</p>"
+          }
+        },
+        "image_hNLLqX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan-black.svg"
+          }
+        },
+        "text_k6KEBE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The Qure mask is the FIRST mask in the world that adapts to your skin! ...There is an app that reminds you of the treatments too.”</p>"
+          }
+        },
+        "image_ebp8NW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/grazia_black.svg"
+          }
+        },
+        "text_Mnmb4P": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</p>"
+          }
+        },
+        "image_a8KMPg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gq_logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_hjVp7i",
+        "image_XrzjQ3",
+        "text_t9tnXK",
+        "image_PmUxLt",
+        "text_bxTn4H",
+        "image_hNLLqX",
+        "text_k6KEBE",
+        "image_ebp8NW",
+        "text_Mnmb4P",
+        "image_a8KMPg"
+      ],
+      "settings": {
+        "heading": "FEATURED IN",
+        "slider_type": "five_slides",
+        "slide_per_view_desktop": 3,
+        "slide_per_view_mobile": 3
+      }
+    },
+    "before-after": {
+      "type": "exclusive-holiday-bundle-deal-before-after",
+      "blocks": {
+        "icon_wb7PPj": {
+          "type": "icon",
+          "settings": {
+            "heading": "One-time investment",
+            "image": "shopify://shop_images/investment.svg"
+          }
+        },
+        "icon_8RMchx": {
+          "type": "icon",
+          "settings": {
+            "heading": "Incredibly convenient",
+            "image": "shopify://shop_images/convenient.svg"
+          }
+        },
+        "icon_6EgyHw": {
+          "type": "icon",
+          "settings": {
+            "heading": "Customized approach",
+            "image": "shopify://shop_images/customized.svg"
+          }
+        },
+        "icon_fNt3y4": {
+          "type": "icon",
+          "settings": {
+            "heading": "Better results",
+            "image": "shopify://shop_images/results.svg"
+          }
+        },
+        "object_iinakB": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item3_before.webp",
+            "after_text": "After 1 treatment",
+            "after_image": "shopify://shop_images/tr_item3_after.webp"
+          }
+        },
+        "object_rKT6dw": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item1_before.webp",
+            "after_text": "After 6 treatment",
+            "after_image": "shopify://shop_images/tr_item1_after.webp"
+          }
+        },
+        "object_H9wTAE": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item2_before.webp",
+            "after_text": "After 2 treatment",
+            "after_image": "shopify://shop_images/tr_item2_after.webp"
+          }
+        },
+        "object_7QbjiT": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item4_before.webp",
+            "after_text": "After 1 treatment",
+            "after_image": "shopify://shop_images/tr_item4_after.webp"
+          }
+        },
+        "object_9cTrHQ": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item5_before.webp",
+            "after_text": "After 6 treatment",
+            "after_image": "shopify://shop_images/tr_item5_after.webp"
+          }
+        },
+        "object_XYAjAV": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item6_before.webp",
+            "after_text": "After Qure",
+            "after_image": "shopify://shop_images/tr_item6_after.webp"
+          }
+        },
+        "link_fCqURh": {
+          "type": "link",
+          "settings": {
+            "link_label": "See Our Reviews",
+            "link_label_mobile": "See Our Reviews",
+            "link_url": "#bf_reviews"
+          }
+        }
+      },
+      "block_order": [
+        "icon_wb7PPj",
+        "icon_8RMchx",
+        "icon_6EgyHw",
+        "icon_fNt3y4",
+        "object_iinakB",
+        "object_rKT6dw",
+        "object_H9wTAE",
+        "object_7QbjiT",
+        "object_9cTrHQ",
+        "object_XYAjAV",
+        "link_fCqURh"
+      ],
+      "settings": {
+        "heading": "200,000+ CONFIDENT customers",
+        "text": "<p>Top-rated products at <em>best prices.</em></p>"
+      }
+    },
+    "bundles-header": {
+      "type": "exclusive-holiday-bundle-deal-bundles-header",
+      "blocks": {
+        "badge_TwBcgj": {
+          "type": "badge",
+          "settings": {
+            "heading": "HOLIDAY",
+            "text": "BUNDLES",
+            "color_main": "#c4121a",
+            "color": "#0a0a0a"
+          }
+        },
+        "object_pBAeDi": {
+          "type": "object",
+          "settings": {
+            "text": "<p>Signs of Aging, Wrinkles & Fine Lines</p>",
+            "image": "shopify://shop_images/bf-ftr-aging.svg",
+            "link_url": "#Pro-Aging-Bundles"
+          }
+        },
+        "object_kbrVPD": {
+          "type": "object",
+          "settings": {
+            "text": "<p>Dark Spots, Wrinkles \\n & Fine Lines</p>",
+            "image": "shopify://shop_images/bf-ftr-wrinkles.svg",
+            "link_url": "#Pro-Aging-&-Dark-Spots-Bundles"
+          }
+        },
+        "object_MU6PFN": {
+          "type": "object",
+          "settings": {
+            "text": "<p>Acne & Breakouts</p>",
+            "image": "shopify://shop_images/bf-ftr-acne.svg",
+            "link_url": "#Acne-Bundles"
+          }
+        }
+      },
+      "block_order": [
+        "badge_TwBcgj",
+        "object_pBAeDi",
+        "object_kbrVPD",
+        "object_MU6PFN"
+      ],
+      "settings": {
+        "heading": "Choose your bundle.",
+        "subheading": "Long term healthy skin and better self-esteem starts here.",
+        "text": "<p>Shop by concern</p>"
+      }
+    },
+    "bundles-list": {
+      "type": "exclusive-holiday-bundle-deal-bundles-list",
+      "blocks": {
+        "icon_AcpYLG": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Reduces wrinkles \\n & fine lines</p>",
+            "image": "shopify://shop_images/bf-ftr-eye-wrinkles.svg"
+          }
+        },
+        "icon_f36jbE": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Boosts collagen</p>",
+            "image": "shopify://shop_images/bf-ftr-collagen.svg"
+          }
+        },
+        "icon_eUd4zy": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Promotes firmer, \\n youthful-looking skin</p>",
+            "image": "shopify://shop_images/bf-ftr-firmer.svg"
+          }
+        },
+        "bundle_7pMMc9": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_WbmMAY": {
+          "type": "product",
+          "settings": {
+            "product": "mothers-day-bundle-1",
+            "percent": 30,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_yy7k3x": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles + Rejuvenation) ",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_3-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Rejuvenation</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_XHK4Kg": {
+          "type": "include",
+          "settings": {
+            "heading": "Silk Pillowcase",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/silk_pillow_product.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_QQ6ykk": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion 3 Month Bundle</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Easily purchase 3 month refills via our website.</li></ul>"
+          }
+        },
+        "bundle_pxhMjY": {
+          "type": "bundle",
+          "disabled": true,
+          "settings": {}
+        },
+        "product_Qck4qG": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "exclusive",
+            "percent": 57,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_njjqWt": {
+          "type": "include",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infusion 2 Month Bundle (For Wrinkles + Dark Spots)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/2monthmix_1_0201c796-fb83-44b6-a71b-800e642105a7_1.png",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_xEBYB3": {
+          "type": "include",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Refill (For Dark Spots)  FREE",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/3monthrefilldarkspots_dcb3e6df-a294-40f8-afc5-ead3f74b22c1.png",
+            "text": "<h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_qEXdXL": {
+          "type": "how-to-use",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion 5 Month Bundle</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Use the 3 month refills after 2 month bundle.</li></ul>"
+          }
+        },
+        "bundle_wpXFFy": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_aL9V3J": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-pro",
+            "percent": 26,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
+            "recommended_text": "<p>\"I recommend this treatment to so many of my patients who are looking for a glowing, fresh looking complexion\"</p>",
+            "recommended_image": "shopify://shop_images/cl_shah.webp",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_cUEVxj": {
+          "type": "include",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_mask.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_qYtiG6": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_blue-patches.webp",
+            "text": "<h5>MICRO-INFUSION TARGETED PATCHES INGREDIENTS:</h5><p>Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin, Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil, Allantoin, Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica Extract, Acetyl Hexapeptide-8, BHT.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_tCtYLH": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles + Dark Spots) ",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_3-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_WjUYK3": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_mask.svg",
+            "text": "<h5>Q-Rejuvalight Pro LED Mask </h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+          }
+        },
+        "how_to_use_3PL3Dh": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_patches_sm.svg",
+            "text": "<h5>Micro-Infusion Targeted Patches </h5><ul><li>Use twice a week.</li><li>Apply to 11 lines, crow’s feet, under eye or laugh lines and leave overnight or for 2 hours.</li></ul>"
+          }
+        },
+        "how_to_use_R4tTKt": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion 3 Month Bundle</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Easily purchase 3 month refills via our website.</li></ul>"
+          }
+        },
+        "bundle_Aem3Hy": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_V9XtBw": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-advanced-1",
+            "percent": 35,
+            "media_limit": 0,
+            "hide_us": true,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_6xfjCG": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles + Dark Spots) ",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_3-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_bb8X96": {
+          "type": "include",
+          "settings": {
+            "heading": "Faucet Filter",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_faucet.webp",
+            "text": "",
+            "count": "23 left",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_wHCyJt": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm_4425a83b-96a8-43e9-95d3-fff35b157c82.svg",
+            "text": "<h5>Micro-Infusion 3 Month Bundle</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Easily purchase 3 month refills via our website.</li></ul>"
+          }
+        },
+        "how_to_use_RGeRNi": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_faucet_filter.svg",
+            "text": "<h5>Faucet Filter</h5><ul><li>Install the Qure Faucet Filter on your faucet.</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+          }
+        },
+        "bundle_prQmHa": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_PwLMAA": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-essentials",
+            "percent": 37,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_BptJE4": {
+          "type": "include",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs__one.webp",
+            "text": "<h5>All-In-One Face Serum Full Ingredients List</h5><p>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.</p><p>Water, Glycerin, Propanediol, Caprylic/Capric Triglyceride, Maltodextrin, Sodium Acrylates, Copolymer, Niacinamide, Bakuchiol, 3-O-Ethyl Ascorbic Acid, Glycine Soja (Soybean) Oil, Sucrose Dilaurate, Retinyl Palmitate, Lactic Acid, 1,2-Hexanediol, Glyceryl Oleate Citrate, Caprylyl Glycol, Tocopheryl Acetate, Lecithin, Polyacrylate-13, Retinol, Sodium Hydroxide, Sodium Cocoyl Glutamate, Polyisobutene, Ferulic Acid, Pentaerythrityl Tetra-Di-T-Butyl, Hydroxyhydrocinnamate, Mandelic Acid, Pisum Sativum (Pea) Extract, Artemisia Umbelliformis Flower Extract, Boswellia Serrata Resin Extract, Polysorbate 20, Sorbitan Isostearate, Sodium Benzoate, Potassium Sorbate, Ganoderma Lucidum (Mushroom) Extract, Tropolone, Camellia Sinensis Leaf, Tocopherol, Citric Acid, Acetyl Hexapeptide-8, Terminalia Ferdinandiana Fruit Extract, BHT, Hyaluronic Acid, Ginkgo Biloba Leaf Extract.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_pLcfQn": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_blue-patches_63ddb186-2ec2-4ad0-b37e-80e6a81340fb.webp",
+            "text": "<h5>MICRO-INFUSION TARGETED PATCHES INGREDIENTS:</h5><p>Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin, Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil, Allantoin, Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica Extract, Acetyl Hexapeptide-8, BHT.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_xKrmMc": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_all-in-one.svg",
+            "text": "<h5>All-In-One Face Serum</h5><ul><li>After cleansing, apply 1-2 pumps on the face and neck. Follow with moisturizer.</li></ul>"
+          }
+        },
+        "how_to_use_afmnQY": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_patches_sm_60e1c80a-3980-4bc0-ba25-46ac31703fc0.svg",
+            "text": "<h5>Micro-Infusion Targeted Patches</h5><ul><li>Use twice a week.</li><li>Apply to either 11 lines, crow’s feet, under eye or laugh lines and leave overnight or for 2 hours.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_AcpYLG",
+        "icon_f36jbE",
+        "icon_eUd4zy",
+        "bundle_7pMMc9",
+        "product_WbmMAY",
+        "include_yy7k3x",
+        "include_XHK4Kg",
+        "how_to_use_QQ6ykk",
+        "bundle_pxhMjY",
+        "product_Qck4qG",
+        "include_njjqWt",
+        "include_xEBYB3",
+        "how_to_use_qEXdXL",
+        "bundle_wpXFFy",
+        "product_aL9V3J",
+        "include_cUEVxj",
+        "include_qYtiG6",
+        "include_tCtYLH",
+        "how_to_use_WjUYK3",
+        "how_to_use_3PL3Dh",
+        "how_to_use_R4tTKt",
+        "bundle_Aem3Hy",
+        "product_V9XtBw",
+        "include_6xfjCG",
+        "include_bb8X96",
+        "how_to_use_wHCyJt",
+        "how_to_use_RGeRNi",
+        "bundle_prQmHa",
+        "product_PwLMAA",
+        "include_BptJE4",
+        "include_pLcfQn",
+        "how_to_use_xKrmMc",
+        "how_to_use_afmnQY"
+      ],
+      "settings": {
+        "heading": "Pro-Aging Bundles",
+        "subheading": "These bundles are specifically designed to target signs of aging, fine lines, wrinkles.",
+        "supertop": ""
+      }
+    },
+    "bundles-list2": {
+      "type": "exclusive-holiday-bundle-deal-bundles-list",
+      "blocks": {
+        "icon_cUYtN8": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Fades dark spots \\n & hyperpigmentation</p>",
+            "image": "shopify://shop_images/bf-ftr-spots.svg"
+          }
+        },
+        "icon_pJYb6C": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Reduces fine lines \\n & wrinkles</p>",
+            "image": "shopify://shop_images/bf-ftr-wrinkle.svg"
+          }
+        },
+        "icon_qtG47t": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Boosts collagen for \\n firmer skin</p>",
+            "image": "shopify://shop_images/bf-ftr-collagen-firmer-skin.svg"
+          }
+        },
+        "icon_N9jFTC": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Brightens & promotes \\n even skin tone</p>",
+            "image": "shopify://shop_images/bf-ftr-collagen-brightens.svg"
+          }
+        },
+        "bundle_yGpQVX": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_nxKMQa": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-pro",
+            "percent": 22,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_VKW6eX": {
+          "type": "include",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_mask.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_fqrYQr": {
+          "type": "include",
+          "settings": {
+            "heading": "Neck & Décolletage LED Device",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_decolletage.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_3nrQQz": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles + Dark Spots)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_3-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_ty9cVM": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_mask.svg",
+            "text": "<h5>Q-Rejuvalight Pro LED Mask </h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+          }
+        },
+        "how_to_use_EYwGQF": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_neck.svg",
+            "text": "<h5>Neck & Décolletage LED Device</h5><ul><li>Use it 3-5 times a week.</li><li>Adjust strap to fit neck and décolletage, wear it for just 10 minutes.</li></ul>"
+          }
+        },
+        "how_to_use_iCBfwQ": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion 3 month Bundle (For Dark Spots)</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Easily purchase refills via our website.</li></ul>"
+          }
+        },
+        "bundle_KekEX9": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_Ma7cwR": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-advance",
+            "percent": 21,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "<p><strong>Dr. Prem Tripathi, </strong>Certified Plastic Surgeon</p>",
+            "recommended_text": "<p>“I’ve noticed improvements in pore size, texture and complexion. Qure delivered!”</p>",
+            "recommended_image": "shopify://shop_images/advisor_4.webp",
+            "is_top_rated": true,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_HPFaWV": {
+          "type": "include",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_mask.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_4RreaF": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles + Dark Spots) ",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_3-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_PMEwFA": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_mask.svg",
+            "text": "<h5>Q-Rejuvalight Pro LED Mask </h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+          }
+        },
+        "how_to_use_gUwwRM": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion 3 month Bundle </h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight.</li><li>Easily purchase refills via our website.</li></ul>"
+          }
+        },
+        "bundle_qHWDix": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_wTXBQt": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-essentials",
+            "percent": 27,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_Ggpxqa": {
+          "type": "include",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles + Dark Spots)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_3-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p><h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_zUz8Fx": {
+          "type": "include",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs__one.webp",
+            "text": "<h5>All-In-One Face Serum Full Ingredients List</h5><p>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.</p><p>Water, Glycerin, Propanediol, Caprylic/Capric Triglyceride, Maltodextrin, Sodium Acrylates, Copolymer, Niacinamide, Bakuchiol, 3-O-Ethyl Ascorbic Acid, Glycine Soja (Soybean) Oil, Sucrose Dilaurate, Retinyl Palmitate, Lactic Acid, 1,2-Hexanediol, Glyceryl Oleate Citrate, Caprylyl Glycol, Tocopheryl Acetate, Lecithin, Polyacrylate-13, Retinol, Sodium Hydroxide, Sodium Cocoyl Glutamate, Polyisobutene, Ferulic Acid, Pentaerythrityl Tetra-Di-T-Butyl, Hydroxyhydrocinnamate, Mandelic Acid, Pisum Sativum (Pea) Extract, Artemisia Umbelliformis Flower Extract, Boswellia Serrata Resin Extract, Polysorbate 20, Sorbitan Isostearate, Sodium Benzoate, Potassium Sorbate, Ganoderma Lucidum (Mushroom) Extract, Tropolone, Camellia Sinensis Leaf, Tocopherol, Citric Acid, Acetyl Hexapeptide-8, Terminalia Ferdinandiana Fruit Extract, BHT, Hyaluronic Acid, Ginkgo Biloba Leaf Extract.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_DM6a6f": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion 3 month Bundle</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight.</li><li>Easily purchase refills via our website.</li></ul>"
+          }
+        },
+        "how_to_use_HcyFAf": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_all-in-one.svg",
+            "text": "<h5>All-In-One Face Serum</h5><ul><li>After cleansing, apply 1-2 pumps on the face and neck. Follow with moisturizer.</li></ul>"
+          }
+        },
+        "bundle_a6nwmz": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_EFMaH4": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-limited-edition-bundle",
+            "percent": 22,
+            "default_variant_id": 45991849787631,
+            "media_limit": 3,
+            "hide_us": false,
+            "recommended_heading": "<p><strong>Dr Alexis Stephens</strong>, Certified Dermatologist</p>",
+            "recommended_text": "<p>“Get a Clinical treatment at home safely and conveniently. It is particularly beneficial for those with melanin-rich skin.”</p>",
+            "recommended_image": "shopify://shop_images/advisor_3.webp",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_tgp4T4": {
+          "type": "include",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infusion 3 Month (for Wrinkles)",
+            "is_limited": true,
+            "type": "Wrinkles",
+            "image": "shopify://shop_images/bfs_blue-serum.webp",
+            "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_3UkLee": {
+          "type": "include",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infusion 3 Month (for Dark spots)",
+            "is_limited": false,
+            "type": "Dark Spots",
+            "image": "shopify://shop_images/bfs_serumY.webp",
+            "text": "<h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
+            "count": "",
+            "hide": true,
+            "hide_variants": true,
+            "code": ""
+          }
+        },
+        "include_w47PPq": {
+          "type": "include",
+          "disabled": true,
+          "settings": {
+            "heading": "Dermal Mist (15ml)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs-derma-mist.webp",
+            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating</p><h5>Dermal Mist Ingredients List</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_FgpHYK": {
+          "type": "how-to-use",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/bfs_mi_sm.svg",
+            "text": "<h5>Micro-Infusion Limited Edition 3 Month</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight.</li></ul>"
+          }
+        },
+        "how_to_use_jqyVqL": {
+          "type": "how-to-use",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
+            "text": "<h5>Dermal Mist (15ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed. Use before Micro-Infusion to reduce impurities and bacteria.</li></ul>"
+          }
+        },
+        "bundle_tH7rJq": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_XAGVMm": {
+          "type": "product",
+          "settings": {
+            "product": "filter-family-bundle",
+            "percent": 28,
+            "default_variant_id": 45909771124975,
+            "media_limit": 0,
+            "hide_us": true,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_JqVB3H": {
+          "type": "include",
+          "settings": {
+            "heading": "Faucet Filter",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_faucet.webp",
+            "text": "",
+            "count": "23 left",
+            "hide": false,
+            "hide_variants": false,
+            "code": "<div class=\"bfs_tbx_color\">\n                                                <select class=\"form-select form-select-first colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>White</option>\n                                                    <option value=\"2\">Black</option>\n                                                </select>\n                                            </div>"
+          }
+        },
+        "include_7m63wA": {
+          "type": "include",
+          "settings": {
+            "heading": "Shower Filter",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_shower_f.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": "<div class=\"bfs_tbx_color\">\n                                                <select class=\"form-select form-select-second colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>White</option>\n                                                    <option value=\"2\">Black</option>\n                                                </select>\n                                            </div>"
+          }
+        },
+        "how_to_use_gTbzw8": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_faucet_filter.svg",
+            "text": "<h5>Faucet Filter</h5><ul><li>Install the Qure Faucet Filter on your faucet.</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+          }
+        },
+        "how_to_use_bbae8X": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_shower_f_sm.svg",
+            "text": "<h5>Shower Filter</h5><ul><li>Remove your original shower head and screw on the Qure Shower Filter</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_cUYtN8",
+        "icon_pJYb6C",
+        "icon_qtG47t",
+        "icon_N9jFTC",
+        "bundle_yGpQVX",
+        "product_nxKMQa",
+        "include_VKW6eX",
+        "include_fqrYQr",
+        "include_3nrQQz",
+        "how_to_use_ty9cVM",
+        "how_to_use_EYwGQF",
+        "how_to_use_iCBfwQ",
+        "bundle_KekEX9",
+        "product_Ma7cwR",
+        "include_HPFaWV",
+        "include_4RreaF",
+        "how_to_use_PMEwFA",
+        "how_to_use_gUwwRM",
+        "bundle_qHWDix",
+        "product_wTXBQt",
+        "include_Ggpxqa",
+        "include_zUz8Fx",
+        "how_to_use_DM6a6f",
+        "how_to_use_HcyFAf",
+        "bundle_a6nwmz",
+        "product_EFMaH4",
+        "include_tgp4T4",
+        "include_3UkLee",
+        "include_w47PPq",
+        "how_to_use_FgpHYK",
+        "how_to_use_jqyVqL",
+        "bundle_tH7rJq",
+        "product_XAGVMm",
+        "include_JqVB3H",
+        "include_7m63wA",
+        "how_to_use_gTbzw8",
+        "how_to_use_bbae8X"
+      ],
+      "settings": {
+        "heading": "Pro-Aging & Dark Spots Bundles",
+        "subheading": "These bundles are specifically designed to target signs of aging and fade dark spots. ",
+        "supertop": ""
+      }
+    },
+    "bundles-list3": {
+      "type": "exclusive-holiday-bundle-deal-bundles-list",
+      "blocks": {
+        "icon_dLrXUB": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Eliminates bacteria \\n without irritating skin</p>",
+            "image": "shopify://shop_images/bf-ftr-bacteria.svg"
+          }
+        },
+        "icon_emhKiz": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Clears acne, pimples, \\n and blemishes</p>",
+            "image": "shopify://shop_images/bf-ftr-acne-pimples.svg"
+          }
+        },
+        "icon_jnweAT": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Prevents future breakouts \\n before they happen</p>",
+            "image": "shopify://shop_images/bf-ftr-breakouts.svg"
+          }
+        },
+        "icon_AQFi8V": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Calms and soothes \\n redness</p>",
+            "image": "shopify://shop_images/bf-ftr-soothes.svg"
+          }
+        },
+        "bundle_CwjkD3": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_qWAyap": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-pro-1",
+            "percent": 27,
+            "default_variant_id": 45970548883695,
+            "media_limit": 0,
+            "hide_us": true,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": true,
+            "preorder_text": "SHIPS MID APRIL",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_AJjjKi": {
+          "type": "include",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_mask.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": true,
+            "code": ""
+          }
+        },
+        "include_4wQdLg": {
+          "type": "include",
+          "settings": {
+            "heading": "Faucet Filter",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_faucet.webp",
+            "text": "",
+            "count": "23 left",
+            "hide": false,
+            "hide_variants": false,
+            "code": "<div class=\"bfs_tbx_color\">\n    <select class=\"form-select colorSelector\" aria-label=\"Default select example\">\n        <option value=\"1\" selected=\"\">White</option>\n        <option value=\"2\">Black</option>\n    </select>\n</div>"
+          }
+        },
+        "include_e4Mq9A": {
+          "type": "include",
+          "settings": {
+            "heading": "Dermal Mist (120ml)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs-derma-mist.webp",
+            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating</p><h5>Dermal Mist Ingredients List</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
+            "count": "Ships Mid April",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_7jAfUt": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_mask.svg",
+            "text": "<h5>Q-Rejuvalight Pro LED Mask </h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+          }
+        },
+        "how_to_use_jmgmhy": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_faucet_filter.svg",
+            "text": "<h5>Faucet Filter</h5><ul><li>Install the Qure Faucet Filter on your faucet.</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+          }
+        },
+        "how_to_use_PeiBgM": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
+            "text": "<h5>Dermal Mist (120ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed.</li></ul>"
+          }
+        },
+        "bundle_tiDNpw": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_J9nF8T": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-advanced",
+            "percent": 31,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": true,
+            "is_preorder": true,
+            "preorder_text": "SHIPS MID APRIL",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_KnwEmf": {
+          "type": "include",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_mask.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_gNNy6j": {
+          "type": "include",
+          "settings": {
+            "heading": "Dermal Mist (120ml)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs-derma-mist.webp",
+            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating.</p><h5>Dermal Mist Ingredients</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
+            "count": "Ships Mid April",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_cNYQy6": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_mask.svg",
+            "text": "<h5>Q-Rejuvalight Pro LED Mask</h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+          }
+        },
+        "how_to_use_rgHP8b": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
+            "text": "<h5>Dermal Mist (120ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed.</li></ul>"
+          }
+        },
+        "bundle_3RY7qF": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_qM8ypV": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-starter",
+            "percent": 28,
+            "default_variant_id": 45909844787439,
+            "media_limit": 0,
+            "hide_us": true,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": false,
+            "preorder_text": "",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_hxkWTR": {
+          "type": "include",
+          "settings": {
+            "heading": "Faucet Filter",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_faucet.webp",
+            "text": "",
+            "count": "23 left",
+            "hide": false,
+            "hide_variants": false,
+            "code": "<div class=\"bfs_tbx_color\">\n                                                <select id=\"for\" class=\"form-select form-select-first colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>White</option>\n                                                    <option value=\"2\">Black</option>\n                                                </select>\n                                            </div>"
+          }
+        },
+        "include_nwb4HD": {
+          "type": "include",
+          "settings": {
+            "heading": "Shower Filter",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs_shower_f.webp",
+            "text": "",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": "<div class=\"bfs_tbx_color\">\n                                                <select class=\"form-select form-select-second colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>White</option>\n                                                    <option value=\"2\">Black</option>\n                                                </select>\n                                            </div>"
+          }
+        },
+        "how_to_use_8WVeGb": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_faucet_filter.svg",
+            "text": "<h5>Faucet Filter</h5><ul><li>Install the Qure Faucet Filter on your faucet.</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+          }
+        },
+        "how_to_use_DiytkL": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_shower_f_sm.svg",
+            "text": "<h5>Shower Filter</h5><ul><li>Remove your original shower head and screw on the Qure Shower Filter</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+          }
+        },
+        "bundle_JmXcGE": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "product_7WkERC": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-essentials",
+            "percent": 29,
+            "media_limit": 0,
+            "hide_us": false,
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": true,
+            "preorder_text": "SHIPS MID APRIL",
+            "classname": "",
+            "code": ""
+          }
+        },
+        "include_kHjfp7": {
+          "type": "include",
+          "settings": {
+            "heading": "Dermal Mist (120ml)",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs-derma-mist.webp",
+            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating.</p><h5>Dermal Mist Ingredients</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
+            "count": "Ships Mid April",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "include_NVFexE": {
+          "type": "include",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "is_limited": false,
+            "type": "",
+            "image": "shopify://shop_images/bfs__one.webp",
+            "text": "<h5>All-In-One Face Serum Full Ingredients List</h5><p>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.</p><p>Water, Glycerin, Propanediol, Caprylic/Capric Triglyceride, Maltodextrin, Sodium Acrylates, Copolymer, Niacinamide, Bakuchiol, 3-O-Ethyl Ascorbic Acid, Glycine Soja (Soybean) Oil, Sucrose Dilaurate, Retinyl Palmitate, Lactic Acid, 1,2-Hexanediol, Glyceryl Oleate Citrate, Caprylyl Glycol, Tocopheryl Acetate, Lecithin, Polyacrylate-13, Retinol, Sodium Hydroxide, Sodium Cocoyl Glutamate, Polyisobutene, Ferulic Acid, Pentaerythrityl Tetra-Di-T-Butyl, Hydroxyhydrocinnamate, Mandelic Acid, Pisum Sativum (Pea) Extract, Artemisia Umbelliformis Flower Extract, Boswellia Serrata Resin Extract, Polysorbate 20, Sorbitan Isostearate, Sodium Benzoate, Potassium Sorbate, Ganoderma Lucidum (Mushroom) Extract, Tropolone, Camellia Sinensis Leaf, Tocopherol, Citric Acid, Acetyl Hexapeptide-8, Terminalia Ferdinandiana Fruit Extract, BHT, Hyaluronic Acid, Ginkgo Biloba Leaf Extract.</p>",
+            "count": "",
+            "hide": false,
+            "hide_variants": false,
+            "code": ""
+          }
+        },
+        "how_to_use_EmG4iz": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
+            "text": "<h5>Dermal Mist (120ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed.</li></ul>"
+          }
+        },
+        "how_to_use_BfUD4M": {
+          "type": "how-to-use",
+          "settings": {
+            "image": "shopify://shop_images/bfs_sm_all-in-one.svg",
+            "text": "<h5>All-In-One Face Serum</h5><ul><li>After cleansing, apply 1-2 pumps on the face and neck. Follow with moisturizer.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_dLrXUB",
+        "icon_emhKiz",
+        "icon_jnweAT",
+        "icon_AQFi8V",
+        "bundle_CwjkD3",
+        "product_qWAyap",
+        "include_AJjjKi",
+        "include_4wQdLg",
+        "include_e4Mq9A",
+        "how_to_use_7jAfUt",
+        "how_to_use_jmgmhy",
+        "how_to_use_PeiBgM",
+        "bundle_tiDNpw",
+        "product_J9nF8T",
+        "include_KnwEmf",
+        "include_gNNy6j",
+        "how_to_use_cNYQy6",
+        "how_to_use_rgHP8b",
+        "bundle_3RY7qF",
+        "product_qM8ypV",
+        "include_hxkWTR",
+        "include_nwb4HD",
+        "how_to_use_8WVeGb",
+        "how_to_use_DiytkL",
+        "bundle_JmXcGE",
+        "product_7WkERC",
+        "include_kHjfp7",
+        "include_NVFexE",
+        "how_to_use_EmG4iz",
+        "how_to_use_BfUD4M"
+      ],
+      "settings": {
+        "heading": "Acne Bundles",
+        "subheading": "These bundles are specifically designed to clear acne and heal post-breakout skin",
+        "supertop": "experiencing breakouts?"
+      }
+    },
+    "icons_list_second": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_E3nayg": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/s_q_3_1.png",
+            "text": "<p>Science-Backed,</p><p>Dermatologist Approved</p>"
+          }
+        },
+        "icon_PKBzbi": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/derma-ft-lg_1.png",
+            "text": "<p>Safe & Easy to</p><p>Use Devices</p>"
+          }
+        },
+        "icon_MAhtJW": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/money_time.svg",
+            "text": "<p>Saves You Time,</p><p>and Money</p>"
+          }
+        },
+        "icon_PncCDy": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/treat-skin-lg_1.png",
+            "text": "<p>Treat Multiple</p><p>Skin Concerns</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_E3nayg",
+        "icon_PKBzbi",
+        "icon_MAhtJW",
+        "icon_PncCDy"
+      ],
+      "settings": {
+        "background": "bg-grey"
+      }
+    },
+    "p7": {
+      "type": "temp-exclusive-holiday-bundle-deal-p7",
+      "settings": {}
+    },
+    "text_with_video": {
+      "type": "text-with-video",
+      "blocks": {
+        "video_xLP3b6": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/dr_shah_trusted.webp",
+            "video": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg",
+            "title": "Dr Shah, MD",
+            "des": "Board certified dermatologist"
+          }
+        },
+        "text_content_zQrNN6": {
+          "type": "text_content",
+          "settings": {
+            "trust_icon": "shopify://shop_images/verified_design.svg",
+            "trust_des": "Trusted and recommended by world leading Dermatologists",
+            "title": "\"The best LED mask <strong>on the market in my opinion at this time, that being said you do need to </strong>use this consistently to see results…\"",
+            "title_clr": "#000000",
+            "title_strong_clr": "#797d7c"
+          }
+        }
+      },
+      "block_order": [
+        "video_xLP3b6",
+        "text_content_zQrNN6"
+      ],
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_EitjK9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_shah_prem.webp",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=JPWycy8cwN8",
+            "wistia_id": "",
+            "badge_txt": "3.03M Subscribers",
+            "title": "There have been studies to show that this will definitely work to help your products penetrate better...",
+            "client_details": "<strong>Dr Shah & Dr Maxfield,</strong>   Certified Dermatologists"
+          }
+        },
+        "testimonial_niJCUK": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_brown.webp",
+            "video_type": "video",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/d5d0c051b43e4117be7b6308e06e8f66.mp4",
+            "youtube_link": "",
+            "wistia_id": "",
+            "badge_txt": "155K Followers",
+            "title": "I’ve liked using this in between my in-office treatments. It’s convenient and you get all the benefits of micro-needling treatment from the comfort of your home...",
+            "client_details": "<strong>Dr Brown,</strong>  Medical Doctor"
+          }
+        },
+        "testimonial_d3pmRz": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_greeney1.webp",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
+            "wistia_id": "wistia_async_yuqb3gno7g",
+            "badge_txt": "9.77K Subscribers",
+            "title": "Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles",
+            "client_details": "<strong>Dr Greeney</strong>, Certified Dermatologist"
+          }
+        },
+        "testimonial_D3CC69": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_mona_57744543-79ed-4f6e-ba40-e204be0af0f7.webp",
+            "video_type": "video",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/71857fdec6b0497294117ed84cab480e.mp4",
+            "youtube_link": "",
+            "wistia_id": "",
+            "badge_txt": "2.3M Views",
+            "title": "You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.",
+            "client_details": "<strong>Dr Mona Patel,</strong> Internal Medicine"
+          }
+        },
+        "testimonial_FayfUe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_alex1.webp",
+            "video_type": "wistia",
+            "video_link": "",
+            "youtube_link": "",
+            "wistia_id": "yuqb3gno7g",
+            "badge_txt": "1,154 Followers",
+            "title": "I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.",
+            "client_details": "<strong>Dr Alexandra Hunter</strong>, NHS & Aesthetics Doctor"
+          }
+        },
+        "testimonial_PKTtDU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/alexis.png",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=ZMGm5PmWzF0",
+            "wistia_id": "",
+            "badge_txt": "53k Followers",
+            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
+            "client_details": "<strong>Dr Alexis Stephens,</strong>  Board-Certified Dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_EitjK9",
+        "testimonial_niJCUK",
+        "testimonial_d3pmRz",
+        "testimonial_D3CC69",
+        "testimonial_FayfUe",
+        "testimonial_PKTtDU"
+      ],
+      "settings": {
+        "enable_autoplay": false,
+        "enable_loop": false,
+        "slide_on_desktop": 3,
+        "slide_on_tablet": 2,
+        "slide_on_mobile": 1,
+        "space_between_slides": 20,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "custom_class": "trusted_bl trustedVerified"
+      }
+    },
+    "compare": {
+      "type": "compare",
+      "blocks": {
+        "object_37Djqz": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_ledmask1.webp",
+            "heading": "Qure",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "correctCircle",
+            "list": "<ul><li>saves you time</li><li>comfort and privacy of your own home</li><li>better results with more frequent treatments</li><li>customized approach</li></ul>"
+          }
+        },
+        "object_zdxnBH": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_derma1.webp",
+            "heading": "Derm/ Clinic Treatments",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "incorrectCircle",
+            "list": "<ul><li>time-consuming commute to clinic</li><li>according to clinic’s availability</li><li>less treatments - less results</li><li>ongoing payments required</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_37Djqz",
+        "object_zdxnBH"
+      ],
+      "settings": {
+        "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
+        "heading": "Hello make up free days, goodbye clinical costs",
+        "heading_reduced": "",
+        "text": "",
+        "text_reduced": "",
+        "design": false
+      }
+    },
+    "p10": {
+      "type": "temp-exclusive-holiday-bundle-deal-p10",
+      "settings": {}
+    },
+    "faq_XgNVYJ": {
+      "type": "faq",
+      "blocks": {
+        "object_yP9pmA": {
+          "type": "object",
+          "settings": {
+            "heading": "When can I expect to receive my Qure package?",
+            "text": "<p>We aim to ship your package as quickly as possible. Shipping times vary by location:</p><ul><li><strong>United States:</strong> 8-14 business days</li><li><strong>Canada:</strong> 4-6 business days</li><li><strong>UK & Europe:</strong> 8-14 business days</li><li><strong>Australia:</strong> 8-14 business days</li></ul>",
+            "code": ""
+          }
+        },
+        "object_fkedKp": {
+          "type": "object",
+          "settings": {
+            "heading": "Where does Qure ship?",
+            "text": "<p>We ship worldwide via FedEx, USPS, or DHL.</p>",
+            "code": ""
+          }
+        },
+        "object_N7CUPa": {
+          "type": "object",
+          "settings": {
+            "heading": "When will my order ship?",
+            "text": "<p>Processing takes 1-3 business days. You’ll receive an email with tracking info once your package ships.</p>",
+            "code": ""
+          }
+        },
+        "object_DxnHRi": {
+          "type": "object",
+          "settings": {
+            "heading": "Do I need to pay for taxes and duties?",
+            "text": "<p>If you’re in the US, Canada, or Australia, you don’t need to worry about duties. For other countries, you may be liable to pay local taxes and duties on receipt of your order. We recommend contacting your local customs department to find out more.</p>",
+            "code": ""
+          }
+        },
+        "object_VbMGr7": {
+          "type": "object",
+          "settings": {
+            "heading": "Can I update or cancel my order?",
+            "text": "<p>You have a 60-minute window after placing your order to request cancellation or adjustments. If your order hasn’t shipped yet, email us at<a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>ASAP, and we’ll do our best to assist.</p>",
+            "code": ""
+          }
+        },
+        "object_MM4RV9": {
+          "type": "object",
+          "settings": {
+            "heading": "What is SecureShip?",
+            "text": "<p>SecureShip is our optional protection plan that covers lost or damaged items during transit, giving you peace of mind when shopping. We highly recommend adding it to your order to ensure a hassle-free experience if anything unexpected happens. Without SecureShip, we won’t be able to cover claims for lost or damaged items, so it’s a great way to protect your purchase.</p>",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_yP9pmA",
+        "object_fkedKp",
+        "object_N7CUPa",
+        "object_DxnHRi",
+        "object_VbMGr7",
+        "object_MM4RV9"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "The answers to your questions",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
+      }
+    }
+  },
+  "order": [
+    "header_sales",
+    "header",
+    "icons_list",
+    "featuredin_extended",
+    "before-after",
+    "bundles-header",
+    "bundles-list",
+    "bundles-list2",
+    "bundles-list3",
+    "icons_list_second",
+    "p7",
+    "text_with_video",
+    "testimonials",
+    "compare",
+    "p10",
+    "faq_XgNVYJ"
+  ]
+}

@@ -1,0 +1,838 @@
+.collectio-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.collectio-banner h1 {
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: .3px;
+    color: rgb(0 0 0 / 80%);
+}
+
+.collectio-banner img {
+    max-width: 100%;
+}
+.fullImage img{
+    width: 100%;
+    object-fit: cover;
+}
+@media(max-width:767px) {
+    .collectio-banner h1 {
+        font-size: 18px;
+        line-height: 24px;
+        width: 176px;
+    }
+}
+
+.collection.collection-container.container {
+    display: grid;
+    grid-template-columns: 17.9% 1fr;
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.product-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.productBlockGrid {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.fixed_height_btn {
+    position: relative;
+    padding-bottom: var(--collectionBtnHeight);
+}
+
+.pdt_cln_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.productBlockGrid .product-grid__image img {
+    max-width: 100%;
+}
+
+.productBlockGrid .cus-tag {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    padding: 1.1px 1.5px .5px;
+    border-radius: 5px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.productBlockGrid .cus-tag .cus-save,
+.cus-tag .cus-seller {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    padding: 0 7px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+.productBlockGrid .cus-tag .cus-save {
+    border-radius: 4px 0 0 4px;
+    background: #c7e7dc;
+    border: 1px solid #c7e7dc;
+}
+
+.productBlockGrid .cus-tag .cus-seller {
+    border: 1px solid #c7e7dc;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+}
+
+.productBlockGrid .collection-review {
+    margin-top: 13px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.productBlockGrid .collection-review .prdStar svg {
+    width: 85px;
+    height: 22px;
+}
+
+.productBlockGrid .collection-review span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 9px;
+}
+
+.col-product .product-grid__title {
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: .3px;
+    color: #000;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 7px;
+    max-height: 104px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.productBlockGrid .collection-description {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: .3px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productBlockGrid .product-grid__price.abtest {
+    font-size: 18px;
+    text-align: left;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.productBlockGrid .product-grid__price.abtest .product-grid__sale-price {
+    color: #000;
+}
+
+.productBlockGrid .product-grid__price.abtest .product-grid__compare-price {
+    color: #C92127;
+    margin-left: 6px;
+}
+
+.productBlockGrid .collection-form {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.productBlockGrid .collection-form .button_primary {
+    /* width: 130px; */
+    background-color: #000;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: .2px;
+    color: #fff;
+    height: 38px;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.productBlockGrid .collection-form .button_primary span {
+    position: relative;
+    z-index: 2;
+}
+
+
+.productBlockGrid .collection-form a.collec-more {
+    /* width: 130px; */
+    border: 1px solid #000;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: .2px;
+    color: #000;
+    padding: 7px 20px;
+}
+
+.product-filters .accordion-item {
+    border: none;
+    background: transparent;
+}
+
+.product-filters .accordion-item .accordion-button {
+    background: none;
+    font-size: 13px;
+    padding: 10px 0;
+    color: rgb(0 0 0 / 80%);
+}
+
+.product-filters .accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
+
+.product-filters .accordion-item+.accordion-item .accordion-button {
+    border-top: 1px solid #ede7dd;
+}
+
+.product-filters .accordion-item .accordion-button:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' class='icon icon-caret' viewBox='0 0 10 6'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 18px 18px;
+}
+
+.facets__item {
+    display: flex;
+    align-items: center;
+}
+
+.facet-checkbox {
+    padding: 0;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    word-break: break-word;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .3px;
+    color: #000c;
+    margin-bottom: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.facets__item input[type=checkbox] {
+    position: absolute;
+    opacity: 1;
+    width: 1.6rem;
+    height: 1.6rem;
+    top: .7rem;
+    left: -.4rem;
+    z-index: -1;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.facets__item .facet-checkbox input[type=checkbox] {
+    border: 1px solid #008763;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    position: static;
+    margin-right: 12px;
+    z-index: 1 !important;
+}
+
+.facets__item .facet-checkbox input[type=checkbox]:checked {
+    border: 6px solid #008763;
+    border-radius: 100px;
+}
+
+.product-filters .accordion-item .accordion-body {
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.filter {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid #EDE7DD;
+}
+
+.collection_benefit .accordion-item {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.collection_benefit .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    font-size: 11px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 400;
+    padding: 0;
+}
+
+.collection_benefit .accordion-body {
+    padding: 10px 0;
+    font-size: 11px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+.collection_benefit .accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 15 8" fill="none"%3E%3Cpath opacity="0.8" d="M1 1L7.46523 6.57155L10.6979 3.78578L13.9305 1" stroke="black" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='5' viewBox='0 0 15 8' fill='none'%3E%3Cpath opacity='0.8' d='M1 1L7.46523 6.57155L10.6979 3.78578L13.9305 1' stroke='black' stroke-width='1.25' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.clear_filter {
+    border-top: 1px solid #ede7dd;
+    padding: 20px 0
+}
+
+.clear_filter .clear_filter_text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: .3px;
+    text-decoration-line: underline;
+    color: #008763;
+}
+
+html.filterActive {
+    overflow: hidden;
+}
+
+.select_serum .form-select {
+    font-size: 10px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: 1px solid #000;
+    opacity: 0.8;
+}
+
+.select_serum .form-select:focus {
+    box-shadow: none;
+}
+.coll_mi_bndl {
+    max-width: 200px;
+}
+.coll_mi_bndl2 {
+    max-width: 150px;
+}
+.women_day_bnr_collec a{
+    font-size: 22px !important;
+}
+
+@media(max-width:767px) {
+    .women_day_bnr_collec a {
+        font-size: 14px !important;
+    }
+    .col-filter.product-filters {
+        display: none;
+    }
+
+    .col-filter.product-filters.product-filters-mob {
+        display: block;
+    }
+
+    .collection.collection-container.container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 15px;
+    }
+
+    .productBlockGrid .collection-form .button_primary {
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        min-width: 100%;
+        height: 35px;
+    }
+
+    .productBlockGrid .collection-form a.collec-more {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 7px 0
+    }
+
+    .productBlockGrid .collection-review .prdStar svg {
+        width: 60px;
+        height: 18px;
+    }
+
+    .collectionAccordion {
+        display: none;
+    }
+    .coll_mi_bndl {
+        width: 120px;
+    }
+    .coll_mi_bndl2 {
+        width: 96px;
+    }
+    .collec_bundle h4.mi_bndl_text {
+        font-size: 8px;
+    }
+    .collec_bundle .mi_bndl_dv {
+        width: 130px;
+    }
+}
+
+@media(max-width:556px) {
+    .productBlockGrid .collection-review span {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 20px;
+        margin-left: 5px;
+    }
+
+    .productBlockGrid .cus-tag {
+        top: 6px;
+        left: 13px;
+        right: auto;
+    }
+
+    .productBlockGrid .cus-tag .cus-save,
+    .cus-tag .cus-seller {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 0 3px;
+    }
+}
+
+/* ============ breadcrumb css start ==== */
+.container.cus-bradcamp {
+    max-width: 1120px;
+    padding: 25px 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cus-bradcamp .breadcrumb,
+.cus-bradcamp .breadcrumb a {
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(0 0 0 / 80%);
+    font-weight: 400;
+    font-family: Poppins;
+    font-style: normal;
+    letter-spacing: .3px;
+    margin-bottom: 0;
+}
+
+.cus-bradcamp .breadcrumb a {
+    text-decoration: none;
+}
+
+.cus-bradcamp .breadcrumb span[aria-hidden=true] {
+    margin: 0 5px;
+    color: transparent;
+    position: relative;
+}
+
+.cus-bradcamp .breadcrumb span[aria-hidden=true]:after {
+    content: '>';
+    position: absolute;
+    color: rgb(0 0 0 / 80%);
+    left: 0;
+    right: 0;
+}
+
+.cus-shorting {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: .3px;
+    border-bottom: 1px solid #ede7dd;
+    padding-bottom: 6px;
+}
+
+.cus-shorting label {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.cus-shorting select {
+    border: transparent;
+}
+
+@media(max-width:767px) {
+    .container.cus-bradcamp {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding: 18px 24px 0px;
+    }
+
+    .cus-bradcamp .breadcrumb,
+    .cus-bradcamp .breadcrumb a,
+    .cus-shorting {
+        font-size: 12px;
+    }
+
+    .r_c_info .c_information p {
+        font-size: 10px;
+    }
+}
+
+/* ============= raman css new start ============ */
+.collection_page .filter_sort_wrap .offcanvas-body {
+    padding: 24px;
+}
+
+.collection_page .filter_sort_wrap .tab-content {
+    padding-top: 20px;
+}
+
+.collection_page .filter_sort_wrap .filter_sort_btn {
+    opacity: 0.8;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.12px;
+    background: transparent;
+    color: #000;
+    border-radius: 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #EDE7DD;
+}
+
+.collection_page .filter_sort_wrap .collections_tab ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection_page .filter_sort_wrap .collections_tab .nav-pills .nav-link {
+    padding: 0 35px;
+    color: #000;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.collection_page .filter_sort_wrap .collections_tab .nav-pills .nav-link.active,
+.collection_page .filter_sort_wrap .collections_tab .nav-pills .show>.nav-link {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.collection_page .filter_sort_wrap .offcanvas-header {
+    background: transparent;
+    justify-content: center;
+    padding: 15px;
+    max-height: 41px;
+    height: 100%;
+}
+
+.collection_page .filter_sort_wrap .offcanvas-header .btn-close {
+    padding: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='7' viewBox='0 0 21 7' fill='none'%3E%3Cpath opacity='0.8' d='M1 6L10.5 1L20 6' stroke='black' stroke-opacity='0.5' stroke-width='1.5' stroke-linecap='round' /%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 1;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    width: 100%;
+}
+
+.collection_page .filter_sort_wrap .offcanvas-header .btn-close:focus {
+    box-shadow: none;
+}
+
+.collection_page .filter_sort_wrap .offcanvas-bottom {
+    border-radius: 15px 15px 0 0;
+    height: fit-content;
+}
+
+
+.collection_sort_by .sort_by_item .form-check {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #EDE7DD;
+}
+
+.collection_page .filter_sort_wrap .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.collection_page .filter_sort_wrap .form-check label {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.13px;
+}
+
+.collection_page .filter_sort_wrap .form-check input[type=radio],
+.collection_page .filter_sort_wrap input[type=checkbox] {
+    border: 1px solid #008763;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.collection_page .filter_sort_wrap .form-check input[type=radio]:checked,
+.collection_page .filter_sort_wrap input[type=checkbox]:checked {
+    border: 5px solid #008763;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.collection_page .filter_sort_wrap .product-filters .accordion-item .accordion-button {
+    padding: 14px 0;
+    border-bottom: 1px solid #EDE7DD;
+
+}
+
+.collection_page .filter_sort_wrap .clear_filter,
+.collection_page .filter_sort_wrap .product-filters .accordion-item+.accordion-item .accordion-button {
+    border-top: none;
+}
+
+.pdt_cln_info,
+.pdt_cln_bottom {
+    padding: 0 12px 12px;
+}
+
+.product_card_info {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+}
+
+.product_card_userName {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.product_verified {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 300;
+}
+
+.collection_card {
+    padding: 32px 12px;
+}
+
+.doctor_card h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: 'Canela Light';
+}
+
+.dr_profile {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.productVogue {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.productVogue h5 {
+    font-size: 33px;
+    line-height: 39px;
+    font-family: 'Canela Web';
+}
+
+.productVogue .discover_btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+}
+.img_dv_collec .new-slide_ctm {
+    display: grid;
+    grid-template-columns: 4fr 0fr 7fr;
+    max-width: 480px;
+}
+.img_dv_collec .new-slide_ctm .new_img {
+    width: max-content;
+}
+.desk_banner_collec img {
+    height: 230px;
+    width: 100%;
+}
+.womens_day_offer_collec .collection_grid{
+    height: max-content;
+}
+@media(max-width:991px) {
+    .productBlockGrid .collection-form {
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+
+@media(max-width:556px) {
+    .collection_page .filter_sort_wrap .offcanvas-bottom {
+        height: fit-content;
+    }
+
+    .prdStar img {
+        max-height: 12px;
+    }
+
+    .pdt_cln_info,
+    .pdt_cln_bottom {
+        padding: 0 8px 8px;
+    }
+
+    .product_card_info {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .product_card_userName {
+        font-size: 10px;
+        line-height: 18px;
+        padding: 5px 0;
+    }
+
+    .col-product .product-grid__title {
+        line-height: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .collection_card {
+        padding: 12px 8px;
+    }
+
+    .doctor_card p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .dr_profile {
+        font-size: 10px;
+        line-height: 16px;
+        margin-top: 5px;
+    }
+
+    .productVogue {
+        padding: 0 6px;
+    }
+
+    .productBlockGrid img {
+        object-fit: cover;
+    }
+
+    .productVogue .discover_btn {
+        margin-top: 10px;
+    }
+    .mob_banner_collec img {
+        height: 290px;
+        width: 100%;
+    }
+    .plus_collec_icon{
+        width: 15px;
+    }
+    .womens_day_offer_collec .new-slide_ctm .mi_bndl_women {
+        position: absolute;
+        top: 25px;
+        right: 0;
+    }
+}
+
+/* ============= raman css new end============ */

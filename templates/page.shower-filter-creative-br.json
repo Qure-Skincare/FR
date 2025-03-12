@@ -1,0 +1,281 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "header_landing_pFmaRH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_qLHgyD": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CONTENT REQUIREMENTS",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs1.webp"
+          }
+        },
+        "navigation_link_DgYaFx": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs2.webp"
+          }
+        },
+        "navigation_link_3X4mrf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "INSPIRING CONTENT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qLHgyD",
+        "navigation_link_DgYaFx",
+        "navigation_link_3X4mrf"
+      ],
+      "settings": {}
+    },
+    "section1": {
+      "type": "guide-header",
+      "blocks": {
+        "button_LUpm3B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about Shower Filter",
+            "button_url": "https://qureskincare.com/products/shower-filter"
+          }
+        }
+      },
+      "block_order": [
+        "button_LUpm3B"
+      ],
+      "settings": {
+        "heading": "Shower Filter Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the Qure Shower Filter with our creative content guide. This brief will help you craft engaging content that showcases how our innovative tool transforms skincare and haircare routines.</p>",
+        "wistia_id": "lz3wlopem0"
+      }
+    },
+    "qure_founder_LkfQUT": {
+      "type": "qure-founder",
+      "settings": {
+        "heading": "“Throughout my life… living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to... Turns out, there’s an overwhelming amount of data that the water hardness could affect your skin.”",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "image": "shopify://shop_images/dr.shah_new.webp",
+        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
+      }
+    },
+    "section3": {
+      "type": "guide-columns",
+      "blocks": {
+        "header_RA46tw": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 1",
+            "text": "Merge Qure into your creatives",
+            "image": "shopify://shop_images/step1_img.webp",
+            "button_label": "Content Requirements"
+          }
+        },
+        "description_mHnPFA": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Key Messages",
+            "image": "shopify://shop_images/key_message.svg",
+            "content": "<p>Key Points to include in the messaging:</p><p></p><ul><li>Easy installation of the triple-filter showerhead for the purest head-to-toe hydration.</li><li>Reduces chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin.</li><li>Reduces limescale buildup which can dry out skin & hair, for smoother & softer skin and tresses.</li><li>Customizable water flow settings: Rainfall, Massage and Power Spray</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_tVQDHe": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Creative Direction",
+            "image": "shopify://shop_images/direction.svg",
+            "content": "<ul><li>High-quality, bright lighting and high-resolution imagery/ videography to be supplied. No obvious filters.</li><li>Qure Shower filter to be the feature of the post. The background must be clean and bright.</li><li>When using the product, please do not wear any makeup, or no visible/noticeable makeup. Please include a clip of the filter installation and a before and after of your hair/skin.</li><li>In cover photos for video content always show yourself using the Qure Shower filter, unless otherwise agreed on with Qure’s team.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_cpREQp": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Inclusion",
+            "image": "shopify://shop_images/inclusion.svg",
+            "content": "<ul><li>Tag and mention @qureskincare #QureSkincare #showerfilter #Skincare #qureshowerfilter #qurefilter</li><li>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can’t be placed in BIO, include it in linktr.ee or similar.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_LhpN6x": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 2",
+            "text": "Get to know Micro-Infusion Targeted Patches",
+            "image": "shopify://shop_images/step2_img.webp",
+            "button_label": "Product Information"
+          }
+        },
+        "description_6WtF8b": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Details",
+            "image": "shopify://shop_images/search.svg",
+            "content": "<p>Triple the Filtration Tech (for Triple the Clean)</p><ul><li>Carbon Fiber Layer - Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</li><li>KDF Layer - Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</li><li>FOF (Filter of Future) - Helps reduce the buildup of hard water minerals such as calcium and magnesium, preventing scale and improving water flow.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_BNpxL3": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Usage Instructions",
+            "image": "shopify://shop_images/usage_dir.svg",
+            "content": "",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_JkHeKT": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "Preparing Your Shower Head",
+            "content": "<ul><li>Remove the old shower head and clean the pipe. The Qure Shower Filter has a 2.5 GPM restrictor pre-installed. For compliance with stricter regulations in California, Colorado, Hawaii, Massachusetts, New York, Oregon, Rhode Island, Vermont, and Washington, replace it with the included 1.8 GPM restrictor. Check local guidelines for water flow requirements.</li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_EYEMK6": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "Installation steps",
+            "content": "<ul><li>Remove the Old Shower Head - Use the provided wrench or your hands to unscrew the old shower head by turning it counterclockwise. Discard the old head or keep it for future use.</li><li>Check the Qure Shower Filter - Inspect the neck of the Qure Shower Filter to ensure the filter is properly installed. The filter is already placed inside for convenience, but double-checking will help prevent issues.</li><li>Wrap the Pipe Threads - Use the plumber tape provided in the Qure Shower Filter kit. Wrap it around the pipe threads where the new shower head will attach. Wrap it twice to ensure a watertight seal, then tear the tape.</li><li>Install the Qure Shower Filter - Twist the Qure Shower Filter onto the prepared pipe until it’s securely fastened. Use the wrench to ensure it is tightly secured, but avoid over-tightening.</li><li>Test the Water Flow - Turn on the water and check for any leaks. If no leaks are present, you’re ready to enjoy your new, purified shower experience.</li></ul>",
+            "code": ""
+          }
+        },
+        "video_pCNrp9": {
+          "type": "video",
+          "settings": {
+            "wistia_id": "fsw2ted2a8"
+          }
+        },
+        "description_GE3PNL": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Claims",
+            "image": "shopify://shop_images/product_claims.svg",
+            "content": "<ul><li>Fewer breakouts</li><li>Happier, hydrated skin</li><li>Less redness & irritation</li><li>Shinier & buildup free hair</li><li>Less green hues on dyed hair</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_AwT6ji": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 3",
+            "text": "Get inspired by other content creators",
+            "image": "shopify://shop_images/step3_img.webp",
+            "button_label": "Inspiring Content"
+          }
+        },
+        "heading_YiyFGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show how it works for you"
+          }
+        },
+        "video_4Jjjcm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/sfc_vid1.webp",
+            "wistia_id": "11vsfrk9uy"
+          }
+        },
+        "video_iHceHC": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/sfc_vid2.webp",
+            "wistia_id": "3c8vr0fdr8"
+          }
+        },
+        "video_DmtewU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/sfc_vid3.webp",
+            "wistia_id": "hoizwwxble"
+          }
+        },
+        "heading_fUcJta": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show how it works for you"
+          }
+        },
+        "video_H9fmrV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/sfc_vid4.webp",
+            "wistia_id": "u23jz8krro"
+          }
+        },
+        "video_dpGpUm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/sfc_vid5.webp",
+            "wistia_id": "r525h71wj2"
+          }
+        },
+        "video_6gLP6V": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/sfc_vid6.webp",
+            "wistia_id": "x74iuwbtwm"
+          }
+        }
+      },
+      "block_order": [
+        "header_RA46tw",
+        "description_mHnPFA",
+        "description_tVQDHe",
+        "description_cpREQp",
+        "header_LhpN6x",
+        "description_6WtF8b",
+        "description_BNpxL3",
+        "collapsed_JkHeKT",
+        "collapsed_EYEMK6",
+        "video_pCNrp9",
+        "description_GE3PNL",
+        "header_AwT6ji",
+        "heading_YiyFGP",
+        "video_4Jjjcm",
+        "video_iHceHC",
+        "video_DmtewU",
+        "heading_fUcJta",
+        "video_H9fmrV",
+        "video_dpGpUm",
+        "video_6gLP6V"
+      ],
+      "settings": {
+        "heading": "All you need to know before you start creating your amazing content"
+      }
+    }
+  },
+  "order": [
+    "header_landing_pFmaRH",
+    "section1",
+    "qure_founder_LkfQUT",
+    "section3"
+  ]
+}

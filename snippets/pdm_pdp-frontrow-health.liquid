@@ -1,0 +1,46 @@
+{% comment %}
+  Renders a section with dermatologist recommendations.
+  Usage: Add this section to your theme editor for customization.
+{% endcomment %}
+
+<div class="frontrow-health-container" data-link="{{ settings.frontrow_health_link }}" style="background-color: {{ settings.frontrow_health_background_color }};">
+  <div class="frontrow-health-container__images">
+    {% if settings.frontrow_health_image_1 != blank %}
+      <img 
+        class="frontrow-health-container__images-image"
+        src="{{ settings.frontrow_health_image_1 | image_url: width: 500 }}" 
+        alt="{{ settings.frontrow_health_image_1.alt }}"
+        style="border: 1px solid {{ settings.frontrow_health_background_color }}"
+        width="32"
+        height="50"
+      >
+    {% endif %}
+    {% if settings.frontrow_health_image_2 != blank %}
+      <img 
+        class="frontrow-health-container__images-image"
+        src="{{ settings.frontrow_health_image_2 | image_url: width: 500 }}" 
+        alt="{{ settings.frontrow_health_image_1.alt }}" 
+        width="32"
+        height="50"
+      >
+    {% endif %}
+    <div 
+      class="frontrow-health-container__images-count" 
+      style="background-color: {{ settings.frontrow_health_count_circle_color }}; border: 1px solid {{ settings.frontrow_health_background_color }};"
+    >
+      {{ settings.frontrow_health_count_text }}
+    </div>
+  </div>
+
+  <div class="frontrow-health-container__content">
+    <span class="frontrow-health-container__content-heading">
+      {{ settings.frontrow_health_heading }}
+    </span>
+    <span class="frontrow-health-container__content-description">
+      {{ settings.frontrow_health_description }}
+    </span>
+    <a class="frontrow-health-container__content-link {% if product.handle == "micro-infusion-targeted-patches" and settings.frontrow_health_link == blank%}hidden{% endif %}" href="{{ settings.frontrow_health_link }}">
+      {{ settings.frontrow_health_link_text }}
+    </a>
+  </div>
+</div>

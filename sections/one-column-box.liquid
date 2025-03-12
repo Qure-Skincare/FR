@@ -1,0 +1,90 @@
+<div class="{{ section.settings.classname }}">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="section_header mw-100">
+                <div class="title-lg text-md-center">{{ section.settings.heading }}</div>
+            </div>
+        {% endif %}
+
+        {% if section.settings.text != blank %}
+            {{ section.settings.text |  replace: '<p>', '<p class="mw-600 mx-auto text-center">' }}
+        {% endif %}
+
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'button' %}
+                    {% if block.settings.button_label != blank %}
+                        <div class="get_report_btn">
+                            <a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a>
+                        </div>
+                    {% endif %}
+                {% when 'code' %}
+                    {{ block.settings.code }}
+            {% endcase %}
+        {%- endfor -%}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.one-column-box.name",
+        "class": "section-one-column-box",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "skincare_routine section"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "code",
+                "name": "t:common.code.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.one-column-box.name"
+			}
+        ]
+    }
+{% endschema %}
+

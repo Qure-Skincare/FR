@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header_landing_simple_U48R9C": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_ipYM9t": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO USE",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide#how-to-use"
+          }
+        },
+        "navigation_link_WtLCUj": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "QURE APP",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide#getting-started"
+          }
+        },
+        "navigation_link_j4pkfw": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "TROUBLESHOOT",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide#troubleshooting"
+          }
+        },
+        "navigation_link_PFnq8H": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CARE",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide#take-care"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_ipYM9t",
+        "navigation_link_WtLCUj",
+        "navigation_link_j4pkfw",
+        "navigation_link_PFnq8H"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "temp-page-sunil-mask-guide",
+      "custom_css": [
+        "@media (max-width: 767px) {.q-urify_safety .mw-768 {width: 100%; }}"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "header_landing_simple_U48R9C",
+    "main"
+  ]
+}

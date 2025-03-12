@@ -1,0 +1,212 @@
+<!-- --  skincare slider start  -- -->
+<div class="skincare_slider skin_slider py-4">
+    <div class="container">
+        <div class="skin_item">
+            <div class="row">
+                <div class="col-md-6">
+                    {% if section.settings.heading != blank %}
+                        <div class="skin_item_header">{{ section.settings.heading }}</div>
+                    {% endif %}
+                    <div class="skincare_left">
+                        {% if section.settings.image != blank %}
+                            <img class="img-fluid" src="{{ section.settings.image | img_url: '450x' }}" alt="{{ section.settings.image.alt | escape }}">
+                        {% endif %}
+                        <div class="r_c_info">
+                            <div class="c_information">
+                                {% if section.settings.image_country != blank %}
+                                    <div class="flag_img pe-2">
+                                        <img class="img-fluid" src="{{ section.settings.image_country | img_url: '100x' }}" alt="">
+                                    </div>
+                                {% else %}
+                                    <div class="flag_img pe-2">
+                                        <img src="{{ 'america_f.webp' | asset_url }}" alt="" class="img-fluid">
+                                    </div>  
+                                {% endif %}
+                                <p class="r_c_name pe-4">{{ section.settings.client }}</p>
+                                <div class="verified_img pe-2">
+                                    <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                </div>
+                                <p>Verified customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 d-flex align-items-center">
+                        <div class="skincare_right">
+                            {% if section.settings.r_heading != blank %}
+                            <div class="skin_item_header ms-0 d-none d-md-block">{{ section.settings.r_heading }}</div>
+                            {% endif %}
+                            {% if section.settings.text != blank %}
+                                {{ section.settings.text |  replace: '<p>', '<p class="pb-3">' }}
+                            {% endif %}
+                            {% if section.blocks.size > 0 %}
+                                <div class="accordion" id="accordionSkin1">
+                                    {%- for block in section.blocks -%}
+                                        <div class="accordion-item">
+                                            {% if block.settings.heading != blank %}
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse_{{ block.id }}_{{ forloop.index }}"
+                                                        aria-expanded="true" aria-controls="collapse_{{ block.id }}_{{ forloop.index }}">
+                                                        {{ block.settings.heading }}
+                                                    </button>
+                                                </h2>  
+                                            {% endif %}
+
+                                            <div id="collapse_{{ block.id }}_{{ forloop.index }}" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionSkin1">
+                                                <div class="accordion-body">
+                                                    {% if block.settings.text != blank %}
+                                                        {{ block.settings.text }}
+                                                    {% endif %}
+                                                    <div class="ss_clinical">
+                                                        <div class="ss_c_title">
+                                                            <h4>In a Clinical Trial...</h4>
+                                                        </div>
+                                                        <div class="ss_c_detail">
+                                                            {% if block.settings.feedback != blank %}
+                                                                {{ block.settings.feedback }}
+                                                            {% endif %}
+                                                            {% if block.settings.popup_content != blank %}
+                                                                <a class="popup-modal ss_c_link" href="#test-modal-{{ block.id }}-{{ forloop.index }}">Read more about clinical Study <span><img src="{{ 'info.svg' | asset_url }}" alt=""></span></a>
+                                                                <div id="test-modal-{{ block.id }}-{{ forloop.index }}"
+                                                                    class="mfp-hide white-popup-block skin_popup">
+                                                                    <div class="ss_clinical">
+                                                                        <div class="ss_c_title">
+                                                                            <h4>Clinical Study</h4>
+                                                                        </div>
+                                                                        <div class="ss_c_detail">
+                                                                            {{ block.settings.popup_content }}
+                                                                        </div>
+                                                                        <button title="Close (Esc)" type="button"
+                                                                            class="mfp-close">close</button>
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%- endfor -%}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --  skincare slider end  -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.before-after-box.name",
+        "class": "section-before-after-box",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "r_heading",
+                "label": "t:common.heading.right"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_country",
+                "label": "t:common.client.country.label"
+            },
+            {
+                "type": "text",
+                "id": "client",
+                "label": "t:common.client.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "feedback",
+                        "label": "t:common.feedback.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "popup_content",
+                        "label": "t:sections.before-after-slider.blocks.slide.settings.popup_content.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.before-after-box.name",
+                "settings": {
+                    "heading": "Uneven Skin Texture",
+                    "text": "<p>Clarify and even skin tone, minimise enlarged pores, strengthen skin’s barrier, reduce breakouts.<\/p>",
+                    "image": "shopify:\/\/shop_images\/bethany_skincare.webp",
+                    "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+                    "client": "Bethany N."
+                },
+                "blocks": [
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "<p><strong>Bethany <\/strong>(Vitamin B3 Derivative)<\/p>",
+                            "text": "<p>All star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.<\/p>",
+                            "feedback": "<p><strong>…100% of subjects <\/strong>reported significant improvement in fine lines, radiance, acne breakouts and smoothness.<\/p>",
+                            "popup_content": "<p>A 12-week clinical study demonstrated a 21% improvement in fine lines along with a 14% skin tone clarity and 15% radiance improvement. Improvements were reported as early as 2 weeks. Subjects reported no stinging, itching, dryness, or tingling after 10 weeks.<\/p><p><strong>In another Clinical Trial…<\/strong><\/p><p>Subjects experienced significantly lowered oil production after 2 and 4 weeks of application with reduced clogged pores and acne breakouts.<\/p><p>References: J Drugs Dermatol 2016 Jul 1;15(7):863-8 combined with 0.5% retinol. Int J Dermatol. 1995 Jun;34(6):434-7. doi: 10.1111\/j.1365-4362.1995.tb04449.x.<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "<p><strong>Lactic & Mandelic acid <\/strong>(Gentle Exfoliators)<\/p>",
+                            "text": "<p>Gentle chemical exfoliants gobble up the top layer of dead cells to reveal clearer, smoother skin.<\/p>",
+                            "feedback": "<p><strong>…100% of subjects <\/strong>reported firmer, smoother skin resulting in fewer fine lines and wrinkles, along with reduction of acne.<\/p>",
+                            "popup_content": "<p>Participants using lactic acid experienced fimer, thicker skin and saw significant improvement in reduction of lines and wrinkles after application with boosted skin radiance. Along with reduction and prevention of acne lesions.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and test participants applied lactic acid twice a day for 3 months. Changes in skin smoothness and texture, the depth and number of lines and wrinkles, and epidermal and dermal firmness and thickness were determined.<\/p><p>Reference: Rathi SK. Acne vulgaris treatment : The Current Scenario. Indian J Dermatol 2011;56:7-13<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "<p><strong>Retinol <\/strong>(Vitamin A)<\/p>",
+                            "text": "<p>Encourages new cells to the surface to help reduce the visibility of wrinkles and age spots, and smooth skin texture.<\/p>",
+                            "feedback": "<p><strong>…Reduction of facial wrinkles by up to 63.74%<\/strong>was experienced by<strong>100% of subjects,<\/strong>from induction of collagen production.<\/p>",
+                            "popup_content": "<p>Topical retinol improves fine wrinkles associated with natural aging. Significant induction of increased collagen production, retinol-treated aged skin offers greater skin matrix synthesis and improved appearance. Facial wrinkles were reduced by 63.74% at the cheeks and 38.74% in the eye areas after 12 weeks of treatment.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included subjects between the ages of 35 and 55. A retinol formulation was applied for 12 weeks on the participants. The efficacy and results in improving skin appearance was assessed using digital image-based wrinkle analysis after 12 weeks of retinol application.<\/p><p>Reference: Rong Kong, PhD,1 Yilei Cui, PhD,2 Gary J. Fisher, PhD,2 Xiaojuan Wang, BS,3 Yinbei Chen, MS,3. Journal of Cosmetic Dermatology (2015).<\/p>"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

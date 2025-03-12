@@ -1,0 +1,120 @@
+<div class="container">
+<div class="section_header limited_offer_faq {{ section.settings.custom_class }}">
+    {% if section.settings.heading != blank %}
+    <div class="title-lg paddingB text-center">{{ section.settings.heading }}</div>
+    {% endif %}
+    <div class="limited_offer_wrap">
+    {% for block in section.blocks %}
+        {% case block.type %}
+        {% when 'product' %}
+        {% if block.settings.pd_image != blank %}
+        <div class="limited_offer_wrap_img">
+            <img src="{{ block.settings.pd_image | img_url: 'master' }}" alt="{{ block.settings.pd_image.alt }}" class="img-fluid">
+        </div>
+        {% endif %}
+        {% when 'about' %}
+        {% if block.settings.abt_product != blank %}
+        <div class="limited_offer_wrap_list">
+            {{ block.settings.abt_product }}
+        </div>
+        {% endif %}
+        {% endcase %}
+    {% endfor %}
+    </div>
+    {% for block in section.blocks %}
+    {% if block.settings.btn_text != blank %}
+    <a href="{{ block.settings.btn_url }}"
+        class="black_btn btn buy_btn w-100 mt-3 mt-md-5">{{ block.settings.btn_text }}</a>
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
+
+{% schema %}
+{
+    "name": "t:sections.limited-offer.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "textarea",
+            "id": "custom_class",
+            "label": "t:common.classname.custom"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "product",
+            "name": "t:common.product.image.label",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "pd_image",
+                    "label": "t:common.image.label"
+                }
+            ]
+        },
+        {
+            "type": "about",
+            "name": "t:product.about.label",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "abt_product",
+                    "label": "t:common.text.label"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "name": "t:common.button.label",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "btn_text",
+                    "label": "t:common.button.label"
+                },
+                {
+                    "type": "url",
+                    "id": "btn_url",
+                    "label": "t:common.button.url.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.limited-offer.label",
+            "settings": {
+                "heading": "Take Charge Of Your Skincare With Qure.  Limited Time Offer:"
+            },
+            "blocks": [
+                {
+                    "type": "product",
+                    "settings": {
+                        "pd_image": "shopify:\/\/shop_images\/limited_offer_wrap_img.webp"
+                    }
+                },
+                {
+                    "type": "about",
+                    "settings": {
+                        "abt_product": "<ul><li>Unlock Exclusive Savings on the Qure Micro-Infusion System!<\/li><li>For a limited time, <strong>enjoy up to 43% off<\/strong> when you choose our best bundle.<\/li><li>Click \"Check Availability\" below to see our current stock and secure your discount!<\/li><\/ul>"
+                    }
+                },
+                {
+                    "type": "button",
+                    "settings": {
+                        "btn_text": "Check Availability Now"
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

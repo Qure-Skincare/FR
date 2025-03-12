@@ -1,0 +1,56 @@
+{% comment %}
+this snippets is used in pdm_products-bundle.liquid section, render card product in mobile
+  Usage:
+  {% render 'pdm_card-bundle-mobile'
+    product: product_object,
+    product-name: card.settings.custom_name,
+    product-img: card.settings.image_product,
+    show-rated: card.settings.show_top_rated,
+    show-badge: card.settings.show_badge,
+    btn-text: section.settings.button_card%}
+{% endcomment %}
+
+{% if product %}
+<div class="card-bundle mb" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+  <div class="rate mb" data-show="{{ show-rated }}" {% if show-rated == false %}style="visibility: hidden;"{% endif %} >
+    Top Rated 
+    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+      <path d="M4.49954 0.381958L5.53404 2.95809L8.30376 3.14589L6.1734 4.92583L6.85068 7.61803L4.49954 6.14196L2.1484 7.61803L2.82568 4.92583L0.695312 3.14589L3.46504 2.95809L4.49954 0.381958Z" fill="#FFFAF0"/>
+    </svg>
+  </div>
+  <div class="cont-card-bundle mb">
+    <div class="pdm-gallery mb">
+      {% if show-badge %}
+        <div class="badge-dermatologist">
+          <img class="badge-check" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Layer_1_be2f32cf-e586-4583-9959-fb3a68b642d0.svg" alt="check">
+          <p class="text-badge">Trusted by dermatologists</p>
+        </div>
+      {% endif %}
+      <div class="media mb">
+        {% if product-img %}
+          <img class="src product" src="{{ product-img | image_url }}" alt="image {{ product.title }}">
+        {% else %}
+          <img class="src product" src="{{ product.featured_image | image_url }}" alt="image {{ product.title }}">
+        {% endif %}
+      </div>
+    </div>
+    <div class="product-info mb"> 
+      <div class="title mb">
+        <h3>{% if product-name != blank %}{{ product-name }}{% else %}{{ product.title }}{% endif %}</h3>
+      </div>
+    </div>
+    <div class="bundle-button mb">
+        <div class="price mb">
+          {{ product.price |  money_without_trailing_zeros }}
+        </div>
+        <div class="bundle-btn mb" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+            <span class="uncheck">{{ btn-text }}</span>
+            <span class="check">Added</span>
+        </div>
+        <div class="more">
+          <span class="learn-more" data-product-id="{{ product.selected_or_first_available_variant.id }}"> Learn More</span>
+        </div>
+    </div>
+  </div>
+</div>
+{% endif %}

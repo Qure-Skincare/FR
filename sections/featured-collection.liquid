@@ -1,0 +1,165 @@
+{%- liquid
+  assign st = section.settings
+  assign loop = st.enable_loop
+  assign autoplay = st.enable_autoplay
+  assign desktop_slides = st.slide_on_desktop
+  assign tab_slides = st.slide_on_tablet
+  assign mobile_slides = st.slide_on_mobile
+  assign slides_space = st.space_between_slides
+-%}
+<!-- -- target specific skin concerns start -- -->
+<div class="skin_concern section">
+  <div class="{{ section.settings.container }}">
+    {%- if section.settings.heading != blank -%}
+      <div class="section_header mb-4 mw-100 text-start text-lg-center">
+        <h2 class="title-lg mx-auto paddingB">
+          {{ section.settings.heading }}
+        </h2>
+        {%- if section.settings.sub_heading != blank -%}
+          <h4>{{ section.settings.sub_heading }}</h4>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+    <div
+      class="swiper twa__swiper targetSkin dot_pagination"
+      id="twa__swiper-targetSkin"
+      data-section-id="targetSkin"
+      data-autoplay="false"
+      data-loop="false"
+      data-centerslide="false"
+      data-mobile="{{mobile_slides}}"
+      data-tablet="{{tab_slides}}"
+      data-desktop="{{desktop_slides}}"
+      data-spacing="20"
+      data-arrowleft="targetSkin-swiper-prev"
+      data-arrowright="targetSkin-swiper-next"
+    >
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="target_skin">
+              <div class="target_skin_img">
+                {% if block.settings.c_image != blank %}
+                  <img
+                    src="{{ block.settings.c_image | img_url: 'master' }}"
+                    alt="{{ block.settings.c_image.alt }}"
+                    class="img-fluid"
+                  >
+                {% endif %}
+                <div class="target_skin_info">
+                  {%- if block.settings.name != blank -%}
+                    <h4>{{ block.settings.name }}</h4>
+                  {%- endif -%}
+                  {%- if block.settings.button != blank -%}
+                    <a href="{{ block.settings.btn_url }}">{{ block.settings.button }}</a>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="pagination_navigation d-md-none">
+        <div class="swiper-pagination"></div>
+        <div class="targetSkin-swiper-prev swiper-button-prev swiper-button"></div>
+        <div class="targetSkin-swiper-next  swiper-button-next swiper-button"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -- target specific skin concerns end -- -->
+
+{% schema %}
+{
+  "name": "t:sections.f-collection.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "sub_heading",
+      "label": "t:common.subheading.label"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "label": "t:common.container.size",
+      "options": [
+        {
+          "value": "container",
+          "label": "t:common.container.half"
+        },
+        {
+          "value": "container-fluid",
+          "label": "t:common.container.full"
+        }
+      ],
+      "default": "container"
+    },
+    {
+      "type": "range",
+      "id": "slide_on_desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "t:sections.slider.settings.desktop",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "slide_on_tablet",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "t:sections.slider.settings.tablet",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "slide_on_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 0.2,
+      "label": "t:sections.slider.settings.mobile",
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.collection.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "c_image",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "default": "Shop Now",
+          "label": "t:common.button.label"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "t:sections.collection.name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.f-collection.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,73 @@
+.mask_select_clr h5 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+
+.mask_select_clr h5 {
+    font-weight: 600;
+}
+
+.mask_select_clr .form-check-input:checked+label img {
+    border: 2px solid #C7E7DC;
+}
+
+.refill_bl .mask_select_clr h5 {
+    font-size: 14px;
+}
+
+.mask_select_clr input {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mask_select_clr .clr_options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mask_select_clr img {
+    max-width: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(176, 176, 176, 0.25);
+    border: 1px solid #e9e9e9;
+    height: 80px;
+    object-fit: contain;
+}
+
+.mask_select_clr h6 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.mask_select_clr h6 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.mask_select_clr h6 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 6px 0 0;
+}

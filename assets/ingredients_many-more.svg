@@ -1,0 +1,25 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79"
+                                            viewBox="0 0 80 79" fill="none">
+                                            <circle cx="39.9996" cy="39.5172" r="37.9779" stroke="#EDE7DD"
+                                                stroke-width="2.1099" />
+                                            <path
+                                                d="M29.9637 43.7081L40.2307 37.8689L50.4976 43.7081V55.3769L40.2307 61.2161L29.9637 55.3769V43.7081Z"
+                                                stroke="black" stroke-width="0.733046" />
+                                            <circle cx="40.4143" cy="61.6379" r="2.56566" fill="black" />
+                                            <circle cx="50.677" cy="55.7732" r="2.56566" fill="black" />
+                                            <circle cx="50.677" cy="43.3113" r="2.56566" fill="black" />
+                                            <circle cx="40.4143" cy="38.1799" r="2.56566" fill="black" />
+                                            <circle cx="30.5178" cy="43.3113" r="2.56566" fill="black" />
+                                            <circle cx="29.7854" cy="55.7732" r="2.56566" fill="black" />
+                                            <path
+                                                d="M40.5916 26.4806L50.8586 20.6414L61.1256 26.4806V38.1494L50.8586 43.9886L40.5916 38.1494V26.4806Z"
+                                                stroke="black" stroke-width="0.733046" />
+                                            <circle cx="61.3039" cy="38.5466" r="2.56566" fill="black" />
+                                            <circle cx="61.3039" cy="26.0842" r="2.56566" fill="black" />
+                                            <circle cx="51.0412" cy="20.9534" r="2.56566" fill="black" />
+                                            <circle cx="41.1457" cy="26.0842" r="2.56566" fill="black" />
+                                            <path d="M40.2338 26.2674L29.6003 20.2197L18.9668 26.2674" stroke="black"
+                                                stroke-width="0.733046" />
+                                            <circle cx="29.7834" cy="20.9534" r="2.56566" fill="black" />
+                                            <circle cx="19.8879" cy="26.0842" r="2.56566" fill="black" />
+                                        </svg>

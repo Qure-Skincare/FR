@@ -1,0 +1,155 @@
+.contact_help {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.contact_help h2 {
+    font-size: 64px;
+    line-height: 55px;
+}
+
+.contact_help .section_header h5 {
+    font-family: 'Canela Light';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.28px;
+}
+
+.contact_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 844px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.contact_info .cnt_item h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.18px;
+    margin: 28px 0 18px 0;
+}
+
+.cnt_item {
+    text-align: center;
+    max-width: 220px;
+}
+
+.contact_info a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
+    text-decoration: underline;
+}
+
+@media(max-width: 767px) {
+    .contact_info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contact_info .cnt_item h6 {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .cnt_item {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .cnt_item:not(:last-child) {
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    .contact_info .cnt_item h6 {
+        margin: 0 0 5px 0;
+    }
+
+    .cnt_img img {
+        max-width: 60px;
+    }
+
+    .contact_help {
+        border-bottom: none;
+    }
+
+    .contact_info a {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .contact_help h2 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    .contact_help .section_header h5 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+/* ============================contact form css start ================= */
+.contact_form .qure_input .qure_input_field {
+    border-radius: 22px;
+}
+
+.contact_form {
+    max-width: 888px;
+    margin: 0 auto;
+    padding: 0px 0
+}
+
+.contact_form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact_form .qure_input .qure_input_label {
+    display: none;
+}
+
+.customer_details {
+    background-color: #F2F4F3;
+}
+
+.customer_details .c_d_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.customer_details .c_d_wrapper span {
+    position: relative;
+}
+
+.customer_details .c_d_wrapper span:after {
+    width: 1.3px;
+    display: unset;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+}
+.customer_details .c_d_wrapper .c_d_wrapper_links a{
+font-size: 14px;
+}
+
+@media(max-width:767px) {
+    .contact_form_grid {
+        grid-template-columns: 1fr;
+    }
+}

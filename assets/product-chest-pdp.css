@@ -1,0 +1,256 @@
+.chest_pdp .refill_bl .refill_info {
+    max-width: 472px;
+}
+
+.chest_pdp .reasons {
+    max-width: 949px;
+    margin: 0 auto;
+}
+
+.chest_pdp .reasons_wrapper .rs_item {
+    padding: 0 4px 20px;
+}
+
+.chest_pdp .reasons_wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+/* -- Chest pdp feature start -- */
+.chest_pdp_ftr .cp_ftr_wrapper .cp_item {
+    display: flex;
+    align-items: center;
+}
+
+.chest_pdp_ftr .cp_ftr_wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chest_pdp_ftr .cp_ftr_wrapper .cp_item {
+    display: grid;
+    align-items: center;
+    gap: 40px;
+    grid-template-columns: auto 1fr;
+    margin: 10px 0;
+}
+
+.chest_pdp_ftr .cp_ftr_wrapper .cp_item p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.16px;
+}
+
+
+.chest_pdp .refill_s_tab_content .swiper.dot_pagination .swiper-pagination {
+    bottom: 0px;
+}
+
+.chest_pdp .result_s .r_c_info {
+    padding: 4px 10px;
+    background: #f4f4f4;
+}
+
+.chest_pdp .skin_item_header {
+    font-weight: 300;
+    font-family: 'Canela Light';
+    font-size: 28px;
+    line-height: 32px;
+    padding: 10px;
+    margin: 0 10px;
+    border-bottom: 1px solid #EDE7DD;
+    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+.chest_pdp .skincare_right {
+    padding: 10px;
+}
+
+.chest_pdp .result_s .result_s_wrapper .result_item .ss_list li {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.chest_pdp .result_s {
+    padding: 60px 0;
+}
+
+.chest_pdp .technology_light .accordion-item p {
+    padding: 0;
+}
+.chest_pdp .app_press_sl_img1 .swiper-slide{
+    opacity: 0.4;
+}
+.chest_pdp .app_press_sl_img1 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+.technology_light .u_item_question,
+.technology_light .accordion-header {
+    border-radius: 20px;
+}
+
+.howUse_slider .swiper-slide {
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+.howUse_slider {
+    margin-bottom: 30px;
+}
+
+.result_s2 .result_s_wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.chest_pdp .app_press_sl_img1 .swiper-slide {
+    pointer-events: none;
+}
+
+.chest_pdp .app_press_sl_img1 .swiper-slide {
+    pointer-events: none;
+}
+
+.chest_pdp .refill_info .refill_review {
+    margin-bottom: 10px;
+}
+
+.chest_pdp .refill_s_tab_content .wistia_responsive_wrapper * {
+    border-radius: 16px !important;
+}
+
+.chest_pdp .app_press {
+    padding: 40px 0 56px 0;
+    background-color: #D9D9D91A;
+}
+/* -- Chest pdp feature end -- */
+@media(max-width:991px) and (min-width:768px) {
+    .chest_pdp .reasons_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media(min-width:1199px) {
+    .chest_pdp .trusted_left {
+        max-width: 520px;
+    }
+
+    .chest_pdp .reasons_wrapper .rs_item {
+        max-width: 202px;
+    }
+}
+
+@media(max-width:991px) {
+    .chest_pdp .refill_bl.tabSlider .refill_info .section_header .title-xl {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+@media(max-width:767px) {
+    .chest_pdp .refill_bl .shipping {
+        gap: 10px;
+    }
+
+    .chest_pdp .reasons_wrapper .rs_item {
+        grid-template-columns: 64px auto;
+        gap: 20px
+    }
+
+    .chest_pdp .reasons_wrapper .rs_item {
+        padding: 10px 0;
+    }
+
+    .chest_pdp .reasons_wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .chest_pdp .chest_pdp_ftr {
+        padding-top: 0;
+    }
+
+    .chest_pdp_ftr .cp_ftr_wrapper .cp_item {
+        gap: 20px;
+    }
+
+    .chest_pdp_ftr .cp_ftr_wrapper .cp_item p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .chest_pdp .reasons_wrapper .rs_item .r_use_img img {
+        width: 64px;
+        height: 53px;
+    }
+
+    .chest_pdp .howUse_info p:not(:last-child) {
+        padding-bottom: 16px;
+    }
+
+    .chest_pdp .howUse_img {
+        overflow: unset;
+    }
+
+    .chest_pdp .howUseSection_bl {
+        padding: 20px 0;
+    }
+
+    .chest_pdp .skincare_left {
+        padding: 0;
+        border-top: none;
+        background: transparent;
+    }
+
+    .chest_pdp .skin_item_header {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 300;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .chest_pdp .result_s {
+        padding: 30px 0;
+    }
+
+    .chest_pdp .featured_promotion2 .fp_icon img {
+        max-width: 41px;
+    }
+
+    .chest_pdp .app_press_sl_content {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .chest_pdp .app_press .app_press_slider .app_subhheading {
+        padding: 34px 0;
+    }
+
+    .chest_pdp .app_press_sl_img .swiper-slide-visible .app_press_info img {
+        max-height: 17px;
+    }
+
+    .chest_pdp .app_press_sl_img .swiper-slide-visible.swiper-slide-thumb-active .app_press_info img {
+        max-height: 24px;
+    }
+
+    .chest_pdp .howUse_slider .swiper-wrapper {
+        justify-content: space-between;
+    }
+
+    .chest_pdp .howUse_slider {
+        margin-bottom: 20px;
+    }
+
+    .imageText.section {
+        padding-top: 0;
+    }
+}

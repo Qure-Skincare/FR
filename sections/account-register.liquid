@@ -1,0 +1,116 @@
+<div class="qure_form">
+    <div class="container">
+        <div class="sign_in_wrapper mw-546">
+            <div class="section_header ps-0 mw-100">
+                <h2 class="title-lg">{{ 'customer.register.title' | t }}</h2>
+                <p>{{ 'customer.welcome' | t }}</p>
+            </div>
+            {%- form 'create_customer', novalidate: 'novalidate' -%}
+
+                {%- if form.errors -%}
+                    <div class="errors">
+                        <ul>
+                        {%- for field in form.errors -%}
+                            <li>
+                            {%- if field == 'form' -%}
+                                {{ form.errors.messages[field] }}
+                            {%- else -%}
+                                <a href="#RegisterForm-{{ field }}">
+                                {{ form.errors.translated_fields[field] | capitalize }}
+                                {{ form.errors.messages[field] }}
+                                </a>
+                            {%- endif -%}
+                            </li>
+                        {%- endfor -%}
+                        </ul>
+                    </div>
+                  {%- endif -%}
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="qure_input">
+
+                            <input
+                                type="text"
+                                name="customer[first_name]"
+                                id="RegisterForm-FirstName"
+                                class="qure_input_field"
+                                {% if form.first_name %}
+                                value="{{ form.first_name }}"
+                                {% endif %}
+                                autocomplete="given-name"
+                                placeholder="{{ 'customer.register.first_name' | t }}"
+                            >
+                            <label for="g_first_name" class="qure_input_label"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="qure_input">
+                            <input
+                                type="text"
+                                name="customer[last_name]"
+                                id="RegisterForm-LastName"
+                                class="qure_input_field"
+                                {% if form.last_name %}
+                                value="{{ form.last_name }}"
+                                {% endif %}
+                                autocomplete="family-name"
+                                placeholder="{{ 'customer.register.last_name' | t }}"
+                            >
+                            <label for="g_last_name" class="qure_input_label"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="qure_input">
+                    <input
+                        type="email"
+                        name="customer[email]"
+                        id="RegisterForm-email"
+                        class="qure_input_field"
+                        {% if form.email %}
+                        value="{{ form.email }}"
+                        {% endif %}
+                        spellcheck="false"
+                        autocapitalize="off"
+                        autocomplete="email"
+                        aria-required="true"
+                        {% if form.errors contains 'email' %}
+                        aria-invalid="true"
+                        aria-describedby="RegisterForm-email-error"
+                        {% endif %}
+                        placeholder="{{ 'customer.register.email' | t }}"
+                        {%- if form.errors contains 'email' -%}
+                        style="border: 1px red solid"
+                        {%- endif -%}
+                    >
+                    <label for="g_email" class="qure_input_label"></label>
+                </div>
+                <div class="qure_input">
+                    <input
+                        type="password"
+                        name="customer[password]"
+                        id="RegisterForm-password"
+                        class="qure_input_field"
+                        aria-required="true"
+                        {% if form.errors contains 'password' %}
+                        aria-invalid="true"
+                        aria-describedby="RegisterForm-password-error"
+                        {% endif %}
+                        placeholder="{{ 'customer.register.password' | t }}"
+                        {%- if form.errors contains 'password' -%}
+                        style="border: 1px red solid"
+                        {%- endif -%}
+                    >
+                    <label for="g_password" class="qure_input_label"></label>
+                </div>
+
+                <div class="qure_form_btn my-4 d-block">
+                    <button class="btn btn-lg btn-primary">
+                        {{ 'customer.register.submit' | t }}
+                    </button>
+                    <a href="{{ routes.account_login_url }}" class="d-block pt-2">{{ 'customer.register.already' | t }}</a>
+                </div>
+            {%- endform -%}
+        </div>
+    </div>
+</div>

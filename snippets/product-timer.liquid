@@ -1,0 +1,199 @@
+<style>
+    .payment_method {
+        display: flex;
+    }
+    .announcement_bar .bfBundle__content .bfCountdown .countdown_block span:after {
+        font-size: 8px;
+        line-height: 9px;
+        min-height: 10px;
+        font-weight: 400;
+    }
+
+    .announcement_bar .bfBundle__content .bfCountdown .countdown_block span {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #C92127;
+    }
+
+    .announcement_bar .bfBundle__content .bfCountdown {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bfBundle__content .bfCountdown .countdown_hdr {
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0.13px;
+    }
+
+    .announcement_bar .bfBundle__content .bfCountdown .countdown_block span {
+        font-size: 18px !important;
+        line-height: 18px !important;
+        font-weight: 500 !important;
+    }
+
+    .bfBundle__content .bfCountdown {
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: 85px 1fr;
+        align-items: center;
+    }
+
+
+    .bfBundle__content .bfCountdown .countdown_block span {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 36.436px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32.88px;
+        letter-spacing: 0.364px;
+        padding: 0 9px;
+    }
+    .textBlack .bfBundle__content .bfCountdown .countdown_block span {
+        color: #000 !important;
+    }
+
+    .textBlack .bfBundle__content .bfCountdown .countdown_block span.dots {
+        background: #000;
+    }
+
+    .textBlack .bfBundle__content .bfCountdown .countdown_block span.dots {
+        color: transparent !important;
+    }
+
+    .bfBundle__content .bfCountdown .countdown_block span:after {
+        content: attr(data-name);
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        line-height: 17px;
+        min-height: 15px;
+    }
+
+    .bfBundle__content .bfCountdown .countdown_block span.dots {
+        position: relative;
+        color: transparent;
+        min-width: unset;
+        width: 1px;
+        background: #C92127;
+        margin: 0 4px;
+        padding: 0;
+        height: 100%;
+
+    }
+    @media(max-width:767px) {
+        .announcement_bar .bfBundle__content .bfCountdown,
+        .announcement_bar.textBlack {
+            padding: 5px 0
+        }
+
+        .announcement_bar .bfBundle__content .bfCountdown .countdown_hdr {
+            font-size: 11px;
+        }
+    }
+    .bfBundle__content .bfCountdown .countdown_hdr {
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.13px;
+    }
+
+    .bfBundle__content .bfCountdown .countdown_block span {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 36.436px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32.88px;
+        letter-spacing: 0.364px;
+        padding: 0 9px;
+    }
+
+    .bfBundle__content .bfCountdown .countdown_block span:after {
+        content: attr(data-name);
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        line-height: 17px;
+        min-height: 15px;
+    }
+
+    .bfBundle__content .bfCountdown .countdown_block span.dots {
+        position: relative;
+        color: transparent;
+        min-width: unset;
+        width: 1px;
+        background: #C92127;
+        margin: 0 4px;
+        padding: 0;
+        height: 100%;
+
+    }
+    @media(max-width:767px) {
+        .bfBundle__content .bfCountdown {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0;
+        }
+
+        .bfBundle__content .bfCountdown .countdown_hdr {
+            text-align: right;
+            font-size: 11px;
+        }
+
+        .bfBundle__content .bfCountdown .countdown_block span {
+            font-size: 26px;
+            line-height: 28px;
+            padding: 0 6px;
+        }
+
+        .bfBundle__content .bfCountdown .countdown_block span.dots {
+            margin: 0 2px;
+        }
+
+        .bfBundle__content .bfCountdown .countdown_block span:after {
+            font-size: 7px;
+            line-height: 10px;
+            min-height: 10px;
+        }
+    }
+</style>
+
+{%- assign timer_unix = block.settings.timer | date: '%s' -%}
+
+<div class="limited_offer announcement_bar">
+    <div class="lo_heading">
+        <p><strong>{{ block.settings.heading }}</strong></p>
+    </div>
+    <div class="bfBundle__content mt-1">
+        <div class="bfCountdown countdown_timer_with_zone" data-target-date="{{ block.settings.timer }}" data-target-time-zone="America/Los_Angeles">
+            <div class="countdown_block">
+                <span class="d-flex align-items-center theTimer" id="headerTimer">
+                    <span data-name="days" id="days">00</span><span
+                        class="dots">:</span>
+                    <span data-name="hours" id="hours">00</span> <span
+                        class="dots">:</span>
+                    <span data-name="mins" id="minutes">00</span> <span
+                        class="dots">:</span>
+                    <span data-name="secs" id="seconds">00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="lo_code mt-2">
+        {{ block.settings.text |  replace: '<em>', '<span>' |  replace: '</em>', '</span>' }}
+    </div>
+</div>
+
+<script src="{{ '__app_countdown.js' | asset_url }}"></script>

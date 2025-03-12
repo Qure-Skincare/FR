@@ -1,0 +1,362 @@
+<!-- --  skincare slider start  -- -->
+<div class="skincare_slider_n section sssss">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section_header">
+          {% if section.settings.heading != blank %}
+            <h2 class="title-lg">
+              {{ section.settings.heading }}
+            </h2>
+          {% endif %}
+
+          {{ section.settings.text }}
+
+          <div class="d-none d-md-block">
+            {%- for block in section.blocks -%}
+              {% case block.type %}
+                {% when 'option' %}
+                  {% assign dashoffset = 100 | minus: block.settings.percent_bar %}
+                  <div class="skincare_percent">
+                    <div class="progressCont">
+                      <span class="progressWrapper">
+                        <span class="progessInfo text-dark">{{ block.settings.percent_bar }}%</span>
+                        <svg class="vMQQx" height="54" width="54" viewBox="-29 -29 58 58">
+                          <defs>
+                              <linearGradient id="gradient" x1="0" x2="0" y1="1" y2="0">
+                                  <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                  <stop offset="100%" stop-color="#C7E7DC"></stop>
+                              </linearGradient>
+                          </defs>
+                          <circle stroke="rgba(221, 224, 228, 1)" fill="none" pathLength="100"
+                              class="K4v4P" r="24" style="stroke-width: 1px;"></circle>
+                          <circle visibility="visible" fill="none" pathLength="100"
+                              transform="rotate(-90)" class="OKwUu" r="24" stroke="url(#gradient)"
+                              style="stroke-dasharray: 100; stroke-dashoffset: {{ dashoffset }}; stroke-width: 4px;">
+                          </circle>
+                        </svg>
+                      </span>
+                    </div>
+                    {{ block.settings.text }}
+                  </div>
+              {% endcase %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="offset-md-1 col-md-5">
+        {% assign has_image = false %}
+        {% assign has_single_image = false %}
+
+        {%- for block in section.blocks -%}
+          {% if block.type == 'image' and block.settings.image != blank %}
+            {% assign has_image = true %}
+          {% elsif block.type == 'single_image' and block.settings.single_image_id != blank %}
+            {% assign has_single_image = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if has_image %}
+          <div
+            class="swiper twa__swiper dot_pagination"
+            id="twa__swiper-skinSliderN"
+            data-section-id="skinSliderN"
+            data-autoplay="false"
+            data-loop="false"
+            data-centerslide="false"
+            data-mobile="1"
+            data-tablet="1"
+            data-desktop="1"
+            data-spacing="30"
+            data-arrowleft="skinSliderN-swiper-prev"
+            data-arrowright="skinSliderN-swiper-next"
+          >
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                {% case block.type %}
+                  {% when 'image' %}
+                    {% if block.settings.image != blank %}
+                      <div class="swiper-slide">
+                        <div class="skin_item_n">
+                          <div class="skin_item_n_img">
+                            <img
+                              src="{{ block.settings.image | img_url: 'master' }}"
+                              alt="{{ block.settings.image.alt | escape }}"
+                              class="img-fluid"
+                            >
+                          </div>
+                          <div class="skin_item_n_tag">
+                            {{
+                              block.settings.text
+                              | replace: '<strong>', '<span class="sn_tag">'
+                              | replace: '</strong>', '</span>'
+                            }}
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% when 'single_image' %}
+                    {% if block.settings.single_image_id != blank %}
+                      <div class="swiper-slide">
+                        <div class="skin_item_n">
+                          <div class="skin_item_n_img">
+                            <img
+                              src="{{ block.settings.single_image_id | img_url: 'master' }}"
+                              alt="{{ block.settings.single_image_id.alt | escape }}"
+                              class="img-fluid"
+                            >
+                          </div>
+                          <div class="skin_item_n_tag ps-md-3">
+                            <p class="ps-md-2">{{ block.settings.proven_res }}</p>
+                            <p id="sn_tags">
+                              {% if block.settings.hydration != blank %}
+                                <span class="sn_tag">{{ block.settings.hydration }}</span>
+                              {% endif %}
+                              {% if block.settings.wrinkles != blank %}
+                                <span class="sn_tag">{{ block.settings.wrinkles }}</span>
+                              {% endif %}
+                              {% if block.settings.acne != blank %}
+                                <span class="sn_tag">{{ block.settings.acne }}</span>
+                              {% endif %}
+                              {% if block.settings.skin_texture != blank %}
+                                <span class="sn_tag">{{ block.settings.skin_texture }}</span>
+                              {% endif %}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+                {% endcase %}
+              {% endfor %}
+            </div>
+            <div class="pagination_navigation">
+              <div class="swiper-pagination"></div>
+              <div class="skinSliderN-swiper-prev swiper-button-prev swiper-button"></div>
+              <div class="skinSliderN-swiper-next swiper-button-next swiper-button"></div>
+            </div>
+          </div>
+        {% elsif has_single_image %}
+          <!-- Show 'single_image' separately if there are no 'image' slides -->
+          <div class="single_image_wrapper">
+            {%- for block in section.blocks -%}
+              {% if block.type == 'single_image' and block.settings.single_image_id != blank %}
+                <div class="skin_item_n">
+                  <div class="skin_item_n_img">
+                    <img
+                      src="{{ block.settings.single_image_id | img_url: 'master' }}"
+                      alt="{{ block.settings.single_image_id.alt | escape }}"
+                      class="img-fluid"
+                    >
+                  </div>
+                  <div class="skin_item_n_tag ps-md-3">
+                    <p class="ps-md-2">{{ block.settings.proven_res }}</p>
+                    <p id="sn_tags">
+                      {% if block.settings.hydration != blank %}
+                        <span class="sn_tag">{{ block.settings.hydration }}</span>
+                      {% endif %}
+                      {% if block.settings.wrinkles != blank %}
+                        <span class="sn_tag">{{ block.settings.wrinkles }}</span>
+                      {% endif %}
+                      {% if block.settings.acne != blank %}
+                        <span class="sn_tag">{{ block.settings.acne }}</span>
+                      {% endif %}
+                      {% if block.settings.skin_texture != blank %}
+                        <span class="sn_tag">{{ block.settings.skin_texture }}</span>
+                      {% endif %}
+                    </p>
+                  </div>
+                </div>
+              {% endif %}
+            {%- endfor -%}
+          </div>
+        {% endif %}
+
+        <div class="d-block d-md-none">
+          {%- for block in section.blocks -%}
+            {% case block.type %}
+              {% when 'option' %}
+                {% assign dashoffset = 100 | minus: block.settings.percent_bar %}
+                <div class="skincare_percent">
+                  <div class="progressCont">
+                    <span class="progressWrapper">
+                      <span class="progessInfo text-dark">{{ block.settings.percent_bar }}%</span>
+                      <svg class="vMQQx" height="54" width="54" viewBox="-29 -29 58 58">
+                        <defs>
+                            <linearGradient id="mobileGradient" x1="0" x2="0" y1="1" y2="0">
+                                <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                <stop offset="100%" stop-color="#C7E7DC"></stop>
+                            </linearGradient>
+                        </defs>
+                        <circle stroke="rgba(221, 224, 228, 1)" fill="none" pathLength="100"
+                            class="K4v4P" r="24" style="stroke-width: 1px;"></circle>
+                        <circle visibility="visible" fill="none" pathLength="100"
+                            transform="rotate(-90)" class="OKwUu" r="24" stroke="url(#mobileGradient)"
+                            style="stroke-dasharray: 100; stroke-dashoffset: {{ dashoffset }}; stroke-width: 4px;">
+                        </circle>
+                      </svg>
+                    </span>
+                  </div>
+                  {{ block.settings.text }}
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --  skincare slider end  -- -->
+
+{% schema %}
+{
+  "name": "t:sections.confidence-slider.name",
+  "class": "section-confidence",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:common.text.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "option",
+      "name": "t:common.option.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text.label"
+        },
+        {
+          "type": "range",
+          "id": "percent_bar",
+          "min": 0,
+          "max": 100,
+          "default": 70,
+          "step": 1,
+          "label": "t:common.percentage.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "t:common.image.label",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text.label"
+        }
+      ]
+    },
+    {
+      "type": "single_image",
+      "name": "Single Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "single_image_id",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "text",
+          "id": "proven_res",
+          "label": "t:common.text.label"
+        },
+        {
+          "type": "text",
+          "id": "hydration",
+          "label": "t:common.text.label"
+        },
+        {
+          "type": "text",
+          "id": "wrinkles",
+          "label": "t:common.text.label"
+        },
+        {
+          "type": "text",
+          "id": "acne",
+          "label": "t:common.text.label"
+        },
+        {
+          "type": "text",
+          "id": "skin_texture",
+          "label": "t:common.text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.confidence-slider.name",
+      "settings": {
+        "heading": "No hype, just evidence.",
+        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 fortnightly treatments.<\/p>"
+      },
+      "blocks": [
+        {
+          "type": "option",
+          "settings": {
+            "text": "<p>of participants say their fine lines<strong>looked smoother.<\/strong><\/p>",
+            "percent_bar": 70
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "text": "<p>noticed <strong>results the next day <\/strong>after the first Micro-Infusion treatment.<\/p>",
+            "percent_bar": 93
+          }
+        },
+        {
+          "type": "option",
+          "settings": {
+            "text": "<p>of participants say their skin looked <strong>brighter and more even toned.<\/strong><\/p>",
+            "percent_bar": 70
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sn_1.webp",
+            "text": "<p>Proven to visually improve <strong>Fine Lines & Wrinkles<\/strong><\/p>"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sn_2.webp",
+            "text": "<p>Proven to visually improve <strong>Large Pores & Skin Texture<\/strong><\/p>"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sn_3.webp",
+            "text": "<p>Proven to visually improve <strong>Dark Spots & Texture<\/strong><\/p>"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sn_4.webp",
+            "text": "<p>Proven to visually improve <strong>Uneven Skin Tone<\/strong><\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

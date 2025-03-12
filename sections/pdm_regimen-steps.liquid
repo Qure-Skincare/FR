@@ -1,0 +1,114 @@
+<div class="regimen-steps">
+  <div class="section-header">  
+    <h2>{{ section.settings.section_title }}</h2>
+    {% assign description_value = section.settings.section_description %}
+    {% if description_value != blank %}  
+      {% assign description_text = section.settings.section_description |  replace:'(User Name)' , '<span class="user-name hidden"><span class="name"></span></span>' %}
+      <p>{{ description_text }}</p>
+    {% endif %}
+  </div>
+  <div class="container-rs">
+    <regimen-steps active-step="1">
+        <div class="pagination">
+          <div class="cont-tab">        
+            {% for block in section.blocks %}
+              {% render 'pdm_regimen-tab'
+                class: "test",
+                index: forloop.index,
+                length: forloop.length,
+                active-tab:1,
+                icon_light: block.settings.tab_icon_light,
+                icon_dark: block.settings.tab_icon_dark,
+                title: block.settings.title %}
+            {% endfor %}
+          </div>
+          <div class="space"></div>
+        </div>
+    {% for block in section.blocks %}
+      {% render 'pdm_regimen-step' 
+        class: "test",
+        index: forloop.index,
+        length: forloop.length,
+        active-card:1,
+        video: block.settings.video_step,
+        image: block.settings.image_step,
+        metaobjectinfo: block.settings.regimen_informartion %}
+    {% endfor %}
+    </cards-tips>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Regimen Steps (PDM)",
+  "tag": "section",
+  "class": "section-regimen-steps",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Take charge of your skincare with this personalized program"
+    },
+    {
+      "type": "text",
+      "id": "section_description",
+      "label": "Description",
+      "default": "Here’s What you’ll need  (User Name)"
+    }
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "tab_icon_dark",
+          "label": "Icon Tab Dark"
+        },
+        {
+          "type": "image_picker",
+          "id": "tab_icon_light",
+          "label": "Icon Tab Light"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title Tab",
+          "default": "Daily"
+        },
+        {
+          "type": "metaobject",
+          "label": "Select regimen informartion metaobject",
+          "id": "regimen_informartion",
+          "info": "Selecciona un testimonio existente para mostrar",
+          "metaobject_type": "regimen_informartion"
+        },
+        {
+          "type": "video",
+          "id": "video_step",
+          "label": "Video"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_step",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Regimen Steps (PDM)",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "step"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

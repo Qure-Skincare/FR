@@ -1,0 +1,419 @@
+<div class="ingredients_list {{ section.settings.custom_class }}">
+  <div class="container">
+    <div class="section_header text-md-center ms-0 m-md-auto">
+      {% if section.settings.heading != blank %}
+        <h2 class="title-lg pb-4 pb-md-5">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+      {% if section.settings.subtext != blank %}
+        <div class="mw-600 mx-auto">
+          {{ section.settings.subtext }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="ingredients_content">
+      {% assign has_icon = false %}
+      {%- for block in section.blocks -%}
+        {% if block.type == 'icons_with_text_below' and block.settings.icon_img != blank %}
+          {% assign has_icon = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_icon %}
+        <div class="row justify-content-center justify-content-md-between gy-4 pb-5 mb-md-3">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'icons_with_text_below' %}
+                {% if block.settings.icon_img != blank %}
+                  <div class="col-md-auto col-4 text-center">
+                    <div class="ingredients_img my-0">
+                      <div class="ing_img-inner">
+                        <img
+                          src="{{ block.settings.icon_img | img_url: 'master' }}"
+                          class="img-fluid"
+                          alt="{{ block.settings.icon_img_text }}"
+                        >
+                      </div>
+                    </div>
+                    <p class="fw-semibold">{{ block.settings.icon_img_text }}</p>
+                  </div>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% assign has_icon = false %}
+      {%- for block in section.blocks -%}
+        {% if block.type == 'rich_content' and block.settings.rich_content_text != blank %}
+          {% assign has_icon = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_icon %}
+        <div class="row justify-content-center pb-5 mb-5">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'rich_content' %}
+                {% if block.settings.rich_content_text != blank %}
+                  <div class="col-auto col-md-8 text-md-center">
+                    <h2 class="title-lg">{{ block.settings.rich_content_heading }}</h2>
+                    <div class="text-black ctm_rch_txt">
+                      {{ block.settings.rich_content_text }}
+                    </div>
+                  </div>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="row gy-3">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'column' %}
+              <div class="col-md-4 col-sm-6 {{ block.settings.column_class }}">
+                <div class="ingredient">
+                  {% if block.settings.flag != blank %}
+                    <div class="ingredient_flag" style="background: {{ block.settings.flag-color }};">
+                      <p>{{ block.settings.flag }}</p>
+                    </div>
+                  {% endif %}
+                  <div class="ingredients_text">
+                    {% if block.settings['i-heading'] != blank %}
+                      <p class="fw-bold">{{ block.settings['i-heading'] }}</p>
+                    {% endif %}
+                    {% if block.settings['i-text'] != blank %}
+                      <p class="pb-3">{{ block.settings['i-text'] }}</p>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.img_id_ingr != blank %}
+                    <div class="ing_image">
+                      <img
+                        src="{{ block.settings.img_id_ingr | img_url: 'master' }}"
+                        class="img-fluid"
+                        alt="{{ block.settings.img_id_ingr }}"
+                      >
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+
+      {% assign has_iconz = false %}
+      {%- for block in section.blocks -%}
+        {% if block.type == 'column' and block.settings.i_icon != blank %}
+          {% assign has_iconz = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_iconz %}
+        <div class="row gy-3 pt-4">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'column' %}
+                <div class="col-md-4 col-sm-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="ingredients_img border-end">
+                        {% if block.settings.i_icon != blank %}
+                          <img src="{{ block.settings.i_icon | img_url: 'master' }}" alt="">
+                        {% endif %}
+                        {% if block.settings.ingredient1 != blank %}
+                          <p>{{ block.settings.ingredient1 }}</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="ingredients_img">
+                        {% if block.settings.i_icon2 != blank %}
+                          <img src="{{ block.settings.i_icon2 | img_url: 'master' }}" alt="">
+                        {% endif %}
+                        {% if block.settings.ingredient2 != blank %}
+                          <p>{{ block.settings.ingredient2 }}</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                    {% if block.settings.ingredient_text != blank %}
+                      <div class="col-12">
+                        <div class="text-center px-4">
+                          <p>{{ block.settings.ingredient_text }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    {% for block in section.blocks %}
+      {% if block.settings.heading2 != blank %}
+        <div class="section_header text-start py-5 text-md-center ms-0 m-md-auto">
+          <h6 class="n_sub-heading">{{ block.settings.heading2 }}</h6>
+        </div>
+      {% endif %}
+    {% endfor %}
+    <div class="skin_problems mw-932">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'skin_image' %}
+            <div class="problem_inner">
+              {% if block.settings.skin_problem != blank %}
+                <img
+                  src="{{ block.settings.skin_problem | img_url: 'master' }}"
+                  class="img-fluid"
+                  alt="{{ block.settings.skin_problem.alt }}"
+                >
+              {% endif %}
+              {% if block.settings.problem_text != blank %}
+                <div class="pt-4">
+                  <p><img src="{{ 'correct_circle.svg' | asset_url }}" alt="">{{ block.settings.problem_text }}</p>
+                </div>
+              {% endif %}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.ingredient-list.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "t:common.text.label"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_class",
+      "label": "t:common.classname.custom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:common.column.label",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "flag",
+          "label": "t:common.flag.text"
+        },
+        {
+          "type": "color",
+          "id": "flag-color",
+          "label": "t:common.flag.color"
+        },
+        {
+          "type": "text",
+          "id": "i-heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "textarea",
+          "id": "i-text",
+          "label": "t:common.text.content"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_id_ingr",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "i_icon",
+          "label": "t:common.ingredient.image"
+        },
+        {
+          "type": "text",
+          "id": "ingredient1",
+          "label": "t:common.ingredient.text"
+        },
+        {
+          "type": "image_picker",
+          "id": "i_icon2",
+          "label": "t:common.ingredient.image"
+        },
+        {
+          "type": "text",
+          "id": "ingredient2",
+          "label": "t:common.ingredient.text"
+        },
+        {
+          "type": "textarea",
+          "id": "ingredient_text",
+          "label": "t:common.text.content"
+        },
+        {
+          "type": "textarea",
+          "id": "column_class",
+          "label": "t:common.classname.custom"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "t:common.heading.label",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading2",
+          "label": "t:common.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "skin_image",
+      "name": "t:common.image.label",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "skin_problem",
+          "label": "t:common.skin.problem"
+        },
+        {
+          "type": "text",
+          "id": "problem_text",
+          "label": "t:common.text.label"
+        }
+      ]
+    },
+    {
+      "type": "icons_with_text_below",
+      "name": "Icons With Text Below",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_img",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "text",
+          "id": "icon_img_text",
+          "label": "t:common.text.label"
+        }
+      ]
+    },
+    {
+      "type": "rich_content",
+      "name": "Rich Content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "rich_content_heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "rich_content_text",
+          "label": "t:common.text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.ingredient-list.label",
+      "settings": {
+        "heading": "It’s time to look toward your faucet, not (just) your ingredients list.",
+        "subtext": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. That water hardness is a contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment, <\/a>including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema <\/a>and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis. <\/a>And not just from the well-known culprit chlorine – but also calcium and magnesium.<\/p>",
+        "custom_class": "section"
+      },
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "flag": "Known irritant",
+            "flag-color": "#f9c91d",
+            "i-heading": "Chlorine",
+            "i-text": "Traditionally added to kill bacteria. Chlorine can deplete the skin of the natural oils that hold moisture in, leading to dry and itchy skin.",
+            "i_icon": "shopify:\/\/shop_images\/rust.svg",
+            "ingredient1": "Rust",
+            "i_icon2": "shopify:\/\/shop_images\/Algae.svg",
+            "ingredient2": "Algae",
+            "ingredient_text": "Mud, rust and micro-contaminants in water can irritate sensitive skin."
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "flag": "Long-term damage!",
+            "flag-color": "#fa6f0b",
+            "i-heading": "Magnesium",
+            "i-text": "Magnesium can result in the formation of free radicals which damage healthy skin cells and break down collagen, resulting in fine lines and wrinkles.",
+            "i_icon": "shopify:\/\/shop_images\/Micro-plastics.svg",
+            "ingredient1": "Micro-plastics",
+            "i_icon2": "shopify:\/\/shop_images\/micro-organisms.svg",
+            "ingredient2": "Micro-organisms",
+            "ingredient_text": "Microplastics can cause micro-abrasions and damage sensitive skin."
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "flag": "Most harmful",
+            "flag-color": "#c92127",
+            "i-heading": "Calcium",
+            "i-text": "Calcium can irritate the skin, causing dry, scaly, pinkish patches. It can also clog pores, which can lead to blackheads, blemishes, and\/or rosacea.",
+            "i_icon": "shopify:\/\/shop_images\/lead-particles.svg",
+            "ingredient1": "Lead particles",
+            "i_icon2": "shopify:\/\/shop_images\/many-more.svg",
+            "ingredient2": "Many more",
+            "ingredient_text": "Hard water can have hard metals or excess Mg2+ and Ca2+ that can clog and irritate the skin."
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "heading2": "Perfect for"
+          }
+        },
+        {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/acne_skin.webp",
+            "problem_text": "Acne prone skin"
+          }
+        },
+        {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/rosacea.webp",
+            "problem_text": "Rosacea"
+          }
+        },
+        {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/dry_skin.webp",
+            "problem_text": "Dry skin"
+          }
+        },
+        {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/sensitive_skin.webp",
+            "problem_text": "Sensitive skin"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,44 @@
+<!-- -- money back section start -- -->
+<div class="moneyBack">
+    <div class="container">
+        <div class="section_header text-md-center mw-486 p-0">
+            {% if section.settings.image != blank %}
+                <img class="img-fluid mb-4" src="{{ section.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
+            {% endif %}
+
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">{{ section.settings.heading }}</h2>
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- -- money back section end -- -->
+
+
+{% schema %}
+    {
+        "name": "Money back",
+        "class": "section-moneyback",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ]
+    }
+{% endschema %}

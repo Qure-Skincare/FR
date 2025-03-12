@@ -1,0 +1,420 @@
+
+<div class="{{ section.settings.classname }}"{% if template == 'index' %} id="result_section"{% endif %}>
+    <div class="container">
+        {% if section.settings.heading %}
+            <div class="section_header text-center">
+                <{{ section.settings.title_tag }} class="title-lg pb-2">
+                    {{ section.settings.heading }}
+                </{{ section.settings.title_tag }}>
+                {% if section.settings.text %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </div>    
+        {% endif %}
+        {% if section.blocks.size > 0 %}
+            <div class="swiper twa__swiper {% if template == 'index' %}skin_slider1{% else %}skin_slider{% endif %} dot_pagination"
+                id="twa__swiper-skinSlider"
+                data-section-id="skinSlider" 
+                data-autoplay="false" 
+                data-loop="false" 
+                data-centerslide="false"
+                data-mobile="1" 
+                data-tablet="1" 
+                data-desktop="1" 
+                data-spacing="30"
+                data-arrowleft="skinSlider-swiper-prev" 
+                data-arrowright="skinSlider-swiper-next">
+                <div class="swiper-wrapper">
+                    {%- for block in section.blocks -%}
+                        <div class="swiper-slide">
+                            <div class="skin_item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        {% if block.settings.heading %}
+                                            <div class="skin_item_header">{{ block.settings.heading }}</div>
+                                        {% endif %}
+                                        <div class="skincare_left">
+                                            <div class="row gx-2">
+                                                <div class="col-6">
+                                                    <div class="result_img_m before_img">
+                                                        {% if block.settings.image_before != blank %}
+                                                            <img class="img-fluid" src="{{ block.settings.image_before | img_url: '400x' }}" alt="">
+                                                        {% endif %}
+                                                        {% if block.settings.text_before %}
+                                                            <span class="result_badge">{{ block.settings.text_before }}</span>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="result_img_m after_img">
+                                                        {% if block.settings.image_after != blank %}
+                                                            <img class="img-fluid" src="{{ block.settings.image_after | img_url: '400x' }}" alt="">
+                                                        {% endif %}
+                                                        {% if block.settings.text_after %}
+                                                            <span class="result_badge">{{ block.settings.text_after }}</span>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="r_c_info">
+                                                <div class="c_information">
+                                                    {% if block.settings.image_country != blank %}
+                                                        <div class="flag_img pe-2">
+                                                            <img class="img-fluid" src="{{ block.settings.image_country | img_url: '100x' }}" alt="">
+                                                        </div>
+                                                    {% else %}
+                                                        <div class="flag_img pe-2">
+                                                            <img src="{{ 'america_f.webp' | asset_url }}" alt="" class="img-fluid">
+                                                        </div>  
+                                                    {% endif %}
+                                                    <p class="r_c_name pe-4">{{ block.settings.client }}</p>
+                                                    <div class="verified_img pe-2">
+                                                        <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                                    </div>
+                                                    <p>Verified customer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="skincare_right">
+                                            <div class="skincare_percent">
+                                                <div class="progressCont">
+                                                    <span class="progressWrapper">
+                                                        <span class="progessInfo text-dark">{{ block.settings.progress }}%</span>
+                                                        <svg class="vMQQx" height="77" width="77"
+                                                            viewBox="-29 -29 58 58">
+                                                            <defs>
+                                                                <linearGradient id="gradient" x1="0" x2="0" y1="1"
+                                                                    y2="0">
+                                                                    <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                                                    <stop offset="100%" stop-color="#C7E7DC"></stop>
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle stroke="rgba(221, 224, 228, 1)" fill="none"
+                                                                pathLength="100" class="K4v4P" r="24"
+                                                                style="stroke-width: 1px;"></circle>
+                                                            <circle visibility="visible" fill="none" pathLength="100"
+                                                                transform="rotate(-90)" class="OKwUu" r="24"
+                                                                stroke="url(#gradient)"
+                                                                style="stroke-dasharray: 100; stroke-dashoffset: 13; stroke-width: 5px;">
+                                                            </circle>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                {% if block.settings.progress_text != blank %}
+                                                    {{ block.settings.progress_text }}
+                                                {% endif %}
+                                            </div>
+                                            {% if block.settings.text != blank %}
+                                                <div class="ss_list">
+                                                    {{ block.settings.text }}
+                                                </div> 
+                                            {% endif %}
+                                            <div class="ss_clinical">
+                                                <div class="ss_c_title">
+                                                    <h4>{{ block.settings.feedback_title }}</h4>
+                                                </div>
+
+                                                <div class="ss_c_detail">
+                                                    {% if block.settings.feedback_text %}
+                                                        {{ block.settings.feedback_text }}
+                                                    {% endif %}
+                                                    {% if block.settings.popup_content != blank %}
+                                                        <a class="popup-modal ss_c_link" href="#test-modal{{ forloop.index }}">{{ block.settings.popup_link_text }} <span><img src="{{ 'info.svg' | asset_url }}" alt=""></span></a>    
+
+                                                        <div id="test-modal{{ forloop.index }}" class="mfp-hide white-popup-block skin_popup">
+                                                            <div class="ss_clinical">
+                                                                <div class="ss_c_title">
+                                                                    <h4>Clinical Study</h4>
+                                                                </div>
+                                                                <div class="ss_c_detail">
+                                                                    <p>{{ block.settings.popup_content }}</p>
+                                                                </div>
+                                                                <button title="Close (Esc)" type="button"
+                                                                    class="mfp-close">close</button>
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                            {% if block.settings.product != blank %}
+                                                <div class="ss_skin_mask">
+                                                    {% if block.settings.product_image != blank %}
+                                                        <div class="ss_mask_img">
+                                                            <img class="img-fluid" src="{{ block.settings.product_image | img_url: '250x' }}" alt="{{ block.settings.product_image.alt | escape }}">
+                                                        </div>
+                                                    {% endif %}
+                                                    <div class="ss_mask_info">
+                                                        <h5>{{ block.settings.product.title }}</h5>
+                                                        <a href="{{ routes.root_url }}products/{{ block.settings.product.handle }}">Learn more &gt;</a>
+                                                    </div>
+                                                </div>
+                                            {%  elsif block.settings.product_title != blank %}
+                                                <div class="ss_skin_mask">
+                                                    {% if block.settings.product_image != blank %}
+                                                        <div class="ss_mask_img">
+                                                            <img class="img-fluid" src="{{ block.settings.product_image | img_url: '250x' }}" alt="{{ block.settings.product_image.alt | escape }}">
+                                                        </div>
+                                                    {% endif %}
+                                                    <div class="ss_mask_info">
+                                                        <h5>{{ block.settings.product_title }}</h5>
+                                                        <a href="{{ block.settings.product_url }}">Learn more &gt;</a>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    {%- endfor -%}
+                </div>
+                <div class="pagination_navigation">
+                    <div class="swiper-pagination"></div>
+                    <div class="skinSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                    <div class="skinSlider-swiper-next  swiper-button-next swiper-button"></div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.before-after-slider.name",
+        "class": "section-before-after-slider",
+        "settings": [
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "skincare_slider bg_gradient_yellow_bt"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "select",
+                "id": "title_tag",
+                "label": "Title HTML tag",
+                "info": "It's recommended to have only one h1 html tag per page",
+                "options": [
+                    {
+                        "label": "h1",
+                        "value": "h1"
+                    },
+                    {
+                        "label": "h2",
+                        "value": "h2"
+                    },
+                    {
+                        "label": "h3",
+                        "value": "h3"
+                    }
+                ],
+                "default": "h2"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "t:sections.before-after-slider.blocks.slide.name",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "product_title",
+                        "label": "t:common.product.title.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "product_url",
+                        "label": "t:common.product.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "product_image",
+                        "label": "t:common.product.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_before",
+                        "label": "t:sections.before-after-slider.blocks.slide.settings.image_before.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_before",
+                        "label": "t:sections.before-after-slider.blocks.slide.settings.text_before.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_after",
+                        "label": "t:sections.before-after-slider.blocks.slide.settings.image_after.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_after",
+                        "label": "t:sections.before-after-slider.blocks.slide.settings.text_after.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_country",
+                        "label": "t:common.client.country.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client",
+                        "label": "t:common.client.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "progress",
+                        "min": 40,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.progress.label",
+                        "default": 85
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "progress_text",
+                        "label": "t:common.progress.text.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "feedback_title",
+                        "label": "t:common.feedback.title.label",
+                        "default": "In a Clinical Trial..."
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "feedback_text",
+                        "label": "t:common.feedback.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "popup_link_text",
+                        "label": "t:common.text.label",
+                        "default": "Read more about clinical Study"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "popup_content",
+                        "label": "t:sections.before-after-slider.blocks.slide.settings.popup_content.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.before-after-slider.name",
+                "settings": {
+                    "heading": "Science-backed skincare that’s proven to work.",
+                    "text": "<p>See the real, unedited results for yourself<\/p><p>Want smoother fine lines? Even toned complexion? Clearer skin?<\/p><p>Our science-backed skincare and treatments are<em>clinically-proven<\/em>to work. <\/p><p><strong>Reclaim your confidence at any age,<\/strong>no matter what your skin concern is, so you can.<\/p>"
+                },
+                "blocks": [
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Fine Lines and Wrinkles",
+                            "product": "q-rejuvalight-pro-facewear",
+                            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+                            "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
+                            "text_before": "Before",
+                            "image_after": "shopify:\/\/shop_images\/michelle_after_img.webp",
+                            "text_after": "AFTER 8 WEEKS",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "client": "Michelle S.",
+                            "progress": 87,
+                            "progress_text": "<p><strong>smoother<\/strong> facial wrinkles and fine lines after 12 weeks.<\/p>",
+                            "feedback_text": "<p><strong>...8 out of 10<\/strong> subjects reported a                                                      significant <strong>reduction in periorbital wrinkles<\/strong><\/p>",
+                            "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged\/photoaged individuals in a split-face single-blinded study.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Skin Tone and Texture",
+                            "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+                            "product_image": "shopify:\/\/shop_images\/skiSlider_micro.webp",
+                            "image_before": "shopify:\/\/shop_images\/mica_1_before_img.webp",
+                            "text_before": "BEFORE",
+                            "image_after": "shopify:\/\/shop_images\/mica_after_img.webp",
+                            "text_after": "AFTER 1 TREATMENT",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "client": "Mica A.",
+                            "progress": 91,
+                            "progress_text": "<p><strong>improved<\/strong> clarity, smoother texture and skin                                                  appearance<\/p>",
+                            "feedback_text": "<p><strong>...9 out of 10<\/strong> subjects reported <strong>a                                                         noticeable difference<\/strong> in <strong>skin                                                          texture<\/strong> and <strong>clarify<\/strong> after                                                      treatment.<\/p>",
+                            "popup_content": ""
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Acne and Breakouts",
+                            "product": "q-rejuvalight-pro-facewear",
+                            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+                            "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
+                            "text_before": "BEFORE",
+                            "image_after": "shopify:\/\/shop_images\/bj_nardi_after_img.webp",
+                            "text_after": "AFTER 4 WEEKS",
+                            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+                            "client": "BJ Nardi.",
+                            "progress": 83,
+                            "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 8 weeks.<\/p>",
+                            "feedback_text": "<p><strong>...9 out of 10 <\/strong>subjects said they                                                      saw <strong>a reduction in the skin acne after 2 weeks<\/strong>.<\/p>",
+                            "popup_content": "<p>Improvement ranging up to 83.3% of moderate acne lesion count. A downward shift in the Burton                                                                  grade was seen overall. No adverse effects were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted with male and female subjects with acne grades at baseline ranging from                                                                  Burton grade 1 to 5. Subjects were treated with LED therapy, alternating between the blue (415 nm) and  near-IR (830 nm) heads. No other treatment was allowed. Results were assessed and compared with the baseline values at 1, 4 and 8 weeks post-treatment.<\/p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/p>"
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Pigmentation and Dark Spots",
+                            "product": "q-rejuvalight-pro-facewear",
+                            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+                            "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
+                            "text_before": "BEFORE",
+                            "image_after": "shopify:\/\/shop_images\/jess_after_img.webp",
+                            "text_after": "AFTER 4 WEEKS",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "client": "Jess.",
+                            "progress": 91,
+                            "progress_text": "<p><strong>improved<\/strong> skin tone and enhanced smoothness after 12 weeks.<\/p>",
+                            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion and collagen density.<\/strong><\/p>",
+                            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+                        }
+                    }                                                      
+                ]
+			}
+        ]
+    }
+{% endschema %}

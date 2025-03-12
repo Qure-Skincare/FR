@@ -1,0 +1,105 @@
+{% comment %}
+  Renders the Upsell Popup Card to display recommended products with pricing details, discounts,
+  and call-to-action buttons for adding products to the cart.
+
+  Accepts:
+  - data: {Object} - Contains general upsell information, including titles, subtitles, value propositions, and button texts.
+  - data_product: {Object} - The main product object, including its ID, title, image, price, and variants.
+  - data_product_discount_percent: {Number} - The percentage discount applied to the product.
+  - total_product_discount: {Number} - The total amount saved on the upsell product.
+  - monthly_price: {Number} - The calculated monthly price of the product.
+  - unit_price: {Number} - The price per unit, used dynamically in the value propositions.
+  - ajax_selector: {String} - A selector used to handle AJAX interactions for adding the product to the cart.
+  - check_icon: {String} - An icon representing a checkmark, used dynamically in value propositions.
+
+  Functionality:
+  - Displays upsell product details, including an image, title, price, and discount information.
+  - Highlights value propositions dynamically, replacing placeholders with real data.
+  - Provides interactive buttons for accepting or rejecting the upsell offer.
+  - Supports dynamic metafields for flexible content management.
+  - Ensures a smooth AJAX-based product addition workflow.
+
+  Usage:
+  {% render 'pdm-popup-upsell-landing-card',
+     data: data,
+     data_product: data_product,
+     data_product_discount_percent: data_product_discount_percent,
+     total_product_discount: total_product_discount,
+     monthly_price: monthly_price,
+     unit_price: unit_price,
+     ajax_selector: ajax_selector,
+     check_icon: check_icon
+  %}
+{% endcomment %}
+
+<div class="popupsell-card" data-product-id="{{ data_product.id }}">
+  {% comment %} title {% endcomment %}
+  <div class="popupsell-card-title">
+    <p>{{ data.upsell_subtitle }}</p>
+    <h2>{{ data.upsell_title }}</h2>
+  </div>
+
+  {% comment %} product {% endcomment %}
+  <div class="popupsell-card-content">
+    <div class="popupsell-card-content-product">
+      <div class="popupsell-card-content-product-image">
+        {{ data_product.featured_image | image_url: width: 300 | image_tag: alt: data_product.title }}
+      </div>
+      <div class="popupsell-card-content-product-info">
+        <div class="popupsell-card-content-product-info-wrapper">
+          <h3>{{ data.upsell_product_title }}</h3>
+          <div class="popupsell-card-content-product-info-price">
+            <div class="popupsell-card-content-product-info-price-amount">
+              <span class="popupsell-card-content-product-info-price-amount__full">
+                {{- data_product.price | money_without_trailing_zeros -}}
+              </span>
+              <span class="popupsell-card-content-product-info-price-amount__discount">
+                {{ monthly_price | money_without_trailing_zeros }}
+              </span>
+            </div>
+
+            <div class="popupsell-card-content-product-info-price-offer">
+              <p>save {{ total_product_discount | money_without_trailing_zeros }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {% comment %} value props {% endcomment %}
+    <div class="popupsell-card-content-valueprops">
+      <div class="popupsell-card-content-valueprops-info">
+        <p>{{ data.upsell_valueprops_title }}</p>
+        {{
+          data.upsell_valueprops_content
+          | metafield_tag
+          | replace: '(check)', check_icon
+          | replace: '(unit_price)', unit_price
+        }}
+      </div>
+      <div class="popupsell-card-content-valueprops-footer">
+        <p>{{ data.upsell_valueprops_footer }}</p>
+      </div>
+    </div>
+  </div>
+
+  {% comment %} buttons  {% endcomment %}
+  <div class="popupsell-card-buttons">
+    <button
+      class="popupUpsellButtons"
+      data-product-id="{{ data_product.variants.first.id }}"
+      data-ajax-selector="{{ ajax_selector }}"
+    >
+      <p>
+        {{ data.upsell_text_button_1 }}
+        {{ data_product_discount_percent | floor }}%
+      </p>
+    </button>
+    <button
+      data-ajax-selector="{{ ajax_selector }}"
+      class="popupUpsellNoThanks"
+    >
+      <p>{{ data.upsell_text_button_2 }}</p>
+    </button>
+  </div>
+</div>

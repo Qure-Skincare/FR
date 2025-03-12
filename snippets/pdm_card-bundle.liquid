@@ -1,0 +1,96 @@
+{% comment %}
+this snippets is used in pdm_products-bundle.liquid section, render card product in desktop and a popup in mobile
+  Usage:
+    {% render 'pdm_card-bundle'
+      product: product_object,
+      product-name: card.settings.custom_name,
+      product-img: card.settings.image_product,
+      result-img: card.settings.image_results,
+      show-rated: card.settings.show_top_rated,
+      video: card.settings.video,
+      text-checks: card.settings.text_check,
+      doctor-name: card.settings.doctor_name,
+      doctor-image: card.settings.doctor_image,
+      doctor-text: card.settings.doctor_text,
+      doctor-certificated: card.settings.doctor_certificated,
+      btn-text: section.settings.button_card%}
+{% endcomment %}
+{% if product %}
+<div class="card-bundle hidden-mobile" data-product-id="{{ product.selected_or_first_available_variant.id }}" data-card-bundle-product-price="{{ product.price }}" data-card-bundle-product-price-money="{{ product.price | money_without_trailing_zeros }}">
+    <div class="rate desktop" data-show="{{ show-rated }}" {% if show-rated == false %}style="visibility: hidden;"{% endif %} >
+    Top Rated
+    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+      <path d="M4.49954 0.381958L5.53404 2.95809L8.30376 3.14589L6.1734 4.92583L6.85068 7.61803L4.49954 6.14196L2.1484 7.61803L2.82568 4.92583L0.695312 3.14589L3.46504 2.95809L4.49954 0.381958Z" fill="#FFFAF0"/>
+    </svg>
+  </div>
+  <div class="cont-card-bundle">
+    <div class="close-popup" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91446 0.5L6.91531 0.500597L7.4994 1.08469L7.5 1.08554L7.4994 1.08708L4.58649 4L7.4994 6.91292L7.5 6.91376L7.4994 6.91531L6.91531 7.4994L6.91446 7.5L6.91292 7.4994L4 4.58649L1.08708 7.4994L1.08624 7.5L1.08469 7.4994L0.500597 6.91531L0.5 6.91446L0.500597 6.91292L3.4135 4L0.500597 1.08708L0.5 1.08624L0.500597 1.08469L1.08469 0.500597L1.08554 0.5L1.08708 0.500597L4 3.4135L6.91292 0.500597L6.91446 0.5Z" fill="#797D7C" stroke="black" stroke-width="0.3"/>
+      </svg>
+    </div>
+    <div class="pdm-gallery">
+      <div class="media">
+        {% if product-img %}
+          <img class="src product" src="{{ product-img | image_url }}" alt="image {{ product.title }}">
+        {% else %}
+          <img class="src product" src="{{ product.featured_image | image_url }}" alt="image {{ product.title }}">
+        {% endif %}
+        {% if result-img %}
+          <img class="src results hidden" src="{{ result-img | image_url }}" alt="result {{ product.title }}">
+        {% endif %}
+        {% if video %}
+          <div class="src how-work hidden">
+            <div class="cont-video">
+              {{ video | video_tag: autoplay: true, loop: false, muted: true, controls: true }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <div class="media-btns">
+        <div data-ref="product" class="product active">Product</div>
+        {% if result-img %}
+        <div data-ref="results" class="results">Real Results</div>
+        {% endif %}
+        {% if video %}
+        <div data-ref="how-work" class="how-work">How It works</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="product-info">
+    <div class="title">
+        <h3>{% if product-name != blank %}{{ product-name }}{% else %}{{ product.title }}{% endif %}</h3>
+    </div>
+      <div class="text-checks">
+          {{ text-checks }}
+      </div>
+    </div>
+    {% if doctor-image and doctor-text %}
+      <div class="doctor-info">
+          <div class="photo">
+            {% if doctor-image %}
+              {{ doctor-image |  image_url: width: 256 |  image_tag: alt: doctor-name, class: 'photo-doctor' }}
+            {% endif %}
+          </div>
+          <div class="doctor-text">
+              <div class="review">
+                  {{ doctor-text }}
+              </div>
+              <div class="doctor-data">
+                  <strong>{{ doctor-name }}</strong> | {{ doctor-certificated }}
+              </div>
+          </div>
+      </div>
+    {% endif %} 
+    <div class="bundle-button">
+        <div class="price">
+          {{ product.price | money_without_trailing_zeros }}
+        </div>
+        <div class="bundle-btn" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+            <span class="uncheck">{{ btn-text }}</span>
+            <span class="check">Added</span>
+        </div>
+    </div>
+  </div>
+</div>
+{% endif %}

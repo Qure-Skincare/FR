@@ -1,0 +1,34 @@
+/* =============================== announcement bar start ================== */
+.announcement_bar p {
+    font-size: 13px;
+}
+
+.announcement_bar p span {
+    font-weight: 700;
+}
+
+.announcement_bar p .green_coloured {
+    background-color: var(--clr-green);
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+@media(max-width:767px) {
+    .announcement_bar p {
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0.3px;
+    }
+
+    .announcement_bar p .green_coloured {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
+
+/* =============================== announcement bar end ================== */
+/* ================================== homepage old start ================================ */

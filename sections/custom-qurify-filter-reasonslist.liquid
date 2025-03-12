@@ -1,0 +1,150 @@
+<!-- -- tap water harm start -- -->
+<div class="water_harm bg-yellow section">
+    <div class="container">
+        <div class="section_header text-md-center">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">{{ section.settings.heading }}</h2> 
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        <div class="water_harm_grid">
+            <div class="water_harm_content text-md-end">
+                {%- for block in section.blocks limit:3 -%}
+                    {% if block.type == 'object' %}
+                        <div class="wh_item">
+                            <div class="wh_item_info">
+                                <p><strong>{{ block.settings.heading }}</strong></p>
+                                {{ block.settings.text }}
+                            </div>
+                            {% if block.settings.image != blank %}
+                                <div class="wh_item_img">
+                                    <img src="{{ block.settings.image | img_url: '150x' }}" alt="" class="img-fluid">
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+
+            {% if section.settings.image != blank %}
+                <div class="water_harm_content">
+                    <img class="img-fluid" src="{{ section.settings.image | img_url: '550x' }}" alt="{{ section.settings.image.alt | escape }}">
+                </div>
+            {% endif %}
+
+            <div class="water_harm_content wh_item_left">
+                {%- for block in section.blocks offset:3 limit:3 -%}
+                    {% if block.type == 'object' %}
+                        <div class="wh_item">
+                            {% if block.settings.image != blank %}
+                                <div class="wh_item_img">
+                                    <img src="{{ block.settings.image | img_url: '150x' }}" alt="" class="img-fluid">
+                                </div>
+                            {% endif %}
+                            <div class="wh_item_info">
+                                <p><strong>{{ block.settings.heading }}</strong></p>
+                                {{ block.settings.text }}
+                            </div>
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        </div>
+
+        <div class="get_clearer_wrapper text-center mt-3 mt-md-4">
+            {%- for block in section.blocks -%}
+                {% if block.type == 'button' %}
+                    {% if block.settings.button_label != blank %}
+                        <p><span><img src="https://qureskincaredns.com/new/assets/derma-sm.svg" alt=""></span>{{ block.settings.text_first }}</p>
+                        <a class="btn btn-lg btn-primary btn_green" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</span>
+                        </a>
+                        <p><span> <img src="https://qureskincaredns.com/new/assets/money-sm.svg" alt=""></span>{{ block.settings.text_second }}</p>
+                    {% endif %}
+                {% endif %}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+<!-- -- tap water harm end -- -->
+
+{% schema %}
+    {
+        "name": "Reasons list",
+        "class": "section-water-reasons-list",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 12,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_first",
+                        "label": "t:common.text.label",
+                        "default": "Dermatologist-Reviewed"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label",
+                        "default": "30-Day Money-Back Guarantee"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

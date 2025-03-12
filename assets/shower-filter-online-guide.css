@@ -1,0 +1,324 @@
+.safety-banner-cont h1 {
+    text-shadow: unset;
+    color: #000;
+}
+.q-urify_safety .safety-banner-cont h6 {
+    color: #000;
+    margin-top: 30px;
+}
+.q-urify_safety .safety-banner-cont p {
+    color: #000;
+}
+.instruction_inner {
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #C7E7DC;
+    padding: 15px 0 40px;
+}
+.q-urify_safety .see_work .play_btn a {
+    border-radius: 40px;
+}
+.instruction_manual h5{
+    font-weight: 600;
+}
+.contents-info .tablinks {
+    font-size: 13px;
+}
+.contents-info ul li span {
+    color: #000;
+}
+
+.side_nav ul li a {
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+.side_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: section;
+}
+
+.side_nav ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+.manual_content .step p, 
+.manual_content .step li,
+.manual_content .step .accordion-item span {
+    font-size: 13px;
+    padding: 0;
+    line-height: 25px;
+}
+.manual_content .step ul li{
+    list-style: disc;
+}
+.manual_content .acc_inner-grid {
+    display: grid;
+    grid-template-columns: 19% 57% 24%;
+    border-bottom: 1px solid #C7E7DC;
+    padding: 13px 0;
+    align-items: center;
+}
+.manual_content .acc_inner-grid div:nth-child(3) {
+    padding-left: 15px;
+}
+.manual_content .acc_inner-grid p{
+    padding: 0 10px;
+}
+.manual_content .step h5{
+    font-family: "Canela Web";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    padding-bottom: 12px;
+}
+.manual_content .accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+}
+.manual_content .accordion-button{
+    box-shadow: inset 0 2px 0 #C7E7DC;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15.6px;
+    letter-spacing: 0.16px;
+    padding: 20px 0;
+}
+.manual_content .step .accordion-item:nth-last-child(1) .accordion-button {
+    border-bottom: 2px solid transparent;
+}
+.manual_content .step .accordion-item:nth-last-child(1) .accordion-button.collapsed{
+    border-bottom: 2px solid #C7E7DC;
+}
+.manual_content .step .accordion-item:nth-last-child(1) .accordion-body{
+    border-bottom: 2px solid #C7E7DC;
+}
+.led_guide .manual_content .step .inner_accordion .accordion-item .accordion-button {
+    border-bottom: unset;
+    box-shadow: inset 0 1px 0 #0000001a;
+    padding: 15px 0;
+}
+.led_guide .manual_content .step .inner_accordion .accordion-item .accordion-body {
+    border-bottom: unset;
+}
+.manual_content .step .inner_accordion .accordion-button p{
+    color: #C7E7DC;
+}
+.manual_content .step .inner_accordion .accordion-button p span{
+    color: #000;
+    font-weight: 400;
+    display: block;
+    line-height: 15px;
+}
+.manual_content .step .inner_accordion .accordion-button::after {
+    background-image: url(../assets/inn_arrow-down.svg);
+}
+.manual_content .step .inner_accordion .accordion-body p::before{
+    content: '•';
+    color: #C7E7DC;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+.manual_content .step .inner_accordion .accordion-body p{
+    padding: 15px 0 0 15px;
+    position: relative;
+}
+.manual_content .step_10-content,
+.manual_content .step_11-content {
+    border-style: solid;
+    border-color: #C7E7DC;
+    border-width: 2px 0;
+    padding: 15px 0;
+}
+.manual_content .step_10-content p:not(:last-child){
+    padding-bottom: 20px;
+}
+.manual_content .step_11-content a {
+    color: #000;
+    opacity: .8;
+}
+.side_nav ul li span {
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.side_nav ul li:hover, .side_nav ul li.active{
+    color: #008763;
+}
+.side_nav ul li a:hover, .side_nav ul li a:focus{
+    color: #008763;
+}
+.manual_content .accordion-item {
+    border: unset;
+}
+.manual_content .accordion-button::after {
+    background-image: url(../assets/accordian_arrow.svg);
+}
+.manual_content .accordion-body{
+    padding: 0 0 20px;
+}
+.hidden {
+    display: none;
+  }
+  .q-urify_safety.led_guide .see_more img, .navigation_inner img {
+    background: #000;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
+}
+.navigation_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.q-urify_safety.led_guide .see_more, .navigation_inner {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.13px;
+    border-radius: 50px;
+    border: 1px solid #C7E7DC;
+    background: #FFF;
+    padding: 10px 9px 9px 9px;
+    width: 100%;
+    max-width: 315px;
+    text-align: end;
+}
+.navigation_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+.q-urify_safety.led_guide .static_search {
+    border-radius: 50px;
+    border: 1px solid #EFEFEF;
+    background: #FFF;
+    padding: 12px 35px 12px 20px;
+    width: 100%;
+}
+.q-urify_safety.led_guide .static_search::placeholder{
+    color: #B0B0B0;
+    font-size: 16px;
+}
+.q-urify_safety.led_guide .static_search:focus-visible{
+    outline-color: #C7E7DC;
+    outline-offset: 0;
+}
+.search_main{
+    max-width: 406px;
+    width: 100%;
+}
+.navigation_inner .tab-text p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 195px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.search_main button {
+    background: #fff;
+    border: unset;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.top_menu_text {
+    background: #FFF;
+    box-shadow: 0px 5px 15px 0px rgba(217, 217, 217, 0.25);
+    padding: 16px 30px;
+}
+.top_menu_text p {
+    cursor: pointer;
+    display: inline-block;
+}
+.progress__container .navigation-buttons {
+    background: #FFF;
+    box-shadow: 0px -5px 15px 0px rgba(217, 217, 217, 0.25);
+    padding: 14px 0;
+}
+.visible_hide{
+    visibility: hidden;
+}
+.let_start-btn {
+    box-shadow: 0px -5px 15px 0px rgba(217, 217, 217, 0.25);
+    padding: 12px 0;
+}
+.manual_content .step ul {
+    padding-left: 16px;
+}
+.manual_content .accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+.manual_content .accordion-button::after {
+    transform: rotate(180deg);
+}
+@media(max-width: 767px){
+    .instruction .instruction_manual h5 {
+        font-size: 13px;
+    }
+    .q-urify_safety .safety-banner-cont {
+        margin-bottom: 0;
+    }
+    .instruction {
+        padding: 20px 0;
+    }
+    .instruction_manual h5 {
+        font-size: 13px;
+    }
+    .navigation_inner{
+        max-width: 100%;
+    }
+    .navigation_inner img{
+        max-width: 40px;
+    }
+    .manual_content .acc_inner-grid {
+        grid-template-columns: 19% 71% 10%;
+    }
+    .manual_content .acc_inner-grid div:nth-child(3) {
+        text-align: end;
+        padding-left: 0;
+    }
+    .contents-info {
+        height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        padding: 0 12px;
+    }
+    .contents-info:after {
+        content: '';
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 33.35%, #FFF 99.65%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        z-index: 1;
+    }
+    .q-urify_safety.led_guide .see_more{
+        max-width: 100%;
+    }
+    .search_main{
+        padding: 0 12px;
+    }
+    .instruction_manual h5 {
+        margin-bottom: 15px;
+    }
+    .progress__container .navigation-buttons {
+        padding: 28px 0;
+    }
+    .shower_filter-guide{
+        padding-top: 64px;
+    }
+}

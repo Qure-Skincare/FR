@@ -1,0 +1,25 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4 21.2939L17.7836 26.1517L31.5671 21.2939L17.9893 16.436L4 21.2939Z"
+                                            stroke="#414141" stroke-width="0.8" stroke-miterlimit="2.61313"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4 21.2939V36.6447L17.5778 41.3082L31.5671 36.4504V21.2939"
+                                            stroke="#414141" stroke-width="0.8" stroke-miterlimit="2.61313"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.7832 26.1516V41.308" stroke="#414141" stroke-width="0.8"
+                                            stroke-miterlimit="2.61313" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M35.6814 27.1232C35.6814 27.1232 43.499 15.6588 26.2181 13.327L24.9838 16.2417L18.812 8.27489L29.304 4L28.0696 6.9147C28.0696 6.9147 38.3558 8.4692 40.8245 15.2702C43.2932 22.0711 35.4757 27.1232 35.4757 27.1232H35.6814Z"
+                                            stroke="#414141" stroke-width="0.8" stroke-miterlimit="2.61313"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.9375 23.043V26.9292L12.6405 28.2894V24.4032L8.9375 23.043Z"
+                                            stroke="#414141" stroke-width="0.8" stroke-miterlimit="2.61313"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.9375 23.0427L14.0806 21.0996L17.8069 22.1543L12.6405 24.4029L8.9375 23.0427Z"
+                                            stroke="#414141" stroke-width="0.8" stroke-miterlimit="2.61313"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>

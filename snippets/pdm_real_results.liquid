@@ -1,0 +1,27 @@
+<div class="info-result__wrapper">
+  <div class="swiper swiper-info-result">
+    <div class="swiper-wrapper">
+      {% for i in (1..6) %}
+        {% assign image_id = 'image_new_section_' | append: i %}
+        {% assign text_id = 'image_new_section_text_' | append: i %}
+        {% if block.settings[image_id] != null %}
+          <div class="swiper-slide">
+            {% assign mediaImage = block.settings[image_id] %}
+            <a class="banner-popup-link" id="popup-link">
+              <picture id="image-id">        
+                <img
+                  width="100"
+                  height="auto"
+                  class="img-fluid tab_img"
+                  alt="{{ block.settings[text_id] }}"
+                  src="{{ mediaImage | img_url: 'master' }}"
+                >
+              </picture>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination-real-result dot_pagination"></div>
+  </div>
+</div>

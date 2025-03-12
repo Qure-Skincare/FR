@@ -1,0 +1,85 @@
+{% comment %} 
+  Render Purchase Step 4 Inputs
+
+  Note: This snippet is used to render the inputs of the fourth step of the purchase process.
+  Need:
+
+  Accepts:
+  - name: {String} - The input name.
+  - productRefill: {Object} - The product data to be rendered (Metafield).
+  - productRefill2: {Object} - The product data to be rendered (Metafield).
+  - productRefillInfo: {Object} - The product data to be rendered (Metafield).
+  - checkIcon: {String} - The check icon.
+  - starIcon: {String} - The star icon.
+  - uniqueId: {String} - The unique id.
+  - parentContainer: {String} - The parent container.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step4-inputs',
+    name: 'products4',
+    productRefill: product.metafields.custom.purchase_step_4.value.product_refill,
+    productRefill2: product.metafields.custom.purchase_step_4.value.product_refill_2,
+    productRefillInfo: product.metafields.custom.purchase_step_4.value.product_refill_info,
+    checkIcon: checkIcon,
+    starIcon: starIcon,
+    uniqueId: uniqueId,
+    parentContainer: parentContainer
+  %}
+
+{% endcomment %}
+
+
+<div
+  id="inputs-{{ name }}"
+  class="inputs-{{ name }} {% if name == 'products4' %} show-inputs {% endif %}"
+>
+  <input
+    type="radio"
+    name="{{ name }}"
+    id="{{ name }}-fourth"
+    data-identifier="1"
+    data-position="1"
+    checked
+    data-product-id="{{ productRefill.id }}"
+    value='{
+      "position":1, 
+      "id":{{ productRefill.selected_or_first_available_variant.id }}, 
+      "sellingPlanId":{{ productRefill.selling_plan_groups[0].selling_plans[0].id }},
+      "titleBundle":"{{ productRefill.title }}",
+      "input":"{{ name }}"
+    }'
+  >
+    <label for="{{name}}-fourth">
+      {% render 'pdm_landing-purchase-step4-card' 
+        productInfo: productRefillInfo,
+        productData: productRefill,
+        productData2: productRefill2,
+        cardTypeInfo: 'meta'
+        checkIcon: checkIcon,
+        starIcon: starIcon,
+        uniqueId: uniqueId,
+        parentContainer: parentContainer 
+      %}
+    </label>
+
+    {% comment %} general card {% endcomment %}
+  <input
+    type="radio"
+    data-identifier="2"
+    data-position="2"
+    name="{{ name }}"
+    id="{{ name }}-five"
+    value='{
+      "position":2,
+      "value":2,
+      "input":"{{ name }}"
+    }'
+  >
+    <label for="{{ name }}-five">
+      {% render 'pdm_landing-purchase-step4-card' 
+        generalSettings: generalSettings,
+        cardTypeInfo: 'general',
+        crossIcon: crossIcon
+      %}
+    </label>
+</div>

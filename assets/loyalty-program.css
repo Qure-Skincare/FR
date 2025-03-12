@@ -1,0 +1,720 @@
+.main_banner .section_header .qure_logo {
+    max-width: 178px;
+    margin: auto;
+}
+
+.main_banner .section_header h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 57.37px;
+    letter-spacing: 0.45px;
+}
+
+.loyalty_program .main_banner .section_header {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.loyalty_program .main_banner .main_b_wrapper {
+    align-items: start;
+}
+
+/* ...... already member start ....... */
+.already_member-content .button_content a {
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.button_content .login_here h2 {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.28px;
+    font-family: "Canela light";
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.already_member-content .login_here a {
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-weight: 500;
+    display: inline-block;
+    color: #000;
+}
+
+.button_content .login_here {
+    max-width: fit-content;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.already_member .button_content {
+    text-align: center;
+}
+
+.loyalty_program .already_member {
+    padding-top: 92px;
+}
+
+.already_member-content .text_content p:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+/* ...... already member end ....... */
+
+/* ...... what do i get start ....... */
+.product .qoins {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.get_pd-content .product del {
+    color: #00000085;
+}
+
+.get_pd-content .product span {
+    background: #C7E7DC;
+    border-radius: 20px;
+    padding: 0 8px;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 13px;
+    color: #000;
+}
+
+.get_pd-content .product p {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.get_pd-content .product .qoins p {
+    font-weight: 600;
+}
+
+.product h6 {
+    margin-bottom: 13px;
+}
+
+.get_pd-content .product {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    padding-right: 0;
+}
+
+.get_pd-content{
+    border-radius: 8px;
+    position: relative;
+}
+.get_content-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+/* ...... what do i get end ....... */
+
+/* ...... how it works start ....... */
+.how_it-works .section_header p {
+    padding: 0;
+}
+.how_it-works .section_header h2{
+    padding-bottom: 35px;
+}
+.return_step-body {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 16px;
+}
+.return_step-body h5 {
+    font-family: "Canela light";
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.28px;
+    margin-bottom: 0;
+}
+.how_it-works .return_step_bx {
+    font-size: 17px;
+}
+.how_it-works .return_step p{
+    font-size: 14px;
+}
+/* ...... how it works end ....... */
+
+/* ...... Club tiers & rewards start ....... */
+.club_tier-reward .return_step-body {
+    display: block;
+    text-align: center;
+}
+.club_tier-reward .return_step_bx {
+    width: max-content;
+    border-radius: 20px;
+    padding: 0 12px;
+    margin: 0 auto;
+    gap: 8px;
+}
+.return_step span.line {
+    height: 1px;
+    display: block;
+    background: #EDE7DD;
+    max-width: 160px;
+    width: 100%;
+    margin: auto;
+}
+.club_tier-reward .return_step .ss_list {
+    padding: 12px 25px;
+}
+.club_tier-reward .return_step {
+    height: auto;
+}
+.club_tier-reward .ss_list ul li{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+/* ...... Club tiers & rewards end ....... */
+
+/* ...... way to earn start start ....... */
+.way_to-earn .return_step_bx {
+    width: max-content;
+    border-radius: 20px;
+    padding: 0 12px;
+    margin: 0 auto;
+    gap: 8px;
+}
+.way_to-earn-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.way_to-earn-content .way {
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 24px 12px;
+    text-align: center;
+}
+.way_to-earn-content a {
+    border-radius: 25px;
+    font-size: 13px;
+    padding: 6px 16px;
+}
+.way_to-earn-content a img {
+    margin-left: 8px;
+    height: 10px;
+    vertical-align: baseline;
+}
+.way_to-earn-content .way p {
+    padding-top: 12px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.club_tier-reward ul li span {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16px;
+}
+.club_tier-reward .qoins_desc {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    text-align: center;
+    padding-top: 20px;
+}
+.refer_friend .refer_friend-content input {
+    border-radius: 50px;
+    border: 1px solid #4E4E4E;
+    background: #FFF;
+    padding: 10px 26px;
+    font-size: 14px;
+}
+.refer_friend .refer_friend-content input::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0.14px;
+    color: #4E4E4E;
+}
+/* ...... way to earn start end ....... */
+
+/* ...... Stamp.io CSS ....... */
+[data-widget-type=rewards-summary] {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid !important;
+    grid-template-columns: 57% 43%;
+    padding: 80px 0 0 !important;
+    border-bottom: unset !important;
+}
+[data-widget-type="rewards-summary"] .stamped-rewards-widget-text{
+    font-size: 14px !important;
+    text-align: start !important;
+    line-height: 26px !important;
+    margin-bottom: 0 !important;
+}
+[data-widget-type="rewards-summary"] .stamped-rewards-widget-text-holder,
+[data-widget-type="rewards-summary"] .stamped-rewards-widget-btn-holder {
+    padding: 0 12px;
+}
+[data-widget-type="rewards-summary"] .stamped-rewards-widget-btn-holder{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stamped-rewards-widget-btn-sign-up {
+    width: 100%;
+}
+.stamped-rewards-widget-btn-sign-in,
+.stamped-rewards-widget-btn-sign-up{
+    border-width: 1px !important;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 500 !important;
+    margin-bottom: 0 !important;
+    position: relative;
+}
+.stamped-rewards-widget-btn-sign-in {
+    width: max-content;
+    margin: 20px auto 20px !important;
+}
+.stamped-rewards-widget-btn-sign-in:after {
+    content: "Already a member?";
+    font-size: 28px;
+    font-family: 'Canela Light';
+    line-height: 32px;
+    letter-spacing: .28px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: max-content;
+}
+.stamped-rewards-widget-btn-sign-up::after{
+    content: 'Takes less than 5 minutes';
+    color: #4E4E4E;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+}
+[data-widget-type="rewards-summary"] .stamped-rewards-widget-title {
+    display: none;
+}
+[data-widget-type="rewards-spendings-v2"] .stamped-rewards-spendings {
+    max-width: 860px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+[data-widget-type="rewards-spendings-v2"] .stamped-rewards-widget-item {
+    width: 100% !important;
+    height: 146px !important;
+    margin: 0 !important;
+    box-shadow: 0 0 4px #0000001f;
+    border-radius: 8px;
+}
+[data-campaign-id="861e0892-65bb-4049-8016-cafd56543859"] .stamped-rewards-widget-campaign-image,
+[data-campaign-id="2705dca1-37c2-4152-8187-124b33f31de3"] .stamped-rewards-widget-campaign-image,
+[data-campaign-id="24c740fa-eaa9-4ebe-b083-3caf5d3ffd6b"] .stamped-rewards-widget-campaign-image,
+[data-campaign-id="6fa88008-c468-4d46-ad07-b65e7c32e0d3"] .stamped-rewards-widget-campaign-image {
+    display: none;
+}
+
+[data-element-id="2"] .stamped-rewards-widget-item-content {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: unset!important;
+    min-height: 100%!important;
+    height: 100%;
+}
+[data-campaign-id="861e0892-65bb-4049-8016-cafd56543859"] .stamped-rewards-widget-item-content {
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/gift-card.webp?v=1734064288);
+}
+[data-campaign-id="2705dca1-37c2-4152-8187-124b33f31de3"] .stamped-rewards-widget-item-content{
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/mi.webp?v=1734064288);
+}
+[data-campaign-id="6fa88008-c468-4d46-ad07-b65e7c32e0d3"] .stamped-rewards-widget-item-content{
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/mi-patches.webp?v=1734064288);
+}
+[data-campaign-id="24c740fa-eaa9-4ebe-b083-3caf5d3ffd6b"] .stamped-rewards-widget-item-content{
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/face-serum.webp?v=1734064288);
+}
+[data-widget-type="rewards-spendings-v2"] .stamped-rewards-widget-campaign-title {
+    font-weight: 400 !important;
+    font-size: 13px;
+    text-align: start;
+}
+[data-widget-type="rewards-spendings-v2"] .stamped-rewards-widget-campaign-value {
+    margin-bottom: 0 !important;
+    font-size: 13px;
+    text-align: start;
+    font-weight: 600;
+    position: relative;
+}
+[data-widget-type=rewards-spendings-v2] .stamped-rewards-widget-campaign-value:before {
+    content: url(https://qureskincaredns.com/new/assets/qoins.svg);
+    padding-right: 10px;
+    vertical-align: text-top;
+}
+[data-widget-type="rewards-spendings-v2"] .stamped-rewards-widget-item-inner{
+    text-align: start;
+}
+[data-widget-type="rewards-spendings-v2"] .stamped-rewards-widget-button {
+    font-size: 12px !important;
+    margin: 10px 1px 0 !important;
+    border-radius: 50px;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+[data-widget-type=rewards-how-it-works] ul.stamped-rewards-widget-how-it-works-list {
+    gap: 30px;
+    align-items: unset !important;
+}
+[data-widget-type="rewards-how-it-works"] li.stamped-rewards-widget-how-it-works-list-item {
+    height: inherit !important;
+    border-radius: 4px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 20px 16px;
+    margin-bottom: 0 !important;
+    align-items: start !important;
+    justify-content: start !important;
+}
+[data-widget-type="rewards-how-it-works"] .stamped-rewards-widget-number span {
+    color: #000000 !important;
+}
+[data-widget-type="rewards-how-it-works"] .stamped-rewards-widget-number {
+    background-color: #C7E7DC !important;
+    height: 30px !important;
+    width: 30px !important;
+    position: relative;
+}
+[data-widget-type=rewards-how-it-works] .stamped-rewards-widget-number:after {
+    content: "STEP";
+    position: absolute;
+    right: -50px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+[data-widget-type="rewards-how-it-works"] .stamped-rewards-widget-heading {
+    font-weight: normal !important;
+    font-size: 28px !important;
+    color: #000;
+    font-family: "Canela light";
+    position: relative;
+}
+[data-target-id=section-step-one] .stamped-rewards-widget-heading:before {
+    content: url(https://qureskincaredns.com/new/assets/user.svg);
+    vertical-align: text-top;
+    padding-right: 10px;
+}
+[data-target-id=section-step-two] .stamped-rewards-widget-heading:before{
+    content: url(https://qureskincaredns.com/new/assets/2-qoins.svg);
+    vertical-align: text-top;
+    padding-right: 10px;
+}
+[data-target-id=section-step-three] .stamped-rewards-widget-heading:before{
+    content: url(https://qureskincaredns.com/new/assets/4-qoins.svg);
+    vertical-align: text-top;
+    padding-right: 10px;
+}
+[data-element-id="5"] .stamped-rewards-earnings{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1150px !important;
+}
+[data-element-id="5"] .stamped-rewards-widget-item {
+    width: 16.66% !important;
+    height: auto !important;
+    margin: 0px !important;
+    padding: 10px;
+}
+[data-element-id="5"] .stamped-rewards-widget-campaign-title {
+    font-weight: normal !important;
+    font-size: 13px !important;
+    line-height: 24px !important;
+    padding: 0 12px !important;
+}
+[data-element-id="5"] .stamped-rewards-widget-item-content {
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    border: unset !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    align-items: initial !important;
+}
+[data-element-id="5"] .stamped-rewards-widget-button {
+    border-radius: 50px !important;
+    background: #000000 !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    padding: 4px 12px !important;
+    margin: 0 1px !important;
+}
+[data-element-id="5"] .stamped-rewards-widget-item-inner {
+    padding: 24px 12px !important;
+    margin-top: 0 !important;
+}
+[data-element-id="5"] .stamped-rewards-widget-campaign-value {
+    font-size: 14px;
+    font-weight: 600;
+}
+[data-element-id="5"] .stamped-rewards-widget-campaign-value:before {
+    content: url(https://qureskincaredns.com/new/assets/qoins.svg);
+    vertical-align: sub;
+    padding-right: 5px;
+}
+[data-element-id="5"] .fa-bags-shopping:before{
+    background: url(https://qureskincaredns.com/new/assets/way-shop.svg) no-repeat center / contain;
+}
+[data-element-id="5"] .fa-envelope:before{
+    background: url(https://qureskincaredns.com/new/assets/way-envlop.svg) no-repeat center / contain;
+}
+[data-element-id="5"] .fa-image:before{
+    background: url(https://qureskincaredns.com/new/assets/way-camera.svg) no-repeat center / contain;
+}
+[data-element-id="5"] .fa-instagram:before{
+    background: url(https://qureskincaredns.com/new/assets/way-ig.svg) no-repeat center / contain;
+}
+[data-element-id="5"] .fa-square-youtube:before, .fa-youtube-square:before{
+    background: url(https://qureskincaredns.com/new/assets/way-youtube.svg) no-repeat center / contain;
+}
+[data-element-id="5"] .fa-tiktok:before{
+    background: url(https://qureskincaredns.com/new/assets/way-tiktok.svg) no-repeat center / contain;
+}
+[data-element-id="5"] i:before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.stamped-rewards-widget-heading-main{
+    font-family: "Canela web";
+}
+[data-widget-type="rewards-referral"] .stamped-rewards-widget-heading-sub{
+    font-size: 0 !important;
+}
+[data-widget-type="rewards-referral"]{
+    border-top: unset !important;
+}
+[data-element-id="3"] .stamped-rewards-widget-how-it-works{
+    padding: 30px 0 60px !important;
+}
+[data-element-id="5"] [data-campaign-id="c39f42f6-f4c2-491d-91a9-9ebb6bc7d327"] .stamped-rewards-widget-campaign-title {
+    padding: 0 24px !important;
+}
+@media(max-width: 1199px){
+    [data-element-id="5"] .stamped-rewards-widget-item {
+        width: 20%!important;
+    }
+}
+@media(max-width: 991px){
+    [data-element-id="5"] .stamped-rewards-widget-item {
+        width: 25%!important;
+    }
+}
+/* ...... Stamp.io CSS ....... */
+
+@media(max-width: 768px) {
+    .main_banner .section_header h1 {
+        font-size: 34px;
+    }
+
+    .main_banner .section_header .qure_logo {
+        max-width: 140px;
+    }
+
+    .loyalty_program .main_banner .section_header {
+        padding-top: 44px;
+    }
+    .loyalty_program .already_member {
+        padding-top: 40px;
+    }
+    .button_content {
+        padding-top: 32px;
+    }
+    .already_member-content .button_content a {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .button_content .login_here h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .button_content .login_here {
+        padding: 24px 50px;
+        background: rgba(217, 217, 217, 0.10);
+        max-width: unset;
+    }
+    .get_pd-content .product p {
+        font-size: 11px;
+    }
+    .get_pd-content .product span{
+        font-size: 12px;
+    }
+    .get_pd-content .product del{
+        font-size: 14px;
+    }
+    .what_do-get-content .col-md-6:nth-child(even) .get_content-inner {
+        justify-content: end;
+    }
+    .what_do-get-content .col-md-6:nth-child(even) .get_content-inner .product {
+        text-align: end;
+    }
+    .what_do-get-content .col-md-6:nth-child(even) .get_content-inner .product
+    .qoins {
+        justify-content: end;
+    }
+    .get_pd-content .product{
+        padding-right: 24px;
+    }
+    .how_it-works .section_header p:not(:nth-child(3)) {
+        padding-top: 16px;
+    }
+    .return_step-body h5 {
+        font-size: 22px;
+    }
+    .way_to-earn-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .way_to-earn-content .way p {
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.11px;
+    }
+    .way_to-earn .return_step_bx {
+        font-size: 10px;
+    }
+    .way_to-earn-content a {
+        font-size: 10px;
+    }
+    .way_to-earn-content .way>img {
+        width: 41px;
+    }
+    .product.mob-serum>p {
+        padding-left: 65px;
+    }
+    .return_step h6 {
+        font-size: 13px;
+    }
+    .club_tier-reward .return_step_bx {
+        font-size: 13px;
+    }
+    .how_it-works .section_header h2 {
+        padding-bottom: 15px;
+    }
+    .way_to-earn-content a img{
+        height: 7px;
+    }
+
+    /* ...... Stamp.io CSS ....... */
+    [data-widget-type=rewards-summary] {
+        grid-template-columns: 100%;
+    }
+    [data-widget-type=rewards-summary] .stamped-rewards-widget-btn-holder {
+        min-height: 240px;
+        background: linear-gradient(180deg, rgb(255 255 255) 40%, rgb(217 217 217 / 19%) 40%);
+    }
+    [data-widget-type=rewards-summary] .stamped-rewards-widget-text {
+        font-size: 13px!important;
+    }
+    .stamped-rewards-widget-btn-sign-in:after {
+        font-size: 22px;
+        width: 100%;
+    }
+    .stamped-rewards-widget-btn-sign-in, .stamped-rewards-widget-btn-sign-up {
+        font-size: 16px;
+    }
+    [data-widget-type=rewards-summary] .stamped-rewards-widget-text-holder {
+        margin-bottom: 22px !important;
+    }
+    [data-widget-type=rewards-summary] .stamped-rewards-widget-text-holder, [data-widget-type=rewards-summary] .stamped-rewards-widget-btn-holder {
+        padding: 0 24px;
+    }
+    [data-widget-type=rewards-spendings-v2] .stamped-rewards-spendings {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 24px !important;
+    }
+    [data-widget-type=rewards-spendings-v2] .stamped-rewards-widget-item {
+        margin: 0 !important;
+    }
+    [data-element-id="5"] .stamped-rewards-widget-item {
+        width: 50%!important;
+        padding: 5px;
+    }
+    [data-element-id="5"] .stamped-rewards-earnings{
+        padding: 0 20px !important;
+    }
+    [data-element-id="5"] .stamped-rewards-widget-campaign-title {
+        font-size: 11px!important;
+        padding: 0 13px !important;
+    }
+    [data-element-id="5"] .stamped-rewards-widget-campaign-value {
+        font-size: 10px;
+    }
+    .stamped-rewards-widget-heading-main {
+        font-size: 28px!important;
+        margin-bottom: 30px!important;
+        text-align: start !important;
+        padding: 0 24px;
+    }
+    [data-widget-type=rewards-how-it-works] li.stamped-rewards-widget-how-it-works-list-item:not(:last-child){
+        margin-bottom: 30px !important;
+    }
+    [data-element-id="5"] .stamped-rewards-widget-button {
+        font-size: 10px!important;
+    }
+    [data-widget-type=rewards-how-it-works] .stamped-rewards-widget-heading {
+        font-size: 22px!important;
+    }
+    [data-widget-type=rewards-how-it-works] ul.stamped-rewards-widget-how-it-works-list{
+        padding: 0 24px !important;
+    }
+    [data-element-id="6"]{
+        margin-bottom: 40px !important;
+    }
+    [data-element-id="6"] .stamped-rewards-widget-description{
+        padding: 0 24px;
+        text-align: start !important;
+        line-height: 22px !important;
+    }
+    [data-element-id="1"]{
+        padding-bottom: 0 !important;
+    }
+    [data-element-id="3"] .stamped-rewards-widget-how-it-works{
+        padding-top: 0 !important;
+    }
+    [data-element-id="5"] i:before{
+        width: 40px;
+        height: 40px;
+    }
+    [data-element-id="5"] [data-campaign-id=c39f42f6-f4c2-491d-91a9-9ebb6bc7d327] .stamped-rewards-widget-campaign-title {
+        padding: 0 25px!important;
+    }
+    /* ...... Stamp.io CSS ....... */
+}

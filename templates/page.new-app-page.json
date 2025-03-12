@@ -1,0 +1,198 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "banner_dMm43V": {
+      "type": "banner",
+      "blocks": {
+        "code_bV7dw4": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"app_img justify-content-md-start\">\n                                <div class=\"app_item\">\n                                    <a href=\"https:\/\/apps.apple.com\/us\/app\/qure-skincare\/id1537832613\" target=\"_blank\">\n                                        <img src=\"{{ 'app_appstore_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/a>\n                                <\/div>\n                                <div class=\"app_item\">\n                                    <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure\"\n                                        target=\"_blank\">\n                                        <img src=\"{{ 'app_googleplay_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/a>\n                                <\/div>\n                            <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "code_bV7dw4"
+      ],
+      "custom_css": [
+        ".main_b_wrapper {color: #000000 !important; background: none !important;}",
+        ".banner_content {max-width: unset;}",
+        ".section_header {text-align: center !important;}",
+        "@media (min-width: 769px) {.section_header {text-align: left !important; }}"
+      ],
+      "settings": {
+        "heading": "The only FDA-cleared LED light therapy mask with an app.",
+        "text": "",
+        "image": "shopify:\/\/shop_images\/app_banner_desk_f8b82910-1f85-4d4c-af17-e64fb3525eda.webp",
+        "image_mobile": "shopify:\/\/shop_images\/app_banner_mob_3898342a-6a2f-4a55-bae9-5064651d0855.webp",
+        "align_center": false,
+        "classname": "bg_gradient_mob text-light"
+      }
+    },
+    "slider_8PJF8T": {
+      "type": "slider",
+      "blocks": {
+        "object_HQFWDh": {
+          "type": "object",
+          "settings": {
+            "heading": "Customize Treatments",
+            "text": "<p>Customize your LED treatments for a personalized program that’s unique to your skin’s profile. Choose between the Anti-Aging or Anti-Breakout treatment on 5 facial areas to treat your specific skin concerns, no one else's.<\/p>",
+            "image": "shopify:\/\/shop_images\/app_out_2.webp"
+          }
+        },
+        "object_XGWAbF": {
+          "type": "object",
+          "settings": {
+            "heading": "Plan and Schedule",
+            "text": "<p>The Qure planner shows your treatment history and scheduled treatments in a monthly calendar. View your total summary of completed challenges, monthly and yearly treatments.<\/p>",
+            "image": "shopify:\/\/shop_images\/app_out_3.webp"
+          }
+        },
+        "object_HPr94A": {
+          "type": "object",
+          "settings": {
+            "heading": "Get Reminders",
+            "text": "<p>Schedule in your LED treatments on your own time. Get reminders straight to your phone so you never miss a treatment, consistency is key to seeing the best results!<\/p>",
+            "image": "shopify:\/\/shop_images\/app_out_1_b51ad891-7107-4a61-8748-a2d4d8152438.webp"
+          }
+        }
+      },
+      "block_order": [
+        "object_HQFWDh",
+        "object_XGWAbF",
+        "object_HPr94A"
+      ],
+      "settings": {
+        "heading": "An app for out-of-this world skincare",
+        "text": "<p>Your skin’s unique. So your treatment should be. Step into the world of personalized skincare with the Qure Skincare App. It gives you full control of your clinical-grade LED light therapy treatments. No more visits to beauty clinics, no more waiting rooms at the dermatologist.<\/p>"
+      }
+    },
+    "featuredin_8PJF8T": {
+      "type": "custom-app-page-featured-in",
+      "blocks": {
+        "text_n6txxd": {
+          "type": "text",
+          "settings": {
+            "text": "“The professional grade is the perfect addition to any \\n at-home skincare routine.”"
+          }
+        },
+        "text_QADAJK": {
+          "type": "text",
+          "settings": {
+            "text": "“If you're on the hunt for a red light therapy tool that checks all of the boxes (who isn't?!), Qure's Light Therapy Mask is your answer.”"
+          }
+        },
+        "text_QNFwEj": {
+          "type": "text",
+          "settings": {
+            "text": "“If you're unsure of what your skin needs, you can get the right treatment out of your LED face mask. That way, you can mask in total confidence.”"
+          }
+        },
+        "text_T8G8Md": {
+          "type": "text",
+          "settings": {
+            "text": "“Qure Light Therapy Mask features five different types of light.... You can customize and track your progress using Qure’s app.”"
+          }
+        },
+        "image_Rhx8ET": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue-black.svg"
+          }
+        },
+        "image_MXxkM8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/womenshealth.svg"
+          }
+        },
+        "image_MXBcNW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle-black.svg"
+          }
+        },
+        "image_YiXJH9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/si_showcase.svg"
+          }
+        }
+      },
+      "block_order": [
+        "text_n6txxd",
+        "text_QADAJK",
+        "text_QNFwEj",
+        "text_T8G8Md",
+        "image_Rhx8ET",
+        "image_MXxkM8",
+        "image_MXBcNW",
+        "image_YiXJH9"
+      ],
+      "settings": {
+        "heading": "FEATURED IN"
+      }
+    },
+    "two_column_box_GgVYqi": {
+      "type": "two-column-box",
+      "blocks": {
+        "content_JDmYWK": {
+          "type": "content",
+          "settings": {
+            "text": "<p>[image_mobile][code]<\/p>",
+            "column_content": 0,
+            "classname": ""
+          }
+        },
+        "image_NDd43Y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app_qure.gif",
+            "classname": "fs-img  pb-4 pb-md-0 text-center"
+          }
+        },
+        "code_7Rb7mm": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"section_header text-center pb-0\">\n                            <h2 class=\"title-lg paddingB d-none d-md-block\">Out-of-this<br> world skincare awaits\n                                you\n                            <\/h2>\n                            <h2 class=\"title-lg paddingB d-block d-md-none\">Out-of-this world<br> skincare awaits\n                                you\n                            <\/h2>\n                            <div class=\"app_img\">\n                                <div class=\"app_item me-md-4\">\n                                    <a href=\"https:\/\/apps.apple.com\/us\/app\/qure-skincare\/id1537832613\" target=\"_blank\">\n                                        <img src=\"{{ 'app_appstore_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/a>\n                                <\/div>\n                                <div class=\"app_item\">\n                                    <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure\"\n                                        target=\"_blank\">\n                                        <img src=\"{{ 'app_googleplay_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/a>\n                                <\/div>\n                            <\/div>\n                        <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "content_JDmYWK",
+        "image_NDd43Y",
+        "code_7Rb7mm"
+      ],
+      "custom_css": [
+        ".row {align-items: center !important;}"
+      ],
+      "settings": {
+        "classname": "technology_light px-4 px-md-auto py-5 py-md-0 pt-md-4",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "featuredin_extended_dxWkp4": {
+      "type": "featuredin_extended",
+      "disabled": true,
+      "settings": {
+        "heading": "FEATURED IN"
+      }
+    }
+  },
+  "order": [
+    "banner_dMm43V",
+    "slider_8PJF8T",
+    "featuredin_8PJF8T",
+    "two_column_box_GgVYqi",
+    "featuredin_extended_dxWkp4"
+  ]
+}

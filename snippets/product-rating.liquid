@@ -1,0 +1,62 @@
+{% if rating_count %}
+    <div class="refill_review mb-2">
+
+
+        {% assign rating_string = rating_value %}
+        {% assign parts = rating_string | split: "." %}
+        {% assign integer_part = parts[0] | times: 1 %}
+        {% assign decimal_part = parts[1] | slice: 0, 2 | times: 1 | round: 2 %}
+
+        <div class="star_gp">
+            {% if integer_part > 0 %}
+                <img src="{{ "star.png" | asset_url  }}" width="23" height="21" />
+            {% endif %}
+            {% if integer_part > 1 %}
+                <img src="{{ "star.png" | asset_url  }}" width="23" height="21" />
+            {% endif %}
+            {% if integer_part > 2 %}
+                <img src="{{ "star.png" | asset_url  }}" width="23" height="21" />
+            {% endif %}
+            {% if integer_part > 3 %}
+                <img src="{{ "star.png" | asset_url  }}" width="23" height="21" />
+            {% endif %}
+            {% if integer_part > 4 %}
+                <img src="{{ "star.png" | asset_url  }}" width="23" height="21" />
+            {% else %}
+                {% if decimal_part > 50 %}
+                    <img src="{{ "star.png" | asset_url  }}" width="23" height="21" />
+                {% else %}
+                    <img src="{{ "star-half.png" | asset_url  }}" width="23" height="21" />
+                {% endif %}
+            {% endif %}
+        </div>
+        <p class="text-sm fw-normal" style="text-decoration: none;">
+            <a href="#stamped-main-widget"><span id="rating">{{ rating_value | slice: 0, 3 }}</span>/5 Rated by Customers</a>
+        </p>
+    </div>
+    <style>
+        .refill_review a {
+            color: #000 !important;
+        }
+    </style>
+    <script>
+        (function() {
+            function customRound(value) {
+                let integerPart = Math.floor(value);
+                let firstDecimalDigit = Math.floor((value - integerPart) * 10);
+                let remainingDecimals = (value - integerPart) * 10 - firstDecimalDigit;
+
+                if (remainingDecimals >= 0.5) {
+                    return integerPart + (firstDecimalDigit + 1) / 10;
+                } else {
+                    return integerPart + firstDecimalDigit / 10;
+                }
+            }
+
+            let ratingElement = document.getElementById('rating');
+            if (ratingElement) {
+                ratingElement.textContent = customRound('{{ rating_value }}');
+            }
+        })();        
+    </script>
+{% endif %}

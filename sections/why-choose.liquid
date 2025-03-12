@@ -1,0 +1,246 @@
+<!-- Comparison Section table start -->
+<div class="bg-white comparison-section section anti_comparison-section">
+    {% if section.settings.heading != blank %}
+        <div class="section_header text-md-center mb-3 px-4">
+            <h2 class="title-lg d-none d-md-block pb-2">{{ section.settings.heading }}</h2>
+            <h2 class="title-lg d-block d-md-none pb-2">{{ section.settings.heading }}</h2>
+        </div>   
+    {% endif %}
+
+    <div class="container">
+        <div class="comparison_row--main">
+            <div class="comparison-row border-0">
+                <div class="row g-0">
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-6">
+                                <div class="comp-col comp_hdr bg-default py-0">
+                                    {% if section.settings.image_first != blank %}
+                                        <div class="comp_mask_img">
+                                            <img src="{{ section.settings.image_first | img_url: '250x' }}" alt="first image" class="img-fluid">
+                                            {% if section.settings.text_first != blank %}
+                                                <h6>{{ section.settings.text_first }}</h6>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-6">
+                                <div class="comp-col comp_hdr py-0">
+                                    {% if section.settings.image_second != blank %}
+                                        <div class="comp_mask_img">
+                                            <img src="{{ section.settings.image_second | img_url: '250x' }}" alt="second image" class="img-fluid">
+                                            {% if section.settings.text_second != blank %}
+                                                <h6>{{ section.settings.text_second }}</h6>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comparison_row-main">
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'option' %}
+                        <div class="comparison-row">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <div class="comp-col comp-row__text-wrapper">
+                                        <div class="comp-row__title">{{ block.settings.text  }}</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-md-3 col-6">
+                                            <div
+                                                class="comp-col comp_col-check d-flex align-items-center justify-content-center bg-default">
+                                                {% if block.settings.first_option == true %}
+                                                    <span class="g__checkBox"></span>
+                                                {% else %}
+                                                    <span class="cross__checkBox"></span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-6">
+                                            <div class="comp-col comp_col-check d-flex align-items-center justify-content-center pt-md-4 pt-2">
+                                                {% if block.settings.second_option == true %}
+                                                    <span class="g__checkBox"></span>
+                                                {% else %}
+                                                    <span class="cross__checkBox"></span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'button' %}
+                    <div class="get_confident-btn mw-452 mx-auto">
+                        <a class="btn btn-lg btn-primary buy_btn" href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</a>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Comparison Section table end -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.why-choose.name",
+        "class": "section-why-choose",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_first",
+                "label": "t:common.product.label"
+            },
+            {
+                "type": "text",
+                "id": "text_first",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_second",
+                "label": "t:common.product.label"
+            },
+            {
+                "type": "text",
+                "id": "text_second",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "option",
+                "limit": 10,
+                "name": "t:common.option.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "first_option",
+                        "label": "t:common.choose_option.first.label",
+                        "default": true
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "second_option",
+                        "label": "t:common.choose_option.second.label",
+                        "default": false
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.why-choose.name",
+                "settings": {
+                    "heading": "Why choose Qure?",
+                    "image_first": "shopify:\/\/shop_images\/compare_micro.webp",
+                    "text_first": "Qure",
+                    "image_second": "shopify:\/\/shop_images\/face_cream.png",
+                    "text_second": "Face Creams"
+                },
+                "blocks": [
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "More effective than topical treatments",
+                            "first_option": true,
+                            "second_option": false
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Penetrates the skin barrier",
+                            "first_option": true,
+                            "second_option": false
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Deliver ingredients deep into the skin",
+                            "first_option": true,
+                            "second_option": false
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Visible results after one treatment",
+                            "first_option": true,
+                            "second_option": false
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Only takes 5 minutes",
+                            "first_option": true,
+                            "second_option": false
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Reviewed by dermatologists",
+                            "first_option": true,
+                            "second_option": true
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "settings": {
+                            "button_label": "Try It Now",
+                            "button_url": "#new-landing-purchase"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

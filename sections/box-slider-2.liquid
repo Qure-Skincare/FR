@@ -1,0 +1,80 @@
+{% style %}
+#steps{{ section.id }} .swiper-slide a{
+    text-decoration: none;
+    color: #000;
+}
+{% endstyle %}
+<!-- -- steps to return or exchange start -- -->
+<div class="steps_return section" id="steps{{ section.id }}">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+        <div class="section_header">
+            <h1 class="title-lg text-md-center">{{ section.settings.heading }}</h1>
+        </div>
+        {% endif %}
+        <div class="swiper dot_pagination stepsReturn twa__swiper p-1" id="twa__swiper-stepsReturn"
+            data-section-id="stepsReturn" data-autoplay="false" data-loop="false" data-centerslide="false"
+            data-mobile="1.21" data-tablet="3" data-desktop="4" data-spacing="20"
+            data-arrowleft="stepsReturn-swiper-prev" data-arrowright="stepsReturn-swiper-next">
+            <div class="swiper-wrapper mb-51">
+                {% for block in section.blocks %}
+                {% case block.type %}
+                {% when 'slide' %}
+                <div class="swiper-slide">
+                    <div class="return_step">
+                        <div class="return_step_header d-flex gap-3 align-items-center mb-4">
+                            <div class="return_step_bx ">{{ forloop.index }}</div>
+                            <h6>{{ block.settings.slide_heading }}</h6>
+                        </div>
+                        {{ block.settings.slide_text |  replace: '<a', '<a class="text-decoration-underline text-dark fw-bold"' }}
+                    </div>
+                </div>
+                {% endcase %}
+                {% endfor %}
+            </div>
+            <div class="pagination_navigation d-lg-none">
+                <div class="swiper-pagination"></div>
+                <div class="stepsReturn-swiper-prev swiper-button-prev swiper-button"></div>
+                <div class="stepsReturn-swiper-next swiper-button-next swiper-button"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- steps to return or exchange end -- -->
+
+{% schema %}
+{
+    "name": "t:sections.box-slider.two",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "t:sections.before-after-box.blocks.slide.name",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "slide_heading",
+                    "label": "t:common.heading.label"
+                },
+                {
+                    "type": "richtext",
+                    "id": "slide_text",
+                    "label": "t:common.text.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.box-slider.two"
+        }
+    ]
+}
+{% endschema %}

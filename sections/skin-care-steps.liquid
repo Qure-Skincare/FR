@@ -1,0 +1,81 @@
+<div class="container">
+<div class="section_header try_yourself {{ section.settings.custom_class }}">
+    {% if section.settings.heading != blank %}
+    <div class="title-lg">{{ section.settings.heading }}</div>
+    {% endif %}
+    {% if section.settings.text != blank %}
+    <div class="{{ section.settings.hide_on }}">{{ section.settings.text }}</div>
+    {% endif %}
+    {% for block in section.blocks %}
+    {% case block.type %}   
+    {% when 'content' %} 
+    {% if block.settings.content-text != blank %}
+    <p>
+        <span>Step {{ forloop.index }}</span>{{ block.settings.content-text }}
+    </p>
+    {% endif %}
+    {% endcase %}
+    {% endfor %}
+</div>
+</div>
+{% schema %}
+{
+    "name": "t:sections.skin-care.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text.label"
+        },
+        {
+            "type": "select",
+            "id": "hide_on",
+            "label": "t:common.image.hide.mobile.on",
+            "options": [
+                {
+                    "value": "d-block",
+                    "label": "t:common.image.hide.mobile.default"
+                },
+                {
+                    "value": "d-md-none",
+                    "label": "t:common.image.hide.desktop.label"
+                },
+                {
+                    "value": "d-md-block d-none",
+                    "label": "t:common.image.hide.mobile.mob"
+                }
+            ],
+            "default": "d-block"
+        },
+        {
+            "type": "textarea",
+            "id": "custom_class",
+            "label": "t:common.classname.custom"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "content",
+            "name": "t:common.column.content.label",
+            "limit": 10,
+            "settings": [
+                {
+                    "type": "inline_richtext",
+                    "id": "content-text",
+                    "label": "t:common.text.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.skin-care.label"
+        }
+    ]
+}
+{% endschema %}

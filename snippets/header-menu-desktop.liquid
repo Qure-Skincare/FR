@@ -1,0 +1,239 @@
+{% comment %}
+  Renders a standard desktop style menu for the header.
+
+  Usage:
+  {% render 'header-menu-desktop' %}
+{% endcomment %}
+
+{% assign menu = linklists['main-menu'] %}
+
+{% comment %} sliders {% endcomment %}
+
+
+{% capture first_slider %}
+    {% if section.blocks.size > 0 %}
+        <div class="dropdown_menu_img">
+            {% assign num = 0 %}
+            {%- for block in section.blocks -%}
+                {% if block.type == 'banner' %}
+                    {% if num == 0 %}
+                        <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                            <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                            <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                        </a>
+                    {% endif %}
+                    {%- assign num = num | plus: 1 -%}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endcapture %}
+
+{% capture second_slider %}
+    {% if section.blocks.size > 0 %}
+        <div class="dropdown_menu_img">
+            {% assign num = 0 %}
+            {%- for block in section.blocks -%}
+                {% if block.type == 'banner' %}
+                    {% if num > 0 and num < 3 %}
+                        <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                            <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                            <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                        </a>
+                    {% endif %}
+                    {%- assign num = num | plus: 1 -%}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endcapture %}
+
+{% capture third_slider %}
+    {% if section.blocks.size > 0 %}
+        <div class="dropdown_menu_img">
+            {% assign num = 0 %}
+            {%- for block in section.blocks -%}
+                {% if block.type == 'banner' %}
+                    {% if num > 2 and num < 5 %}
+                        <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                            <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                            <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                        </a>
+                    {% endif %}
+                    {%- assign num = num | plus: 1 -%}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endcapture %}
+
+{% comment %} menus {% endcomment %}
+
+{% capture right_menu %}
+    {% for link in menu.links limit:3 %}
+        {% if link.links.size == 0 %}
+            <li><a href="{{ link.url }}" aria-label="{{ link.title | escape }}">{{ link.title | escape }}</a></li>
+        {% else %}
+            <li class="dropdown mega-dropdown new-menu">
+                {% if link.url != blank %}
+                    <a href="{{ link.url }}" class="mega-drop-tag">
+                        {{ link.title | escape }}
+                    </a>   
+                {% else %}
+                    <a class="mega-drop-tag">
+                        {{ link.title | escape }}
+                    </a>
+                {% endif %}
+                <ul class="dropdown-menu-hp mega-dropdown-menu row">
+                    <div class="container">
+                        <div class="dropdown_menu_wrap {% if link.title == 'Products' %}menu_product{% endif %}">
+                            <div class="dropdown_menu_links" data-index="{{ forloop.index }}">
+                                {%- for childlink in link.links -%}
+                                    {% if childlink.title == 'Shop' %}
+                                        <div class="dm_list">
+                                            <div class="dm_list_heading">Shop</div>
+                                            {% if childlink.links.size > 0 %}
+                                            <div class="dm_list_two_cols">
+                                                <ul>
+                                                    {% for childChildlink in childlink.links limit:4 %}
+                                                        <li>
+                                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                                                <span>{{ childChildlink.title | escape }}</span>
+                                                            </a>
+                                                        </li>
+                                                    {%- endfor -%}
+                                                </ul>
+                                                <ul>
+                                                    {% for childChildlink in childlink.links offset:4 %}
+                                                        <li>
+                                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                                                <span>{{ childChildlink.title | escape }}</span>
+                                                            </a>
+                                                        </li>
+                                                    {%- endfor -%}
+                                                </ul>
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    {% else %}
+                                        <div class="dm_list">
+                                            <div class="dm_list_heading" {% if childlink.title == 'FOLDER' %}style="display:none;"{% endif %}>{{ childlink.title | escape }}</div>
+                                            {% if childlink.links.size > 0 %}
+                                                <ul>
+                                                    {% for childChildlink in childlink.links %}
+                                                        <li>
+                                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}" {% if childChildlink.title == 'Help center' %} target="_blank"{% endif %}>
+                                                                <span>{{ childChildlink.title | escape }}</span>
+                                                            </a>
+                                                        </li>
+                                                    {%- endfor -%}
+                                                </ul>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%}
+                            </div>
+                            {% case forloop.index %}
+                                {% when 2 %}
+                                    {{ first_slider }}
+                                {% when 3 %}
+                                    {{ second_slider }}
+                            {% endcase %}
+                        </div>
+                    </div>
+                </ul>
+            </li>
+        {% endif %}
+    {%- endfor -%}
+{% endcapture %}
+
+{% capture left_menu %}
+    {% for link in menu.links offset:3 limit:1 %}
+        {% if link.links.size == 0 %}
+            <li><a href="{{ link.url }}" aria-label="{{ link.title | escape }}">{{ link.title | escape }}</a></li>
+        {% else %}
+            <li class="dropdown mega-dropdown new-menu">
+                {% if link.url != blank %}
+                    <a href="{{ link.url }}" class="mega-drop-tag">
+                        {{ link.title | escape }}
+                    </a> 
+                {% else %}
+                    <a class="mega-drop-tag">
+                        {{ link.title | escape }}
+                    </a>
+                {% endif %}
+                <ul class="dropdown-menu-hp mega-dropdown-menu row">
+                    <div class="container">
+                        <div class="dropdown_menu_wrap">
+                            <div class="dropdown_menu_links">
+                                {%- for childlink in link.links -%}
+                                    <div class="dm_list">
+                                        <div class="dm_list_heading" {% if childlink.title == 'FOLDER' %}style="display:none;"{% endif %}>{{ childlink.title | escape }}</div>
+                                        {% if childlink.links.size > 0 %}
+                                            <ul>
+                                                {% for childChildlink in childlink.links %}
+                                                    <li>
+                                                        <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                                            <span>{{ childChildlink.title | escape }}</span>
+                                                        </a>
+                                                    </li>
+                                                {%- endfor -%}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                {%- endfor -%}
+                            </div>
+                            {{ third_slider }}
+                        </div>
+                    </div>
+                </ul>
+            </li>
+        {% endif %}
+    {%- endfor -%}
+{% endcapture %}
+
+
+<ul class="menu qure_desktop_menu">
+    {{ right_menu }}
+</ul>
+
+<div class="header-logo">
+    <a href="{{ routes.root_url }}" class="logo-image" aria-label="Qure">
+        <img src="{{ 'logo.svg' | asset_url }}" alt="" class="mt-1 img-fluid">
+    </a>
+</div>
+
+<div class="icon-section qure_desktop_menu">
+    <ul class="nav nav_e-commerce">
+        {{ left_menu }}
+        <li class="nav__item header_gift_btn pe-md-0 pe-3">
+            <a href="{{ routes.root_url }}pages/loyalty-program" class="nav__url">
+            {% comment %} <a href="javascript:;" class="nav__url" onclick="StampedFn.toggleRewardsModal()"> {% endcomment %}
+                <img src="{{ 'header-gift.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
+            </a>
+        </li>
+        <!--
+        <li class="nav__item d-only">
+            <a href="{{ routes.root_url }}pages/contact-us" aria-label="Contact us" class="nav__url">
+                <img src="{{ 'support.svg' | asset_url }}" class="fa cus-support" alt="support">
+            </a>
+        </li>
+        -->
+        <li class="nav__item d-only" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccount" aria-controls="offcanvasAccount">
+            <a class="nav__url">
+                <img src="{{ 'login.svg' | asset_url }}" class="fa fa-user nav__icon" alt="navigation">
+            </a>
+        </li>
+        <li class="nav__item cart_btn" data-ajax-cart-toggle-class-button="js-my-cart-open" style="cursor:pointer;" data-bs-toggle="offcanvas" href="#cartCanvas" role="button" aria-controls="cartCanvas">
+            <a href="{{ routes.cart_url }}" class="nav__url">
+                <img src="{{ 'cart.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
+                  <span class="nav__cart-count" data-ajax-cart-bind-state="cart.item_count">
+                    {% comment %} Edgemesh Performance: tagged dynamic content {% endcomment %}
+                    <dynamic>
+                      {{ cart.item_count }}
+                    </dynamic>
+                  </span>
+            </a>
+        </li>
+    </ul>
+</div>

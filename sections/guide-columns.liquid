@@ -1,0 +1,579 @@
+<style>
+    .ac_desc a {
+        text-decoration: underline!important;
+        color: #212529!important;
+        margin-top: 1rem!important;
+    }
+</style>
+
+{% include 'guide-assoc-array', section: section, __parent_title: 'header', __separator: '###' %}
+
+{% capture section_body_1_desktop %}
+    <div class="tab-pane fade1 active1 show1" id="target_block_desktop_1" role="tabpanel" aria-labelledby="target_block_desktop_1-tab">
+        <div class="ac_desc_grid">
+                {% assign was_description = false %}
+                {% for __item in __itemsArray1 %}
+                    {% if __typesArray1[forloop.index0] == 'description' %}
+                        {% if was_description %}</div>{% endif %}
+                        <div class="ac_desc{% if __classnamesArray1[forloop.index0] != 'none' %} {{ __classnamesArray1[forloop.index0] }}{% endif %}">
+                        {% assign was_description = true %}
+                    {% endif %}
+                    {{ __item }}
+                    {% if forloop.index ==  __itemsArray1.size %}</div>{% endif %}
+                {% endfor %}
+        </div>
+    </div> 
+{% endcapture %}
+
+{% capture section_body_2_desktop %}
+    <div class="tab-pane fade" id="target_block_desktop_2" role="tabpanel" aria-labelledby="target_block_desktop_2-tab">
+        <div class="ac_desc_grid">
+            {% assign was_description = false %}
+            {% for __item in __itemsArray2 %}
+                {% if __typesArray2[forloop.index0] == 'description' %}
+                    {% if was_description %}</div>{% endif %}
+                    <div class="ac_desc{% if __classnamesArray2[forloop.index0] != 'none' %} {{ __classnamesArray2[forloop.index0] }}{% endif %}">
+                    {% assign was_description = true %}
+                {% endif %}
+                {{ __item }}
+                {% if forloop.index ==  __itemsArray2.size %}</div>{% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endcapture %}
+
+{% capture section_body_3_desktop %}
+    <div class="tab-pane fade" id="target_block_desktop_3" role="tabpanel" aria-labelledby="target_block_desktop_3-tab">
+        <div class="ac_desc_grid d-block">
+            <div class="row g-md-5">
+                {% assign __itemsNum = 0 %}
+                {% if __itemsArray3.size > __itemsNum %}
+                    <div class="col-md-6">
+                        <div class="ac_desc">
+                            {% for __item in __itemsArray3 offset: __itemsNum %}
+                                {% if __typesArray3[__itemsNum] == 'heading' %}
+                                    <div class="as_desc_header">{{ __item }}</div>
+                                    {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            <div class="ac_desc_grid_video show_how-work">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'video' %}
+                                        {{ __item }}
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>  
+                {% endif %}
+
+                {% if __itemsArray3.size > __itemsNum %}
+                    <div class="col-md-6">
+                        <div class="ac_desc">
+                            {% for __item in __itemsArray3 offset: __itemsNum %}
+                                {% if __typesArray3[__itemsNum] == 'heading' %}
+                                    <div class="as_desc_header">{{ __item }}</div>
+                                    {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            <div class="ac_desc_grid_video show_how-work">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'video' %}
+                                        {{ __item }}
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>  
+                {% endif %}
+
+                {% if __itemsArray3.size > __itemsNum %}
+                    <div class="col-md-6">
+                        <div class="ac_desc">
+                            {% for __item in __itemsArray3 offset: __itemsNum %}
+                                {% if __typesArray3[__itemsNum] == 'heading' %}
+                                    <div class="as_desc_header">{{ __item }}</div>
+                                    {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            <div class="ac_desc_grid_video show_how-work">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'video' %}
+                                        {{ __item }}
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>  
+                {% endif %}
+
+                {% if __itemsArray3.size > __itemsNum %}
+                    <div class="col-md-6">
+                        <div class="ac_desc">
+                            {% for __item in __itemsArray3 offset: __itemsNum %}
+                                {% if __typesArray3[__itemsNum] == 'heading' %}
+                                    <div class="as_desc_header">{{ __item }}</div>
+                                    {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            <div class="ac_desc_grid_video show_how-work">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'video' %}
+                                        {{ __item }}
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>  
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endcapture %}
+
+
+{% capture section_body_1_mobile %}
+    <div id="ac_target_block_mobile_1" class="accordion-collapse collapse" aria-labelledby="acheadingOne">
+        <div class="accordion-body">
+            <div class="ac_desc_grid">
+                {% assign was_description = false %}
+                {% for __item in __itemsArray1 %}
+                    {% if __typesArray1[forloop.index0] == 'description' %}
+                        {% if was_description %}</div>{% endif %}
+                        <div class="ac_desc{% if __classnamesArray1[forloop.index0] != 'none' %} {{ __classnamesArray1[forloop.index0] }}{% endif %}">
+                        {% assign was_description = true %}
+                    {% endif %}
+                    {{ __item }}
+                    {% if forloop.index ==  __itemsArray1.size %}</div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endcapture %}
+
+{% capture section_body_2_mobile %}
+    <div id="ac_target_block_mobile_2" class="accordion-collapse collapse" aria-labelledby="acheadingTwo">
+        <div class="accordion-body">
+            <div class="ac_desc_grid">
+                {% assign was_description = false %}
+                {% for __item in __itemsArray2 %}
+                    {% if __typesArray2[forloop.index0] == 'description' %}
+                        {% if was_description %}</div>{% endif %}
+                        <div class="ac_desc{% if __classnamesArray2[forloop.index0] != 'none' %} {{ __classnamesArray2[forloop.index0] }}{% endif %}">
+                        {% assign was_description = true %}
+                    {% endif %}
+                    {{ __item }}
+                    {% if forloop.index ==  __itemsArray2.size %}</div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endcapture %}
+
+{% capture section_body_3_mobile %}
+    <div id="ac_target_block_mobile_3" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <div class="ac_desc_grid d-block">
+                <div class="row g-4 g-md-5">
+                    {% assign __itemsNum = 0 %}
+                    {% if __itemsArray3.size > __itemsNum %}
+                        <div class="col-md-6">
+                            <div class="ac_desc">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'heading' %}
+                                        <div class="as_desc_header">{{ __item }}</div>
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="ac_desc_grid_video show_how-work">
+                                    {% for __item in __itemsArray3 offset: __itemsNum %}
+                                        {% if __typesArray3[__itemsNum] == 'video' %}
+                                            {{ __item }}
+                                            {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>  
+                    {% endif %}
+    
+                    {% if __itemsArray3.size > __itemsNum %}
+                        <div class="col-md-6">
+                            <div class="ac_desc">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'heading' %}
+                                        <div class="as_desc_header">{{ __item }}</div>
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="ac_desc_grid_video show_how-work">
+                                    {% for __item in __itemsArray3 offset: __itemsNum %}
+                                        {% if __typesArray3[__itemsNum] == 'video' %}
+                                            {{ __item }}
+                                            {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>  
+                    {% endif %}
+    
+                    {% if __itemsArray3.size > __itemsNum %}
+                        <div class="col-md-6">
+                            <div class="ac_desc">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'heading' %}
+                                        <div class="as_desc_header">{{ __item }}</div>
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="ac_desc_grid_video show_how-work">
+                                    {% for __item in __itemsArray3 offset: __itemsNum %}
+                                        {% if __typesArray3[__itemsNum] == 'video' %}
+                                            {{ __item }}
+                                            {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>  
+                    {% endif %}
+    
+                    {% if __itemsArray3.size > __itemsNum %}
+                        <div class="col-md-6">
+                            <div class="ac_desc">
+                                {% for __item in __itemsArray3 offset: __itemsNum %}
+                                    {% if __typesArray3[__itemsNum] == 'heading' %}
+                                        <div class="as_desc_header">{{ __item }}</div>
+                                        {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="ac_desc_grid_video show_how-work">
+                                    {% for __item in __itemsArray3 offset: __itemsNum %}
+                                        {% if __typesArray3[__itemsNum] == 'video' %}
+                                            {{ __item }}
+                                            {% assign __itemsNum = __itemsNum |  plus: 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>  
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endcapture %}
+
+{% assign header_count_desktop = 0 %}
+{% assign header_count_mobile = 0 %}
+
+<!-- -- amazing content start -- -->
+<div class="amazing_content section" id="tabsAccordion">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="section_header mw-680 text-md-center mb-3">
+                <h2 class="title-lg">{{ section.settings.heading }}</h2>
+            </div>
+        {% endif %}
+        <div class="amazing_content_wrap d-none d-md-block">
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'header' %}
+                        {% assign header_count_desktop = header_count_desktop |  plus: 1 %}
+                        <li class="nav-item active1" role="presentation">
+                            {% if block.settings.heading != blank %}
+                                <h6>{{ block.settings.heading }}</h6>
+                            {% endif %}
+                            {% if block.settings.text != blank %}
+                                <p>{{ block.settings.text }}</p>
+                            {% endif %}
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | img_url: '500x' }}" alt="" class="img-fluid mt-2">
+                            {% endif %}
+                            {% if block.settings.button_label != blank %}
+                                {% capture target_block_desktop %}target_block_desktop_{{ header_count_desktop }}{% endcapture %}
+                                <button class="nav-link active ac_drop_btn" id="{{ target_block_desktop }}-tab" data-bs-toggle="tab"
+                                    data-bs-target="#{{ target_block_desktop }}" type="button" role="tab" aria-controls="{{ target_block_desktop }}"
+                                    aria-selected="true">
+                                    <div class="container">
+                                        <p>{{ block.settings.button_label }}</p>
+                                    </div>
+                                </button>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {%- endfor -%}
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                {{ section_body_1_desktop }}
+                {{ section_body_2_desktop }}
+                {{ section_body_3_desktop }}
+            </div>
+        </div>
+        <div class="amazing_content_wrap d-block d-md-none">
+            <div class="accordion" id="acAccordion">
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'header' %}
+                        {% assign header_count_mobile = header_count_mobile |  plus: 1 %}
+                        <div class="accordion-item" id="mob_item{{ header_count_mobile }}">
+                            <h2 class="accordion-header" id="acheadingOne">
+                                {% if block.settings.heading != blank %}
+                                    <h6>{{ block.settings.heading }}</h6>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <p>{{ block.settings.text }}</p>
+                                {% endif %}
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | img_url: '500x' }}" alt="" class="img-fluid mt-2">
+                                {% endif %}
+                                {% if block.settings.button_label != blank %}
+                                    {% capture target_block_mobile %}target_block_mobile_{{ header_count_mobile }}{% endcapture %}
+                                    <button class="accordion-button ac_drop_btn collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#ac_{{ target_block_mobile }}" aria-expanded="true"
+                                        aria-controls="ac_{{ target_block_mobile }}">
+                                        {{ block.settings.button_label }}
+                                    </button>
+                                {% endif %}
+                            </h2>
+                            {% case header_count_mobile %}
+                                {% when 1 %}
+                                    {{ section_body_1_mobile }}
+                                {% when 2 %}
+                                    {{ section_body_2_mobile }}
+                                {% when 3 %}
+                                    {{ section_body_3_mobile }}                                
+                            {% endcase %}
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- amazing content end -- -->
+
+<script>
+    // for making the amazing content inactive all tabs by default
+    document.addEventListener('DOMContentLoaded', function () {
+        // Ensure no tab is active
+        document.querySelectorAll('#myTab .nav-link').forEach(function (tab) {
+            tab.classList.remove('active');
+            tab.setAttribute('aria-selected', 'false');
+        });
+
+        // Ensure no tab content is active
+        document.querySelectorAll('#myTabContent .tab-pane').forEach(function (content) {
+            content.classList.remove('show', 'active');
+        });
+    });
+</script>
+
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+
+{% schema %}
+    {
+        "name": "t:sections.guide-columns.name",
+        "class": "section-videos-list",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "header",
+                "name": "t:sections.guide-columns.blocks.header.label",
+                "limit": 3,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    }
+                ]
+		    },
+            {
+                "type": "description",
+                "name": "t:common.description.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:common.classname.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }, 
+                    {
+                        "type": "image_picker",
+                        "id": "image_large",
+                        "label": "t:common.image.large.label"
+                    },                   
+                    {
+                        "type": "richtext",
+                        "id": "content",
+                        "label": "t:common.content.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    }
+                ]
+		    },
+            {
+                "type": "collapsed",
+                "name": "t:common.collapsed.label",
+                "settings": [
+                    {
+                        "type": "checkbox",
+                        "id": "show",
+                        "label": "t:common.checkbox.show",
+                        "default": false
+                    },
+                    {
+                        "type": "select",
+                        "id": "style",
+                        "label": "t:common.style.label",
+                        "options": [
+                            {
+                                "value": "default",
+                                "label": "t:common.style.default.label"
+                            },
+                            {
+                                "value": "grey",
+                                "label": "t:common.style.grey.label"
+                            },
+                            {
+                                "value": "image",
+                                "label": "t:common.style.image.label"
+                            }
+                        ],
+                        "default": "default"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_large",
+                        "label": "t:common.image.large.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },                   
+                    {
+                        "type": "richtext",
+                        "id": "content",
+                        "label": "t:common.content.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    },
+            {
+                "type": "heading",
+                "name": "t:common.heading.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    }
+                ]
+		    },
+            {
+                "type": "content",
+                "name": "t:common.content.label",
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.content.label"
+                    }
+                ]
+		    },
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.guide-columns.name"
+			}
+        ]
+    }
+{% endschema %}

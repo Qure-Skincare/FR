@@ -1,0 +1,250 @@
+{%- assign announcement_count = 0 -%}
+{%- assign navigation_link_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'announcement' -%}
+            {%- assign announcement_count = announcement_count | plus: 1 -%}
+        {%- when 'navigation-link' -%}
+            {%- assign navigation_link_count = navigation_link_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<script src="{{ '__app_countdown.js' | asset_url }}"></script>
+
+<div class="wrapper header-wrapperBlock home-default-wrapper mi-landing-page">
+    {% if settings.enable_site_gamification %}
+        <div class="announcement_bar site-gamification-active">
+            {% render 'pdm_site-wide-gamification', settingsGamification: settings, cartTotal: cart.items_subtotal_price  %}
+            {% if settings.enable_site_wide_timer %}
+                <div class="announcement_bar__timer">
+                    {% render 'pdm_site-wide-timer' %}
+                </div>
+            {% endif %}
+        </div>
+    {% else %}
+        {% for block in section.blocks %}
+            {% if block.type == 'announcement' %}
+                <!-- -- announcement bar start -- -->
+
+                {%- assign timer_unix = block.settings.timer | date: '%s' -%}
+                {%- assign timer_next_unix = block.settings.timer_next | times: 86400 -%}
+                {%- assign timer_next = timer_unix | plus: timer_next_unix | date: "%Y-%m-%dT%H:%M:%S" -%}
+                
+                <div class="announcement_bar py-1 textRed">
+                    <div class="bfBundle__content">
+                        <div class="bfCountdown countdown_ti1mer countdown_timer_with_zone" data-target-date="{{ block.settings.timer }}" data-target-date-next="{{ timer_next }}" data-target-time-zone="America/Los_Angeles">
+                            <div class="countdown_hdr">
+                                <p>{{ block.settings.heading }}</p>
+                            </div>
+                            <div class="countdown_block">
+                                <span class="d-flex align-items-center theTimer" id="headerTimer">
+                                    <span data-name="days" id="days">00</span><span class="dots">:</span>
+                                    <span data-name="hours" id="hours">00</span> <span class="dots">:</span>
+                                    <span data-name="mins" id="minutes">00</span> <span class="dots">:</span>
+                                    <span data-name="secs" id="seconds">00</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -- announcement bar end -- -->           
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <div id="shopify-section-header" class="shopify-section site-header">
+        <div class="header-wrapper">
+            <header>
+                <div class="header-new new-hp-header">
+                   
+                    <!-- start mobile menu -->
+                    <nav class="mobile-menu-custome">
+                        <div class="hamburger-container">
+                            <ul class="hamburger">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div id="menu" class="menu_with_icons">
+                            {% if navigation_link_count > 0 %}
+                                <ul>
+                                    <hr>
+                                    {%- for block in section.blocks offset:announcement_count -%}
+                                        {% if block.type == 'navigation-link' %}
+                                            <li class="title">
+                                                <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}">
+                                                    <div class="menuBlock">
+                                                        {% if block.settings.image != blank %}
+                                                            <img class="img-fluid" src="{{ block.settings.image | img_url: '150x' }}" alt="" />
+                                                        {% endif %}
+                                                        <span>{{ block.settings.link_label }}</span>
+                                                    </div>
+                                                    <img class="mob_icon" src="{{ 'header_arrow_right_white.svg' | asset_url }}" alt="">
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                    {%- endfor -%}
+                                </ul>
+                            {% endif %}
+
+                            <div class="menu_icon_footer">
+                                <div class="mi_ftrBlock">
+                                    <img src="{{ 'header-shipping.svg' | asset_url }}" alt="">
+                                    <span>Free Shipping Worldwide</span>
+                                </div>
+                                <div class="mi_ftrBlock">
+                                    <img src="{{ 'header-buy_now.svg' | asset_url }}" alt="">
+                                    <span>Buy Now, <br />Pay Later</span>
+                                </div>
+                                <div class="mi_ftrBlock">
+                                    <img src="{{ 'header-clinical.svg' | asset_url }}" alt="">
+                                    <span>Clinical-Grade Skincare</span>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- end mobile menu -->
+                    
+
+                    <!-- start desktop menu -->
+                    {% if navigation_link_count > 0 %}
+                        <ul class="menu">
+                            {%- for block in section.blocks offset:announcement_count -%}
+                                {% if block.type == 'navigation-link' %}
+                                    <li><a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a></li>
+                                {% endif %}
+                            {%- endfor -%}
+                        </ul> 
+                    {% endif %}
+
+                    <div class="header-logo">
+                            <a href="{{ routes.root_url }}" class="logo-image" aria-label="Qure">
+                                <img class="img-fluid" src="{{ 'logo.svg' | asset_url }}" alt="{{ link.title | escape }}">
+                            </a>
+                    </div>
+
+                    <div class="icon-section icon-section-landing">
+                        <ul class="nav nav_e-commerce">
+                            {% if section.settings.button_label != blank %}
+                                <li class="new-menu">
+                                    <div class="header_btn">
+                                        <a href="{{ section.settings.button_url }}" class="d-none d-md-block"><span class="pe-2">BUY NOW & {{ section.settings.button_label }}</span>
+                                            <img src="{{ 'header-arrow-right.svg' | asset_url }}" alt="">
+                                        </a>
+                                        <a href="{{ section.settings.button_url }}" class="d-block d-md-none"><span class="pe-1">{{ section.settings.button_label }}</span>
+                                            <img src="{{ 'header-arrow-right.svg' | asset_url }}" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                            {% endif %}
+                            <li class="nav__item cart_btn" data-ajax-cart-toggle-class-button="js-my-cart-open" style="cursor:pointer;">
+                                <a href="{{ routes.cart_url }}" class="nav__url" aria-label="Cart">
+                                    <img src="{{ 'cart.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
+                                    <span class="nav__cart-count" data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- end desktop menu -->
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.header-sales.name",
+        "class": "section-header-sales",
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "t:common.button.label",
+                "info": "t:common.button.info"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "announcement",
+                "name": "t:sections.header-sales.blocks.announcement.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type" : "text",
+                        "id" : "heading",
+                        "label" : "t:common.heading.label"
+                    },
+                    {
+                        "type" : "text",
+                        "id" : "timer",
+                        "label" : "t:common.timer.label",
+                        "info": "t:common.timer.info"
+                    },
+                    {
+                        "type": "range",
+                        "id": "timer_next",
+                        "min": 1,
+                        "max": 100,
+                        "step": 1,
+                        "unit" : "t:common.timer.day.label",
+                        "label" : "t:common.timer.next.label",
+                        "info": "t:common.timer.next.info",
+                        "default": 1
+                    }
+                ]
+            },
+            {
+                "type": "navigation-link",
+                "name": "t:sections.header-sales.blocks.navigation-link.name",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.header-sales.name",
+                "settings": {
+                    "button_label": "SAVE UP TO 55%",
+                    "button_url": "#bf-bundles"
+                },
+                "blocks": [
+                    {
+                        "type": "announcement",
+                        "settings": {
+                            "heading": "Holiday Sale Ends In:"
+                        }
+                    }
+                ]
+			}
+        ]       
+    }
+{% endschema %}

@@ -1,0 +1,74 @@
+<div class="acc_address section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="address_header d-flex justify-content-center mb-4 flex-wrap">
+                    <p class="me-3">WELCOME <span class="cus_name text-uppercase">{{ customer.name }}</span></p>
+                    <div>
+                        <a href="{{ routes.account_logout_url }}" class="text-secondary">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="your_address qure_form py-0">
+                    <div class="section_header ps-0 mw-100">
+                        <h2 class="title-lg">Account Details</h2>
+                    </div>
+                    
+                    {{ customer.default_address | format_address }}
+
+                    <div class="qure_form_btn gap-4 d-flex my-4">
+                        <button onclick="location.href='{{ routes.account_addresses_url }}'" class="btn btn-lg btn-primary">VIEW ADDRESSES<span>({{ customer.addresses_count }})</span></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="col-new_address qure_form py-0">
+                    <form id="create_account">
+                        <div class="row">
+                            <div class="section_header ps-0 mw-100">
+                                <h2 class="title-lg">Order History</h2>
+                            </div>
+
+                            {% if customer.orders.size > 0 %}
+                                {% paginate customer.orders by 20 %}
+                                    <table class="table order_history">
+                                        <thead>
+                                            <tr>
+                                                <th>Order</th>
+                                                <th>Date</th>
+                                                <th>Payment Status</th>
+                                                <th>Fulfillment Status</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for order in customer.orders %}
+                                                <tr>
+                                                    <td><a href="{{ order.customer_url }}">{{ order.name }}</a></td>
+                                                    <td>{{ order.created_at | date: "%m-%d-%Y %H:%M" }}</td>
+                                                    <td>{{ order.financial_status_label }}</td>
+                                                    <td>{{ order.fulfillment_status_label }}</td>
+                                                    <td>{{ order.total_price | money }}</td>
+                                                </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                    
+                                    {% if paginate.pages > 1 %}
+                                        {% include 'pagination' %}
+                                    {% endif %}
+                                {% endpaginate %}
+                            {% else %}
+                                <p>You haven't placed any orders yet.</p>
+                            {% endif %}
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

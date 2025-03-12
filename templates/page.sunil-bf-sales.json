@@ -1,0 +1,1117 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header_sales_TMQyBR": {
+      "type": "header-sales",
+      "blocks": {
+        "announcement_JyMH8T": {
+          "type": "announcement",
+          "settings": {
+            "heading": "Limited Time Only:",
+            "timer": "2024-10-27T23:59:59",
+            "timer_next": 7
+          }
+        },
+        "navigation_link_4YHENL": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "SHOP BUNDLES",
+            "link_url": "#bf-bundles",
+            "image": "shopify://shop_images/header_1.webp"
+          }
+        },
+        "navigation_link_4hxD8e": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "RESULTS",
+            "link_url": "#result_section",
+            "image": "shopify://shop_images/header_2.webp"
+          }
+        },
+        "navigation_link_qcGPUL": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCTS",
+            "link_url": "#skin_promise",
+            "image": "shopify://shop_images/header_3.webp"
+          }
+        },
+        "navigation_link_rmYfWw": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQs",
+            "link_url": "#faqs",
+            "image": "shopify://shop_images/header_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_JyMH8T",
+        "navigation_link_4YHENL",
+        "navigation_link_4hxD8e",
+        "navigation_link_qcGPUL",
+        "navigation_link_rmYfWw"
+      ],
+      "settings": {
+        "button_label": "SAVE UP TO 55%",
+        "button_url": "#bf-bundles"
+      }
+    },
+    "main": {
+      "type": "product-landing-sales",
+      "settings": {
+        "enable_subheading": false,
+        "heading": "Hate investing in skincare that doesn't work?",
+        "subheading": "SAVE UP TO 55% ON REAL SKINCARE SOLUTIONS THIS HOLIDAY",
+        "image": "shopify://shop_images/holiday_banner_desk.webp",
+        "image_mobile": "shopify://shop_images/holiday_banner_mob.webp",
+        "button_label": "Shop now",
+        "button_url": "#bf-bundles"
+      }
+    },
+    "pdm_product_landing_sales_F9Dn8a": {
+      "type": "pdm_product-landing-sales",
+      "blocks": {
+        "product_YMUgQb": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "exclusive-micro-infusion-bundle",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_cRJKBk": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-4-month-bundle",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": false
+          }
+        },
+        "product_UQdbaG": {
+          "type": "product",
+          "settings": {
+            "product": "best-seller-bundle-1",
+            "announcement_id": "Most popular",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_ncYWKA": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_ahkGAV": {
+          "type": "product",
+          "settings": {
+            "product": "youthful-you",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_yNEYEK": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-bundle-1",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_3gJLGX": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "confidence-booster-bundle",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_Pmff3V": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "announcement_id": "New",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_mmM6Jm": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "skin-ssentials-set-doctorly-choice",
+            "announcement_id": "Doctorly recommended",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_MpViyV": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "youthify-or-glow-set",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        },
+        "product_Mhxq4H": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "hydra-glow",
+            "announcement_id": "",
+            "button_text_id": "Get yours",
+            "show_save_price": true
+          }
+        }
+      },
+      "block_order": [
+        "product_YMUgQb",
+        "product_cRJKBk",
+        "product_UQdbaG",
+        "product_ncYWKA",
+        "product_ahkGAV",
+        "product_yNEYEK",
+        "product_3gJLGX",
+        "product_Pmff3V",
+        "product_mmM6Jm",
+        "product_MpViyV",
+        "product_Mhxq4H"
+      ],
+      "settings": {
+        "text_banner": "SAVE UP TO 55% ON REAL SKINCARE SOLUTIONS THIS HOLIDAY SEASON",
+        "text_offer_banner": "Hate investing in skincare that doesn't work?",
+        "button_banner_url": "#bf-bundles",
+        "button_banner_text": "Shop Now",
+        "save_text": "save"
+      }
+    },
+    "icons_list_qXfGQA": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_iU6wDp": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+          }
+        },
+        "icon_mjJWLK": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/buy-now-ftr.svg",
+            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+          }
+        },
+        "icon_Ji4cFE": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/derma-ftr.svg",
+            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+          }
+        },
+        "icon_bQCB9E": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/science-ftr.svg",
+            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_iU6wDp",
+        "icon_mjJWLK",
+        "icon_Ji4cFE",
+        "icon_bQCB9E"
+      ],
+      "settings": {
+        "background": "bg-grey"
+      }
+    },
+    "results_NKDiDj": {
+      "type": "results",
+      "blocks": {
+        "result_9TbCEi": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_debbie.webp",
+            "heading": "Faded my dark spots",
+            "text": "<p>Micro-Infusion worked wonders on my skin. It's light, easy to use, and faded my dark spots and acne scars in just a few weeks. I've seen noticeable improvements such as a brighter glow and even skin tone. Thumbs up for this effective skincare solution!</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Debbie",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_qPtW3B": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_ellie.webp",
+            "heading": "my skin RETURNED to LIFE!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ellie V.",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_4bU4Vd": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_bethany.webp",
+            "heading": "Changed my life!",
+            "text": "<p>“This product has changed my life!</p><p>My skin feels brighter, clearer and way more even!</p><p>I’ll use this for the rest of my life!”</p>",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "text_country": "Canada",
+            "client": "Bethany N.",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_serum.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>All-In-One Face Serum</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_HAiWRG": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_ela.webp",
+            "heading": "Shocked at the results",
+            "text": "<p>\"Shocked at the results after just one treatment! I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!</p><p>Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ela O.",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_dtxXKm": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_michelle.webp",
+            "heading": "Zero Maskne for 8 weeks",
+            "text": "<p>\"I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Michelle S",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_mask.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Q-Rejuvalight LED Mask</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_LnaKQn": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_ashley.webp",
+            "heading": "My first aging signs",
+            "text": "<p>\"I’ve always taken care of my face but neglected my neck and chest skin so I’ve made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest are so much smoother and my skin looks youthful again! I love how this qure device has LEDs placed in the centre of the chest unlike other devices.\"</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ashley",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_chest.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Neck & Décolletage LED Device</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_CXpHFb": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_priya.webp",
+            "heading": "Plumper, more hydrated!",
+            "text": "<p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
+            "image_country": "shopify://shop_images/england_f.webp",
+            "text_country": "United Kingdom",
+            "client": "Priya P.",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_micro.webp' | asset_url }}\" alt=\"\">\n        \n                            </div>\n                                    <div class=\"rl_info\">\n                                        <p>Micro-Infusion System</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_TacyCe": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_bj_nardi.webp",
+            "heading": "Completely qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "text_country": "Canada",
+            "client": "BJ Nardi",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_mask.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Q-Rejuvalight LED Mask</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_XBpdJz": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_marry.webp",
+            "heading": "Outstanding",
+            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks however when comparing photos I am so surprised at how much younger the skin on my neck and chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. It’s easy to use, love I can clip the controller to my robe and multitask whilst treatment is on.”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Mary R.M.",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_chest.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Neck & Décolletage LED Device</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        },
+        "result_xWj8KY": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_hanna_a9a19b3e-4b75-442b-93b7-665aee9538d4.webp",
+            "heading": "Hydrated more than ever",
+            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was dry.</p><p>Hydrated more than ever. I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water!”</p>",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Hannah",
+            "code": "<div class=\"result_learnMore\">\n                                    <div class=\"rl_img\">\n                                        <img src=\"{{ 'results_qurify.webp' | asset_url }}\" alt=\"\">\n                                    </div>\n                                    <div class=\"rl_info\">\n                                        <p>Q-urify Water Filter</p>\n                                        <a href=\"#bf-bundles\">Save up to 55% in a Bundle ></a>\n                                    </div>\n                                </div>"
+          }
+        }
+      },
+      "block_order": [
+        "result_9TbCEi",
+        "result_qPtW3B",
+        "result_4bU4Vd",
+        "result_HAiWRG",
+        "result_dtxXKm",
+        "result_LnaKQn",
+        "result_CXpHFb",
+        "result_TacyCe",
+        "result_XBpdJz",
+        "result_xWj8KY"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {.section_header {width: 50%; }}"
+      ],
+      "settings": {
+        "classname": "mi_landing_result",
+        "heading": "Confidence changing results, from people just like you",
+        "heading_reduced": "",
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
+      }
+    },
+    "two_column_box_FQCXGb": {
+      "type": "two-column-box",
+      "blocks": {
+        "heading_gFwn34": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "text": "<h2>6 skin health benefits of Qure‘s</h2><h2>at-home clinical treatments</h2><p>Experience clinical-grade skincare from the comfort of home and get the results you deserve without sacrificing effectiveness. Qure’s breakthrough technology and formulation has been clinically shown to:</p>",
+            "code": "",
+            "classname": "section_header mb-3 text-center"
+          }
+        },
+        "image_H8M4Tm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/qure_benefits.webp",
+            "classname": "health_img pt-0 pt-md-3 h-100 mw-mob-100"
+          }
+        },
+        "content_q4hGiP": {
+          "type": "content",
+          "settings": {
+            "text": "<p>[code]</p>",
+            "column_content": 0,
+            "classname": ""
+          }
+        },
+        "code_HjjW9K": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"health_detail mw-486\">\n                        <ul>\n                            <li>\n                                <img src=\"{{ 'h-d-1.svg' | asset_url }}\" alt=\"\">\n                                <p>Boost <strong>collagen,</strong> smooth fine lines and wrinkles\n                                </p>\n                            </li>\n                            <li>\n                                <img src=\"{{ 'h-d-2.svg' | asset_url }}\" alt=\"\">\n                                <p>Eliminate <strong>breakout-</strong>causing bacteria</p>\n                            </li>\n                            <li>\n                                <img src=\"{{ 'h-d-3.svg' | asset_url }}\" alt=\"\">\n                                <p>Even <strong>skin tone</strong> and fades <strong>dark spots</strong></p>\n                            </li>\n                            <li>\n                                <img src=\"{{ 'h-d-4.svg' | asset_url }}\" alt=\"\">\n                                <p> Calm <strong>redness</strong> and reduce\n                                    <strong>inflammation</strong>\n                                </p>\n                            </li>\n                            <li>\n                                <img src=\"{{ 'h-d-5.svg' | asset_url }}\" alt=\"\">\n                                <p><strong>Lift</strong> and <strong>firm</strong> sagging skin</p>\n                            </li>\n                            <li>\n                                <img src=\"{{ 'h-d-6.svg' | asset_url }}\" alt=\"\">\n                                <p>Promote clear, healthy, <strong>glowing complexion</strong></p>\n                            </li>\n                        </ul>\n                    </div>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gFwn34",
+        "image_H8M4Tm",
+        "content_q4hGiP",
+        "code_HjjW9K"
+      ],
+      "settings": {
+        "classname": "health_beauty section pt-0 pt-md-5",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "featuredin_cQiHyx": {
+      "type": "featuredin",
+      "blocks": {
+        "heading_FfwHyq": {
+          "type": "heading",
+          "settings": {
+            "heading": "FEATURED IN"
+          }
+        },
+        "image_3pHEKV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_PzEPKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_yGRHaE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/glamour.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_4iDxyH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/grazia.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_NKCa7a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_Xx9fDD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FfwHyq",
+        "image_3pHEKV",
+        "image_PzEPKp",
+        "image_yGRHaE",
+        "image_4iDxyH",
+        "image_NKCa7a",
+        "image_Xx9fDD"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "bundle_list_LdzHxV": {
+      "type": "bundle-list",
+      "blocks": {
+        "product_bMiKn4": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "exclusive-micro-infusion-bundle",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_9rPLGX": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-4-month-bundle",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_3Frmww": {
+          "type": "product",
+          "settings": {
+            "product": "best-seller-bundle-1",
+            "comment_ammount": 729,
+            "percent": 30,
+            "ppl_choise": 1,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_JVJkGj": {
+          "type": "product",
+          "settings": {
+            "product": "youthful-you",
+            "comment_ammount": 202,
+            "percent": 38,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_DgMQiP": {
+          "type": "product",
+          "settings": {
+            "product": "mi-bundle-may",
+            "comment_ammount": 100,
+            "percent": 34,
+            "ppl_choise": 0,
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec new_bundle\">\n                                                <img src=\"{{ 'new_bundle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                <div class=\"doctorly_text\">\n                                                    <p>NEW BUNDLE</p>\n                                                </div>\n                                            </div>"
+          }
+        },
+        "product_pCXqdM": {
+          "type": "product",
+          "settings": {
+            "product": "ageless-glow-bundle",
+            "comment_ammount": 283,
+            "percent": 26,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_EQ6HJY": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "skin-ssentials-set-doctorly-choice",
+            "comment_ammount": 202,
+            "percent": 40,
+            "ppl_choise": 0,
+            "recommended": 1,
+            "recommended_code": "<div class=\"doctorly_rec\">\n                                                    <img src=\"{{ 'doctorly.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                    <div class=\"doctorly_text\">\n                                                        <p>Doctorly <br><span>Recommended</span></p>\n                                                    </div>\n                                                </div>"
+          }
+        },
+        "product_zF9wP9": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-bundle-1",
+            "comment_ammount": 212,
+            "percent": 44,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_aKUc4N": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "confidence-booster-bundle",
+            "comment_ammount": 242,
+            "percent": 32,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        },
+        "product_CnMwyU": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "youthify-or-glow-set",
+            "comment_ammount": 514,
+            "percent": 44,
+            "ppl_choise": 0,
+            "recommended": 0,
+            "recommended_code": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_bMiKn4",
+        "product_9rPLGX",
+        "product_3Frmww",
+        "product_JVJkGj",
+        "product_DgMQiP",
+        "product_pCXqdM",
+        "product_EQ6HJY",
+        "product_zF9wP9",
+        "product_aKUc4N",
+        "product_CnMwyU"
+      ],
+      "settings": {
+        "heading": "Choose your bundle.",
+        "text": "<h4>Long term healthy skin and better self-esteem starts here.</h4>"
+      }
+    },
+    "trusted_bJ9rM6": {
+      "type": "trusted",
+      "blocks": {
+        "feedback_mHiyFf": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify://shop_images/cl_shah.webp",
+            "text": "<p>“I recommend this treatment to so many of my patients who are looking for a <strong>glowing, fresh looking complexion</strong>”</p><h6><strong>Dr Shah, MD</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "feedback_4rqbDD": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify://shop_images/cl_max.webp",
+            "text": "<p>“<strong>Brighter looking, more even skin</strong>, minimum pain, and little downtime, just a few reasons why <strong>this is a great at-home treatment</strong>”</p><h6><strong>Dr Maxfield, MD</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "video_H7pW4b": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/trusted_maren.webp",
+            "video_url": "https://www.youtube.com/watch?v=DvA8FkhJqso",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>There are actually many of these on the market but I love this one for several reasons. It's well made, it has a comfortable adjustable headband, it comes with an app..\"</p><h6><strong>Dr. Maren Locke,</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "video_JryNck": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_maxfield.webp",
+            "video_url": "https://www.youtube.com/watch?v=AeksxRPZyrA",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"</p><h6><strong>Dr. Maxfield,</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "video_Rx4fxx": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/trusted_davim.webp",
+            "video_url": "https://www.youtube.com/watch?v=0Lxofv19620",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Unlike using harsh micro needles or Derma rollers, this one is super safe...\"</p><h6><strong>Dr Davin Lim</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "video_xNcPBw": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_dylan.webp",
+            "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>The Qure micro-infusion system takes it a step further by not only increasing hydration but also delivering growth factors right where they need to be.</p><h6><strong>Dr Dylan Greeney, </strong>Board-Certified Dermatologist</h6>"
+          }
+        },
+        "video_yzhjt8": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_shah_max_main_ca589b9b-8b38-48eb-9587-8377e39e0d86.webp",
+            "video_url": "https://www.youtube.com/watch?v=PJt57LcFEQk",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a <strong>really good serum,</strong> probably is the best known peptide complex...\"</p><h6><strong>Dr Shah & Dr Maxfield,</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "video_wd7xtq": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_prem_cfb40060-a584-406c-a95e-6cb806f2a5d6.webp",
+            "video_url": "https://www.youtube.com/watch?v=_w8yWCPeijg",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...\"</p><h6><strong>Dr Prem,</strong> Board Certified Dermatologist</h6>"
+          }
+        },
+        "video_YJbEzh": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_mona.webp",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/71857fdec6b0497294117ed84cab480e.mp4",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.\"</p><h6><strong>Dr Mona Patel,</strong> Internal Medicine</h6>"
+          }
+        },
+        "video_TMkBGh": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_shah_max.jpg",
+            "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8&t=1s",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"There have been studies to show that this will definitely work to help your products penetrate better...\"</p><h6><strong>Dr Shah & Dr Maxfield,</strong> Certified Dermatologist</h6>"
+          }
+        },
+        "video_RFQncL": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/trusted_anthony.webp",
+            "video_url": "https://www.youtube.com/watch?v=gGVKgTHloXw",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"</p><h6><strong>Dr Anthony Youn,</strong> Board-Certified Plastic Surgeon</h6>"
+          }
+        },
+        "video_jNRqTh": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/trusted_q-urify-doctorly.webp",
+            "video_url": "https://www.youtube.com/watch?v=QuJ3puVLKzU",
+            "video_label": "Watch Video",
+            "wistia_id": "",
+            "text": "<p>\"You wanna look for something that’s gonna [reduce] both <strong>calcium carbonate </strong>and chlorine from your water.\"</p><h6><strong>Dr Shah, MD </strong>Board-Certified Dermatologist</h6>"
+          }
+        },
+        "video_QAC7VY": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_zeitany.webp",
+            "video_url": "",
+            "video_label": "Watch Video",
+            "wistia_id": "gpf4liwnyn",
+            "text": "<p>\"It's the only LED mask on the market that pairs with an app and is customizable\"</p><h6><strong>Dr. Zeitany,</strong> Board Certified Dermatologist</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "feedback_mHiyFf",
+        "feedback_4rqbDD",
+        "video_H7pW4b",
+        "video_JryNck",
+        "video_Rx4fxx",
+        "video_xNcPBw",
+        "video_yzhjt8",
+        "video_wd7xtq",
+        "video_YJbEzh",
+        "video_TMkBGh",
+        "video_RFQncL",
+        "video_jNRqTh",
+        "video_QAC7VY"
+      ],
+      "settings": {
+        "classname": "trusted_bl",
+        "heading": "Trusted and recommended by world leading Dermatologists",
+        "heading_reduced": "",
+        "likes": "2.4K",
+        "views": "1.4M views",
+        "image": "shopify://shop_images/trusted_3.webp",
+        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8",
+        "video_label": "Click To Watch Review",
+        "dermatoglist_check_text": "Trusted and recommended by world leading Dermatologists",
+        "dermatoglist_left_subtext": "",
+        "dermatoglist_right_name": "Dr Shah, MD",
+        "dermatoglist_right_especiality": "Board certified dermatologist",
+        "dermatoglist_right_video_url": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg"
+      }
+    },
+    "compare_DUM6Ff": {
+      "type": "compare",
+      "blocks": {
+        "object_XmfpXd": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_ledmask.webp",
+            "heading": "Qure",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "correctCircle",
+            "list": "<ul><li>saves you time</li><li>comfort and privacy of your own home</li><li>better results with more frequent treatments</li><li>customized approach</li></ul>"
+          }
+        },
+        "object_YbyEzH": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_derma.webp",
+            "heading": "Derm/Clinic\\nTreatments",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "incorrectCircle",
+            "list": "<ul><li>time-consuming commute to clinic </li><li>according to clinic's availiablity</li><li>less treatments - less results</li><li>customized approach</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_XmfpXd",
+        "object_YbyEzH"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "classname": "beauty_skincare section",
+        "heading": "Hello make up free days, goodbye clinical costs",
+        "heading_reduced": "",
+        "text": "<p>Are you ready to enjoy the same technology used in clinics, without the price tag or hassle?</p><p>Get clinic-level results with consistent treatments from the comfort of your own home – for a fraction of the clinical cost.</p>",
+        "text_reduced": ""
+      }
+    },
+    "details_sliders_BwedTq": {
+      "type": "details-sliders",
+      "blocks": {
+        "slide_JbBpDC": {
+          "type": "slide",
+          "settings": {
+            "heading": "<h2>Micro-Infusion<br/>Facial System</h2>",
+            "image": "shopify://shop_images/skinPromise_1.png",
+            "code": "<div class=\"accordion accordion-flush\" id=\"accordionQuesExample_1\">\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_1-1\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_1-1\">\n                                                    <div class=\"containers\">Benefits & Product description</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_1-1\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_1\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <p>Quick and easy at-home facial system that “stamps” your\n                                                            skin with clinical-grade needles, stimulating collagen\n                                                            production, to smooth fine lines & wrinkles. </p>\n                                                        <p>The invisible micro-channels infuse clinically-formulated\n                                                            (rejuvenating or hydra-soothing) serums directly into\n                                                            your skin, accelerating absorption by up to 300%.</p>\n                                                        <p>See immediately visible results, with no downtime. </p>\n                                                        <p></p>Perfect for anyone wanting a fresh, dewy glow to\n                                                        their skin, especially before an event or occasion.</p>\n                                                    </div>\n                                                    <div class=\"accordion_icon_list\">\n                                                        <ul>\n                                                            <li>\n                                                                <img src=\"{{ 'skin1-1.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Perfect before your big<br> event to\n                                                                    instantly<br> enhance your skin.</p>\n                                                            </li>\n                                                            <li>\n                                                                <img src=\"{{ 'skin1-2.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Easy DIY facial<br> performed from the<br>\n                                                                    comfort of home.</p>\n                                                            </li>\n                                                            <li style=\"grid-column:2 span;\">\n                                                                <img src=\"{{ 'skin1-3.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Increases absorption of serum <br>by 300% for\n                                                                    instant results.</p>\n                                                            </li>\n                                                        </ul>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_1-2\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_1-2\">\n                                                    <div class=\"containers\">How to use</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_1-2\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_1\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <div class=\"accordion_list li_decimal\">\n                                                            <ul>\n                                                                <li>\n                                                                    Open the device and fill with one ampule of\n                                                                    serum. Twist on needle head with lid to close it\n                                                                    tight.</li>\n                                                                <li>Leave the device upside down for 1-2 minutes.\n                                                                    Wash your face well and make sure your hands are\n                                                                    clean.</li>\n                                                                <li>Once the serum has had enough time to make its\n                                                                    way into the needles, you can take off the lid\n                                                                    and start Micro-Infusing!</li>\n                                                                <li>Start at the centre of the face and work your\n                                                                    way outward to cover the full face. Apply any\n                                                                    leftover serum from the device to face and neck\n                                                                    to leave on overnight.</li>\n                                                                <li>Once treatment is completed, twist the lid off\n                                                                    and dispose safely. Apply a new sterile needle\n                                                                    head on the device for next treatment.</li>\n\n                                                            </ul>\n                                                        </div>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin11_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>\n                                                                        Saves time, money & <br>hassle of attending\n                                                                        <br>in-clinic treatments.\n                                                                    </p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin11_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Quick & painless facial<br> booster that’s\n                                                                        safe with <br>no downtime.</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>"
+          }
+        },
+        "slide_DwMt8n": {
+          "type": "slide",
+          "settings": {
+            "heading": "<h2>Q-Rejuvalight Pro<br/>LED Mask</h2>",
+            "image": "shopify://shop_images/skinPromise_2.png",
+            "code": "<div class=\"accordion accordion-flush\" id=\"accordionQuesExample_2\">\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_2-1\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_2-1\">\n                                                    <div class=\"containers\">Benefits & Product description</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_2-1\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_2\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <p>FDA-cleared at-home LED light therapy mask utilizes a\n                                                            combination of 5 clinically proven wavelengths of light\n                                                            to treat a multitude of skin concerns, all with the one\n                                                            device.</p>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin2_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Smooth fine line and<br> wrinkles</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin2_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Clear and prevent <br>acne breakouts</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin2_3.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Even skin tone and<br> fade dark spots</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin2_4.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Calm redness and<br> reduce inflammation</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin2_5.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Lift and firm<br> sagging skin</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin2_6.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Promote a healthy,<br> glowing complexion</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_2-2\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_2-2\">\n                                                    <div class=\"containers\">How to use</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_2-2\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_2\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <div class=\"accordion_list li_decimal\">\n                                                            <ul>\n                                                                <li>Wash and dry your face, place device comfortably\n                                                                    over the face, securing strap around head. </li>\n                                                                <li>Press the button to turn mask ON.</li>\n                                                                <li>Press button again to power on treatment OR open\n                                                                    the Qure Skincare app to customize your\n                                                                    treatment by selecting Anti-Aging or\n                                                                    Anti-Breakout on 5 facial areas. Once\n                                                                    programmed, then press start.</li>\n                                                                <li>Treatment will automatically turn OFF after 3\n                                                                    minutes. Remove device and clean with wipe. Then\n                                                                    follow Qure All-In-One Face Serum or your\n                                                                    regular skin care routine.</li>\n                                                            </ul>\n                                                        </div>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin22_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Backed by science<br> and clinical research\n                                                                    </p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ '3_mins.png' | asset_url }}\" alt=\"\">\n                                                                    <p>Quick daily<br> treatment</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin22_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Personalise your own<br> treatment via the\n                                                                        app\n                                                                    </p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin22_3.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Wireless & long <br>battery life</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>"
+          }
+        },
+        "slide_HpKCt3": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "heading": "<h2>Q-urify<br/>Tap Water Filter</h2>",
+            "image": "shopify://shop_images/skinPromise_3.png",
+            "code": "<div class=\"accordion accordion-flush\" id=\"accordionQuesExample_3\">\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_3-1\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_3-1\">\n                                                    <div class=\"containers\">Benefits & Product description</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_3-1\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_3\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <p>The water filter device brings you simple yet impactful\n                                                            change that enhances your skin's natural radiance and\n                                                            health.</p>\n                                                        <p>Filtered water is clinically-proven to improve skin\n                                                            barrier and have positive results\n                                                            for skin health and appearance.</p>\n                                                        <p>Removes chlorine, metal ions and contaminants that are\n                                                            known to contribute to skin irritation, transepidermal\n                                                            water loss (TEWL), and dryness. </p>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin3_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Enhances skin<br> health</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin3_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Advanced filtering <br>technology </p>\n                                                                </li>\n                                                                <li style=\"grid-column: 2 span;\">\n                                                                    <img src=\"{{ 'skin3_3.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Enhances skincare<br> absorption</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_3-2\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_3-2\">\n                                                    <div class=\"containers\">How to use</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_3-2\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_3\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <div class=\"accordion_list li_decimal\">\n                                                            <ul>\n                                                                <li>Simply follow the instructions to install the\n                                                                    device on your tap.</li>\n                                                                <li>Find the right attachments to fit your tap or\n                                                                    use the universal one.</li>\n                                                                <li> Replace filter every 3 months.</li>\n                                                            </ul>\n                                                        </div>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin33_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Easy install<br> - no need for plumber</p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin33_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Multiple attachments<br> to fit most faucets\n                                                                    </p>\n                                                                </li>\n                                                                <li style=\"grid-column: 2 span;\">\n                                                                    <img src=\"{{ 'skin33_3.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Wash as you usually do<br> but with clean\n                                                                        water</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>"
+          }
+        },
+        "slide_XqkpkJ": {
+          "type": "slide",
+          "settings": {
+            "heading": "<h2>Neck & Décolletage<br/>LED Device</h2>",
+            "image": "shopify://shop_images/skinPromise_4.png",
+            "code": "<div class=\"accordion accordion-flush\" id=\"accordionQuesExample_4\">\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_4-1\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_4-1\">\n                                                    <div class=\"containers\">Benefits & Product description</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_4-1\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_4\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <p>At home LED light therapy device that goes beyond the\n                                                            face for a targeted skin treatment. Utilizes a\n                                                            combination of infra red and near-infra red light\n                                                            wavelengths to treat multiple skin concerns and signs of\n                                                            aging on neck and chest area.</p>\n                                                    </div>\n                                                    <div class=\"accordion_icon_list\">\n                                                        <ul>\n                                                            <li>\n                                                                <img src=\"{{ 'skin4_1.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Reduces fine lines &<br> wrinkles</p>\n                                                            </li>\n                                                            <li>\n                                                                <img src=\"{{ 'skin4_2.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Rejuvenates dark spots<br> & sun damaged skin</p>\n                                                            </li>\n                                                            <li>\n                                                                <img src=\"{{ 'skin4_3.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Increases hydration<br> & brightens the skin</p>\n                                                            </li>\n                                                            <li>\n                                                                <img src=\"{{ 'skin4_4.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Promotes healthier, younger-looking skin</p>\n                                                            </li>\n                                                            <li style=\"grid-column:2 span;\">\n                                                                <img src=\"{{ 'skin4_5.svg' | asset_url }}\" alt=\"\">\n                                                                <p>Diminishes the appearance<br> of pigmentation</p>\n                                                            </li>\n                                                        </ul>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_4-2\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_4-2\">\n                                                    <div class=\"containers\">How to use</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_4-2\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_4\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <div class=\"accordion_list li_decimal\">\n                                                            <ul>\n                                                                <li>\n                                                                    Cleanse and dry your skin to prepare it for\n                                                                    ultimate LED light absorption. Secure the device\n                                                                    around your neck using the adjustable velcro\n                                                                    straps. </li>\n                                                                <li>\n                                                                    Press & hold to start your 10-minute treatment.\n                                                                    With\n                                                                    a hands-free controller & clip-on, you can\n                                                                    either\n                                                                    relax or go about your day. \n                                                                </li>\n                                                                <li>\n                                                                    The device will automatically shut off after 10\n                                                                    minutes. Remove the device and gently wipe it\n                                                                    down.\n                                                                    Follow up with your normal skincare routine.\n                                                                    That’s\n                                                                    it!\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin44_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Backed by science<br> and clinical research\n                                                                    </p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ '10_mins.png' | asset_url }}\" alt=\"\">\n                                                                    <p>Quick daily <br>treatment</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>"
+          }
+        },
+        "slide_P4Ph7E": {
+          "type": "slide",
+          "settings": {
+            "heading": "<h2>All-In-One<br/>Face Serum</h2>",
+            "image": "shopify://shop_images/skinPromise_5.png",
+            "code": "<div class=\"accordion accordion-flush\" id=\"accordionQuesExample_5\">\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_5-1\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_5-1\">\n                                                    <div class=\"containers\">Benefits & ingredients</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_5-1\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_5\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <p>1-step multi-tasking All-In-One Face Serum effectively\n                                                            reduces the visibility of fine lines and dark spots,\n                                                            boosts firmness and smooths texture.</p>\n\n                                                        <p>Treat various skin concerns without needing to buy\n                                                            multiple skincare products. </p>\n\n                                                        <p> Argireline® Peptides, Retinol, Bakuchiol, Niacinamide,\n                                                            Vit C, Vit E, Ferulic Acid. </p>\n\n                                                        <p>Fragrance-Free. Suitable for most skin types\n                                                        </p>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin5_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Save money by not <br>buying multiple serums\n                                                                    </p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin5_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Boost light<br> therapy results</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"accordion-item u_item_question bg-grey\">\n                                            <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                                <button class=\"accordion-button collapsed\" type=\"button\"\n                                                    data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_5-2\"\n                                                    aria-expanded=\"false\" aria-controls=\"u_item_question_5-2\">\n                                                    <div class=\"containers\">How it works</div>\n                                                </button>\n                                            </h2>\n                                            <div id=\"u_item_question_5-2\" class=\"accordion-collapse collapse\"\n                                                data-bs-parent=\"#accordionQuesExample_5\">\n                                                <div class=\"accordion-body\">\n                                                    <div class=\"containers\">\n                                                        <div class=\"accordion_list li_decimal\">\n                                                            <ul>\n                                                                <li>After cleansing, apply 1-2 pumps onto already\n                                                                    cleansed face and neck</li>\n                                                                <li>Use every second day during the first week of\n                                                                    use whilst your skin builds tolarence. </li>\n                                                                <li>Then use daily for best results</li>\n                                                            </ul>\n                                                        </div>\n                                                        <div class=\"accordion_icon_list\">\n                                                            <ul>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin55_1.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Apply 1-2 pumps <br>with your ring finger\n                                                                    </p>\n                                                                </li>\n                                                                <li>\n                                                                    <img src=\"{{ 'skin55_2.svg' | asset_url }}\" alt=\"\">\n                                                                    <p>Simple one step routine in the evening</p>\n                                                                </li>\n                                                            </ul>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_JbBpDC",
+        "slide_DwMt8n",
+        "slide_HpKCt3",
+        "slide_XqkpkJ",
+        "slide_P4Ph7E"
+      ],
+      "settings": {
+        "heading": "Sick of wasting time and money with failed skin promises?",
+        "text": "<p>Our clinical-grade treatments and skincare is scientifically-proven to change your skin, and your self-esteem, for the better.</p>"
+      }
+    },
+    "faq_extended_GUWQH4": {
+      "type": "faq-extended",
+      "blocks": {
+        "object_4hYCz4": {
+          "type": "object",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "image": "shopify://shop_images/faq-led_fef59fd1-9b74-4b59-ab55-3ebe9ec633d3.svg",
+            "image2": "shopify://shop_images/faq-ledGreen_226279ed-33c3-4781-8ab6-2cc308830224.svg",
+            "text": "<p><strong>What colour wavelengths does the Q-Rejuvalight Pro have?</strong></p><p>The Q-Rejuvalight Pro Facewear has a total of 5 clinical-grade wavelengths of light for the best results:</p><ul><li>Infrared light (880 nm)</li><li>Deep Red (660 nm)</li><li>Red (630 nm)</li><li>Amber (605 nm)</li><li>Blue (415 nm)</li></ul><p>The Q-Rejuvalight Pro offers two treatment modes.<br/>Anti-Aging Treatment: Combines red, deep red, infrared and amber wavelengths.<br/>Anti-breakout Treatment: Combines red and blue wavelengths.</p><p>When paired with the Qure Skincare App, you can customize your treatment by programming either Anti-Aging or Anti-Breakout treatment on 5 facial zones.</p>",
+            "code": "",
+            "text2": "<p><strong>What type of results will I see? How quickly will I see them?</strong></p><p>Typically you’ll see improvements in 4 to 12 weeks. It is important to take \"before and after\" pictures to document your progress. Results are cumulative, frequent daily treatment is the key to seeing the best results. </p><p>Most users see a reduction of acne breakouts and redness after 2-4 weeks. Smoother lines, improved skin tone and firmness after 10-12 weeks. With continued positive results of skin improving overtime.</p>",
+            "code2": "",
+            "text3": "<p><strong>How do you charge the Q-Rejuvalight Pro?</strong></p><p>Every Q-Rejuvalight Pro comes with a universal USB-C charging cable. Simply plug the cable into any regular USB charger to charge your mask! Charging takes about 2-4 hours and gives you 8 to 10 full treatment sessions.</p>",
+            "code3": "",
+            "text4": "<p><strong>Does the Q-Rejuvalight Pro come with warranty?</strong></p><p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. Proudly designed in Australia.</p>",
+            "code4": "",
+            "text5": "",
+            "code5": "",
+            "text6": "",
+            "code6": "",
+            "text7": "",
+            "code7": "",
+            "text8": "",
+            "code8": "",
+            "text9": "",
+            "code9": "",
+            "text10": "",
+            "code10": ""
+          }
+        },
+        "object_XzKPfM": {
+          "type": "object",
+          "settings": {
+            "heading": "Micro-infusion System",
+            "image": "shopify://shop_images/faq-micro.svg",
+            "image2": "shopify://shop_images/faq-micro.svg",
+            "text": "<p><strong>When and what kind of results can I expect with Micro-Infusion?</strong></p><p>You’ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p>",
+            "code": "",
+            "text2": "<p><strong>How often can I do the treatment?</strong></p><p>We recommend a Micro-Infusion treatment every 2 weeks for the best results!</p>",
+            "code2": "",
+            "text3": "<p><strong>Is it painful? Does it hurt?</strong></p><p>Although the 0.5mm needles are longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a prickling sensation as the needles make contact with the skin but you’ll get used to the feeling quickly.</p>",
+            "code3": "",
+            "text4": "<p><strong>How many treatments do I get out of the  Micro-Infusion 3 Month Bundle?</strong></p><p>Total of 6 treatments. Each needle head is to be used one time per treatment, and disposed of after each treatment. This minimizes the risk of infection and unnecessary damage to the skin so you can get the best results. Use 1 full serum ampoule per treatment.</p>",
+            "code4": "",
+            "text5": "<p><strong>What serums come in the bundle? Can I use any serum with my Micro-Infusion device?</strong></p><p>We recommend only using the serums that come in the bundle. Some serums may cause irritation and should be avoided! We have developed our potent serum ampoules specifically for Qure’s Micro-Infusion system, with low risk of irritation and with no fragrance.</p><p>There are two types of serums that come in the bundle, you can mix them together to experience a complete set of benefits that treats your specific skin concerns.</p>",
+            "code5": "",
+            "text6": "<p><strong>Rejuvenating Serum:</strong></p><p>Reveals a smoother, evenly radiant complexion, generating a glow effect. Collagen-stimulating, dark spot brightening, and wrinkle-combatting properties restores youthful skin.Skin Concerns: Fine lines and wrinkles, rough texture, dark spots, dryness.</p>",
+            "code6": "",
+            "text7": "<p><strong>Hydra-Soothing Serum:</strong></p><p>Instant, intense hydration. Effectively plumps up fine lines, reduces redness, boosts and protects the skin barrier for healthy, supple skin. Skin Concerns: Dehydration, dryness, redness, fine lines, dull skin.</p>",
+            "code7": "",
+            "text8": "<p><strong>Is there any aftercare that I should follow post my Micro-Infusion treatment?</strong></p><p>After you’ve infused your skin with all that skin boosting serum, try to keep the skin clean for 24 hours and follow these post treatment guidelines:</p><ul><li>The day after treatment, wash your face with a gentle cleanser and apply a nourishing moisturizer.</li><li>Users may experience minor redness and irritation after the procedure but should quickly subside. Skin may experience mild swelling, peeling or flaking. You can minimize these effects by keeping the skin moisturized.</li><li>Skip makeup for as long as you can, but at minimum, at least 24 hours.</li><li>No exercising or strenuous activity for the first 24 hours post-treatment. Sweating and gym environments are harmful, rife with bacteria, and may cause adverse reactions.</li><li>Keep in mind, anything you put on your skin after using Micro-Infusion will absorb mo re easily, so it’s important to keep the skin clean and use products that don’t have harsh ingredients (no acids!).</li><li>Avoid touching your face, especially with dirty hands that haven’t been sanitized.</li><li>Avoid swimming, saunas and steam rooms for at least 24-48 hours post-treatment.</li><li>Avoid applying products containing fragrances, active ingredients or acids such as Alpha Hydroxy Acids, Beta Hydroxy Acid, Retinol (Vitamin A), Vitamin C or anything perceived as ‘active’ skincare including scrubs or toners for at least 2-3 days post-treatment, as it may cause irritation.</li><li>Avoid exfoliating products for 2-3 days after treatment because they can be abrasive on skin when it is in that kind of condition. Avoid direct sun exposure immediately after treatment. Apply a high protection sunscreen when going outdoors, and avoid prolonged sun exposure. Use good quality non-comedogenic sunscreen if going in the sun.</li></ul><p>By the next day, you should be free to resume your normal activities, skincare routine, and any makeup you want to apply—but you may not even need it. Just ensure you monitor your skin’s reaction.</p>",
+            "code8": "",
+            "text9": "",
+            "code9": "",
+            "text10": "",
+            "code10": ""
+          }
+        },
+        "object_rdny9V": {
+          "type": "object",
+          "disabled": true,
+          "settings": {
+            "heading": "Q-urify Tap Water Filter",
+            "image": "shopify://shop_images/faq-qurifytap.svg",
+            "image2": "shopify://shop_images/faq-qurifytapGreen.svg",
+            "text": "<p><strong>How does tap water harm my skin?</strong></p><p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.</li></ul>",
+            "code": "",
+            "text2": "<p><strong>What does it filter in the water?</strong></p><p>Q-urify water filter uses both physical and chemical filtration components to help reduce skin irritants that make your tap water “hard” – like calcium, magnesium and chlorine. </p>",
+            "code2": "",
+            "text3": "<p><strong>What skin types can benefit from Q-urify Water Filter?</strong></p><p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. </p>",
+            "code3": "",
+            "text4": "<p><strong>How often do I need to replace my filter?</strong></p><p>With daily use, your Q-urify water filter needs to be replaced at least once every three months for your skin to look and feel its best. Once it gets past the 3 month mark, your filter starts to lose its efficacy. We wash our face everyday so make sure you are looking after your skin.</p>",
+            "code4": "",
+            "text5": "<p><strong>Where can I buy replacement filters?</strong></p><p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer subscription plans for your convenience and ease.</p>",
+            "code5": "",
+            "text6": "<p><strong>Will it fit my faucet?</strong></p><p>It’s compatible with almost every circular removable aerator! Each Q-urify Water Filter kit comes with 8 adaptors to help fit different faucet sizes. Please note that it will NOT fit faucets that are square shaped, pull out, hand-held, spray-style, or faucets with a sensor.</p>",
+            "code6": "<div class=\"faq_img_wrap\">\n                                            <img src=\"{{ 'qurify_faq_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_4.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_5.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_6.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_7.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        </div>",
+            "text7": "",
+            "code7": "",
+            "text8": "",
+            "code8": "",
+            "text9": "",
+            "code9": "",
+            "text10": "",
+            "code10": ""
+          }
+        },
+        "object_RPqmbC": {
+          "type": "object",
+          "settings": {
+            "heading": "Neck & Décolletage LED",
+            "image": "shopify://shop_images/faq-neck.svg",
+            "image2": "shopify://shop_images/faq-neck_487a7daa-d415-434d-8167-85006c46452d.svg",
+            "text": "<p><strong>What are the wavelengths? How many LED lights does it have? </strong></p><p>Two clinically proven wavelengths of light (red 633nm and near-infrared 830nm) work on a cellular level to stimulate new collagen, reduce fine lines and wrinkles, and reduce sun damage and the visible signs of aging.</p><p>LEDs: 55 Dual-core LEDs<br/>Wavelengths: 630 nm, 830 (Red and InfraRed)</p>",
+            "code": "",
+            "text2": "<p><strong>How often should I use it for optimal results?</strong></p><p>For best results, we recommend using the device 5-7 times a week. Each session only lasts 10 minutes. Visible results may vary, but improvements can be seen within 4 weeks of consistent use. More significant changes can be seen over several months.</p>",
+            "code2": "",
+            "text3": "<p><strong>How long is the treatment?</strong></p><p>Just 10 minutes! A one and a half hour charge can deliver up to 7 to 8 treatments.</p>",
+            "code3": "",
+            "text4": "<p><strong>Is it safe for all skin types?</strong></p><p>Yes, this device is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>",
+            "code4": "",
+            "text5": "<p><strong>How do I charge the device? </strong></p><p>Charge Neck & Décolletage device fully for 4 hours before your first use. Only use a 5V adapter or computer USB port. Please avoid fast chargers as they can damage the battery.</p><p>To charge the device, insert the USB-C cable into the controller. Insert the USB-A side of the cable into a USB power supply. When the controller is charged, the LED indicator on the controller flashes white, and when the controller is fully charged, the indicator will be steady white. </p>",
+            "code5": "",
+            "text6": "",
+            "code6": "",
+            "text7": "",
+            "code7": "",
+            "text8": "",
+            "code8": "",
+            "text9": "",
+            "code9": "",
+            "text10": "",
+            "code10": ""
+          }
+        },
+        "object_DRf3At": {
+          "type": "object",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "image": "shopify://shop_images/faq-all-in-one.svg",
+            "image2": "shopify://shop_images/faq-all-in-one_82e027c4-2021-4b97-8826-24cd171bd80f.svg",
+            "text": "<p><strong>What’s the full ingredients list? </strong></p><p>Water, Glycerin, Propanediol, Caprylic/Capric Triglyceride, Maltodextrin, Sodium Acrylates, Copolymer, Niacinamide, Bakuchiol, 3-O-Ethyl Ascorbic Acid, Glycine Soja (Soybean) Oil, Sucrose Dilaurate, Retinyl Palmitate, Lactic Acid, 1,2-Hexanediol, Glyceryl Oleate Citrate, Caprylyl Glycol, Tocopheryl Acetate, Lecithin, Polyacrylate-13, Retinol, Sodium Hydroxide, Sodium Cocoyl Glutamate, Polyisobutene, Ferulic Acid, Pentaerythrityl Tetra-Di-T-Butyl, Hydroxyhydrocinnamate, Mandelic Acid, Pisum Sativum (Pea) Extract, Artemisia Umbelliformis Flower Extract, Boswellia Serrata Resin Extract, Polysorbate 20, Sorbitan Isostearate, Sodium Benzoate, Potassium Sorbate, Ganoderma Lucidum (Mushroom) Extract, Tropolone, Camellia Sinensis Leaf, Tocopherol, Citric Acid, Acetyl Hexapeptide-8, Terminalia Ferdinandiana Fruit Extract, BHT, Hyaluronic Acid, Ginkgo Biloba Leaf Extract.</p>",
+            "code": "",
+            "text2": "",
+            "code2": "",
+            "text3": "<p><strong>When can I start to see results?</strong></p><p>Most people see improvement in a couple months, but this can vary. Remember to stick with it— consistency is key. Our clinically-proven ingredients work to make your skin look brighter, instantly and over time.</p>",
+            "code3": "",
+            "text4": "",
+            "code4": "",
+            "text5": "",
+            "code5": "",
+            "text6": "",
+            "code6": "",
+            "text7": "",
+            "code7": "",
+            "text8": "",
+            "code8": "",
+            "text9": "",
+            "code9": "",
+            "text10": "",
+            "code10": ""
+          }
+        },
+        "object_pKb7xN": {
+          "type": "object",
+          "settings": {
+            "heading": "Shipping & Orders",
+            "image": "shopify://shop_images/faq-shipping.svg",
+            "image2": "shopify://shop_images/faq-shippingGreen.svg",
+            "text": "<p><strong>We ship FREE, worldwide on orders over $100. </strong></p><p>Here’s how it works for products that are in stock: you order, we process, then we ship. Processing time is 1 to 3 business days. Orders are shipped from our warehouse in the U.S then one of our carriers takes it from there. You’ll get an email with your tracking number as soon as your package is on its way!</p>",
+            "code": "",
+            "text2": "<p><strong>What is the estimated shipping time?</strong></p><p>United States: 3-6 business days<br/>Australia: 7-14 business days<br/>Canada: 3-10 business days<br/>United Kingdom: 7-10 business days<br/>Europe: 7-14 business days</p>",
+            "code2": "",
+            "text3": "<p><strong>Do I need to pay taxes and duties?</strong></p><p>Depending on your shipping destination country, you may be liable to pay local taxes and duties on receipt of your order. We recommend contacting your local customs department to find out more.</p>",
+            "code3": "",
+            "text4": "",
+            "code4": "",
+            "text5": "",
+            "code5": "",
+            "text6": "",
+            "code6": "",
+            "text7": "",
+            "code7": "",
+            "text8": "",
+            "code8": "",
+            "text9": "",
+            "code9": "",
+            "text10": "",
+            "code10": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_4hYCz4",
+        "object_XzKPfM",
+        "object_rdny9V",
+        "object_RPqmbC",
+        "object_DRf3At",
+        "object_pKb7xN"
+      ],
+      "settings": {
+        "heading": "The answers to your questions",
+        "text": ""
+      }
+    },
+    "liquid_6ytqfF": {
+      "type": "liquid",
+      "settings": {
+        "code": "<script>\ndocument.querySelector(\"ul.wrongCircle li:last-child\").classList.add(\"correct\");\n</script>"
+      }
+    }
+  },
+  "order": [
+    "header_sales_TMQyBR",
+    "main",
+    "pdm_product_landing_sales_F9Dn8a",
+    "icons_list_qXfGQA",
+    "results_NKDiDj",
+    "two_column_box_FQCXGb",
+    "featuredin_cQiHyx",
+    "bundle_list_LdzHxV",
+    "trusted_bJ9rM6",
+    "compare_DUM6Ff",
+    "details_sliders_BwedTq",
+    "faq_extended_GUWQH4",
+    "liquid_6ytqfF"
+  ]
+}

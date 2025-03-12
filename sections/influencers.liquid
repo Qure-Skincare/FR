@@ -1,0 +1,80 @@
+{% if section.blocks.size > 0 %}
+    <div class="social_media bg_grey section">
+        <div class="container">
+            <div class="sm_wrapper">
+                <div class="swiper dot_pagination socialM_slider twa__swiper" id="twa__swiper-socialM_slider"
+                    data-section-id="socialM_slider" data-autoplay="false" data-loop="false"
+                    data-centerslide="false" data-mobile="1" data-tablet="3" data-desktop="3" data-spacing="20"
+                    data-arrowleft="socialM_slider-swiper-prev" data-arrowright="socialM_slider-swiper-next">
+                    <div class="swiper-wrapper">
+                        {%- for block in section.blocks -%}
+                            <div class="swiper-slide">
+                                <div class="sm_item text-center">
+                                    {% if block.settings.image != blank %}
+                                        <img class="img-fluid" src="{{ block.settings.image | img_url: '450x' }}" alt="">
+                                    {% endif %}
+                                    
+                                    {% if block.settings.heading != blank %}
+                                        <h2 class="title-lg">{{ block.settings.heading }}</h2>
+                                    {% endif %}
+                                    {% if block.settings.button_label != blank %}
+                                        <div class="btn-black">
+                                            <a href="{{ block.settings.button_url }}" class="btn m-0">{{ block.settings.button_label }}</a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+    {
+        "name": "t:sections.influencers.name",
+        "class": "section-influencers",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.influencers.name"
+			}
+        ]
+    }
+{% endschema %}

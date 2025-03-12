@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+{% if request.path contains 'qure-microinfusion-offer-ar' %}
+<html lang="ar" dir="rtl"></html>
+{% else %}
+<html lang="{{ shop.locale }}">
+{% endif %}
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
+    {% if template contains 'product' and product.metafields.custom.custom_canonical_url != blank %}
+        <link rel="canonical" href="{{ product.metafields.custom.custom_canonical_url }}">
+    {% elsif template contains 'collection' and collection.metafields.custom.custom_canonical_url %}
+        <link rel="canonical" href="{{ collection.metafields.custom.custom_canonical_url }}">
+    {% else %}
+        <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
+    <meta name="p:domain_verify" content="67d2a1408f84408a05deffe883a0a523"/>
+    <meta name="google-site-verification" content="eJrHRDM9bifPc8Nf-ycIg275f3KrlSoWEHd5VM5M9LQ" />
+    <meta name="google-site-verification" content="N0QF9SQ35xUa1DQifP7jZgs_z2odMQBZlSB4L7n5fl4" /> 
+    <meta name="msvalidate.01" content="E6D2CFAEB841C8D3C13C6473265B99B6" /> 
+
+    <link rel="preload" href="{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}" as="script" fetchpriority="high">
+  
+    {% capture seo_title %}
+      {{ page_title }}
+      {% if current_tags %}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {% endif %}
+      {% if current_page != 1 %}
+        &ndash; {{ 'general.meta.page' | t: page: current_page }}
+      {% endif %}
+    {% endcapture %}
+
+    <title>{{ seo_title }}</title>
+
+    {%- if page_description -%}
+			<meta name="description" content="{{ page_description | escape }}">
+		{%- else -%}
+			<meta name="description" content="{{ seo_title | escape }}">
+    {%- endif -%}
+
+    {% include 'social-meta-tags' %}
+
+    {% if request.path == 'index' %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Qure Skincare",
+          "url": "https://www.qureskincare.com/",
+          "logo": "",
+          "sameAs": [
+            "https://www.facebook.com/Qureskincare/",
+            "https://www.instagram.com/qureskincare/",
+            "https://www.youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA"
+          ]
+        }
+      </script>
+    {% endif %}
+    {% if settings.favicon != blank %}
+        <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {% endif %}
+
+
+    <!--== CSS ==-->
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'product.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+
+    {{ content_for_header }}
+
+    {% include 'redirect' %}
+    {% include 'config-layout' %}
+
+    <!-- styles endrock -->
+
+    {% case template %}
+        {% when 'page.sunil-mi-landing' %}
+            {{ 'endrock-landing.css' | asset_url | stylesheet_tag }}
+        {% when 'page.sunil-mi-landing-de' %}
+
+        {% when 'page.skincare-plan-results' or
+            'page.skincare-plan-dark-spots' or
+            'page.skincare-plan-acne' %}
+          {{ 'endrock-skincareplanresultslp.css' | asset_url | stylesheet_tag }}
+
+    {% else %}
+        {{ 'endrock.css' | asset_url | stylesheet_tag }}
+    {% endcase %}
+    {{ 'endrock-sidecart.css' | asset_url | stylesheet_tag }}
+
+    <link rel="stylesheet" href="{{ 'header_new.css' | asset_url }}">
+    
+    <!-- end styles endrock -->
+
+    {% render 'header-scripts' %}
+    {% comment %} add swiper  {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="{{ template }}">
+    {% if product.handle == 'personalized-skincare-plan' %}
+      <script>
+        window.location.href = "/";
+      </script>
+    {% endif %}
+    {% comment %} Edgemesh Performance: Stale cart refresher {% endcomment %}
+    {% render 'cart-refresher' %}
+
+    <!-- Google Tag Manager (noscript) -- BV -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLP8CZF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -- BV -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7RD8D7B"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% render 'config-header' %}
+
+    <main {% if main_class != blank %}class="{{ main_class }}"{% endif %}>
+        {{ content_for_layout }}
+    </main>
+
+    {% section 'newsletter' %}
+    {% include 'config-footer' %}
+    {% include 'slidelogin' %}
+
+    <script>
+        window.templateName = "{{template}}";
+        let template = '{{ template }}';
+        
+        if (document.querySelector('a[href="#faq_section"]')) {
+            document.querySelector('a[href="#result_section"]').addEventListener('click', function(e) {
+                if (!document.getElementById('result_section')) {
+                    e.preventDefault();
+                    window.location = '/#result_section';
+                }
+            });
+        }
+
+        if (document.querySelector('a[href="#faq_section"]')) {
+            document.querySelector('a[href="#faq_section"]').addEventListener('click', function(e) {
+                if (!document.getElementById('faq_section')) {
+                    e.preventDefault();
+                    window.location = '/pages/faqs';
+                }
+            });            
+        }
+    </script>
+
+    {% if product %}
+        <script>
+            var item = {
+                Name: {{ product.title|json }},
+                ProductID: {{ product.id|json }},
+                Categories: {{ product.collections|map:'title'|json }},
+                ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+                URL: "{{ shop.secure_url }}{{ product.url }}",
+                Brand: {{ product.vendor|json }},
+                Price: {{ product.price|money|json }},
+                CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+            };
+        </script>
+    {% endif %}
+
+    <!--======================= Scripts ============================-->
+    <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script src="{{ 'vendor.js' | asset_url }}"></script>
+    <script src="{{ 'theme.js' | asset_url }}"></script>
+    <script src="{{ 'custom.js' | asset_url }}"></script>
+    <script src="{{ 'qurify-filter-lp.js' | asset_url }}"></script>
+    <script src="{{ 'slideLogin.js' | asset_url }}"></script>
+    <script src="{{ '__app_trackObject.js' | asset_url }}"></script>
+    <script src="{{ '__app_serums-months-form.js' | asset_url }}"></script>
+
+    <script src="{{ '__app_serums-refill-form.js' | asset_url }}"></script>
+
+    <script defer type="text/javascript">
+        /* order by: states info */
+        window.showOrderBy = {{ settings.show_order_by_receive_by }};
+        window.nationalText = '{{ settings.national_text }}';
+        window.internationalText = '{{ settings.international_text }}';
+        window.statesInfo = [
+            { stateAcronym: 'OR', deliveryRange: '6-8' },
+            { stateAcronym: 'NV', deliveryRange: '6-7' },
+            { stateAcronym: 'AL', deliveryRange: '5-7' },
+            { stateAcronym: 'AK', deliveryRange: '5-7' },
+            { stateAcronym: 'CO', deliveryRange: '5-7' },
+            { stateAcronym: 'ID', deliveryRange: '5-7' },
+            { stateAcronym: 'IA', deliveryRange: '5-7' },
+            { stateAcronym: 'KS', deliveryRange: '5-7' },
+            { stateAcronym: 'MN', deliveryRange: '5-7' },
+            { stateAcronym: 'MO', deliveryRange: '5-7' },
+            { stateAcronym: 'MT', deliveryRange: '5-7' },
+            { stateAcronym: 'NH', deliveryRange: '5-7' },
+            { stateAcronym: 'ND', deliveryRange: '5-7' },
+            { stateAcronym: 'RI', deliveryRange: '5-7' },
+            { stateAcronym: 'SD', deliveryRange: '5-7' },
+            { stateAcronym: 'UT', deliveryRange: '5-7' },
+            { stateAcronym: 'WA', deliveryRange: '5-7' },
+            { stateAcronym: 'WI', deliveryRange: '5-7' },
+            { stateAcronym: 'WY', deliveryRange: '5-7' },
+            { stateAcronym: 'HI', deliveryRange: '5-6' },
+            { stateAcronym: 'AZ', deliveryRange: '4-6' },
+            { stateAcronym: 'AR', deliveryRange: '4-6' },
+            { stateAcronym: 'CA', deliveryRange: '4-6' },
+            { stateAcronym: 'CT', deliveryRange: '4-6' },
+            { stateAcronym: 'GA', deliveryRange: '4-6' },
+            { stateAcronym: 'IL', deliveryRange: '4-6' },
+            { stateAcronym: 'IN', deliveryRange: '4-6' },
+            { stateAcronym: 'KY', deliveryRange: '4-6' },
+            { stateAcronym: 'LA', deliveryRange: '4-6' },
+            { stateAcronym: 'ME', deliveryRange: '4-6' },
+            { stateAcronym: 'MD', deliveryRange: '4-6' },
+            { stateAcronym: 'MA', deliveryRange: '4-6' },
+            { stateAcronym: 'MI', deliveryRange: '4-6' },
+            { stateAcronym: 'MS', deliveryRange: '4-6' },
+            { stateAcronym: 'NE', deliveryRange: '4-6' },
+            { stateAcronym: 'NM', deliveryRange: '4-6' },
+            { stateAcronym: 'NY', deliveryRange: '4-6' },
+            { stateAcronym: 'NC', deliveryRange: '4-6' },
+            { stateAcronym: 'OK', deliveryRange: '4-6' },
+            { stateAcronym: 'PA', deliveryRange: '4-6' },
+            { stateAcronym: 'SC', deliveryRange: '4-6' },
+            { stateAcronym: 'TN', deliveryRange: '4-6' },
+            { stateAcronym: 'TX', deliveryRange: '4-6' },
+            { stateAcronym: 'VT', deliveryRange: '4-6' },
+            { stateAcronym: 'WV', deliveryRange: '4-6' },
+            { stateAcronym: 'DE', deliveryRange: '3-5' },
+            { stateAcronym: 'NJ', deliveryRange: '3-5' },
+            { stateAcronym: 'OH', deliveryRange: '3-5' },
+            { stateAcronym: 'VA', deliveryRange: '3-5' },
+            { stateAcronym: 'FL', deliveryRange: '2-4' }
+            ];
+    </script>
+
+    <script defer src="{{ 'endrock.js' | asset_url }}"></script>
+    {% case template %}
+        {% when 'page.skincare-plan-results' or
+            'page.skincare-plan-dark-spots' or
+            'page.skincare-plan-acne' %}
+    <script defer src="{{ 'endrock-skincareplanresultslp.js' | asset_url }}"></script>
+    {% endcase %}
+    <script type="text/javascript" src="https://s.skimresources.com/js/200448X1678823.skimlinks.js"></script>
+    <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=4c00ac67-4d68-4b44-95c1-190a7b67b92a"></script>
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4a846202-05f3-48b3-a077-4d4a2eacbe6a"> </script>
+
+    <script>
+        window.ALBSS = {
+          event_key: '225c861d-87c1-4b64-956f-d963e2cab43b'
+        };
+    </script>
+    <script src="https://c.albss.com/p/l/loader.iife.js" async></script>
+
+    {% section 'slidecart' %}
+
+    {% render 'gdpr' %} 
+    
+    {% comment %} {% include 'info' %} {% endcomment %}
+</body>
+</html>

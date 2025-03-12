@@ -1,0 +1,205 @@
+/* ============== main banner start ========== */
+.free_water .banner_content {
+    max-width: 100%;
+    color: #000;
+}
+
+.free_water .banner_content .title-xl {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.free_water .banner_content p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+}
+
+.free_water .btn_white {
+    color: #000;
+}
+
+@media(max-width:767px) {
+    .free_water .banner_content {
+        color: #fff;
+    }
+
+    .free_water .banner_content .title-xl {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.4px;
+    }
+
+    .free_water .btn_white {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 15px;
+    }
+
+    .free_water .banner_content p {
+        font-size: 16px;
+    }
+
+    .free_water .section {
+        padding: 50px 0;
+    }
+}
+
+/* ============== main banner end ========== */
+/* ============== tap water start ========== */
+.tap_water .tap_water_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+.tap_water .tap_water_icons .tw_item p {
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.tap_water .tap_water_info h2 {
+    margin-bottom: 30px;
+}
+
+@media(max-width:768px) {
+    .tap_water .tap_water_icons {
+        column-gap: 10px;
+        row-gap: 20px;
+        padding-top: 40px;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .tap_water .tap_water_icons .tw_item p {
+        padding-top: 10px;
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .tap_water .tap_water_icons .tw_item img {
+        width: 55px;
+    }
+}
+
+/* ============== tap water end ========== */
+/* ============== tap water form  start ========== */
+.free_water .giveaway_form .textfield p {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+
+/* ============== tap water form  end ========== */
+/* =============== did you know start ============= */
+.did_you_know .dyk_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px;
+}
+
+.did_you_know .dyk_wrapper .dyk_item h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    opacity: 0.8;
+    margin: 10px 0;
+}
+
+.did_you_know .dyk_wrapper .dyk_item p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+}
+
+@media(max-width:767px) {
+    .did_you_know .dyk_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dyk_item {
+        display: flex;
+        gap: 10px;
+    }
+
+    .progressWrapper svg {
+        height: 62px;
+        width: 62px;
+    }
+
+    .did_you_know .dyk_wrapper .dyk_item h6 {
+        margin: 0;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.13px;
+    }
+
+    .did_you_know .dyk_wrapper .dyk_item p {
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.11px;
+    }
+}
+
+/* =============== did you know end ============= */
+.skincare_routine {
+    background: #C7E7DC;
+}
+
+.get_report_btn {
+    max-width: 327px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 100px;
+    padding: 15px;
+    margin: 30px auto 0;
+}
+
+.get_report_btn a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+}
+
+.meet_qurify_info p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+
+.meet_qurify_info .refill_review p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+@media(max-width:767px) {
+    .meet_qurify_info .refill_review p {
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+    }
+
+    .meet_qurify_info p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}

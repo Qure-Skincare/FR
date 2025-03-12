@@ -1,0 +1,248 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "banner_xBMFyj": {
+      "type": "banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "We're rethinking skincare",
+        "text": "<p>Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.<\/p>",
+        "image": "shopify:\/\/shop_images\/main_about.webp",
+        "image_mobile": "shopify:\/\/shop_images\/main_about_mob.webp",
+        "align_center": true,
+        "classname": "bg_gradient_mob text-light"
+      }
+    },
+    "featuredin_nCkhFi": {
+      "type": "featuredin",
+      "blocks": {
+        "image_hqna7b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_hGEPj7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_7TFJB6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_Gq3EJx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia.svg",
+            "mobile_hide": true
+          }
+        },
+        "image_YiTfHk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "mobile_hide": true
+          }
+        },
+        "image_fb3CkA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "mobile_hide": true
+          }
+        }
+      },
+      "block_order": [
+        "image_hqna7b",
+        "image_hGEPj7",
+        "image_7TFJB6",
+        "image_Gq3EJx",
+        "image_YiTfHk",
+        "image_fb3CkA"
+      ],
+      "settings": {
+        "heading": "FEATURED IN:"
+      }
+    },
+    "two_column_box_3FmXJ3": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_xRY7ey": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about_it_1.webp",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_AQnLR4": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Skin health is not about switching products, but changing the process<\/h2><p><\/p><p>Most of us have tried dozens of creams, oils, balms, ointments. The fact that we keep switching products proves that topical alone don’t get you the desired results. What we need is <strong>something proven—a treatment, <\/strong>rather than a cream.<\/p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "image_xRY7ey",
+        "content_AQnLR4"
+      ],
+      "settings": {
+        "classname": "imageText section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "two_column_box_3ecWgY": {
+      "type": "two-column-box",
+      "blocks": {
+        "content_gQkLwf": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Putting you in control of your skin<\/h2><p>Professional, clinical-grade treatments are now <strong>available to everyone.<\/strong> You no longer have to pay thousands for in-clinic treatments.<\/p><p>You have the <strong>power to treat your skin,<\/strong> every day and see faster, longer-lasting results with proven scientific processes, methods, and ingredients. <strong>Because no one knows your skin better than you do.<\/strong><\/p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        },
+        "image_jkdmm6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about_it_2.webp",
+            "classname": "mw-mob-100"
+          }
+        }
+      },
+      "block_order": [
+        "content_gQkLwf",
+        "image_jkdmm6"
+      ],
+      "settings": {
+        "classname": "technology_light pt-30 section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "before_after_slider_gcVxg9": {
+      "type": "before-after-slider",
+      "blocks": {
+        "slide_CTdQkN": {
+          "type": "slide",
+          "settings": {
+            "heading": "Fine Lines and Wrinkles",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/michelle_before_img.webp",
+            "text_before": "Before",
+            "image_after": "shopify:\/\/shop_images\/michelle_after_img.webp",
+            "text_after": "AFTER 8 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Michelle S.",
+            "progress": 87,
+            "progress_text": "<p><strong>smoother<\/strong> facial wrinkles and fine lines after 12 weeks.<\/p>",
+            "text": "",
+            "feedback_title": "In a Clinical Trial...",
+            "feedback_text": "<p><strong>...8 out of 10<\/strong> subjects reported a                                                      significant <strong>reduction in periorbital wrinkles<\/strong><\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged\/photoaged individuals in a split-face single-blinded study.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+          }
+        },
+        "slide_CPkxQK": {
+          "type": "slide",
+          "settings": {
+            "heading": "Pigmentation and Dark Spots",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/jess_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/jess_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "client": "Jess.",
+            "progress": 91,
+            "progress_text": "<p><strong>improved<\/strong> skin tone and enhanced smoothness after 12 weeks.<\/p>",
+            "text": "",
+            "feedback_title": "In a Clinical Trial...",
+            "feedback_text": "<p><strong>...10 out of 10<\/strong> subjects experienced                                                      <strong>improved skin complexion and collagen density.<\/strong><\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted to assess reduction in sun damage signs following 12 weeks of LED therapy with combined wavelengths of 633 and 830 nm. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.<\/p><p><em>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/em><\/p>"
+          }
+        },
+        "slide_rQUTdk": {
+          "type": "slide",
+          "settings": {
+            "heading": "Acne and Breakouts",
+            "product": "q-rejuvalight-pro-facewear",
+            "product_title": "",
+            "product_url": "",
+            "product_image": "shopify:\/\/shop_images\/skinSlider_mask.webp",
+            "image_before": "shopify:\/\/shop_images\/bj_nardi_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify:\/\/shop_images\/bj_nardi_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+            "client": "BJ Nardi.",
+            "progress": 83,
+            "progress_text": "<p><strong>reduction<\/strong> of acne breakouts after 8 weeks.<\/p>",
+            "text": "",
+            "feedback_title": "In a Clinical Trial...",
+            "feedback_text": "<p><strong>...9 out of 10 <\/strong>subjects said they                                                      saw <strong>a reduction in the skin acne after 2 weeks<\/strong>.<\/p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Improvement ranging up to 83.3% of moderate acne lesion count. A downward shift in the Burton                                                                  grade was seen overall. No adverse effects were reported.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted with male and female subjects with acne grades at baseline ranging from                                                                  Burton grade 1 to 5. Subjects were treated with LED therapy, alternating between the blue (415 nm) and  near-IR (830 nm) heads. No other treatment was allowed. Results were assessed and compared with the baseline values at 1, 4 and 8 weeks post-treatment.<\/p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038\/jid.2009.186. Epub 2009 Jul 9<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_CTdQkN",
+        "slide_CPkxQK",
+        "slide_rQUTdk"
+      ],
+      "settings": {
+        "classname": "skincare_slider bg_gradient_yellow_bt",
+        "heading": "Results backed by science",
+        "title_tag": "h2",
+        "text": ""
+      }
+    },
+    "trusted_simple_43W3MQ": {
+      "type": "trusted-simple",
+      "settings": {
+        "heading": "Trusted by world leading Dermatologists",
+        "text": "<p>What sets us apart is the unwavering trust we've earned from dermatologists on a mission to democratize professional skincare.<\/p><p>We're proud to bridge the gap between professional expertise and accessible skincare, bypassing the industry’s “skin gatekeepers” to give you science-based, clinical-grade skin treatments you can do easily, all by yourself, in the comfort and privacy of your own home.<\/p>",
+        "image": "shopify:\/\/shop_images\/trusted_main.webp",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg",
+        "video_label": "Click To Watch Review",
+        "likes": "4.8K",
+        "views": "192k views"
+      }
+    }
+  },
+  "order": [
+    "banner_xBMFyj",
+    "featuredin_nCkhFi",
+    "two_column_box_3FmXJ3",
+    "two_column_box_3ecWgY",
+    "before_after_slider_gcVxg9",
+    "trusted_simple_43W3MQ"
+  ]
+}

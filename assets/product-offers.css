@@ -1,0 +1,250 @@
+.giveaway_header {
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px
+}
+
+.giveaway_header .giveaway_price .g_p_currency {
+    font-size: 150px;
+    font-family: 'Canela Regular';
+    font-weight: 400;
+    line-height: 130px;
+    letter-spacing: 1.5px;
+}
+
+.giveaway_header .giveaway_price .g_p_price {
+    line-height: 170px;
+    letter-spacing: 2.2px;
+    font-size: 220px;
+    font-weight: 500;
+    font-family: 'Canela Web';
+}
+
+.giveaway_header .giveaway_text {
+    font-size: 95px;
+    line-height: 90px;
+    font-weight: 500;
+    font-family: 'Canela Web';
+    letter-spacing: 1.5px;
+}
+
+.giveaway_header .giveaway_text span {
+    font-size: 100px;
+}
+
+.giveaway_price {
+    display: flex;
+}
+
+.qurify_giveaway .buy_btn {
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 600;
+    max-width: 364px;
+}
+
+
+/* ---------------------- giveaway form start -------------------- */
+.giveaway_form ul li {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    max-width: 449px;
+    list-style-type: none;
+    display: flex;
+}
+
+.giveaway_form ul li p:first-child {
+    padding-right: 15px;
+}
+
+.giveaway_form ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.giveaway_form .grab_yours {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.giveaway_form .textfield .form-check label {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #4E4E4E;
+}
+
+.giveaway_form .textfield .form-check label a {
+    cursor: pointer;
+    color: #4E4E4E;
+    text-decoration: underline;
+}
+
+.giveaway_form .textfield .buy_btn {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    max-width: 263px;
+    margin: 0 auto;
+}
+
+.giveaway_form .textfield {
+    max-width: 423px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.giveaway_form .textfield__label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: block;
+    font-size: 14px;
+    line-height: 15px;
+    color: #4E4E4E;
+    user-select: none;
+    cursor: text;
+    font-weight: 300;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.giveaway_form .textfield__label.textfield__label--required::after {
+    position: relative;
+    top: -3px;
+    left: 1px;
+    display: inline-block;
+    content: "*";
+    color: #d0011b;
+}
+
+.giveaway_form .textfield__input {
+    outline: none;
+    transition: all 0.25s linear;
+    padding: 11px 18px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 30px;
+    border-radius: 30px;
+    border: 1px solid #4E4E4E;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.giveaway_form .textfield__input:focus {
+    border-color: #4E4E4E;
+}
+
+.giveaway_form .textfield__input:disabled {
+    border-color: #e6e6e6;
+    background: #f9fafb;
+}
+
+.giveaway_form .textfield__input::placeholder {
+    color: transparent;
+}
+
+
+.giveaway_form .textfield__input:focus+.textfield__label,
+.giveaway_form .textfield__input:focus-visible+.textfield__label {
+    display: none !important;
+}
+
+
+.textfield__input.error+.textfield__label,
+.giveaway_form .textfield__input.error+.textfield__label--required::after {
+    color: transparent;
+}
+
+/* ---------------------- giveaway form end -------------------- */
+
+
+@media(max-width:1200px) {
+    .giveaway_header .giveaway_price .g_p_currency {
+        font-size: 73px;
+        line-height: 60px;
+        letter-spacing: 0.737px;
+    }
+
+    .giveaway_header .giveaway_price .g_p_price {
+        font-size: 108px;
+        line-height: 80px;
+        letter-spacing: 1.081px;
+    }
+
+    .giveaway_header .giveaway_text {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.5px;
+    }
+
+    .giveaway_header .giveaway_text span {
+        font-size: 45px;
+    }
+
+    .qurify_giveaway .buy_btn {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+    }
+
+    .giveaway_form ul li {
+        max-width: 100%;
+    }
+
+    .giveaway_form ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:767px) {
+    .qurify_giveaway .main_banner .main_b_wrapper {
+        align-items: flex-start;
+    }
+
+    .giveaway_header {
+        margin-top: 40px;
+    }
+
+    .qurify_giveaway .main_banner .main_b_wrapper.bg_gradient_mob {
+        background: transparent;
+    }
+
+    .giveaway_form .textfield .buy_btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .giveaway_form ul li p:first-child {
+        padding-right: 5px;
+    }
+
+    .giveaway_form .grab_yours {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .giveaway_form .textfield__label {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .giveaway_form ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .giveaway_form ul li {
+        max-width: 100%;
+    }
+
+    .giveaway_form .textfield .buy_btn {
+        max-width: 240px;
+    }
+}

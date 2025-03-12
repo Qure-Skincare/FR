@@ -1,0 +1,414 @@
+{%- assign heading_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'heading' -%}
+            {%- assign heading_count = heading_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<!-- -- press slider start -- -->
+<div class="press_bl {{ section.settings.custom_cls }} {% if template.suffix == 'sunil-mi-landing-special2-reorder' %} test-reorder-landing {% endif %}">
+    <div class="container">
+        <div class="row align-items-center">
+            {% if heading_count > 0 %}
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'heading' %}
+                        <div class="col-lg-2">
+                            <div class="p_bl_header">
+                                <p>{{ block.settings.heading }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+                <div class="col-lg-10">
+                    <div class="press_slider press_slider_row2">
+                        <div class="ps_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="ps_wrapper">
+                                        {%- for block in section.blocks offset:1 limit:3 -%}
+                                            {% if block.type == 'image' %}
+                                                <div class="ps_item">
+                                                    <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                                </div>
+                                            {% endif %}
+                                        {%- endfor -%}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ps_wrapper">
+                                        {%- for block in section.blocks offset:4 limit:3 -%}
+                                            {% if block.type == 'image' %}
+                                                <div class="ps_item">
+                                                    <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                                </div>
+                                            {% endif %}
+                                        {%- endfor -%}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            {% else %}
+                {% if section.settings.heading != blank %}
+                    <div class="col-lg-2">
+                        <div class="p_bl_header">
+                            <p>{{ section.settings.heading }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="col-lg-{% if section.settings.heading != blank %}10{% else %}12{% endif %}">
+                    <div class="ps_wrapper">
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'image' %}
+                                <div class="ps_item{% if block.settings.mobile_hide %} d-none d-md-block{% endif %}">
+                                    <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                </div>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- -- press slider end -- -->
+
+{% for block in section.blocks %}
+  {% if block.type == 'science_section_block' %}
+    {% render 'pdm_science_section', data: block.settings %}
+  {% endif %}
+  {% if block.type == 'confidence_slider_block' %}
+    {% render 'pdm_confidence-slider',  data: block.settings %}
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "t:sections.featuredin.name",
+  "class": "section-featured-in",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_cls",
+      "label": "t:common.classname.custom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:common.heading.label",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:common.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "t:common.image.label",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "mobile_hide",
+          "label": "t:common.image.hide.mobile.label",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "science section",
+      "type": "science_section_block",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video_science_section",
+          "label": "video"
+        },
+				{
+					"type": "video",
+					"id": "video_science_section_vertical",
+					"label": "video science section vertical"
+				},
+        {
+          "type": "text",
+          "id": "science_heading",
+          "label": "heading",
+          "default": "Qure’s Micro-Infusion Goes Where Your Skin Cream Can’t…"
+        },
+        {
+          "type": "text",
+          "id": "new_science_heading",
+          "label": "heading",
+          "default": "Qure’s Micro-Infusion goes where your skin cream can’t"
+        },
+        {
+          "type": "text",
+          "id": "science_subheading",
+          "label": "science subheading",
+          "default": "Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients EXACTLY where they’re needed!"
+        },
+        {
+          "type": "header",
+          "content": "Values props",
+          "info": "Add values props images and text"
+        },
+        {
+          "type": "image_picker",
+          "id": "value_prop_img_1",
+          "label": "value image 1"
+        },
+        {
+          "type": "richtext",
+          "id": "value_prop_text_1",
+          "label": "value text 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "value_prop_img_2",
+          "label": "value image 2"
+        },
+        {
+          "type": "richtext",
+          "id": "value_prop_text_2",
+          "label": "value text 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "value_prop_img_3",
+          "label": "value image 3"
+        },
+        {
+          "type": "richtext",
+          "id": "value_prop_text_3",
+          "label": "value text 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "value_prop_img_4",
+          "label": "value image 4"
+        },
+        {
+          "type": "richtext",
+          "id": "value_prop_text_4",
+          "label": "value text 4"
+        },
+        {
+          "type": "text",
+          "id": "new_value_prop_title_1",
+          "label": "new title value text 1"
+        },
+        {
+          "type": "richtext",
+          "id": "new_value_prop_text_1",
+          "label": "new value text 1"
+        },
+        {
+          "type": "text",
+          "id": "new_value_prop_title_2",
+          "label": "new title value text 2"
+        },
+        {
+          "type": "richtext",
+          "id": "new_value_prop_text_2",
+          "label": "new value text 2"
+        },
+        {
+          "type": "text",
+          "id": "new_value_prop_title_3",
+          "label": "new title value text 3"
+        },
+        {
+          "type": "richtext",
+          "id": "new_value_prop_text_3",
+          "label": "new value text 3"
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "ctatext",
+          "default": "Shop Now"
+        },
+        {
+          "type": "text",
+          "id": "cta_link",
+          "label": "cta_link",
+          "default": "productSubscription"
+        }
+      ]
+    },
+    {
+      "name": "Confidence slider",
+      "type": "confidence_slider_block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:common.heading.label",
+          "default": "No hype, just evidence."
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text.label"
+        },
+
+        {
+          "type": "richtext",
+          "id": "text_first-info",
+          "label": "t:common.text.label",
+          "default": "<p>of participants say their fine lines<strong>looked smoother.<\/strong><\/p>"
+        },
+        {
+          "type": "range",
+          "id": "percent_bar_first-info",
+          "min": 0,
+          "max": 100,
+          "default": 70,
+          "step": 1,
+          "label": "t:common.percentage.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_second-info",
+          "label": "t:common.text.label",
+          "default": "<p>noticed <strong>results the next day <\/strong>after the first Micro-Infusion treatment.<\/p>"
+        },
+        {
+          "type": "range",
+          "id": "percent_bar_second-info",
+          "min": 0,
+          "max": 100,
+          "default": 93,
+          "step": 1,
+          "label": "t:common.percentage.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_third-info",
+          "label": "t:common.text.label",
+          "default": "<p>of participants say their skin looked <strong>brighter and more even toned.<\/strong><\/p>"
+        },
+        {
+          "type": "range",
+          "id": "percent_bar_third-info",
+          "min": 0,
+          "max": 100,
+          "default": 70,
+          "step": 1,
+          "label": "t:common.percentage.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_slide_first",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_slide_first",
+          "label": "t:common.text.label",
+          "default":"<p>Proven to visually improve <strong>Fine Lines & Wrinkles<\/strong><\/p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_slide_second",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_slide_second",
+          "label": "t:common.text.label",
+          "default":"<p>Proven to visually improve <strong>Large Pores & Skin Texture<\/strong><\/p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_slide_third",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_slide_third",
+          "label": "t:common.text.label",
+          "default":"<p>Proven to visually improve <strong>Dark Spots & Texture<\/strong><\/p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_slide_fourth",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_slide_fourth",
+          "label": "t:common.text.label",
+          "default":"<p>Proven to visually improve <strong>Uneven Skin Tone<\/strong><\/p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.featuredin.name",
+      "blocks": [
+        {
+          "type": "heading",
+          "settings": {
+            "heading": "FEATURED IN"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.svg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle.svg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glamour.svg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia.svg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

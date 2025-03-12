@@ -1,0 +1,341 @@
+.why_qurify .truth_tap .progress_grid .progressInfo {
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
+    border: none;
+}
+
+/* === lurking water start === */
+.lurking_water.section {
+    background: rgba(217, 217, 217, 0.10);
+}
+
+.lurking_water .lurking_water_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lurking_water .lurking_water_item {
+    border-radius: 8.678px;
+    border: 2.169px solid var(--C6E4DC, #C6E4DC);
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 5.423px 16.27px 0px rgba(0, 135, 99, 0.10);
+    padding: 20px;
+    text-align: left;
+    display: grid;
+    gap: 20px;
+}
+
+.lurking_water .lw_top_info {
+    align-items: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.lurking_water .ingredients_item {
+    text-align: left;
+    max-width: 100%;
+    margin: 0;
+}
+
+.lurking_water_item .lw_top_info .lw_info .lw_info_tag {
+    border-radius: 20px;
+    color: #fff;
+    padding: 0 10px;
+    margin-bottom: 6px;
+    max-width: fit-content;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.lurking_water_grid .lurking_water_item .lw_top_info .lw_info .lw_info_tag.bg_red {
+    background: #C92127;
+}
+
+.lurking_water_grid .lurking_water_item .lw_top_info .lw_info .lw_info_tag.bg_orange {
+    background: #FA6F0B;
+}
+
+.lurking_water_grid .lurking_water_item .lw_top_info .lw_info .lw_info_tag.bg_yellow {
+    background: #F9C91D;
+}
+
+.lw_info_name {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: 'Canela Light';
+    opacity: 0.8;
+}
+
+.lw_content p {
+    opacity: 0.8;
+}
+
+.lurking_water_item.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin-top: 30px;
+}
+
+.lurking_water_item.grid_3 .lw_top_info {
+    align-items: start;
+}
+
+.lurking_water_item.grid_3 .lw_content {
+    max-width: 245px;
+}
+
+/* === lurking water end === */
+
+/* -- why should qurify your water start --  */
+.q_water_card {
+    padding: 24px;
+    border-radius: 8px;
+    background: #F5F5F5;
+}
+
+.q_water_card p {
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.imageText.best_skin .it_info {
+    max-width: 463px;
+}
+
+.best_skin .it_img img {
+    border-radius: 20px;
+}
+
+.imageText.best_skin .progessInfo {
+    font-size: 33px;
+    line-height: 40px;
+}
+
+.imageText.best_skin .it_info p {
+    opacity: 0.8;
+}
+
+@media(min-width:767px) {
+    .q_water_card {
+        min-height: 202px;
+    }
+    .q_water_card img {
+        min-height: 60px;
+        object-fit: none;
+    }
+}
+
+/* -- why should qurify your water end --  */
+
+/* -- new side of skincare start --  */
+.nss_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nss_item {
+    border-radius: 8.831px;
+    background: #F5F5F5;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 110px 1fr;
+    padding: 15px;
+    gap: 15px;
+    max-width: 364px;
+}
+
+.nss_wrap:last-child {
+    margin-top: 20px;
+}
+
+.nss_item p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.affect_skin .affect_item h6 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    margin: 20px 0 12px;
+}
+
+
+
+.why_qurify .giveaway_form .textfield p {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.why_qurify .clinically_proven {
+    background: rgba(217, 217, 217, 0.10);
+}
+
+.best_skin .OKwUu {
+    stroke-width: 3px !important;
+}
+
+@media(min-width:1199px) {
+    .header-new .menu li {
+        padding-right: 28px !important;
+    }
+
+}
+
+/* -- new side of skincare end --  */
+@media(max-width:767px) {
+    .wq_main_banner .it_img {
+        position: relative;
+    }
+
+    .wq_main_banner .it_img .header {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 274px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+    }
+
+    .wq_main_banner .it_img .header p {
+        color: #fff;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    .why_qurify .truth_tap .progress_grid .progressInfo {
+        background: none;
+        box-shadow: none;
+        gap: 20px;
+    }
+
+    .why_qurify .truth_tap .progress_grid .progressInfo .tt_item_header {
+        margin-bottom: 5px;
+    }
+
+    .best_skin .progressWrapper svg {
+        height: auto;
+        width: auto;
+    }
+
+    .best_skin .progress_box {
+        max-width: 208px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .progress_box p {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        font-style: normal;
+    }
+
+    .lurking_water .lurking_water_grid,
+    .lurking_water_item.grid_3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .nss_wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .nss_wrap:last-child {
+        margin-top: 30px;
+    }
+
+    .nss_item p {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .affect_skin .affect_item h6 {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        margin: 17px 0 8px;
+    }
+
+    .q_w_slidermob {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .qwCard_expandable a.qwCard__accordion {
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 600;
+        text-decoration: underline;
+        text-align: center;
+        color: #000;
+    }
+
+    .q_water_card {
+        display: grid;
+        grid-template-columns: 33px 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .q_water_card p {
+        margin-top: 0px;
+    }
+
+    .why_qurify .clinically_proven_wrap .clinicallyProven_item {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .why_qurify .clinically_proven_wrap {
+        border: 2px solid var(--C6E4DC, #C6E4DC);
+        background: #fff;
+        box-shadow: 0px 5px 15px 0px rgba(0, 135, 99, 0.10);
+        border-radius: 8px;
+        gap: 0;
+    }
+
+    .why_qurify .clinically_proven_wrap .clinicallyProven_header {
+        display: none;
+    }
+
+    .OKwUu {
+        stroke-width: 5px !important;
+    }
+
+    .lurking_water_item .lw_top_info .lw_info .lw_info_tag {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .why_qurify .giveaway_form .textfield p {
+        font-size: 10px;
+    }
+
+    .best_skin .it_img img {
+        border-radius: 6px;
+    }
+}

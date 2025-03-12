@@ -1,0 +1,86 @@
+<div class="lifestyle-tips">
+  <div class="section-header">  
+    <h2>{{ section.settings.section_title }}</h2>
+    <p>{{ section.settings.section_description }}</p>
+  </div>
+  <div class="container-lp">
+    <cards-tips class="cards-tips" active-card="1">
+    {% for block in section.blocks %}
+      {% render 'pdm_card-tip' 
+        class: "test",
+        index: forloop.index,
+        length: forloop.length,
+        active-card:1,
+        image: block.settings.image_card,
+        title: block.settings.title,
+        description: block.settings.description 
+        sources: block.settings.sources %}
+    {% endfor %}
+    </cards-tips>
+  </div>
+</div>
+
+{{ 'pwd.theme-styles.css' | asset_url | stylesheet_tag }}
+{% schema %}
+{
+  "name": "Lyfestyle Tips (PDM)",
+  "tag": "section",
+  "class": "section-lifestyle-tips",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Skincare is a Lifestyle"
+    },
+    {
+      "type": "text",
+      "id": "section_description",
+      "label": "Description",
+      "default": "Caring for your skin goes beyond the products you use. It’s about adopting habits that support your skin’s health every day. Our dermatologists recommend these expert tips to help you reach your skin goals even faster."
+    }
+  ],
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "tip",
+      "name": "Tip",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Exfoliate 1-2 times per week"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>With an at-home peel that contains Alpha-Hydroxy Acids (AHAs) like glycolic and lactic acids. This will help remove dead skin that has settled into fine lines, making them less visible.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_card",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "sources",
+          "label": "Sources"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lyfestyle Tips (PDM)",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "tip"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

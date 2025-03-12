@@ -1,0 +1,136 @@
+{% assign icon_check =  section.settings.icon_img | image_url: width: 16, crop: 'center' %}
+<style>
+#shopify-section-{{ section.id }}{
+  margin-top:-{{ section.settings.margin_top }}px;
+}
+</style>
+<div class="dual-transformation container">
+    <div class="container-image">
+      {% render 'pdm_image-tranformation', 
+        wrapper-class: 'cont-img'
+        image: section.settings.dual_img,
+        before-text: section.settings.before_text,
+        after-text: section.settings.after_text,
+        user-name: section.settings.user_name,
+        icon: icon_check,
+        link: section.settings.footer_link,
+        verified-text: section.settings.validation_text,
+        footer-text: section.settings.footer_text
+      %}
+    </div>
+    <div class="container-text">
+        <div class="text">
+          <h2 class="section-title"><span class="user-name hidden"><span class="name"></span>, </span>{{ section.settings.section_title }}</h2>
+          <p class="section-text">{{ section.settings.section_text }}</p>
+        </div>
+        <div class="botton"> 
+          <a class="section-botton" 
+             href="{{ section.settings.button_link}}">
+            {{ section.settings.button_text}}
+          </a>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Dual Transformation (PDM)",
+  "tag": "section",
+  "class": "section-dual-transformation",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Text"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Heading",
+      "default": "[Username], your results are in.  Let’s transform your signs of aging!"
+    },
+    {
+      "type": "text",
+      "id": "section_text",
+      "label": "Text",
+      "default": "We put together a straightforward, no-nonsense program just for you and your skin. It’s aimed to help you reduce the signs of aging, fine lines and wrinkles, keep your skin smooth, and your confidence high."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Discover Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Url"
+    },
+    {
+      "type": "header",
+      "content": "Section Image"
+    },
+    {
+      "type": "text",
+      "id": "before_text",
+      "label": "Before Text",
+      "default": "before"
+    },
+    {
+      "type": "text",
+      "id": "after_text",
+      "label": "After Text",
+      "default": "After"
+    },
+    {
+      "type": "image_picker",
+      "id": "dual_img",
+      "label": "Image transformation"
+    },
+    {
+      "type": "text",
+      "id": "user_name",
+      "label": "User Name",
+      "default": "Ellie V."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_img",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "validation_text",
+      "label": "Validation caption",
+      "default": "verified customer"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer text",
+      "default": "See more transformation"
+    },
+    {
+      "type": "url",
+      "id": "footer_link",
+      "label": "Button Url"
+    },   
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Megative Margin top",
+      "default": 0
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Dual Transformation (PDM)",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

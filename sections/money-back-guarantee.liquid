@@ -1,0 +1,86 @@
+<!-- -- zero risk start -- -->
+<div class="risk">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="risk-detail">
+                    {% if section.settings.logo_img != blank %}
+                    <div class="risk-img">
+                        {{ section.settings.logo_img | img_url: '200x' | img_tag }}
+                    </div>
+                    {% endif %}
+                    <div class="risk-content">
+                        {% if section.settings.heading != blank %}
+                        <h2 class="title-lg text-start text-md-center">{{ section.settings.heading }}</h2>
+                        {% endif %}
+                        <div class="risk_expandable text-start text-md-center">
+                            <div class="risk__wrapper">
+                                {% if section.settings.text != blank %}
+                                <p class="risk__text">{{ section.settings.text }}</p>
+                                {% endif %}
+                                {% if section.settings.read_txt != blank %}
+                                <div class="risk__hidden-div hidden">
+                                    {{ section.settings.read_txt }}
+                                </div>
+                                {% endif %}
+                                {% if section.settings.read_btn != blank %}
+                                <a class="risk__accordion">{{ section.settings.read_btn }}</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- zero risk end -- -->
+
+{% schema %}
+{
+    "name": "t:sections.money-back.label",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "textarea",
+            "id": "text",
+            "label": "t:common.text.content"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_img",
+            "label": "t:common.image.label"
+        },
+        {
+            "type": "header",
+            "content": "t:common.read_more"
+        },
+        {
+            "type": "text",
+            "id": "read_btn",
+            "label": "t:common.button.label"
+        },
+        {
+            "type": "richtext",
+            "id": "read_txt",
+            "label": "t:common.text.content"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.money-back.label",
+            "settings": {
+            "heading": "Try it now with zero risk.\n<br>\nOur 90-day money-back guarantee",
+            "text": "You have 90 days to try Qure’s Micro-Infusion System with our 3 month supply to see and feel the skin-changing effects of 6 treatments!",
+            "logo_img": "shopify:\/\/shop_images\/money-back-icon-02_1.png",
+            "read_btn": "Read More..",
+            "read_txt": "<p>If you do not experience any changes in your skin, of <strong>firmer, brighter, smoother skin,<\/strong> if you do not save hours of your time and hundreds of dollars by enjoying your facial treatments in the comfort of your home instead of waiting in line at the beauty clinic – simply contact us, send via email all your before and after photos and we will make it right.<\/p><p>For more information on our money back offer please don’t hesitate to reach out to is.<\/p>"
+            }
+        }
+    ]
+}
+{% endschema %}

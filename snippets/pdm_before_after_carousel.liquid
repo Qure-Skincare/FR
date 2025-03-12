@@ -1,0 +1,15 @@
+{% comment %}
+  This snippet invoke the snippet to render the slider
+  Usage:
+  {% render 'pdm_before_after_carousel', settings: section.settings%}
+{% endcomment %}
+<div class="before-after-carousel-container {% if product.handle != "all-in-one-face-serum-3-month-bundle" and product.handle != "all-in-one-face-serum-6-month-bundle" %}show{% endif %}">
+  {% if template.name == 'product' %}
+    {% assign product_metaobject = product.metafields.custom.carousel_media.value %}
+    {% render 'pdm_product_carousel_unified_images', metaobject: product_metaobject %}
+  {% elsif template.name == 'page' %}
+    {% assign page_metaobject = page.metafields.custom.carousel_media.value %}
+    {% render 'pdm_product_carousel_unified_images', metaobject: page_metaobject %}
+  {% endif %}
+</div> 
+

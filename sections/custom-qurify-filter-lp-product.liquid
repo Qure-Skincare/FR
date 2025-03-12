@@ -1,0 +1,432 @@
+{%- assign rating_count = 0 -%}
+{%- assign button_count = 0 -%}
+{%- assign list_count = 0 -%}
+
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'rating' -%}
+            {%- assign rating_count = rating_count | plus: 1 -%}    
+        {%- when 'button' -%}
+            {%- assign button_count = button_count | plus: 1 -%}    
+        {%- when 'list' -%}
+            {%- assign list_count = list_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+
+{% if section.settings.product != blank %}
+    {% assign product = section.settings.product %}
+{% endif %}
+
+<!-- -- main banner start -- -->
+<div class="refill_bl py-3 py-md-4 tabSlider" id="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="refill_info pt-0 pt-md-3">
+                    {% if rating_count %}
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'rating' %}
+                                <div class="refill_review">
+                                    <div class="star_gp">
+                                        {% if block.settings.image != blank %}
+                                            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                        {% endif %}
+                                    </div>
+                                    <p class="text-sm fw-normal" style="text-decoration: none;">{{ block.settings.text }}</p>
+                                </div>
+                            {% endif %}
+                        {%- endfor -%}
+                    {% endif %}
+
+                    <div class="section_header">
+                        {% if section.settings.top_heading != blank %}
+                            {{ section.settings.top_heading |  replace: '<h5>', '<h5 class="subheading">'  }}
+                        {% endif %}
+
+                        {% if section.settings.heading != blank %}
+                            <h2 class="title-lg d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h2> 
+                        {% endif %}
+                        {% if section.settings.heading_mobile != blank %}
+                            <h2 class="title-lg d-md-none">{{ section.settings.heading_mobile | replace: '\n', '<br />' }}</h2>
+                        {% elsif section.settings.heading != blank %}
+                            <h2 class="title-lg d-md-none">{{ section.settings.heading | replace: '\n', '<br />' }}</h2>
+                        {% endif %}
+
+                    </div>
+
+                    {% if list_count > 0 %}
+                        <div class="ss_list mw-452 pt-2 pb-4 d-none d-md-block">
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'list' %}
+                                    {% if block.settings.text %}
+                                        {{ block.settings.text }}
+                                    {% endif %}
+                                {% endif %}
+                            {%- endfor -%}
+                        </div>
+                    {% endif %}
+
+                    {% if button_count %}
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'button' %}
+                                {% if block.settings.button_label != blank %}
+                                    <div class="get_clearer_wrapper ms-0 text-center">
+                                        {%- if block.settings.text_first != blank -%}
+                                        <p><span>{%- if block.settings.icon != blank -%}<img src="{{ block.settings.icon | img_url: '16px' }}" alt="">{%- endif -%}</span>{{ block.settings.text_first }}</p>
+                                       {%- endif -%}
+                                        <a class="btn btn-lg btn-primary btn_green" href="{{ block.settings.button_url }}" aria-label="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</span></a>
+                                        <p><span>{%- if block.settings.icon2 != blank -%}<img src="{{ block.settings.icon2 | img_url: '16px' }}" alt="">{%- endif -%}</span>{{ block.settings.text_second }}</p>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {%- endfor -%}
+                    {% endif %}
+
+                </div>
+            </div>
+            {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "mobile" %}
+            <div class="col-md-6  order-1 order-md-2">
+                {% render 'pdm_before_after', data: section.blocks, dataSection: section.settings %}
+                {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "desktop" %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- main banner end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.product-landing.name",
+        "class": "section-product-landing",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "top_heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading_mobile",
+                "label": "t:common.heading.mobile.label"
+            },
+            {
+                "type": "header",
+                "content": "New design buttons",
+                "info": "Change the text of the buttons for the new design"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_1",
+                "label": "label text real result button 1",
+                "default": "Product"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_2",
+                "label": "label text real result button 2",
+                "default": "Real Results"
+            },
+            {
+                "type": "text",
+                "id": "text_label_real_result_3",
+                "label": "label text real result button 3",
+                "default": "Dermatologist"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rating",
+                "name": "t:common.rating.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "name": "t:common.list.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_first",
+                        "label": "t:common.text.label",
+                        "default": "Dermatologist-Reviewed"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "icon",
+                        "label": "t:common.icon.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label",
+                        "default": "30-Day Money-Back Guarantee"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "icon2",
+                        "label": "t:common.icon.label"
+                    }
+                ]
+		    },
+            {
+              "type": "product_in_page",
+              "name": "Product in page test",
+              "limit": 1,
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image_product_1",
+                  "label": "image product 1"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_1",
+                  "label": "image product text 1"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_1",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_2",
+                  "label": "image product 2"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_2",
+                  "label": "image product text 2"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_2",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_3",
+                  "label": "image product 3"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_3",
+                  "label": "image product text 3"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_3",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_4",
+                  "label": "image product 4"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_4",
+                  "label": "image product text 4"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_4",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_5",
+                  "label": "image product 5"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_5",
+                  "label": "image product text 5"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_5",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_6",
+                  "label": "image product 6"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_6",
+                  "label": "image product text 6"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_6",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_7",
+                  "label": "image product 7"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_7",
+                  "label": "image product text 7"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_7",
+                  "label": "id video wistia"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "image_product_8",
+                  "label": "image product 8"
+                },
+                {
+                  "type": "text",
+                  "id": "image_product_text_8",
+                  "label": "image product text 8"
+                },
+                {
+                  "type": "text",
+                  "id": "video_wistia_id_8",
+                  "label": "id video wistia"
+                }
+              ]
+            },
+            {
+                "type": "before_and_after",
+                "name": "before and after test",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_1",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_1",
+                        "label": "Alt text Imagen 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_2",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_2",
+                        "label": "Alt text Imagen 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_3",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_3",
+                        "label": "Alt text Imagen 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_4",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_4",
+                        "label": "Alt text Imagen 4"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_5",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_5",
+                        "label": "Alt text Imagen 5"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_new_section_6",
+                        "label": "image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image_new_section_text_6",
+                        "label": "Alt text Imagen 6"
+                    }
+                ]                  
+            },
+            {
+                "type": "video_before_and_after",
+                "name": "video derm test",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "video",
+                        "id": "video_new_section",
+                        "label": "video"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_wistia_id",
+                        "label": "Wistia Video ID"
+                      }
+                ]
+            }          
+        ],
+        "presets": [
+          {
+            "name": "t:sections.product-landing.name"
+          }
+        ]
+    }
+{% endschema %}

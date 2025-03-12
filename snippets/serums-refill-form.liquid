@@ -1,0 +1,262 @@
+<link rel="stylesheet" href="{{ 'product_microinfusion-refill.css' | asset_url }}">
+
+<style>
+.subscribe_save_wrapper .subscribe_save_bx {
+    grid-template-columns: 67% 33%;
+}
+</style>
+
+{% if section_id == blank %}
+    <p>Please provide section_id property to use this snippet</p>
+{% else %}
+
+    {% assign section_id = section.id %}
+
+    {%- assign supply_for_refill = 0 -%}
+
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'supply_for_refill' -%}
+                {%- assign supply_for_refill = block -%}
+        {%- endcase -%}
+    {%- endfor -%}
+
+    {% assign product = all_products['micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum'] %}
+
+    {% case product.handle %}
+        {% when 'micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum' %}
+            {% assign product_index = 1 %}
+            {% assign selling_plan = 5012914415 %}
+        {% when 'micro-infusion-3-month-refill-6x-rejuvenating-serum' %}
+            {% assign product_index = 2 %}
+            {% assign selling_plan = 5012914415 %}
+        {% when 'micro-infusion-3-month-refill-6x-hydra-soothing-serum' %}
+            {% assign product_index = 3 %}
+            {% assign selling_plan = 5012914415 %}
+    {% endcase %}
+
+    {% assign product_price = product.price %}
+    {% assign product_price_discount = product.price | times: 0.70 %}
+    {% assign product_price_divided = product.price | divided_by: 4 %}
+    {% assign product_variant_id = product.variants.first.id %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            selectProductRefill('{{ section_id }}', {{ product_variant_id }});
+        });
+    </script>
+
+    <div class="serum_bl pt-0">
+        <p>Choose your serums:</p>
+        <div class="supply-detail supply-detail-2">
+            <div class="supply_steps">
+                <div class="step_block">
+                    <div class="step_content step_serum">
+                        <div class="serumBlock">
+                            <input type="radio" name="serum-{{ section_id }}" id="option_for_darkspots" value="43821069435119" data-product-id="8015049621743" data-selling-plan="5012914415"{%- if product_index == 2 -%} checked{%- endif -%}>
+                            <label class="serum_prd" for="option_for_darkspots">
+                                <div class="serum_img">
+                                    <img src="{{ 'dark_spots.webp' | asset_url }}" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="serum_ttl flex-row gap-1"><span>For</span>
+                                Dark Spots</h4>
+                            </label>
+                        </div>
+                        <div class="serumBlock">
+                        <input type="radio" name="serum-{{ section_id }}" id="option_for_wrinkles" value="43821035290863" data-product-id="8015039496431" data-selling-plan="5012914415"{%- if product_index == 3 -%} checked{%- endif -%}>
+                            <label class="serum_prd" for="option_for_wrinkles">
+                                <div class="serum_img">
+                                    <img src="{{ 'hydra_blue.webp' | asset_url }}" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="serum_ttl flex-row gap-1"><span>For</span>
+                                Wrinkles</h4>
+                            </label>
+                        </div>
+                        <div class="serumBlock">
+                        <input type="radio" name="serum-{{ section_id }}" id="option_for_wrinkles_darkspots" value="43821031031023" data-product-id="8015038873839" data-selling-plan="5012914415"{%- if product_index == 1 -%} checked{%- endif -%}>
+                            <label class="serum_prd" for="option_for_wrinkles_darkspots">
+                                <div class="serum_img">
+                                    <img src="{{ 'reju_hydra_blue.webp' | asset_url }}" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="serum_ttl d-block pt-md-2 pt-2"><span>For</span>
+                                    Wrinkles <br>+ Dark Spots
+                                </h4>
+                            </label>
+                        </div>
+                    </div>
+                    <p>Choose your purchase option:</p>
+                    <div class="subscribe_save_wrapper with_subscription mt-2">
+                        <div class="subscribeTopInfo">
+                            <p>Over 5,000 people chose subscription</p>
+                        </div>
+                        <div class="subscriptionType active" data-subscription="subscription">
+                            <div class="subscribe_save_bx">
+                                <div class="subscribeInfo">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <h6>Subscribe & save 30% </h6>
+                                        <p>Get a Micro-Infusion 6 treatment refill delivered
+                                            every 90 days for just {{ product_price_discount | money_without_trailing_zeros }}. Skip or cancel at any
+                                            time. <a
+                                                href="https://www.qureskincare.com/pages/subscriptions"
+                                                target="_blank">See details</a></p>
+                                    </label>
+                                </div>
+                                <div class="subscribePrice">
+                                    <p><span>{{ product_price | money_without_trailing_zeros }}</span>{{ product_price_discount | money_without_trailing_zeros }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subscriptionType" data-subscription="no-subscription">
+                            <div class="noSubscription">
+                                <div class="noSubscriptionText">
+                                    One time purchase
+                                </div>
+                                <div class="noSubscriptionPrice">
+                                    {{ product_price | money_without_trailing_zeros }}
+                                </div>
+                            </div>
+                            {% render 'pdm_orderby' %}
+
+                            {% if supply_for_refill != blank %}
+                                <div class="next_batch_bl next_batch_highlight mt-4">
+                                    {% if supply_for_refill.settings.heading != blank %}
+                                        <h6 class="d-none d-md-block">{{ supply_for_refill.settings.heading }}</h6>
+                                    {% endif %}
+            
+                                    {% if supply_for_refill.settings.heading_mobile != blank %}
+                                        <h6 class="d-md-none">{{ supply_for_refill.settings.heading_mobile }}</h6>
+                                    {% endif %}
+                                    
+                                    {% if supply_for_refill.settings.text != blank %}
+                                        {{ supply_for_refill.settings.text }}
+                                    {% endif %}
+            
+                                    <div class="batch_h batch_h_fade mt-3 mt-md-4">
+                                        <div class="batch_h_month">{{ supply_for_refill.settings.first_option_date }}</div>
+                                        <div class="batch_h_info sold_out_h" style="--bgPercent:{{ supply_for_refill.settings.first_option_percent }}%;">
+                                            <span>{{ supply_for_refill.settings.first_option_text }}</span></div>
+                                    </div>
+                                    <div class="batch_h my-2">
+                                        <div class="batch_h_month">{{ supply_for_refill.settings.second_option_date }}</div>
+                                        <div class="batch_h_info" style="--bgPercent:{{ supply_for_refill.settings.second_option_percent }}%;">{{ supply_for_refill.settings.second_option_text }}</div>
+                                    </div>
+                                    <div class="batch_h batch_h_fade">
+                                        <div class="batch_h_month">{{ supply_for_refill.settings.third_option_date }}</div>
+                                        <div class="batch_h_info" style="--bgPercent:{{ supply_for_refill.settings.third_option_percent }}%;"><span>{{ supply_for_refill.settings.third_option_text }}</span></div>
+                                    </div>
+                                </div>
+            
+                                <script>
+                                    document.addEventListener("DOMContentLoaded", () => {
+                                        const serumOptions = document.querySelectorAll('input[name="serum-{{ section_id }}"]');
+                                        const nextBatchBl = document.querySelector(".next_batch_bl");
+                                        const buyButton = document.querySelector(".buy_btn");
+                                        const buyButtonSubscription = document.querySelector(".buy_btn_subscription");
+                                        let isOptionForWrinklesDarkSpots = false;
+                                        let isOptionForWrinkles = false;
+                                        let isOptionForDarkSpots = false;
+                            
+                                        const handleSerumChange = () => {
+                                            let selectedSerum = document.querySelector('input[name="serum-{{ section_id }}"]:checked');
+            
+                                            if(selectedSerum)
+                                            {
+                                                {% if supply_for_refill.settings.option_wrinkles_darkspots %}
+                                                    let isOptionForWrinklesDarkSpots = selectedSerum.id === "option_for_wrinkles_darkspots";
+                                                {% endif %}
+            
+                                                {% if supply_for_refill.settings.option_wrinkles %}
+                                                    let isOptionForWrinkles = selectedSerum.id === "option_for_wrinkles";
+                                                {% endif %}
+            
+                                                {% if supply_for_refill.settings.option_darkspots %}
+                                                    let isOptionForDarkSpots = selectedSerum.id === "option_for_darkspots";
+                                                {% endif %}
+            
+                                                toogleBuySection(isOptionForWrinklesDarkSpots || isOptionForWrinkles || isOptionForDarkSpots);
+                                            }
+                                        };
+            
+                                        const toogleBuySection = (is_target) => {
+                                            if (is_target === true) {
+                                                nextBatchBl.style.display = "block";
+                                                buyButton.textContent = 'Reserve';
+                                                buyButtonSubscription.textContent = 'Reserve';
+                                            } else {
+                                                nextBatchBl.style.display = "none";
+                                                buyButton.textContent = 'Buy Now';
+                                                buyButtonSubscription.textContent = 'Subscribe Now';
+                                            }
+                                        }
+                            
+                                        serumOptions.forEach((option) => {
+                                            option.addEventListener("change", handleSerumChange);
+                                        });
+                            
+                                        handleSerumChange();
+                                    });
+                                </script>
+                            {% endif %}
+
+                            <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }}" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now</a>
+
+                            {% capture sticky-button-classname %}buy-button-{{ section_id }} without_subscription{% endcapture %}
+
+                            {% render 'product-sticky-button' with 
+                                variant_id: product.variants.first.id, 
+                                current_price: product_price, 
+                                original_price: product_price, 
+                                classname: sticky-button-classname
+                            %}
+
+                            <div class="payment_method without_subscription">
+                                <p>OR pay 4 monthly payments of {{ product_price_divided | money_without_trailing_zeros }} with</p>
+                                <div class="pmt_img ps-2">
+                                    <img src="{{ 'klarna.svg' | asset_url }}" alt="">
+                                    <img src="{{ 'sezzle.svg' | asset_url }}" alt=""><img
+                                        src="{{ 'afterpay.svg' | asset_url }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        {% render 'pdm_orderby' %}
+                        <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }} form-test-id" enctype="multipart/form-data" data-form-id="{{ product.id }}">
+                            <input type="hidden" name="form_type" value="product">
+                            <input type="hidden" name="utf8" value="✓">
+                            <input type="hidden" name="selling_plan" value="{{ selling_plan }}">
+                            <input type="hidden" name="id" value="{{ product_variant_id }}">
+                                
+                            <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn buy_btn_subscription" name="Submit" value="Submit">
+                                Subscribe Now
+                            </button>
+
+                            {% capture sticky-button-form-classname %}buy-form-{{ section_id }}{% endcapture %}
+                            {% capture sticky-button-classname %}buy-button-{{ section_id }} with_subscription{% endcapture %}
+
+                            {% render 'product-sticky-button-form' with 
+                                current_price: product_price_discount, 
+                                original_price: product_price, 
+                                form_classname: sticky-button-form-classname
+                                button_classname: sticky-button-classname
+                            %}
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% render 'pdm_pdp-frontrow-health' %}
+
+    <div class="shipping shipping_bg bg-transparent">
+        <div class="s_bx">
+            <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
+            <p>Dermatologist Reviewed</p>
+        </div>
+        <div class="s_bx">
+            <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+            <p class="d-none d-md-block">Free Shipping Over $100</p>
+            <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+        </div>
+    </div>
+{% endif %}

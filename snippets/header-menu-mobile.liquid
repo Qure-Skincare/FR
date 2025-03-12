@@ -1,0 +1,253 @@
+{% comment %}
+  Renders a standard mobile style menu for the header.
+
+  Usage:
+  {% render 'header-menu-mobile' %}
+{% endcomment %}
+
+{% assign menu = linklists['main-menu'] %}
+
+{% comment %} sliders {% endcomment %}
+
+{% capture first_slider %}
+    {% assign num = 0 %}
+    {%- for block in section.blocks -%}
+        {% if block.type == 'banner' %}
+            {% if num == 0 %}
+                <div class="menuSlider">
+                    <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                        <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                        <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>'  }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                    </a>
+                </div>
+            {% endif %}
+            {%- assign num = num | plus: 1 -%}
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% capture second_slider %}
+    {% if section.blocks.size > 0 %}
+        <div class="swiper twa__swiper menuSlider dot_pagination"
+            id="twa__swiper-menuSlider" data-section-id="menuSlider"
+            data-autoplay="false" data-loop="false" data-centerslide="false"
+            data-mobile="1.1" data-tablet="2" data-desktop="3" data-spacing="30"
+            data-arrowleft="menuSlider-swiper-prev"
+            data-arrowright="menuSlider-swiper-next">
+            <div class="swiper-wrapper">
+                {% assign num = 0 %}
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'banner' %}
+                        {% if num > 0 and num < 3 %}
+                            <div class="swiper-slide">
+                                <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                                    <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                                    <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {%- assign num = num | plus: 1 -%}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{% endcapture %}
+
+{% capture third_slider %}
+    {% if section.blocks.size > 0 %}
+        <div class="swiper twa__swiper menuSlider dot_pagination"
+            id="twa__swiper-menuSliderAccordion"
+            data-section-id="menuSliderAccordion" data-autoplay="false"
+            data-loop="false" data-centerslide="false" data-mobile="1.1"
+            data-tablet="2" data-desktop="3" data-spacing="30"
+            data-arrowleft="menuSliderAccordion-swiper-prev"
+            data-arrowright="menuSliderAccordion-swiper-next">
+            <div class="swiper-wrapper">
+                {% assign num = 0 %}
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'banner' %}
+                        {% if num > 2 and num < 5 %}
+                            <div class="swiper-slide">
+                                <a class="dm_imgItem" href="{{ block.settings.button_url }}">
+                                    <img src="{{ block.settings.image | img_url: '400x' }}" alt="" class="img-fluid">
+                                    <h6>{{ block.settings.button_label |  replace: '[', '<span>' |  replace: ']', '</span>' }} <img src="{{ 'header_drop_right.svg' | asset_url }}" alt="" class="ms-1"></h6>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {%- assign num = num | plus: 1 -%}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{% endcapture %}
+
+
+{% comment %} menus {% endcomment %}
+
+{% capture top_menu %}
+    <ul class="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
+    {% for link in menu.links limit:3 %}
+        {% capture target %}mobile-section-{{ forloop.index }}{% endcapture %}
+        <li class="nav-item" role="presentation">
+            <button class="nav-link {% if forloop.index == 2 %}active{% endif %}" id="{{ target }}-tab" data-bs-toggle="pill" data-bs-target="#{{ target }}" type="button" role="tab" aria-controls="{{ target }}" aria-selected="true">
+            {% if link.links.size > 0 %}
+                <a href="#" aria-label="{{ link.title | escape }}">{{ link.title | escape }}</a></button>
+            {% else %}
+                <a href="{{ link.url }}" aria-label="{{ link.title | escape }}">{{ link.title | escape }}</a></button>
+            {% endif %}
+        </li>
+    {%- endfor -%}
+    </ul>
+{% endcapture %}
+
+{% capture center_menu %}
+    {{ first_slider }}
+    {% for link in menu.links limit:2 %}
+        {% if link.links.size > 0 %}
+            <div class="dropdown_menu_links d-block">
+                {%- for childlink in link.links -%}
+                    <div class="dm_list {% if childlink.title == 'Shop' %}menu_product{% endif %}">
+                        <div class="dm_list_heading">{{ childlink.title | escape }}</div>
+                        {% if childlink.links.size > 0 %}
+                            <ul>
+                                {% for childChildlink in childlink.links %}
+                                    <li>
+                                        <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                            <span>{{ childChildlink.title | escape }}</span>
+                                        </a>
+                                    </li>
+                                {%- endfor -%}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {%- endfor -%}
+            </div>
+        {% endif %}
+    {%- endfor -%}
+{% endcapture %}
+
+{% capture right_menu %}
+    {% for link in menu.links offset:2 limit:1 %}
+        {% if link.links.size > 0 %}
+            <div class="dropdown_menu_links d-block">
+                {%- for childlink in link.links -%}
+                    <div class="dm_list">
+                        <div class="dm_list_heading" {% if childlink.title == 'FOLDER' %}style="display:none;"{% endif %}>{{ childlink.title | escape }}</div>
+                        {% if childlink.links.size > 0 %}
+                        <ul>
+                            {% for childChildlink in childlink.links %}
+                                <li>
+                                    <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}" {% if childChildlink.title == 'Help center' %} target="_blank"{% endif %}>
+                                        <span>{{ childChildlink.title | escape }}</span>
+                                    </a>
+                                </li>
+                            {%- endfor -%}
+                        </ul>
+                        {% endif %}
+                    </div>
+                {%- endfor -%}
+            </div>
+        {% endif %}
+    {%- endfor -%}
+    {{ second_slider }}
+{% endcapture %}
+
+{% capture bottom_menu %}
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            {% for link in menu.links offset:3 limit:1 %}
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+
+                        <div class="container">
+                            {{ link.title | escape }}
+                        </div>
+                    </button>
+                </h2>
+                {% if link.links.size > 0 %}
+                    {%- for childlink in link.links -%}
+                        {% if childlink.links.size > 0 %}
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            {% for childChildlink in childlink.links %}
+                                                <li>
+                                                    <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                                        <span>{{ childChildlink.title | escape }}</span>
+                                                    </a>
+                                                </li>
+                                            {%- endfor -%}
+                                        </ul>
+                                        {{ third_slider }}
+                                    </div>
+                                </div>
+                        {% endif %}
+                    {%- endfor -%}
+                {% endif %}
+        {%- endfor -%}
+        </div>
+    </div>
+{% endcapture %}
+
+<nav class="mobile-menu-custome">
+    <div class="hamburger-container">
+        <ul class="hamburger">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="qure_mob_menu">
+        <div id="menu">
+            {{ top_menu }}
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="mobile-section-2" role="tabpanel" aria-labelledby="mobile-section-2-tab">
+                    {{ center_menu }}
+                </div>
+                <div class="tab-pane fade" id="mobile-section-3" role="tabpanel" aria-labelledby="mobile-section-3-tab">
+                    {{ right_menu }}
+                </div>
+            </div>
+            <div class="q_header_accordion faq p-0">
+                {{ bottom_menu }}
+            </div>
+            <div class="q_icon_links">
+                <ul>
+                    <li>
+                        <a href="https://www.qureskincare.com/pages/contact-us">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.qureskincare.com/a/account/login">
+                            <span><img src="{{ 'account-sm.svg' | asset_url }}" alt="" class="img-fluid me-2">Account</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_icon_footer">
+                <div class="mi_ftrBlock">
+                    <img src="{{ 'header_shipping.svg' | asset_url }}" alt="">
+                    <span>Free Shipping<br>Orders Over $100</span>
+                </div>
+                <div class="mi_ftrBlock">
+                    <img src="{{ 'header_buy.svg' | asset_url }}" alt="">
+                    <span>Buy Now,<br>Pay Later</span>
+                </div>
+                <div class="mi_ftrBlock">
+                    <img src="{{ 'header_dermatologist.svg' | asset_url }}" alt="">
+                    <span>Dermatologist<br>Reviewed & Approved</span>
+                </div>
+                <div class="mi_ftrBlock">
+                    <img src="{{ 'header_results.svg' | asset_url }}" alt="">
+                    <span>Proven Results,<br>Backed by science</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

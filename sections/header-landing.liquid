@@ -1,0 +1,259 @@
+{%- assign announcement_count = 0 -%}
+{%- assign navigation_link_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'announcement' -%}
+            {%- assign announcement_count = announcement_count | plus: 1 -%}
+        {%- when 'navigation-link' -%}
+            {%- assign navigation_link_count = navigation_link_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<div class="wrapper header-wrapperBlock home-default-wrapper mi-landing-page" id="include_header_landing">
+    {% if settings.enable_site_gamification %}
+        <div class="announcement_bar site-gamification-active">
+            {% render 'pdm_site-wide-gamification', settingsGamification: settings, cartTotal: cart.items_subtotal_price  %}
+            {% if settings.enable_site_wide_timer %}
+                <div class="announcement_bar__timer">
+                    {% render 'pdm_site-wide-timer' %}
+                </div>
+            {% endif %}
+        </div>
+    {% else %}
+        {% for block in section.blocks %}
+            {% if block.type == 'announcement' %}
+                <!-- -- announcement bar start -- -->
+                <div class="announcement_bar {% if block.settings.color == 'green' %}bg_Darkgreen text-light{% else %}bg-light text-dark{% endif %}">
+                    <p class="d-none d-md-block" style="font-size: {{ block.settings.font_size_desktop }}px !important">{{ block.settings.heading }}</p>
+                </div>
+                <div class="announcement_bar {% if block.settings.color == 'green' %}bg_Darkgreen text-light{% else %}bg-light text-dark{% endif %}">
+                    <p class="d-block d-md-none" style="font-size: {{ block.settings.font_size_mobile }}px !important">{% if block.settings.heading_mobile != blank %}{{ block.settings.heading_mobile }}{% else %}{{ block.settings.heading }}{% endif %}</p>
+                </div>
+                <!-- -- announcement bar end -- -->
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    
+    <!-- Header live start -->
+    <div id="shopify-section-header" class="shopify-section site-header">
+        <div class="header-wrapper">
+            <header>
+                <div class="header-new new-hp-header">
+                    
+                    {% if navigation_link_count > 0 %}
+                        <!-- start mobile menu -->
+                        <nav class="mobile-menu-custome">
+                            <div class="hamburger-container">
+                                <ul class="hamburger">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div id="menu" class="menu_with_icons">
+                                {% if navigation_link_count > 0 %}
+                                    <ul>
+                                        <hr>
+                                        {%- for block in section.blocks offset:announcement_count -%}
+                                            {% if block.type == 'navigation-link' %}
+                                                <li class="title">
+                                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}">
+                                                        <div class="menuBlock">
+                                                            {% if block.settings.image != blank %}
+                                                                <img class="img-fluid" src="{{ block.settings.image | img_url: '150x' }}" alt="" />
+                                                            {% endif %}
+                                                            <span>{{ block.settings.link_label }}</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+                                        {%- endfor -%}
+                                    </ul>
+                                {% endif %}
+
+                                <div class="menu_icon_footer">
+                                    <div class="mi_ftrBlock">
+                                        <img src="{{ 'header-shipping.svg' | asset_url }}" alt="">
+                                        <span>Free Shipping Worldwide</span>
+                                    </div>
+                                    <div class="mi_ftrBlock">
+                                        <img src="{{ 'header-buy_now.svg' | asset_url }}" alt="">
+                                        <span>Buy Now, <br />Pay Later</span>
+                                    </div>
+                                    <div class="mi_ftrBlock">
+                                        <img src="{{ 'header-clinical.svg' | asset_url }}" alt="">
+                                        <span>Clinical-Grade Skincare</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- end mobile menu -->
+                    {% else %}
+                        <div class="mobile-menu-custome"></div>
+                    {% endif %}
+
+                    <!-- start desktop menu -->
+                    {% if navigation_link_count > 0 %}
+                        <ul class="menu">
+                            {%- for block in section.blocks offset:announcement_count -%}
+                                {% if block.type == 'navigation-link' %}
+                                    <li>
+                                        <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                                    </li>
+                                {% endif %}
+                            {%- endfor -%}
+                        </ul>
+                    {% else %}
+                        <div class="menu" style="width: 33% !important;"></div>
+                    {% endif %}
+
+                    <div class="header-logo">
+                            <a href="{{ routes.root_url }}" class="logo-image" aria-label="Qure">
+                                <img class="img-fluid" src="{{ 'logo.svg' | asset_url }}" alt="{{ link.title | escape }}">
+                            </a>
+                    </div>
+
+                    <div class="icon-section icon-section-landing">
+                        <ul class="nav nav_e-commerce">
+                            {% if section.settings.button_label != blank %}
+                                <li class="new-menu">
+                                    <div class="header_btn">
+                                        <a href="{{ section.settings.button_url }}"><span>{{ section.settings.button_label }}</span>
+                                            <img class="d-none" src="{{ 'header-arrow-right.svg' | asset_url }}" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                            {% endif %}
+                            
+                            <li class="nav__item header_gift_btn pe-md-0 pe-3">
+                                <a href="{{ routes.root_url }}pages/loyalty-program" class="nav__url">
+                                {% comment %} <a href="javascript:;" class="nav__url" onclick="StampedFn.toggleRewardsModal()"> {% endcomment %}
+                                    <img src="{{ 'header-gift.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
+                                </a>
+                            </li>
+
+                            <li class="nav__item cart_btn" data-ajax-cart-toggle-class-button="js-my-cart-open" style="cursor:pointer;">
+                                <a href="{{ routes.cart_url }}" class="nav__url" aria-label="Cart">
+                                    <img src="{{ 'cart.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
+                                    <span class="nav__cart-count" data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.header-landing.name",
+        "class": "section-header-landing",
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "t:common.button.label",
+                "info": "t:common.button.info"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "announcement",
+                "name": "t:sections.header-sales.blocks.announcement.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type" : "text",
+                        "id" : "heading",
+                        "label" : "t:common.heading.label"
+                    },
+                    {
+                        "type" : "text",
+                        "id" : "heading_mobile",
+                        "label" : "t:common.heading.mobile.label"
+                    },
+                    {
+                        "type": "select",
+                        "id": "color",
+                        "label": "t:common.announcement.color.label",
+                        "options": [
+                            {
+                                "label": "white",
+                                "value": "white"
+                            },
+                            {
+                                "label": "green",
+                                "value": "green"
+                            }
+                        ],
+                        "default": "white"
+                    },
+                    {
+                        "type": "range",
+                        "id": "font_size_desktop",
+                        "min": 10,
+                        "max": 15,
+                        "step": 1,
+                        "unit": "px",
+                        "label": "t:common.font.size",
+                        "default": 12
+                    },
+                    {
+                        "type": "range",
+                        "id": "font_size_mobile",
+                        "min": 10,
+                        "max": 15,
+                        "step": 1,
+                        "unit": "px",
+                        "label": "t:common.font.mobile.size",
+                        "default": 12
+                    }
+                ]
+            },
+            {
+                "type": "navigation-link",
+                "name": "t:sections.header-sales.blocks.navigation-link.name",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.header-landing.name",
+                "settings": {
+                    "button_label": "SAVE UP TO 43%",
+                    "button_url": "#productSubscription"
+                }
+			}
+        ]       
+    }
+{% endschema %}

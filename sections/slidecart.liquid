@@ -1,0 +1,936 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image-%}
+
+{% assign progress_Q = 0 %}
+{% assign progress_A =0 %}
+{% assign progress_M = 0 %}
+{% assign is_only_gift = false %}
+{% assign price_check=cart.items_subtotal_price | divided_by: 100 %}
+{% assign shipping_charge =  1000 %}
+
+{% assign custom_saving = blank %}
+
+{%- for block in section.blocks -%}
+    {% if block.type == 'saving' %}
+        {%- assign custom_saving = block -%}
+    {% endif %}
+{% endfor %}
+
+{% render "slidecart-insurance" %}
+
+<link rel="stylesheet" href="{{ 'drawer-mb.css' | asset_url }}">
+<link rel="stylesheet" href="{{ '__app-slidecart.css' | asset_url }}">
+
+<section class="drawer my-floating-cart slide_cart" id="drawer-name">
+
+	<a href="{{ routes.cart_url }}" data-ajax-cart-toggle-class-button="js-my-cart-open">
+		<div class="drawer__overlay" tabindex="-1"></div>
+	</a>
+	<div class="drawer__wrapper" data-ajax-cart-section>
+
+		<form action="{{ routes.cart_url }}" method="post" class="my-cart cart_empty_class">
+
+			{% for item in cart.items %}
+				{% if item.title contains 'Q-Rejuvalight Pro Facewear'    %}
+					{% assign progress_Q = 1 %}
+				{% endif %}
+
+				{% if  item.title contains 'All-In-One Face Serum'  %}
+					{% assign  progress_A = 1  %}
+				{% endif %}
+					
+				{% if item.title contains "Micro-Infusion" %}
+					{% assign  progress_M = 1  %}
+				{% endif %}
+			{% endfor %}
+				
+			{% if price_check > 100 %}
+				{% assign progress_percentage = 100 %}
+			{% else %}
+				{% assign progress_percentage = price_check %}
+			{% endif %}
+
+			<div class="drawer_top_sticky">
+				<div class="drawer__count">
+					<p class="your-cart" >Your Cart (<span class="your-cart" data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count  }}</span>)</p>
+					<a href="{{ routes.cart_url }}" data-ajax-cart-toggle-class-button="js-my-cart-open">
+						<button class="drawer__close drawer__close-header">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 15.9998L16 1.99976" stroke="white" stroke-width="3"></path>
+								<path d="M14.7273 15.2393L8.36364 8.87562L2 2.51199" stroke="white" stroke-width="3"></path>
+							</svg>
+						</button>
+					</a>
+				</div>
+        {% render 'pdm_cart-gamification', settingsGamification: section.settings, cartTotal: cart.items_subtotal_price %}
+			</div>
+
+			{% if section.settings.sidecart_timer_old_enable %}
+				{% render 'slidecart-timer' %}
+			{% endif %}
+			{% if section.settings.sidecart_timer_new_enable %}
+				{% render 'sidecart-timer-new', settings: section.settings %}
+			{% endif %}
+
+			{% if section.settings.show_urgency_note %}
+				{% render 'sidecart-urgent-note', settings: section.settings %}
+			{% endif %}
+
+			<div class="my-cart__info">
+				<div  class ="my-cart__items {% if cart.item_count == 0 %} cart__empty-items {% endif %}">
+					{% assign is_not_only_gift = false %}
+					{% assign is_insurance_exists = false %}
+
+					{% for item in cart.items %}
+						{% assign item_index = forloop.index %}
+						{% assign item_new_price = item.quantity | times: item.variant.price  %}
+						{% assign item_old_price = item.quantity | times: item.variant.compare_at_price  %}
+
+						{% assign free_gift = false %}
+						{% assign popup_discount = false %}
+
+						{% if item.properties._free_product == 'true' %}
+							{% assign free_gift = true %}
+						{%- endif -%}
+
+						{% if item.properties._popup_uspell == 'true' %}
+							{% assign popup_discount = true %}
+						{% endif %}
+
+
+						{%- if item.title contains 'Gift Card' -%}
+							{%- unless is_not_only_gift -%}
+								{%- assign is_only_gift = true -%}
+							{%- endunless -%}
+						{%- else -%}
+							{%- assign is_only_gift = false -%}
+							{%- assign is_not_only_gift = true -%}
+						{%- endif -%}
+
+						{%- if item.variant.compare_at_price -%}
+							{% assign compare_price = item.variant.compare_at_price | times: item.quantity %} 
+						{%- else -%}
+							{%- assign compare_price = item.variant.price -%}
+						{%- endif -%}
+
+						{% assign total_cart_compare_price = total_cart_compare_price | plus: compare_price %}
+
+						<div class="drawer__cart-product">
+							<div class="drawer__cart-product-image">
+								{%- if item.title contains 'Insurance' -%}
+									{% assign is_insurance_exists = item.index | plus: 1 %}
+									<a title="{{ item.title }}" href="{{ item.url }}"><img src="{{ item.image | img_url: 'master' }}" style="height:20px !important; width: 90px; margin:40px auto; display:block;"></a>
+								{%- elsif item.title contains 'Gift Card' -%}
+									<a title="{{ item.title }}" href="{{ item.url }}"><img src="{{ item.image | img_url: 'master' }}" style="height:60px !important; margin-top:10px; !important"></a>
+								{%- else -%}
+									<a title="{{ item.title }}" href="{{ item.url }}"><img src="{{ item.image | img_url: 'master' }}"></a>
+								{%- endif -%}
+							</div>
+							<div class="drawer__cart-product-info">
+
+								{% if item.title contains 'Bundle' %}
+									{% if item.title contains '(Pre-Order) ' %}
+										{% comment %} added by abconvert 31.08.2023 {% endcomment %}
+										<a  class="drawer__cart-title"  href="{{ item.url }}" data-p-id="{{ item.id }}">{{ item.title | replace: "- Default Title","" | replace: "*","" }}{% if free_gift %} (Free gift){% endif %}</a>
+									{% else %}
+										{% comment %} added by abconvert 31.08.2023 {% endcomment %}
+										<a  class="drawer__cart-title"  href="{{ item.url }}">{{ item.title | replace: "- Default Title","" | replace: "*","" }}{% if free_gift %} (Free gift){% endif %}</a>
+									{% endif %}
+								{% else %}
+									{% comment %} added by abconvert 31.08.2023 {% endcomment %}
+									<a  class="drawer__cart-title"  href="{{ item.url }}">{{ item.title | replace: "- Default Title","" | replace: "*","" }}{% if free_gift %} (Free gift){% endif %}</a>
+								{% endif %}
+
+								<div class="review_main">
+									{% unless item.id == 43489424244975 or item.id == 43489403797743 %}
+									<p class="cart-revi" {% if item.selling_plan_allocation %}style="display:block"{% endif %}>
+										<svg width="90" height="14" viewBox="0 0 90 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M83.2649 1.01257L84.7642 5.37183L89.4486 5.42509C89.8517 5.4297 90.0186 5.93415 89.6953 6.17024L85.937 8.91732L87.333 13.3094C87.4529 13.6873 87.0164 13.9987 86.6874 13.7698L82.866 11.1082L79.0441 13.7693C78.7155 13.9982 78.2785 13.6863 78.3985 13.3089L79.7945 8.91681L76.0362 6.16973C75.7129 5.93364 75.8797 5.42919 76.2828 5.42458L80.9673 5.37132L82.4665 1.01205C82.5959 0.637173 83.1361 0.637173 83.2649 1.01257Z" fill="#008763"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M64.2996 1.01257L65.7988 5.37183L70.4833 5.42509C70.8864 5.4297 71.0532 5.93415 70.7299 6.17024L66.9716 8.91732L68.3676 13.3094C68.4876 13.6873 68.0511 13.9987 67.722 13.7698L63.9007 11.1082L60.0787 13.7693C59.7502 13.9982 59.3132 13.6863 59.4332 13.3089L60.8291 8.91681L57.0709 6.16973C56.7475 5.93364 56.9144 5.42919 57.3175 5.42458L62.002 5.37132L63.5012 1.01205C63.6305 0.637173 64.1708 0.637173 64.2996 1.01257Z" fill="#008763"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M45.3301 1.01257L46.8294 5.37183L51.5138 5.42509C51.9169 5.4297 52.0838 5.93415 51.7604 6.17024L48.0022 8.91732L49.3982 13.3094C49.5181 13.6873 49.0816 13.9987 48.7526 13.7698L44.9312 11.1082L41.1093 13.7693C40.7807 13.9982 40.3437 13.6863 40.4637 13.3089L41.8597 8.91681L38.1014 6.16973C37.7781 5.93364 37.9449 5.42919 38.348 5.42458L43.0325 5.37132L44.5317 1.01205C44.661 0.637173 45.2013 0.637173 45.3301 1.01257Z" fill="#008763"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M26.3645 1.01257L27.8638 5.37183L32.5482 5.42509C32.9513 5.4297 33.1182 5.93415 32.7949 6.17024L29.0366 8.91732L30.4326 13.3094C30.5525 13.6873 30.116 13.9987 29.787 13.7698L25.9656 11.1082L22.1437 13.7693C21.8152 13.9982 21.3782 13.6863 21.4981 13.3089L22.8941 8.91681L19.1358 6.16973C18.8125 5.93364 18.9794 5.42919 19.3825 5.42458L24.0669 5.37132L25.5661 1.01205C25.6955 0.637173 26.2357 0.637173 26.3645 1.01257Z" fill="#008763"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M7.39919 1.01257L8.89844 5.37183L13.5829 5.42509C13.986 5.4297 14.1529 5.93415 13.8295 6.17024L10.0712 8.91732L11.4672 13.3094C11.5872 13.6873 11.1507 13.9987 10.8217 13.7698L7.00026 11.1082L3.17835 13.7693C2.84982 13.9982 2.41282 13.6863 2.53276 13.3089L3.92876 8.91681L0.170465 6.16973C-0.152851 5.93364 0.0140218 5.42919 0.417124 5.42458L5.10156 5.37132L6.60081 1.01205C6.73014 0.637173 7.27039 0.637173 7.39919 1.01257Z" fill="#008763"></path>
+										</svg>
+										
+										{% assign reviews_count = 0 %}
+										{% if item.product.metafields.stamped.reviews_count != blank %}
+											{% assign reviews_count = item.product.metafields.stamped.reviews_count | times: 1 %}
+										{% endif %}
+
+										{% if reviews_count > 5 %}
+											<a href="#">{{ reviews_count }} Reviews</a>
+										{% else %}
+											<a href="#">78 Reviews</a>
+										{% endif %}
+									</p>
+									{% endunless %}
+
+									{%- assign item_title_donwcase = item.title | downcase -%}
+
+									{%- if item.selling_plan_allocation -%}
+										<p class="cart-revi ship-revi" style="display:block">
+											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+												<path d="M0.538462 1.1543C0.214544 1.1543 0 1.36884 0 1.69276V9.23122C0 9.55514 0.214544 9.76968 0.538462 9.76968H1.61538C1.72266 8.85472 2.53035 8.10382 3.5 8.10382C4.46965 8.10382 5.27734 8.85472 5.38462 9.76968H7.53846C7.86238 9.76968 8.07692 9.55514 8.07692 9.23122V1.69276C8.07692 1.36884 7.86238 1.1543 7.53846 1.1543H0.538462ZM5.85577 3.02209C5.94411 3.02209 6.03666 3.05995 6.09135 3.13987L6.41106 3.47641C6.51833 3.58368 6.52254 3.78561 6.36058 3.94757L3.71875 6.58939C3.55679 6.75135 3.33804 6.75135 3.23077 6.58939L1.71635 5.0918C1.55439 4.92984 1.55439 4.71109 1.71635 4.60382L2.05288 4.2841C2.21484 4.12215 2.41677 4.12215 2.52404 4.2841L3.5 5.24324L5.60337 3.13987C5.68329 3.05995 5.76743 3.02209 5.85577 3.02209ZM9.15385 3.30814C8.82993 3.30814 8.61539 3.52269 8.61539 3.8466V9.23122C8.61539 9.50045 8.82993 9.76968 9.15385 9.76968C9.26112 8.85472 10.0688 8.10382 11.0385 8.10382C12.0081 8.10382 12.8158 8.80003 12.9231 9.76968H13.4615C13.7855 9.76968 14 9.55514 14 9.23122V6.53891C14 6.05514 13.5625 5.46199 13.5625 5.46199L12.3846 3.8466C12.1154 3.52269 11.9534 3.30814 11.5769 3.30814H9.15385ZM10.2308 4.38507H11.5264C11.6337 4.38507 11.7452 4.48603 11.7452 4.48603L12.8726 6.05093C12.9799 6.21289 13.0913 6.38116 13.0913 6.48843H10.2308V4.38507ZM3.5 8.79372C2.81641 8.79372 2.25481 9.35532 2.25481 10.0389C2.25481 10.7225 2.81641 11.2841 3.5 11.2841C4.18359 11.2841 4.74519 10.7225 4.74519 10.0389C4.74519 9.35532 4.18359 8.79372 3.5 8.79372ZM11.0385 8.79372C10.3549 8.79372 9.79327 9.35532 9.79327 10.0389C9.79327 10.7225 10.3549 11.2841 11.0385 11.2841C11.7221 11.2841 12.2837 10.7225 12.2837 10.0389C12.2837 9.35532 11.7221 8.79372 11.0385 8.79372Z" fill="#008763"></path>
+											</svg>
+											<a href="#">{{ item.selling_plan_allocation.selling_plan.name }}</a>
+										</p>
+									{%- else -%}
+										{%- unless item_title_donwcase contains 'pre-order' or item_title_donwcase contains 'sold out' -%}
+										<p class="cart-revi ship-revi">
+											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+												<path d="M0.538462 1.1543C0.214544 1.1543 0 1.36884 0 1.69276V9.23122C0 9.55514 0.214544 9.76968 0.538462 9.76968H1.61538C1.72266 8.85472 2.53035 8.10382 3.5 8.10382C4.46965 8.10382 5.27734 8.85472 5.38462 9.76968H7.53846C7.86238 9.76968 8.07692 9.55514 8.07692 9.23122V1.69276C8.07692 1.36884 7.86238 1.1543 7.53846 1.1543H0.538462ZM5.85577 3.02209C5.94411 3.02209 6.03666 3.05995 6.09135 3.13987L6.41106 3.47641C6.51833 3.58368 6.52254 3.78561 6.36058 3.94757L3.71875 6.58939C3.55679 6.75135 3.33804 6.75135 3.23077 6.58939L1.71635 5.0918C1.55439 4.92984 1.55439 4.71109 1.71635 4.60382L2.05288 4.2841C2.21484 4.12215 2.41677 4.12215 2.52404 4.2841L3.5 5.24324L5.60337 3.13987C5.68329 3.05995 5.76743 3.02209 5.85577 3.02209ZM9.15385 3.30814C8.82993 3.30814 8.61539 3.52269 8.61539 3.8466V9.23122C8.61539 9.50045 8.82993 9.76968 9.15385 9.76968C9.26112 8.85472 10.0688 8.10382 11.0385 8.10382C12.0081 8.10382 12.8158 8.80003 12.9231 9.76968H13.4615C13.7855 9.76968 14 9.55514 14 9.23122V6.53891C14 6.05514 13.5625 5.46199 13.5625 5.46199L12.3846 3.8466C12.1154 3.52269 11.9534 3.30814 11.5769 3.30814H9.15385ZM10.2308 4.38507H11.5264C11.6337 4.38507 11.7452 4.48603 11.7452 4.48603L12.8726 6.05093C12.9799 6.21289 13.0913 6.38116 13.0913 6.48843H10.2308V4.38507ZM3.5 8.79372C2.81641 8.79372 2.25481 9.35532 2.25481 10.0389C2.25481 10.7225 2.81641 11.2841 3.5 11.2841C4.18359 11.2841 4.74519 10.7225 4.74519 10.0389C4.74519 9.35532 4.18359 8.79372 3.5 8.79372ZM11.0385 8.79372C10.3549 8.79372 9.79327 9.35532 9.79327 10.0389C9.79327 10.7225 10.3549 11.2841 11.0385 11.2841C11.7221 11.2841 12.2837 10.7225 12.2837 10.0389C12.2837 9.35532 11.7221 8.79372 11.0385 8.79372Z" fill="#008763"></path>
+											</svg>
+											<a href="#">In stock. Shipped within 2 days</a>
+										</p>
+										{%- endunless -%}
+									{%- endif -%}
+								</div>
+
+									<div class="drawer__cart-price-quantity">
+                    {% unless item.properties['_required_validation'] %} {% comment %} validation for free gift test {% endcomment %}
+											{% if free_gift or item.id == 46199907123439 %}
+												<div class="drawer__cart-quantity">
+													<a href="javascript:;" style="color:#e4e0e0">
+														-
+													</a>
+													<p class="drawer__cart-item-q">{{ item.quantity }}</p>
+													<a href="javascript:;" style="color:#e4e0e0">
+														+
+													</a>
+												</div>													
+											{% else %}
+												<div class="drawer__cart-quantity">
+													<a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?line={{ item.index | plus: 1 }}&quantity={{ item.quantity | minus: 1 }}">
+														-
+													</a>
+													<p class="drawer__cart-item-q">{{ item.quantity }}</p>
+													<a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?line={{ item.index | plus: 1 }}&quantity={{ item.quantity | plus: 1 }}">
+														+
+													</a>
+												</div>
+											{% endif %}
+										
+										{% if free_gift %}
+											<div class="drawer__cart-item-price">
+												<p class="old-price"><span class="money">{{ item.original_line_price | money_without_trailing_zeros }}</span></p>
+												<p class="new-price test"><span class="money">$0</span></p>
+											</div>
+										{% elsif item.id == 46199907123439 %}
+											<div class="drawer__cart-item-price">
+												<p class="new-price test"><span class="money">{{ item.price | money_without_trailing_zeros }}</span></p>
+											</div>
+											{% elsif popup_discount %}
+												<div class="drawer__cart-item-price">
+													{% liquid
+													assign product_hanlde_popup = ""
+														if item.id == 43821035290863
+															 #"Micro-Infusion 3 Month Refill (For Wrinkles)"
+															assign product_hanlde_popup = "micro-infusion-3-month-refill-6x-hydra-soothing-serum"
+														elsif item.id == 43821069435119
+															 #"Micro-Infusion 3 Month Refill (For Dark Spots)"
+															assign product_hanlde_popup = "micro-infusion-3-month-refill-6x-rejuvenating-serum"
+														elsif item.id == 43821031031023
+															 #"Micro-Infusion 3 Month Refill (For Wrinkles + Dark Spots)"
+															assign product_hanlde_popup = "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum"
+														endif
+													assign product_moded = all_products[product_hanlde_popup]
+													%}
+												<p class="old-price"><span class="money">{{- product_moded.price | money_without_trailing_zeros -}}</span></p>
+												<p class="new-price test"><span class="money">{{- item.line_price | money_without_trailing_zeros -}}</span></p>
+											</div>
+										{% else %}
+											<div class="drawer__cart-item-price">
+												{% comment %} Subscription for product {% endcomment %}
+												{%- if item.selling_plan_allocation.price > 0 -%}
+													<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
+														<span class="money">{{ item.selling_plan_allocation.price | money_without_trailing_zeros }}</span>
+													</p>
+													<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
+														<span class="money">{{ item_new_price | money_without_trailing_zeros }}</span>
+													</p>
+												{%- else -%}
+													{% if item.original_price > item.discounted_price %}
+														<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
+															<span class="money">{{ item.discounted_price | money_without_trailing_zeros }}</span>
+														</p>
+														<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
+															<span class="money">{{ item.original_price | money_without_trailing_zeros }}</span>
+														</p>
+														{% assign comparedPrices = item.original_price | minus: item.discounted_price | times: item.quantity %}
+														{% assign savings = savings | plus: comparedPrices %}
+													{% else %}
+														<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
+															<span class="money">{{ item_new_price | money_without_trailing_zeros }}</span>
+														</p>
+														{% if item.variant.compare_at_price > item.variant.price %}
+															<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
+																<span class="money">{{ item_old_price | money_without_trailing_zeros }}</span>
+															</p>
+															{% assign comparedPrices = item.variant.compare_at_price | minus: item.variant.price | times: item.quantity %}
+															{% assign savings = savings | plus: comparedPrices %}
+														{% endif %}
+													{% endif %}
+												{%- endif -%}
+											</div>
+										{% endif %}
+                  {% endunless %}
+                    {% if item.properties['_required_validation'] %}
+                      {% render 'pdm_free-gift-cart', itemCart: item %}
+                    {% endif %}
+
+									</div>									
+							</div>
+
+							<a data-ajax-cart-request-button class="{% if item.id == 46199907123439 %}bundle-product-remove {% endif %} drawer__cart-remove-item" href="{{ item.url_to_remove }}&line={{ item_index }}&quantity=0">
+								<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path d="M17.75 9C17.75 13.8325 13.8325 17.75 9 17.75C4.16751 17.75 0.25 13.8325 0.25 9C0.25 4.16751 4.16751 0.25 9 0.25C13.8325 0.25 17.75 4.16751 17.75 9Z" stroke="#5C5C5C" stroke-width="0.5"></path>
+										<path d="M5.37891 12.95L12.322 5.75" stroke="#5C5C5C" stroke-width="0.5"></path>
+										<path d="M12.45 12.8213L5.25 5.8782" stroke="#5C5C5C" stroke-width="0.5"></path>
+									</svg></span>
+							</a>
+						</div>
+
+					{% endfor %}
+
+					{% if cart.item_count == 0 %}
+						<div class="drawer__cart-is-empty">
+							<div class="drawer__cart-empty-text">
+								<h4>Your shopping bag is empty.</h4>
+								<p>Fill it with amazing skincare.</p>
+							</div>
+							<div class="empty-product">
+								<div class="empty-title dekstop-empty">
+									<h4>Micro-Infusion Facial System </h4>
+										<div class="empty-review">
+											<img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="" class="mr-2">
+											&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="/pages/microinfusion">98% of customers loved their skin after one treatment</a>
+										</div>
+								</div>
+								<div class="empty-main">
+									<div class="empty-img">
+										<img src="{{ 'cart_micro_new_400x.webp' | asset_url }}" style="max-width: 160px;">
+										<div class="empty-mobile">
+											<div class="empty-title">
+												<h4>Micro-Infusion Facial System </h4>
+												<div class="empty-review">
+													<img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="">
+													<a href="/pages/microinfusion"> 98% of customers loved their skin after one treatment</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="empty-content">
+										<ul>
+											<li>
+												<span>
+													<img src="https://qureskincaredns.com/new/assets/dark-spots.svg" alt="">
+												</span>
+												Reduce appearance of fine lines, pores and dark spots. 
+											</li>
+											<li>
+												<span>
+													<img src="https://qureskincaredns.com/new/assets/skin.svg" alt="">
+												</span>
+												Infuse active ingredients into your skin. 
+											</li>
+											<li>
+												<span>
+													<img src="https://qureskincaredns.com/new/assets/downtime.svg" alt="">
+												</span> 
+												Immediately visible results, minimal downtime!
+											</li>
+											<li>
+												<span>
+													<img src="https://qureskincaredns.com/new/assets/plus.svg" alt="">
+												</span> 
+												Virtually painless, and performed safely from home.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="drawer__cart-empty-shop-btn">
+									<a class="drawer__cart-empty-button" href="/pages/microinfusion">
+										<h2 class="lock-checkout">Shop Micro-Infusion </h2>
+									</a> 
+								</div>
+							</div>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+
+      		{% render 'pdm_upsell_cards',cart:cart, section:section %}
+
+			<div class="custom-shadow">
+
+				{% assign price_checkInsurance = price_check %}
+				{%- assign insPrice = 0 -%}
+
+				{% if price_check > 388 %}
+					{% assign price_checkInsurance = price_check %}
+				{% endif %}
+				{% assign insPrice = 0 %}
+				{% if price_checkInsurance > 0 and price_checkInsurance <= 75 %}
+					{% assign insPrice = 1.05 %}
+				{% elsif price_checkInsurance >= 76 and price_checkInsurance <= 100 %}
+					{% assign insPrice = 1.50 %}
+				{% elsif price_checkInsurance >= 101 and price_checkInsurance <= 200 %}
+					{% assign insPrice = 2.80 %}
+				{% elsif price_checkInsurance >= 201 and price_checkInsurance <= 250 %}
+					{% assign insPrice = 3.25 %}
+				{% elsif price_checkInsurance >= 251 and price_checkInsurance <= 300 %}
+					{% assign insPrice = 3.90 %}
+				{% elsif price_checkInsurance >= 301 and price_checkInsurance <= 400 %}
+					{% assign insPrice = 4.20 %}
+				{% elsif price_checkInsurance >= 401 and price_checkInsurance <= 1000 %}
+					{% assign insPrice1 = cart.total_price | divided_by: 100 | round: 2 %}
+					{% assign insPrice2 = insPrice1 |divided_by: 50 | times: 50| round: 2| ceil %}
+					{% assign insPrice3 =  insPrice2 |times: 0.011 | round:2 %}
+					{% assign insPrice4 = insPrice3 | round:2 %}
+					{% assign insPrice = insPrice4 %}
+				{% elsif price_checkInsurance >= 1001  %}
+					{% assign insPrice = 18.00 %}
+				{% endif %}
+
+				{%- assign subtotal_price = 0 -%}
+
+				{% if price_check < 100 and price_check > 0 %}
+					{%- assign insPrice = insPrice | times: 100 -%}
+
+					{%- if is_only_gift == true -%}
+						{%- assign shipping_charge = 0 -%}
+					{% endif %}
+
+					{%- assign subtotal_price_temp = cart.items_subtotal_price | money_without_trailing_zeros -%}
+					{%- assign subtotal_price = cart.items_subtotal_price | plus: shipping_charge | money_without_trailing_zeros -%}
+					{%- assign subtotal_price_nocurrency_temp = cart.items_subtotal_price | money_without_currency -%}
+					{%- assign subtotal_price_nocurrency = cart.items_subtotal_price | plus: shipping_charge | money_without_currency -%}
+				{%- else -%}
+						{%- assign subtotal_price = cart.items_subtotal_price |  money_without_trailing_zeros -%}
+						{%- assign subtotal_price_nocurrency = cart.items_subtotal_price |  money_without_currency -%}
+				{%- endif -%}
+
+				<div class="drawer__cart-subtotal">
+					<div>
+						<p>Subtotal</p>
+						{% if cart.item_count > 0  %}
+							{%- if total_cart_compare_price > 0 -%}
+								{% if savings %}
+									{% if custom_saving != blank %}
+										<p class="drawer_savings" style="color: {{ custom_saving.settings.color }}">{{ custom_saving.settings.text }}</p>
+									{% else %}
+										<p class="drawer_savings">You're saving</p>
+									{% endif %}
+								{% endif %}
+							{%- endif -%}
+						{% endif %}
+
+						{%- if is_only_gift == true -%}
+							<p class="drawer_shipping">&nbsp;</p>
+						{%- else -%}
+							<p style class="drawer_shipping">Shipping</p>
+						{%- endif -%}
+					</div>
+
+					<div class="drawer__cart-subtotal-end">
+						<div class="sub_total_og">
+							<p class="drawer__cart-subtotal-price-end" data-total_price="{% if subtotal_price_temp %}{{ subtotal_price_nocurrency_temp }}{% else %}{{ subtotal_price_nocurrency }}{% endif %}">
+								{% if total_cart_compare_price > cart.items_subtotal_price %}
+									<span class="drawer_original_price pe-1 money" style="text-decoration: line-through;color: #C4C4C4;">{{ total_cart_compare_price | money_without_trailing_zeros | remove:'USD' }}</span>
+								{% endif %}
+								{%- if subtotal_price_temp -%}
+									<span class="money">{{ subtotal_price_temp }}</span>
+								{%- else -%}
+									<span class="money">{{ subtotal_price }}</span>
+								{%- endif -%}
+							</p>
+						</div>
+						{% if cart.item_count > 0  %}
+							{%- if total_cart_compare_price > 0 -%}
+								{% if savings %}
+									<div class="drawer_savings">
+										<p>-<span id="savings-amount money">{{ savings | money_without_trailing_zeros }}</span></p>
+									</div>
+								{% endif %}
+							{%- endif -%}
+						{% endif %}
+
+						{%- if is_only_gift == true -%}
+							<div class="drawer_shipping"><p>&nbsp;</p></div>
+						{%- else -%}
+              {% render 'pdm_cart-shipping-ammount', settingsGamification: section.settings, cartTotal: cart.total_price  %}
+						{%- endif -%}
+					</div>
+				</div>
+
+				{% assign totalPrice = cart.total_price | divided_by: 100 %}
+
+				{% if totalPrice > 0 and totalPrice <= 75 %}
+					{% assign insurancePrice = 150 %}
+					{% assign insuranceId = 43291834220783 %}
+				{% elsif totalPrice >= 76 and totalPrice <= 100 %}
+					{% assign insurancePrice = 150 %}
+					{% assign insuranceId = 43326164566255 %}
+				{% elsif totalPrice >= 101 and totalPrice <= 200 %}
+					{% assign insurancePrice = 280 %}
+					{% assign insuranceId = 43326164599023 %}
+				{% elsif totalPrice >= 201 and totalPrice <= 250 %}
+					{% assign insurancePrice = 325 %}
+					{% assign insuranceId = 43326164631791 %}
+				{% elsif totalPrice >= 251 and totalPrice <= 300 %}
+					{% assign insurancePrice = 390 %}
+					{% assign insuranceId = 43326164664559 %}
+				{% elsif totalPrice >= 301 and totalPrice <= 400 %}
+					{% assign insurancePrice = 420 %}
+					{% assign insuranceId = 43326164697327 %}
+				{% elsif totalPrice >= 401 and totalPrice <= 1000 %}
+					{% assign insurancePrice = 420 %}
+					{% assign insuranceId = 43326164697327 %}
+				{% elsif totalPrice >= 1001 %}
+					{% assign insurancePrice = 1800 %}
+					{% assign insuranceId = 43326855282927 %}
+				{% endif %}
+				
+				<div class="insurance-wrapper">
+					<div class="insurance__bottom-wrapper">
+						<div class="insurance__img-wrapper">
+							<img src="https://qureskincaredns.com/new/assets/secureship_sm.svg" alt="" class="img-fluid">
+						</div>
+						<div class="insurance__text">
+							<p class="insurance__text--top">Protect Your Order from Loss, Damage & Theft <strong>{{ insurancePrice | money_without_trailing_zeros }}</strong>
+							</p>
+						</div>
+						<div class="insurance__switch-wrapper">
+							<label class="switch">
+								{% if is_only_gift == true %}
+									<input type="checkbox" id="insuranceCheckbox" name="insurance" disabled>
+								{% else %}
+									{% if is_insurance_exists %}
+										<input data-ajax-cart-request-button="{{ routes.cart_change_url }}?line={{ is_insurance_exists }}&quantity=0" type="checkbox" id="insuranceCheckbox" name="insurance" checked>
+									{% else %}
+										<input data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ insuranceId }}&quantity=1" type="checkbox" id="insuranceCheckbox" name="insurance">
+									{% endif %}
+								{% endif %}
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<hr class="insurance-spacer">
+			</div>
+
+			<div class="cart_total-checkout">
+				<div class="drawer__cart-total">
+					<p class="cart_items_subtotal_price">Your Total</p>
+          {% render 'pdm-cart-total-checkout' cartData:cart, totalCartComparePrice: total_cart_compare_price, is_only_gift:is_only_gift %}
+				</div>
+
+				<form action="https://qureskincaredns.com/checkout" method="post" class="insurance-form" id="insuranceForm"></form>
+					<div class="drawer__cart-checkout-btn">
+						<button class="drawer__cart-checkout" type="submit" name="checkout">
+							<h2 class="lock-checkout">CHECKOUT</h2>
+							<svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.30418 6.65385L3.30419 6.36739V6.07022L3.30422 5.78276L3.30419 5.4856V5.19813L3.31088 4.91794L3.34867 4.61318C3.36712 4.48229 3.46457 4.1159 3.52886 4.05135C3.59624 3.79566 3.97413 3.36459 4.11325 3.2384C4.30328 3.06604 4.64307 2.79803 4.97414 2.71228C5.017 2.67909 5.10977 2.65689 5.16864 2.65908C5.22808 2.60386 5.4626 2.58605 5.55854 2.57923L5.60182 2.58411C5.63562 2.56472 5.62319 2.57143 5.67446 2.5669C5.78657 2.55698 6.16692 2.55662 6.22574 2.60079C6.29001 2.59531 6.38519 2.61765 6.42004 2.62823C6.58717 2.65835 6.7395 2.71855 6.88765 2.78372L6.99508 2.83863C7.01395 2.85284 7.00708 2.84691 7.0204 2.86272C7.15756 2.8788 7.58226 3.2556 7.65442 3.3329C7.74103 3.42565 8.08718 3.82507 8.10754 3.98687C8.1964 4.062 8.30446 4.45889 8.32391 4.61269C8.33993 4.68191 8.35281 4.75344 8.34371 4.82069C8.39422 4.89279 8.36852 5.09435 8.36815 5.19328V5.49045V5.77791V6.07507L8.36821 6.36253L8.36806 6.65727L8.36752 6.99232L3.30747 6.99692L3.30418 6.65385ZM5.35999 0.676492C5.35617 0.678669 5.35109 0.680564 5.34789 0.681709L5.15542 0.714034C5.08609 0.724165 5.02528 0.736243 4.95631 0.745877C4.9058 0.761397 4.78294 0.795849 4.71277 0.791452L4.69217 0.803623C4.61389 0.842163 4.74284 0.784877 4.67072 0.813572C4.65827 0.818528 4.64093 0.822693 4.6258 0.826843C4.41553 0.884587 4.16959 0.992551 4.06847 1.01878C4.03925 1.04699 3.8553 1.12496 3.79889 1.15538C3.73264 1.1911 3.57512 1.29298 3.52765 1.30144C3.49359 1.34929 2.87247 1.71579 2.31492 2.41853L1.98818 2.87315C1.98316 2.91588 1.87461 3.10094 1.84923 3.1514C1.8278 3.19399 1.73206 3.41113 1.7176 3.42728L1.60767 3.73654L1.52925 4.01191C1.48957 4.24675 1.44456 4.44374 1.42289 4.69869C1.40146 4.95089 1.40773 5.20233 1.40655 5.45879C1.40535 5.71688 1.40605 5.97529 1.40604 6.23342C1.40604 6.38785 1.42626 6.8819 1.39929 6.99732L0.927328 7.0069C0.884014 7.02489 0.811939 7.03284 0.755858 7.05376C0.723997 7.06564 0.698472 7.07827 0.672748 7.09149C0.626121 7.11544 0.63646 7.11738 0.594571 7.11997C0.578997 7.14014 0.590119 7.12845 0.570343 7.14625L0.479006 7.21728C0.435179 7.25445 0.413668 7.27476 0.375972 7.31889C0.287473 7.4225 0.233522 7.53532 0.205015 7.56186L0.150739 7.78275L0.139893 8.11642V8.41358V8.70104V8.9982V9.28567V9.58283V9.8703V10.1675V10.4549V10.7521V11.0395V11.3367V11.6242V11.9213V12.2088V12.506V12.7934V13.0906V13.3781L0.140495 13.6752C0.147393 13.7992 0.169334 13.8717 0.192943 13.9796C0.233555 14.0426 0.256574 14.1164 0.302079 14.181C0.348513 14.247 0.398 14.3054 0.452315 14.3524C0.579069 14.4621 0.675752 14.5148 0.869898 14.5708L1.1586 14.5935H1.45564H1.74299H2.04004H2.32739H2.62443H2.91179H3.20883H3.49619H3.79323H4.08058H4.37763H4.66498H4.96203H5.24938H5.54643H5.83378H6.13082H6.41817H6.71522H7.00257H7.29962H7.58698H7.88402H8.17137H8.46842H8.75577H9.05281H9.34017H9.63721H9.92457H10.2216L10.508 14.5935L10.7994 14.5712C10.9957 14.5131 11.1054 14.4525 11.2275 14.3452C11.2799 14.2992 11.3306 14.2368 11.3758 14.172C11.4137 14.1175 11.4549 13.9953 11.4961 13.9527L11.5318 13.6704L11.5325 13.3829V13.0857V12.7983V12.5011V12.2137V11.9165V11.629V11.3319V11.0444V10.7472V10.4598V10.1626V9.87514V9.57798V9.29051V8.99336V8.70589V8.40873V8.12126L11.5399 7.87766C11.5147 7.84023 11.5153 7.75042 11.5018 7.69813C11.484 7.62948 11.4611 7.58783 11.4456 7.52496C11.3928 7.47383 11.3872 7.36703 11.1529 7.18355C11.1246 7.16138 11.1186 7.16387 11.1103 7.14192C10.9695 7.08818 10.9183 7.03392 10.7316 7.00724C10.5816 6.9858 10.4053 7.01293 10.2681 6.9898C10.2286 6.26337 10.3027 5.38838 10.2419 4.60677L10.2246 4.38947C10.1824 4.3274 10.169 4.14035 10.1493 4.05486C10.1231 3.94129 10.0903 3.84579 10.0641 3.7374C10.0413 3.68136 9.97964 3.53088 9.97746 3.46656C9.92835 3.42329 9.85695 3.22112 9.8234 3.15131C9.77541 3.05148 9.69697 2.94094 9.66145 2.84266C9.63213 2.82836 9.54382 2.6704 9.5136 2.62752C9.2718 2.28421 8.92561 1.89903 8.59839 1.64319L8.18005 1.32724L7.7184 1.07668C7.6865 1.0612 7.66887 1.05621 7.63804 1.04182C7.62307 1.03483 7.61051 1.02829 7.5986 1.02028C7.57863 1.00685 7.58416 1.01085 7.57095 0.996959C7.56293 0.996943 7.03465 0.823755 7.01953 0.813776L6.62323 0.718906C6.56958 0.726834 6.53355 0.717387 6.47897 0.706514C6.39689 0.69957 6.12083 0.688416 6.07261 0.660156L5.83378 0.66494L5.5467 0.673973C5.48503 0.676791 5.41242 0.690946 5.35999 0.676492Z" fill="#D1D1D1"></path>
+							</svg>
+						</button>
+					</div>
+				</form>
+
+				<div class="payment_info">
+					<p>
+						<span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+								<g clip-path="url(#clip0_12488_3968)">
+									<path d="M1.07264 4.8418C0.51785 4.8418 0.150391 5.20926 0.150391 5.76405V18.6755C0.150391 19.2303 0.51785 19.5978 1.07264 19.5978H2.91714C3.10087 18.0307 4.48424 16.7446 6.14501 16.7446C7.80578 16.7446 9.18915 18.0307 9.37288 19.5978H13.0619C13.6167 19.5978 13.9841 19.2303 13.9841 18.6755V5.76405C13.9841 5.20926 13.6167 4.8418 13.0619 4.8418H1.07264ZM10.1799 8.04085C10.3312 8.04085 10.4897 8.1057 10.5833 8.24259L11.1309 8.819C11.3147 9.00273 11.3219 9.34857 11.0445 9.62597L6.51968 14.1508C6.24228 14.4281 5.86762 14.4281 5.68389 14.1508L3.09006 11.5857C2.81267 11.3084 2.81267 10.9337 3.09006 10.75L3.66647 10.2024C3.94386 9.92498 4.2897 9.92498 4.47343 10.2024L6.14501 11.8451L9.74755 8.24259C9.88445 8.1057 10.0285 8.04085 10.1799 8.04085ZM15.8286 8.53079C15.2738 8.53079 14.9064 8.89825 14.9064 9.45304V18.6755C14.9064 19.1367 15.2738 19.5978 15.8286 19.5978C16.0124 18.0307 17.3957 16.7446 19.0565 16.7446C20.7173 16.7446 22.1006 17.937 22.2844 19.5978H23.2066C23.7614 19.5978 24.1289 19.2303 24.1289 18.6755V14.0643C24.1289 13.2357 23.3795 12.2198 23.3795 12.2198L21.3621 9.45304C20.901 8.89825 20.6236 8.53079 19.9788 8.53079H15.8286ZM17.6731 10.3753H19.8923C20.076 10.3753 20.267 10.5482 20.267 10.5482L22.1979 13.2285C22.3816 13.5059 22.5726 13.7941 22.5726 13.9778H17.6731V10.3753ZM6.14501 17.9262C4.97419 17.9262 4.01231 18.8881 4.01231 20.0589C4.01231 21.2297 4.97419 22.1916 6.14501 22.1916C7.31584 22.1916 8.27771 21.2297 8.27771 20.0589C8.27771 18.8881 7.31584 17.9262 6.14501 17.9262ZM19.0565 17.9262C17.8857 17.9262 16.9238 18.8881 16.9238 20.0589C16.9238 21.2297 17.8857 22.1916 19.0565 22.1916C20.2273 22.1916 21.1892 21.2297 21.1892 20.0589C21.1892 18.8881 20.2273 17.9262 19.0565 17.9262Z" fill="black"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_12488_3968">
+										<rect width="23.9785" height="23.9785" fill="white" transform="translate(0.150391 0.386719)"></rect>
+									</clipPath>
+								</defs>
+							</svg></span>
+						Free Shipping over <span class="money" style="padding-left:3px">US$100</span>
+					</p>
+					<p>
+						<span><svg xmlns="http://www.w3.org/2000/svg" width="33" height="24" viewBox="0 0 33 24" fill="none">
+								<circle cx="14.9581" cy="10.0547" r="8.92383" fill="black"></circle>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.2458 5.65918C15.0918 5.65918 14.928 5.70111 14.8067 5.83074C14.6887 5.95686 14.6554 6.11918 14.6554 6.26377V6.64285C13.5504 6.90392 12.8002 7.76545 12.8002 8.82702C12.8002 9.45066 13.0583 9.9083 13.4313 10.2551C13.793 10.5915 14.2645 10.8253 14.6984 11.0228C14.7847 11.0621 14.8691 11.0998 14.9514 11.1365L14.9515 11.1366L14.9515 11.1366C15.2998 11.2921 15.608 11.4298 15.8507 11.5934C16.1415 11.7895 16.2698 11.9777 16.2698 12.2117C16.2698 12.4537 16.1682 12.6323 16.0063 12.7576C15.8377 12.888 15.5932 12.9666 15.3166 12.9666C14.6966 12.9666 14.2036 12.6675 13.9403 12.4701L13.9301 12.4624L13.9191 12.4557C13.8026 12.3839 13.6559 12.3227 13.4928 12.3375C13.3174 12.3535 13.1809 12.4514 13.0826 12.5825L13.0768 12.5902L12.9268 12.822C12.8289 12.937 12.7613 13.0852 12.7766 13.253C12.7926 13.4291 12.8943 13.5676 13.0213 13.664C13.3011 13.8873 13.857 14.26 14.6554 14.3957V14.7891C14.6554 14.9296 14.6942 15.0864 14.8203 15.2038C14.9428 15.3178 15.1012 15.3512 15.2458 15.3512H15.3308C15.4847 15.3512 15.6486 15.3093 15.7699 15.1796C15.8878 15.0535 15.9212 14.8912 15.9212 14.7466V14.3893C17.0966 14.1503 17.8189 13.2522 17.8189 12.1692C17.8189 11.5222 17.5649 11.0479 17.1905 10.6902C16.8274 10.343 16.3542 10.1087 15.9181 9.91563C15.8088 9.86722 15.7028 9.8217 15.6005 9.77782L15.6005 9.7778C15.2768 9.63884 14.9914 9.51634 14.762 9.37069C14.4691 9.18485 14.3493 9.01161 14.3493 8.7987C14.3493 8.44328 14.7017 8.04377 15.3449 8.04377C15.849 8.04377 16.2466 8.25372 16.4587 8.40342L16.4696 8.4111L16.4811 8.41772C16.6048 8.48839 16.7633 8.54843 16.9349 8.51723C17.1194 8.48368 17.2465 8.35933 17.3291 8.21489L17.4603 7.96698C17.5255 7.84563 17.5738 7.69694 17.5479 7.53776C17.5205 7.36899 17.4184 7.2406 17.2855 7.15153C17.0259 6.97402 16.5699 6.71063 15.9212 6.62023V6.22128C15.9212 6.08074 15.8824 5.92399 15.7562 5.80652C15.6338 5.69254 15.4754 5.65918 15.3308 5.65918H15.2458Z" fill="white"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M28.391 9.56532C28.391 16.986 22.5221 22.9764 15.0872 22.9764L28.391 9.56532ZM15.0872 22.9764C7.65237 22.9764 1.61951 16.9435 1.61951 9.52284L15.0872 22.9764Z" fill="white"></path>
+								<path d="M1.61951 9.52284C1.61951 16.9435 7.65237 22.9764 15.0872 22.9764C22.5221 22.9764 28.391 16.986 28.391 9.56532H31.359L25.7368 1.29492L20.1288 9.56532H24.4868" stroke="black" stroke-width="1.39435" stroke-miterlimit="2.61313" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</span>
+						Buy Now, Pay Later
+					</p>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</section>
+
+{% assign giftProduct = false %}
+{% assign giftPriceLimit = 0 %}
+{% assign giftQuantity = 0 %}
+{% assign giftDiscount = 0 %}
+
+{% if section.blocks.size > 0 %}
+	{%- for block in section.blocks -%}
+		{% if block.type == 'gift' %}
+			{% if block.settings.disable == false %}
+				{% assign giftProduct = block.settings.product %}
+				{% assign giftPriceLimit = block.settings.price_limit %}
+				{% assign giftQuantity = block.settings.quantity %}
+				{% assign giftDiscount = block.settings.discount %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{% assign enableProductGift = section.settings.enable_product_gift %}
+{% assign giftTresholdPdm = shop.metaobjects['sidecart_gamification_tresholds']['sidecart-gamification-tresholds-swspsm6c']['product_gift'].value %}
+{% assign productGiftPdm = section.settings.product_free_gift %}
+
+
+{% render 'slidecart-insert', 
+	giftProduct: giftProduct, 
+	giftPriceLimit: giftPriceLimit, 
+	giftQuantity: giftQuantity, 
+	giftDiscount: giftDiscount, 
+	enableProductGift: enableProductGift,
+	giftTresholdPdm: giftTresholdPdm,
+	productGiftPdm: productGiftPdm 
+%}
+
+{% schema %}
+	{
+		"name": "t:sections.slidecart.name",
+		"class": "section-slidecart",
+		"settings": [
+			{
+				"type": "header",
+				"content": "Default upsell products",
+				"info": "This is default list of products for all pages"
+			},
+            {
+                "type": "text",
+                "id": "upsell_heading",
+                "label": "t:common.heading.label"
+            },
+			{
+				"type": "product",
+				"id": "upsell_product_first",
+				"label": "Product"
+			},
+			{
+				"type": "textarea",
+				"id": "upsell_product_first_description",
+				"label": "Product description"
+			},
+			{
+				"type": "product",
+				"id": "upsell_product_second",
+				"label": "Product"
+			},
+			{
+				"type": "textarea",
+				"id": "upsell_product_second_description",
+				"label": "Product description"
+			},
+			{
+				"type": "product",
+				"id": "upsell_product_third",
+				"label": "Product"
+			},
+			{
+				"type": "textarea",
+				"id": "upsell_product_third_description",
+				"label": "Product description"
+			},
+			{
+				"type": "header",
+				"content": "Sidecart Timer",
+				"info": "Use the checkbox to enable either the new or old timer. Make sure to select only one."
+			},
+			{
+				"type": "checkbox",
+				"id": "sidecart_timer_old_enable",
+				"label": "Enable old Sidecart Timer",
+				"default": false
+			},
+			{
+				"type": "checkbox",
+				"id": "sidecart_timer_new_enable",
+				"label": "Enable new Sidecart Timer",
+				"default": false
+			},
+			{
+				"type": "text",
+				"id": "start_date",
+				"label": "Start Date",
+				"info": "Required format: 'MM-DD-YYYY HH:MM, Example: 12-31-2024 24:00"
+			},
+			{
+				"type": "text",
+				"id": "finish_date",
+				"label": "Finish Date",
+				"info": "Required format: 'MM-DD-YYYY HH:MM, Example: 12-31-2024 24:00"
+			},
+			{
+				"type": "text",
+				"id": "label_ends",
+				"label": "Label Ends in",
+				"default": "Sales Ends In:"
+			},
+			{
+				"type": "text",
+				"id": "label_days",
+				"label": "Label Days",
+				"default": "DAYS"
+			},
+			{
+				"type": "text",
+				"id": "label_hours",
+				"label": "Label Hours",
+				"default": "HOURS"
+			},
+			{
+				"type": "text",
+				"id": "label_minutes",
+				"label": "Label Minutes",
+				"default": "MINUTES"
+			},
+			{
+				"type": "text",
+				"id": "label_seconds",
+				"label": "Label Seconds",
+				"default": "SECONDS"
+			},
+			{
+				"type": "checkbox",
+				"id": "enable_free_shipping_treshold",
+				"label": "t:sections.slidecart.settings.enable_free_shipping.label",
+				"default": false
+			},
+			{
+				"type": "checkbox",
+				"id": "enable_product_gift",
+				"label": "t:sections.slidecart.settings.enable_product_gift.label",
+				"default": false
+			},
+			{
+				"type": "product",
+				"id": "product_free_gift",
+				"label": "t:sections.slidecart.settings.product_gift.label"
+			},
+      {
+        "type": "image_picker",
+        "id": "icon_product_gift_clean",
+        "label": "Icon product gift clean"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_product_gift_full",
+        "label": "Icon product gift full"
+      },
+      {
+        "type": "range",
+        "id": "icon_gift_width",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon Product gift width",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "icon_gift_height",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon Product gift height",
+        "default": 26
+      },
+			{
+				"type": "checkbox",
+				"id": "enable_show_gift_price",
+				"label": "t:sections.slidecart.settings.enable_show_gift_price.label",
+				"default": false
+			},
+			{
+				"type": "richtext",
+				"id": "copy_get_free_shipping",
+				"label": "t:sections.slidecart.settings.copy_get_free_shipping.label",
+				"info":  "t:sections.slidecart.settings.copy_get_free_shipping.info",
+				"default": "<p>You are &price-left& away from <strong>Free Shipping!<\/strong><\/p>"
+			},
+			{
+				"type": "richtext",
+				"id": "copy_get_product_free",
+				"label": "t:sections.slidecart.settings.copy_get_product_free.label",
+				"info": "t:sections.slidecart.settings.copy_get_product_free.info",
+				"default": "<p>You’re &price-left& away from a <strong>FREE Full-Size Serum worth<\/strong> &product-price&<\/p>"
+			},
+			{
+				"type": "richtext",
+				"id": "copy_congrats",
+				"label": "t:sections.slidecart.settings.copy_congrats.label",
+				"info": "t:sections.slidecart.settings.copy_congrats.info",
+				"default": "<p>Congrats! You've unlocked your Free &product-title&<\/p>"
+			},
+			{
+				"type": "header",
+				"content": "Urgency Note"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_urgency_note",
+				"label": "Show Urgency Note",
+				"default": true
+			},
+			{
+				"type": "text",
+				"id": "urgency_note_content",
+				"label": "Full Content",
+				"default": "Due to high demand, [] $quantity_label only saved for 30 minutes."
+			},
+			{
+				"type": "text",
+				"id": "urgency_note_label_single",
+				"label": "Single Label",
+				"default": "Checkout now!"
+			},
+			{
+				"type": "product_list",
+				"id": "urgency_note_product_list",
+				"label": "Products"
+			}
+		],
+		"blocks": [
+			{
+				"type": "gift",
+				"name": "t:sections.slidecart.blocks.gift.name",
+				"limit": 1,
+				"settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product.label"
+                    },
+					{
+						"type": "text",
+						"id": "price_limit",
+						"label": "t:sections.slidecart.blocks.gift.settings.price_limit.label",
+						"default": "200"
+					},
+					{
+						"type": "text",
+						"id": "quantity",
+						"label": "t:sections.slidecart.blocks.gift.settings.quantity.label",
+						"default": "1"
+					},
+					{
+						"type": "text",
+						"id": "discount",
+						"label": "t:sections.slidecart.blocks.gift.settings.discount.label"
+					},
+					{
+						"type": "checkbox",
+						"id": "disable",
+						"label": "t:sections.slidecart.blocks.gift.settings.disable.label",
+						"default": false
+					}
+				]
+			},
+			{
+                "type": "saving",
+                "name": "t:common.saving.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label",
+                        "default": "Black Friday Savings"
+                    },
+                    {
+                        "type":"color",
+                        "id":"color",
+                        "label":"t:common.color.label",
+                        "default":"#C4121A"
+                    }
+                ]
+            },
+			{
+				"name": "trustpilot",
+				"type": "trustpilot",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text_area_first",
+						"label": "first content",
+						"default": "<p>Excellent <b>4.4</b></p>"
+					},
+					{
+						"type": "image_picker",
+						"id": "starts",
+						"label": "imagen starts trustpilot"
+					},
+					{
+						"type": "text",
+						"id": "second_text_content",
+						"label": "second text content",
+						"default": "reviews on"
+					},
+					{
+						"type": "image_picker",
+						"id": "logo",
+						"label": "logo trustpilot"
+					}
+				]
+			},
+			{
+				"name": "upsell",
+				"type": "upsell",
+				"settings": [
+					{
+						"type": "url",
+						"id": "page_url",
+						"label": "Select the page"
+					},
+					{
+						"type": "product",
+						"id": "upsell_product_first",
+						"label": "Product"
+					},
+					{
+						"type": "textarea",
+						"id": "upsell_product_first_description",
+						"label": "Product description"
+					},
+					{
+						"type": "product",
+						"id": "upsell_product_second",
+						"label": "Product"
+					},
+					{
+						"type": "textarea",
+						"id": "upsell_product_second_description",
+						"label": "Product description"
+					},
+					{
+						"type": "product",
+						"id": "upsell_product_third",
+						"label": "Product"
+					},
+					{
+						"type": "textarea",
+						"id": "upsell_product_thid_description",
+						"label": "Product description"
+					}
+				]
+			}
+		]
+	}
+{% endschema %}

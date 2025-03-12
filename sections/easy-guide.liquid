@@ -1,0 +1,131 @@
+{% if section.blocks.size < 4 %}
+<style>
+    /* specical for desktop */
+    @media only screen and (min-width:769px){
+        #shopify-section-{{section.id}} .swiper-wrapper {
+            {% if section.blocks.size == 3 %}
+                width: 842px !important;
+            {% endif %}
+            {% if section.blocks.size == 2 %}
+                width: 540px !important;
+            {% endif %}
+            margin: 0 auto !important;
+        }
+    }    
+</style>
+{% endif %}
+
+<!-- -- how to use start -- -->
+<div class="see_it 1 section bg_yellow {{ section.settings.custom_class }}" id="see_it_section">
+    <div class="container">
+        <div class="ms-0 p-0 mb-3">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB text-lg-center">
+                    {{ section.settings.heading }}
+                </h2>
+            {% endif %}
+        </div>
+        <div class="see_slider_wrapper pb-0">
+            <div class="swiper see_slider see_slider4 step_slider">
+                {% if section.blocks.size > 0 %}
+                    <div class="swiper-wrapper">
+                        {%- for block in section.blocks -%}
+                            <div class="swiper-slide">
+                                <div class="see_item">
+                                    {% if block.settings.image != blank %}
+                                        <img src="{{ block.settings.image | img_url: '350x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                    {% endif %}
+                                    <div class="see_item_info">
+                                        <h5>STEP {{ forloop.index }}:</h5>
+                                        {% if block.settings.text != blank %}
+                                            {{ block.settings.text }}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </div>
+                {% endif %}
+
+                <div class="swiper-pagination position-relative"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- how to use end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.easy-guide.name",
+        "class": "section-easy-guide",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "custom_class",
+                "label": "Custom Class"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.easy-guide.name",
+                "settings": {
+                    "heading": "Quick start: easy guide to glowy skin"
+                },
+                "blocks": [
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_quick_step_1.webp",
+                            "text": "<p>Download the Qure Skincare app and follow the instructions to set up your profile. Then turn on your Bluetooth and pair your Q-Rejuvalight Pro Facewear with the app.<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_quick_step_2.webp",
+                            "text": "<p>Wash and dry your face prior to use, removing all makeup. Then place and position the Q-Rejuvalight Pro on your face and adjust the strap so it fits comfortably. Hold button for 2-3 seconds to turn device ON<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_quick_step_3.webp",
+                            "text": "<p>Open the Qure Skincare app and customize your treatment by selecting which treatment (Anti-Aging or Anti-Breakout) you want on 5 facial areas. Once programmed, then press start.<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_quick_step_4.webp",
+                            "text": "<p>The treatment will automatically turn OFF after 3 minutes. Remove the Q-Rejuvalight Pro from face and clean with wipe. Then follow Qure All-In-One Face Serum or your regular skin care routine.<\/p>"
+                        }
+                    }                   
+                ]
+			}
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,269 @@
+<!-- mi-patches skincare_slider section start -->
+<div class="patches_ingredients mw-949 section pt-md-0">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="section_header text-md-center mw-546">
+                <h2 class="title-lg paddingB">{{ section.settings.heading }}
+                </h2>
+            </div>     
+        {% endif %}
+
+        <div class="accordion skincare_right" id="accordionExample_pi">
+            <div class="pi_grid">
+                {%- for block in section.blocks limit:4 -%}
+                    {% case block.type %}
+                        {% when 'product' %}
+                            <div class="serum_bl_wrap">
+                                {% if block.settings.image != blank %}
+                                    <div class="serum_bl_img">
+                                        <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                                    </div>
+                                {% endif %}
+                                <div class="serum_bl_info">
+                                    {% if block.settings.heading != blank %}
+                                        <h3>{{ block.settings.heading }}</h3>
+                                    {% endif %}
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        {% when 'option' %}
+                            <div class="accordion-item pi-item">
+                                <h2 class="accordion-header" id="heading_second_{{ forloop.index }}">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse_second_{{ forloop.index }}" aria-expanded="true" aria-controls="collapse_second_{{ forloop.index }}">
+                                        <div class="pi_header">
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                                            {% endif %}
+                                            {% if block.settings.heading != blank %}
+                                                <div class="pi_heading">{{ block.settings.heading }}</div>
+                                            {% endif %}
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapse_second_{{ forloop.index }}" class="accordion-collapse collapse {% if forloop.index == 2 %}show{% endif %}" aria-labelledby="heading_second_{{ forloop.index }}"
+                                    data-bs-parent="#accordionExample_pi">
+                                    <div class="accordion-body">
+                                        {{ block.settings.text }}
+                                    </div>
+                                </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+            <div class="pi_grid">
+                {%- for block in section.blocks offset:4 limit:4 -%}
+                    {% case block.type %}
+                        {% when 'product' %}
+                            <div class="serum_bl_wrap">
+                                {% if block.settings.image != blank %}
+                                    <div class="serum_bl_img">
+                                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                                    </div>
+                                {% endif %}
+                                <div class="serum_bl_info">
+                                    {% if block.settings.heading != blank %}
+                                        <h3>{{ block.settings.heading }}</h3>
+                                    {% endif %}
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        {% when 'option' %}
+                            <div class="accordion-item pi-item">
+                                <h2 class="accordion-header" id="heading_{{ forloop.index }}">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse_{{ forloop.index }}" aria-expanded="true" aria-controls="collapse_{{ forloop.index }}">
+                                        <div class="pi_header">
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                                            {% endif %}
+                                            {% if block.settings.heading != blank %}
+                                                <div class="pi_heading">{{ block.settings.heading }}</div>
+                                            {% endif %}
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapse_{{ forloop.index }}" class="accordion-collapse collapse" aria-labelledby="heading_{{ forloop.index }}"
+                                    data-bs-parent="#accordionExample_pi">
+                                    <div class="accordion-body">
+                                        {{ block.settings.text }}
+                                    </div>
+                                </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+        </div>
+
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'button' %}
+                    <div class="mw-546 mx-auto mt-4">
+                        <a href="{{ block.settings.button_url }}" class="btn btn-lg btn-primary buy_btn" title="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</a>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+<!-- mi-patches skincare_slider section end -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.accelerate-results.name",
+        "class": "section-accelerate-results",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "product",
+                "name": "t:common.product.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "option",
+                "name": "t:common.option.name",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.accelerate-results.name",
+                "settings": {
+                    "heading": "Accelerate your results with our scientifically backed serums"
+                },
+                "blocks": [
+                    {
+                        "type": "product",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/u_serum_2.webp",
+                            "heading": "For fine lines and wrinkles",
+                            "text": "(Hydra-Soothing Serum)"
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "heading": "Beta Glucon",
+                            "text": "<p>A hydrating boost for your skin. Improves skin barrier, smooths skin, and is packed with antioxidants.<\/p>",
+                            "image": "shopify:\/\/shop_images\/pi_caffeine.webp"
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "heading": "Niacinamide",
+                            "text": "<p>Helps with most skin concerns from soothing, brightening, hydrating and clarifying, to reducing the look of fine lines and wrinkles.<\/p>",
+                            "image": "shopify:\/\/shop_images\/pi_niacinamide.webp"
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "heading": "Tripeptide-1 Peptide",
+                            "text": "<p>Proven to stimulate the production of dermal protein, slowing the skin's ageing process. Helps the skin retain water and restore elasticity, and reduces appearance of wrinkles<\/p>",
+                            "image": "shopify:\/\/shop_images\/pi_acetyl.webp"
+                        }
+                    },
+                    {
+                        "type": "product",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/u_serum_1.webp",
+                            "heading": "For dark spots and uneven skintone",
+                            "text": "(Rejuvenating Serum)"
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "heading": "Epidermal Growth Factor",
+                            "text": "<p>Works at a cellular level to repair and rejuvenate skin. Reduces appearance of wrinkles, improves hydration, and prevents pigmentation.<\/p>",
+                            "image": "shopify:\/\/shop_images\/pi_epidermal.webp"
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "heading": "Niacinamide",
+                            "text": "<p>Helps with most skin concerns from soothing, brightening, hydrating and clarifying, to reducing the look of fine lines and wrinkles.<\/p>",
+                            "image": "shopify:\/\/shop_images\/pi_niacinamide.webp"
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "heading": "Tranexamic Acid",
+                            "text": "<p>Helps to fade the look of dark spots and discolouration. Assists with brightening and evening skin tone and reducing the appearance of texture.<\/p>",
+                            "image": "shopify:\/\/shop_images\/pi_licorice.webp"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "settings": {
+                            "button_label": "Regain Your Confidence",
+                            "button_url": "#new-landing-purchase"
+                        }
+                    }
+                ]             
+			}
+        ]
+    }
+{% endschema %}

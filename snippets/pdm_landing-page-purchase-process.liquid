@@ -1,0 +1,297 @@
+{% comment %}
+  Render the purchase process section with fo steps and a button to add to cart.
+  The products came from metaobject for default
+
+  Needs:
+  - pdm_landing-purchase-icons
+  - pdm_landing-purchase-step1-inputs
+  - pdm_landing-purchase-step1-cards-container-mobile
+  - pdm_landing-purchase-step2-inputs
+  - pdm_landing-purchase-step3-inputs
+  - pdm_landing-purchase-step4-inputs
+  - pdm_landing-purchase-buttons
+  - pdm_landing-purchase-breadcrumbs
+
+  all the metafields need it, it's from the page
+
+  Usage:
+  {% render 'pdm_landing-page-purchase-process' %}
+ {% endcomment %}
+
+
+
+{% liquid
+  #######
+  # general settings
+  #######
+  assign general_settings = page.metafields.custom.general_information_purchase_process.value
+
+  #######
+  # metaFields / metaObjects
+  #######
+
+  # product1 / mix
+  assign products1 = page.metafields.custom.landing_product_one.value
+  assign products1_products = products1.list_products.value
+  assign products1_type = products1.select_type.value
+  assign products1_refill_info = products1.refill_product.value
+  assign products1_refill_product = products1.refill_product.value.product_refill.value
+  assign products1_refill_product_2 = products1.refill_product.value.product_refill_2.value
+
+  # each mix product
+  ## for to split and general info
+  for data in products1_products
+    if forloop.index == 1
+      assign products1_product_1_month = data
+    elsif forloop.index == 2
+      assign products1_product_2_month = data
+    elsif forloop.index == 3
+      assign products1_product_3_month = data
+    endif
+  endfor
+  ## split info only for products
+  assign first_products1_product = products1_product_1_month.data.value
+  assign second_products1_product = products1_product_2_month.data.value
+  assign third_products1_product = products1_product_3_month.data.value
+  #######
+  # end products1 / mix
+
+  # product2 / silver
+  assign products2 = page.metafields.custom.landing_product_2.value
+  assign products2_products = products2.list_products.value
+  assign products2_type = products2.select_type.value
+  assign products2_refill_info = products2.refill_product.value
+  assign products2_refill_product = products2.refill_product.value.product_refill.value
+  assign products2_refill_product_2 = products2.refill_product.value.product_refill_2.value
+
+  for data in products2_products
+    if forloop.index == 1
+      assign products2_product_1_month = data
+    elsif forloop.index == 2
+      assign products2_product_2_month = data
+    elsif forloop.index == 3
+      assign products2_product_3_month = data
+    endif
+  endfor
+
+  assign first_products2_product = products2_product_1_month.data.value
+  assign second_products2_product = products2_product_2_month.data.value
+  assign third_products2_product = products2_product_3_month.data.value
+
+  # end products2 / products2
+
+  # products3 / rejuvenating
+  assign products3 = page.metafields.custom.landing_product_3.value
+  assign products3_type = products3.select_type.value
+  assign products3_products = products3.list_products.value
+  assign products3_refill_info = products3.refill_product.value
+  assign products3_refill_product = products3.refill_product.value.product_refill.value
+  assign products3_refill_product_2 = products3.refill_product.value.product_refill_2.value
+
+  for data in products3_products
+    if forloop.index == 1
+      assign products3_product_1_month = data
+    elsif forloop.index == 2
+      assign products3_product_2_month = data
+    elsif forloop.index == 3
+      assign products3_product_3_month = data
+    endif
+  endfor
+
+  assign first_products3_product = products3_product_1_month.data.value
+  assign second_products3_product = products3_product_2_month.data.value
+  assign third_products3_product = products3_product_3_month.data.value
+
+  #######
+
+  assign checkIcon = ''
+  capture checkIcon
+    render 'pdm_landing-purchase-icons', icon: 'check-value'
+  endcapture
+
+  assign crossIcon = ''
+  capture crossIcon
+    render 'pdm_landing-purchase-icons', icon: 'cross-value'
+  endcapture
+
+  assign starIcon = ''
+  capture starIcon
+    render 'pdm_landing-purchase-icons', icon: 'star'
+  endcapture
+%}
+<div class="available_bar">
+  <p>{{ "microInfusionLandingPage.redLabel.title" | t }}</p>
+</div>
+<section id="new-landing-purchase" class="new-landing-purchase">
+  <div class="container">
+    <div class="landing-container-title">
+      <h3>{{ general_settings.title }}</h3>
+      <p>{{ general_settings.subtitle }}</p>
+    </div>
+    <div id="landing-breadcrumbs" class="landing-breadcrumbs-main">
+      {% render 'pdm_landing-purchase-breadcrumbs', generalSettings: general_settings %}
+    </div>
+    {% comment %} main panel container {% endcomment %}
+    <div id="main-panel-lading">
+      <div class='main-panel-wrapper'>      
+      {% comment %} panel 1 {% endcomment %}
+      <div id="landing-step-one" class="landing-panel panel-hidden">
+        <div class="lading-one-title-container">
+          <h3>{{ general_settings.title_component }}</h3>
+        </div>
+        {% comment %} products1 / mix {% endcomment %}
+        {% render 'pdm_landing-purchase-step1-inputs',
+          productOne: third_products1_product,
+          productOneInfo: products1_product_3_month,
+          productTwo: second_products1_product,
+          productTwoInfo: products1_product_2_month,
+          productThree: first_products1_product,
+          productThreeInfo: products1_product_1_month,
+          name: 'products1',
+          checkIcon: checkIcon,
+          crossIcon: crossIcon,
+          starIcon: starIcon
+        %}
+        {% comment %} products2 / silver {% endcomment %}
+        {% render 'pdm_landing-purchase-step1-inputs',
+          productOne: third_products2_product,
+          productOneInfo: products2_product_3_month,
+          productTwo: second_products2_product,
+          productTwoInfo: products2_product_2_month,
+          productThree: first_products2_product,
+          productThreeInfo: products2_product_1_month,
+          name: 'products2',
+          checkIcon: checkIcon,
+          crossIcon: crossIcon,
+          starIcon: starIcon
+        %}
+
+        {% comment %} products3 / gold {% endcomment %}
+        {% render 'pdm_landing-purchase-step1-inputs',
+          productOne: third_products3_product,
+          productOneInfo: products3_product_3_month,
+          productTwo: second_products3_product,
+          productTwoInfo: products3_product_2_month,
+          productThree: first_products3_product,
+          productThreeInfo: products3_product_1_month,
+          name: 'products3',
+          checkIcon: checkIcon,
+          crossIcon: crossIcon,
+          starIcon: starIcon
+        %}
+        {% comment %} mobile {% endcomment %}
+        <div id="landing-purchase-mobile" class="landing-purchase-mobile">
+          {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+            productOne: third_products1_product,
+            productOneInfo: products1_product_3_month,
+            productTwo: second_products1_product,
+            productTwoInfo: products1_product_2_month,
+            productThree: first_products1_product,
+            productThreeInfo: products1_product_1_month,
+            name: 'products1',
+            checkIcon: checkIcon,
+            crossIcon: crossIcon
+          %}
+          {% comment %} products2 / silver {% endcomment %}
+          {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+            productOne: third_products2_product,
+            productOneInfo: products2_product_3_month,
+            productTwo: second_products2_product,
+            productTwoInfo: products2_product_2_month,
+            productThree: first_products2_product,
+            productThreeInfo: products2_product_1_month,
+            name: 'products2',
+            checkIcon: checkIcon,
+            crossIcon: crossIcon
+          %}
+
+          {% comment %} products3 / gold {% endcomment %}
+          {% render 'pdm_landing-purchase-step1-cards-container-mobile',
+            productOne: third_products3_product,
+            productOneInfo: products3_product_3_month,
+            productTwo: second_products3_product,
+            productTwoInfo: products3_product_2_month,
+            productThree: first_products3_product,
+            productThreeInfo: products3_product_1_month,
+            name: 'products3',
+            checkIcon: checkIcon,
+            crossIcon: crossIcon
+          %}
+        </div>
+      </div>
+      {% comment %} panel 2 {% endcomment %}
+      <div id="landing-step-two" class="landing-panel panel-hidden">
+        {% render 'pdm_landing-purchase-step2-inputs',
+          products1_type: products1_type,
+          products2_type: products2_type,
+          products3_type: products3_type,
+          generalSettings: general_settings
+        %}
+      </div>
+      {% comment %} panel 3 {% endcomment %}
+      <div id="landing-step-three" class="landing-panel panel-hidden">
+        {% render 'pdm_landing-purchase-step3-inputs',
+          generalSettings: general_settings,
+          nameOne: 'step3-price-one',
+          nameTwo: 'step3-price-two'
+        %}
+      </div>
+      {% comment %} panel 4 {% endcomment %}
+      <div id="landing-step-fourth" class="landing-panel panel-hidden">
+        <div class="landing-fourth-title-container">
+          <h3>{{ general_settings.step_4_title }}</h3>
+        </div>
+        <div class="landing-fourth-inputs-container">
+          {% render 'pdm_landing-purchase-step4-inputs',
+            productRefill: products1_refill_product,
+            productRefill2: products1_refill_product_2,
+            productRefillInfo: products1_refill_info,
+            generalSettings: general_settings,
+            checkIcon: checkIcon,
+            crossIcon: crossIcon,
+            starIcon: starIcon,
+            uniqueId: 'collapseFour',
+            parentContainer: 'parent-products4',
+            name: 'products4'
+          %}
+          {% render 'pdm_landing-purchase-step4-inputs',
+            productRefill: products2_refill_product,
+            productRefill2: products2_refill_product_2,
+            productRefillInfo: products2_refill_info,
+            generalSettings: general_settings,
+            checkIcon: checkIcon,
+            crossIcon: crossIcon,
+            starIcon: starIcon,
+            uniqueId: 'collapseFive',
+            parentContainer: 'parent-products5',
+            name: 'products5'
+          %}
+          {% render 'pdm_landing-purchase-step4-inputs',
+            productRefill: products3_refill_product,
+            productRefill2: products3_refill_product_2,
+            productRefillInfo: products3_refill_info,
+            generalSettings: general_settings,
+            checkIcon: checkIcon,
+            crossIcon: crossIcon,
+            starIcon: starIcon,
+            parentContainer: 'parent-products6',
+            uniqueId: 'collapseSix',
+            name: 'products6'
+          %}
+        </div>
+      </div>
+      <div class="landing-buttons-container">
+          <a 
+            hidden
+            href="{{ routes.cart_add_url }}"
+            id="landing-add-sidecard"
+            class="btn btn-primary buy_btn"
+            data-ajax-cart-request-button
+          >
+          </a>
+        {% render 'pdm_landing-purchase-buttons', generalSettings: general_settings %}
+      </div>
+      </div>
+    </div>  
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<script>
+    {% if collection %}
+        console.log('https://admin.shopify.com/store/qure-skincare/collections/{{ collection.id }}')
+        console.log('handle: {{ collection.handle }}')
+        console.log('template name: {{ template }}')
+    {% endif %}
+    
+    {% if product %}
+        console.log('https://admin.shopify.com/store/qure-skincare/products/{{ product.id }}')
+        console.log('handle: {{ product.handle }}')
+        console.log('template name: {{ template }}')
+    {% endif %}
+    
+    {% if page %}
+        console.log('https://admin.shopify.com/store/qure-skincare/pages/{{ page.id }}')
+        console.log('handle: {{ page.handle }}')
+        console.log('template name: {{ template }}')
+    {% endif %}
+    
+    {% if blog %}
+        console.log('https://admin.shopify.com/store/qure-skincare/blogs/{{ blog.id }}')
+        console.log('handle: {{ blog.handle }}')
+        console.log('template name: {{ template }}')
+    {% endif %}
+    
+    {% if article %}
+        console.log('https://admin.shopify.com/store/qure-skincare/articles/{{ article.id }}')
+        console.log('handle: {{ article.handle }}')
+        console.log('template name: {{ template }}')
+    {% endif %}
+</script>

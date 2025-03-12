@@ -1,0 +1,91 @@
+.mi_landing_men .refill_review-men {
+    display: flex;
+    align-items: center;
+}
+
+.mi_landing_men .refill_review-men p {
+    margin-left: 12px;
+}
+
+.mi_landing_men .reasons_men {
+    max-width: 887px;
+    margin: 0 auto;
+}
+
+.reasons_wrapper4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.mi_landing_men .imageText_men .aboveText_men {
+    bottom: 20px;
+    top: unset;
+}
+
+.mi_landing_men .choose_serum_men {
+    background: transparent;
+}
+
+.mi_landing_men .ba_wrapper {
+    padding: 24px;
+}
+
+.mi_landing_men .rs_item {
+    border-right: 1px solid rgba(237, 231, 221, 1);
+}
+
+.mi_landing_men .rs_item:last-child {
+    border-right: none;
+}
+
+.mi_landing_men .see_work .play_btn a span h6 {
+    padding-right: 14px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.436px;
+}
+
+.mi_landing_men .see_work .play_btn a {
+    max-width: 217px;
+}
+
+.mi_landing_men .bs_item h4 {
+    word-break: normal;
+}
+
+@media(max-width:767px) {
+    .reasons_wrapper4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mi_landing_men .ba_wrapper {
+        background: var(--clr-yellow);
+    }
+
+    .mi_landing_men .rs_item {
+        border-right: none;
+    }
+
+    .mi_landing_men .see_work .play_btn a span h6 {
+        padding-right: 0px;
+    }
+
+    .mi_landing_men .see_work .play_btn a {
+        max-width: 299px;
+    }
+
+    .mi_landing_men .pmtBlock .pmt_plans .pmt_des {
+        font-size: 10px;
+    }
+
+    .mi_landing_men .pmtBlock .pmt_plans .pmt_options {
+        max-width: 140px;
+    }
+
+    .mi_landing_men .btn.btn-atc {
+        padding: 10px;
+    }
+
+    .mi_landing_men .pmtBlock .pmt_plans .price {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,59 @@
+{%- comment -%} Capture the content for header containing the tracking data {%- endcomment -%}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+
+{% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+
+{%- capture shop_url -%}{{ shop.url | replace: 'https://', '' }}{%- endcapture -%}
+
+{%- assign incoming_var = pageUrl 
+| replace: shop_url, ''
+| replace: '/?section_id=ajax-product-reviews&product=', ''
+-%}
+
+{%- assign product_r = all_products[incoming_var] -%}
+
+{% if product_r != blank %}
+    <div class="reviews_section section" style="padding-bottom:0px;">
+        <div class="container">
+            <div class="section_header text-center mb-3">
+                <div class="title-lg d-none d-md-block"><h2>Real reviews, real results</h2><h2>from people just like you.</h2></div> 
+                <div class="title-lg d-block d-md-none"><h2>Real reviews, real results<br>from people just like you.</h2></div>
+            </div>
+        </div>
+    </div>
+    <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product_r.id }}" data-url="{{ shop.url }}{{ product_r.url }}"></div>
+{% endif %}
+
+
+{% comment %} The example hot to use it: https://www.qureskincare.com/products/q-rejuvalight-pro-facewear?pr=face-serum {% endcomment %}
+
+{% comment %}
+<!--
+<div id="ajax-product-reviews"></div>
+
+<script>
+    if (document.getElementById("ajax-product-reviews")) {
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const pr = urlParams.get('pr');
+
+        if(pr !== undefined)
+        {
+            fetch("{{ shop.url }}?section_id=ajax-product-reviews&product=" + pr, {
+                cache: "force-cache"
+            })
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("ajax-product-reviews").insertAdjacentHTML('beforeend', html);
+            })
+            .catch(error => console.error('Error fetching reviews:', error));
+        }
+    }
+</script>
+-->
+{% endcomment %}

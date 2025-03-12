@@ -1,0 +1,124 @@
+<div class="creative_guide d-none d-lg-block overflow-hidden">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-5 offset-1">
+                <div class="c_guide_info h-100">
+                    <div>
+                        {% if section.settings.heading != blank %}
+                            <h1 class="title-xl mb-2">{{ section.settings.heading | replace: '\n', '<br>' }}</h1>
+                        {% endif %}
+
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text | replace: '\n', '<br>' }}
+                        {% endif %}
+
+                        {% if section.settings.button_label != blank %}
+                            <a href="{{ section.settings.button_url }}" class="btn_white bg-green">{{ section.settings.button_label }}</a>
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6 p-0">
+                <div class="c_guide_img">
+                    {% if section.settings.image != blank %}
+                        <img class="img-fluid" src="{{ section.settings.image | img_url: '900x' }}" alt="{{ block.settings.image.alt | escape }}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_banner d-block d-lg-none">
+    {% if section.settings.image_mobile != blank %}
+        <img class="img-fluid" src="{{ section.settings.image_mobile | img_url: '600x' }}" alt="">
+    {% endif %}
+    <div class="main_b_wrapper text-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="section_header text-center">
+                        {% if section.settings.heading != blank %}
+                          {% if section.settings.heading_tag == 'h1' %}
+                            <h1 class="title-xl">{{ section.settings.heading | replace: '\n', '<br>' }}</h1>
+                            {% else %}
+                            <h2 class="title-xl">{{ section.settings.heading | replace: '\n', '<br>' }}</h2>
+                          {% endif %}
+                        {% endif %}
+
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text | replace: '\n', '<br>' }}
+                        {% endif %}
+
+                        {% if section.settings.button_label != blank %}
+                            <a href="{{ section.settings.button_url }}" class="btn_white">{{ section.settings.button_label }}</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.banner-two-column.name",
+        "class": "section-banner-two-column",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+              "type": "select",
+              "id": "heading_tag",
+              "label": "Heading tag",
+              "options": [
+                {
+                  "value": "h1",
+                  "label": "H1"
+                },
+                {
+                  "value": "h2",
+                  "label": "H2"
+                }
+              ],
+              "default": "h2"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_mobile",
+                "label": "t:common.image_mobile.label"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "t:common.button.label",
+                "info": "t:common.button.info"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.banner-two-column.name"
+			}
+        ]
+    }
+{% endschema %}

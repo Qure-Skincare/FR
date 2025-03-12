@@ -1,0 +1,126 @@
+{
+  "sections": {
+    "banner_QBbh6a": {
+      "type": "banner",
+      "blocks": {
+        "button_hD4WnF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Submit                                        stockist enquiry",
+            "button_url": "#stocklist_form",
+            "classname": "btn_white m-0"
+          }
+        }
+      },
+      "block_order": [
+        "button_hD4WnF"
+      ],
+      "settings": {
+        "heading": "Will you be our next professional partner?",
+        "text": "",
+        "image": "shopify:\/\/shop_images\/distributor_desk.png",
+        "image_mobile": "shopify:\/\/shop_images\/distributor_mob.png",
+        "align_center": true
+      }
+    },
+    "featuredin_G9QkNK": {
+      "type": "featuredin",
+      "blocks": {
+        "image_xKk6xP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_EMwCK9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_TGNjHi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glamour.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_HgjPb9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia.svg",
+            "mobile_hide": true
+          }
+        },
+        "image_iqpk7A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
+            "mobile_hide": true
+          }
+        },
+        "image_7crwVQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
+            "mobile_hide": true
+          }
+        }
+      },
+      "block_order": [
+        "image_xKk6xP",
+        "image_EMwCK9",
+        "image_TGNjHi",
+        "image_HgjPb9",
+        "image_iqpk7A",
+        "image_7crwVQ"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "two_column_box_3YXcNL": {
+      "type": "two-column-box",
+      "blocks": {
+        "heading_KAPtPX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Qure’s Professional Skincare Revolution",
+            "text": "<p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.<\/p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.<\/p><p>Gain maximum advantage of the industry’s consistent growth.<\/p><p>Join the revolution and ecome our professional partner.<\/p>",
+            "code": "",
+            "classname": "section_header mb-3 text-center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KAPtPX"
+      ],
+      "settings": {
+        "classname": "technology_light pt-30 section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "liquid_TJkaw9": {
+      "type": "liquid",
+      "settings": {
+        "code": "<div class=\"stocklist_ftr\">\n        <div class=\"s_f_wrapper\">\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑25.1%<\/div>\n                <p class=\"d-none d-md-block\">Growth of home\n                    beauty devices<\/p>\n                <p class=\"d-block d-md-none\">Growth of home<br>\n                    beauty devices<\/p>\n            <\/div>\n            <div class=\"s_f_item active\">\n                <div class=\"s_f_num\">↑ 5.1%<\/div>\n                <p class=\"d-none d-md-block\">Growth of light\n                    therapy market <\/p>\n                <p class=\"d-block d-md-none\">Growth of light<br>\n                    therapy market <\/p>\n            <\/div>\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑5.6%<\/div>\n                <p class=\"d-none d-md-block\">Growth of blue light therapy market, driven by preference for\n                    non-invasive acne treatment<\/p>\n                <p class=\"d-block d-md-none\">Blue light therapy<br>\n                    non-invasive acne<br> treatment<\/p>\n            <\/div>\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑4.5%<\/div>\n                <p class=\"d-none d-md-block\">Growth of red light therapy market driven by demand of non-invasive\n                    skin rejuvenation\n                    treatment<\/p>\n                <p class=\"d-block d-md-none\">Red light therapy<br>\n                    non-invasive skin<br> rejuvenation treatment<\/p>\n            <\/div>\n        <\/div>\n    <\/div>"
+      }
+    },
+    "liquid_JtRXPD": {
+      "type": "liquid",
+      "settings": {
+        "code": "<div class=\"stocklist_form\" id=\"stocklist_form\">\n    <div class=\"container\">\n        {% form 'contact' %}\n\n{{ form.errors | default_errors }}\n\n            {% if form.posted_successfully? %}\n                <p class=\"errors\">\n                  Thank you! Your email has been sent!\n                <\/p>\n            {% endif %}\n\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_name\" name=\"contact[name]\" class=\"qure_input_field\" placeholder=\"Name\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_company\" name=\"contact[company]\" class=\"qure_input_field\" placeholder=\"Company Name\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"number\" id=\"s_pNumber\" name=\"contact[phone]\" class=\"qure_input_field\" placeholder=\"Phone Number\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"email\" id=\"s_email\" name=\"contact[email]\" class=\"qure_input_field\" placeholder=\"Email\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_location\" name=\"contact[location]\" class=\"qure_input_field\" placeholder=\"Location(City & Country)\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_website\" name=\"contact[website]\" class=\"qure_input_field\" placeholder=\"Website URL\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_company\" name=\"contact[message]\" class=\"qure_input_field\" placeholder=\"Message\">\n            <\/div>\n            <div class=\"qure_form_btn my-4 d-block\">\n                <button type=\"submit\" class=\"btn btn-lg btn-primary buy_btn\">Submit Now<img src=\"{{ 'arrow_right.svg' | asset_url }}\"><\/button>\n            <\/div>\n        <\/form>\n        {% endform %}\n    <\/div>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "banner_QBbh6a",
+    "featuredin_G9QkNK",
+    "two_column_box_3YXcNL",
+    "liquid_TJkaw9",
+    "liquid_JtRXPD"
+  ]
+}

@@ -1,0 +1,278 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "banner_jiVaDe": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "BLACK FRIDAY SALE",
+            "subheading": "21% Off",
+            "text": "SITEWIDE",
+            "wistia_id": "7dqki9g4sz",
+            "wistia_id_mobile": "o6in7qx104",
+            "link_url": "shopify://collections/best-sellers"
+          }
+        },
+        "banner_holiday_EEUPJR": {
+          "type": "banner_holiday",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Exclusive <strong>Holiday</strong> Bundles</p>",
+            "link_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal",
+            "link_label": "Save up to 55% Off"
+          }
+        },
+        "banner_14feb_UbkJgz": {
+          "type": "banner_14feb",
+          "disabled": true,
+          "settings": {
+            "heading": "LOVE YOUR SKIN",
+            "subheading": "<p>Exclusive <strong>Valentine’s Day</strong> Micro-Infusion Bundle</p>",
+            "link_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal#Pro-Aging-Bundles",
+            "link_label": "Save 66% Off"
+          }
+        }
+      },
+      "block_order": [
+        "banner_jiVaDe",
+        "banner_holiday_EEUPJR",
+        "banner_14feb_UbkJgz"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_mobile": "",
+        "image": "shopify://shop_images/banner_best_sellers.png",
+        "image_mobile": "shopify://shop_images/banner_best_sellers_mobile.png",
+        "link_url": "https://qureskincare.com/collections/best-sellers"
+      }
+    },
+    "icons_list_BUTDmx": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_E3nayg": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+          }
+        },
+        "icon_PKBzbi": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/buy-now-ftr.svg",
+            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+          }
+        },
+        "icon_MAhtJW": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/derma-ftr.svg",
+            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+          }
+        },
+        "icon_PncCDy": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/science-ftr.svg",
+            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_E3nayg",
+        "icon_PKBzbi",
+        "icon_MAhtJW",
+        "icon_PncCDy"
+      ],
+      "settings": {
+        "background": "bg-grey"
+      }
+    },
+    "main_results": {
+      "type": "collection-results",
+      "blocks": {
+        "client_card_BHKtXC": {
+          "type": "client_card",
+          "settings": {
+            "image": "shopify://shop_images/collection-darkspots.png",
+            "image_mobile": "shopify://shop_images/img_97139eb9-1588-4473-925c-759542f3ee7f.png",
+            "text": "<p>“I’ve tried numerous serums for my <strong>sun spots</strong> but <strong>nothing worked until I used this mask.</strong> Definitely worth the money.\"</p>",
+            "client": "Teresa S.",
+            "position": "1"
+          }
+        },
+        "doctor_card_mikzkG": {
+          "type": "doctor_card",
+          "settings": {
+            "image": "shopify://shop_images/IC_-_14collection-shah-mi_1.png",
+            "header": "Trusted and recommended by world-leading dermatologists",
+            "text": "<p>\"...[Qure's Micro-Infusion] will help your products penetrate better\"</p>",
+            "client": "Dr Shah, MD Certified Dermatologist",
+            "position": "4"
+          }
+        },
+        "brand_card_ynEhKC": {
+          "type": "brand_card",
+          "settings": {
+            "image": "shopify://shop_images/IC_-_6_a563e08c-6dbc-4b11-9ec4-0a5a6898d8fc.png",
+            "image_mobile": "shopify://shop_images/IC_-_25_d87403c0-c732-4787-b846-74f694162d37.png",
+            "header": "",
+            "text": "",
+            "button_label": "Discover Now",
+            "button_url": "https://www.qureskincare.com/pages/microinfusion",
+            "position": "7"
+          }
+        }
+      },
+      "block_order": [
+        "client_card_BHKtXC",
+        "doctor_card_mikzkG",
+        "brand_card_ynEhKC"
+      ],
+      "settings": {}
+    },
+    "results_NPPBwQ": {
+      "type": "results",
+      "blocks": {
+        "result_JCcEmh": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_jess.webp",
+            "heading": "So much smoother",
+            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Jess",
+            "code": ""
+          }
+        },
+        "result_ecrrRm": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_teresa.webp",
+            "heading": "IT REALLY WORKS!!",
+            "text": "<p>“I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.\"</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Teresa S.",
+            "code": ""
+          }
+        },
+        "result_bNqVyU": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_tiffany.webp",
+            "heading": "Renewed Skin!",
+            "text": "<p>\"My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!\"</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Tiffany L.",
+            "code": ""
+          }
+        },
+        "result_YDr83e": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_anton.webp",
+            "heading": "Can’t go a day without it",
+            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.</p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Anton M.",
+            "code": ""
+          }
+        },
+        "result_47bjXc": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_michelle.webp",
+            "heading": "Zero Maskne for 8 weeks",
+            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Michelle S.",
+            "code": ""
+          }
+        },
+        "result_NmwfpJ": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_june.webp",
+            "heading": "Amazing results!",
+            "text": "<p>“Amazing! I never expected this miracle. I’ve had red blotches above my lips for years and they are vastly improved after using the mask daily for only 6 weeks. I bought it hoping for better skin texture and less wrinkles. It has improved those, but having the redness gone is what I’m<br/>most excited about.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "June T.",
+            "code": ""
+          }
+        },
+        "result_AnCMPk": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_john.webp",
+            "heading": "Healthier-looking glow",
+            "text": "<p>“My skin feels a lot more clear, considerably less oily, and all round a healthier-looking glow. My breakout scars had even been reduced!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "text_country": "Canada",
+            "client": "John P.",
+            "code": ""
+          }
+        },
+        "result_AqGUDT": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_bj_nardi.webp",
+            "heading": "Completely qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "text_country": "Canada",
+            "client": "BJ Nardi",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "result_JCcEmh",
+        "result_ecrrRm",
+        "result_bNqVyU",
+        "result_YDr83e",
+        "result_47bjXc",
+        "result_NmwfpJ",
+        "result_AnCMPk",
+        "result_AqGUDT"
+      ],
+      "settings": {
+        "classname": "mi_landing_result all_bg_gradient_green_tb",
+        "heading": "Results you‘ll see with your own eyes",
+        "heading_reduced": "",
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "icons_list_BUTDmx",
+    "main_results",
+    "results_NPPBwQ"
+  ]
+}

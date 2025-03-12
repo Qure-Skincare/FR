@@ -1,0 +1,285 @@
+@media(max-width:767px) {
+    .my-floating-cart .percent_off {
+            padding-top: 10px !important;
+    }
+
+    .my-floating-cart .drawer__cart-discounts {
+            padding: 10px 20px 13px 20px;
+    }
+
+    .my-floating-cart .review_main {
+            flex-direction: row;
+    }
+
+    .my-floating-cart .discount_flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+
+    .my-floating-cart .discount_flex .percent_off,
+    .my-floating-cart .discount_flex .invest-txt {
+            flex: 0 0 auto;
+            width: 100%;
+    }
+
+    .my-floating-cart .progress_bar {
+            padding: 10px 0 10px 0;
+    }
+
+    .my-floating-cart .drawer__wrapper {
+            right: 485px;
+            max-width: 100%;
+            width: 475px;
+            height: auto
+    }
+
+    .my-floating-cart .payment_info p {
+            font-size: 10px;
+            line-height: 14px;
+    }
+
+    .my-floating-cart p.cart-revi a {
+            font-size: 8px;
+            line-height: 26px;
+    }
+
+    .my-floating-cart p.cart-revi.ship-revi a {
+            font-size: 10px;
+            line-height: 16px;
+            text-decoration: none;
+    }
+
+    .my-floating-cart .drawer__cart-item-price p {
+            font-size: 18px;
+            line-height: 27px;
+    }
+
+    .my-floating-cart .drawer__cart-quantity>p {
+            font-size: 10px;
+            line-height: 15px;
+    }
+
+    .my-floating-cart h3.upsell_title {
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 300;
+    }
+
+    .my-floating-cart h3.upsell_title span {
+            font-size: 9px;
+            line-height: 15px;
+    }
+
+    .my-floating-cart .drawer__cart-subtotal p {
+            font-size: 12px !important;
+            line-height: 22px !important;
+    }
+
+    .my-floating-cart .cart_items_subtotal_price {
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 600;
+    }
+
+    .my-floating-cart .drawer__cart-total-price {
+            font-size: 18px;
+            line-height: 27px
+    }
+
+    .my-floating-cart .insurance-wrapper .switch {
+            width: 30px;
+            height: 16px;
+    }
+
+    .my-floating-cart .insurance-wrapper .slider:before {
+            height: 12px;
+            width: 12px;
+            left: 3px;
+    }
+
+    .my-floating-cart .insurance-wrapper input:checked+.slider:before {
+            -webkit-transform: translateX(13px);
+            -ms-transform: translateX(13px);
+            transform: translateX(13px);
+    }
+}
+
+@media(max-width:556px) {
+    .my-floating-cart .drawer__wrapper {
+            right: 100%;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+    }
+}
+
+/* specical for desktop */
+@media only screen and (min-width:769px) {
+    .my-floating-cart .drawer__cart-discounts {
+        position: sticky !important;
+        top: 46px !important;
+        z-index: 1 !important;
+    }
+}
+
+/* special for mobile */
+@media (max-width: 768px) {
+    .my-floating-cart .drawer__cart-discounts {
+        position: sticky !important;
+        top: 36px !important;
+        z-index: 1 !important;
+    }
+    .upsell_amt {
+        min-width:55px !important;
+    }
+    .my-floating-cart .cart_total-checkout {
+        height: 170px !important;
+        position: sticky !important
+    }
+    .custom-shadow {
+        bottom: 170px !important;
+    }
+    /*.stamped-launcher-button, */iframe#launcher {
+        z-index: 8 !important;
+    }
+}
+
+.my-floating-cart .cart_timer {
+    background-color: #F5F5F5;
+    padding: 4px 0;
+}
+.slide_cart .drawer__cart-total {
+    border-top: none !important;
+}
+
+.my-floating-cart .cart_timer .timer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer_separator {
+    width: 1px;
+    background-color: #C92127;
+    height: 30px;
+    margin: 0 40px
+}
+
+.my-floating-cart .timer_wrapper .timer_countdown {
+    display: flex;
+    color: #C92127;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.my-floating-cart .timer_wrapper .timer_countdown .timer_countdown_heading {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+}
+
+.my-floating-cart .timer_wrapper .timer_countdown .countdown_cart {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.my-floating-cart .timer_wrapper .timer_text {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    color: #C92127;
+    padding: 10px 0;
+}
+
+@media(max-width:556px) {
+    .my-floating-cart .timer_wrapper .timer_text {
+            font-size: 12px;
+            line-height: 12px;
+    }
+    .timer_separator {
+            margin: 0 20px;
+    }
+    .my-floating-cart .timer_wrapper .timer_countdown .timer_countdown_heading {
+            font-size: 12px;
+            line-height: 12px;
+    }
+
+    .my-floating-cart .timer_wrapper .timer_countdown .countdown_cart {
+            margin-left: 20px;
+            font-size: 18px;
+            line-height: 18px;
+    }
+}
+
+/* slidercart timer */
+
+.my-floating-cart .cart_timer {
+    background-color: #F5F5F5;
+    padding: 4px 0;
+}
+
+.my-floating-cart .cart_timer .timer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer_separator {
+    width: 1px;
+    background-color: #C92127;
+    height: 30px;
+    margin: 0 40px
+}
+
+.my-floating-cart .timer_wrapper .timer_countdown {
+    display: flex;
+    color: #C92127;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.my-floating-cart .timer_wrapper .timer_countdown .timer_countdown_heading {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+}
+
+.my-floating-cart .timer_wrapper .timer_countdown .countdown_cart {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.my-floating-cart .timer_wrapper .timer_text {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    color: #C92127;
+    padding: 10px 0;
+}
+
+@media(max-width:556px) {
+    .my-floating-cart .timer_wrapper .timer_text {
+            font-size: 12px;
+            line-height: 12px;
+    }
+    .timer_separator {
+            margin: 0 20px;
+    }
+    .my-floating-cart .timer_wrapper .timer_countdown .timer_countdown_heading {
+            font-size: 12px;
+            line-height: 12px;
+    }
+
+    .my-floating-cart .timer_wrapper .timer_countdown .countdown_cart {
+            margin-left: 20px;
+            font-size: 18px;
+            line-height: 18px;
+    }
+}

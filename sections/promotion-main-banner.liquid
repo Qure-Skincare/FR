@@ -1,0 +1,381 @@
+{%- assign product_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'link' -%}
+            {% assign location_href = block.settings.link_url %}
+        {%- when 'product' -%}
+            {%- assign product_count = product_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<link rel="stylesheet" href="{{ 'homepage_promo.css' | asset_url }}">
+
+<!-- -- main banner start -- -->
+<div class="bf_sale-banners">
+    <!-- hero valentine banner  -->
+    <div class="hero_valentine_banner position-relative main_banner">
+        <div class="container-fluid px-0">
+            {% if section.settings.image != blank %}
+                <picture>
+                    <source media="(min-width:1100px)" srcset="{{ section.settings.image | img_url: 'master' }}">
+                    {% if section.settings.image_mobile %}
+                        <source media="(min-width:720px)" srcset="{{ section.settings.image_mobile | img_url: '720x' }}">
+                        <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | img_url: '540x' }}">
+                    {% endif %}
+                    {% if section.settings.image_mobile %}
+                        <img class="img-fluid" src="{{ section.settings.image_mobile | img_url: '540x' }}" alt="{{ section.settings.image_mobile.alt | escape }}" width="125" height="186">
+                    {% else %}
+                        <img class="img-fluid" src="{{ section.settings.image | img_url: '540x' }}" alt="{{ section.settings.image.alt | escape }}" width="225" height="281" alt="">
+                    {% endif %}
+                </picture>
+            {% endif %}
+            <div class="collection_grid d-md-grid main_b_wrapper py-3">
+                <div class="banner_text w-100 womens_day_offer">
+                    <div class="clinic_results">
+                        {% if section.settings.subheading != '' %}
+                            {{ section.settings.subheading |  replace: '<p>', '' |  replace: '</p>', '' }}
+                        {% endif %}
+                        
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'link' %}
+                                <a href="{{ block.settings.link_url }}" class="btn_black btn mb-0 mt-2 mt-md-4" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                            {% endif %}
+                        {%- endfor -%}
+
+                        {% if section.settings.text != ''  %}{{ section.settings.text |  replace: '<p>', '<p class="d-none d-md-block">' }}{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero valentine banner end  -->
+
+    <!-- Sub banner  -->
+    {%- for block in section.blocks -%}
+        {% if block.type == 'banner' %}
+            <!-- Sub banner  -->
+            <div class="sub_banner main_banner position-relative">
+                {% if block.settings.image != blank %}
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="{{ block.settings.image | img_url: 'master' }}">
+                        {% if block.settings.image_mobile %}
+                            <source media="(min-width:720px)" srcset="{{ block.settings.image_mobile | img_url: '720x' }}">
+                            <source media="(min-width:540px)" srcset="{{ block.settings.image_mobile | img_url: '540x' }}">
+                        {% endif %}
+                        {% if block.settings.image_mobile %}
+                            <img class="img-fluid" src="{{ block.settings.image_mobile | img_url: '540x' }}" alt="{{ block.settings.image_mobile.alt | escape }}" width="125" height="186">
+                        {% else %}
+                            <img class="img-fluid" src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" width="225" height="281" alt="">
+                        {% endif %}
+                    </picture>
+                {% endif %}
+                <div class="main_b_wrapper">
+                    <div class="container">
+                        <div class="sub_banner-content">
+                            {% if block.settings.heading != blank %}
+                                <h2 class="mb-0">
+                                    {{ block.settings.heading }}
+                                </h2>
+                            {% endif %}
+                            {% if block.settings.link_label != blank %}
+                                <a href="{{ block.settings.link_url }}" class="btn_black mb-0">{{ block.settings.link_label }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub banner end -->
+        {% endif %}
+    {%- endfor -%}
+    <!-- Sub banner end -->
+</div>
+<!-- -- main banner end -- -->
+
+
+{% comment %} 
+{% if location_href != blank %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth > 768) {
+            var banner = document.querySelector('.hero_valentine_banner');
+            if (banner) {
+                banner.addEventListener('click', function() {
+                    window.location.href = '{{ location_href }}';
+                });
+            }
+            }
+        });
+    </script>
+{% endif %}
+
+<link rel="stylesheet" href="{{ 'homepage_promo_old.css' | asset_url }}">
+
+<!-- -- main banner start -- -->
+<div class="bf_sale-banners">
+    <!-- hero valentine banner  -->
+    <div class="hero_valentine_banner position-relative main_banner">
+        <div class="container-fluid px-0">
+            {% if section.settings.image != blank %}
+                <picture>
+                    <source media="(min-width:1100px)" srcset="{{ section.settings.image | img_url: 'master' }}">
+                    {% if section.settings.image_mobile %}
+                        <source media="(min-width:720px)" srcset="{{ section.settings.image_mobile | img_url: '720x' }}">
+                        <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | img_url: '540x' }}">
+                    {% endif %}
+                    {% if section.settings.image_mobile %}
+                        <img class="img-fluid" src="{{ section.settings.image_mobile | img_url: '540x' }}" alt="{{ section.settings.image_mobile.alt | escape }}" width="125" height="186">
+                    {% else %}
+                        <img class="img-fluid" src="{{ section.settings.image | img_url: '540x' }}" alt="{{ section.settings.image.alt | escape }}" width="225" height="281" alt="">
+                    {% endif %}
+                </picture>
+            {% endif %}
+            <div class="collection_grid d-md-grid main_b_wrapper py-3">
+                <div class="banner_text w-100">
+                    <div>
+                        <h6><span><img src="https://qureskincaredns.com/new/assets/heart.svg" alt=""></span> {% if section.settings.heading != ''  %}{{ section.settings.heading }}{% endif %} <span><img src="https://qureskincaredns.com/new/assets/heart.svg" alt=""></span></h6>
+                        <h1>{% if section.settings.text != ''  %}{{ section.settings.text |  replace: '<p>', '' |  replace: '</p>', '' }}{% endif %}</h1>
+                        {% if section.settings.subheading != '' %}
+                            {{ section.settings.subheading }}
+                        {% endif %}
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'link' %}
+                                <a href="{{ block.settings.link_url }}" class="btn_black btn mb-0 mt-2 mt-md-4" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+                </div>
+                <div class="holiday_banner d-md-none">
+                    <div class="bundle_slider-main">
+                        <div class="bf_sale-slider pt-md-0">
+                            <div class="swiper holiday_bundle dot_pagination">
+                                <div class="swiper-wrapper">
+                                    {%- for block in section.blocks -%}
+                                        {% if block.type == 'product' %}
+                                            <div class="swiper-slide">
+                                                <div class="new-slide">
+                                                    {% if block.settings.image != '' %}
+                                                        <div class="new_img">
+                                                            <img src="{{ block.settings.image | img_url: '300x' }}" alt="" class="img-fluid">
+                                                        </div> 
+                                                    {% endif %}
+                                                    <div class="new_content">
+                                                        <p>{% if section.settings.heading != ''  %}{{ section.settings.heading }}{% endif %} <span class="discount_badge">{% if section.settings.text != ''  %}{{ section.settings.text |  replace: '<p>', '' |  replace: '</p>', '' }}{% endif %}</span></p>
+                                                        <h4 class="new-header">{{ block.settings.heading |  replace: '<p>', '' |  replace: '</p>', '' }}</h4>
+                                                        <a href="{{ block.settings.product_url }}" class="btn btn-light rounded-pill mt-2">Shop now<img src="{{ 'arrow_upright.webp' | asset_url }}" alt="" class="ms-1"></a>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        {% endif %}
+                                    {%- endfor -%}
+                                </div>
+                            </div>
+                            <div
+                                class="holiday_bundle-swiper-prev swiper-button-prev swiper-button d-md-flex d-none">
+                            </div>
+                            <div
+                                class="holiday_bundle-swiper-next  swiper-button-next swiper-button d-md-flex d-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero valentine banner end  -->
+
+    {%- for block in section.blocks -%}
+        {% if block.type == 'banner' %}
+            <!-- Sub banner  -->
+            <div class="sub_banner main_banner position-relative">
+                {% if block.settings.image != blank %}
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="{{ block.settings.image | img_url: 'master' }}">
+                        {% if block.settings.image_mobile %}
+                            <source media="(min-width:720px)" srcset="{{ block.settings.image_mobile | img_url: '720x' }}">
+                            <source media="(min-width:540px)" srcset="{{ block.settings.image_mobile | img_url: '540x' }}">
+                        {% endif %}
+                        {% if block.settings.image_mobile %}
+                            <img class="img-fluid" src="{{ block.settings.image_mobile | img_url: '540x' }}" alt="{{ block.settings.image_mobile.alt | escape }}" width="125" height="186">
+                        {% else %}
+                            <img class="img-fluid" src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" width="225" height="281" alt="">
+                        {% endif %}
+                    </picture>
+                {% endif %}
+                <div class="main_b_wrapper">
+                    <div class="container">
+                        <div class="sub_banner-content">
+                            {% if block.settings.heading != blank %}
+                                <h2 class="mb-0">
+                                    {{ block.settings.heading }}
+                                </h2>
+                            {% endif %}
+                            {% if block.settings.link_label != blank %}
+                                <a href="{{ block.settings.link_url }}" class="btn_black mb-0">{{ block.settings.link_label }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub banner end -->
+        {% endif %}
+    {%- endfor -%}
+</div>
+<!-- -- main banner end -- --> 
+{% endcomment %}
+
+
+
+{% schema %}
+    {
+        "name": "t:sections.main-banner-promotion.name",
+        "class": "section-main-banner-promotion",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading_mobile",
+                "label": "t:common.heading.mobile.label"
+            },
+            {
+              "type": "select",
+              "id": "heading_tag",
+              "label": "Heading tag",
+              "options": [
+                {
+                  "value": "h1",
+                  "label": "H1"
+                },
+                {
+                  "value": "h2",
+                  "label": "H2"
+                }
+              ],
+              "default": "h2"
+            },
+            {
+                "type": "richtext",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "subheading_mobile",
+                "label": "t:common.subheading.mobile.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_mobile",
+                "label": "t:common.image_mobile.label"
+            },
+            {
+                "type": "text",
+                "id": "wistia_id",
+                "label": "t:common.wistia.id.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "banner",
+                "name": "t:common.banner.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_mobile",
+                        "label": "t:common.image_mobile.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "product",
+                "name": "t:common.product.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "product_url",
+                        "label": "t:common.product.url.label"
+                    }
+                ]
+		    },
+            {
+			"type": "link",
+			"name": "t:sections.main-banner-promotion.blocks.link.name",
+            "limit": 1,
+			"settings": [
+                {
+                    "type": "text",
+                    "id": "link_label",
+                    "default": "Link label",
+                    "label": "t:common.link.label",
+                    "info": "t:common.link.info"
+                },
+                {
+                    "type": "text",
+                    "id": "link_label_mobile",
+                    "default": "Link label mobile",
+                    "label": "t:common.link.mobile.label",
+                    "info": "t:common.link.info"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link.url.label"
+                }
+			]
+		}
+        ],
+        "presets": [
+			{
+				"name": "t:sections.main-banner-promotion.name"
+			}
+        ]
+    }
+{% endschema %}

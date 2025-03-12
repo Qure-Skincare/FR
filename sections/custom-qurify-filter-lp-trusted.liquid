@@ -1,0 +1,172 @@
+<!-- -- trusted block start -- -->
+<div class="trusted_bl trusted_bl_lp section">
+    <div class="container">
+        <div class="row gx-5 align-items-center">
+
+            <div class="col-md-6">
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'video' %}
+                        <div class="trusted_cl_m mb-2 mb-md-0">
+                            <div class="trusted_tag">
+                                <div class="t_like_img pe-2">
+                                    <img src="https://qureskincaredns.com/new/assets/trusted_thumb.svg" alt="">
+                                </div>
+                                {{ block.settings.likes |  replace: '<p>', '<p class="border-r pe-2">'  }}
+                                {{ block.settings.views |  replace: '<p>', '<p class="px-2">'  }}
+                            </div>
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | img_url: '450x' }}" alt="" class="img-fluid t_m_img">
+                            {% endif %}
+                            <div class="play_btn">
+                                <a class="popup-youtube" href="{{ block.settings.video_url }}">
+                                        <span>
+                                            <img src="https://qureskincaredns.com/new/assets/trusted_play_md.svg" alt="" class="">
+                                        <h6>{{ block.settings.video_label }}</h6>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+
+            <div class="col-md-6">
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'feedback' %}
+                        <div class="trusted_bl_info">
+                            {{ block.settings.heading |  replace:  '<h2>', '<h2 class="title-lg">'  }}
+                            <div class="trusted_dr mt-5">
+                                <div class="trusted_dr_img">
+                                    <img src="{{ block.settings.image | img_url: '250x' }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="trusted_dr_info text-center text-md-start">
+                                    <div class="trusted_dr_name">{{ block.settings.name | replace: '<p>', '' |  replace: '</p>', '' }}</div>
+                                    <div class="trusted_dr_desg">{{ block.settings.text }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+
+            <div class="get_clearer_wrapper text-center my-4">
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'button' %}
+                        {% if block.settings.button_label != blank %}
+                            <p><span><img src="https://qureskincaredns.com/new/assets/derma-sm.svg" alt=""></span>{{ block.settings.text_first }}</p>
+                            <a class="btn btn-lg btn-primary btn_green" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</span>
+                            </a>
+                            <p><span><img src="https://qureskincaredns.com/new/assets/money-sm.svg" alt=""></span>{{ block.settings.text_second }}</p>
+                        {% endif %}
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- -- trusted block end -- -->
+
+{% schema %}
+    {
+        "name": "Trusted",
+        "class": "section-trusted",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_url",
+                        "label": "t:common.video.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_label",
+                        "label": "t:common.video.cta.label",
+                        "default": "Click To Watch Review"
+                    },
+                    {
+                        "type": "text",
+                        "id": "likes",
+                        "label": "t:common.likes.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "views",
+                        "label": "t:common.views.label"
+                    }
+                ]
+		    },
+            {
+                "type": "feedback",
+                "name": "t:common.feedback.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "name",
+                        "label": "t:common.name.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_first",
+                        "label": "t:common.text.label",
+                        "default": "Dermatologist-Reviewed"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label",
+                        "default": "30-Day Money-Back Guarantee"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

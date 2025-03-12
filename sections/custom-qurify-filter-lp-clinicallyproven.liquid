@@ -1,0 +1,61 @@
+<div class="clinically_proven section">
+    <div class="container">
+        <div class="section_header mw-100">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg text-center d-none d-md-block paddingB">{{ section.settings.heading }}</h2> 
+            {% endif %}
+            {% if section.settings.heading_mobile != blank %}
+                <h2 class="title-lg d-block d-md-none">{{ section.settings.heading_mobile }}</h2> 
+            {% endif %}
+        </div>
+
+        <div class="clinically_proven_wrap">
+            {%- for block in section.blocks -%}
+                <div class="clinicallyProven_item">
+                    <div class="clinicallyProven_header">{{ block.settings.text }}</div>
+                    {% if block.settings.image != blank %}
+                        <img class="img-fluid" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                    {% endif %}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Clinically proven",
+        "class": "section-clinically-proven",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading_mobile",
+                "label": "t:common.heading.mobile.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,1455 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "settings_schema": {
+    "logo": {
+      "name": "Favicon",
+      "settings": {
+        "favicon": {
+          "label": "Favicon image",
+          "info": "Will be scaled down to 32 x 32px"
+        }
+      }
+    },
+    "social-media": {
+      "name": "Social media",
+      "settings": {
+        "social_instagram_link": {
+          "label": "Instagram",
+          "info": ""
+        },
+        "social_facebook_link": {
+          "label": "Facebook",
+          "info": ""
+        },
+        "social_tiktok_link": {
+          "label": "TikTok",
+          "info": ""
+        },
+        "social_youtube_link": {
+          "label": "YouTube",
+          "info": ""
+        }
+      }
+    }
+  },
+  "progressBlock": {
+    "column": {
+      "percent_text": "Percentage",
+      "percent_bars": "Percentage Bars",
+      "partition": "Column Partition",
+      "info": "For image or video column"
+    }
+  },
+  "product": {
+    "label": "Product",
+    "name": {
+      "label": "Product Name"
+    },
+    "about": {
+      "label": "About Product"
+    },
+    "badge": {
+      "label": "Rating text",
+      "text": "Badge text"
+    },
+    "benefits": {
+      "label": "Benefits List",
+      "title": "Benefit",
+      "p_benefits": "Product benefits"
+    },
+    "url": {
+      "label": "Product Url"
+    },
+    "video": {
+      "label": "Product Video"
+    },
+    "video_txt": {
+      "label": "Video Text"
+    },
+    "warranty": {
+      "label": "Warranty Text",
+      "icon": "Warranty Icon"
+    }
+  },
+  "commonMob": {
+    "header": {
+      "label": "Mobile Content"
+    },
+    "image": {
+      "label": "Image on Mobile"
+    },
+    "benefits": {
+      "label": "Benefits List"
+    },
+    "order": {
+      "label": "Order on mobile",
+      "bottom": "Bottom"
+    },
+    "hide": "Hide on mobile"
+  },
+  "review": {
+    "heading": {
+      "label": "Reviews"
+    }
+  },
+  "common": {
+    "setting": {
+      "label": "Richtext"
+    },
+    "nozzle_option": {
+      "label": "Nozzle Option",
+      "image": "Nozzle Image",
+      "text": "Nozzle Text"
+    },
+    "display": {
+      "type": "Display Type",
+      "tabs": "Tabs",
+      "slider": "Slider",
+      "thumb": "Thumbnail",
+      "single_slide": "Single Slide"
+    },
+    "banner": {
+      "label": "Banner"
+    },
+    "banner_14feb": {
+      "label": "14feb banner"
+    },
+    "banner_holiday": {
+      "label": "Holiday banner"
+    },
+    "variant": {
+      "label": "Variant"
+    },
+    "variant_id": {
+      "label": "variant_id"
+    },
+    "saving": {
+      "label": "saving"
+    },
+    "badge": {
+      "label": "Badge"
+    },
+    "color": {
+      "label": "Color"
+    },
+    "read_more": "Read More Content",
+    "container": {
+      "size": "Section Width",
+      "full": "Full",
+      "half": "Contain"
+    },
+    "collapsed": {
+      "label": "Collapsed"
+    },
+    "step": {
+      "label": "Step"
+    },
+    "flag": {
+      "text": "Flag",
+      "color": "Flag Color"
+    },
+    "ingredient": {
+      "image": "Ingredient Image",
+      "text": "Ingredient Name"
+    },
+    "text_icon": {
+      "label": "Heading with Icon",
+      "text_icon": "Text & Icon"
+    },
+    "mark": "Mark",
+    "testimonial": {
+      "text": "Testimonial text"
+    },
+    "tab": {
+      "name": "Tab Name",
+      "tab": "Tab",
+      "image": "Tab Image"
+    },
+    "skin": {
+      "concerns": "Skin Concerns",
+      "problem": "Skin Image",
+      "skin_problem": "Skin Problem"
+    },
+    "font": {
+      "size": "Font size",
+      "mobile": {
+        "size": "Font size mobile"
+      }
+    },
+    "checkbox": {
+      "from": "From",
+      "verified": "Verified Customer",
+      "loop": "Enable loop",
+      "autoplay": "Enable autoplay",
+      "show": "Show",
+      "grey": "Grey",
+      "design": "New Design"
+    },
+    "dropdown": {
+      "design": "Dropdown design"
+    },
+    "blog": {
+      "label": "Blog"
+    },
+    "title": {
+      "label": "Title",
+      "size": {
+        "large": "Large",
+        "xl": "Extra Large"
+      }
+    },
+    "percentage": {
+      "label": "Percentage"
+    },
+    "serum": {
+      "label": "Serum For",
+      "type": "Serum Type",
+      "or": "Or"
+    },
+    "sale": {
+      "label": "Sale Name",
+      "discount": "Discount"
+    },
+    "background": {
+      "label": "Background",
+      "yellow": "Yellow",
+      "grey": "Grey",
+      "transparent": "Tranparent"
+    },
+    "Section": {
+      "label": "Section Heading"
+    },
+    "free_gift": {
+      "label": "Free gift"
+    },
+    "supertop": {
+      "label": "Supertop text"
+    },
+    "timer": {
+      "label": "Timer",
+      "info": "Valid until this time",
+      "next": {
+        "label": "Add days",
+        "info": "Valid until time + amount of days"
+      },
+      "day": {
+        "label": "day"
+      }
+    },
+    "comment": {
+      "label": "Comment",
+      "show": "Show Comment",
+      "flag": "Comment Flag Color",
+      "amount": {
+        "label": "Comments amount"
+      }
+    },
+    "before-after-image": {
+      "label": "Before after image"
+    },
+    "align": {
+      "label": "Align",
+      "center": {
+        "label": "Align center"
+      },
+      "right": "Align Right"
+    },
+    "choose_option": {
+      "first": {
+        "label": "First YES\/NO"
+      },
+      "second": {
+        "label": "Second YES\/NO"
+      }
+    },
+    "heading": {
+      "label": "Heading",
+      "right": "Right Heading",
+      "info": "Info Heading",
+      "size": "Heading Size",
+      "mobile": {
+        "label": "Heading for mobile"
+      },
+      "seo_heading": {
+        "label": "Seo Heading"
+      }
+    },
+    "announcement": {
+      "label": "Announcement",
+      "color": {
+        "label": "Color"
+      }
+    },
+    "name": {
+      "label": "Name",
+      "call": "Call",
+      "email": "Email",
+      "chat": "Chat"
+    },
+    "subheading": {
+      "label": "Subheading",
+      "mobile": {
+        "label": "Subheading for mobile"
+      }
+    },
+    "Product-guide": {
+      "label":"Product Guide"
+    },
+    "Block": {
+      "label":"Block"
+    },
+    "recommended": {
+      "label": "Recommended",
+      "icon": "Recommended Icon"
+    },
+    "recommended_mob": {
+      "label": "Recommended mob",
+    },
+    "option": {
+      "name": "Option",
+      "label": "Option"
+    },
+    "menu": {
+      "label": "Menu"
+    },
+    "icons": {
+      "label": "Icons"
+    },
+    "card": {
+      "client": {
+        "label": "Client card"
+      },
+      "doctor": {
+        "label": "Doctor card",
+        "name": "Doctor's Name",
+        "board": "Board"
+      },
+      "brand": {
+        "label": "Brand card"
+      }
+    },
+    "position": {
+      "label": "Position"
+    },
+    "form": {
+      "label": "Klaviyo form",
+      "id": {
+        "label": "Form id"
+      }
+    },
+    "image": {
+      "label": "Image",
+      "with": "With image",
+      "without": "Without image",
+      "first": "First Image",
+      "second": "Second Image",
+      "main": "Main Image",
+      "large": {
+        "label": "Image large"
+      },
+      "hide": {
+        "mobile": {
+          "label": "Hide on mobile",
+          "on": "Hide On",
+          "default": "Default",
+          "mob": "Mobile"
+        },
+        "desktop": {
+          "label": "Desktop"
+        }
+      }
+    },
+    "product": {
+      "label": "Product",
+      "image": {
+        "label": "Product image"
+      },
+      "images": {
+        "label": "Product Images"
+      },
+      "title": {
+        "label": "Product title"
+      },
+      "url": {
+        "label": "Product url"
+      },
+      "type": {
+        "label": "Product Type"
+      },
+      "instalments": {
+        "label": "Instalments"
+      },
+      "payment": {
+        "icon": "Payment Icon"
+      }
+    },
+    "object": {
+      "label": "Object"
+    },
+    "people_choise": {
+      "label": "People choise"
+    },
+    "list": {
+      "label": "List",
+      "featured": "Feature List"
+    },
+    "result": {
+      "label": "Result"
+    },
+    "icon": {
+      "label": "Icon",
+      "check": "Check",
+      "cross": "Cross"
+    },
+    "column": {
+      "label": "Column",
+      "left": "Left column",
+      "right": "Right column",
+      "image": {
+        "label": "Image column"
+      },
+      "content": {
+        "label": "Content column"
+      }
+    },
+    "price": {
+      "label": "Price"
+    },
+    "likes": {
+      "label": "Likes"
+    },
+    "views": {
+      "label": "Views"
+    },
+    "image_mobile": {
+      "label": "Image mobile"
+    },
+    "revers_mobile": {
+      "label": "Revers on mobile"
+    },
+    "supply": {
+      "label": "Supply"
+    },
+    "supply_for_refill": {
+      "label": "Supply for refill"
+    },
+    "reserve": {
+      "label": "Reserve"
+    },
+    "text": {
+      "label": "Text",
+      "content": "Text content",
+      "with_acco": "Text With Dropdown",
+      "dropdown": "Dropdown",
+      "count": {
+        "one": "1 Text",
+        "five": "5 Text"
+      }
+    },
+    "html": {
+      "label": "Html"
+    },
+    "content": {
+      "label": "Content"
+    },
+    "style": {
+      "label": "Style",
+      "default": {
+        "label": "default"
+      },
+      "grey": {
+        "label": "grey"
+      },
+      "image": {
+        "label": "image"
+      }
+    },
+    "media": {
+      "label": "Media"
+    },
+    "percent": {
+      "label": "Percent"
+    },
+    "date": {
+      "label": "Date"
+    },
+    "classname": {
+      "label": "CSS classname",
+      "custom": "Custom class",
+      "heading": "Heading Custom Class",
+      "content": "Content Custom Class"
+    },
+    "video": {
+      "label": "Video",
+      "shopify": "Shopify",
+      "hosted": "Hosted video",
+      "info": "Use the following settings if you want to use hosted video",
+      "type": "Video type",
+      "choose": "Choose video",
+      "mobile": {
+        "label": "Mobile video"
+      },
+      "youtube": {
+        "settings": "Youtube settings",
+        "link": "Add youtube link"
+      },
+      "url": {
+        "label": "Video url"
+      },
+      "cta": {
+        "label": "Video label"
+      }
+    },
+    "wistia": {
+      "label": "Wistia",
+      "wistia": "Wista",
+      "id": {
+        "label": "Wistia id",
+        "mobile": "Wistia video mobile"
+      }
+    },
+    "button": {
+      "name": "Button",
+      "label": "Button label",
+      "info": "Leave the label blank to hide the link.",
+      "url": {
+        "label": "Button url"
+      },
+      "image": {
+        "label": "Button image"
+      },
+      "mobile": {
+        "label": "Button label mobile"
+      }
+    },
+    "link": {
+      "label": "Link label",
+      "info": "Leave the label blank to hide the link.",
+      "mobile": {
+        "label": "Link label mobile"
+      },
+      "url": {
+        "label": "Link url"
+      }
+    },
+    "client": {
+      "label": "Client",
+      "details": "Client Details",
+      "country": {
+        "label": "Country"
+      },
+      "text": {
+        "label": "Client text"
+      }
+    },
+    "progress": {
+      "label": "Progress",
+      "text": {
+        "label": "Progress text"
+      },
+      "image": {
+        "label": "Progress image"
+      }
+    },
+    "feedback": {
+      "label": "Feedback",
+      "title": {
+        "label": "Feedback title"
+      }
+    },
+    "preorder": {
+      "label": "Pre order"
+    },
+    "rating": {
+      "label": "Rating",
+      "stars": "Stars"
+    },
+    "description": {
+      "label": "Description"
+    },
+    "code": {
+      "label": "Code"
+    },
+    "subscribe": {
+      "label": "Subscribe",
+      "discount": {
+        "label": "Discount"
+      },
+      "plan": {
+        "label": "Subscribe plan"
+      }
+    },
+    "desc": {
+      "label": "Description"
+    }
+  },
+  "sections": {
+    "padding": {
+      "section_padding_heading": "Padding",
+      "padding_top": "Padding top",
+      "padding_bottom": "Padding bottom"
+    },
+    "header": {
+      "name": "Header",
+      "settings": {},
+      "blocks": {
+        "announcement": {
+          "name": "Announcement",
+          "settings": {}
+        },
+        "announcement-promo": {
+          "name": "Announcement promo",
+          "settings": {}
+        },
+        "tab": {
+          "name": "Tab title changer",
+          "settings": {}
+        },
+        "banner": {
+          "name": "Banner",
+          "settings": {}
+        }
+      }
+    },
+    "header-sales": {
+      "name": "Header sales",
+      "settings": {},
+      "blocks": {
+        "announcement": {
+          "name": "Announcement",
+          "settings": {}
+        },
+        "navigation-link": {
+          "name": "Navigation link",
+          "settings": {}
+        }
+      }
+    },
+    "banner": {
+      "name": "Banner",
+      "settings": {},
+      "blocks": {}
+    },
+    "banner-two-column": {
+      "name": "Banner two column",
+      "settings": {},
+      "blocks": {}
+    },
+    "landing-main-banner": {
+      "name": "Landing-main-banner",
+      "settings": {},
+      "blocks": {}
+    },
+    "text-block": {
+      "name": "Text block",
+      "settings": {},
+      "blocks": {}
+    },
+    "compare-videos": {
+      "name": "Compare videos",
+      "settings": {},
+      "blocks": {}
+    },
+    "trusted-second": {
+      "name": "Trusted second",
+      "settings": {},
+      "blocks": {}
+    },
+    "results-simple": {
+      "name": "Results simple",
+      "settings": {},
+      "blocks": {}
+    },
+    "effective": {
+      "name": "Effective",
+      "settings": {},
+      "blocks": {}
+    },
+    "confidence": {
+      "name": "Confidence",
+      "settings": {},
+      "blocks": {}
+    },
+    "confidence-slider": {
+      "name": "Confidence slider",
+      "settings": {},
+      "blocks": {}
+    },
+    "accelerate-results": {
+      "name": "Accelerate results",
+      "settings": {},
+      "blocks": {}
+    },
+    "choice": {
+      "name": "Choice",
+      "settings": {},
+      "blocks": {}
+    },
+    "why-choose": {
+      "name": "Why choose",
+      "settings": {},
+      "blocks": {}
+    },
+    "one-column-box": {
+      "name": "One column box",
+      "settings": {},
+      "blocks": {}
+    },
+    "header-landing": {
+      "name": "Header landing",
+      "settings": {},
+      "blocks": {}
+    },
+    "header-landing-simple": {
+      "name": "Header landing simple",
+      "settings": {},
+      "blocks": {}
+    },
+    "collection": {
+      "name": "Collection",
+      "settings": {},
+      "blocks": {}
+    },
+    "collection-results": {
+      "name": "Collection results",
+      "settings": {},
+      "blocks": {}
+    },
+    "product": {
+      "name": "Product",
+      "settings": {},
+      "blocks": {}
+    },
+    "product-gift": {
+      "name": "Product gift",
+      "settings": {},
+      "blocks": {}
+    },
+    "product-extended": {
+      "name": "Product extended",
+      "settings": {
+        "product_images_limit": {
+          "label": "Product images limit",
+          "unit": "unit"
+        },
+        "before_after_images_limit": {
+          "label": "Before after images limit",
+          "unit": "unit"
+        }
+      },
+      "blocks": {}
+    },
+    "product-landing": {
+      "name": "Product landing",
+      "settings": {
+        "product_images_offset": {
+          "label": "Product media ofsset",
+          "unit": "unit"
+        },
+        "product_images_limit": {
+          "label": "Product media limit",
+          "unit": "unit"
+        },
+        "before_after_images_limit": {
+          "label": "Before after media limit",
+          "unit": "unit"
+        }
+      },
+      "blocks": {}
+    },
+    "product-landing-sales": {
+      "name": "Product landing sales",
+      "settings": {},
+      "blocks": {}
+    },
+    "mobile-product-slider": {
+      "name": "Mobile product slider",
+      "settings": {},
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "heading": "Slide Heading",
+          "text": "Slide Text Content"
+        }
+      }
+    },
+    "main-banner": {
+      "name": "Main banner",
+      "settings": {},
+      "blocks": {
+        "link": {
+          "name": "Link",
+          "settings": {}
+        }
+      }
+    },
+    "bf-early-access": {
+      "name": "BF Early Access",
+      "settings": {
+        "password": {
+          "label": "Password"
+        },
+        "password_wrong": {
+          "label": "Wrong password text"
+        },
+        "destination_url": {
+          "label": "Destination page"
+        }
+      }
+    },
+    "exclusive-holiday-bundle-deal-header": {
+      "name": "Header"
+    },
+    "exclusive-holiday-bundle-deal-bundles-header": {
+      "name": "Bundles Header"
+    },
+    "exclusive-holiday-bundle-deal-bundles-list": {
+      "name": "Bundles List",
+      "blocks": {
+        "percent": {
+          "label": "Percent of soldout"
+        },
+        "hide_us": {
+          "label": "Hide for USA"
+        },
+        "class": {
+          "label": "Additional class"
+        },
+        "media_limit": {
+          "label": "Media limit"
+        },
+        "default_variant_id": {
+          "label": "Default variant"
+        },
+        "recommended_heading": {
+          "label": "Recommended heading"
+        },
+        "recommended_text": {
+          "label": "Recommended text"
+        },
+        "recommended_image": {
+          "label": "Recommended image"
+        },
+        "top_rated": {
+          "label": "Top rated"
+        },
+        "is_preorder": {
+          "label": "Preorder"
+        },
+        "preorder_text": {
+          "label": "Preorder text"
+        },
+        "classname": {
+          "label": "Classname"
+        },
+        "how-to-use": {
+          "label": "How to use"
+        },
+        "include": {
+          "label": "Include",
+          "settings": {
+            "top_rated": {
+              "label": "Top rated"
+            },
+            "limited": {
+              "label": "Limited edition"
+            },
+            "hide": {
+              "label": "Hide"
+            },
+            "hide_variants": {
+              "label": "Hide variants"
+            },
+            "type": {
+              "label": "Type"
+            },
+            "ingredients": {
+              "label": "Ingredients"
+            },
+            "count": {
+              "label": "Items left in stock"
+            }
+          }
+        }
+      }
+    },
+    "exclusive-holiday-bundle-deal-before-after": {
+      "name": "Before After"
+    },
+    "main-banner-promotion": {
+      "name": "Main banner promo",
+      "settings": {},
+      "blocks": {
+        "link": {
+          "name": "Link",
+          "settings": {}
+        }
+      }
+    },
+    "main-banner-promotion-second": {
+      "name": "Main banner promo second",
+      "settings": {},
+      "blocks": {
+        "link": {
+          "name": "Link",
+          "settings": {}
+        }
+      }
+    },
+    "featuredin": {
+      "name": "Featured in",
+      "two": "Featured in qurify LP",
+      "settings": {},
+      "blocks": {}
+    },
+    "featuredin-extended": {
+      "name": "Featured In extended",
+      "settings": {},
+      "blocks": {}
+    },
+    "uses": {
+      "name": "Uses",
+      "settings": {},
+      "blocks": {}
+    },
+    "advisors": {
+      "name": "Advisors",
+      "settings": {}
+    },
+    "before-after-box": {
+      "name": "Before after box",
+      "settings": {},
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "two_slide": "2 Slides only",
+          "settings": {
+            "popup_content": {
+              "label": "Popup content"
+            }
+          }
+        }
+      }
+    },
+    "slider": {
+      "name": "Slider",
+      "type": "Slider Type",
+      "space_between": "Space between slides",
+      "settings": {
+        "desktop": "Slides on desktop",
+        "tablet": "Slides on tablet",
+        "mobile": "Slides on mobile"
+      },
+      "blocks": {}
+    },
+    "details-slider": {
+      "name": "Details slider",
+      "settings": {},
+      "blocks": {}
+    },
+    "before-after-slider": {
+      "name": "Before after slider",
+      "settings": {},
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "settings": {
+            "image_before": {
+              "label": "Image before"
+            },
+            "text_before": {
+              "label": "Text before"
+            },
+            "image_after": {
+              "label": "Image after"
+            },
+            "text_after": {
+              "label": "Text after"
+            },
+            "popup_content": {
+              "label": "Popup content"
+            }
+          }
+        }
+      }
+    },
+    "before-after-easy-slider": {
+      "name": "Before after easy slider",
+      "settings": {},
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "settings": {
+            "image_before": {
+              "label": "Image before"
+            },
+            "text_before": {
+              "label": "Text before"
+            },
+            "image_after": {
+              "label": "Image after"
+            },
+            "text_after": {
+              "label": "Text after"
+            },
+            "popup_content": {
+              "label": "Popup content"
+            }
+          }
+        }
+      }
+    },
+    "before-after-short-slider": {
+      "name": "Before after short slider",
+      "settings": {},
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "settings": {}
+        }
+      }
+    },
+    "trusted": {
+      "name": "Trusted",
+      "header": "Trust line settings",
+      "icon": "Trust icon",
+      "text": "Trust text",
+      "dermatologist": "Trusted Dermatologist",
+      "settings": {},
+      "blocks": {}
+    },
+    "contact-us": {
+      "name": "Contact us",
+      "settings": {},
+      "blocks": {}
+    },
+    "trusted-simple": {
+      "name": "Trusted simple",
+      "settings": {},
+      "blocks": {}
+    },
+    "bestseller": {
+      "name": "Bestseller",
+      "settings": {},
+      "blocks": {}
+    },
+    "personalized": {
+      "name": "Personalized",
+      "settings": {},
+      "blocks": {}
+    },
+    "compare": {
+      "name": "Compare",
+      "product": "Product Comparing",
+      "info": "Which points you want to compare",
+      "points": {
+        "one": "Point 1",
+        "two": "Point 2",
+        "three": "Point 3",
+        "four": "Point 4"
+      },
+      "settings": {},
+      "blocks": {}
+    },
+    "compare-box": {
+      "name": "Compare box",
+      "settings": {},
+      "blocks": {}
+    },
+    "tile": {
+      "name": "Tile",
+      "settings": {},
+      "blocks": {}
+    },
+    "solution-form": {
+      "name": "Solution form",
+      "settings": {},
+      "blocks": {}
+    },
+    "icons-list": {
+      "name": "Icons list",
+      "settings": {},
+      "blocks": {}
+    },
+    "results": {
+      "name": "Results",
+      "settings": {},
+      "blocks": {}
+    },
+    "results-box": {
+      "name": "Results box",
+      "settings": {},
+      "blocks": {}
+    },
+    "two-column-box": {
+      "name": "Two column box",
+      "settings": {},
+      "blocks": {
+        "settings": {
+          "details": {
+            "label": "Details"
+          }
+        }
+      }
+    },
+    "three-column-box": {
+      "name": "Three column box",
+      "settings": {},
+      "blocks": {}
+    },
+    "perks": {
+      "name": "Perks",
+      "settings": {},
+      "blocks": {}
+    },
+    "influencers": {
+      "name": "Influencers",
+      "settings": {},
+      "blocks": {}
+    },
+    "influencers-social": {
+      "name": "Influencers social",
+      "settings": {},
+      "blocks": {}
+    },
+    "reasons": {
+      "name": "Reasons",
+      "settings": {},
+      "blocks": {}
+    },
+    "social": {
+      "name": "Social",
+      "settings": {},
+      "blocks": {}
+    },
+    "videos": {
+      "name": "Videos",
+      "settings": {},
+      "blocks": {}
+    },
+    "videos-list": {
+      "name": "Videos list",
+      "settings": {},
+      "blocks": {}
+    },
+    "guide-header": {
+      "name": "Guide header",
+      "settings": {}
+    },
+    "guide-columns": {
+      "name": "Guide columns",
+      "settings": {},
+      "blocks": {
+        "header": {
+          "label": "Header"
+        }
+      }
+    },
+    "guide": {
+      "name": "Guide",
+      "settings": {},
+      "blocks": {}
+    },
+    "easy-guide": {
+      "name": "Easy guide",
+      "settings": {},
+      "blocks": {}
+    },
+    "product-box": {
+      "name": "Product box",
+      "settings": {},
+      "blocks": {}
+    },
+    "product-box-second": {
+      "name": "Product box second",
+      "settings": {},
+      "blocks": {}
+    },
+    "faq": {
+      "name": "Faq",
+      "settings": {},
+      "blocks": {}
+    },
+    "faq-extended": {
+      "name": "Faq extended",
+      "settings": {},
+      "blocks": {}
+    },
+    "details": {
+      "name": "Details",
+      "settings": {},
+      "blocks": {}
+    },
+    "line": {
+      "name": "Line",
+      "settings": {},
+      "blocks": {}
+    },
+    "newsletter": {
+      "name": "Newsletter",
+      "settings": {
+        "social_text": {
+          "label": "Text"
+        },
+        "social_show": {
+          "label": "Show social links"
+        }
+      }
+    },
+    "liquid": {
+      "name": "Liquid",
+      "settings": {},
+      "blocks": {}
+    },
+    "heading": {
+      "name": "Heading",
+      "settings": {},
+      "blocks": {}
+    },
+    "bundle-list": {
+      "name": "Bundle list",
+      "settings": {},
+      "blocks": {}
+    },
+    "call-to-action": {
+      "name": "Call to action",
+      "settings": {},
+      "blocks": {}
+    },
+    "skin-hydration": {
+      "name": "Skin hydration",
+      "settings": {},
+      "blocks": {}
+    },
+    "reviews": {
+      "name": "Reviews",
+      "settings": {},
+      "blocks": {}
+    },
+    "footer": {
+      "name": "Footer",
+      "settings": {},
+      "blocks": {
+        "menu": {
+          "name": "Menu",
+          "settings": {}
+        },
+        "content": {
+          "name": "Content",
+          "settings": {}
+        },
+        "link": {
+          "name": "Link",
+          "settings": {}
+        }
+      }
+    },
+    "slidecart": {
+      "name": "Slidecart",
+      "settings": {
+        "header_product_gift": {
+          "label": "Product gift"
+        },
+        "enable_free_shipping": {
+          "label": "Enable Free Shipping Treshold"
+        },
+        "enable_product_gift": {
+          "label": "Enable Product Gift"
+        },
+        "product_gift": {
+          "label": "Product free"
+        },
+        "enable_show_gift_price": {
+          "label": "Show Gift Price"
+        },
+        "copy_get_free_shipping": {
+          "label": "Copy Free Shipping",
+          "info": "If you want put the price left to gift add '&price-left&' to the copy"
+        },
+        "copy_get_product_free": {
+          "label": "Copy Product Gift ",
+          "info": "If you want put the price left to gift add '&price-left&' for product gift price add '&product-price&' to the copy"
+        },
+        "copy_congrats": {
+          "label": "Copy Congrats Gift",
+          "info": "If you want put the name of a product gift add '&product-title&' to the copy"
+        },
+        "dont_enable_gift_urls": {
+          "label": "Add the URLs where you want to disable the free product gift.",
+          "info": "Add one URL per line, without the domain. Example: \/collections\/all"
+        }
+
+      },
+      "blocks": {
+        "gift": {
+          "name": "Gift",
+          "settings": {
+            "price_limit": {
+              "label": "Price limit"
+            },
+            "quantity": {
+              "label": "Quantity"
+            },
+            "discount": {
+              "label": "Discount code"
+            },
+            "disable": {
+              "label": "Disable"
+            }
+          }
+        }
+      }
+    },
+    "side_gamification": {
+      "name": "Side Gamification",
+      "settings": {
+        "enable_site_gamification": {
+          "label": "Enable Site Wide Gamification"
+        }
+      }
+    },
+    "footer-landing": {
+      "name": "Footer landing",
+      "settings": {},
+      "blocks": {}
+    },
+    "box-slider": {
+      "name": "Box Slider",
+      "button": "Box Text",
+      "box": "Box",
+      "two": "Box Slider 2"
+    },
+    "f-collection": {
+      "name": "Featured Collection"
+    },
+    "banner_tabs": {
+      "name": "Banner Tab Slider"
+    },
+    "posts": {
+      "name": "Community Posts"
+    },
+    "f_product2": {
+      "name": "Featured Product 2"
+    },
+    "f_product": {
+      "name": "Featured Product"
+    },
+    "img_txt": {
+      "name": "Image & Text",
+      "second": "Image & Text 2"
+    },
+    "how_to_use": {
+      "name": "How to Use",
+      "two": "How to Use 2"
+    },
+    "product_grid": {
+      "label": "Products Grid"
+    },
+    "progress_blocks": {
+      "label": "Progress Blocks"
+    },
+    "result_slider": {
+      "label": "Results Slider"
+    },
+    "text_video": {
+      "label": "Text with video"
+    },
+    "testimonials": {
+      "label": "Testimonials"
+    },
+    "serum_ingredients": {
+      "label": "Serum Ingredients"
+    },
+    "ingredients-dropdown": {
+      "label": "Ingredients dropdown"
+    },
+    "main": {
+      "label": "Main"
+    },
+    "guide_content": {
+      "label": "Guide Content"
+    },
+    "compare_products": {
+      "label": "Compare Products"
+    },
+    "feature_extend": {
+      "label": "Featured Extended"
+    },
+    "have_ques": {
+      "label": "Have Questions"
+    },
+    "founder": {
+      "label": "Qure Founder"
+    },
+    "founder-v2": {
+      "label": "Qure Founder V2"
+    },
+    "skin-care": {
+      "label": "Skin Care Steps"
+    },
+    "how_use_steps": {
+      "label": "How to use steps"
+    },
+    "limited-offer": {
+      "label": "Limited Offer Product",
+      "text": "Free Offer Text"
+    },
+    "money-back": {
+      "label": "Money Back Guarantee"
+    },
+    "benefits": {
+      "label": "Product Benefits"
+    },
+    "cap_dropdowns": {
+      "label": "Capsule Dropdowns",
+      "content": "Dropdown Content"
+    },
+    "benefits_slider": {
+      "label": "Benefits Slider"
+    },
+    "ingredient-list": {
+      "label": "Ingredient List"
+    },
+    "image_comapre": {
+      "label": "Compare Images"
+    },
+    "how-install": {
+      "label": "How To Install"
+    },
+    "product_science": {
+      "label": "Product Science"
+    },
+    "pd_tabs": {
+      "label": "Product Images & Text"
+    },
+    "five_reasons": {
+      "label": "Five Reasons Love"
+    },
+    "what_is_Included": {
+      "label": "What's Included"
+    },
+    "shower_benefits": {
+      "label": "Shower Filter Benefits"
+    },
+    "filtration": {
+      "label": "Advanced Filtration"
+    },
+    "perfect_for": {
+      "label": "Perfect For Section"
+    },
+    "product_feature": {
+      "label": "Product Feature"
+    },
+    "Replacement_Info":{
+      "label": "Replacement Info"
+    }
+  }
+}

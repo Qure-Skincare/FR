@@ -1,0 +1,1204 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-extended",
+      "blocks": {
+        "rating_6FYizY": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "<p>97% customer satisfaction rate</p>"
+          }
+        },
+        "list_EVK9TV": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li><strong>FDA-cleared </strong>device that treats acne, fine lines, wrinkles and dark spots.</li><li><strong>Customizable</strong> treatment on 5 facial areas for <strong>your specific</strong> skin concerns.</li><li>Quick <strong>3 minute,</strong> wireless daily treatments with convenient hands-free operation.</li></ul>"
+          }
+        },
+        "before_and_after_KfYL7X": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify://shop_images/before_and_after_-_led_mask.png",
+            "image_new_section_text_1": "image 1",
+            "image_new_section_2": "shopify://shop_images/before_and_after_-_D_436f75b7-dbe6-421c-8061-3dc45b69ba8b.png",
+            "image_new_section_text_2": "image 2",
+            "image_new_section_3": "shopify://shop_images/before_and_after_-_D_0ba34b9c-c958-46a2-95a6-2b22c4d8f52d.png",
+            "image_new_section_text_3": "image 3",
+            "image_new_section_4": "shopify://shop_images/main_img_4558effa-a75e-44bd-9ee0-ead51da1954c.png",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": "",
+            "image_new_section_text_6": ""
+          }
+        },
+        "video_before_and_after_kUMR9A": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_new_section": "shopify://files/videos/0424(1).mov"
+          }
+        },
+        "timer_abVU3e": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "heading": "4th of July Limited Time Offer!",
+            "text": "<p>Get <em><strong>$50 OFF</strong></em><strong> </strong>with code: <strong>FREEDOMGLOW</strong></p>",
+            "timer": "2024-07-07T23:59:59"
+          }
+        },
+        "list_reduced_mjq9ND": {
+          "type": "list_reduced",
+          "settings": {
+            "text": "<ul><li><strong>Treats acne</strong>, fine lines, wrinkles, and dark spots</li><li>Adaptable to <strong>your unique skin concerns</strong></li><li><strong>Quick 3-minute</strong>, wireless, daily treatment</li><li><strong>FDA-cleared</strong></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "rating_6FYizY",
+        "list_EVK9TV",
+        "before_and_after_KfYL7X",
+        "video_before_and_after_kUMR9A",
+        "timer_abVU3e",
+        "list_reduced_mjq9ND"
+      ],
+      "settings": {
+        "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
+        "heading_mobile": "Customizable LED Light Therapy Mask",
+        "product_images_limit": 5,
+        "product_button_label": "Product",
+        "before_after_images_limit": 2,
+        "before_after_button_label": "Before & After",
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100",
+        "selected_design": "new",
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist"
+      }
+    },
+    "featuredin_yT6yRP": {
+      "type": "featuredin_extended",
+      "blocks": {
+        "image_n99dk9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vogue-black.svg"
+          }
+        },
+        "text_hjVp7i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The professional grade is the perfect addition to any at-home skincare routine.”</p>"
+          }
+        },
+        "image_XrzjQ3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womenshealth_e1cfba2e-29da-4232-9235-69184bd9d1a3.svg"
+          }
+        },
+        "text_t9tnXK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Treatment time is only three minutes—among the fastest </p>"
+          }
+        },
+        "image_PmUxLt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle-black_af7c0fb6-1535-4d44-b64c-b96b7d90bf08.svg"
+          }
+        },
+        "text_bxTn4H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"A multi-use LED mask with five different light setting options to plump smooth and rejuvenate all skin types.\"<br/>                                    </p>"
+          }
+        },
+        "image_hNLLqX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan-black.svg"
+          }
+        },
+        "text_k6KEBE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”<br/>                            </p>"
+          }
+        },
+        "image_ebp8NW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/grazia_black.svg"
+          }
+        },
+        "text_Mnmb4P": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The Qure mask is the FIRST mask in the world that adapts to your skin!...There is an app that reminds you of the treatments too.”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_n99dk9",
+        "text_hjVp7i",
+        "image_XrzjQ3",
+        "text_t9tnXK",
+        "image_PmUxLt",
+        "text_bxTn4H",
+        "image_hNLLqX",
+        "text_k6KEBE",
+        "image_ebp8NW",
+        "text_Mnmb4P"
+      ],
+      "settings": {
+        "heading": "FEATURED IN",
+        "slider_type": "five_slides"
+      }
+    },
+    "before_after_slider_Nfk96E": {
+      "type": "before-after-slider",
+      "blocks": {
+        "slide_kaXzTH": {
+          "type": "slide",
+          "settings": {
+            "heading": "Fine Lines and Wrinkles",
+            "product": "",
+            "product_title": "",
+            "product_url": "",
+            "image_before": "shopify://shop_images/michelle_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify://shop_images/michelle_after_img.webp",
+            "text_after": "AFTER 8 WEEKS",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "client": "Michelle S.",
+            "progress": 87,
+            "progress_text": "<p><strong>smoother </strong>facial wrinkles and fine lines</p>",
+            "text": "<ul><li>Reduces depth of wrinkles and <strong>smooths fine lines.</strong></li><li>Stimulates natural collagen for <strong>firmer, fuller skin.</strong></li><li>Calms redness and promotes a <strong>healthy, glowing complexion.</strong></li></ul>",
+            "feedback_title": "In a Clinical Trial...",
+            "feedback_text": "<p><strong>...8 out of 10 </strong>subjects reported a significant <strong>reduction in periorbital wrinkles</strong></p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.</p><p><strong>About the clinical trial</strong></p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged/photoaged individuals in a split-face single-blinded study.</p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038/jid.2009.186. Epub 2009 Jul 9</p>"
+          }
+        },
+        "slide_Und9N8": {
+          "type": "slide",
+          "settings": {
+            "heading": "Dark Spots and Uneven Skin Tone",
+            "product": "",
+            "product_title": "",
+            "product_url": "",
+            "image_before": "shopify://shop_images/jess_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify://shop_images/jess_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "client": "Jess.",
+            "progress": 91,
+            "progress_text": "<p><strong>improved </strong>skin tone and enhanced smoothness</p>",
+            "text": "<ul><li><strong>Soothing, anti-inflammatory</strong> benefits reduces redness and inflammation.</li><li><strong>Fades appearance of</strong> <strong>dark spots</strong> for more radiant, even-toned skin.</li><li><strong>Heals</strong> and <strong>rejuvenates</strong> skin, helping with sun damage, hyperpigmentation.</li></ul>",
+            "feedback_title": "In a Clinical Trial...",
+            "feedback_text": "<p><strong>...91%</strong> of subjects have a<strong> brighter skin tone</strong> and <strong>82%</strong> reported <strong>enhanced smoothness</strong> of skin after 12 weeks</p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.</p><p><strong>About the clinical trial</strong></p><p>Thirteen subjects with sun damage signs followed a 5-week course of LED therapy with combined wavelengths of 633 and 830 nm and assessed the subject's perception of the treatment. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.</p><p><em>Reference</em><em><strong>:</strong></em><em> J Cosmet Dermatol. 2007 Sep;6(3):189-94. doi: 10.1111/j.1473-2165.2007.00329.x.</em></p>"
+          }
+        },
+        "slide_gNaBhW": {
+          "type": "slide",
+          "settings": {
+            "heading": "Acne and Breakouts",
+            "product": "",
+            "product_title": "",
+            "product_url": "",
+            "image_before": "shopify://shop_images/bj_nardi_before_img.webp",
+            "text_before": "BEFORE",
+            "image_after": "shopify://shop_images/bj_nardi_after_img.webp",
+            "text_after": "AFTER 4 WEEKS",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "client": "BJ Nardi.",
+            "progress": 83,
+            "progress_text": "<p><strong>reduction </strong>of acne breakouts</p>",
+            "text": "<ul><li><strong>Reduces acne</strong> and <strong>prevents future breakouts</strong> by eliminating bacteria.</li><li>Heals and fades post breakout marks for more <strong>even tone skin.</strong></li><li>Rapidly <strong>reduces inflammation</strong> and regulates oil production.</li></ul>",
+            "feedback_title": "In a Clinical Trial...",
+            "feedback_text": "<p>...Acne count was significantly <strong>reduced by 46%</strong> after 4 weeks </p>",
+            "popup_link_text": "Read more about clinical Study",
+            "popup_content": "<p><strong>After 4 weeks: </strong>The mean lesion count reduction was significant at 46%</p><p><strong>After 12 weeks: </strong>The mean lesion count reduction was also significant at 81%.</p><p>Patient and dermatologist assessments were similar. Severe acne showed a marginally better response than mild acne. Side effects were minimal and transitory. Comedones did not respond as well as inflammatory lesions.</p><p><strong>About the clinical trial</strong></p><p>Clinical trial was conducted on twenty-four subjects, Fitzpatrick skin types II-V, with mild to severe symmetric facial acne vulgaris. Subjects were treated, alternating between 415 nm blue light and 633 nm red light from a light-emitting diode (LED)-based therapy system. Acne was assessed at baseline and at weeks 2, 4, 8 and 12.</p><p><em>Reference: J Cosmet Laser Ther. 2006 Jun;8(2):71-5. doi: 10.1080/14764170600735912.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_kaXzTH",
+        "slide_Und9N8",
+        "slide_gNaBhW"
+      ],
+      "settings": {
+        "classname": "skincare_slider bg_gradient_yellow_bt",
+        "heading": "",
+        "title_tag": "h2",
+        "text": ""
+      }
+    },
+    "text_with_video_TwRQhd": {
+      "type": "text-with-video",
+      "blocks": {
+        "video_xLP3b6": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_2.jpg",
+            "video": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg",
+            "title": "Dr Shah, MD",
+            "des": "Board certified dermatologist"
+          }
+        },
+        "text_content_zQrNN6": {
+          "type": "text_content",
+          "settings": {
+            "trust_icon": "shopify://shop_images/verified_design.svg",
+            "trust_des": "Trusted and recommended by world leading Dermatologists",
+            "title": "\"The best LED mask <strong>on the market in my opinion at this time, that being said you do need to </strong>use this consistently to see results…\"",
+            "title_clr": "#000000",
+            "title_strong_clr": "#797d7c"
+          }
+        }
+      },
+      "block_order": [
+        "video_xLP3b6",
+        "text_content_zQrNN6"
+      ],
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "testimonials_m84mqf": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_EitjK9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_prem.webp",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=_w8yWCPeijg",
+            "wistia_id": "",
+            "badge_txt": "",
+            "title": "Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...",
+            "client_details": "<strong>Dr Prem,</strong>   Board Certified Dermatologist"
+          }
+        },
+        "testimonial_d3pmRz": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_greeney_8f7d6159-5134-4725-bbad-183898950e84.webp",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
+            "wistia_id": "",
+            "badge_txt": "",
+            "title": "Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles",
+            "client_details": "<strong>Dr Greeney</strong>, Certified Dermatologist"
+          }
+        },
+        "testimonial_D3CC69": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_maxfield.webp",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=AeksxRPZyrA",
+            "wistia_id": "",
+            "badge_txt": "",
+            "title": "This is one of my faves from @qureskincare. It’s a high quality mask and personalizable",
+            "client_details": "<strong>Dr Maxfield,</strong> Board Certified Dermatologist"
+          }
+        },
+        "testimonial_FayfUe": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_natasha.webp",
+            "video_type": "video",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/ebb5f0ed35b844f7b9f2486db670748b.mp4",
+            "youtube_link": "",
+            "wistia_id": "",
+            "badge_txt": "",
+            "title": "I like this one because it allows you to customize your treatment... This is a great skin care investment",
+            "client_details": "<strong>Dr Natasha Henry, </strong>Medical Doctor"
+          }
+        },
+        "testimonial_PKTtDU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_sarah.webp",
+            "video_type": "wistia",
+            "video_link": "",
+            "youtube_link": "",
+            "wistia_id": "wistia_async_yhzax4egvh",
+            "badge_txt": "",
+            "title": "Qure’s LED mask combines red lights and blue lights, meaning it can benefit EVERYONE",
+            "client_details": "<strong>Dr Sarah Too,</strong>  Medical Doctor"
+          }
+        },
+        "testimonial_epJ3rN": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/trusted_zeitany.webp",
+            "video_type": "wistia",
+            "video_link": "",
+            "youtube_link": "",
+            "wistia_id": "wistia_async_gpf4liwnyn",
+            "badge_txt": "",
+            "title": "It's the only LED mask on the market that pairs with an app and is customizable",
+            "client_details": "<strong>Dr Zeitany,</strong> Board Certified Dermatologist"
+          }
+        },
+        "testimonial_PjwcFL": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Hunter.png",
+            "video_type": "video",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/af8d3f37480346a5b2061c6cb225e2d8.mp4",
+            "youtube_link": "",
+            "wistia_id": "",
+            "badge_txt": "",
+            "title": "I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.",
+            "client_details": "<strong>Dr Hunter, </strong>NHS & Aesthetics Doctor"
+          }
+        },
+        "testimonial_GfkxXA": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/alexis.png",
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://youtu.be/ZMGm5PmWzF0?t=649",
+            "wistia_id": "",
+            "badge_txt": "Subscriber/Views/Followers",
+            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
+            "client_details": "<strong>Dr Alexis Stephens</strong>,  Board-Certified Dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_EitjK9",
+        "testimonial_d3pmRz",
+        "testimonial_D3CC69",
+        "testimonial_FayfUe",
+        "testimonial_PKTtDU",
+        "testimonial_epJ3rN",
+        "testimonial_PjwcFL",
+        "testimonial_GfkxXA"
+      ],
+      "settings": {
+        "enable_autoplay": false,
+        "enable_loop": false,
+        "slide_on_desktop": 3,
+        "slide_on_tablet": 2,
+        "slide_on_mobile": 1,
+        "space_between_slides": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "trusted_bl trustedVerified"
+      }
+    },
+    "icons_list_Fkgrmd": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_8wYqRQ": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+          }
+        },
+        "icon_E9efAW": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/buy-now-ftr.svg",
+            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+          }
+        },
+        "icon_dHBPYp": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/derma-ftr.svg",
+            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+          }
+        },
+        "icon_yPyPhx": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/science-ftr.svg",
+            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_8wYqRQ",
+        "icon_E9efAW",
+        "icon_dHBPYp",
+        "icon_yPyPhx"
+      ],
+      "settings": {
+        "background": "bg-grey"
+      }
+    },
+    "results_Yfghzf": {
+      "type": "results",
+      "blocks": {
+        "result_LwfFir": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_teresa.webp",
+            "heading": "IT REALLY WORKS!!",
+            "text": "<p>“I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.\"</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Teresa S.",
+            "code": ""
+          }
+        },
+        "result_73PVKN": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_tiffany.webp",
+            "heading": "Renewed Skin!",
+            "text": "<p>\"My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!\"</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Tiffany L.",
+            "code": ""
+          }
+        },
+        "result_TkKNU8": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/Amiee_LED.png",
+            "heading": "Highly recommend!",
+            "text": "<p>“I have only been using it for a month. Prior to using this my skin was flaky & dry. My skin barrier has been severely damaged for the past 2 years where almost anything I use burns, but in 1 month this mask has lightened my hyperpigmentation considerably as well as helped to give a bit of a boost to the area under my eye (a delightful surprise). My friends have mentioned that my skin is definitely glowing. Highly recommend!”</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Aimee",
+            "code": ""
+          }
+        },
+        "result_pmCAWA": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/Terri_P_results.png",
+            "heading": "Wish I had this technology years ago!",
+            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old! Photos below are after 6 weeks.”</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Terri P.",
+            "code": ""
+          }
+        },
+        "result_Mgz3yd": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_bj_nardi.webp",
+            "heading": "Completely qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br/>face. I’ve been using my Qure for 1 month now and it has completely<br/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "text_country": "Canada",
+            "client": "BJ Nardi",
+            "code": ""
+          }
+        },
+        "result_bbhV3X": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_michelle.webp",
+            "heading": "Zero Maskne for 8 weeks",
+            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Michelle S.",
+            "code": ""
+          }
+        },
+        "result_FcTEnw": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_anton.webp",
+            "heading": "Can’t go a day without it",
+            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.</p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"</p>",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Anton M.",
+            "code": ""
+          }
+        },
+        "result_Bwe94z": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_june.webp",
+            "heading": "Amazing results!",
+            "text": "<p>“Amazing! I never expected this miracle. I’ve had red blotches above my lips for years and they are vastly improved after using the mask daily<br/>for only 6 weeks. I bought it hoping for better skin texture and less wrinkles. It has improved those, but having the redness gone is what I’m<br/>most excited about.”</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "June T.",
+            "code": ""
+          }
+        },
+        "result_GAd3YG": {
+          "type": "result",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/results_jess.webp",
+            "heading": "So much smoother",
+            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”</p>",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Jess",
+            "code": ""
+          }
+        },
+        "result_U4khQD": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_john.webp",
+            "heading": "Healthier-looking glow",
+            "text": "<p>“My skin feels a lot more clear, considerably less oily, and all round a healthier-looking glow. My breakout scars had even been reduced!”</p>",
+            "image_country": "shopify://shop_images/canada_f.svg",
+            "text_country": "Canada",
+            "client": "John P.",
+            "code": ""
+          }
+        },
+        "result_W8bKNg": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/Jessica_k_led_mask_b_a.png",
+            "heading": "Thrilled with the results!",
+            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. I haven’t had a single breakout since I started using the mask, plus I notice a definite smoothing of fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\"</p>",
+            "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
+            "text_country": "US",
+            "client": "Jessica K.",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "result_LwfFir",
+        "result_73PVKN",
+        "result_TkKNU8",
+        "result_pmCAWA",
+        "result_Mgz3yd",
+        "result_bbhV3X",
+        "result_FcTEnw",
+        "result_Bwe94z",
+        "result_GAd3YG",
+        "result_U4khQD",
+        "result_W8bKNg"
+      ],
+      "settings": {
+        "classname": "mi_landing_result",
+        "heading": "Results you‘ll see with your own eyes",
+        "heading_reduced": "Results you see with your own eyes",
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
+      }
+    },
+    "two_column_box_xCB6mV": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_XwjXVA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ledMask_main.webp",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_rgPkBx": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Qure’s LED light therapy mask is unlike any other skincare device</h2><p>A portable, <strong>FDA-cleared</strong>, at-home LED light therapy treatment that is <strong>scientifically proven</strong> to change your skin for the better. That makes you feel better, too.</p><p></p><p>Choose between three treatment modes, <strong>“Anti-Breakout”</strong>, <strong>“Anti-Aging”</strong> or <strong>custom treatment zones.</strong> Each treatment mode utilizes a combination of market-leading light wavelengths to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach.</p><p></p><p>Get all the skin firming, smoothing, clearing benefits with just <strong>1 device.</strong></p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        },
+        "content_reduced_a7jLWK": {
+          "type": "content_reduced",
+          "settings": {
+            "text": "<h2>Our LED light therapy mask is unlike any other</h2><p>One device, all the skin-firming, smoothing, and clearing benefits<br/></p><ul><li>Portable, <strong>FDA-cleared</strong>, at-home LED light therapy treatment</li><li><strong>Scientifically proven</strong> to change your skin for the better</li><li><strong>Three treatment options</strong>: anti-breakouts, anti-aging, and custom treatment zones</li></ul>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "image_XwjXVA",
+        "content_rgPkBx",
+        "content_reduced_a7jLWK"
+      ],
+      "settings": {
+        "classname": "technology_light section led-light-container",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "reasons_fpBJjw": {
+      "type": "reasons",
+      "blocks": {
+        "icon_APx4kQ": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/led_icon_b1.svg",
+            "text": "<p>Reduce fine lines and wrinkles</p>"
+          }
+        },
+        "icon_j9GPM4": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/led_icon_b2.svg",
+            "text": "<p>Clear and prevent acne breakouts</p>"
+          }
+        },
+        "icon_Vb9YQm": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/led_icon_b3.svg",
+            "text": "<p>Even skin tone and fade dark spots</p>"
+          }
+        },
+        "icon_LggUJf": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/led_icon_b4.svg",
+            "text": "<p>Calm redness and reduce inflammation</p>"
+          }
+        },
+        "icon_kix3Pp": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/led_icon_b5.svg",
+            "text": "<p>Lift and firm sagging skin</p>"
+          }
+        },
+        "icon_MFAAy9": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/led_icon_b6.svg",
+            "text": "<p>Promote a healthy, glowing complexion</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_APx4kQ",
+        "icon_j9GPM4",
+        "icon_Vb9YQm",
+        "icon_LggUJf",
+        "icon_kix3Pp",
+        "icon_MFAAy9"
+      ],
+      "settings": {
+        "classname": "bg-transparent pb-0 pt-0 clinical-grade-container",
+        "heading": "",
+        "text": ""
+      }
+    },
+    "two_column_box_KncU38": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_3GMzFL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_clinical_mask.webp",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_WQADAK": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Clinical-grade LED, personalized to your skin.</h2><h3>See transformative results in less than 12 weeks. [image_mobile]</h3><p>Safe, <strong>clinically proven</strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results</strong>.</p><p>The <strong>same technology used in clinics</strong> by dermatologists, giving you <strong>transformative results conveniently from home,</strong> without the clinical price tag.</p><p>[details]</p>",
+            "column_content": 0,
+            "classname": "section_header text-start pb-0"
+          }
+        },
+        "details_dcD8rL": {
+          "type": "details",
+          "settings": {
+            "heading": "Technical specifications",
+            "text": "<p><strong>TREATMENT TIME:</strong> 3 minutes</p><p><strong>CERTIFICATES:</strong> FDA, TGA, CE, UKCA</p><p><strong>OPERATION:</strong> Wireless, hands-free</p><p><strong>USE:</strong> Daily after cleansing</p><p><strong>WAVELENGTH:</strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>CHARGING TIME:</strong> 2 hours</p><p><strong>LEDs:</strong> 160 dual core</p>"
+          }
+        },
+        "details_3XnYk4": {
+          "type": "details",
+          "settings": {
+            "heading": "Treatment details",
+            "text": "<p><strong>USE:</strong> Use daily after cleansing, before topical skincare</p><p><strong>ANTI-AGING TREATMENT:</strong> 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>ANTI-BREAKOUT TREATMENT: </strong>415nm (Blue), 630nm (Red)</p><p><strong>CUSTOMIZED TREATMENT:</strong> Choose treatment modes on 5 different facial areas</p><p><strong>SKIN TYPE:</strong> Most suitable for Fitzpatrick Skin Types I-IV</p>"
+          }
+        },
+        "content_reduced_DmcDYJ": {
+          "type": "content_reduced",
+          "settings": {
+            "text": "<h2>Personalized clinical-grade LED</h2><h3>See transformative results in less than 12 weeks. <br/>[image_mobile]</h3><p>Safe, clinically proven light wavelengths <strong>penetrate various skin layers to trigger natural cellular regeneration processes</strong>, treating the skin from the inside out for immediate, long-lasting results. </p><p>[details]</p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "image_3GMzFL",
+        "content_WQADAK",
+        "details_dcD8rL",
+        "details_3XnYk4",
+        "content_reduced_DmcDYJ"
+      ],
+      "settings": {
+        "classname": "technology_light section  clinical-grade-container",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "two_column_box_tq6b9C": {
+      "type": "two-column-box",
+      "blocks": {
+        "content_TwGCn9": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Qure Mobile App</h2><h3>Your skin is unique, so your treatment should be too.</h3><p>[image_mobile] </p><p>Qure’s LED Light Therapy Mask comes with a companion iPhone/Android app.</p><p>Select from our range of <strong>treatments</strong> across five different facial areas to treat and target what your skin needs today. So you can <strong>help prevent breakouts on your chin</strong> while smoothing the appearance of “crow’s feet” at the same time.</p><p>You’ll never miss a treatment with Qure mobile app <strong>planner</strong> and phone reminders.</p>",
+            "column_content": 0,
+            "classname": "section_header text-start pb-0"
+          }
+        },
+        "image_Qzkxgd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LED_mask_mob_app.png",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_reduced_4Ne4Ei": {
+          "type": "content_reduced",
+          "settings": {
+            "text": "<h2>Qure Mobile App</h2><h3>Get the best results by personalizing your treatment and setting daily reminders</h3><p>[image_mobile] </p><p><strong>Use Qure’s LED Light Therapy Mask app to:</strong></p><ul><li>Target and treat what your skin needs today</li><li>Select from our range of treatments across five different facial areas</li><li>Set daily reminders so you’ll never miss a treatment</li></ul>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "content_TwGCn9",
+        "image_Qzkxgd",
+        "content_reduced_4Ne4Ei"
+      ],
+      "settings": {
+        "classname": "technology_light qure-mobile-app-container",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "videos_list_kLheEB": {
+      "type": "videos-list",
+      "blocks": {
+        "video_byc3PJ": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img1.webp",
+            "video": "shopify://files/videos/10000000_618238976301519_8110903422844867064_n.mp4"
+          }
+        },
+        "wistia_VYtc4Q": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "m9h3ysted6",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "video_mgnDHg": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img3.webp",
+            "video": "shopify://files/videos/414B7EB969F12545010521E39EE8578B_video_dashinit.mp4"
+          }
+        },
+        "video_z3mfcX": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img4.webp",
+            "video": "shopify://files/videos/262748192_445973610428755_5976892245602066537_n.mp4"
+          }
+        },
+        "video_nwPtRF": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img5.webp",
+            "video": "shopify://files/videos/10000000_218864956860709_2724298762840329644_n.mp4"
+          }
+        },
+        "video_f9Laey": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img6.webp",
+            "video": "shopify://files/videos/1dd15f19a57a45b9aff2e5d45720f1a4.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_byc3PJ",
+        "wistia_VYtc4Q",
+        "video_mgnDHg",
+        "video_z3mfcX",
+        "video_nwPtRF",
+        "video_f9Laey"
+      ],
+      "settings": {
+        "heading": "Confident skin starts here. Just ask the internet.",
+        "classname": "section videosQure",
+        "btn": "",
+        "btn_url": ""
+      }
+    },
+    "easy_guide_E8KQFR": {
+      "type": "easy-guide",
+      "blocks": {
+        "object_mDA6qy": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/LED_mask_app_step1.png",
+            "text": "<p>Download the Qure Skincare app and follow the instructions to set up your profile. Then turn on your Bluetooth and pair your Q-Rejuvalight Pro Facewear with the app.</p>"
+          }
+        },
+        "object_nF4p39": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/led_quick_step_2.webp",
+            "text": "<p>Wash and dry your face prior to use, removing all makeup. Then place and position the Q-Rejuvalight Pro on your face and adjust the strap so it fits comfortably. Hold button for 2-3 seconds to turn device ON</p>"
+          }
+        },
+        "object_LqkmQ4": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/LED_mask_app_step3.png",
+            "text": "<p>Open the Qure Skincare app and customize your treatment by selecting which treatment (Anti-Aging or Anti-Breakout) you want on 5 facial areas. Once programmed, then press start.</p>"
+          }
+        },
+        "object_dnNYjT": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/led_quick_step_4.webp",
+            "text": "<p>The treatment will automatically turn OFF after 3 minutes. Remove the Q-Rejuvalight Pro from face and clean with wipe. Then follow Qure All-In-One Face Serum or your regular skin care routine.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "object_mDA6qy",
+        "object_nF4p39",
+        "object_LqkmQ4",
+        "object_dnNYjT"
+      ],
+      "settings": {
+        "heading": "Quick start: easy guide to glowy skin",
+        "custom_class": "original-copy"
+      }
+    },
+    "easy_guide_W6Riga": {
+      "type": "easy-guide",
+      "blocks": {
+        "object_WqT4Jp": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/LED_mask_app_step1.png",
+            "text": "<ol><li>Download Qure Skincare App & set up your profile</li><li>Turn on your Bluetooth and pair you LED mask with the app</li></ol>"
+          }
+        },
+        "object_jKy8CN": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/led_quick_step_2.webp",
+            "text": "<ol><li>Clean your skin thoroughly </li><li>Turn the device on by holding the button for 2-3 seconds</li><li>Place mask on your face</li></ol>"
+          }
+        },
+        "object_jEgn7R": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/LED_mask_app_step3.png",
+            "text": "<p>Press button once for Anti-Aging treatment, press button again for Anti-Breakout treatment OR customize your treatment on 5 facial areas with the Qure app and press start</p>"
+          }
+        },
+        "object_jFtUDN": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/led_quick_step_4.webp",
+            "text": "<ol><li>The device will turn off automatically after 3 minutes; remove the mask and clean it with a wipe</li><li>Continue with your regular skincare routine</li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "object_WqT4Jp",
+        "object_jKy8CN",
+        "object_jEgn7R",
+        "object_jFtUDN"
+      ],
+      "settings": {
+        "heading": "Quick start: easy guide to glowy skin",
+        "custom_class": "reduced-copy"
+      }
+    },
+    "compare_GAEKyR": {
+      "type": "compare",
+      "blocks": {
+        "object_RHiTQp": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/compare-1_274fb7f7-5fac-4ee0-81f9-94699d7576c9.png",
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "mob_text": "",
+            "text": "<p><strong>One-time cost investment</strong></p>",
+            "price": "$379",
+            "style": "correctCircle",
+            "list": "<ul><li>saves you time</li><li>comfort and privacy of your own home</li><li><strong>unlimited treatments</strong></li><li><strong>only 3 minutes daily</strong></li><li>no ongoing payments</li></ul>"
+          }
+        },
+        "object_Kxz9qm": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_derma.webp",
+            "heading": "In-Clinic/\\n Dermatologist",
+            "mob_text": "",
+            "text": "<p><strong>per 6 session treatment cost</strong></p>",
+            "price": "$300 - $900",
+            "style": "incorrectCircle",
+            "list": "<ul><li><strong>time-consuming</strong> commute to clinic </li><li>when (if) you get an appointment</li><li><strong>limited treatments</strong></li><li>requires <strong>regular visits</strong></li><li>ongoing payments required</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_RHiTQp",
+        "object_Kxz9qm"
+      ],
+      "settings": {
+        "classname": "beauty_skincare section bg-white",
+        "heading": "The beauty of clinical results from home - without the ‘clinical’ costs",
+        "heading_reduced": "Clinical results from home – without the “clinical” cost",
+        "text": "<p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>",
+        "text_reduced": "<p>Stop worrying about the “clinical” time commitment, transportation costs, overpromises, upselling, and hassle.</p>"
+      }
+    },
+    "liquid_Azh7Kn": {
+      "type": "liquid",
+      "settings": {
+        "code": "<!-- Comparison Section table start -->\n<div class=\"comparison-section section\">\n    <div class=\"section_header text-md-center mb-3 px-4\">\n        <h2 class=\"title-lg d-none d-md-block pb-2\">\n            What makes Qure right for you?\n        </h2>\n        <h2 class=\"title-lg d-block d-md-none pb-2\">\n            Why is Qure right for you?\n        </h2>\n        <h3>(Here’s a comparison, but there is really no comparison)</h3>\n    </div>\n    <div class=\"container\">\n        <div class=\"comparison-row header_comp_row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\"></div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0\">\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr bg-default\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'qure.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'Omnilux-Contour-logo_1.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'fight-salon.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid d-none d-md-block\" />\n                                    <img src=\"{{ 'fight-salon-mobile.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid d-block d-md-none\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'dr-dennis.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row border-0\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\"></div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0\">\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr bg-default\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'qure-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'Omnilux-Contour-LED-Mask_525x550_copy_1.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'light-salon-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'dr-g-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Portable</div>\n                        <div class=\"comp-row__subtitle\">Hands-free, cordless and rechargable</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Light Colors</div>\n                        <div class=\"comp-row__subtitle\">Each wIth specific skin benefits</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default \">\n                                <strong>5 TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>2 TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>2 TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>5 TOTAL</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row borderTop-comparison\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\"\n                                style=\"background-color:#803b5a\">Infrared</span>\n                            <span class=\"comp-row__title--normal\">Circulation &amp; Protects Collagen</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#A24239\">Deep\n                                Red</span>\n                            <span class=\"comp-row__title--normal\">Reduces Wrinkles & Redness</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#CD574C\">Red</span>\n                            <span class=\"comp-row__title--normal\">Boosts Collagen & Firms</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#E7AA6A\">Amber</span>\n                            <span class=\"comp-row__title--normal\">Sun Damage & Pigmentation </span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#3B75AE\">Blue</span>\n                            <span class=\"comp-row__title--normal\">Acne & Breakouts</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">FDA - cleared</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Customizable treatments</div>\n                        <div class=\"comp-row__subtitle\">Hands-free, cordless and rechargable</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">App companion</div>\n                        <div class=\"comp-row__subtitle\">iPhone/Android</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Number of Diodes</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <strong>160</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>132</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>112</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>162</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Treatment Time</div>\n                        <div class=\"comp-row__subtitle\">Full face</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <strong>3 MINS</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>10 MINS</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>10 MINS</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>3 MINS</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row last-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Price</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-block d-md-flex align-items-center justify-content-center bg-default\">\n                                <!-- <span class=\"compare_price\">$529</span> -->\n                                <h5 class=\"regular_price\" style=\"font-weight: 700;\">$379</h5>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">$395</span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">$527</span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">$435</span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- Comparison Section table end -->"
+      }
+    },
+    "product_box_JzAAt3": {
+      "type": "product-box",
+      "blocks": {
+        "product_nbWqKG": {
+          "type": "product",
+          "settings": {
+            "heading": "Neck & Décolletage LED Light Therapy",
+            "text": "<p>Safe, non-invasive LED treatment. We recommend three to five 10-minute treatments per week for the best results.</p><ul><li>Rejuvenate skin where the first signs of aging show – thin skin, wrinkles, sun spots, age spots and more.</li><li>Repairs sun-damaged skin, reduces the appearance of redness, and fine lines & wrinkles.</li><li>Evens skin tone and boosts firmness for radiant, younger-looking skin.</li></ul>",
+            "product": "neck-decolletage-led"
+          }
+        },
+        "image_J8DbBe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_neck_img.webp"
+          }
+        },
+        "image_Jng6Rj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_c_g_1.webp"
+          }
+        },
+        "image_TPYpmn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_c_g_2.webp"
+          }
+        },
+        "image_i6h3kh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_c_g_3.webp"
+          }
+        },
+        "rating_XL67mG": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star4.8.svg",
+            "text": "97% customer satisfaction rate"
+          }
+        }
+      },
+      "block_order": [
+        "product_nbWqKG",
+        "image_J8DbBe",
+        "image_Jng6Rj",
+        "image_TPYpmn",
+        "image_i6h3kh",
+        "rating_XL67mG"
+      ],
+      "settings": {
+        "classname": "clinical_grade boost_bl",
+        "heading": "Treat beyond the face",
+        "text": "<p>Perfect combination to the Q-Rejuvalight Pro LED mask for the ultimate skin rejuvenation experience. Target the delicate area of neck and décolletage that often gets overlooked.</p>",
+        "text_reduced": "<p>Combine our Neck & Décolletage set with your face mask for a comprehensive treatment.</p>"
+      }
+    },
+    "faq_BgPiYb": {
+      "type": "faq",
+      "blocks": {
+        "object_GPw3Gp": {
+          "type": "object",
+          "settings": {
+            "heading": "What colour wavelengths of lights does the Q-Rejuvalight Pro have?",
+            "text": "<p>The Q-Rejuvalight Pro Facewear has a total of 5 clinically-proven wavelengths of light and offers two treatment modes:</p><ul><li><strong>Infrared light (880 nm): </strong>Increases circulation, protects existing collagen and enhances product absorption.</li><li><strong>Deep Red (660 nm): </strong>Accelerates skin healing to fade and prevent scarring. Builds collagen to help reduce wrinkles. </li><li><strong>Red (630 nm): </strong>Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li><strong>Amber (605 nm): </strong>Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li><strong>Blue (415 nm): </strong>Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p></p><p><span style=\"text-decoration:underline\"><strong>There are two treatment modes:</strong></span></p><p><strong>The Anti-Aging Treatment combines red, deep red, infrared and amber wavelengths</strong> which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin. </p><p><strong>The Anti-Breakout Treatment combines red and blue wavelengths</strong> to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.</p>",
+            "code": ""
+          }
+        },
+        "object_WzL6if": {
+          "type": "object",
+          "settings": {
+            "heading": " Is it FDA cleared? ",
+            "text": "<p>YES! Our Q-Rejuvalight Pro LED mask is the <strong>world’s first customizable, FDA-cleared at-home LED mask</strong> that is <span style=\"text-decoration:underline\">proven</span> to be an effective and safe treatment for acne, and aging skin issues. You may find more details on the FDA website (K230042).</p>",
+            "code": ""
+          }
+        },
+        "object_zEjFPh": {
+          "type": "object",
+          "settings": {
+            "heading": "What type of results will I see? How quickly will I see them?",
+            "text": "<p>Every individual may respond differently to specific wavelengths of lights and results will depend on the goal you want to achieve.</p><p>Most users see a reduction of acne breakouts and redness quicker than they expect.</p><p>Smoother lines, improved skin tone and firmness can take longer.</p><p>The day-to-day changes will be subtle, so be sure to take \"before and after\" pictures to document progress. The most important thing to remember is that results are cumulative, so consistent daily treatment is key.</p>",
+            "code": ""
+          }
+        },
+        "object_kwgVxd": {
+          "type": "object",
+          "settings": {
+            "heading": "Do I need to wear eye protection when I use the Q-Rejuvalight Pro?",
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p><p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. </p><p>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>",
+            "code": ""
+          }
+        },
+        "object_YiKwdT": {
+          "type": "object",
+          "settings": {
+            "heading": "Is it safe for all skin types?",
+            "text": "<p>It's crucial to note that skin types V and VI (on the fitzpatrick scale) are more sensitive for light therapy as they can absorb more light than other skin types. The reason is that skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows higher absorption of energy which increases the risk of adverse events from epidermal injury in people with skin type V and VI. This is why the FDA recommends caution for individuals with these skin types. </p><p>Based on our experience, numerous customers with skin types V and VI have successfully treated their skin with our Q-Rejuvalight Pro Facewear, reporting positive results. </p><p>For customers with skin types V and VI, we highly recommend consulting with your dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin reactions can vary from person to person, and what works well for one individual may not be suitable for another.</p>",
+            "code": ""
+          }
+        },
+        "object_R4NqQq": {
+          "type": "object",
+          "settings": {
+            "heading": "Does the Q-Rejuvalight Pro comes with warranty?",
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>",
+            "code": ""
+          }
+        },
+        "object_XmQVbH": {
+          "type": "object",
+          "settings": {
+            "heading": "At what age and when is the best time to start using LED light therapy?",
+            "text": "<p>Most people can benefit from the Q-Rejuvalight Pro. Whether the goal is to treat acne, help reduce the visible signs of aging, or both, prevention is better than correction. So the sooner the Q-Rejuvalight Pro becomes part of your routine, the better.</p>",
+            "code": ""
+          }
+        },
+        "object_94NRej": {
+          "type": "object",
+          "settings": {
+            "heading": "Where does the Q-Rejuvalight Pro treatment fit into a skincare routine?",
+            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.</p><p>After the treatment is complete, follow with your topical skincare products of choice.</p>",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_GPw3Gp",
+        "object_WzL6if",
+        "object_zEjFPh",
+        "object_kwgVxd",
+        "object_YiKwdT",
+        "object_R4NqQq",
+        "object_XmQVbH",
+        "object_94NRej"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "The answers to your questions",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
+      }
+    },
+    "heading_fijgLW": {
+      "type": "heading",
+      "settings": {
+        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
+        "heading_mobile": "<h2>Real reviews, real results<br/>from people just like you.</h2>"
+      }
+    },
+    "1707653061bd3707e6": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_main_widget_A4ebAn": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_A4ebAn"
+      ],
+      "settings": {
+      }
+    },
+    "pdm_product_social_proof_data_VREtzd": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featuredin_yT6yRP",
+    "before_after_slider_Nfk96E",
+    "text_with_video_TwRQhd",
+    "testimonials_m84mqf",
+    "icons_list_Fkgrmd",
+    "results_Yfghzf",
+    "two_column_box_xCB6mV",
+    "reasons_fpBJjw",
+    "two_column_box_KncU38",
+    "two_column_box_tq6b9C",
+    "videos_list_kLheEB",
+    "easy_guide_E8KQFR",
+    "easy_guide_W6Riga",
+    "compare_GAEKyR",
+    "liquid_Azh7Kn",
+    "product_box_JzAAt3",
+    "faq_BgPiYb",
+    "heading_fijgLW",
+    "1707653061bd3707e6",
+    "pdm_product_social_proof_data_VREtzd"
+  ]
+}

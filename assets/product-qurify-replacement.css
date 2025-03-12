@@ -1,0 +1,45 @@
+.qurify_water .unique_c_list ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.qurify_water .unique_c_list ul li {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 3px 7px;
+}
+
+.proactive_info {
+    max-width: 545px;
+}
+
+.see_item_info p {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.subscribe_save_wrapper {
+    margin-top: 10px;
+}
+
+#see_it_section .see_item_info h5 {
+    font-weight: 700;
+}
+
+@media(max-width:767px) {
+    .qurify_water .unique_c_list ul {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .proactive_info {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}

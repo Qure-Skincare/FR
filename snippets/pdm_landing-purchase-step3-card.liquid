@@ -1,0 +1,42 @@
+{% comment %} 
+  Render Purchase Step 3 Card with title, payment text and payment logos.
+  Accepts:
+  - data: {Object} - The product data to be rendered (Metafield).
+  - cardCase: {Number} - The card case to be rendered. It can be 0 or 1.
+  Usage:
+  {% render 'pdm_landing-purchase-step3-card', data: product.metafields.custom.purchase_step_3.value, cardCase: 0 - 1 %}
+{% endcomment %}
+
+{% liquid
+  assign cardTitles = data.step_3_card_titles.value
+  assign paymentText = data.step_3_payment_texts.value 
+  assign selectedTitle = cardTitles[cardCase]
+  assign selectedPaymentText = paymentText[cardCase]
+ %}
+
+<div class="step3-purchase-card-container">
+  <div class="step3-card-price-container">
+    {% if cardCase == 0 %}
+      <div id="step3-price-normal" class="step3-price-normal-container"></div>
+      {% else %}
+      <div id="step3-price-quota" class="step3-price-quota-cotainer"></div>
+    {% endif %}
+  </div>
+  <div class="step3-card-title-container">
+    <div class="step3-card-title">
+      <h3>{{ selectedTitle }}</h3>
+    </div>
+  </div>
+  <div class="step3-card-information-container">
+    <div class="step3-information-text">
+      <p>{{ selectedPaymentText }}</p>
+    </div>
+    <div class="step-information-img-container">
+      {% if cardCase == 0 %}
+        {{ data.step_3_payment_logos_1 |  image_url: width: 300 |  image_tag: alt: 'payment logos' }}
+      {% else %}
+        {{ data.step_3_payment_logos_2 |  image_url: width: 300 |  image_tag: alt: 'payment logos' }}
+      {% endif %}
+    </div>
+  </div>
+</div>

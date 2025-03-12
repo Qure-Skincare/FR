@@ -1,0 +1,311 @@
+.serum_pdp .refill_bl .refill_info {
+    max-width: 475px;
+}
+
+.serum_pdp .refill_info .section_header {
+    padding: 0 0;
+}
+
+.serum_pdp .bs_price.bs_price_grey .discount_p {
+    font-weight: 700;
+}
+
+.serum_pdp .bs_price.bs_price_grey .discount_p span.sale_p {
+    font-weight: 600;
+}
+
+.serum_pdp .result_s {
+    background: linear-gradient(180deg, #FFFAF1 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.serum_pdp .videosQure {
+    background: linear-gradient(180deg, #FFFAF1 0%, rgba(255, 255, 255, 0) 100%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+
+.serum_pdp .qa_info .up-text p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.serum_pdp .qa_info ul li .up-text {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    color: #000;
+}
+
+.serum_pdp .qa_info ul li .up-text h6 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.qa_info ul li .up-icon {
+    margin-right: 20px;
+}
+
+.serum_pdp .face_serum .qa_info {
+    margin-left: auto;
+}
+
+.serum_pdp .face_serum .qa_info ul li .up-icon {
+    margin-right: 40px;
+}
+
+.serum_pdp .buy_btn p span {
+    font-weight: 700;
+}
+
+.richtext_title {
+    max-width: 400px;
+    font-size: 42px;
+    color: rgb(0 0 0 / 80%);
+    font-weight: 400;
+    margin-bottom: 47px;
+    line-height: 50px;
+}
+
+.richtext_content_col p {
+    margin-bottom: 30px;
+}
+
+.highlight_txt {
+    font-family: 'Canela Light';
+    font-weight: 300;
+    color: #CABEA8;
+    font-size: 50px;
+}
+
+.richtext_prog_section.section {
+    padding: 60px 0 20px;
+}
+
+.all_in_one .subscribe_save_wrapper .with_subscription.buy_btn {
+    font-size: 20px;
+    padding: 17px 0;
+}
+
+.richtext_img {
+    text-align: right;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all_in_one .richtext_prog_section .richtext_img img {
+    max-width: 250px !important;
+    height: 250px !important;
+    width: 100%;
+}
+
+.all_in_one .mi_landing_result .result_content p {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 16px;
+    font-style: normal;
+}
+
+.all_in_one .skin_item_header {
+    font-family: 'Canela Regular';
+    font-weight: 300;
+}
+
+
+.skincare_slider .skincare_right .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+}
+.all_in_one .skincare_slider .section_header p{
+    opacity: 1;
+}
+.all_in_one
+.accordionTechnologyWrapper .accordion-header{
+    border-radius: 16px;
+}
+.all_in_one .planBlock .monthly_plans {
+    border-radius: 100px !important;
+}
+.all_in_one .certified_derm p {
+    font-size: 11px;
+}
+.all_in_one .certified_derm {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.shipping.shipping_bg {
+    padding: 7px 0;
+}
+.all_in_one .planBlock .monthly_plans .saved_price{
+    background-color: #C4121A;
+}
+.all_in_one .planBlock .plan_choosed {
+    max-width: 85%;
+    text-transform: uppercase;
+}
+.all_in_one .planBlock .monthly_plans {
+    padding: 13px 20px;
+}
+.all_in_one .planBlock .monthly_plans .price .regular_price{
+    font-size: 20px;
+}
+.all_in_one .planBlock .monthly_plans 
+.plan_prc.sale_price {
+    font-weight: 500;
+}
+.choose_bundle-offer h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Canela Web";
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 57.37px;
+    letter-spacing: 0.45px;
+}
+.choose_bundle-offer .bundle_offer-content {
+    border-radius: 9.156px;
+    border: 2px solid #C7E7DC;
+    padding: 30px 40px 30px;
+    height: 100%;
+}
+.bf_discount {
+    height: fit-content;
+    padding: 4px 11px;
+    background: #C4121A;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+.planBlock .monthly_plans .plan_hdr h3 {
+    font-size: 16px;
+}
+.all_in_one .planBlock .monthly_plans .plan_prc.sale_price {
+    font-weight: 500;
+}
+.planBlock .monthly_plans .price .plan_prc+.plan_prc {
+    margin-left: 10px;
+}
+.planBlock .monthly_plans .price .sale_price {
+    font-size: 21px;
+}
+.ctm_arrow_span {
+    height: 19px;
+    display: inline-block;
+}
+.ctm_arrow_span img {
+    position: absolute;
+    top: 4px;
+}
+@media(max-width:991px) {
+    /* .skin_item {
+        padding: 30px;
+    } */
+}
+
+@media(max-width:767px) {
+    .planBlock .monthly_plans .plan_hdr h3 {
+        font-size: 14px;
+    }
+    .bf_discount{
+        padding: 1px 6px;
+        font-size: 10px;
+    }
+    .planBlock .monthly_plans .price .sale_price{
+        font-size: 18px;
+    }
+    .choose_bundle-offer h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .choose_bundle-offer .bundle_offer-content {
+        border: 0;
+        padding: 20px 0 10px;
+    }
+    h2.richtext_title {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+    }
+
+    h2.richtext_title .fw-medium {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    }
+
+    .highlight_txt {
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+    }
+
+    .all_in_one .refill_bl.tabSlider .refill_info .section_header .title-xl {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .all_in_one .subscribe_save_wrapper .subscribeInfo p {
+        font-weight: 300;
+    }
+
+    .richtext_prog_section .progessInfo .text-lg {
+        font-size: 46px !important;
+        line-height: 46px !important;
+    }
+
+    .all_in_one .richtext_prog_section .richtext_img img {
+        width: 153px !important;
+        height: 153px !important;
+    }
+
+    .skincare_right .accordion-button {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .skincare_right .accordion-item p {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .skincare_right .accordion-body p {
+        font-size: 10px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    .serum_pdp .trusted_bl {
+        padding: 30px 0;
+    }
+
+    .serum_pdp .trusted_wrapper {
+        padding: 0 !important;
+    }
+    .accordionTechnologyWrapper>#accordionTechnology {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .all_in_one .subscribePrice p {
+        font-weight: 400 !important;
+    }
+    .all_in_one .certified_derm {
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .all_in_one .press_bl.press_bl_4 .ps_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .all_in_one .press_bl.press_bl_4 .ps_item img {
+        height: 22px;
+    }
+}

@@ -1,0 +1,197 @@
+<!-- -- press slider start -- -->
+<!-- -- press slider app out start -- -->
+{% assign random_number='now' | date: "%s" | modulo: 100 | plus: 1 %}
+<div id="{{ section.id }} " class="app_press section">
+  <div class="container1">
+    <div class="press_bl py-2 py-md-4 mw-mob-100">
+      <div class="p_bl_header text-center p-0">
+        <p>{{ section.settings.heading }}</p>
+      </div>
+
+      {% if section.settings.slider_type == 'five_slides' %}
+        {% capture sliderCnt %}app_press_{{ random_number }}text_five{% endcapture %}
+        {% capture sliderImg %}app_press_{{ random_number }}img_five{% endcapture %}
+      {% else %}
+          {% capture sliderCnt %}app_press_{{ random_number }}text_three{% endcapture %}
+          {% capture sliderImg %}app_press_{{ random_number }}img_three{% endcapture %}
+      {% endif %}
+      {% if section.blocks.size > 0 %}
+        <div class="app_press_slider">
+          <div
+            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+            class="swiper app_press_sl_content {{ sliderCnt }}"
+          >
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                {% if block.type == 'text' %}
+                  <div class="swiper-slide">
+                    {{
+                      block.settings.text
+                      | replace: '<p>', '<div class="app_subhheading">'
+                      | replace: '</p>', '</div>'
+                      | replace: '\n', '<br />'
+                    }}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper app_press_sl_img {{ sliderImg }}">
+            <div class="swiper-wrapper justify-content-between">
+              {%- for block in section.blocks -%}
+                {% if block.type == 'image' %}
+                  <div class="swiper-slide">
+                    <div class="app_press_info">
+                      {% if block.settings.image != blank %}
+                        <img src="{{ block.settings.image | img_url: '300x' }}" alt="">
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<!-- -- press slider end -- -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper_press1 = new Swiper('.app_press_{{ random_number }}img_three', {
+      spaceBetween: 20,
+      initialSlide: 1,
+      loop: true,
+      slidesPerView: {{ section.settings.slide_per_view_mobile }},
+      breakpoints: {
+        640: {
+          slidesPerView: {{ section.settings.slide_per_view_desktop }},
+          spaceBetween: 20,
+        },
+      },
+    });
+    var swiper_press12 = new Swiper('.app_press_{{ random_number }}text_three', {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      initialSlide: 1,
+      loop: true,
+      thumbs: {
+        swiper: swiper_press1,
+      },
+    });
+
+    var swiper_press = new Swiper('.app_press_{{ random_number }}img_five', {
+      spaceBetween: 20,
+      slidesPerView: 2.9,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 3.5,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+      },
+    });
+    var swiper_press2 = new Swiper('.app_press_{{ random_number }}text_five', {
+      spaceBetween: 10,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      thumbs: {
+        swiper: swiper_press,
+      },
+    });
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "t:sections.feature_extend.label",
+  "class": "section-featured-in-extended",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label",
+      "default": "FEATURED IN"
+    },
+    {
+      "type": "select",
+      "id": "slider_type",
+      "label": "t:sections.slider.type",
+      "options": [
+        {
+          "value": "five_slides",
+          "label": "t:common.text.count.five"
+        },
+        {
+          "value": "one_slides",
+          "label": "t:common.text.count.one"
+        }
+      ],
+      "default": "five_slides"
+    },
+    {
+      "type": "range",
+      "id": "slide_per_view_desktop",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "label": "t:sections.slider.settings.desktop",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "slide_per_view_mobile",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "label": "t:sections.slider.settings.mobile",
+      "default": 3
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "t:common.text.label",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "t:common.image.label",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.feature_extend.label"
+    }
+  ]
+}
+{% endschema %}

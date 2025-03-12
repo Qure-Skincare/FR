@@ -1,0 +1,200 @@
+{% capture discover %}{% render 'article-snippet-discover' %}{% endcapture %}
+{% capture subscription %}{% render 'article-snippet-subscription' %}{% endcapture %}
+{% capture community %}{% render 'article-snippet-community' %}{% endcapture %}
+
+<div class="blogs_wrapper">
+    <div class="blog_banner_wrap mt-3 mt-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="h-100 d-flex align-items-center">
+                        <div class="blog_banner pe-md-5">
+                            <div class="blog_breadcrumb">Blog > <a href="{{ blog.url }}" aria-label="{{ blog.title |  escape }}">{{ blog.title }}</a></div>
+                            <h1 class="title-lg mt-2 mb-3 mb-md-4 mt-md-4">{{ article.title }}</h1>
+                            <p class="d-none d-md-block"><strong>Written by Our Editorial Team</strong><br>6 MIN</p>
+                            <div class="share_blog-social d-md-flex d-none">
+                                <p>Share this article:</p>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="facebook-share" target="_blank">
+                                            <img src="https://qureskincaredns.com/new/assets/facebook_share.svg" alt="Share on Facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pinterest-share" target="_blank">
+                                            <img src="https://qureskincaredns.com/new/assets/pinterest.svg" alt="Share on Pinterest">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="email-share">
+                                            <img src="https://qureskincaredns.com/new/assets/email_share.svg" alt="Share via Email">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="whatsapp-share" target="_blank">
+                                            <img src="https://qureskincaredns.com/new/assets/whatsapp.svg" alt="Share on WhatsApp">
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog_banner_img">
+                        {% if article.image != blank %}
+                            <picture>
+                                <source media="(min-width:1920px)" srcset="{{ article | img_url: 'master' }}">
+                                <source media="(min-width:1600px)" srcset="{{ article | img_url: '1600x' }}">
+                                <source media="(min-width:1100px)" srcset="{{ article | img_url: '1100x' }}">
+                                <source media="(min-width:720px)" srcset="{{ article | img_url: '720x' }}">
+                                <source media="(min-width:540px)" srcset="{{ article | img_url: '540x' }}">
+                                <img class="img-fluid" src="{{ article | img_url: '540x' }}" alt="{{ article.image.alt | escape }}" width="332" height="192">
+                            </picture>
+                        {% endif %}
+                        <p class="d-block d-md-none mt-3"><strong>Written by Our Editorial Team</strong><br>6 MIN</p>
+                        <div class="share_blog-social d-md-none">
+                            <p>Share this article:</p>
+                            <ul>
+                                <li>
+                                    <a href="#" class="facebook-share" target="_blank">
+                                        <img src="https://qureskincaredns.com/new/assets/facebook_share.svg" alt="Share on Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pinterest-share" target="_blank">
+                                        <img src="https://qureskincaredns.com/new/assets/pinterest.svg" alt="Share on Pinterest">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="email-share">
+                                        <img src="https://qureskincaredns.com/new/assets/email_share.svg" alt="Share via Email">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="whatsapp-share" target="_blank">
+                                        <img src="https://qureskincaredns.com/new/assets/whatsapp.svg" alt="Share on WhatsApp">
+                                    </a>
+                                </li>
+                            </ul>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blogs_tab_info" style="--column-gap:45px; --column-gap-mobile:30px;">
+        <div class="container">
+            <div class="row custom__grid">
+                <div class="col-md-9 custom__block">
+                    <div class="post_wrapper">
+                        {{ article.content 
+                            |  replace: '[discover-snippet]', discover 
+                            |  replace: '[subscription-snippet]', subscription 
+                            |  replace: '[community-snippet]', community 
+                        }}
+                        <div class="blog_post_bl" id="related-blogs">
+                            <div class="section_header text-start mw-100 ms-0 ps-0">
+                                <h2 class="title-xl">Related stories:</h2>
+                            </div>
+                            {% render 'blog-post-bottom' with blog_handle: blog.handle, limit: 3, skip_title: true %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 custom__block">
+                    <div class="most_popular">
+                        <div class="most_popular_title"><strong>Don’t miss</strong> <span class="mx-2">|</span>
+                            <span style="font-style: italic;letter-spacing: 0.3px;">Most Popular</span>
+                        </div>
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Replace with actual page values
+     const pageUrl = window.location.href;  // Gets the current page URL
+     const imageUrl = "{{ article | img_url: '540x' }}";  // Replace with dynamic image URL if available
+     const description = "{{ article.title | escape }}";  // Replace with dynamic description if available
+     const emailSubject = "{{ article.title | escape }}";  // Replace with dynamic subject
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Update all Facebook share links
+        document.querySelectorAll(".facebook-share").forEach(link => {
+            link.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+        });
+
+        // Update all Pinterest share links
+        document.querySelectorAll(".pinterest-share").forEach(link => {
+            link.href = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(imageUrl)}&description=${encodeURIComponent(description)}`;
+        });
+
+        // Update all Email share links
+        document.querySelectorAll(".email-share").forEach(link => {
+            link.href = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=Check%20this%20out:%20${encodeURIComponent(pageUrl)}`;
+        });
+
+        // Update all WhatsApp share links
+        document.querySelectorAll(".whatsapp-share").forEach(link => {
+            link.href = `https://wa.me/?text=${encodeURIComponent(pageUrl)}`;
+        });
+    });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "articleBody": "{{ article.content | strip_html | json }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ shop.url }}{{ page.url }}"
+  },
+  "headline": "{{ article.title }}",
+  {% if article.excerpt != blank %}
+    "description": "{{ article.excerpt | strip_html }}",
+  {% endif %}
+  {% if article.image %}
+    {% assign image_size = article.image.width | append: 'x' %}
+    "image": [
+      "https:{{ article | img_url: image_size }}"
+    ],
+  {% endif %}
+  "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "dateCreated": "{{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ article.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    {% if settings.share_image %}
+      {% assign image_size = settings.share_image.width | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ settings.share_image.height }}",
+        "url": "https:{{ settings.share_image | img_url: image_size }}",
+        "width": "{{ settings.share_image.width }}"
+      },
+    {% elsif article.image %}
+      {% assign image_size = article.image.width | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ article.image.height }}",
+        "url": "https:{{ article.image | img_url: image_size }}",
+        "width": "{{ article.image.width }}"
+      },
+    {% endif %}
+    "name": "{{ shop.name }}"
+  }
+}
+</script>

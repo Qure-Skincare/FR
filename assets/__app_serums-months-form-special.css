@@ -1,0 +1,20 @@
+.months-form-special .offer_active .supply_steps .step_block .step_content .serumBlock input.active+.serum_prd:after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: '';
+    background-image: url("../assets/1plus1free.svg");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.months-form-special .planBlock .plan_choosed span {
+    background: #C92127;
+}
+
+.months-form-special .supply-detail .supply_steps:nth-child(3) .step_counter::before {
+    display: none;
+}

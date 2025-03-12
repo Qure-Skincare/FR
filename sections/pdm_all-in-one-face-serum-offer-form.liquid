@@ -1,0 +1,362 @@
+<div class="available_bar" style="margin-top: 30px;">
+  <p>AVAILABLE UNTIL STOCK LASTS</p>
+</div>
+
+<div class="pdm_all-in-one-face-main" id="choose_bundle">
+  <div class="container">
+    {% comment %} description mobile {% endcomment %}
+    <div class="pdm_all-in-one-face-serum-mobile-description-container">
+      <div class="pdm_all-in-one-face-serum-mobile-description-reviews">
+        {% if section.settings.rating_image != blank %}
+          {{ section.settings.rating_image | image_url: width: 80 | image_tag: alt: 'raiting' }}
+        {% endif %}
+        <p>{{ section.settings.rating }}</p>
+      </div>
+      <p class="pdm_all-in-one-face-serum-mobile-description-subtitle">{{ section.settings.section_subtitle }}</p>
+      <p class="pdm_all-in-one-face-serum-mobile-description-title">{{ section.settings.section_title }}</p>
+      <div class="pdm_all-in-one-face-serum-mobile-description-info">{{ section.settings.section_description }}</div>
+    </div>
+    {% comment %} end description mobile {% endcomment %}
+
+    <div class="pdm_all-in-one-face-serum-offer-form-container">
+      {% comment %} image {% endcomment %}
+      <div class="pdm_all-in-one-face-serum-offer-form-images">
+        <div class="pdm_all-in-one-face-serum-offer-form-images-container">
+          {% for block in section.blocks %}
+            {% assign complete_class = 'pdm_all-in-one-face-serum-offer-form-images-container__img '
+              | append: block.settings.class_image
+            %}
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 900
+                | image_tag:
+                  class: complete_class,
+                  alt: 'product image',
+                  data-variantid-image: block.settings.product.variants.first.id
+              }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% comment %} right side  {% endcomment %}
+
+      {% comment %} description desktop {% endcomment %}
+      <div class="pdm_all-in-one-face-serum-desktop-description-container">
+        <div class="pdm_all-in-one-face-serum-desktop-description-info">
+          <div class="pdm_all-in-one-face-serum-desktop-description-info__reviews">
+            {% if section.settings.rating_image != blank %}
+             {{ section.settings.rating_image | image_url: width: 100 | image_tag: alt: 'raiting' }}
+            {% endif %}
+            <p>{{ section.settings.rating }}</p>
+          </div>
+          <p class="pdm_all-in-one-face-serum-desktop-description-info__subtitle">
+            {{ section.settings.section_subtitle }}
+          </p>
+          <p class="pdm_all-in-one-face-serum-desktop-description-info__title">{{ section.settings.section_title }}</p>
+          <div class="pdm_all-in-one-face-serum-desktop-description-info__description">
+            {{ section.settings.section_description }}
+          </div>
+        </div>
+        {% comment %} end description desktop {% endcomment %}
+        {% comment %} form {% endcomment %}
+        <div class="pdm_all-in-one-face-serum-description-form">
+          <div class="pdm_all-in-one-face-serum-description-form-wrapper">
+            <div class="pdm_all-in-one-face-serum-description-form-wrapper__description">
+              {{ section.settings.form_description }}
+            </div>
+            <div class="pdm_all-in-one-face-serum-description-form-wrapper__form">
+              {% for block in section.blocks %}
+                {% liquid
+                  assign number_of_products = block.settings.input_quantity
+                  assign product_price = block.settings.product.price | divided_by: number_of_products
+                  assign compare_price = block.settings.product.compare_at_price | divided_by: 100
+                  assign normal_price = block.settings.product.price | divided_by: 100
+
+                  assign saving_price = block.settings.product.compare_at_price | minus: block.settings.product.price
+                  if saving_price < 0
+                    assign saving_price = 0
+                  endif
+
+                  assign discount_percent = compare_price | minus: normal_price
+                  assign discount_percent_divided = discount_percent | times: 100.00 | divided_by: compare_price | ceil
+                %}
+                <div
+                  class="pdm_all-in-one-face-serum-description-form-wrapper__form-input pdm_plan-one-face-serum"
+                  data-product-handle="{{ block.settings.product.handle }}"
+                  data-product-id="{{ block.settings.product.id }}"
+                  data-variant-id="{{ block.settings.product.variants.first.id }}"
+                  data-payment-methods="{{ product_price |  divided_by:  4 | money_without_trailing_zeros }}"
+                  data-number-product="{{ number_of_products }}"
+                  data-compare-at-price="{{ block.settings.product.compare_at_price |  money_without_trailing_zeros }}"
+                  data-price="{{ block.settings.product.price | money_without_trailing_zeros }}"
+                  data-saving-price="{{ saving_price | money_without_trailing_zeros }}"
+                  data-discount-message="{% if block.settings.show_discount %}& {{ block.settings.discount_text }} {{ discount_percent_divided }}{{-block.settings.discount_suffix-}}{% endif %}"
+                >
+                  <input
+                    type="radio"
+                    name="pdm_monthly-plan"
+                    id="pdm_monthly-plan-{{ forloop.index }}"
+                    {% if forloop.first %}
+                      checked
+                    {% endif %}
+                  >
+                  <label for="pdm_monthly-plan-{{ forloop.index }}">
+                    <div class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container">
+                      {% if block.settings.show_special_offer %}
+                        <div class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__special-offer">
+                          {{ block.settings.special_offer_text }}
+                        </div>
+                      {% endif %}
+                      <div class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info">
+                        <div class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info-offer">
+                          <span class="serum-offer">{{ block.settings.offer_general }}</span>
+                          <span class="serum-time">{{ block.settings.offer_description }}</span>
+                        </div>
+                        <div
+                          class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info-price"
+                        >
+                          <p
+                            class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info-price-product"
+                          >
+                            <strong>{{- product_price | money_without_trailing_zeros -}}</strong>
+                            {% if number_of_products > 1 %}
+                              {{- block.settings.discount_product_text -}}
+                            {% endif %}
+                          </p>
+                          {% if block.settings.show_discount %}
+                            <p
+                              class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info-price-save"
+                            >
+                              {{ block.settings.discount_text }}
+                              {{ discount_percent_divided }}
+                              {{- block.settings.discount_suffix -}}
+                              <span class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info-price-save-desktop">{{ block.settings.discount_extra_text_desktop }}</span>
+                              <span class="pdm_all-in-one-face-serum-description-form-wrapper__form-label__container__info-price-save-mobile">{{ block.settings.discount_extra_text_mobile }}</span>
+                            </p>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              {% endfor %}
+            </div>
+            {% comment %} end form {% endcomment %}
+            {% comment %} start money {% endcomment %}
+            <div class="pdm_all-in-one-face-serum-description-form-wrapper__total">
+              <div class="pdm_all-in-one-face-serum-description-form-wrapper__total-price">
+                <p>
+                  {{ section.settings.form_total }}: <span class="pdm_serum-total-price"></span
+                  ><span class="pdm_serum-discount-price"></span>
+                </p>
+              </div>
+              <div class="pdm_all-in-one-face-serum-description-form-wrapper__total-saving pdm_serum-saving-container">
+                <p>
+                  {{ section.settings.form_savings }}
+                  <span class="pdm_serum-saving-price"></span>
+                </p>
+              </div>
+            </div>
+            {% comment %} end moeny {% endcomment %}
+            {% comment %} anochor element {% endcomment %}
+            <a class="pdm_all-in-one-face-serum-description-form-wrapper__anchor pdm_serum-anchor-ajax" data-ajax-cart-request-button>
+              {{ section.settings.form_button }}
+              <span class="pdm_serum-anchor-ajax-text"></span>
+            </a>
+            {% comment %} payment methods {% endcomment %}
+            <div class="payment_method pb-0">
+              <p>OR 4 monthly payments of <span class="pdm_payment-methods-serum"></span> with</p>
+              <div class="pmt_img ps-2">
+                <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt=""
+                ><img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt=""
+                ><img
+                  src="https://qureskincaredns.com/new/assets/afterpay.svg"
+                  alt=""
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "pdm All In One Face Serum",
+  "class": "pdm_all-in-one-face-serum-offer-form",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Rating & Review"
+    },
+    {
+      "type": "text",
+      "id": "rating",
+      "label": "rating",
+      "default": "5.0/5.0 Rated by Customers"
+    },
+    {
+      "type": "image_picker",
+      "id": "rating_image",
+      "label": "Raiting image"
+    },
+    {
+      "type": "header",
+      "content": "Product Information"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Section subtitle",
+      "default": "Embrace Ageless Confidence"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "All-In-One Face Serum"
+    },
+    {
+      "type": "richtext",
+      "id": "section_description",
+      "label": "Section description"
+    },
+    {
+      "type": "header",
+      "content": "form",
+      "info": "general information in the form"
+    },
+    {
+      "type": "richtext",
+      "id": "form_description",
+      "label": "Form Description"
+    },
+    {
+      "type": "text",
+      "id": "form_total",
+      "label": "Form Total",
+      "default": "Total"
+    },
+    {
+      "type": "text",
+      "id": "form_savings",
+      "label": "Form Savings",
+      "default": "Your Savings"
+    },
+    {
+      "type": "text",
+      "id": "form_button",
+      "label": "Form Button",
+      "default": "buy now"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "product",
+      "type": "product",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Product Image",
+          "info": "Product Image general information"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "class_image",
+          "label": "Class Image"
+        },
+        {
+          "type": "header",
+          "content": "Product",
+          "info": "Select the product you want to display"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "product"
+        },
+        {
+          "type": "text",
+          "id": "offer_general",
+          "label": "Offer General Information"
+        },
+        {
+          "type": "text",
+          "id": "offer_description",
+          "label": "Offer Description"
+        },
+        {
+          "type": "number",
+          "id": "input_quantity",
+          "label": "Number of Products",
+          "placeholder": "0",
+          "info": "Enter 1 to display the full price, or if you want to show the price per item, enter the total number of items."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_special_offer",
+          "label": "Show Special Offer",
+          "default": false,
+          "info": "mark if the product has a special offer"
+        },
+        {
+          "type": "richtext",
+          "id": "special_offer_text",
+          "label": "Special Offer Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_discount",
+          "label": "Show Discount",
+          "default": true,
+          "info": "mark if the product has a discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_product_text",
+          "label": "Discount Text product",
+          "default": "/each"
+        },
+        {
+          "type": "text",
+          "id": "discount_text",
+          "label": "Discount Text",
+          "default": "save"
+        },
+        {
+          "type": "text",
+          "id": "discount_suffix",
+          "label": "Discount Suffix",
+          "default": "%"
+        },
+        {
+          "type": "text",
+          "id": "discount_extra_text_desktop",
+          "label": "Discount Extra Text Desktop",
+          "default": "- GET ONE FREE"
+        },
+        {
+          "type": "text",
+          "id": "discount_extra_text_mobile",
+          "label": "Discount Extra Text Mobile",
+          "default": "GET ONE FREE"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "pdm All In One Face Serum"
+    }
+  ]
+}
+{% endschema %}
