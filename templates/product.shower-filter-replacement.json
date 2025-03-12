@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-extended",
+      "blocks": {
+        "rating_KDB67x": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "<p>4.7/5 Rated by Customers</p>"
+          }
+        },
+        "list_azYRbY": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li>Replace Shower Filter cartridge every 3 months for consistently hydrated, healthier hair and skin.</li><li>Removes up to 99% chlorine, heavy metals &<br/>contaminants that harms your skin and hair.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>"
+          }
+        },
+        "supply_CTrVRQ": {
+          "type": "supply",
+          "disabled": true,
+          "settings": {
+            "heading": "Next batch ships 17th of February 2025:",
+            "heading_mobile": "Next batch ships 02/17:",
+            "text": "<p>Order now and secure yours from the next shipment.</p>",
+            "first_option_date": "November 20th",
+            "first_option_text": "SOLD OUT",
+            "first_option_percent": 100,
+            "second_option_date": "February 17th",
+            "second_option_text": "54% Reserved",
+            "second_option_percent": 55,
+            "third_option_date": "March 30th",
+            "third_option_text": "In Production",
+            "third_option_percent": 0
+          }
+        },
+        "variant_7PWWak": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/Untitleddesign_12.png",
+            "variant_id": 46010772652271
+          }
+        },
+        "variant_7nqQxD": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/Untitleddesign_13.png",
+            "variant_id": 46010772685039
+          }
+        },
+        "subscribe_EyrzEb": {
+          "type": "subscribe",
+          "settings": {
+            "heading": "Subscribe & save 30%",
+            "text": "<p>3 month replacement filter delivers every 90 days for just [discount_price_additional]. Skip or cancel anytime.<a href=\"https://qureskincare.com/pages/subscriptions\" title=\"https://qureskincare.com/pages/subscriptions\">See more details</a></p>",
+            "product": "shower-filter-replacement",
+            "plan": "6286082287",
+            "discount": 30
+          }
+        }
+      },
+      "block_order": [
+        "rating_KDB67x",
+        "list_azYRbY",
+        "supply_CTrVRQ",
+        "variant_7PWWak",
+        "variant_7nqQxD",
+        "subscribe_EyrzEb"
+      ],
+      "settings": {
+        "seo_heading": "SHOWER FILTER REFILL CARTRIDGE",
+        "heading": "Keep the good skin & hair flowing with the Shower Filter Refill",
+        "heading_mobile": "Keep the good skin & hair flowing with the Shower Filter Refill",
+        "wistia_id": "",
+        "product_images_limit": 5,
+        "product_button_label": "Product",
+        "before_after_images_limit": 0,
+        "before_after_button_label": "Before & After",
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Approved",
+        "underbutton_text_right": "Free Shipping Over US$100",
+        "selected_design": "new",
+        "text_label_real_result_1": "",
+        "text_label_real_result_2": "",
+        "text_label_real_result_3": ""
+      }
+    },
+    "second": {
+      "type": "temp-product-shower-filter-replacement",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "second"
+  ]
+}

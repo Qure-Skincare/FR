@@ -32,7 +32,7 @@
           {% endif %}
 
           <div class="swiper-slide video_popup" data-media="{{ media.media_type }}">
-            {% if forloop.last == false and product.handle != "faucet-filter" and product.handle != "shower-filter" %}
+            {% if forloop.last == false and product.handle != "faucet-filter" and product.handle != "shower-filter" and product.handle != "shower-filter-replacement" %}
               <a
                 class="popup-youtube d-block"
                 href="{{ video_source_url }}"

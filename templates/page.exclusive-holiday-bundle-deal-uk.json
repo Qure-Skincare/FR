@@ -87,12 +87,11 @@
         },
         "product_L8TbkG": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "heading": "Exclusive Valentine's day bundle",
-            "discount": 66,
-            "image": "shopify://shop_images/VD-Bundle-hero-02.png",
-            "product_url": "#Pro-Aging-Bundles"
+            "heading": "Mother's day bundle",
+            "discount": 60,
+            "image": "shopify://shop_images/MD-Bundle-hero.png",
+            "product_url": "#mothers-day-bundle-1"
           }
         },
         "product_YzAr6q": {
@@ -545,7 +544,7 @@
         "product_WbmMAY": {
           "type": "product",
           "settings": {
-            "product": "mothers-day-bundle",
+            "product": "mothers-day-bundle-1",
             "percent": 30,
             "media_limit": 0,
             "hide_us": false,

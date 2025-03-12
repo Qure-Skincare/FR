@@ -359,7 +359,7 @@
           "label_seconds": "SECONDS",
           "enable_free_shipping_treshold": true,
           "enable_product_gift": true,
-          "product_free_gift": "all-in-one-face-serum-8-ml",
+          "product_free_gift": "face-serum",
           "icon_product_gift_clean": "shopify://shop_images/Layer_1_1.svg",
           "icon_product_gift_full": "shopify://shop_images/Layer_1_0f98f0bb-ebbd-41bc-96dc-f905b2948e10.svg",
           "icon_gift_width": 18,

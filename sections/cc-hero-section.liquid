@@ -561,6 +561,8 @@
                               <video autoplay loop muted playsinline controls>
                                 <source src="{{media.url}}" type="video/mp4">
                               </video>
+                            {% else %}
+                              <img src="{{media.url}}">
                             {%- endif -%}
                           </div>
                         </div>

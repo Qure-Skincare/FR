@@ -13,6 +13,10 @@
     {% when 'product.pdp-shower-filter' %}
         {% assign main_class = 'shower_filter' %}
         <link rel="stylesheet" href="{{ 'shower-filter.css' | asset_url }}">
+    {% when 'product.shower-filter-replacement' %}
+        {% assign main_class = 'shower_filter shower-filter-replacement' %}
+        <link rel="stylesheet" href="{{ 'shower-filter.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'shower-filter-replacement.css' | asset_url }}">
     {% when 'product.sunil-led-mask-onyx' %}
         {% assign main_class = 'led_mask' %}
         <link rel="stylesheet" href="{{ 'product-led-mask.css' | asset_url }}">
