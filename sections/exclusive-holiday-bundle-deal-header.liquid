@@ -1,0 +1,411 @@
+<!-- -- black friday sale main banner start -- -->
+<div class="bfs_main_banner section">
+    <div class="container">
+        <div class="row align-items-center gx-0">
+            <div class="col-md-6">
+                <div class="bfs_mb_content bfBundle__content mw-mob-100">
+                    {%- for block in section.blocks -%}
+                        {% if block.type == 'badge' %}
+                            <div class="bfs_tag mb-3 mx-auto ms-md-0">
+                                <p class="bfs_tag_bf" style="background-color: {{ block.settings.color_main }}">{{ block.settings.heading }}</p>
+                                <p class="bfs_tag_sale" style="background-color: {{ block.settings.color }}">{{ block.settings.text }}</p>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if section.settings.seo_heading != blank %}
+                        <h1 class="seo_heading">{{ section.settings.seo_heading }}</h1>
+                    {% endif %}
+
+                    <div class="section_header mw-100 text-center text-md-start pb-0">
+                        {% if section.settings.heading != blank %}
+                            <h2 class="title-xl mb-4 mb-md-3">{{ section.settings.heading |  replace: '\n', '<br />' }}</h2>
+                        {% endif %}
+
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text |  replace: '<p>', '<p class="mw-402 p-0 d-none d-md-block">' }}
+                        {% endif %}
+                    </div>
+                    <div class="bfs_mb_btn d-none d-md-flex justify-content-between mw-499">
+                        <div>
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'link' %}
+                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" class="btn btn-bfBundle mt-0 mw-100 fw-normal">{{ block.settings.link_label |  replace: 'SAVE UP TO 55%', '<b>SAVE UP TO 55%</b>' }} <img src="{{ 'arrow-down-white1.svg' | asset_url }}" class="img-fluid ms-2"></a>
+                                {% endif %}
+                            {%- endfor -%}
+                            
+                            <div class="ss_list p-0 ms-md-3">
+                                <ul>
+                                    <li>Free World-Wide Shipping</li>
+                                    <li>Easy Returns within 30 Days</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block bfs_mb_btn_img">
+                            <img src="{{ 'q_uses_1.webp' | asset_url }}" alt="" class="img-fluid pt-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bfs_mb_slider">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper bfs_mb_sl2">
+                        <div class="swiper-wrapper">
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'product' %}
+                                    <div class="swiper-slide">
+                                        <a href="{{ block.settings.product_url }}" class="bfs_mb_wrap">
+                                            {% if block.settings.image != blank %}
+                                                <div class="new_img">
+                                                    <img src="{{ block.settings.image | img_url: '720x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                                                </div>
+                                            {% endif %}
+                                            {% if block.settings.discount != blank %}
+                                                <div class="bfs_mb_saveTag">
+                                                    <p>SAVE</p>
+                                                    <h5>{{ block.settings.discount }}%</h5>
+                                                </div>
+                                            {% endif %}
+                                        </a>
+                                    </div>
+                                {% endif %}
+                            {%- endfor -%}
+                        </div>
+                    </div>
+                    <div class="thumbsSlider_wrap mt-3">
+                        <div thumbsSlider="" class="swiper bfs_mb_sl pagination_navigation1">
+                            <div></div>
+                            <div class="swiper-wrapper">
+                                {%- for block in section.blocks -%}
+                                    {% if block.type == 'product' %}
+                                        <div class="swiper-slide">
+                                            <div class="bfs_mb_wrapThumb">
+                                                {% if block.settings.image != blank %}
+                                                    <div class="new_img">
+                                                        <img src="{{ block.settings.image | img_url: '240x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                                                    </div>
+                                                {% endif %}
+                                                {% if block.settings.discount != blank %}
+                                                    <div class="bfs_mb_saveTagThumb">
+                                                        <p>SAVE</p>
+                                                        <h5>{{ block.settings.discount }}%</h5>
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-button"></div>
+                        <div class="swiper-button-prev swiper-button"></div>
+                    </div>
+                    <div class="bfs_mb_btn d-block d-md-none justify-content-between mw-499 bfBundle__content">
+                        <div>
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'link' %}
+                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" class="btn btn-bfBundle mt-0 mw-100 fw-normal">{{ block.settings.link_label }} <img src="{{ 'arrow-down-white1.svg' | asset_url }}" class="img-fluid ms-3"></a>
+                                {% endif %}
+                            {%- endfor -%}
+
+                            <div class="ss_list p-0 ms-md-3">
+                                <ul class="mw-268 mx-auto">
+                                    <li class="mx-2">Free World-Wide Shipping </li>
+                                    <li class="mx-2">Easy Returns within 30 Days</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block bfs_mb_btn_img">
+                            <img src="{{ 'q_uses_1.webp' | asset_url }}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- black friday sale main banner end -- -->
+
+<script>
+    var swiper = new Swiper(".bfs_mb_sl", {
+        spaceBetween: 8,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            768: {
+                spaceBetween: 8,
+                slidesPerView: 6,
+            },
+
+        },
+    });
+    var swiper2 = new Swiper(".bfs_mb_sl2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        var TwaSettingsSwiper = {
+            init: function () {
+                this.TwaSettingsCarousel();
+            },
+            TwaSettingsCarousel: function () {
+                document.querySelectorAll(".twa__swiper_thumbs").forEach(e => {
+                    this.TwaCarousel(e);
+                });
+            },
+            TwaCarousel: function (e) {
+                var t = e?.dataset.autoplay === "true",
+                    n = e.dataset.loop === "true",
+                    w = e?.dataset.rows ? e?.dataset.row : 1,
+                    pgm = e?.dataset.spgmobile ? e?.dataset.spgmobile : 1,
+                    pgt = e?.dataset.spgtablet ? e?.dataset.spgtablet : 1,
+                    pgd = e?.dataset.spgdesktop ? e?.dataset.spgdesktop : 1,
+                    i = e?.dataset.desktop ? e?.dataset.desktop : 4,
+                    s = e?.dataset.tablet ? e?.dataset.tablet : 2,
+                    r = e?.dataset.mobile ? e?.dataset.mobile : 1,
+                    a = e?.dataset.autoplaySpeed ? e?.dataset.autoplaySpeed : 3000,
+                    c = e?.dataset.speed ? e?.dataset.speed : 400,
+                    l = e?.dataset.effect ? e?.dataset.effect : "slide",
+                    d = e?.dataset.sectionId,
+                    u = e?.dataset.row ? e?.dataset.row : 1,
+                    ut = e?.dataset.rowtablet ? e?.dataset.rowtablet : 1,
+                    um = e?.dataset.rowmobile ? e?.dataset.rowmobile : 1,
+                    p = window.innerWidth,
+                    m = e?.dataset.spacing ? e?.dataset.spacing : 0;
+                var cs = e.dataset.centerslide === "true",
+                    desktop = parseInt(pgd),
+                    tablet = parseInt(pgt),
+                    mobile = parseInt(pgm),
+                    al = e?.dataset.arrowleft ? e?.dataset.arrowleft : "custom-prev",
+                    ar = e?.dataset.arrowright ? e?.dataset.arrowright : "custom-next";
+                m = Number(m);
+                a = Number(a);
+                c = Number(c);
+                p <= 767 ? m >= 15 && (m = 15) : p <= 1199 && m >= 30 && (m = 30);
+                var mainSwiperSelector = "#twa__swiper_thumbs-" + d;
+                var thumbSwiperSelector = "#twa__thumb-" + d;
+                // Initialize Thumbnail Swiper
+                var thumbnailSwiper = new Swiper(thumbSwiperSelector, {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    watchSlidesProgress: true,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 4
+                        },
+                        1024: {
+                            slidesPerView: 4
+                        }
+                    }
+                });
+                // Initialize Main Swiper with Thumbnail control
+                new Swiper(mainSwiperSelector, {
+                    slidesPerView: r,
+                    spaceBetween: m,
+                    centeredSlides: cs,
+                    autoplay: t ? { delay: a } : false,
+                    loop: n,
+                    effect: l,
+                    speed: c,
+                    watchSlidesProgress: true,
+                    thumbs: {
+                        swiper: thumbnailSwiper
+                    },
+                    navigation: {
+                        nextEl: `.${ar}`,  // Use unique class name here
+                        prevEl: `.${al}`   // Use unique class name here
+                    },
+                    pagination: {
+                        clickable: true,
+                        el: e.querySelector(".swiper-pagination")
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: s,
+                            grid: {
+                                rows: ut
+                            }
+                        },
+                        1450: {
+                            slidesPerView: i,
+                            grid: {
+                                rows: u
+                            }
+                        }
+                    }
+                });
+            }
+        };
+        // Initialize Swipers
+        TwaSettingsSwiper.init();
+
+
+        // Select all the color selectors
+        document.querySelectorAll('.colorSelectorFaucet').forEach(function (selectElement) {
+            selectElement.addEventListener('change', function () {
+                // Find the closest .bfs_tabContent_bx parent
+                var parentBox = selectElement.closest('.bfs_tabContent_bx');
+                // Select the image within that parent
+                var showerImage = parentBox.querySelector('.imageFaucet');
+
+                // Update the image source based on the selected value
+                if (this.value == "1") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_faucet.webp"; // White option
+                } else if (this.value == "2") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_faucet_b.webp"; // Black option
+                }
+            });
+        });
+
+        // Select all the color selectors
+        document.querySelectorAll('.colorSelectorShower').forEach(function (selectElement) {
+            selectElement.addEventListener('change', function () {
+                // Find the closest .bfs_tabContent_bx parent
+                var parentBox = selectElement.closest('.bfs_tabContent_bx');
+                // Select the image within that parent
+                var showerImage = parentBox.querySelector('.imageShower');
+
+                // Update the image source based on the selected value
+                if (this.value == "1") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_shower_f.webp"; // White option
+                } else if (this.value == "2") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_shower_f_b.webp"; // Black option
+                }
+            });
+        });
+
+        const swiperWrappers = document.querySelectorAll('.thumbsSlider_wrap .swiper-wrapper');
+        swiperWrappers.forEach(wrapper => {
+            if (wrapper.children.length < 4) {
+                wrapper.style.justifyContent = 'center';
+            }
+        });
+    });
+</script>
+
+
+{% schema %}
+    {
+        "name": "t:sections.exclusive-holiday-bundle-deal-header.name",
+        "class": "section-exclusive-holiday-bundle-deal-header",
+        "settings": [
+            {
+                "type": "text",
+                "id": "seo_heading",
+                "label": "t:common.heading.seo_heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "badge",
+                "name": "t:common.badge.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label",
+                        "default": "BLACK FRIDAY"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label",
+                        "default": "SALE"
+                    },
+                    {
+                        "type":"color",
+                        "id":"color_main",
+                        "label":"t:common.color.label",
+                        "default":"#000000"
+                    },
+                    {
+                        "type":"color",
+                        "id":"color",
+                        "label":"t:common.color.label",
+                        "default":"#C4121A"
+                    }
+                ]
+            },
+            {
+                "type": "product",
+                "name": "t:common.product.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "discount",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.sale.discount",
+                        "default": 50
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "product_url",
+                        "label": "t:common.product.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "link",
+                "name": "t:sections.main-banner-promotion.blocks.link.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "text",
+                        "id": "link_label_mobile",
+                        "default": "Link label mobile",
+                        "label": "t:common.link.mobile.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

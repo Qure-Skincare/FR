@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-micro-infusion-blog",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

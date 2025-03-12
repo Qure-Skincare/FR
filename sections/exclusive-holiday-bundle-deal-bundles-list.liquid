@@ -1,0 +1,299 @@
+{% assign product_count = 0 %}
+
+{%- for block in section.blocks -%}
+    {% if block.type == 'product' %}
+        {%- assign product_count = product_count | plus: 1 -%}
+    {% endif %}
+{% endfor %}
+
+<div class="bf_bundle_sale">
+    <div class="container">
+        <div class="bf_bundle_item" id="{{ section.settings.heading | escape |  replace: ' ', '-' }}">
+            <div class="section_header pb-0 text-center mw-100">
+                {% if section.settings.supertop != blank %}
+                    <h6 class="pb-3">{{ section.settings.supertop }}</h6>
+                {% endif %}
+                {% if section.settings.heading != blank %}
+                    <div class="section_header_withLine">
+                            <h2 class="title-lg pb-md-2">{{ section.settings.heading }}</h2>
+                    </div>
+                {% endif %}
+
+                {% if section.settings.subheading != blank %}
+                    <p class="withLine_p">{{ section.settings.subheading }}</p>
+                {% endif %}
+
+                <div class="bf_bundle_item_ftr mw-750 mx-auto mt-3 ps-md-0 ps-2 mb-4 pb-2">
+                    {%- for block in section.blocks -%}
+                        {% if block.type == 'icon' %}
+                            <div class="bf_bundle_item_ftr_item">
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                                {% endif %}
+                                {{ block.settings.text |  replace: '<p>', '<p class="d-none d-md-block">' |  replace: '\n', '<br />' }}
+                                {{ block.settings.text |  replace: '<p>', '<p class="d-block d-md-none">' |  replace: '\n', '' }}
+                            </div>
+                        {% endif %}
+                    {%- endfor -%}
+                </div>
+
+                {% if product_count > 0 %}
+
+                    {% comment %} get assoc array from current section with defined block parent {% endcomment %}
+                    {% include 'assoc-array', section: section, __parent_title: 'product', __separator: '###' %}
+
+                    <div class="bfs_main_banner swiperWrap">
+
+                        {% assign product_num = 0 %}
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'product' %}
+                                {% if block.settings.product != blank %}
+                                    {% assign children = blank %}
+                                    {% assign product_num = product_num | plus: 1 %}
+                                    
+                                    {% case product_num %}
+                                        {% when 1 %}
+                                            {% assign children = __idsArray1 %}
+                                        {% when 2 %}
+                                            {% assign children = __idsArray2 %}
+                                        {% when 3 %}
+                                            {% assign children = __idsArray3 %}
+                                        {% when 4 %}
+                                            {% assign children = __idsArray4 %}
+                                        {% when 5 %}
+                                            {% assign children = __idsArray5 %}
+                                        {% when 6 %}
+                                            {% assign children = __idsArray6 %}
+                                        {% when 7 %}
+                                            {% assign children = __idsArray7 %}
+                                        {% when 8 %}
+                                            {% assign children = __idsArray8 %}
+                                        {% when 9 %}
+                                            {% assign children = __idsArray9 %}
+                                        {% when 10 %}
+                                            {% assign children = __idsArray10 %}
+                                        {% when 11 %}
+                                            {% assign children = __idsArray11 %}
+                                        {% when 12 %}
+                                            {% assign children = __idsArray12 %}
+                                    {% endcase %}
+
+                                    {% render 'exclusive-holiday-bundle-deal-bundles-bundle', block: block, children: children %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    
+                    </div>
+
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "t:sections.exclusive-holiday-bundle-deal-bundles-list.name",
+        "class": "section-exclusive-holiday-bundle-deal-bundles-list",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            },
+            {
+                "type": "text",
+                "id": "supertop",
+                "label": "t:common.supertop.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "icon",
+                "name": "t:common.icon.label",
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    },
+            {
+                "type": "bundle",
+                "name": "BUNDLE",
+                "settings": [
+                    {
+                        "type": "header",
+                        "content": "BUNDLE"
+                    }
+                ]
+		    },
+            {
+                "type": "product",
+                "name": "t:common.product.label",
+                "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "percent",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.percent.label",
+                        "default": 30
+                    },
+                    {
+                        "type": "number",
+                        "id": "default_variant_id",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.default_variant_id.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "media_limit",
+                        "min": 0,
+                        "max": 10,
+                        "step": 1,
+                        "unit": "img",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.media_limit.label",
+                        "default": 0
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "hide_us",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.hide_us.label",
+                        "default": false
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "recommended_heading",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.recommended_heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "recommended_text",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.recommended_text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "recommended_image",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.recommended_image.label"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "is_top_rated",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.top_rated.label",
+                        "default": false
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "is_preorder",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.is_preorder.label",
+                        "default": false
+                    },
+                    {
+                        "type": "text",
+                        "id": "preorder_text",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.preorder_text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.classname.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    },
+            {
+                "type": "include",
+                "name": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "is_limited",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.settings.limited.label",
+                        "default": false
+                    },
+                    {
+                        "type": "text",
+                        "id": "type",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.settings.type.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.settings.ingredients.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "count",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.settings.count.label"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "hide",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.settings.hide.label",
+                        "default": false
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "hide_variants",
+                        "label": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.include.settings.hide_variants.label",
+                        "default": false
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    },
+            {
+                "type": "how-to-use",
+                "name": "t:sections.exclusive-holiday-bundle-deal-bundles-list.blocks.how-to-use.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

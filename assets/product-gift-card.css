@@ -1,0 +1,85 @@
+.bundle_pdp.gift_page .best_seller_info {
+    max-width: 100%;
+}
+
+.gift_card_details {
+    padding: 20px 0;
+}
+
+.gift_card_details .enjoy_cards p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+}
+
+.gift_card_details .enjoy_cards span {
+    font-weight: 600;
+}
+
+.gift_card_details .enjoy_cards_details {
+    padding: 20px 0;
+}
+
+.gift_card_details .enjoy_cards_details p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+}
+
+.gift_card_details .enjoy_cards_valid p {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    font-style: italic;
+}
+
+.gift_page .gift_card_variants {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.gift_page .gift_variant {
+    border: 0.904px solid #DBDBDB;
+    border-radius: 20px;
+    font-size: 13px;
+    line-height: 11px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    padding: 10px 12px;
+    background: #fff;
+}
+
+.gift_page .gift_variant span {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.gift_variant.gift_variant_active {
+    font-weight: 600;
+    background: #c7e7dc;
+    border: none;
+}
+
+.gift_variant.gift_variant_active span {
+    font-weight: 700;
+}
+
+.gift_page .swiper-3d .swiper-slide-shadow {
+    background: none;
+}
+
+.gift_page .gift_cal {
+    max-width: 455px;
+}
+
+@media(max-width:767px) {
+    .gift_page .gift_card_variants {
+        grid-template-columns: repeat(2, auto);
+    }
+}

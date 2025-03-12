@@ -1,0 +1,536 @@
+{%- assign product_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'link' -%}
+            {% assign location_href = block.settings.link_url %}
+        {%- when 'product' -%}
+            {%- assign product_count = product_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<link rel="stylesheet" href="{{ 'homepage_promo_second.css' | asset_url }}">
+
+{% capture content %}
+<!-- -- main banner start -- -->
+<div class="bf_sale-banners">
+    <!-- hero valentine banner  -->
+    <div class="hero_valentine_banner position-relative main_banner womens_day_banner_outer">
+        <div class="container-fluid px-0">
+            {% if section.settings.image != blank %}
+                <div class="d-none d-md-block">
+                    <img src="{{ section.settings.image | img_url: 'master' }}" alt="" class="img-fluid w-100">
+                </div>
+            {% endif %}
+            {% if section.settings.image_mobile %}
+                <div class="d-md-none">
+                    <img src="{{ section.settings.image_mobile | img_url: '900x' }}" alt="" class="img-fluid w-100">
+                </div>
+            {% endif %}
+            <div class="collection_grid main_b_wrapper py-3 womens_day_banner_ctm">
+                <div class="banner_text w-100 womens_day_offer justify-content-md-start">
+                    <div class="womens_day_banner">
+                        {% if section.settings.heading != blank %}
+                            <p>{{ section.settings.heading }}</p>
+                        {% endif %}
+                        {% if section.settings.subheading != blank %}
+                            <h3>{{ section.settings.subheading | replace: '<p>', '' |  replace: '</p>', ''  }}</h3> 
+                        {% endif %}   
+                        
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'link' %}
+                                <a href="{{ block.settings.link_url }}" class="btn_black btn mb-0 mt-2 mt-md-4" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+
+                </div>
+                <div class="holiday_banner womens_day_holiday d-none d-md-block">
+                    <div class="bundle_slider-main">
+                        <div class="bf_sale-slider pt-md-0">
+                            <div class="swiper holiday_bundle dot_pagination">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="new-slide_ctm">
+                                            <div class="new_img">
+                                                <img src="https://qureskincaredns.com/new/assets/womens_day_bundle.webp" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="new_img">
+                                                <img src="https://qureskincaredns.com/new/assets/plus.webp" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="new_img">
+                                                    <img src="https://qureskincaredns.com/new/assets/mi_bundle_women_day.webp" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="mi_bndl_women">
+                                                    <p class="free_text"><span class="discount_badge">FREE</span></p>
+                                                    <div class="mi_bndl_dv mt-1">
+                                                        <h4 class="mi_bndl_text">Micro-Infusion Bundle</h4>
+                                                        <p class="valued_at">VALUED AT <strong>$357</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="holiday_bundle-swiper-prev swiper-button-prev swiper-button d-md-flex d-none">
+                            </div>
+                            <div
+                                class="holiday_bundle-swiper-next  swiper-button-next swiper-button d-md-flex d-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="holiday_banner womens_day_holiday_mob d-md-none bg-white py-3 py-md-0">
+            <div class="bundle_slider-main mx-auto">
+                <div class="bf_sale-slider p-0">
+                    <div class="swiper holiday_bundle dot_pagination">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="new-slide_ctm">
+                                    <div class="new_img">
+                                        <img src="https://qureskincaredns.com/new/assets/womens_day_bundle.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="new_img">
+                                        <img src="https://qureskincaredns.com/new/assets/plus.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="position-relative"> 
+                                        <div class="new_img">
+                                            <img src="https://qureskincaredns.com/new/assets/mi_bundle_women_day.webp" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="mi_bndl_women">
+                                            <p class="free_text"><span class="discount_badge">FREE</span></p>
+                                            <div class="mi_bndl_dv">
+                                                <h4 class="mi_bndl_text">Micro-Infusion Bundle</h4>
+                                                <p class="valued_at">VALUED AT <strong>{{ 357 | times: 100 | money_without_trailing_zeros }}</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="holiday_bundle-swiper-prev swiper-button-prev swiper-button d-md-flex d-none">
+                    </div>
+                    <div
+                        class="holiday_bundle-swiper-next  swiper-button-next swiper-button d-md-flex d-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero valentine banner end  -->
+
+    <!-- Sub banner  -->
+    {%- for block in section.blocks -%}
+        {% if block.type == 'banner' %}
+            <!-- Sub banner  -->
+            <div class="sub_banner main_banner position-relative">
+                {% if block.settings.image != blank %}
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="{{ block.settings.image | img_url: 'master' }}">
+                        {% if block.settings.image_mobile %}
+                            <source media="(min-width:720px)" srcset="{{ block.settings.image_mobile | img_url: '720x' }}">
+                            <source media="(min-width:540px)" srcset="{{ block.settings.image_mobile | img_url: '540x' }}">
+                        {% endif %}
+                        {% if block.settings.image_mobile %}
+                            <img class="img-fluid" src="{{ block.settings.image_mobile | img_url: '540x' }}" alt="{{ block.settings.image_mobile.alt | escape }}" width="125" height="186">
+                        {% else %}
+                            <img class="img-fluid" src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" width="225" height="281" alt="">
+                        {% endif %}
+                    </picture>
+                {% endif %}
+                <div class="main_b_wrapper">
+                    <div class="container">
+                        <div class="sub_banner-content">
+                            {% if block.settings.heading != blank %}
+                                <h2 class="mb-0">
+                                    {{ block.settings.heading }}
+                                </h2>
+                            {% endif %}
+                            {% if block.settings.link_label != blank %}
+                                <a href="{{ block.settings.link_url }}" class="btn_black mb-0">{{ block.settings.link_label }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub banner end -->
+        {% endif %}
+    {%- endfor -%}
+    <!-- Sub banner end -->
+</div>
+<!-- -- main banner start -- -->
+{% endcapture %}
+
+{% assign amount = 357 | times: 100 | money_without_trailing_zeros %}
+
+{{ content | replace: '$357', amount }}
+
+
+{% comment %} 
+
+<link rel="stylesheet" href="{{ 'homepage_promo_second.css' | asset_url }}">
+
+<!-- -- main banner start -- -->
+<div class="bf_sale-banners">
+    <div class="holiday_banner">
+        <div>
+            {% if section.settings.video != blank %}
+                {% if section.settings.video.sources[1].url != blank %}
+                    {% assign video_source_url = section.settings.video.sources[1].url %}
+                {% else %}
+                    {% assign video_source_url = section.settings.video.sources[0].url %}
+                {% endif %}
+
+                <!-- Desktop video (visible on large screens) -->
+                <video class="bg_banner d-lg-block d-none" autoplay muted loop playsinline style="height: 570px;">
+                    <source src="{{ video_source_url }}" type="video/webm">
+                </video>
+            {% endif %}
+
+
+            {% if section.settings.video_mobile != blank %}
+                {% if section.settings.video_mobile.sources[1].url != blank %}
+                    {% assign video_mobile_source_url = section.settings.video_mobile.sources[1].url %}
+                {% else %}
+                    {% assign video_mobile_source_url = section.settings.video_mobile.sources[0].url %}
+                {% endif %}
+
+                <video class="bg_banner d-lg-none" autoplay muted loop playsinline style="height: 710px;">
+                    <source src="https://qureskincaredns.com/new/assets/homepage_holiday-mob.webm" type="video/webm">
+                </video>
+            {% endif %}
+        </div>
+
+        <div class="bfBundle__bannerBlock">
+            <div class="container">
+                <div class="bfBundle_inner-content">
+                    <div class="event_pd-content">
+                        <div class="banner_bf-text text-center mw-100">
+                            {% if section.settings.heading != blank %}
+                                <h1 class="mb-0">{{ section.settings.heading |  replace:  '\n', '<br />'  }}</h1>
+                            {% endif %}
+                            {% if section.settings.subheading != blank %}
+                                <h5>
+                                    {{ section.settings.subheading 
+                                    |  replace: '<p>', '' |  replace: '</p>', '' 
+                                    }}
+                                </h5>
+                            {% endif %}
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'link' %}
+                                    <a href="{{ block.settings.link_url }}" class="btn_black btn" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                                {% endif %}
+                            {%- endfor -%}
+                        </div>
+                        <div class="bundle_slider-main">
+                            <div class="bf_sale-slider pt-md-0">
+                                <div class="swiper holiday_bundle dot_pagination">
+                                    <div class="swiper-wrapper">
+                                        {%- for block in section.blocks -%}
+                                            {% if block.type == 'product' %}
+
+                                                <div class="swiper-slide"{% if block.settings.product_url != blank %} onclick="location.href='{{ block.settings.product_url }}';"{% endif %}>
+                                                    <div class="new-slide">
+                                                        {% if block.settings.image != blank %}
+                                                            <div class="new_img">
+                                                                <img src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                                                            </div>
+                                                        {% endif %}
+                                                        <div class="new_content">
+                                                            {% if block.settings.text != blank %}
+                                                                <span class="discount_badge">{{ block.settings.text }}</span>
+                                                            {% endif %}
+                                                            <h4 class="new-header"><span>{{ block.settings.heading }}</span>{{ block.settings.subheading }}</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="pagination_navigation d-md-none dots_pegi">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="holiday_bundle-swiper-prev swiper-button-prev swiper-button d-md-flex d-none">
+                                </div>
+                                <div
+                                    class="holiday_bundle-swiper-next  swiper-button-next swiper-button d-md-flex d-none">
+                                </div>
+
+                                <div class="pagination_navigation d-md-none">
+                                    <div class="holiday_bundle-swiper-prev swiper-button-prev swiper-button">
+                                    </div>
+                                    <div class="holiday_bundle-swiper-next  swiper-button-next swiper-button">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -- main banner end -- -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper2 = new Swiper(".holiday_bundle", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".holiday_bundle-swiper-next",
+                prevEl: ".holiday_bundle-swiper-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    });
+
+    function adjustVideoHeight() {
+        const screenWidth = window.innerWidth;
+        
+        // Desktop video height adjustment
+        const desktopVideo = document.querySelector('.d-lg-block');
+        if (desktopVideo) {
+        if (screenWidth >= 1920) {
+            desktopVideo.style.height = '645px';
+        } else if (screenWidth <= 1024) {
+            desktopVideo.style.height = '342px';
+        } else {
+            // Interpolate height between 1920px and 1024px screen width
+            const minScreen = 1024;
+            const maxScreen = 1920;
+            const minHeight = 342;
+            const maxHeight = 645;
+        
+            const interpolatedHeight = minHeight + ((screenWidth - minScreen) / (maxScreen - minScreen)) * (maxHeight - minHeight);
+            desktopVideo.style.height = `${interpolatedHeight}px`;
+        }
+        }
+    
+        // Mobile video height adjustment
+        const mobileVideo = document.querySelector('.d-lg-none');
+        if (mobileVideo) {
+        if (screenWidth <= 1024) {
+            // Adjust mobile video height based on screen height (375px to 1024px)
+            const minHeight = 620;
+            const maxHeight = 1690;
+            const minScreenHeight = 375;
+            const maxScreenHeight = 1024;
+    
+            const interpolatedHeight = minHeight + ((screenWidth - minScreenHeight) / (maxScreenHeight - minScreenHeight)) * (maxHeight - minHeight);
+            mobileVideo.style.height = `${interpolatedHeight}px`;
+        }
+        }
+    }
+    
+    // Adjust video height on page load and window resize
+    window.addEventListener('load', adjustVideoHeight);
+    window.addEventListener('resize', adjustVideoHeight);
+</script>
+
+{% if product_count > 0 %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper(".newCycleSlider", {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                grabCursor: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    480: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    }
+                }
+            });
+        });
+    </script>    
+{% endif %} 
+
+{% endcomment %}
+
+
+{% schema %}
+    {
+        "name": "t:sections.main-banner-promotion-second.name",
+        "class": "section-main-banner-promotion-second",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading_mobile",
+                "label": "t:common.heading.mobile.label"
+            },
+            {
+                "type": "richtext",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "subheading_mobile",
+                "label": "t:common.subheading.mobile.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_mobile",
+                "label": "t:common.image_mobile.label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "banner",
+                "name": "t:common.banner.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_mobile",
+                        "label": "t:common.image_mobile.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "product",
+                "name": "t:common.product.label",
+                "limit": 10,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subheading",
+                        "label": "t:common.subheading.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "product_url",
+                        "label": "t:common.product.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "link",
+                "name": "t:sections.main-banner-promotion.blocks.link.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "text",
+                        "id": "link_label_mobile",
+                        "default": "Link label mobile",
+                        "label": "t:common.link.mobile.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.main-banner-promotion-second.name"
+			}
+        ]
+    }
+{% endschema %}

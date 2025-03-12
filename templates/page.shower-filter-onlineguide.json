@@ -1,0 +1,53 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_rVb3tp": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO INSTALL",
+            "link_url": "https://www.qureskincare.com/pages/shower-filter-online-guide#step6"
+          }
+        },
+        "navigation_link_B33K8Y": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO REPLACE FILTER",
+            "link_url": "https://www.qureskincare.com/pages/shower-filter-online-guide#step7"
+          }
+        },
+        "navigation_link_Qf3EYM": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQ",
+            "link_url": "https://www.qureskincare.com/pages/shower-filter-online-guide#step9"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_rVb3tp",
+        "navigation_link_B33K8Y",
+        "navigation_link_Qf3EYM"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "temp-page-shower-filter-onlineguide",
+      "settings": {}
+    }
+  },
+  "order": [
+    "header",
+    "main"
+  ]
+}

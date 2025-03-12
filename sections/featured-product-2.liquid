@@ -1,0 +1,150 @@
+{% assign product = section.settings.product %}
+{% assign discount = product.price | plus: 0.50 | divided_by: 100.0 | ceil | times: 50 %}
+{% assign product_price = product.price %}
+{% assign final_price = product_price | minus: 0.50 |  minus: discount  %}
+
+
+<!-- -- led device bundle start -- -->
+<div class="neck_led_bundle main_banner" id="special_offer">
+    
+    <picture>
+        <source media="(min-width:1920px)" srcset="{{ section.settings.bg_image | img_url: 'master' }}">
+        <source media="(min-width:1600px)" srcset="{{ section.settings.bg_image | img_url: 'master' }}">
+        <source media="(min-width:1100px)" srcset="{{ section.settings.bg_image | img_url: 'master' }}">
+         
+        <source media="(min-width:720px)" srcset="{{ section.settings.image_mobile | img_url: '720x' }}">
+        <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | img_url: '540x' }}">
+        <img src="{{ section.settings.image_mobile | img_url: '540x' }}" width="240" height="89" alt="" class="img-fluid">
+        
+    </picture>
+     
+    <div class="main_b_wrapper text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 offset-md-5">
+                    <div class="neck_bundle_wrap">
+                        <div class="bundle_outer">
+                            {% if section.settings.btn_txt != blank %}
+                            <p>{{ section.settings.btn_txt }} {{ discount | money_without_trailing_zeros }}</p>
+                            {% endif %}
+                        </div>
+                        <div class="banner_content mw-100 position-relative">
+                            <div class="refill_review justify-content-start">
+                                <div class="star_gp">
+                                    {% if section.settings.stars != blank %}
+                                    <img src="{{ section.settings.stars | img_url: '130px' }}" alt="">
+                                    {% endif %}
+                                </div>
+                                <p class="text-sm fw-normal text-decoration-none">{{ section.settings.rating_text }}</p>
+                            </div>
+                            <div class="section_header ps-0 pb-0 pt-2 ms-0">
+                                {% if section.settings.product_name != blank %}
+                                <h2 class="title-lg">{{ section.settings.product_name }}</h2>
+                                {% endif %}
+                            </div>
+                            <div class="price_wrap">
+                                <div class="price">
+                                    <div class="old_price">{{ product_price | money_without_trailing_zeros  }}</div>
+                                    <div class="new_price">{{ final_price | money_without_trailing_zeros }}</div>
+                                </div>
+                                <div class="green_tag">
+                                    <p>YOU SAVE <span>{{ discount | money_without_trailing_zeros  }}</span></p>
+                                </div>
+                            </div>
+                            {% if section.settings.abt_product != blank %}
+                            <p>{{ section.settings.abt_product }}</p>
+                            {% endif %}
+
+                            {%- if section.settings.benefits != blank -%}
+                            <div class="tq_list my-3 ss_list d-none d-md-block">
+                                {{ section.settings.benefits }}
+                            </div>
+                            {%- endif -%}
+
+                            {%- if section.settings.m_benefits != blank -%}
+                            <div class="tq_list my-3 ss_list d-block d-md-none">
+                                {{ section.settings.m_benefits }}
+                            </div>
+                             {%- endif -%}
+                            {% if section.settings.btn_txt != blank %}
+                            <div class="get_clearer_wrapper ms-0">
+                                <a class="btn btn-lg btn-primary btn_green mw-100" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{{ section.settings.btn_txt }} - {{ discount | money_without_trailing_zeros }}</a>
+                                <a id="cart-reload" style="display:none" class="btn btn-lg btn-primary btn_green mw-100" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=0" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{{ section.settings.btn_txt }} - {{ discount | money_without_trailing_zeros }}</a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- led device bundle start -- -->
+
+{% schema %}
+{
+  "name": "t:sections.f_product2.name",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "t:common.image.label"
+    },
+    {
+        "type": "product",
+        "id": "product",
+        "label": "t:sections.product.name"
+    },
+    {
+      "type": "text",
+      "id": "product_name",
+      "label": "t:product.name.label"
+    },
+    {
+      "type": "richtext",
+      "id": "abt_product",
+      "label": "t:product.about.label"
+    },
+    {
+        "type": "richtext",
+        "id": "benefits",
+        "label": "t:product.benefits.label"
+    },
+    {
+        "type": "text",
+        "id": "btn_txt",
+        "label": "t:common.button.label"
+    },
+    {
+        "type": "text",
+        "id": "rating_text",
+        "label": "t:product.badge.label"
+    },
+    {
+        "type": "image_picker",
+        "id": "stars",
+        "label": "t:common.rating.stars"
+    },
+    {
+        "type": "header",
+        "content": "t:commonMob.header.label"
+    },
+    {
+        "type": "richtext",
+        "id": "m_benefits",
+        "label": "t:commonMob.benefits.label"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "t:common.image_mobile.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.f_product2.name"
+    }
+  ]
+}
+{% endschema %}

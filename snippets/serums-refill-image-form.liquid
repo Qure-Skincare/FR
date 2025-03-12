@@ -1,0 +1,258 @@
+<style>
+    .subscribe_save_wrapper .subscribe_save_bx {
+        grid-template-columns: 67% 33%;
+    }
+</style>
+
+{% if section_id == blank %}
+    <p>Please provide section_id property to use this snippet</p>
+{% else %}
+
+    {% assign product = all_products['micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum'] %}
+
+    {% case product.handle %}
+        {% when 'micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum' %}
+            {% assign product_index = 1 %}
+            {% assign selling_plan = 5012914415 %}
+        {% when 'micro-infusion-3-month-refill-6x-rejuvenating-serum' %}
+            {% assign product_index = 2 %}
+            {% assign selling_plan = 5012914415 %}
+        {% when 'micro-infusion-3-month-refill-6x-hydra-soothing-serum' %}
+            {% assign product_index = 3 %}
+            {% assign selling_plan = 5012914415 %}
+    {% endcase %}
+
+    {% assign product_price = product.price | money_without_trailing_zeros %}
+    {% assign product_price_discount = product.price | times: 0.70 | money_without_trailing_zeros %}
+    {% assign product_price_divided = product.price | divided_by: 4 | money_without_trailing_zeros %}
+    {% assign product_variant_id = product.variants.first.id %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            selectProductRefill('{{ section_id }}', {{ product_variant_id }});
+        });
+    </script>
+
+    <!-- -- choose serum section start -- -->
+    <div class="available_bar">
+        <p>AVAILABLE UNTIL STOCK LASTS</p>
+    </div>
+
+    <div class="section productSubscription choose_serum withoutTabSerum" id="productSubscription">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="qure__treatments pe-md-0 pb-3 pb-md-0">
+                        <div class="text-start order-2 order-md-1">
+                            <div class="section__header d-none d-md-block">
+                                <h2 class="heading">Choose your Micro-Infusion refill</h2>
+                                <p>Continue your Micro-Infusion treatments and reap the <strong>long term
+                                        benefits</strong> of
+                                    smoothing
+                                    out fine lines and revamping skin texture, whilst making it a little easier on
+                                    your
+                                    wallet as well.</p>
+                            </div>
+                            <div class="refill_info d-block d-md-none">
+                                <div class="plan_bundle_detail">
+                                    <h4 class="cs_item__accordion">Refill Bundle includes <span><img src="{{ 'arrow-up.png' | asset_url }}" alt=""></span>
+                                    </h4>
+
+                                    <div class="u_item__hidden-div" style="display: none;">
+                                        <ul>
+                                            <h5>6 treatments/3 month supply</h5>
+                                            <li><span class="position-relative"><img src="{{ 'tick.png' | asset_url }}" alt=""></span>6x Clinically-Formulated Serums (4ml) </li>
+                                            <li><span class="position-relative"><img src="{{ 'tick.png' | asset_url }}" alt=""></span>6x Sterile Disposable 0.5mm Needle Heads </li>
+                                            <li><span class="position-relative"><img src="{{ 'cross.png' | asset_url }}" alt=""></span><strong>Refill kit does not include Micro-Infusion device</strong>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tmtFtrs_image order-1 order-md-2 mw-mob-100">
+                            <div class="section__header text-start d-block d-md-none mb-3">
+                                <h2 class="heading paddingB">Choose your Micro-Infusion refill</h2>
+                                <p>Continue your Micro-Infusion treatments and reap the <strong>long term
+                                        benefits</strong> of
+                                    smoothing
+                                    out fine lines and revamping skin texture, whilst making it a little easier on
+                                    your
+                                    wallet as well.</p>
+                            </div>
+                            <div class="refill_info d-none d-md-block">
+                                <h4>Refill Kit includes:</h4>
+                                <h5>6 treatments / 3 month supply</h5>
+                                <ul>
+                                    <li><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>6x Clinically-Formulated Serums (4ml) </li>
+                                    <li><span><img src="{{ 'tick.png' | asset_url }}" alt=""></span>6x Sterile Disposable 0.5mm Needle Heads </li>
+                                    <li><span><img src="{{ 'cross.png' | asset_url }}" alt=""></span><strong>Refills do not include device</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="{{ 'MI6x-mixed_blue.webp' | asset_url }}" class="img-fluid" alt="" id="choosen_image">
+                        </div>
+                        <div class="tmtFtrs d-none d-md-flex justify-content-between mb-4">
+                            <div class="tmtFtrs_block text-center"> <!-- Ftr Block -->
+                                <div class="tmtFtr_icon">
+                                    <img src="{{ 'derma-ftr.svg' | asset_url }}" alt="">
+                                </div>
+                                <div class="tmtFtr_des">
+                                    Dermatologist<br> Reviewed
+                                </div>
+                            </div> <!-- Ftr Block end-->
+                            <div class="tmtFtrs_block text-center"> <!-- Ftr Block -->
+                                <div class="tmtFtr_icon">
+                                    <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+                                </div>
+                                <div class="tmtFtr_des">
+                                    Free World-Wide<br> Shipping over $100
+                                </div>
+                            </div> <!-- Ftr Block end-->
+                            <div class="tmtFtrs_block text-center"> <!-- Ftr Block -->
+                                <div class="tmtFtr_icon">
+                                    <img src="{{ 'science-ftr.svg' | asset_url }}" alt="">
+                                </div>
+                                <div class="tmtFtr_des">
+                                    Backed by<br> Science
+                                </div>
+                            </div> <!-- Ftr Block end-->
+                        </div>
+                        <div class="qst_box text-center d-none d-md-block">
+                            <img src="{{ 'question_mark.svg' | asset_url }}" alt="" class="me-2"> Have questions
+                            about
+                            MicroInfusion? <a href="#">Chat with us!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 px-0">
+                    <div class="supply-detail">
+                        <div class="supply_steps">
+                            <div class="step_counter active"><span>1</span></div>
+                            <div class="step_block">
+                                <div class="step_header">
+                                    <h3>Choose your serum:</h3>
+                                </div>
+                                <div class="step_content step_serum">
+                                    <div class="serumBlock">
+                                        <input type="radio" name="serum-{{ section_id }}" id="rejuvenating" value="43821069435119" data-product-id="8015049621743" data-selling-plan="5012914415"{%- if product_index == 2 -%} checked{%- endif -%} />
+                                        <label class="serum_prd bg-yellow" for="rejuvenating">
+                                            <div class="serum_img active" 
+                                                data-month1-image="{{ 'MI2x-dark_spots.webp' | asset_url }}"
+                                                data-month2-image="{{ 'MI4x-dark_spots.webp' | asset_url }}"
+                                                data-month3-image="{{ 'MI6x-dark_spots.webp' | asset_url }}">
+                                                <img src="{{ 'dark_spots.webp' | asset_url }}" alt="" class="img-fluid" />
+                                            </div>
+                                            <h4 class="serum_ttl flex-row gap-1"><span>For</span> Dark Spots</h4>
+                                        </label>
+                                    </div>
+                                    <div class="serumBlock">
+                                        <input type="radio" name="serum-{{ section_id }}" id="hydra-soothing" value="43821035290863" data-product-id="8015039496431" data-selling-plan="5012914415"{%- if product_index == 3 -%} checked{%- endif -%} />
+                                        <label class="serum_prd bg-grey" for="hydra-soothing">
+                                            <div class="serum_img" 
+                                                data-month1-image="{{ 'MI2x-hydra_blue.webp' | asset_url }}"
+                                                data-month2-image="{{ 'MI4x-hydra_blue.webp' | asset_url }}"
+                                                data-month3-image="{{ 'MI6x-hydra_blue.webp' | asset_url }}">
+                                                <img src="{{ 'mc_4.webp' | asset_url }}" alt="" class="img-fluid" />
+                                            </div>
+                                            <h4 class="serum_ttl flex-row gap-1"><span>For</span> Wrinkles</h4>
+                                        </label>
+                                    </div>
+                                    <div class="serumBlock">
+                                        <input type="radio" name="serum-{{ section_id }}" id="rejuvenating-hydra" value="43821031031023" data-product-id="8015038873839" data-selling-plan="5012914415"{%- if product_index == 1 -%} checked{%- endif -%} />
+                                        <label class="serum_prd bg-yellowGrey" for="rejuvenating-hydra">
+                                            <div class="serum_img" 
+                                                data-month1-image="{{ 'MI2x-rejuv_blue.webp' | asset_url }}"
+                                                data-month2-image="{{ 'MI4x-rejuv_blue.webp' | asset_url }}"
+                                                data-month3-image="{{ 'MI6x-mixed_blue.webp' | asset_url }}">
+                                                <img src="{{ 'mc_5.webp' | asset_url }}" alt="" class="img-fluid" />
+                                            </div>
+                                            <h4 class="serum_ttl d-block pt-2"><span>For</span>
+                                                Wrinkles +<br> Dark Spots
+                                            </h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="supply_steps">
+                            <div class="step_counter active"><span>2</span></div>
+                            <div class="step_block">
+                                <div class="step_header">
+                                    <h3>Purchase option:</h3>
+                                </div>
+                                <div class="subscribe_save_wrapper with_subscription mt-2">
+                                    <div class="subscribeTopInfo">
+                                        <p>Over 5,000 people chose subscription</p>
+                                    </div>
+                                    <div class="subscriptionType active" data-subscription="subscription">
+                                        <div class="subscribe_save_bx">
+                                            <div class="subscribeInfo">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    <h6>Subscribe & save 30% </h6>
+                                                    <p>Get a Micro-Infusion System Refill <br>delivered every 90
+                                                        days for just {{ product_price_discount }}.<br> Skip or cancel at any time. <a
+                                                            href="https://www.qureskincare.com/pages/subscriptions"
+                                                            target="_blank">See
+                                                            more details</a></p>
+                                                </label>
+                                            </div>
+                                            <div class="subscribePrice">
+                                                <p><span>{{ product_price }}</span>{{ product_price_discount }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="subscriptionType" data-subscription="no-subscription">
+                                        <div class="noSubscription">
+                                            <div class="noSubscriptionText">
+                                                One time purchase
+                                            </div>
+                                            <div class="noSubscriptionPrice">
+                                                {{ product_price }}
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }}" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now
+                                        </a>
+                                        <div class="payment_method without_subscription">
+                                            <p>OR pay 4 monthly payments of {{ product_price_divided }} with</p>
+                                            <div class="pmt_img ps-2">
+                                                <img src="{{ 'klarna.svg' | asset_url }}" alt="">
+                                                <img src="{{ 'sezzle.svg' | asset_url }}" alt=""><img src="{{ 'afterpay.svg' | asset_url }}"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form method="post" action="/cart/add" accept-charset="UTF-8" class="shopify-product-form buy-form-{{ section_id }}" enctype="multipart/form-data" data-form-id="{{ product.id }}">
+                                        <input type="hidden" name="form_type" value="product">
+                                        <input type="hidden" name="utf8" value="✓">
+                                        <input type="hidden" name="selling_plan" value="{{ selling_plan }}">
+                                        <input type="hidden" name="id" value="{{ product_variant_id  }}">
+                                            
+                                        <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn" name="Submit" value="Submit">
+                                            Subscribe Now - {{ product_price_discount }}<img src="https://qureskincaredns.com/new/assets/arrow_right.svg" alt="">
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="c_s_shipping d-block d-md-none pb-4">
+                        <div class="c_s_wrapper">
+                            <div class="c_s_bx">
+                                <img src="{{ 'derma-ftr.svg' | asset_url }}" alt="">
+                                <p>Dermatologist <br>Reviewed</p>
+                            </div>
+                            <div class="c_s_bx">
+                                <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+                                <p>Free World-Wide<br> Shipping Over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -- choose serum section end -- -->
+{% endif %}

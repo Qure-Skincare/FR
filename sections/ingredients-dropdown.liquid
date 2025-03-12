@@ -1,0 +1,170 @@
+<!-- mi-patches skincare_slider section start -->
+<div class="patches_ingredients mw-949">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+        <div class="section_header text-md-center">
+            <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2>
+        </div>
+        {% endif %}
+        <div class="accordion skincare_right" id="accordionExample_pi">
+            <div class="pi_grid">
+                {%- for block in section.blocks -%}
+                    {% assign bs= block.settings %}
+                    {%- if block.type =='left_column' -%}
+                        <div class="accordion-item {% if bs.dropdown_design == 'with_image' %} pi-item {% else %} u_item_question bg-grey{% endif %}">
+                            <h2 class="accordion-header" id="accordion-{{block.id}}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-{{block.id}}" aria-expanded="false" aria-controls="collapse-{{block.id}}">
+                                    {% if bs.dropdown_design == 'with_image' %}
+                                    <div class="pi_header">
+                                        {%- if bs.image_left != blank -%}
+                                        <img src="{{ bs.image_left | img_url: 'master' }}" alt="" class="img-fluid">
+                                        {%- endif -%}
+                                        <div class="pi_heading">{{ bs.name_left }}</div>
+                                    </div>
+                                    {% else %}
+                                    <div class="containers">{{ bs.name_left }}</div>
+                                {% endif %}
+                                </button>
+                            </h2>
+                            <div id="collapse-{{block.id}}" class="accordion-collapse collapse" aria-labelledby="accordion-{{block.id}}"
+                                data-bs-parent="#accordionExample_pi">
+                                <div class="accordion-body">
+                                    <p>{{ bs.text_left }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="pi_grid">
+                {%- for block in section.blocks -%}
+                    {% assign bs= block.settings %}
+                    {%- if block.type =='right_column' -%}
+                        
+                        <div class="accordion-item {% if bs.dropdown_design == 'with_image' %} pi-item {% else %} u_item_question bg-grey{% endif %}">
+                            <h2 class="accordion-header" id="accordion-{{block.id}}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-{{block.id}}" aria-expanded="false" aria-controls="collapse-{{block.id}}">
+                                    {% if bs.dropdown_design == 'with_image' %}
+                                    <div class="pi_header">
+                                        {%- if bs.image_right != blank -%}
+                                        <img src="{{ bs.image_right | img_url: 'master' }}" alt="" class="img-fluid">
+                                        {%- endif -%}
+                                        <div class="pi_heading">{{ bs.name_right }}</div>
+                                    </div>
+                                    {% else %}
+                                    <div class="containers">{{ bs.name_right }}</div>
+                                {% endif %}
+                                </button>
+                            </h2>
+                            <div id="collapse-{{block.id}}" class="accordion-collapse collapse" aria-labelledby="accordion-{{block.id}}"
+                                data-bs-parent="#accordionExample_pi">
+                                <div class="accordion-body">
+                                    <p>{{ bs.text_right }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- mi-patches skincare_slider section end -->
+
+{% schema %}
+{
+    "name": "t:sections.ingredients-dropdown.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "left_column",
+            "name": "t:common.column.left",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "dropdown_design",
+                    "label": "t:common.dropdown.design",
+                    "options": [
+                      {
+                        "value": "with_image",
+                        "label": "t:common.image.with"
+                      },
+                      {
+                        "value": "without_image",
+                        "label": "t:common.image.without"
+                      }
+                    ],
+                    "default": "without_image"
+                },
+                {
+                    "type": "text",
+                    "id": "name_left",
+                    "label": "t:common.name.label"
+                },
+                {
+                    "type": "textarea",
+                    "id": "text_left",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_left",
+                    "label": "t:common.image.label"
+                }
+            ]
+        },
+        {
+            "type": "right_column",
+            "name": "t:common.column.right",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "dropdown_design",
+                    "label": "t:common.dropdown.design",
+                    "options": [
+                      {
+                        "value": "with_image",
+                        "label": "t:common.image.with"
+                      },
+                      {
+                        "value": "without_image",
+                        "label": "t:common.image.without"
+                      }
+                    ],
+                    "default": "with_image"
+                },
+                {
+                    "type": "text",
+                    "id": "name_right",
+                    "label": "t:common.name.label"
+                },
+                {
+                    "type": "textarea",
+                    "id": "text_right",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_right",
+                    "label": "t:common.image.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name":"t:sections.ingredients-dropdown.label",
+        }
+    ]
+}
+{% endschema %}

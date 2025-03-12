@@ -1,0 +1,133 @@
+{% liquid
+  assign is_used = false
+  for item in cart.items
+    if item.title == section.settings.bundle_info.name 
+      assign is_used = true
+    endif
+  endfor
+%}
+<flating-bundle class="flating-bundle"
+                data-bundle-name="{{ section.settings.bundle_info.name }}" 
+                data-bundle-id="{{ section.settings.bundle_products.local_storage_name }}"
+                data-bundle-array="[]"
+                data-bundle-used={{ is_used }}
+                bundle-info={% render 'pdm_bundle-info' id: section.settings.bundle_products.local_storage_name, info: section.settings.bundle_info %}>
+<div class="btn-mobile mobile">
+  <img class="cart-icon-black" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/humbleicons_cart.svg" alt="cart icon">
+  Your Bundle
+  <img class="cart-icon-black" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/system-uicons_chevron-up.svg" alt="cart icon">
+</div>
+  <div class="lock-discount show-responsive">
+    <img class="unlock-icon" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/unlock.svg" alt="unlock icon">
+    Add item to unlock your discount!
+    <img class="cart-mobile" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/system-uicons_chevron-up.svg" alt="cart icon">
+  </div>
+
+  <div class="cart-bundle-message hidden">
+    <div class="cart-bundle-message__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <path d="M35 20C35 28.2843 28.2843 35 20 35C11.7157 35 5 28.2843 5 20C5 11.7157 11.7157 5 20 5C28.2843 5 35 11.7157 35 20Z" stroke="#008763" stroke-width="2"/>
+        <path d="M12 19.5454L17.6471 25L28 15" stroke="#008763" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="cart-bundle-message__wrapper">
+      <div class="cart-bundle-message__unused-bundle hidden">
+        {% assign text_unused_bundle = section.settings.text_bubble_bundle_unused | replace: "${bundle-title}", "<strong>Personalized Skincare Bundle</strong>" %}
+        {{ text_unused_bundle }}
+      </div>
+      <div class="cart-bundle-message__used-bundle hidden">
+        {% assign text_used_bundle = section.settings.text_bubble_bundle_used %}
+        {{ text_used_bundle }}
+      </div>
+    </div>
+  </div>
+  <div class="hbar show-responsive">
+    <div class="grid-discount">
+      {% assign products = section.settings.bundle_products.list_products.value | reverse | reverse %} 
+      {% for discount in section.settings.bundle_info.discounts.value %}
+        <div class="cube-discount" data-discount-percentage="{{ discount }}">
+          <div class="child cont-text">
+            <p class="cube-discount-text"><span class="percent">{{ discount }}%</span><span class="off">OFF</span></p>
+          </div>
+          {% for product in section.settings.bundle_products.list_products.value %}
+            <div class="child cube-discount-product hidden" data-product-id="{{ product.selected_or_first_available_variant.id }}" data-product-price="{{ product.price }}">
+              <div class="close" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91446 0.5L6.91531 0.500597L7.4994 1.08469L7.5 1.08554L7.4994 1.08708L4.58649 4L7.4994 6.91292L7.5 6.91376L7.4994 6.91531L6.91531 7.4994L6.91446 7.5L6.91292 7.4994L4 4.58649L1.08708 7.4994L1.08624 7.5L1.08469 7.4994L0.500597 6.91531L0.5 6.91446L0.500597 6.91292L3.4135 4L0.500597 1.08708L0.5 1.08624L0.500597 1.08469L1.08469 0.500597L1.08554 0.5L1.08708 0.500597L4 3.4135L6.91292 0.500597L6.91446 0.5Z" fill="black" stroke="black" stroke-width="0.3"/>
+                </svg>
+              </div>
+              <div class="cont-img">
+                {% assign image_alt = "image" |  append: product.title %}
+                {{ product.featured_image | image_url: width: 256 | image_tag: alt: image_alt , class: 'src product cont-img__img', loading:"eager" }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% unless forloop.last %}
+          <div class="grid-discount__progress-bar">
+            <div class="grid-discount__progress-fill"></div>
+          </div> 
+        {% endunless %}
+      {% endfor %}
+    </div>
+    <div class="price-discount">
+      <img class="cart-icon" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Cart_icon_fa581772-4478-44e8-8175-54bff5157303.svg" alt="cart icon">
+      <span class="label">Total:</span> 
+      <span class="bundleprice">
+        <span class="full-price">-</span>
+        <span class="discount-price">-</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" class="icon-arrow-close">
+          <path d="M11 5L7 9L3 5" stroke="#D7D9D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </div>
+    <div class="bundle-discount">
+      <span class="btn-discount disabled">Bundle and save</span>
+      <span class="bundle-discount__save-price"></span>
+    </div>
+  </div>
+</flating-bundle>
+{% schema %}
+{
+  "name": "Flating Bundle (PDM)",
+  "tag": "section",
+  "class": "section-flating-bundle",
+  "settings": [
+    {
+      "type": "metaobject",
+      "id": "bundle_info",
+      "label": "Bundle Info",
+      "metaobject_type": "bundle_skincare_plan_results"
+    },
+    {
+      "type": "metaobject",
+      "id": "bundle_products",
+      "label": "Bundle Products",
+      "metaobject_type": "products_for_bundle_skincare_plan"
+    },
+    {
+      "type": "header",
+      "content": "Message added bubble"
+    },
+    {
+      "type": "text",
+      "id": "text_bubble_bundle_unused",
+      "label": "Text Bubble Bundle Unused",
+      "default": "${bundle-title}  successfully added to your cart.",
+      "info": "Use ${bundle-title} to set the product title, This message will be displayed when the bundle is added to the cart."
+    },
+    {
+      "type": "text",
+      "id": "text_bubble_bundle_used",
+      "label": "Text Bubble Bundle Used",
+      "default": "Your Personalized Skincare Bundle  has been updated.",
+      "info": "This message will be displayed when the bundle is updated in the cart."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flating Bundle (PDM)"
+    }
+  ]
+}
+{% endschema %}

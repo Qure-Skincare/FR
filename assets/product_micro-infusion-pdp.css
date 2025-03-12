@@ -1,0 +1,518 @@
+.mi-pdp .refill_bl .refill_info {
+    max-width: 548px;
+}
+
+.mi-pdp .refill_bl.tabSlider .refill_info .section_header {
+    max-width: 526px;
+}
+
+.mi-pdp .shipping_bg {
+    margin: 0 auto;
+}
+
+.mi-pdp .imageText .it_info p {
+    padding: 10px;
+}
+
+.mi-pdp .reasons {
+    max-width: 1094px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.mi-pdp .reasons_wrapper .rs_item:not(:first-child) {
+    max-width: 100%;
+}
+
+.mi-pdp .reasons_wrapper .rs_item:last-child {
+    width: 240px;
+}
+
+.mi-pdp .reasons_wrapper .rs_item {
+    max-width: 100%;
+}
+
+.mi-pdp .reasons_wrapper .rs_item .rs_item_content p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.mi-pdp .skin_item_header {
+    font-family: 'Canela Thin';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: .01em;
+    color: #000;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.mi-pdp .skin_item {
+    padding: 65px 65px;
+}
+
+.mi-pdp .trusted_cl {
+    padding-bottom: 30px !important;
+}
+
+/* .mi-pdp .unique_c .section_header p {
+    max-width: 667px;
+} */
+
+.mi-pdp .tmtFtrs_block .tmtFtr_des {
+    font-size: 11px;
+}
+
+.mi-pdp .result_content p {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.mi-pdp .compare_listHeader>.compare__img img {
+    width: 151px;
+}
+
+.mi-pdp .compare_list_elements .compare_list_Block .compare_list_icon h5 {
+    font-weight: 400;
+}
+
+.mi-pdp .planBlock .plan_choosed span {
+    font-weight: 500;
+    background: #008763;
+}
+
+.mi-pdp .bs_feature ul li {
+    display: block;
+}
+
+.mi-pdp .bs_feature_l.correctCircle ul li:before {
+    content: url(./correct_circle.svg);
+    position: absolute;
+    left: 0;
+}
+
+.mi-pdp .bs_feature_l.incorrectCircle ul li:before {
+    content: url(./incorrect_circle.svg);
+    position: absolute;
+    left: 0;
+}
+
+.mi-pdp .bs_feature_l ul li {
+    display: block;
+}
+
+.mi-pdp .trusted_bl .trust_item .trust_item_info .result_content {
+    padding: 14px 20px 14px 28px;
+}
+
+.mi-pdp .supply-detail .step_content.step_btn .submit_btn {
+    font-weight: 500;
+}
+
+.mi-pdp .supply-detail .step_content.step_btn .submit_btn .btn_value {
+    font-weight: 700;
+}
+
+.mi-pdp .ss_list ul li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.mi-pdp .ss_list ul li:before {
+    top: 13px;
+}
+
+.mi-pdp .skin_item_header {
+    margin-bottom: 15px;
+}
+
+.mi-pdp .unique_c_item .u_item_wrapper .u_ftr {
+    width: 100%;
+}
+
+.mi-pdp .unique_grid {
+    grid-template-columns: 1fr 100px 1fr;
+    display: grid;
+}
+
+.supply-detail.supply-detail-without-counter {
+    display: block;
+}
+
+.step_conten_blocks {
+    position: relative;
+}
+
+.mi-pdp .supply_steps .step_block input:checked+.serum_prd {
+    border: 2px solid #C7E7DC !important;
+}
+
+.skincare_slider_n .progessInfo {
+    font-size: 14px;
+}
+
+.skincare_slider_n .section_header>p {
+    margin: 20px 0;
+}
+
+.skincare_slider_n .skincare_percent:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.skincare_slider_n .skin_item_n_tag .sn_tag {
+    background-color: #C7E7DC;
+    border-radius: 30px;
+    padding: 2px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 21px;
+}
+
+.skincare_slider_n .skin_item_n_tag p {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.affect_skin.affect_howToUse {
+    background: #FBFBFB;
+}
+
+.mi-pdp .qure_MI_ftr_wrap.imageText .it_info p {
+    font-weight: 400;
+}
+
+/* .result_s_wrapper .pagination_navigation {
+    max-width: fit-content;
+} */
+
+.result_s_wrapper .swiper-button-prev {
+    left: -60px;
+    display: flex;
+}
+
+.result_s_wrapper .swiper-button-next {
+    right: -60px;
+    display: flex !important;
+}
+
+.mi-pdp.black_friday .serum_bl .planBlock .monthly_plans .price {
+    position: relative;
+    max-width: fit-content;
+    margin-left: auto;
+}
+
+.mi-pdp.black_friday .serum_bl .planBlock .monthly_plans .price:after {
+    /* max-width: fit-content; */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #C4121A;
+    transform: rotate(8deg);
+}
+
+.mi-pdp.black_friday .serum_bl .bf_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mi-pdp.black_friday .serum_bl .bf_price h6 {
+    color: #C4121A;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    margin-bottom: 0;
+}
+
+.mi-pdp.black_friday .serum_bl .bf_price_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mi-pdp.black_friday .serum_bl .planBlock .monthly_plans .saved_price {
+    height: fit-content;
+    padding: 4px 8px;
+    background: #C4121A;
+}
+
+.mi-pdp.black_friday .serum_bl .bf_price_wrap .plan_prc.sale_price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+}
+.supply_steps .step_block input:checked+.serum_prd .serum_ttl{
+    font-weight: 500;
+}
+.supply_steps .step_block .serum_prd .serum_ttl{
+    border-width: 1px;
+}
+.supply-detail.supply-detail-without-counter .step_block .step_serum .serum_prd{
+    border-width: 1px;
+    height: 60px;
+    padding: 6px 15px;
+}
+.mi-pdp .supply_steps .step_block input:checked+.serum_prd{
+    border-width: 1px !important;
+}
+.supply_steps .step_block .serum_prd .serum_ttl span{
+    font-size: 12px;
+}
+.step_content.my-3.step_btn{
+    max-width: 457px;
+    margin-right: 0;
+}
+@media(min-width:991px) {
+    .supply-detail.supply-detail-without-counter .step_block .step_content.serum_image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+}
+
+@media(min-width:767px) {
+    .mi-pdp .step_slider .swiper-pagination {
+        position: relative;
+        padding-top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    .mi-pdp .tmtFtrs_image img {
+        max-width: 455px;
+        max-height: 415px;
+    }
+}
+
+@media(max-width:991px) {
+    .supply-detail.supply-detail-without-counter {
+        display: block;
+    }
+
+    .supply-detail.supply-detail-without-counter .supply_steps .step_block .serum_prd {
+        text-align: center;
+        background: #f5f5f5;
+        height: 100%;
+        border-radius: 30px;
+        padding: 25px 10px 50px 10px;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    .supply-detail.supply-detail-without-counter .step_block .step_serum {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .supply-detail.supply-detail-without-counter .step_block .step_serum .serum_prd .serum_img {
+        max-width: 100%;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .supply-detail.supply-detail-without-counter .step_block .step_serum .serum_prd .serum_img img {
+        max-height: 72px;
+        min-height: 72px;
+        /* object-fit: contain; */
+    }
+
+    .supply-detail.supply-detail-without-counter .step_block .step_serum .serum_prd .serum_ttl {
+        flex: 0 0 auto;
+        width: 100%;
+        position: absolute;
+        height: 40px;
+        top: unset;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #fff;
+        border-radius: 100px;
+    }
+
+    .supply-detail.supply-detail-without-counter .planBlock .plan_choosed {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .supply-detail.supply-detail-without-counter .supply_steps {
+        padding-top: 20px;
+    }
+
+    .mi-pdp .supply-detail.supply-detail-without-counter .supply_steps .step_block .serum_prd {
+        background: #fff;
+        border: 2px solid #DBDBDB;
+        justify-content: center;
+    }
+
+    .mi-pdp .supply-detail.supply-detail-without-counter .step_block .step_serum .serum_prd .serum_ttl {
+        bottom: -2px;
+    }
+    .mi-pdp .shipping {
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+}
+
+@media(max-width:767px) {
+    .mi-pdp .reasons_wrapper .rs_item .r_use_img img {
+        width: 81px;
+        height: 81px;
+    }
+
+    .mi-pdp .skin_item_header {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .mi-pdp .skincare_slider {
+        background: transparent;
+    }
+
+    .mi-pdp .supply-detail .supply_steps:nth-child(2) .step_counter::before {
+        display: block;
+    }
+
+    .mi-pdp .supply-detail .supply_steps:nth-child(3) .step_counter::before {
+        display: none;
+    }
+
+    .mi-pdp .choose_serum .c_s_bx p {
+        text-align: center;
+    }
+
+    .mi-pdp .choose_serum .c_s_shipping .c_s_bx {
+        max-width: 108px;
+        display: block;
+    }
+
+    .mi-pdp .skin_item {
+        padding: 0;
+    }
+
+    .mi-pdp .beauty_skincare .title-lg {
+        font-size: 28px;
+    }
+
+    .mi-pdp .bs_item h4 {
+        /* font-size: 22px;
+        line-height: 28px; */
+        /* padding-bottom: 0 !important; */
+    }
+
+    .mi-pdp .compare_section {
+        padding-bottom: 70px;
+    }
+
+    .mi-pdp .u_ftr_item p {
+        font-size: 11px !important;
+    }
+
+    .mi-pdp .available_bar p {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+    }
+
+    .mi-pdp .qure__treatments {
+        margin-bottom: 0;
+        background: linear-gradient(180deg, #C7E7DC 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .mi-pdp .tmtFtrs_image {
+        grid-template-columns: 100%;
+        margin: 30px 0;
+    }
+
+    .mi-pdp .section__header .des p {
+        font-size: 13px;
+    }
+
+    .mi-pdp .step_block .step_header h3 span {
+        font-size: 10px;
+    }
+
+    .mi-pdp .planBlock .plan_choosed span {
+        font-size: 9px;
+    }
+
+    .mi-pdp .compare_listHeader>.compare__img img {
+        width: 105px;
+    }
+
+    .mi-pdp .compare_listHeader>.compare__img {
+        margin-bottom: 10px;
+    }
+
+    .mi-pdp .bs_img img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .mi-pdp .supply-detail .step_content.step_btn .submit_btn .btn_value {
+        font-weight: 600;
+    }
+
+    .mi-pdp .reasons_wrapper .rs_item:last-child {
+        width: 100%
+    }
+
+    .mi-pdp .unique_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mi-pdp .trusted_cl {
+        background: linear-gradient(180deg, rgba(199, 231, 220, 0.91) -98.65%, #FFFFFF 69.3%);
+    }
+
+
+    .skincare_slider_n .skin_item_n_tag .sn_tag {
+        margin-left: 5px;
+        padding: 2px 10px;
+    }
+
+    .skincare_slider_n .skin_item_n_tag .sn_tag,
+    .skincare_slider_n .skin_item_n_tag p {
+        font-size: 11px;
+    }
+
+
+    .affect_skin .affect_skinContent {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .affect_howToUse .affect_skin .howUse_slider_img {
+        overflow: unset;
+    }
+
+    .mi-pdp .skin_item_n_tag p {
+        text-align: start;
+    }
+    .mi-pdp.black_friday .serum_bl .bf_price h6{
+        font-size: 11px;
+    }
+    .mi-pdp.black_friday .serum_bl .planBlock .monthly_plans .saved_price{
+        font-size: 9px;
+    }
+}
+@media (max-width: 575px) {
+    .mi_landing_result .pagination_navigation .swiper-button-prev {
+        left: 0px !important; 
+    }
+    .mi_landing_result .swiper-button-next {
+        right: 0px !important;  
+    }
+}

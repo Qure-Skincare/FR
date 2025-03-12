@@ -1,0 +1,1515 @@
+.homepage .r_c_info {
+    padding: 15px 0;
+}
+
+.homepage .trusted_left {
+    max-width: 475px;
+}
+
+.homepage .main_banner .main_b_wrapper .m_b_content {
+    max-width: 498px;
+}
+
+.homepage .main_banner .bg_banner {
+    /* min-height: 500px; */
+    object-fit: cover;
+    object-position: right;
+}
+
+/* == bestseller section start == */
+.bestseller {
+    background: linear-gradient(269deg, #d2ece3 38.74%, rgba(199, 231, 220, .17) 51.88%, rgba(255, 255, 255, .12) 91.02%);
+    padding: 60px 0 96px;
+}
+
+.bestseller .swiper {
+    overflow: visible !important;
+    overflow-x: clip !important;
+}
+
+.bestseller-block {
+    background: #fff;
+    border: 1.10092px solid #c7e7dc;
+    box-shadow: 0 5.50459px 16.5138px rgba(176, 176, 176, .25);
+    border-radius: 8px;
+    padding: 0 28px 40px;
+}
+
+.bestseller-img {
+    position: relative;
+    width: 100%;
+    height: 173px;
+    padding-bottom: 0;
+    overflow: unset;
+    max-width: 222px;
+    margin: -130px auto 0;
+    text-align: center;
+}
+
+.bestseller-img img {
+    object-fit: contain;
+    object-position: bottom;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+}
+
+.bestseller-content .badge-seller {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 3.30275px;
+    text-transform: uppercase;
+    color: #dd4d45;
+}
+
+.bestSellerbtn {
+    max-width: 265px;
+    margin: 0 auto;
+}
+
+.bestseller-content h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Canela Web';
+    text-align: center;
+    letter-spacing: .01em;
+    color: #000;
+    margin: 12px 0 15px;
+}
+
+.bestseller-content p {
+    font-weight: 400;
+    text-align: center;
+    margin: 26px auto 40px;
+    max-width: 265px;
+}
+
+.s-block-2 {
+    margin-top: 0;
+}
+
+.s-block-2 .bestseller-img {
+    height: 210px;
+}
+
+.bestseller .swiper-wrapper {
+    /* align-items: stretch; */
+    align-items: end;
+}
+
+.bestseller .swiper-wrapper .swiper-slide {
+    /* height: unset; */
+}
+
+/* .bestseller .swiper-pagination {
+    display: none;
+} */
+
+.bestseller-wrap {
+    text-align: center;
+}
+
+/* == solutions form start == */
+.solution_form {
+    background: #CCE5DD;
+    text-align: center;
+}
+
+.solution_form .form-btn,
+.solution_form .sf_form input {
+    padding: 15px 20px;
+}
+
+.sf_form {
+    max-width: 430px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.sf_form input {
+    max-width: 430px;
+    width: 100%;
+    padding: 15px 55px 15px 15px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 7px 15px 0px #0000001A;
+
+}
+
+.form-btn {
+    width: 100%;
+    padding: 15px 55px 15px 15px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.form-btn:hover {
+    color: #fff;
+}
+
+/* == solutions form end == */
+
+/* == personalized treatment start == */
+.personalized_t {
+    background-color: var(--clr-yellow);
+}
+
+.personalized_t .section_header {
+    padding-bottom: 10px;
+}
+
+.personalized_t .title-lg {
+    max-width: 514px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pt_icons_wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.pt_item {
+    text-align: center;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+.pt_item img {
+    /* max-width: 50px; */
+    height: 64px;
+}
+
+.pt_item p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.pt_btn {
+    margin-top: 40px;
+}
+
+.pt_btn {
+    background: #000;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 30px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+.new_btn {
+    border-radius: 30px;
+    background-color: #C7E7DC;
+    max-width: fit-content;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 9px 19px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+@media(max-width:991px) and (min-width:720px) {
+
+    .homepage .main_banner .bg_banner,
+    .homepage_banner .bg_banner {
+        min-height: 450px;
+        object-fit: cover;
+        object-position: right;
+    }
+}
+
+@media(max-width:767px) {
+
+    .bestseller-content {
+        text-align: center;
+    }
+
+    .bestseller-img {
+        margin: -105px auto 10px;
+    }
+
+    .pt_btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .pt_btn {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+    }
+
+    .pt_item {
+        margin: 25px auto;
+    }
+
+    .personalized_t .section_header p {
+        font-size: 14px;
+    }
+
+    .press_slider.press_slider_row2 .ps_wrapper {
+        margin: 10px 0;
+        justify-content: space-evenly;
+    }
+
+    .new_btn {
+        padding: 2px 12px;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.22px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .m_b_content .section_header .title-xl {
+        font-size: 31px;
+        line-height: 40px;
+        letter-spacing: 0.31px;
+    }
+
+    .m_b_content .section_header .title-xl {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .bestseller {
+        padding: 150px 0 30px;
+        background: linear-gradient(0deg, #FFFAF1 0%, #CCE5DD 77.94%);
+    }
+
+    .bestseller-content h4 {
+        margin: 5px 0 15px;
+    }
+
+    .bestseller-content p {
+        margin: 24px auto 40px;
+    }
+}
+
+@media (max-width: 556px) {
+    .section_header {
+        max-width: 338px;
+    }
+
+    .homepage .main_banner .main_b_wrapper .m_b_content .btn_white {
+        margin: 40px auto;
+        margin-left: auto !important;
+    }
+
+    .homepage .main_b_wrapper .container {
+        padding-right: 19px !important;
+        padding-left: 19px !important;
+    }
+
+    .homepage .main_banner .main_b_wrapper .m_b_content .m_b_review {
+        max-width: 276px;
+        margin: 0 auto;
+    }
+}
+
+/* ================================== homepage old start ================================ */
+.product_slider .swiper-slide h3 {
+    margin: 5px 0;
+    font-size: 8px;
+    line-height: 11.02px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+
+.product_slider .swiper-slide>a {
+    display: inline-block;
+    max-width: 70px;
+}
+
+.product_slider .swiper-slide:first-child {
+    padding-left: 10px;
+}
+
+.product_slider {
+    padding: 10px 0;
+}
+
+.product_slider img {
+    width: 70px;
+    height: 70px;
+}
+
+.ss_clinical .ss_c_detail a.ss_c_link {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.homepage .btn_black {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.167px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+.homepage .main_banner .m_b_content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.124px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.homepage .main_banner .m_b_content h1{
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 57.4px;
+    letter-spacing: 0.45px;
+}
+.homepage .main_b_wrapper .section_header p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.q_uses_bl .q_uses_item-outer+.q_uses_item-outer:before {
+    display: none;
+}
+
+.future_skincare .fs-content .future_btn {
+    padding: 18.5px 31px;
+    color: #000;
+}
+
+.bs_item h4 {
+    border-bottom: 0;
+}
+
+.bs_content {
+    padding: 24px 0 0;
+}
+
+.homepage .skincare_journey .btn_black {
+    padding: 20px;
+}
+
+.homepage .skincare_journey .btn_black,
+.homepage .customer_fav .btn_black {
+    background-color: #000;
+    color: #fff;
+}
+
+.videosQure_dropdown .qureSlider .accordion-button {
+    justify-content: space-between;
+}
+
+.homepage .q_uses_bl .q_use_img {
+    margin-bottom: 0;
+    /* margin-top: 20px; */
+    max-width: 156px;
+}
+
+.videosQure_dropdown.videosQureTrusted .qureSlider .accordion-button::after {
+    margin-left: 10px;
+    height: 14px;
+    width: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath opacity='0.8' d='M1 1.3866L8 7.3866L15 1.3866' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.videosQure_dropdown .qureSlider .accordion-button {
+    padding: 20px 0 0px;
+}
+
+.videosQure_dropdown .vQ_desc {
+    font-size: 14px;
+}
+
+.beauty_skincare .bs_feature.correct ul li:before {
+    content: url(./correct_circle.svg);
+}
+
+.skin_concern .section_header h4 {
+    font-family: 'Canela Light';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.28px;
+}
+
+
+.contact_us_bl .customer_details {
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.contact_us_bl .customer_details .c_d_wrapper span:after {
+    background-color: #fff;
+}
+
+/* .result_item.result_item_info_with_fixed {
+    padding-bottom: 100px !important;
+} */
+
+.mi_landing_result .result_c_info .star_gp p {
+    margin-left: 0px;
+}
+
+.result_item.result_item_info_with_fixed .result_product_name {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.11px;
+    padding: 5px 15px;
+}
+
+.result_item.result_item_info_with_fixed .result_learnMore .result_c_info {
+    padding: 0;
+}
+
+.homepage .result_item.result_item_info_with_fixed .result_c_info {
+    padding: 15px 15px 0;
+}
+
+.homepage .q_uses_bl .q_uses_mob_wrap {
+    display: flex;
+    gap: 0;
+}
+
+.trusted_bl .trust_item .trust_item_info .result_content p,
+.trust_item .trust_item_info .result_content h6 {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.beauty_skincare .section_header .title-lg {
+    max-width: 441px;
+}
+
+.homepage .result_item.result_item_info_with_fixed .result_c_info .verified_img p {
+    color: #797D7C;
+}
+.advisor_content .accordion-button::after {
+    margin-left: initial;
+    width: 33px;
+    height: 33px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background-image: none;
+    content: url(../assets/arrow-down-sm.svg);
+    transform: unset;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.advisor_content .accordion-button:not(.collapsed):after{
+    content: url(../assets/arrow-up-sm.svg);
+}
+.advisor_content .accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.advisor_content .advisor_detail {
+    margin-top: -120px;
+}
+.advisor_content .advisor_detail h6{
+    font-weight: 600;
+    line-height: 21.538px;
+}
+.advisor_detail .accordion-body p {
+    line-height: 22px;
+}
+.advisor_content .accordion-header p {
+    font-weight: 400;
+    line-height: 21.538px;
+}
+.advisor_4 .advisor_detail {
+    margin-top: -140px;
+}
+.board_of-advisors .swiper {
+    overflow: unset;
+}
+@media(max-width:767px) {
+    .homepage .q_uses_bl .q_use_img {
+        max-width: 280px;
+    }
+    .advisor_content .advisor_detail h6{
+        font-size: 14px;
+    }
+    .ss_clinical .ss_c_detail a.ss_c_link {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .sf_form {
+        margin-top: 35px !important;
+    }
+
+    .homepage .btn_black {
+        /* background-color: #fff;
+        color: #000; */
+        max-width: 181px;
+        padding: 10px 28px;
+    }
+
+    .homepage .skincare_journey .btn_black {
+        padding: 15px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .homepage .main_banner .main_b_wrapper .btn_black {
+        font-size: 14px;
+    }
+
+    .homepage .main_banner .m_b_content h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.28px;
+    }
+    .homepage .main_banner .m_b_content p {
+    font-size: 12px;
+    line-height: 21.652px;
+    letter-spacing: 0.124px;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 0;
+    }
+    .homepage .main_banner .main_b_wrapper {
+        align-items: start;
+        padding-top: 23px;
+    }
+    .homepage .main_banner .main_b_wrapper .m_b_content {
+        max-width: 324px;
+        margin: auto;
+    }
+
+    .homepage .main_b_wrapper .section_header p {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 16px 0;
+    }
+
+    .pagination_navigation .swiper-button {
+        display: grid;
+    }
+
+    .future_skincare .fs-content .future_btn {
+        padding: 12.5px 31px;
+    }
+
+    .videosQureTrusted .swiper-button-next.swiper-button-disabled,
+    .videosQureTrusted .swiper-button-prev.swiper-button-disabled,
+    .skin_concern .swiper-button-next.swiper-button-disabled,
+    .skin_concern .swiper-button-prev.swiper-button-disabled {
+        opacity: 0;
+    }
+
+    .skin_concern .section_header h4 {
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.22px;
+    }
+
+    .customer_fav .btn_black {
+        max-width: 100%;
+    }
+
+    .result_item.result_item_info_with_fixed .result_product_name {
+        padding: 6px 15px 15px;
+    }
+
+    .homepage .mySwiperTest {
+        padding: 5px;
+    }
+
+    .newsletter_bl {
+        border-bottom: none;
+    }
+}
+
+/* ================================== homepage old start ================================ */
+
+
+.homepage .main_banner h6 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36.93px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #D453AF;
+}
+
+.homepage .main_banner h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 57.4px;
+    letter-spacing: 0.45px;
+}
+
+.homepage .main_banner .event_text {
+    background-color: #DEE9EA;
+    padding: 50px 30px 50px 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage .main_banner .banner_product {
+    width: 100%;
+    max-width: 291px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+.homepage .main_banner .banner_product h4 {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20.269px;
+    letter-spacing: 0.237px;
+    text-transform: uppercase;
+    color: #D453AF;
+}
+
+.homepage .main_banner .banner_product h5 {
+    font-family: "Canela Web";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.237px;
+}
+
+.homepage .main_banner .banner_product p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16.494px;
+    letter-spacing: 0.11px;
+    padding-top: 20px;
+    color: #000;
+}
+
+.homepage .main_banner .banner_product .product_text {
+    padding-top: 20px;
+}
+
+
+/* <----------Banners CSS-----------> */
+/* <!--.Main Banner--> */
+.bf_sale-banners h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 57.4px;
+    letter-spacing: .45px;
+}
+
+.bf_sale-banners .red-line {
+    position: relative;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.bf_sale-banners .red-line:after {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    content: '';
+    width: 125px;
+    height: 9px;
+    background-image: url(../assets/red-line.svg);
+    background-repeat: no-repeat;
+}
+
+.bf_sale-banners .banner_bf-text h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.124px;
+    margin: 29px 0;
+}
+
+.bf_sale-banners .btn_black {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 45px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: .167px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+.bf_sale-banners .main_banner2 .btn_black {
+    background-color: #fff;
+    color: #000;
+}
+
+.bf_sale-banners .main_banner {
+    background-color: #F1F4F5;
+}
+
+.bf_sale-banners .main_banner2 {
+    background-color: #000;
+}
+
+.main_banner .newCycle {
+    margin-left: 22px;
+}
+
+.main_banner .bf_sale-slider .newCycleSlider .swiper-slide .new-slide,
+.holiday_banner .bf_sale-slider .swiper-slide .new-slide {
+    width: 100%;
+    min-height: 110px;
+    padding: 9px 7px;
+    display: grid;
+    align-items: center;
+    color: #000;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0px 3.922px 3.922px rgba(0, 0, 0, 0.12);
+    margin-bottom: 8px;
+}
+
+.main_banner2 .bf_sale-slider .anotherSlider .swiper-slide .new-slide {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 8px;
+    background: rgba(241, 244, 245, 0.80);
+    padding: 12px 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 471px;
+}
+
+.main_banner2 .bf_sale-slider {
+    padding-top: 60px;
+}
+
+.main_banner .new_content {
+    text-align: left;
+}
+
+.main_banner .bf_sale-slider .new_content .new-header,
+.holiday_banner .bf_sale-slider .new_content .new-header {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.553px;
+    letter-spacing: 0.233px;
+    margin-bottom: 0;
+}
+
+.main_banner2 .bf_sale-slider .new_content .new-header {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.124px;
+}
+
+.main_banner .newCycleSlider .swiper-arrow:after {
+    display: none;
+}
+
+.main_banner .bf_sale-slider .new_img,
+.holiday_banner .bf_sale-slider .new_img {
+    text-align: center;
+    background: #fff;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.main_banner .event_content-main .event_pd-content,
+.main_banner2 .event_content-main .event_pd-content {
+    max-width: 606px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.main_banner .bf_sale-slider .swiper-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main_banner .bf_sale-slider,
+.holiday_banner .bf_sale-slider {
+    position: relative;
+    margin-top: 35px;
+}
+
+.holiday_banner .bundle_slider-main {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.main_banner .bf_sale-slider .swiper-button-prev,
+.holiday_banner .bf_sale-slider .swiper-button-prev {
+    left: -60px;
+}
+
+.main_banner .bf_sale-slider .swiper-button-next,
+.holiday_banner .bf_sale-slider .swiper-button-next {
+    right: -60px;
+}
+
+.holiday_banner .bf_sale-slider .swiper-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main_banner .bf_sale-slider .new_content span {
+    color: #F10000;
+    font-family: Poppins;
+    font-size: 10.786px;
+    font-weight: 700;
+    line-height: 19.876px;
+    letter-spacing: 0.233px;
+    text-transform: uppercase;
+}
+
+.holiday_banner .bf_sale-slider .new_content .discount_badge {
+    border-radius: 50px;
+    background: #C92127;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.163px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1px 9px;
+}
+
+.main_banner .bf_sale-slider .new_content .new-header span,
+.holiday_banner .bf_sale-slider .new_content .new-header span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22.553px;
+    letter-spacing: 0.233px;
+    color: #000;
+    display: block;
+    text-transform: capitalize;
+}
+
+/* <!--Collection Banner--> */
+.bf_sale-banners .collection_banner h1 {
+    font-family: "Canela light";
+}
+
+.collection_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.collection_banner .collection_grid {
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+}
+
+.hero_valentine_banner .collection_grid {
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.collection_banner .collection_grid .banner_text,
+.hero_valentine_banner .collection_grid .banner_text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero_valentine_banner .collection_grid .banner_text a {
+    background-color: #E03D42;
+    padding: 10px 55px;
+    margin-top: 33px !important;
+}
+
+.love_ur_skin_content a {
+    width: max-content;
+}
+
+span.discount_badge {
+    border-radius: 50px;
+    background: #C92127;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.163px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1px 9px;
+}
+
+.love_ur_skin_content {
+    min-height: 110px;
+    padding: 14px;
+    display: grid;
+    align-items: center;
+    color: #000;
+    grid-template-columns: 60% 40%;
+    gap: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0px 3.922px 3.922px rgba(0, 0, 0, 0.12);
+}
+
+/* <!--21% Discount Banner--> */
+.discount_banner .collection_text h6 {
+    color: #F10000;
+    font-size: 17.941px;
+    font-weight: 700;
+    line-height: 35.659px;
+    letter-spacing: 0.418px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.discount_banner .collection_text h1 {
+    font-size: 71px;
+    font-weight: 500;
+    line-height: 90.655px;
+    letter-spacing: 0.711px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.discount_banner {
+    background-color: #000;
+}
+
+.discount_banner .collection_text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32.357px;
+    letter-spacing: 1.54px;
+    color: #fff;
+}
+
+.main_banner2 .bf_sale-slider .new_content a {
+    font-size: 12px;
+    line-height: 16.733px;
+    letter-spacing: 0.251px;
+    font-weight: 500;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.main_banner2 .banner_bf-text p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.bf_sale-banners .main_banner2 .btn_black {
+    padding: 10px 57px;
+}
+
+/* <----Banners CSS End-------> */
+.holiday_banner {
+    position: relative;
+    width: 100%;
+}
+
+.holiday_banner .banner_bf-text h5 {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.holiday_banner .banner_bf-text p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10.733px;
+    letter-spacing: 0.12px;
+    padding-bottom: 10px;
+}
+
+.bfBundle__bannerBlock {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.discount_banner .collection_img .w-chrome.notranslate {
+    height: 100% !important;
+}
+
+.holiday_banner .bg_banner {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.bf_sale-banners .collection_banner h1 {
+    font-size: 32px;
+}
+
+.bf_sale-banners .collection_banner a {
+    background-color: #E03D42;
+    padding: 10px 77px;
+}
+
+.bf_sale-banners .collection_banner h6 {
+    color: #E03D42;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.13px;
+    /* 107.06% */
+    letter-spacing: 0.791px;
+    margin-bottom: 0;
+}
+
+.bf_sale-banners .collection_banner h6 span {
+    margin: 0 5px;
+}
+
+.homepage .hero_valentine_banner .bf_sale-slider .swiper-slide .new-slide {
+    grid-template-columns: 1.1fr 1fr;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(4.423652648925781px);
+    gap: 0;
+}
+
+.homepage .hero_valentine_banner .bf_sale-slider .new_content .discount_badge {
+    font-size: 7px;
+    font-weight: 500;
+}
+
+.homepage .hero_valentine_banner .bf_sale-slider .new_content p {
+    color: #10355D;
+    font-family: Poppins;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 20.269px;
+    letter-spacing: 0.237px;
+    text-transform: uppercase;
+}
+
+.homepage .hero_valentine_banner .bf_sale-slider .new_content .new-header {
+    color: #10355D;
+    font-family: "Canela Web";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.269px;
+    letter-spacing: 0.237px;
+}
+
+.homepage .hero_valentine_banner .bf_sale-slider .new_img {
+    padding: 10px 5px;
+}
+
+.homepage .hero_valentine_banner .new_content {
+    padding-left: 19px;
+}
+
+.homepage .hero_valentine_banner .bf_sale-slider .new_content a {
+    font-size: 8px;
+}
+
+.homepage .hero_valentine_banner h6 span img {
+    height: 22px;
+    margin: 0 5px;
+}
+
+.homepage .hero_valentine_banner h6 {
+    color: #E03D42;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 17.13px;
+    letter-spacing: 0.791px;
+    margin-bottom: 0;
+}
+
+.homepage .hero_valentine_banner h1 {
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 57.4px;
+    letter-spacing: 0.65px;
+    padding: 22px 0;
+    margin-bottom: 12px;
+}
+
+.homepage .hero_valentine_banner p {
+    font-size: 18px;
+}
+
+/* .............Sub Banner............... */
+.sub_banner .sub_banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+.sub_banner .sub_banner-content a {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.sub_banner .sub_banner-content h2 {
+    font-family: "Canela Web";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 0.36px;
+}
+
+/* .............Sub Banner............... */
+@media(max-width:991px) {
+    .main_banner .bf_sale-slider .swiper-button {
+        bottom: 0;
+        top: auto;
+    }
+}
+
+@media(max-width:767px) {
+
+    /* <----Banners CSS Start-------> */
+    /* <!--.Main Banner--> */
+    .bf_sale-banners .main_banner h1 {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.28px;
+    }
+
+    .bf_sale-banners .banner_bf-text h5 {
+        font-size: 13px;
+        margin: 29px 0;
+        line-height: 24px;
+        letter-spacing: 0.124px;
+    }
+
+    .banner_bf-text {
+        text-align: center;
+        padding-top: 25px;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bf_sale-banners .red-line:after {
+        bottom: -8px;
+        width: 80px;
+        height: 10px;
+        background-size: contain;
+    }
+
+    .main_banner .bf_sale-slider .swiper-button-prev,
+    .holiday_banner .bf_sale-slider .swiper-button-prev {
+        left: 20px;
+    }
+
+    .main_banner .bf_sale-slider .swiper-button-next,
+    .holiday_banner .bf_sale-slider .swiper-button-next {
+        right: 20px;
+    }
+
+    .main_banner .bf_sale-slider {
+        padding: 0 12px;
+    }
+
+    .main_banner .pagination_navigation .swiper-pagination {
+        top: 0;
+    }
+
+    .main_banner .pagination_navigation .swiper-pagination .swiper-pagination-bullet-active {
+        background: #000;
+    }
+
+    .main_banner .event_content-main .event_pd-content {
+        padding-bottom: 36px;
+    }
+
+    .bf_sale-banners .btn_black {
+        font-size: 14px;
+    }
+
+    /* <!--Collection Banner--> */
+    .bf_sale-banners .collection_banner h1 {
+        font-family: "Canela light";
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.24px;
+    }
+
+    .collection_banner .btn_black {
+        font-size: 11px;
+        padding: 6px 19px;
+        width: 100%;
+    }
+
+    .bf_sale-banners .collection_banner h1 strong {
+        display: block;
+    }
+
+    /* <----Banners CSS End-------> */
+
+    .homepage .main_banner .banner_product .product_text {
+        padding-top: 0px;
+    }
+
+    .homepage .main_banner .event_text {
+        padding: 35px 25px 25px 25px;
+    }
+
+
+    .homepage .main_banner h6 {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.13px;
+        text-align: center;
+    }
+
+    /* .homepage .main_banner a {
+        padding: 13px 50px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.733px;
+        letter-spacing: 0.251px;
+        margin-bottom: 0;
+    } */
+
+    .homepage .main_banner .event_banner-text {
+        text-align: center;
+    }
+
+    .homepage .main_banner .banner_product {
+        padding: 16px 4px 26px 20px;
+    }
+
+    .main_banner .event_content-main {
+        margin: 0 -3px;
+    }
+
+    .homepage .main_banner .banner_product h5 {
+        font-size: 16px;
+    }
+
+    .homepage .main_banner .event_banner-text p {
+        font-size: 11px;
+        line-height: 16.494px;
+        letter-spacing: 0.11px;
+    }
+
+    .discount_banner .collection_text h1 {
+        font-size: 43px;
+        line-height: 55.422px;
+        letter-spacing: 0.434px;
+        margin-bottom: 20px;
+    }
+
+    .discount_banner .collection_text h6 {
+        font-size: 10px;
+        line-height: 19.876px;
+        letter-spacing: 0.233px;
+    }
+
+    .discount_banner .collection_text p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 32.357px;
+    }
+
+    .bf_sale-banners h1 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0.28px;
+    }
+
+    .bf_sale-banners h1 br {
+        display: none;
+    }
+
+    .bf_sale-banners .main_banner2 .banner_bf-text h5 {
+        margin: 10px 0px 16px;
+        padding: 0 25px;
+    }
+
+    .main_banner2 .banner_bf-text p {
+        font-size: 10px;
+    }
+
+    .main_banner2 .bf_sale-slider {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .bf_sale-banners .main_banner2 .btn_black {
+        padding: 10px 50px;
+    }
+
+    .main_banner2 .bf_sale-slider .new_content .new-header {
+        font-size: 12px;
+    }
+
+    .main_banner2 .bf_sale-slider .new_content a {
+        font-size: 11px;
+    }
+
+    .holiday_banner .event_pd-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100% - 20px);
+    }
+
+    .holiday_banner .banner_bf-text h5 {
+        margin: 19px 0;
+    }
+
+    .holiday_banner .btn_black {
+        max-width: 100%;
+    }
+
+    .holiday_banner .bundle_slider-main {
+        max-width: 100%;
+    }
+
+    .holiday_banner .container,
+    .holiday_banner .bfBundle_inner-content {
+        height: 100%;
+    }
+
+    .holiday_banner .bfBundle_inner-content .dots_pegi {
+        margin: 0 0 -35px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    .collection_banner .collection_grid {
+        grid-template-columns: 55% 45%;
+        grid-auto-flow: dense;
+    }
+
+    .collection_banner .collection_grid div:nth-child(1) {
+        order: 2;
+    }
+
+    .collection_banner .collection_grid div:nth-child(2) {
+        order: 1;
+    }
+
+    .bf_sale-banners .collection_banner h1 {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.16px;
+    }
+
+    .bf_sale-banners .collection_banner a {
+        padding: 6px 25px;
+        width: auto;
+    }
+
+    .bf_sale-banners .collection_banner h6 {
+        font-size: 10px;
+    }
+
+    .bf_sale-banners .collection_banner h6 span img {
+        height: 15px;
+    }
+
+    .homepage .hero_valentine_banner .bf_sale-slider {
+        padding: 0px 25px;
+    }
+
+    .bf_sale-banners .hero_valentine_banner h1 {
+        font-size: 56px;
+        padding: 12px 0;
+    }
+
+    .homepage .hero_valentine_banner .collection_grid .banner_text a {
+        padding: 10px 25px;
+        margin-top: 5px !important;
+    }
+
+    .homepage .hero_valentine_banner p {
+        font-size: 12px;
+    }
+
+    .homepage .hero_valentine_banner h1 {
+        margin-bottom: 8px;
+    }
+    /* .............Sub Banner............... */
+    .sub_banner .sub_banner-content h2 {
+        font-size: 20px;
+        line-height: 27.489px;
+        letter-spacing: 0.2px;
+    }
+    .sub_banner .sub_banner-content{
+        gap: 20px;
+        justify-content: start;
+        padding-bottom: 25px;
+    }
+    .homepage .sub_banner.main_banner .main_b_wrapper{
+        align-items: end;
+    }
+    .sub_banner .sub_banner-content a {
+        font-size: 16px !important;
+    }
+}

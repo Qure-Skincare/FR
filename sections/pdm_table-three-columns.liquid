@@ -1,0 +1,154 @@
+<div class="table-thc container">
+  <h2 class="section-title">{{ section.settings.section_title }}</h2>
+  <div class="cont-table">
+    <div class="table">
+      <div class="header">
+        <div class="header-row">
+          <div class="header-feature">
+            <span class="desktop">{{ section.settings.table_feature_title }}</span>
+            <span class="mobile">{{ section.settings.table_feature_title_mobile }}</span>
+          </div>
+          <div class="header-qure">
+            <div class="cont-img">
+              <img class="logo" src="{{ section.settings.table_qure_title | img_url: 'original' }}" alt="logo">
+            </div>
+          </div>
+          <div class="header-others">{{ section.settings.table_others_title }}</div>
+        </div>
+      </div>
+      <div class="t-body">
+        {% for block in section.blocks %}
+          <div class="table-row">
+            <div class="row-feature">{{ block.settings.row_feature }} </div>
+            <div class="row-qure">
+              <div class="content">
+                <span class="icon">
+                  {% if block.settings.qure_check == true %}
+                    <img class="check" src="{{ section.settings.check_good | image_url: width: 24, height: 24, crop: 'center' }}" alt="check">
+                  {% else %}
+                    <img class="check" src="{{ section.settings.check_error | image_url: width: 24, height: 24, crop: 'center' }}" alt="check">
+                  {% endif %}
+                </span>
+                <span class="text">{{ block.settings.row_qure }}</span>
+              </div>
+            </div>
+            <div class="row-others">
+              <div class="content">
+                <span class="icon">
+                  {% if block.settings.others_check == true %}
+                    <img class="check" src="{{ section.settings.check_good | img_url: 'original' }}" alt="check">
+                  {% else %}
+                    <img class="check" src="{{ section.settings.check_error | img_url: 'original' }}" alt="check">
+                  {% endif %}
+                </span>
+                <span class="text">{{ block.settings.row_others }}</span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Table Three Columns (PDM)",
+  "tag": "section",
+  "class": "section-table-thc",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Heading",
+      "default": "Why choose Qure?"
+    },
+    {
+      "type": "text",
+      "id": "table_feature_title",
+      "label": "Feature Title",
+      "default": "Feature"
+    },
+    {
+      "type": "text",
+      "id": "table_feature_title_mobile",
+      "label": "Feature Title Mobile",
+      "default": "Why Qure?"
+    },
+    {
+      "type": "image_picker",
+      "id": "table_qure_title",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "table_others_title",
+      "label": "Table Right Title",
+      "default": "Others"
+    },
+    {
+      "type": "image_picker",
+      "id": "check_good",
+      "label": "Check"
+    },
+    {
+      "type": "image_picker",
+      "id": "check_error",
+      "label": "Uncheck"
+    }
+  ],
+  "blocks":[
+    {
+      "type": "row",
+      "name": "Row",
+      "settings":[
+        
+        {
+          "type": "text",
+          "id": "row_feature",
+          "label": "Feature Row",
+          "default": "Effective, Proven Results"
+        },
+        {
+          "type": "text",
+          "id": "row_qure",
+          "label": "Qure Row",
+          "default": "Targets root causes for lasting change"
+        },
+        {
+          "type": "checkbox",
+          "id": "qure_check",
+          "label": "Check",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "row_others",
+          "label": "Others Row",
+          "default": "Often only treat symptoms"
+        },
+        {
+          "type": "checkbox",
+          "id": "others_check",
+          "label": "Check",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table Three Columns (PDM)",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "row"
+        },
+        {
+          "type": "row"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

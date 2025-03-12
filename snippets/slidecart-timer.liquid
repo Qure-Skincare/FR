@@ -1,0 +1,53 @@
+{% comment %} Don't forget to delete startCartTimer from cart-ajax.liquid {% endcomment %}
+{% if cart.item_count > 0  %}
+	<div class="cart_timer">
+		<div class="timer_wrapper">
+			<div class="timer_text">IN HIGH DEMAND</div>
+			<div class="timer_separator"></div>
+			<div class="timer_countdown">
+				<div class="timer_countdown_heading">Items reserved for:</div>
+				<div class="countdown_cart" id="countdown"></div>
+			</div>
+		</div>
+	</div>
+{%- endif -%}
+
+<script>
+function startCartTimer(secs) {
+		if(window.timer_started === undefined)
+		{
+			var savedTime = getCookie("timer");
+			timeInSecs = savedTime ? parseInt(savedTime) : parseInt(secs);
+			ticker = setInterval(() => tick(), 1000);
+			window.timer_started = true;
+		}
+}
+
+async function tick() {
+    var secs = timeInSecs;
+    
+    if (secs > 0) {
+        timeInSecs--; 
+        setCookie("timer", timeInSecs, 1/24); // Set cookie for 1 hour
+    } else {
+        clearInterval(ticker);
+        setCookie("timer", "", -1); // Delete the cookie
+
+				const response = await fetch('/cart.js');
+				const cartData = await response.json();
+				
+				if (cartData.items.length > 0) {
+						startTimer(15 * 60);
+				}
+    }
+
+    var mins = Math.floor(secs / 60);
+    secs %= 60;
+    var pretty = `${mins < 10 ? "0" : ""}${mins}:${secs < 10 ? "0" : ""}${secs}`;
+
+		if (document.getElementById("countdown")) {
+				document.getElementById("countdown").innerHTML = pretty;
+		}
+
+}
+</script>

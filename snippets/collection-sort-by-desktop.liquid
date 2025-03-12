@@ -1,0 +1,17 @@
+{% comment %}Sort by: Featured{% endcomment %}
+<div class="sort-by--container cus-shorting d-none d-md-block">
+<label for="sort-by">Sort by:</label>
+  {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+  <select id="sort-by" class="sort-by">
+    {% for option in collection.sort_options %}
+      <option
+        value="{{ option.value }}"
+        {% if option.value == collection.sort_by %}
+          selected
+        {% endif %}
+      >
+        {{ option.name }}
+      </option>
+    {% endfor %}
+  </select>
+</div>

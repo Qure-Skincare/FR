@@ -1,0 +1,22 @@
+{% comment %}
+this snippets is used in pdm_peodutcts-bundle.liquid section and pdm_flating-bundle.liquid section, it has al information for shopify extention bundle.
+  Usage:
+ {% render 'pdm_bundle-info'
+   id: section.settings.bundle_products.local_storage_name,
+   info: section.settings.bundle_info %}
+{% endcomment %}
+
+{% liquid 
+    assign name = info.name.value 
+    assign productVariandid = info.parent_product.value.selected_or_first_available_variant.id
+    assign image = info.image_bundle_checkout | image_url
+    assign discounts = '['
+    for discount in info.discounts.value
+        assign discounts = discounts | append: ' ' | append: discount
+        unless forloop.last
+            assign discounts = discounts | append: ','
+        endunless
+    endfor
+    assign discounts = discounts | append: ']'
+%}
+'{"id":"{{ id }}", "name":"{{ name }}", "discounts":{{ discounts }}, "parentId":"{{ productVariandid }}", "image":"https:/{{ image }}"}'

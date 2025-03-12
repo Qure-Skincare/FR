@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "header_landing_haHwKF": {
+      "type": "header-landing",
+      "blocks": {
+        "announcement_LyGq7A": {
+          "type": "announcement",
+          "settings": {
+            "heading": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee",
+            "heading_mobile": "Subscribe & SAVE $30 | 30-Day Money-Back Guarantee"
+          }
+        },
+        "navigation_link_ncBhkt": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "Shop",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop",
+            "image": "shopify:\/\/shop_images\/header-lp-shop_7387e6cf-34d3-49b7-b695-f71022d8c817.webp"
+          }
+        },
+        "navigation_link_qMRNqA": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "WHY Q-URIFY",
+            "link_url": "#benefits",
+            "image": "shopify:\/\/shop_images\/headerLanding-2.png"
+          }
+        },
+        "navigation_link_UgrhJf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "LOCAL WATER REPORT",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/free-water-report",
+            "image": "shopify:\/\/shop_images\/header-lp-local.webp"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_LyGq7A",
+        "navigation_link_ncBhkt",
+        "navigation_link_qMRNqA",
+        "navigation_link_UgrhJf"
+      ],
+      "settings": {
+        "button_label": "Get Clearer Skin",
+        "button_url": "https:\/\/www.qureskincare.com\/pages\/qurify-offer#shop"
+      }
+    },
+    "main": {
+      "type": "temp-why-qurify",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "header_landing_haHwKF",
+    "main"
+  ]
+}

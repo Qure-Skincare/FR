@@ -1,0 +1,362 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "header_landing_pFmaRH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_qLHgyD": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CONTENT REQUIREMENTS",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs1.webp"
+          }
+        },
+        "navigation_link_DgYaFx": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs2.webp"
+          }
+        },
+        "navigation_link_3X4mrf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "INSPIRING CONTENT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qLHgyD",
+        "navigation_link_DgYaFx",
+        "navigation_link_3X4mrf"
+      ],
+      "settings": {
+      }
+    },
+    "section1": {
+      "type": "guide-header",
+      "blocks": {
+        "button_LUpm3B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about the Micro-Infusion System",
+            "button_url": "https://www.qureskincare.com/pages/microinfusion"
+          }
+        }
+      },
+      "block_order": [
+        "button_LUpm3B"
+      ],
+      "settings": {
+        "heading": "Micro-Infusion Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Our creative guide will help you craft engaging content that showcases how our innovative tool transforms skincare routines for radiant, glowing skin, so let's start!</p>",
+        "wistia_id": "h8lz5uvd39"
+      }
+    },
+    "qure_founder_v2_U8tRyA": {
+      "type": "qure-founder-v2",
+      "settings": {
+        "heading": "“Feeling good in your skin is not a privilege; it's a fundamental right, and we've set out on a mission to make it universally attainable.”",
+        "subheading": "-Kristina, founder of Qure",
+        "image": "shopify://shop_images/kristina.webp"
+      }
+    },
+    "section3": {
+      "type": "guide-columns",
+      "blocks": {
+        "header_RA46tw": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 1",
+            "text": "Merge Qure into your creatives",
+            "image": "shopify://shop_images/ac_step1.webp",
+            "button_label": "Content Requirements"
+          }
+        },
+        "description_mHnPFA": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Key Messages",
+            "image": "shopify://shop_images/key_message.svg",
+            "content": "<p>Key Points to include in the messaging:</p>",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_aNzhwA": {
+          "type": "collapsed",
+          "settings": {
+            "show": true,
+            "heading": "How it works",
+            "content": "<ul><li>The unique 2-in-1 system uses virtually painless needles to create invisible micro-channels in the top layer of your skin through a \"stamping\" technique. This controlled trauma stimulates the skin’s natural healing process, enhancing skin texture. Simultaneously, the invisible micro-channels allow science-backed serums to be infused directly below the skin barrier, delivering active ingredients more effectively for faster results - resulting in a rejuvenated, glowing complexion.</li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwB": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "heading": "Why everyone is obsessing over Qure’s Micro-Infusion System",
+            "content": "<ul><li><strong>Affordable and Convenient:</strong><br/>Enjoy an at-home 5-minute treatment every 2 weeks that costs up to 15X less than professional in-clinic treatments, saving you both time and money.</li><li><strong>Visible Results for Big Events:</strong><br/>Ideal for quickly enhancing your skin before important occasions, with visible results after just one treatment.</li><li><strong>Enhanced Serum Absorption:</strong><br/>Delivers serum directly to the skin, increasing absorption for better results.</li><li><strong>Safe and Easy to Use:</strong><br/>Quick DIY at-home facial with little to no downtime. Single-use sterile needle heads help minimize the risk of infection or irritation caused by blunt and multi-use needles. </li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwC": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "heading": "Clinical results from home - minus the “clinical” costs",
+            "content": "<ul><li>Get smoother, firmer, brighter-looking neck and décolletage skin with consistent treatment. One-time cost investment of the Neck & Décolletage LED Device means unlimited treatments, with no ongoing payments or hassle of attending in-clinic appointments.</li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwD": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "heading": "Serums to treat your specific skin concerns",
+            "content": "<p>Your skin is <strong>unique,</strong> so your treatment should be. Choose between two serums (or both) you want to infuse with your Micro-Infusion device and experience a set of benefits tailored to <strong>your</strong> exact skin concerns.</p>",
+            "code": "<div class=\"serums_wrap\">\n                                                <img src=\"https://qureskincaredns.com/new/assets/u_serum_1.webp\" alt=\"\" class=\"img-fluid\">\n                                                <div>\n                                                    <h5 class=\"bg-yellow\">Dark Spots</h5>\n                                                    <p>For dark spots and uneven skin tone choose Rejuvenating\n                                                        serum</p>\n                                                </div>\n                                            </div>\n                                            <ul>\n                                                <li>Brightens discolouration, fades dark spots and acne marks,\n                                                    promotes even skin tone and minimizes pores.</li>\n                                                <li>Formulated with Epidermal Growth Factor (EGF), Niacinamide,\n                                                    Tranexamic Acid.</li>\n                                            </ul>\n                                            <div class=\"serums_wrap\">\n                                                <img src=\"https://qureskincaredns.com/new/assets/u_serum_2.webp\" alt=\"\" class=\"img-fluid\">\n                                                <div>\n                                                    <h5 class=\"bg-grey\">Wrinkles</h5>\n                                                    <p>For fine lines and wrinkles choose Hydra-Soothing serum\n                                                    </p>\n                                                </div>\n                                            </div>\n                                            <ul>\n                                                <li>Reduces the look of fine lines and wrinkles, helps soothe\n                                                    redness and boosts hydration.</li>\n                                                <li>Formulated with Beta Glucan, Niacinamide and Tripeptide-1\n                                                    Peptide.</li>\n                                            </ul>"
+          }
+        },
+        "description_tVQDHe": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Creative Direction",
+            "image": "shopify://shop_images/direction.svg",
+            "content": "<ul><li>High quality, bright lighting and high resolution imagery/videography to be supplied. No obvious filters.</li><li>Close-up of the Micro-Infusion device and serums to be the feature in the content. Background must be clean and bright.</li><li>When demonstrating the application of the product, please do not wear any make-up, or no visible/noticeable makeup and make sure to do a close-up.</li><li>In cover photos for video content always show yourself using the Qure Micro-Infusion, unless otherwise agreed on with the brand.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_cpREQp": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Inclusion",
+            "image": "shopify://shop_images/inclusion.svg",
+            "content": "<ul><li>Tag and mention @qureskincare</li><li>Include hashtags in caption: #quremicroinfusion #microneedling #microinfusion #athomefacial #antiageing #qure #qureskincare #quremicroinfusion</li><li>Please include your affiliate link or link provided by Qure in Instagram stories and in captions of YouTube videos. If can’t be placed in BIO then please include in linktree or similar.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_LhpN6x": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 2",
+            "text": "Get to know our Micro-Infusion System",
+            "image": "shopify://shop_images/ac_step2.webp",
+            "button_label": "Product Information"
+          }
+        },
+        "description_6WtF8b": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Details",
+            "image": "shopify://shop_images/search.svg",
+            "image_large": "shopify://shop_images/img_col_e8f6043d-3dfd-4e45-b20d-8d9a3bf04339.png",
+            "content": "<ul><li>0.5 mm needles create controlled depth of micro-channels in the top layer of your skin through a \"stamping\" technique. It “tricks” your skin into activating your body’s natural healing process.</li><li>Single-use sterile 24 gold plated needle heads help minimize the risk of infection or irritation.</li><li>Serum of choice (for wrinkles / for dark spots) is infused directly below the skin barrier, accelerating absorption of active ingredients for faster results.</li></ul><p><a href=\"https://www.qureskincare.com/pages/microinfusion\" title=\"https://www.qureskincare.com/pages/microinfusion\">Learn more about Micro-Infusion System &gt;</a></p>",
+            "wistia_id": ""
+          }
+        },
+        "description_BNpxL3": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Usage Instructions",
+            "image": "shopify://shop_images/usage_dir.svg",
+            "content": "<ul><li>Treatment every 2 weeks, at night, for the best results. </li><li>Follow pre and post treatment protocol.</li><li>Make sure to scan the QR-code on the packaging before use or see detailed protocol <a href=\"https://www.qureskincare.com/pages/microinfusion-safety-guide\">here</a>.</li></ul>",
+            "wistia_id": "yy9nv8vwsn"
+          }
+        },
+        "button_NKqPfp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Detailed How to Use Guide",
+            "button_url": "https://www.qureskincare.com/pages/microinfusion-safety-guide"
+          }
+        },
+        "description_GE3PNL": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Claims",
+            "image": "shopify://shop_images/product_claims.svg",
+            "content": "<ul><li>Disposable needle-heads with 24 karat gold-plated needles minimize the risk of infection and irritation</li><li>Delivers science-backed serums directly to skin to help increase absorption & results</li><li>Little to no downtime & quick recovery of the skin</li><li>Offers similar results to in-clinic micro needling</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_AwT6ji": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 3",
+            "text": "Get inspired by other content creators",
+            "image": "shopify://shop_images/ac_step3.webp",
+            "button_label": "Inspiring Content"
+          }
+        },
+        "heading_YiyFGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show before and after"
+          }
+        },
+        "video_4Jjjcm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video1_1a5a29d1-fc80-4a95-9768-cb5145516db1.webp",
+            "wistia_id": "9j7kz7pwfj"
+          }
+        },
+        "video_iHceHC": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video2_4d1dc232-27d6-435e-9453-f1666f79b536.webp",
+            "wistia_id": "vwg9xabn6t"
+          }
+        },
+        "video_DmtewU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video3_ace49aa0-0bfb-4fde-a9a4-7ac65a5a7c49.webp",
+            "wistia_id": "ao0jik85yh"
+          }
+        },
+        "heading_fUcJta": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to use and product details"
+          }
+        },
+        "video_H9fmrV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video4_d32ecde0-59ea-4b3a-ac9b-4a3a7735d963.webp",
+            "wistia_id": "zbw5az4lxu"
+          }
+        },
+        "video_dpGpUm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video5.webp",
+            "wistia_id": "ctu18ifgej"
+          }
+        },
+        "video_6gLP6V": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video6.webp",
+            "wistia_id": "e3owuyh54j"
+          }
+        },
+        "heading_N6TQnA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Compared to alternatives"
+          }
+        },
+        "video_a3ghkg": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video7.webp",
+            "wistia_id": "dmnyxb9uyx"
+          }
+        },
+        "video_9V7NUd": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video8.webp",
+            "wistia_id": "7ybppilsd8"
+          }
+        },
+        "video_9XQxKD": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video9.webp",
+            "wistia_id": "atadet89nj"
+          }
+        },
+        "heading_TTxYWP": {
+          "type": "heading",
+          "settings": {
+            "heading": "What experts say"
+          }
+        },
+        "video_zQFEkP": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video10.webp",
+            "wistia_id": "x5n59x4s9n"
+          }
+        },
+        "video_zNk36F": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video11.webp",
+            "wistia_id": "lqydp0b8zz"
+          }
+        },
+        "video_EVwMR6": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video12.webp",
+            "wistia_id": "u9wetsz9sg"
+          }
+        }
+      },
+      "block_order": [
+        "header_RA46tw",
+        "description_mHnPFA",
+        "collapsed_aNzhwA",
+        "collapsed_aNzhwB",
+        "collapsed_aNzhwC",
+        "collapsed_aNzhwD",
+        "description_tVQDHe",
+        "description_cpREQp",
+        "header_LhpN6x",
+        "description_6WtF8b",
+        "description_BNpxL3",
+        "button_NKqPfp",
+        "description_GE3PNL",
+        "header_AwT6ji",
+        "heading_YiyFGP",
+        "video_4Jjjcm",
+        "video_iHceHC",
+        "video_DmtewU",
+        "heading_fUcJta",
+        "video_H9fmrV",
+        "video_dpGpUm",
+        "video_6gLP6V",
+        "heading_N6TQnA",
+        "video_a3ghkg",
+        "video_9V7NUd",
+        "video_9XQxKD",
+        "heading_TTxYWP",
+        "video_zQFEkP",
+        "video_zNk36F",
+        "video_EVwMR6"
+      ],
+      "settings": {
+        "heading": "All you need to know before you start creating your amazing content"
+      }
+    }
+  },
+  "order": [
+    "header_landing_pFmaRH",
+    "section1",
+    "qure_founder_v2_U8tRyA",
+    "section3"
+  ]
+}

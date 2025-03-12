@@ -1,0 +1,200 @@
+<div class="acc_address section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="address_header d-flex justify-content-center mb-4 flex-wrap">
+                    <p class="me-3">WELCOME <span class="cus_name text-uppercase">{{ customer.name }}</span></p>
+                    <div>
+                        <a href="{{ routes.account_logout_url }}" class="text-secondary">LOGOUT</a>
+                        <span class="mx-3 text-secondary"> | </span>
+                        <a href="{{ routes.account_url }}" class="text-secondary text-uppercase">Return to Account Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                {% for address in customer.addresses %}
+                    <div class="your_address qure_form py-0">
+                        <div class="section_header ps-0 mw-100">
+                            <h2 class="title-lg">Your Address</h2>
+                            {% if address == customer.default_address %}
+                                <h5><strong>Default</strong></h5>
+                            {% endif %}
+                        </div>
+                        
+                        {{ address | format_address }}
+
+                        <div class="qure_form_btn gap-4 d-flex my-4 mw-359">
+                            <form method="post" action="{{ routes.account_addresses_url }}/{{ address.id }}">
+                                <input type="hidden" name="_method" value="delete"/>    
+                                <button type="submit" class="btn btn-lg btn-primary" style="width:250px">DELETE</button>
+                            </form>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-7">
+                <div class="col-new_address qure_form py-0">
+                    {% form 'customer_address', customer.new_address %}
+                        <div class="row">
+                            <div class="section_header ps-0 mw-100">
+                                <h2 class="title-lg">{{ 'customer.addresses.add_new' | t }}</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[first_name]"
+                                        class="qure_input_field"
+                                        id="AddressFirstNameNew"
+                                        value="{{ form.first_name }}"
+                                        autocapitalize="words"
+                                        placeholder="First Name"
+                                    >
+                                    <label for="g_first_name" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[last_name]"
+                                        class="qure_input_field"
+                                        id="AddressLastNameNew"
+                                        value="{{ form.last_name }}"
+                                        autocapitalize="words"
+                                        placeholder="Last Name"
+                                    >
+                                    <label for="g_last_name" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[company]"
+                                        class="qure_input_field"
+                                        id="AddressCompanyNew"
+                                        value="{{ form.company }}"
+                                        autocapitalize="words"
+                                        placeholder="Company"
+                                    >
+                                    <label for="g_company" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[address1]"
+                                        class="qure_input_field"
+                                        id="AddressAddress1New"
+                                        value="{{ form.address1 }}"
+                                        autocapitalize="words"
+                                        placeholder="Address"
+                                    >
+                                    <label for="g_address1" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[address2]"
+                                        class="qure_input_field"
+                                        id="AddressAddress2New"
+                                        value="{{ form.address2 }}"
+                                        autocapitalize="words"
+                                        placeholder="Address2"
+                                    >
+                                    <label for="g_address2" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[city]"
+                                        class="qure_input_field"
+                                        id="AddressCityNew"
+                                        value="{{ form.city }}"
+                                        autocapitalize="words"
+                                        placeholder="City"
+                                    >
+                                    <label for="g_city" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="aaddress[country]"
+                                        class="qure_input_field"
+                                        value="{{ form.country }}"
+                                        autocapitalize="characters"
+                                        placeholder="Country"
+                                    >
+                                    <label for="g_country" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[province]"
+                                        class="qure_input_field"
+                                        value="{{ form.province }}"
+                                        autocapitalize="characters"
+                                        placeholder="Province"
+                                    >
+                                    <label for="g_province" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[zip]"
+                                        class="qure_input_field"
+                                        id="AddressZipNew"
+                                        value="{{ form.zip }}"
+                                        autocapitalize="characters"
+                                        placeholder="Postal/Zip code"
+                                    >
+                                    <label for="g_postalCode" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <input 
+                                        type="text"
+                                        name="address[phone]"
+                                        class="qure_input_field"
+                                        id="AddressPhoneNew"
+                                        value="{{ form.phone }}"
+                                        pattern="[0-9\-]*"
+                                        placeholder="Phone"
+                                    >
+                                    <label for="g_phone" class="qure_input_label"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="qure_input">
+                                    <label for="g_default" class="qure_input_label">{{ 'customer.addresses.set_default' | t }}</label>
+                                    {{ form.set_as_default_checkbox }}
+                                </div>
+                            </div>
+
+                            <div class="qure_form_btn my-4 d-flex gap-3 mw-100">
+                                <button type="submit" class="btn btn-lg btn-primary">{{ 'customer.addresses.add' | t }}</button>
+                                <button type="button" class="btn btn-lg btn-primary" onclick="location.href='{{ routes.account_url }}'">
+                                  {{ 'customer.addresses.cancel' | t }}
+                                </button>
+                            </div>
+                        </div>
+                    {% endform %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+{% comment %}
+  Render Cross Sell Section with two products and a button to add to cart.
+  The products came from metaobject for default but you can change it to a custom collection or to a product list.
+
+  Accepts:
+  - cross-sell-products: {Object} - The products to be rendered (Metafield).
+  - visibility: {String} - The visibility of the section. It can be 'desktop' or 'mobile'.
+
+  Usage:
+  {% render 'cross-sell',
+    cross-sell-products:  product.metafields.custom.cross_sell.value,
+    visibility: "desktop"
+  %}
+
+
+{% endcomment %}
+
+{% if cross-sell-products != nil %}
+
+  <div class="upgrade_routine {% if visibility == "desktop" %}d-none d-lg-block{% else %}d-lg-none order-3{% endif %}">
+      {% if product.metafields.custom.cross_sell_header.value != blank %}
+        <div class="ur_heading">{{ product.metafields.custom.cross_sell_header.value }}</div>
+      {% else %}
+        <div class="ur_heading">{{ 'sections.cross-sell.title' | t }}</div>
+      {% endif %}
+      <div class="ur_item_grid">
+        {% for item in cross-sell-products %}
+          <div class="ur_item">
+              <div class="ur_img">
+                  <a href="/products/{{ item.product.value.handle }}" title="{{ item.name }}"><img src="{{ item.feature_image | image_url: width: 400, height: 400 }}" alt="{{ item.name }}" class="img-fluid"></a>
+              </div>
+              <div class="ur_info">
+                  {% if settings.show_bf_price == true %}
+                    <div class="save_tag">Save 21% </div>
+                    <div class="ur_itemName pb-2">{{ item.name }}</div>
+                  {% else %}
+                    <div class="ur_itemName">{{ item.name }}</div>
+                  {% endif %}
+                  <div class="ur_price_btn">
+                      <div class="ur_price">{{ item.product.value.price | money_without_trailing_zeros  }}</div>
+                      <div class="ur_btn" data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ item.product.value.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ item.product.value.handle | escape }}')">
+                          {{ 'sections.cross-sell.add_to_cart' | t }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+{% endif %}

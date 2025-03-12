@@ -1,0 +1,68 @@
+<style>
+    .pdt_slider {
+        text-align: center;
+    }
+</style>
+
+{% if section.blocks.size > 0 %}
+    <div 
+        class="swiper_slider_sec d-block d-md-none product_slider twa__swiper" 
+        id="twa__swiper-product_slider"
+        data-section-id="product_slider" 
+        data-autoplay="false" 
+        data-loop="false" 
+        data-centerslide="false"
+        data-mobile="4.5" 
+        data-tablet="6" 
+        data-desktop="6" 
+        data-spacing="10"
+        data-arrowleft="product_slider-swiper-prev" 
+        data-arrowright="product_slider-swiper-next">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+                <div class="swiper-slide">
+                    <div class="pdt_slider">
+                        <a href="{{ block.settings.link_url }}">
+                            <img src="{{ block.settings.image | img_url: '150x' }}" alt="{{ block.settings.link_label | escape }}">
+                            <h3>{{ block.settings.link_label }}</h3>
+                        </a>
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "t:sections.mobile-product-slider.name",
+    "class": "section-mobile-product-slider",
+    "settings": [
+
+    ],
+    "blocks": [
+		{
+			"type": "slide",
+			"name": "t:sections.mobile-product-slider.blocks.slide.name",
+            "limit": 10,
+			"settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image.label"
+                },
+                {
+                    "type" : "inline_richtext",
+                    "id" : "link_label",
+                    "label" : "t:common.link.label"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link.url.label"
+                }
+			]
+		}
+    ]
+}
+{% endschema %}

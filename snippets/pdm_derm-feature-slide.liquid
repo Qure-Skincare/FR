@@ -1,0 +1,39 @@
+{% comment %}
+this snippets is used in pdm_slider-derm-feature.liquid section and render a slider
+Usage:
+  {% render 'pdm_derm-feature-slide'
+    video: block.settings.video,
+    img_ovl: block.settings.img,
+    img_play: section.settings.icon_play,
+    review: block.settings.review_doctor,
+    doctor: block.settings.name_doctor,
+    certified: block.settings.certified_doctor,
+    product: block.settings.product,
+    index: forloop.index %}
+{% endcomment %}
+
+<div class="swiper-slide">
+  <div class="slide-cont">
+    <div class="video-cont" data-index="{{ index }}">
+      {{ img_ovl | image_url: width: 840 |  image_tag: alt: 'video overlay image', class:'img-overlay' }}
+      <img class="img-icon-play" src="{{ img_play | image_url: width:40, height: 40, crop: 'center' }}" alt="video overlay image"></img>
+    </div>
+    <div class="text-cont">
+      <div class="review">
+        {{ review }}
+      </div>
+      <div class="doctor-info">
+        <div class="doctor">{{ doctor }}</div>
+        <div class="certified">{{ certified }}</div>
+      </div>
+      <div class="product-cont">
+        <a class="link-product" href="{{ product.url }}">
+            <div class="img-product">
+              <img loading="lazy" class="thumbs-product" src="{{ product.featured_image | img_url: 'small' }}" alt="{{ product.title }}">
+            </div>
+            <div class="name-product">{{ product.title }}</div>
+        </a>
+      </div>
+    </div>
+   </div>
+</div>

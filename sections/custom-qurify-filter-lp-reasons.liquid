@@ -1,0 +1,125 @@
+<div class="everyones_qurify section bg-yellow">
+    <div class="container">
+        <div class="section_header text-md-center">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">{{ section.settings.heading }}</h2> 
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        <div class="swiper twa__swiper qurifyingSlider dot_pagination" id="twa__swiper-qurifyingSlider"
+            data-section-id="qurifyingSlider" data-autoplay="false" data-loop="false" data-centerslide="false"
+            data-mobile="1.1" data-tablet="3" data-desktop="4" data-spacing="32"
+            data-arrowleft="qurifyingSlider-swiper-prev" data-arrowright="qurifyingSlider-swiper-next">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'object' %}
+                        <div class="swiper-slide">
+                            <div class="eq_item">
+                                {% if block.settings.image != blank %}
+                                    <div class="eq_img">
+                                        <img class="img-fluid" class="{{ block.settings.image.alt | escape }}" src="{{ block.settings.image | img_url: '450x' }}" alt="">
+                                    </div>
+                                {% endif %}
+    
+                                <div class="eq_content">
+                                    <h6>{{ block.settings.heading }}</h6>
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        </div> 
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="get_clearer_wrapper text-center my-4">
+            {%- for block in section.blocks -%}
+                {% if block.type == 'button' %}
+                    {% if block.settings.button_label != blank %}
+                        <p><span><img src="https://qureskincaredns.com/new/assets/derma-sm.svg" alt=""></span>{{ block.settings.text_first }}</p>
+                        <a class="btn btn-lg btn-primary btn_green" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</span>
+                        </a>
+                        <p><span><img src="https://qureskincaredns.com/new/assets/money-sm.svg" alt=""></span>{{ block.settings.text_second }}</p>
+                    {% endif %}
+                {% endif %}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Reasons",
+        "class": "section-reasons",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 12,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_first",
+                        "label": "t:common.text.label",
+                        "default": "Dermatologist-Reviewed"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label",
+                        "default": "30-Day Money-Back Guarantee"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

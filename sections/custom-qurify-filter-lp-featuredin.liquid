@@ -1,0 +1,115 @@
+{%- assign heading_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'heading' -%}
+            {%- assign heading_count = heading_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<!-- -- press slider start -- -->
+<div class="press_bl {{ section.settings.custom_class }}">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="ps_wrapper d-none d-md-flex">
+                    {%- for block in section.blocks -%}
+                        {% if block.type == 'image' %}
+                            <div class="ps_item">
+                                <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                            </div>
+                        {% endif %}
+                    {%- endfor -%}
+                </div>
+                <div class="ps_wrapper d-flex d-md-none">
+                    <div class="ps_wrapperInner">
+                        {%- for block in section.blocks limit:3 -%}
+                            {% if block.type == 'image' %}
+                                <div class="ps_item">
+                                    <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                </div>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+                    <div class="ps_wrapperInner">
+                        {%- for block in section.blocks offset:3 limit:3 -%}
+                            {% if block.type == 'image' %}
+                                <div class="ps_item">
+                                    <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                </div>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -- press slider end -- -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.featuredin.two",
+        "class": "section-featured-in",
+        "settings": [
+            {
+                "type": "textarea",
+                "id": "custom_class",
+                "label": "t:common.classname.custom"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image",
+                "name": "t:common.image.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.featuredin.two",
+                "blocks": [
+                    {
+                        "type": "image",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/elle.svg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/glamour.svg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/grazia.svg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/cosmopolitan.svg"
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

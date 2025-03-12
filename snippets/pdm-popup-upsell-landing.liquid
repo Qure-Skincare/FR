@@ -1,0 +1,81 @@
+{% comment %}
+  Render Upsell Popup Section to display recommended products with pricing details, discount offers,
+  and call-to-action buttons for adding products to the cart.
+
+  Accepts:
+  - meta_data: {Array} - An array of upsell product objects fetched from a metafield.
+  - check_icon: {String} - A reusable checkmark icon rendered dynamically.
+
+  Functionality:
+  - Displays each product's image, title, pricing, and discount information.
+  - Includes value propositions and call-to-action buttons.
+  - Supports closing the popup with a close button.
+
+  Usage:
+  {% render 'pdm-popup-upsell-landing', referrer: "string", ajax_selector: "string" %}
+{% endcomment %}
+
+{% liquid
+  assign meta_data = page.metafields.custom.upsell_popup.value
+  assign product_dark_and_wrinkles = ''
+  assign product_dark_spots = ''
+  assign product_wrinkles = ''
+
+  assign check_icon = ''
+  capture check_icon
+    render 'pdm_landing-purchase-icons', icon: 'check-value'
+  endcapture
+
+  assign cross_icon = ''
+  capture cross_icon
+    render 'pdm_landing-purchase-icons', icon: 'cross-popup'
+  endcapture
+%}
+
+<div class="popupsell-main" data-popup-referrer="{{ referrer }}" data-ajax-selector="{{ ajax_selector }}">
+  <div class="popupsell-wrapper">
+    <div class="popupsell-close-wrapper">
+      <div class="popupsell-close" data-ajax-selector="{{ ajax_selector }}">
+        {{ cross_icon }}
+      </div>
+    </div>
+    {% for data in meta_data %}
+      {% liquid
+        assign data_product = data.item.value
+        assign data_product_price = data_product.price | divided_by: 100.0
+        assign data_product_discount_percent = data_product.metafields.custom.popup_discount
+        assign total_product_discount = data_product_price | times: data_product_discount_percent | floor
+        assign monthly_price = data_product.price | minus: total_product_discount | floor
+        assign unit_price = monthly_price | divided_by: 6.00 | money_without_trailing_zeros
+
+        case data.type_product
+          when 'dark-spots + wrinkles'
+            assign product_dark_and_wrinkles = data_product.id
+          when 'dark-spots'
+            assign product_dark_spots = data_product.id
+          when 'wrinkles'
+            assign product_wrinkles = data_product.id
+        endcase
+      %}
+
+      {% render 'pdm-popup-upsell-landing-card',
+        data: data,
+        data_product: data_product,
+        data_product_discount_percent: data_product_discount_percent,
+        total_product_discount: total_product_discount,
+        monthly_price: monthly_price,
+        unit_price: unit_price,
+        ajax_selector: ajax_selector,
+        check_icon: check_icon
+      %}
+    {% endfor %}
+  </div>
+</div>
+
+<div
+  hidden
+  data-popup-products-id
+  data-dark-and-wrinkles="{{ product_dark_and_wrinkles }}"
+  data-dark-spots="{{ product_dark_spots }}"
+  data-wrinkles="{{ product_wrinkles }}"
+></div>

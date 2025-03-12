@@ -1,0 +1,102 @@
+<!-- -- WHAT’S INCLUDED start -- -->
+<div class="what_included bg-lightGrey {{ section.settings.background }} {{ section.settings.custom_class }}">
+    <div class="container">
+        <div class="section_header text-center px-3">
+            {% if section.settings.sub_heading != blank %}
+            <p class="silk_heading pb-md-2">{{ section.settings.sub_heading }}</p>
+            {% endif %}
+            {% if section.settings.title != blank %}
+            <h2 class="title-lg mw-590 pb-md-3">{{ section.settings.title }}</h2>
+            {% endif %}
+        </div>
+        <div class="included_content-main">
+            {% if section.settings.free_offer != blank %}
+            <div class="included_content pillow_imgs">
+                {{ section.settings.free_offer }}
+                <div class="bs_feature correctCircle">
+                    <ul class="rightCircle">
+                        {% if section.settings.feature_list != blank %}
+                            {{ section.settings.feature_list }}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+            {% if section.settings.btn_text != blank %}
+            <div class="mt-0 px-md-3">
+                <a class="btn btn-lg btn-primary with_subscription buy_btn" href="{{ section.settings.button_link }}">{{ section.settings.btn_text }}</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- -- WHAT’S INCLUDED End -- -->
+
+{% schema %}
+{
+    "name": "t:sections.what_is_Included.label",
+    "settings": [
+        {
+            "type": "select",
+            "id": "background",
+            "label": "t:common.background.label",
+            "options": [
+              {
+                "value": "bg-grey",
+                "label": "Grey"
+              },
+              {
+                "value": "bg-yellow",
+                "label": "Yellow"
+              },
+              {
+                "value": "trasnparent",
+                "label": "Transparent"
+              }
+            ]
+        },
+        {
+            "type": "text",
+            "id": "sub_heading",
+            "label": "t:common.subheading.label"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "richtext",
+            "id": "free_offer",
+            "label": "t:sections.limited-offer.text"
+        },
+        {
+            "type": "richtext",
+            "id": "feature_list",
+            "label": "t:common.list.featured"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "t:common.button.name"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:common.button.url.label"
+        },
+        {
+            "type": "textarea",
+            "id": "custom_class",
+            "label": "t:common.classname.custom",
+            "default": "section"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.what_is_Included.label"
+        }
+    ]
+}
+
+{% endschema %}

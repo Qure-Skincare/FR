@@ -1,0 +1,77 @@
+<div class="ingredients_list {{ section.settings.custom_class }}">
+    <div class="container">
+        <div class="section_header text-start pb-md-5 pb-4 text-md-center ms-0 m-md-auto">
+            {% if section.settings.sub_heading != blank %}
+                <h6 class="n_sub-heading">{{ section.settings.sub_heading }}</h6>
+            {% endif %}
+        </div>
+        <div class="skin_problems">
+            {% for block in section.blocks %}
+                {% if block.type == 'problem' %}
+                    <div class="problem_inner">
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | img_url: 'master' }}" class="img-fluid" alt="">
+                        {% endif %}
+                        <div class="pt-md-4 pt-2">
+                            {% if block.settings.description != blank %}
+                                <p>
+                                    {% if block.settings.icon != blank %}
+                                        <img src="{{ block.settings.icon | img_url: 'small' }}" alt="">
+                                    {% endif %}
+                                    {{ block.settings.description }}
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.perfect_for.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_class",
+      "label": "t:common.classname.custom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "problem",
+      "name": "Skin Problem",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "t:common.icon.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:common.description.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.perfect_for.label"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,60 @@
+<div class="qure_form">
+    <div class="container">
+        <div class="sign_in_wrapper mw-423">
+            <div class="section_header ps-0 mw-100">
+                <h2 class="title-lg">{{ 'customer.login_page.title' | t }}</h2>
+                <p>{{ 'customer.welcome' | t }}</p>
+            </div>
+            {%- form 'customer_login', novalidate: 'novalidate' -%}
+
+                {%- if form.errors -%}
+                    {{ form.errors | default_errors }}
+                {%- endif -%}
+
+                <div class="qure_input">
+                    <input
+                        class="qure_input_field"
+                        type="email"
+                        name="customer[email]"
+                        id="CustomerEmail"
+                        autocomplete="email"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        {% if form.errors contains 'form' %}
+                        aria-invalid="true"
+                        {% endif %}
+                        placeholder="{{ 'customer.login_page.email' | t }}"
+                    >   
+                    <label for="g_email" class="qure_input_label"></label>
+                </div>
+                {%- if form.password_needed -%}
+                    <div class="qure_input">
+
+                        <input
+                            class="qure_input_field"
+                            type="password"
+                            value=""
+                            name="customer[password]"
+                            id="CustomerPassword"
+                            autocomplete="current-password"
+                            {% if form.errors contains 'form' %}
+                            aria-invalid="true"
+                            {% endif %}
+                            placeholder="{{ 'customer.login_page.password' | t }}"
+                        >
+
+                        <label for="g_password" class="qure_input_label"></label>
+                    </div>
+                {%- endif -%}
+                <div class="qure_form_btn my-4 d-block">
+                    <button class="btn btn-lg btn-primary">
+                        {{ 'customer.login_page.sign_in' | t }}
+                    </button>
+
+                    <a href="javascript:void(0)" onclick="switchForm('form_reset')" class="d-block pt-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccount" aria-controls="offcanvasAccount">{{ 'customer.login_page.forgot_password' | t }}</a>
+                    <a href="{{ routes.account_register_url }}" class="d-block mt-4">{{ 'customer.login_page.create_account' | t }}</a>
+                </div>
+            {%- endform -%}
+        </div>
+    </div>
+</div>

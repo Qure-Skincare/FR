@@ -1,0 +1,314 @@
+{%- assign wistia_videos_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'wistia' -%}
+            {%- assign wistia_videos_count = wistia_videos_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<!-- Video blocks -->
+<div class="{{ section.settings.classname }}">
+    <div class="container">
+        <div class="section_header text-start text-md-center mb-3">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">
+                    {{ section.settings.heading }}
+                </h2>
+            {% endif %}
+            {% if section.settings.sub_heading != blank %}
+            <p>{{ section.settings.sub_heading }}</p>
+            {% endif %}
+
+        </div>
+        <div class="videoInfo">
+            <!-- <div class="swiper qureSlider dot_pagination"> -->
+
+            <div 
+                class="swiper twa__swiper qureSlider dot_pagination" 
+                id="twa__swiper-qureSlider"
+                data-section-id="qureSlider" 
+                data-autoplay="false" 
+                data-loop="false" 
+                data-centerslide="false" 
+                data-mobile="{{ section.settings.mob_slide }}" 
+                data-tablet="6" 
+                data-desktop="{{ section.settings.desk_slide }}" 
+                data-spacing="{{ section.settings.slide_space }}"
+                data-arrowleft="qureSlider-swiper-prev" 
+                data-arrowright="qureSlider-swiper-next">
+                {% if section.blocks.size > 0 %}
+                    <div class="swiper-wrapper">
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'wistia' %}
+                                <div class="swiper-slide">
+                                    <div class="videosQure_exernal">
+                                        <div class="wistia_responsive_padding" style="position:relative;">
+                                            <div class="wistia_responsive_wrapper"
+                                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true"
+                                                    style="height:100%;position:relative;width:100%">
+                                                    <div class="wistia_swatch"
+                                                        style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;bottom:0;">
+                                                        <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}/swatch"
+                                                            style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                            alt="" aria-hidden="true"
+                                                            onload="this.parentNode.style.opacity=1;" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {%- if block.settings.dr_name != blank -%}
+                                    <div class="accordion" id="accordionExample{{ block.id }}">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading{{ block.id }}">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse{{ block.id }}" aria-expanded="true"
+                                                    aria-controls="collapse{{ block.id }}">
+                                                    <div class="vQ_name">{{ block.settings.dr_name }}</div>
+                                                </button>
+                                                <div class="vQ_desc">{{ block.settings.board }}</div>
+                                            </h2>
+                                            <div id="collapse{{ block.id }}" class="accordion-collapse collapse {% if forloop.first %} show {%endif %}"
+                                                aria-labelledby="heading{{ block.id }}"
+                                                data-bs-parent="#accordionExample{{ block.id }}">
+                                                {%- if block.settings.desc != blank -%}
+                                                <div class="accordion-body">
+                                                    {{ block.settings.desc }}
+                                                </div>
+                                                {%- endif -%}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {%- endif -%}
+                                </div>
+                                <script src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}.jsonp" async></script>
+                            {% else %}
+                                <div class="swiper-slide">
+                                    <div class="player">
+                                        {% if block.settings.video != blank %}
+
+                                            {% if block.settings.video.sources[1].url != blank %}
+                                                {% assign video_source_url = block.settings.video.sources[1].url %}
+                                            {% else %}
+                                                {% assign video_source_url = block.settings.video.sources[0].url %}
+                                            {% endif %}
+
+                                            {% if block.settings.image != blank %}
+                                                <video poster="{{ block.settings.image | img_url: '500x' }}" class="player__video viewer"
+                                                src="{{ video_source_url }}"></video>
+                                            {% else %}
+                                                <video poster="{{ block.settings.video.preview_image | img_url: '500x' }}" class="player__video viewer"
+                                                src="{{ video_source_url }}"></video>
+                                            {% endif %}
+                                            <div class="player__controls">
+                                                <div class="progress">
+                                                    <div class="progress__filled"></div>
+                                                </div>
+                                                <button class="player__button toggle" title="Toggle Play">►</button>
+                                                <input type="range" name="volume" class="player__slider" min="0" max="1"
+                                                    step="0.05" value="1">
+                                                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2"
+                                                    step="0.1" value="1">
+                                                <button data-skip="-10" class="player__button">« 10s</button>
+                                                <button data-skip="25" class="player__button">25s »</button>
+                                                <button class="player__button player__fullscreen">⧉</button>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        {%- endfor -%}
+                    </div>
+                {% endif %}
+                <div class="pagination_navigation">
+                    <div class="swiper-pagination"></div>
+                    <div class="qureSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                    <div class="qureSlider-swiper-next  swiper-button-next swiper-button"></div>
+
+                </div>
+
+                {% if section.settings.btn != blank %}
+                    <div class="get_clearer_wrapper text-center mt-5">
+                        <a class="btn btn-lg btn-primary btn_green {{ section.settings.ctm_cls_btn }}" href="{% if section.settings.btn_url != blank%} {{ section.settings.btn_url }} {% endif %}">{{ section.settings.btn }}</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video blocks end-->
+
+{% if wistia_videos_count > 0 %}
+
+    <script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+{% endif %}
+
+
+
+{% schema %}
+    {
+        "name": "t:sections.videos-list.name",
+        "class": "section-videos-list",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "textarea",
+                "id": "sub_heading",
+                "label": "t:common.text.content"
+            },
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "section videosQure"
+            },
+            {
+                "type": "text",
+                "id": "btn",
+                "label": "t:common.button.label"
+            },
+            {
+                "type": "url",
+                "id": "btn_url",
+                "label": "t:common.button.url.label"
+            },
+            {
+                "type": "text",
+                "id": "ctm_cls_btn",
+                "label": "t:common.classname.label"
+            },
+            {
+                "type": "range",
+                "id": "desk_slide",
+                "label": "t:sections.slider.settings.desktop",
+                "default": 6,
+                "max": 6,
+                "min": 1,
+                "step": 1
+            },
+            {
+                "type": "range",
+                "id": "mob_slide",
+                "label": "t:sections.slider.settings.mobile",
+                "default": 1.7,
+                "max": 2,
+                "min": 1,
+                "step": 0.1
+            },
+            {
+                "type": "range",
+                "id": "slide_space",
+                "label": "t:sections.slider.space_between",
+                "default": 10,
+                "max": 20,
+                "min": 2,
+                "step": 2
+            }
+        ],
+        "blocks": [
+            {
+                "type": "wistia",
+                "name": "t:common.wistia.label",
+                "limit": 9,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "dr_name",
+                        "label": "t:common.card.doctor.name"
+                    },
+                    {
+                        "type": "text",
+                        "id": "board",
+                        "label": "t:common.card.doctor.board"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "desc",
+                        "label": "t:common.desc.label"
+                    }
+                ]
+		    },
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "video",
+                        "id": "video",
+                        "label": "t:common.video.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.videos-list.name",
+                "settings": {
+                    "heading": "Confident skin starts here. Just ask the internet."
+                },
+                "blocks": [
+                    {
+                        "type": "video",
+                        "settings": {
+                            "video": "shopify:\/\/files\/videos\/10000000_618238976301519_8110903422844867064_n.mp4",
+                            "image": "shopify:\/\/shop_images\/videosQure_img1.webp"
+                        }
+                    },
+                    {
+                        "type": "wistia",
+                        "settings": {
+                            "wistia_id": "m9h3ysted6"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "video": "shopify:\/\/files\/videos\/414B7EB969F12545010521E39EE8578B_video_dashinit.mp4",
+                            "image": "shopify:\/\/shop_images\/videosQure_img3.webp"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "video": "shopify:\/\/files\/videos\/262748192_445973610428755_5976892245602066537_n.mp4",
+                            "image": "shopify:\/\/shop_images\/videosQure_img4.webp"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "video": "shopify:\/\/files\/videos\/10000000_218864956860709_2724298762840329644_n.mp4",
+                            "image": "shopify:\/\/shop_images\/videosQure_img5.webp"
+                        }
+                    },
+                    {
+                        "type": "video",
+                        "settings": {
+                            "video": "shopify:\/\/files\/videos\/1dd15f19a57a45b9aff2e5d45720f1a4.mp4",
+                            "image": "shopify:\/\/shop_images\/videosQure_img6.webp"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

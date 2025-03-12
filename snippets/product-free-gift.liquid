@@ -1,0 +1,12 @@
+<div class="free_gift" style="padding: 15px 0">
+    <picture>
+        <source media="(min-width:1100px)" srcset="{{ 'liquid_cream.webp' | asset_url }}" class="img-fluid" width="540" height="209">
+        <source media="(min-width:720px)" srcset="{{ 'liquid_cream-mob.webp' | asset_url }}" class="img-fluid" width="540" height="209">
+        <source media="(min-width:540px)" srcset="{{ 'liquid_cream-mob.webp' | asset_url }}" class="img-fluid" width="125" height="173">
+        <img src="{{ 'liquid_cream-mob.webp' | asset_url }}" width="125" height="186" alt="free gift" class="img-fluid">
+    </picture>
+    <div class="gift_text">
+        <h6><span>FREE</span> {{ block.settings.heading }}</h6>
+        {{ block.settings.text }}
+    </div>
+</div>

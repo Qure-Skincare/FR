@@ -1,0 +1,23 @@
+{% comment %}
+  Usage: {% render 'pdm_cart-shipping-ammount', settingsGamification: section.settings, cartTotal: cart.items_subtotal_price  %}
+{% endcomment %}
+
+{% liquid
+  assign enableFreeShipping = settingsGamification.enable_free_shipping_treshold
+  assign freeShippingTreshold = shop.metaobjects['sidecart_gamification_tresholds']['sidecart-gamification-tresholds-swspsm6c']['free_shipping'].value
+  assign differenceFreeShipping = freeShippingTreshold | minus: cartTotal
+  assign shipping_rate = shop.metaobjects['sidecart_gamification_tresholds']['sidecart-gamification-tresholds-swspsm6c']['shipping_rate'].value 
+%}
+
+<div class="drawer_shipping pdm-gamification">
+  {% if enableFreeShipping %}
+    {% if differenceFreeShipping <= 0  %}
+      <p>Free</p>
+    {% endif %}
+    {% if differenceFreeShipping > 0 and cartTotal > 0 %}
+      <p><span class="money">{{ shipping_rate |  money_without_trailing_zeros }}</span></p>
+    {% endif %}
+  {% else %}
+    <p><span class="money">{{ shipping_rate |  money_without_trailing_zeros }}</span></p>
+  {% endif %}
+</div>

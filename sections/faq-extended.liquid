@@ -1,0 +1,309 @@
+<!-- -- faq dropdown start -- -->
+<div id="faqs" class="faq_page section bg_yellow">
+    <div class="container">
+        <div class="section_header text-center mb-3">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">
+                    {{ section.settings.heading }}
+                </h2> 
+            {% endif %}
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        <div class="row">
+            <div class="col-md-4 col--mobile">
+                <div class="on-scr on-src-mobile">
+                    {% if section.blocks.size > 0 %}
+                        {%- for block in section.blocks limit:1 -%}
+                            <div class="mobile-dropdown">
+                                <div class="mobile-dropdown__content">
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
+                                        <img src="{{ block.settings.image2 | img_url: '250x' }}" alt="">
+                                    </div>
+                                    <span>{{ block.settings.heading }}</span>
+                                </div>
+                                <img src="{{ 'faq_down_arrow.svg' | asset_url }}" alt="">
+                            </div>
+                        {% endfor %}
+                        
+                        <ul class="faq-menu">
+                            {%- for block in section.blocks -%}
+                                <li class="faq-menu__item {% if forloop.index == 1 %}active{% endif %}">
+                                    <div class="faq-menu__item-img-wrapper">
+                                        <img src="{{ block.settings.image | img_url: '250x' }}" alt="">
+                                        <img src="{{ block.settings.image2 | img_url: '250x' }}" alt="">
+                                    </div>
+                                    <a href="#faq_extended_section_{{ forloop.index }}" class="faq-menu__url ">
+                                        {{ block.settings.heading }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-8 faq__texts">
+                <div id="faq_page-custom-faq">
+                    {% if section.blocks.size > 0 %}
+                        {%- for block in section.blocks -%}
+                            <div id="faq_extended_section_{{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}>
+                                <div class="faq_item_wrapper">
+                                    <h2 style="z-index: 3;">{{ block.settings.heading }}</h2>
+                                    {% if block.settings.text != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text |  replace: '<ul>', '<ul class="dot-list">'  }}
+                                            {% if block.settings.code != blank %}
+                                                {{ block.settings.code }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text1 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text1 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code1 != blank %}
+                                                {{ block.settings.code1 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text2 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text2 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code != blank %}
+                                                {{ block.settings.code }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text3 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text3 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code3 != blank %}
+                                                {{ block.settings.code3 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text4 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text4 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code4 != blank %}
+                                                {{ block.settings.code4 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text5 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text5 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code5 != blank %}
+                                                {{ block.settings.code5 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text6 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text6 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code6 != blank %}
+                                                {{ block.settings.code6 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text7 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text7 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code7 != blank %}
+                                                {{ block.settings.code7 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text8 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text8 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code8 != blank %}
+                                                {{ block.settings.code8 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text9 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text9 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code9 != blank %}
+                                                {{ block.settings.code9 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                    {% if block.settings.text10 != blank %}
+                                        <div class="faq_item">
+                                            {{ block.settings.text10 |  replace: '<ul>', '<ul class="dot-list">' }}
+                                            {% if block.settings.code10 != blank %}
+                                                {{ block.settings.code10 }}
+                                            {% endif %}
+                                        </div>
+                                        <hr>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- faq dropdown end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.faq-extended.name",
+        "class": "section-faq",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image2",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text2",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code2",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text3",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code3",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text4",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code4",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text5",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code5",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text6",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code6",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text7",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code7",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text8",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code8",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text9",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code9",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text10",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code10",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.faq-extended.name"
+			}
+        ]
+    }
+{% endschema %}

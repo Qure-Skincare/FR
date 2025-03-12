@@ -1,0 +1,62 @@
+{% comment %}
+  need it for wistia video popup - id on schema
+{% endcomment %}
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<div class="swiper swiper-page-product">
+  <div class="swiper-wrapper">
+    {% for i in (1..8) %}
+      {% assign image_id = 'image_product_' | append: i %}
+      {% assign text_id = 'image_product_' | append: i %}
+      {% assign wistia_id = 'video_wistia_id_' | append: i %}
+
+      {% assign wistia_found = false %}
+      {% if block.settings[wistia_id] != blank %}
+        {% assign wistia_found = true %}
+      {% endif %}
+
+      {% if wistia_found == true %}
+        {% assign mediaImage = block.settings[image_id] %}
+        <div class="swiper-slide video_popup">
+          <div class="banner_img position-relative">
+            <img class="img-fluid tab_img d-none d-md-block" src="{{ mediaImage | img_url: '900x' }}" alt="">
+            <img class="img-fluid d-block d-md-none" src="{{ mediaImage | img_url: '540x' }}" alt="">
+            <a class="popup-youtube1 position-absolute top-0 bottom-0 start-0 end-0">
+              <div class="wistia_responsive_padding" style="position:relative;">
+                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                  <span
+                    class="wistia_embed wistia_async_{{ block.settings[wistia_id] }} popover=true videoFoam=true"
+                    style="display:inline-block;height:100%;position:relative;width:100%"
+                    >&nbsp;</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      {% else %}
+        {% if block.settings[image_id] != null %}
+          {% assign mediaImage = block.settings[image_id] %}
+          <div class="swiper-slide">
+            <a class="banner-popup-link" id="popup-link">
+              <picture id="image-id">
+                <source media="(min-width:1920px)" srcset="{{ mediaImage | img_url: 'master' }}">
+                <source media="(min-width:1600px)" srcset="{{ mediaImage | img_url: '1600x' }}">
+                <source media="(min-width:1100px)" srcset="{{ mediaImage | img_url: '1100x' }}">
+                <source media="(min-width:720px)" srcset="{{ mediaImage | img_url: '720x' }}">
+                <source media="(min-width:540px)" srcset="{{ mediaImage | img_url: '540x' }}">
+                <img
+                  width="100"
+                  height="auto"
+                  class="img-fluid tab_img"
+                  alt="{{ block.settings[text_id] }}"
+                  src="{{ mediaImage | img_url: '540x' }}"
+                >
+              </picture>
+            </a>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination-product-page dot_pagination"></div>
+</div>

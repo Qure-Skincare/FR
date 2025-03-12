@@ -1,0 +1,139 @@
+<div class="newsletter_bl section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2 mx-auto">
+                {% if section.settings.heading %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% endif %}
+                <div class="newsletter_form">
+                    {% for block in section.blocks %}
+                        {% if block.settings.form_id != blank %}
+                            <link rel="stylesheet" href="{{ 'klaviyo-newsletter-form.css' | asset_url }}">
+                            <div class="form-input-item">
+                                <div class="klaviyo-form-{{ block.settings.form_id }}"></div>
+                            </div>
+                        {% endif %}
+                      {% endfor %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2 offset-lg-4 mx-auto pt-4 pt-md-0">
+                {% if section.settings.social_text %}
+                    <h2 class="followUs">{{ section.settings.social_text }}</h2>
+                {% endif %}
+                {% if section.settings.social_show %}
+                    <div class="social_icons">
+                        {% if settings.social_instagram_link != blank %}
+                            <a href="{{ settings.social_instagram_link }}" target="_blank" rel="nofollow"><img src="{{ 'instagram.svg' | asset_url }}" alt=""></a>
+                        {% endif %}
+                        {% if settings.social_tiktok_link != blank %}
+                            <a href="{{ settings.social_tiktok_link }}" target="_blank" rel="nofollow"> <img src="{{ 'tiktok.svg' | asset_url }}" alt=""></a>
+                        {% endif %}
+                        {% if settings.social_facebook_link != blank %}
+                            <a href="{{ settings.social_facebook_link }}" target="_blank" rel="nofollow"><img src="{{ 'facebook.svg' | asset_url }}" alt=""></a>
+                        {% endif %}
+                        {% if settings.social_youtube_link != blank %}
+                            <a href="{{ settings.social_youtube_link }}" target="_blank" rel="nofollow"><img src="{{ 'youtube.svg' | asset_url }}" alt=""></a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="contact_us_bl section">
+    <div class="container">
+        <div class="contact_us_wrap">
+            <div class="section_header text-center">
+                <h2 class="title-md">Contact Us</h2>
+            </div>
+            <div class="contact_btns">
+                <a href="javascript:;" onclick="openChat()" class="cu_btn">
+                    <img src="https://qureskincaredns.com/new/assets/live-chat_sm.svg" alt="">
+                    <p>Chat With Us</p>
+                </a>
+                <a href="https://www.qureskincare.com/pages/contact-us" class="cu_btn">
+                    <img src="https://qureskincaredns.com/new/assets/call.svg" alt="">
+                    <p>Call Us </p>
+                </a>
+                <a href="https://www.qureskincare.com/pages/contact-us" class="cu_btn">
+                    <img src="https://qureskincaredns.com/new/assets/email_us.svg" alt="">
+                    <p>Email Us</p>
+                </a>
+            </div>
+        </div>
+        <div class="customer_details">
+            <div class="c_d_wrapper">
+                <p style="color: #717171;font-size: 16px;"><strong>ADDITIONAL CUSTOMER SERVICE</strong></p>
+                <div class="c_d_wrapper_links"><a href="https://www.qureskincare.com/pages/faqs">International
+                        FAQ</a>
+                    <span class="mx-4"></span>
+                    <a href="https://www.qureskincare.com/pages/return-policy">Returns and
+                        Exchanges</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<link rel="stylesheet" href="{{ 'contact-us.css' | asset_url }}">
+
+<style>
+    .contact_us_bl .customer_details {
+        background-color: transparent;
+        margin-top: 40px;
+    }
+
+    .contact_us_bl .customer_details .c_d_wrapper span:after {
+        background-color: #fff;
+    }
+
+    @media(max-width:767px) {
+        .newsletter_bl {
+            border-bottom: none;
+        }
+    }
+</style>
+
+{% schema %}
+{
+    "name": "t:sections.newsletter.name",
+    "class": "section-newsletter",
+    "settings": [
+        {
+            "type" : "text",
+            "id" : "heading",
+            "label" : "t:common.heading.label",
+            "default": "Get the latest from Qure"
+        },
+        {
+            "type" : "text",
+            "id" : "social_text",
+            "label" : "t:sections.newsletter.settings.social_text.label",
+            "default": "Follow Us"
+        },
+        {
+            "type": "checkbox",
+            "id": "social_show",
+            "label": "t:sections.newsletter.settings.social_show.label",
+            "default": true
+        }
+    ],
+    "blocks": [
+        {
+            "type": "form",
+            "name": "t:common.form.label",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "form_id",
+                    "label": "t:common.form.id.label"
+                }
+            ]
+        }   
+    ]
+}
+{% endschema %}

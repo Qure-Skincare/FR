@@ -1,0 +1,53 @@
+<div class="skin-irritants section">
+    <div class="container">
+        <div class="section_header mw-100 text-md-center">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg">{{ section.settings.heading }}</h2> 
+            {% endif %}
+        </div>
+        <div class="ingredients_slider_grid mt-4">
+            {%- for block in section.blocks -%}
+                    <div class="ingredients_item">
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
+                        {% endif %}
+                        {{ block.settings.text |  replace: '\n', '<br />' }}
+                    </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Skin irritants",
+        "class": "section-skin-irritants",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "text",
+                "name": "t:common.object.label",
+                "limit": 12,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

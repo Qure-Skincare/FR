@@ -1,0 +1,23 @@
+<div class="{{ wrapper-class }}">
+    <div class="top-text">
+        <div class="before"> 
+            <p>{{ before-text }}</p>
+        </div>
+        <div class="after"> 
+            <p>{{ after-text }}</p>
+        </div>
+    </div>
+    {{ image |  image_url: width: 800 |  image_tag: alt: "image", class: "img" }}
+    <div class="buttom-text">
+        <p class="section_caption">
+            <strong>{{ user-name}}</strong>
+            <span class="icon">
+                <img src="{{ icon }}" alt="icon" />
+            </span>
+            {{ verified-text }}
+        </p>
+    </div>
+</div>
+<div class="footer-text">
+    <a class="link" href="{{ link }}">{{ footer-text }}</a>
+</div>

@@ -1,0 +1,221 @@
+.app_page .main_banner .section_header {
+    max-width: 569px;
+    margin-left: 0;
+}
+
+.app_page .app_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main_banner .main_b_wrapper .app_img {
+    gap: 20px;
+}
+
+/* -- app press slider start -- */
+
+.app_press {
+    background-color: #D9D9D91A;
+}
+
+.app_press .press_bl {
+    max-width: 820px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.app_press_info img {
+    max-height: 29px;
+}
+
+.press_bl .p_bl_header p {
+    color: #D9D9D9;
+}
+
+.app_press .app_subhheading {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: 'Canela Light';
+}
+
+.app_press .app_press_slider .app_subhheading {
+    padding: 50px 0;
+}
+
+.app_press_sl_img .swiper-slide {
+    opacity: 0.4;
+}
+
+.app_press_sl_img .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.app_press_slider .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- app press slider end -- */
+
+/* -- app slider start -- */
+.app_out {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(245, 251, 248, 1) 35%, rgb(199 231 220 / 49%) 54%, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 1) 100%);
+}
+
+.app_page .app_out_content .app_subhheading {
+    margin-bottom: 20px;
+}
+
+
+.app_out_content {
+    text-align: center;
+}
+
+.gallery-slider {
+    margin: 30px 0;
+}
+
+.gallery-thumbs {
+    padding-top: 30px;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 732px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.gallery-thumbs .swiper-slide-active,
+.swiper-slide-duplicate-active {
+    opacity: 1;
+}
+
+.gallery-thumbs .swiper-slide img {
+    width: auto;
+    height: 100%;
+}
+
+.gallery-slider .swiper-slide.swiper-slide-active {
+    transform: scale(1.2);
+    transform: 0.3s;
+}
+.gallery-thumbs .swiper-slide {
+    opacity: 0 !important;
+  }
+
+  .gallery-thumbs .swiper-slide.swiper-slide-active {
+    opacity: 1 !important;
+  }
+/* -- app slider end -- */
+.app_press_sl_img_three .swiper-slide {
+    pointer-events: none;
+  }
+  .app_press_sl_img .swiper-slide {
+    opacity: 0.4;
+  }
+  .app_press_sl_img .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+@media(max-width:767px) {
+    .app_press .app_subhheading {
+        font-size: 22px;
+        padding: 22px 0 !important;
+    }
+    .app_slider {
+        overflow: hidden;
+    }
+
+    .app_slider_wrapper .app_s_item .as_info h3 {
+        padding: 12px 0 20px;
+    }
+
+    .as_desc {
+        padding: 20px 0;
+    }
+
+    .app_s_item {
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px 0px #B0B0B040;
+        border: 1px solid #C7E7DC;
+        padding: 0 20px;
+    }
+
+
+    .app_slider_wrapper .app_s_item .as_img img {
+        border: 1px solid #EDE7DD;
+        border-radius: 10px;
+    }
+
+    .app_page .skincare_slider {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .app_page .skincare_left,
+    .our_story .skincare_left {
+        padding: 24px 16px 0;
+    }
+
+    .app_page .main_banner .main_b_wrapper {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .app_page .app_img {
+        padding-top: 10px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .app_page .future_skincare {
+        justify-content: center;
+    }
+/* 
+    .fs-img img {
+        max-width: 200px;
+    } */
+
+    .app_press_info img {
+        max-height: 26px;
+    }
+
+    .app_press_sl_content {
+        padding: 0 24px !important;
+        margin: 0 12px !important;
+    }
+
+    .app_page .app_subhheading {
+        padding: 0;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .app_page .technology_light .app_img {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-thumbs {
+        padding: 30px 12px 0;
+    }
+    .app_out{
+        background: transparent;
+    }
+    .app_page .main_b_wrapper .app_item img {
+        filter: opacity(1);
+    }
+}

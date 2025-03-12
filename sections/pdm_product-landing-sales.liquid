@@ -1,0 +1,174 @@
+<div class="container">
+  <div class="pdm_product-landing-sales-wrapper">
+    <div class="left-panel">
+      <div class="product-landing-information">
+        <div class="product-landing-information-text">
+          <h3>{{ section.settings.text_banner }}</h3>
+          <h2>{{ section.settings.text_offer_banner }}</h2>
+        </div>
+        <div class="product-landing-information-anchor">
+          <a href="{{ section.settings.button_banner_url }}">
+            {{ section.settings.button_banner_text }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="container-swiper-product-landing">
+        <div class="swiper-pdm-landing-sales-prev">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.1992 2.51763C15.2804 2.43176 15.3438 2.33074 15.3859 2.22035C15.428 2.10996 15.448 1.99236 15.4446 1.87426C15.4413 1.75615 15.4147 1.63986 15.3664 1.53203C15.3182 1.4242 15.2491 1.32693 15.1632 1.24578C15.0774 1.16463 14.9763 1.10119 14.8659 1.05908C14.7556 1.01697 14.638 0.997019 14.5199 1.00036C14.4017 1.0037 14.2855 1.03027 14.1776 1.07855C14.0698 1.12684 13.9725 1.19589 13.8914 1.28176L6.24586 9.37701C6.08797 9.54401 6 9.76512 6 9.99495C6 10.2248 6.08797 10.4459 6.24586 10.6129L13.8914 18.709C13.972 18.7968 14.0692 18.8676 14.1775 18.9175C14.2857 18.9674 14.4028 18.9952 14.5218 18.9994C14.6409 19.0037 14.7597 18.9842 14.8712 18.9421C14.9827 18.9001 15.0847 18.8363 15.1713 18.7545C15.258 18.6727 15.3275 18.5745 15.3758 18.4656C15.4242 18.3567 15.4504 18.2392 15.453 18.1201C15.4556 18.001 15.4345 17.8825 15.391 17.7716C15.3474 17.6607 15.2822 17.5596 15.1992 17.4741L8.13655 9.99495L15.1992 2.51763Z" fill="#797D7C"/>
+          </svg>
+        </div>
+        <div class="swiper-pdm-landing-sales-next">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.80079 17.4824C4.71964 17.5682 4.6562 17.6693 4.61409 17.7796C4.57198 17.89 4.55203 18.0076 4.55537 18.1257C4.55871 18.2438 4.58528 18.3601 4.63356 18.468C4.68185 18.5758 4.7509 18.6731 4.83677 18.7542C4.92264 18.8354 5.02366 18.8988 5.13405 18.9409C5.24444 18.983 5.36205 19.003 5.48015 18.9996C5.59825 18.9963 5.71454 18.9697 5.82237 18.9214C5.93021 18.8732 6.02747 18.8041 6.10862 18.7182L13.7541 10.623C13.912 10.456 14 10.2349 14 10.0051C14 9.77523 13.912 9.55412 13.7541 9.38712L6.10863 1.29097C6.02801 1.20321 5.93076 1.13235 5.82253 1.0825C5.7143 1.03265 5.59725 1.0048 5.47816 1.00057C5.35908 0.996333 5.24034 1.01581 5.12884 1.05785C5.01735 1.0999 4.91532 1.16368 4.82868 1.24549C4.74204 1.3273 4.67252 1.42551 4.62416 1.53442C4.5758 1.64332 4.54956 1.76075 4.54697 1.87989C4.54437 1.99902 4.56547 2.11748 4.60905 2.22839C4.65262 2.33929 4.7178 2.44044 4.80079 2.52594L11.8634 10.0051L4.80079 17.4824Z" fill="#797D7C"/>
+          </svg>
+        </div>
+        <div class="swiper pdm_swiper_product_landing">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              {% liquid
+                assign show_save_price = block.settings.show_save_price
+                assign product_block = block.settings.product
+                assign save_price = product_block.compare_at_price | minus: product_block.price | money_without_trailing_zeros
+              %}
+              <div class="swiper-slide">
+                <div
+                  style="
+                    background-image: url({{ product_block.media | first | image_url: width: 1200 }});
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                  "
+                  class="pdm-product-landing-card-container"
+                >
+                  {% comment %} header-text {% endcomment %}
+                  <div class="product-landing-text-container">
+                    <div class="product-landing-information-item">
+                      <span
+                        style="visibility: {% if block.settings.announcement_id != blank %} visible {% else %} hidden {% endif %};"
+                      >
+                        {{- block.settings.announcement_id | upcase -}}
+                      </span>
+                      <h3>{{ product_block.title }}</h3>
+                    </div>
+                    {% if show_save_price == true %}
+                      <div class="product-landing-save-price">
+                        <p>
+                          {{ section.settings.save_text | upcase }}
+                          {{ save_price }}
+                        </p>
+                      </div>
+                    {% endif %}
+                  </div>
+                  {% comment %} image {% endcomment %}
+                  <div class="product-landing-img-container"></div>
+                  <div class="product-landing-footer">
+                    <div class="product-landing-footer-price">
+                      <p class="product-landing-footer-price_full">
+                        {{ product_block.compare_at_price | money_without_trailing_zeros }}
+                      </p>
+                      <p class="product-landing-footer-price_discount">
+                        {{ product_block.price | money_without_trailing_zeros }}
+                      </p>
+                    </div>
+                    <a href="#{{ product_block.handle }}">
+                      {{ block.settings.button_text_id }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pdm-landing-sales-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "pdm product landing sales",
+  "class": "pdm-mobile-product-landing-sales",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner Settings",
+      "info": "Banner Settings left side"
+    },
+    {
+      "type": "text",
+      "id": "text_banner",
+      "label": "text banner",
+      "default": "EXCLUSIVE HOLIDAY BUNDLES"
+    },
+    {
+      "type": "text",
+      "id": "text_offer_banner",
+      "label": "text offer banner",
+      "default": "Save Up To 50%"
+    },
+    {
+      "type": "url",
+      "id": "button_banner_url",
+      "label": "button_banner_url"
+    },
+    {
+      "type": "text",
+      "id": "button_banner_text",
+      "label": "button banner text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "header",
+      "content": "Product Settings",
+      "info": "Product Settings right side"
+    },
+    {
+      "type": "text",
+      "id": "save_text",
+      "label": "discount text",
+      "default": "save"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "pdm product landing sales",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "product"
+        },
+        {
+          "type": "text",
+          "id": "announcement_id",
+          "label": "announcement text"
+        },
+        {
+          "type": "text",
+          "id": "button_text_id",
+          "label": "button text",
+          "default": "Get yours"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_save_price",
+          "label": "Show save amount badge",
+          "default": true,
+          "info": "Use this check to make visible the green badge with the save amount"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "pdm product landing sales",
+      "category": "product page"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,18 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79"
+                                            viewBox="0 0 80 79" fill="none">
+                                            <circle cx="39.9996" cy="39.9513" r="37.9779" stroke="#EDE7DD"
+                                                stroke-width="2.1099" />
+                                            <circle cx="15.5724" cy="50.8605" r="3.89618"
+                                                transform="rotate(-15.5035 15.5724 50.8605)" stroke="black" />
+                                            <circle cx="60.8561" cy="58.5227" r="3.89618"
+                                                transform="rotate(-135.381 60.8561 58.5227)" stroke="black" />
+                                            <circle cx="48.5238" cy="19.4737" r="3.89618"
+                                                transform="rotate(107.688 48.5238 19.4737)" stroke="black" />
+                                            <circle cx="41.7903" cy="43.1916" r="13.2258" stroke="black" />
+                                            <path d="M29 46.3521L19.4997 49.8523" stroke="black"
+                                                stroke-width="2.70534" />
+                                            <line x1="51.866" y1="50.8129" x2="57.866" y2="55.8129" stroke="black"
+                                                stroke-width="2.70534" />
+                                            <line x1="45.6994" y1="30.4804" x2="47.6994" y2="23.4804" stroke="black"
+                                                stroke-width="2.70534" />
+                                        </svg>

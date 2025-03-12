@@ -1,0 +1,24 @@
+{% comment %}
+  Usage: {% render 'pdm-cart-total-checkout' cartData:cart, totalCartComparePrice: total_cart_compare_price, is_only_gift:is_only_gift%}
+{% endcomment %}
+
+{%- assign subtotal_price = 0 -%}
+{% assign shipping_charge =  1000 %}
+{% assign price_check = cartData.items_subtotal_price | divided_by: 100 %}
+
+{% assign freeShippingTreshold = shop.metaobjects['sidecart_gamification_tresholds']['sidecart-gamification-tresholds-swspsm6c']['free_shipping'].value %}
+{% assign freeShippingTreshold = freeShippingTreshold | divided_by: 100 %}
+
+{% if price_check < freeShippingTreshold and price_check > 0 %}
+  {%- if is_only_gift == true -%}
+    {%- assign shipping_charge = 0 -%}
+  {% endif %}
+  {%- assign subtotal_price = cartData.items_subtotal_price | plus: shipping_charge | money_without_trailing_zeros -%}
+{%- else -%}
+    {%- assign subtotal_price = cartData.items_subtotal_price |  money_without_trailing_zeros -%}
+{%- endif -%}
+
+<p class="drawer__cart-total-price pdm-Total-Checkout">
+  <span class="old_price-cart" data-compare-price="{{ totalCartComparePrice | money_without_currency }}">{% if totalCartComparePrice > cartData.items_subtotal_price %}{{ totalCartComparePrice | money_without_trailing_zeros }}{% endif %}</span>
+  <span class="cart_items_subtotal_price money" id="cart_items_subtotal_price" data-value="{{ subtotal_price }}">{{ subtotal_price }}</span>
+</p>

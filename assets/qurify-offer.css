@@ -1,0 +1,916 @@
+.qurify_lp .refill_bl .refill_info {
+    /* max-width: 580px; */
+}
+
+.qurify_lp .refill_info .section_header .title-lg {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.get_clearer_wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.get_clearer_wrapper p {
+    font-size: 13px;
+    line-height: 24px;
+    padding: 8px 0;
+}
+
+.get_clearer_wrapper .btn_green {
+    /* background: #008763; */
+    padding: 13px 0;
+    font-size: 18px;
+}
+
+.get_clearer_wrapper p span {
+    margin-right: 5px;
+}
+
+.qurify_lp .section {
+    padding: 80px 0 !important;
+}
+
+@media(max-width: 767px) {
+    .qurify_lp .refill_info .section_header .title-lg {
+        font-size: 28px;
+        line-height: 39px;
+        letter-spacing: -0.28px;
+    }
+
+    /* .qurify_lp .refill_bl.tabSlider .refill_review {
+        justify-content: center;
+    } */
+
+    .qurify_lp .section {
+        padding: 48px 0 !important;
+    }
+
+    .qurify_lp .productSlider,
+    .qurify_lp .realResultSlider {
+        overflow: unset;
+    }
+
+    .menu_icon_footer {
+        gap: 20px;
+        opacity: 0.8;
+    }
+
+    .menu_icon_footer .mi_ftrBlock span {
+        margin-top: 8px;
+    }
+
+    .qurify_lp .refill_bl.tabSlider .refill_info .refill_review p {
+        font-size: 13px;
+    }
+}
+
+/* =========== ingredients start ======== */
+.ingredients_slider {
+    max-width: 550px;
+    margin: 0 50px;
+}
+
+.ingredients_item {
+    text-align: center;
+    max-width: 112px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.ingredients_item p {
+    display: flex;
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    min-height: 49px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:767px) {
+    .ingredients_slider {
+        max-width: 100%;
+        margin: 0 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        overflow: unset;
+    }
+
+    .ingredients_item img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .ingredients_item p {
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 45px;
+        align-items: center;
+        display: flex;
+    }
+}
+
+/* =========== ingredients end ======== */
+/* ========== truth tap start ========= */
+
+.truth_tap .progress_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0;
+}
+
+.truth_tap .progress_grid .progressInfo {
+    padding: 24px;
+    text-align: left;
+    border-radius: 8px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
+    border: none;
+}
+
+.truth_tap .progress_grid .progressInfo .tt_item_header {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 0 20px 0;
+}
+
+.truth_tap .progress_grid .progressInfo p {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+@media(max-width:767px) {
+    .truth_tap .progressInfo {
+        gap: 10px;
+        grid-template-columns: 70px 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .truth_tap .progress_grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .truth_tap .progress_grid .progressInfo {
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .truth_tap .progress_grid .progressInfo .tt_item_header {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 600;
+        padding: 0 !important;
+    }
+
+    .truth_tap .progress_grid .progressInfo p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+/* ========== truth tap end ========= */
+
+/* ==========  tap water harm start ========= */
+.water_harm_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.water_harm_content .wh_item {
+    display: grid;
+    grid-template-columns: 1fr 56px;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.water_harm_content.wh_item_left .wh_item {
+    grid-template-columns: 56px 1fr;
+}
+
+@media(max-width:767px) {
+    .water_harm_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .water_harm_content.text-md-end .wh_item {
+        grid-template-columns: 56px 1fr;
+    }
+
+    .water_harm_content.text-md-end .wh_item .wh_item_info {
+        order: 2
+    }
+
+    .water_harm_content.text-md-end .wh_item .wh_item_img {
+        order: 1
+    }
+}
+
+/* ==========  tap water harm end ========= */
+
+/* ========= solution qurify start ========== */
+.sol_qurify_wrap {
+    max-width: 530px;
+}
+
+.sol_q_item {
+    padding: 10px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 64px 1fr;
+}
+
+.sol_q_item .s_q_title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+
+.sol_q_item .s_q_info {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+.solution_qurify .result_s {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.solution_qurify .result_s .result_s_wrapper .result_item {
+    margin: 0 20px;
+}
+
+.solution_qurify .result_s .result_content p {
+    font-style: normal;
+}
+
+@media(max-width:767px) {
+    .sol_q_item {
+        padding: 0;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .sol_q_item .s_q_title {
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.13px;
+    }
+
+    .sol_q_item .s_q_img img {
+        max-width: 50px;
+    }
+
+    .sol_qurify_wrap .faq .accordion-button .container:after {
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sol_qurify_wrap .faq .accordion-button {
+        padding: 10px 0;
+    }
+
+    .sol_qurify_wrap .faq .accordion-body {
+        padding: 0px 0 10px;
+    }
+
+    .solution_qurify .result_s .result_s_wrapper .result_item {
+        margin: 0;
+    }
+
+    .sol_qurify_wrap .faq {
+        padding: 0 0 20px 0;
+    }
+
+    .faq .accordion-item {
+        border-bottom: 1px solid #C6E4DC;
+    }
+
+    .solution_qurify .result_slider1 {
+        overflow: unset;
+    }
+}
+
+/* ========= solution qurify start ========== */
+
+/* -- qurify water filter thumbnail start --  */
+.thumbnail_qurify .tq_info {
+    max-width: 465px;
+}
+
+.tq_form_wrap {
+    padding: 30px 0;
+}
+
+.tq_form_wrap .tq_form {
+    border-radius: 8px;
+    border: 2px solid var(--C6E4DC, #C6E4DC);
+    background: #FAFFFE;
+    position: relative;
+    padding: 16px;
+}
+
+.tq_form_wrap .tq_form.active {
+    box-shadow: 0px 5px 15px 0px rgba(0, 135, 99, 0.10);
+}
+
+.tq_form_wrap .best_value {
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    background-color: #C92127;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0 8px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.14px;
+}
+
+.tq_form_wrap .tq_form .tq_form_label .tqf_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tq_form_wrap .tq_form .tq_form_label .tqf_wrap .tqf_price {
+    display: flex;
+    align-items: center;
+}
+
+.tq_form_wrap .tq_form .tq_form_label .tqf_wrap .tqf_wrap_title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.tq_form_wrap .tq_form .tqf_salesPrice {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.tq_form_wrap .tq_form .tqf_oldPrice {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: line-through;
+    margin-left: 7px;
+}
+
+.tq_form_wrap .tq_form ul li {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tq_form_wrap .tq_form ul li:after {
+    position: absolute;
+    content: url(../assets/tick.png);
+    left: 0;
+    top: 0;
+}
+
+.tq_form_wrap .tq_form input[type=radio] {
+    border: 1px solid #000;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: static;
+    margin-right: 12px;
+    z-index: 1 !important;
+}
+
+.tq_form_wrap .tq_form .form-check input[type=radio]:checked {
+    border: 2px solid #008763;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.tq_form_wrap .tq_form .form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%23008763'/%3e%3c/svg%3e");
+}
+
+.tq_img_wrap .thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0 20px 0;
+}
+
+.tq_img_wrap .thumbs img {
+    max-width: 74px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tq_img_wrap .thumbs img.current {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.tq_img_wrap .see_action {
+    cursor: pointer;
+    color: #000;
+}
+
+
+@media(max-width:767px) {
+    .tq_form_wrap .tq_form .tqf_salesPrice {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .tq_form_wrap .tq_form .tq_form_label .tqf_wrap .tqf_wrap_title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .tq_form_wrap .tq_form .tqf_oldPrice {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .tq_form_wrap .tq_form {
+        padding: 12px;
+    }
+
+    .tq_img_wrap .best_value img {
+        max-width: 60px;
+    }
+
+    .tq_img_wrap .thumbs {
+        gap: 5px;
+    }
+
+    .tq_img_wrap .thumbs img {
+        max-width: 60px;
+    }
+}
+
+/* -- qurify water filter thumbnail end --  */
+
+/* -- clinically proven start -- */
+.clinically_proven_wrap .cp_progress_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 13px;
+    text-align: center;
+}
+
+.clinically_proven_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.clinically_proven_wrap .clinicallyProven_item {
+    padding: 24px;
+    border-radius: 8px;
+    border: 2px solid var(--C6E4DC, #C6E4DC);
+    background: #fff;
+    box-shadow: 0px 5px 15px 0px rgba(0, 135, 99, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clinically_proven_wrap .clinicallyProven_header {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.clinically_proven_wrap .cp_progress_wrap .cp_progress p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    opacity: 0.8;
+}
+
+.clinically_proven_wrap .cp_progress_wrap .progressCont {
+    margin-bottom: 20px;
+}
+
+@media(min-width:1199px) {
+
+    .clinically_proven_wrap .cp_progress_wrap {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .clinically_proven_wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .clinically_proven_wrap .cp_progress_wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .clinically_proven_wrap .cp_progress {
+        display: flex;
+        text-align: left;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .clinically_proven_wrap .progressWrapper svg {
+        height: 64px;
+        width: 64px;
+    }
+
+    .clinically_proven_wrap .cp_progress_wrap .cp_progress p {
+        line-height: 22px;
+    }
+
+    .OKwUu {
+        stroke-width: 7px !important;
+    }
+
+    .clinically_proven_wrap .clinicallyProven_item {
+        padding: 15px;
+    }
+
+    .clinically_proven_wrap .cp_progress_wrap .progressCont {
+        margin-bottom: 0px;
+    }
+
+}
+
+/* -- clinically proven end -- */
+
+/* -- trusted block start -- */
+.trusted_bl_lp .trusted_bl_info h2 {
+    font-family: 'Canela Light';
+    line-height: 50px;
+    font-size: 36px;
+}
+
+.trusted_bl_lp .trusted_dr {
+    display: flex;
+    align-items: center;
+}
+
+.trusted_bl_lp .trusted_dr_img {
+    max-width: 96px;
+}
+
+.trusted_bl_lp .trusted_dr_name {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 0.36px;
+    font-family: 'Canela Web';
+}
+
+.trusted_dr_desg {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+.trusted_bl_lp .trusted_bl_info h2>span {
+    font-weight: 500;
+    font-family: 'Canela Web';
+}
+
+@media(min-width:768px) {
+    .trusted_bl_lp .trusted_dr_img {
+        border: 3px solid #C6E4DC;
+        border-radius: 10px;
+        margin-right: 16px;
+    }
+}
+
+@media(max-width:767px) {
+    .trusted_bl_lp .trusted_dr_name {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .trusted_bl_lp .trusted_dr {
+        flex-direction: column;
+    }
+
+    .trusted_bl_lp .trusted_bl_info h2 {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .trusted_bl_info {
+        padding-top: 20px;
+    }
+
+    .trusted_bl_lp .trusted_dr_img {
+        max-width: 70px;
+    }
+
+    .trusted_bl_lp .trusted_dr_img img {
+        border-radius: 50%;
+    }
+
+    .trusted_dr_info {
+        padding-top: 10px;
+    }
+}
+
+/* -- trusted block start -- */
+
+/* -- everyone's qurifying  start -- */
+.eq_content h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    margin: 14px 10px;
+}
+
+.eq_content p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+@media(max-width:767px) {
+
+    .qurifyingSlider,
+    .qureSlider {
+        overflow: unset;
+    }
+}
+
+/* -- everyone's qurifying  start -- */
+
+/* -- reduce skin irritants start -- */
+.ingredients_slider_grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+@media(max-width:767px) {
+    .ingredients_slider_grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* -- reduce skin irritants end -- */
+
+/* -- my faucet start -- */
+.myFaucet_grid .myFaucet_item {
+    max-width: 150px;
+}
+
+.myFaucet_grid {
+    gap: 16px;
+    justify-content: center;
+}
+
+@media(max-width:767px) {
+    .myFaucet_grid .myFaucet_item {
+        max-width: 76px;
+    }
+
+    .myFaucet_grid {
+        gap: 10px;
+        justify-content: flex-start;
+    }
+}
+
+/* -- my faucet end -- */
+/* -- money back start -- */
+.moneyBack {
+    padding: 80px 0;
+}
+
+@media(max-width:767px) {
+    .moneyBack {
+        padding: 48px 0;
+    }
+}
+
+/* -- money back end -- */
+/* -- effective and safer than other filters start -- */
+/* .effective_table {
+    background-image: url(../assets/e_table_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.effective_table_wrap .e_table_header {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Canela Web';
+    line-height: 30px;
+}
+
+.effective_table_wrap {
+    padding: 24px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 5px 15px 0px rgba(0, 135, 99, 0.10);
+}
+
+.table>thead tr th:not(:first-child) {
+    max-width: 160px;
+}
+
+.effective_table_wrap td,
+.effective_table_wrap th {
+    border-bottom-width: 0;
+}
+
+.effective_table_wrap tbody tr {
+    border-top-width: 1px;
+}
+
+
+.effective_table_wrap td {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    padding: 12px 0;
+    color: #000;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@media(max-width:767px) {
+    .effective_table_wrap .e_table_img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .table>thead tr th:not(:first-child) {
+        width: 30%;
+    }
+
+    .table>thead tr th:first-child {
+        width: 39%;
+    }
+
+    .effective_table_wrap {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .effective_table_wrap .e_table_header {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .effective_table_wrap th {
+        padding: 0 5px;
+    }
+
+    .effective_table_wrap td {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+/* -- effective and safer than other filters end -- */
+/* -- footer start -- */
+.footer-filterLP {
+    padding: 48px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.footerLP_info {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    color: #fff;
+}
+
+.faq .accordion-body .container p,
+.faq .accordion-item ul li {
+    padding: 0;
+}
+
+/* -- footer end -- */
+/* -- press slider start -- */
+.qurify_lp .press_bl .ps_wrapper {
+    gap: 10px;
+}
+
+@media(max-width:767px) {
+    .qurify_lp .ps_wrapperInner {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .qurify_lp .press_bl .ps_wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu_icon_footer {
+        padding: 18px 25px !important;
+    }
+}
+
+/* -- press slider end -- */
+
+
+.qurify_lp .refill_s_tab_content .w-chrome {
+    border-radius: 10px !important;
+}
+
+.qurify_lp .refill_s_tab ul {
+    display: flex;
+}
+
+.qurify_lp .refill_s_tab_content .swiper.dot_pagination .swiper-pagination {
+    bottom: 0px;
+}
+
+/*
+.dot_pagination .swiper-pagination-bullet {
+    margin: 0 4px !important;
+    height: 8px;
+    width: 8px;
+}
+*/
+
+.qurify_lp .section_header .subheading {
+    font-size: 16px;
+    margin: 40px 0 20px;
+    font-weight: 400;
+}
+
+.videosQure .section_header h2 {
+    line-height: 48px;
+    text-transform: capitalize;
+}
+.trusted_cl_m .t_m_img {
+    border: 2px solid var(--C6E4DC, #C6E4DC);
+    box-shadow: 0px 5px 15px 0px rgba(0, 135, 99, 0.10);
+    border-radius: 12px;
+}
+
+@media(max-width:767px) {
+    .qurify_lp .refill_s_tab .nav-pills .nav-link {
+        padding: 0 14px;
+    }
+
+    .refill_s_tab ul {
+        gap: 10px;
+    }
+
+    .qurify_lp .section_header .subheading {
+        font-size: 14px;
+        margin: 20px 0 10px;
+    }
+
+    .videosQure .section_header h2 {
+        line-height: 38px;
+    }
+}

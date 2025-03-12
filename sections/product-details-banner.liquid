@@ -1,0 +1,168 @@
+{% assign random_number = 'now' | date: '%s' | modulo: 100 | plus: 1 %}
+<div class="advanced-filtration section {{ section.settings.ctm_cls }}">
+  <div class="container">
+    {% if section.settings.section_heading != blank %}
+    <div class="section_header text-md-center ms-0 m-md-auto mb-4">
+        <h2 class="title-lg">{{ section.settings.section_heading }}</h2>
+    </div>
+  {% endif %}
+    <div>
+      <div class="row gy-3">
+        {% for block in section.blocks %}
+          {% if block.type == 'benefit' %}
+            <div class="col-md-4">
+              <div class="filter_benefit text-center px-md-2">
+                {% if block.settings.benefit_image != blank %}
+                  <img src="{{ block.settings.benefit_image | img_url: 'master' }}" alt="" class="pb-md-3">
+                {% endif %}
+                <div class="text-md-center text-start">
+                  {% if block.settings.benefit_title != blank %}
+                    <h6>{{ block.settings.benefit_title }}</h6>
+                  {% endif %}
+                  {% if block.settings.benefit_description != blank %}
+                    <p>{{ block.settings.benefit_description }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  {% assign has_accordion = false %}
+  {% for block in section.blocks %}
+    {% if block.type == 'accordion' and block.settings.accordion_title != blank %}
+      {% assign has_accordion = true %}
+    {% endif %}
+  {% endfor %}
+{% if has_accordion %}
+    <div class="filter_details faq">
+      <div class="accordion" id="details_drop">
+        {% for block in section.blocks %}
+          {% if block.type == 'accordion' %}
+            {% assign random_number = 'now' | date: '%s' | modulo: 100 | plus: forloop.index %}
+            <div class="accordion-item detail d-{{ forloop.index }}">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#filter_details-{{ random_number }}"
+                  aria-expanded="false"
+                  aria-controls="filter_details-{{ random_number }}"
+                >
+                  <div class="container">{{ block.settings.accordion_title }}</div>
+                </button>
+              </h2>
+              <div
+                id="filter_details-{{ random_number }}"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details_drop"
+              >
+                <div class="accordion-body">
+                  <div class="container">
+                    {% if block.settings.accordion_content != blank %}
+                      <p>{{ block.settings.accordion_content }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% if section.settings.desktop_banner != blank %}
+      <picture>
+        <source media="(min-width:1920px)" srcset="{{ section.settings.desktop_banner | img_url: 'master'}}">
+        <source media="(min-width:1600px)" srcset="{{ section.settings.desktop_banner | img_url: 'master'}}">
+        <source media="(min-width:1100px)" srcset="{{ section.settings.desktop_banner | img_url: 'master'}}">
+        <source media="(min-width:720px)" srcset="{{ section.settings.desktop_banner | img_url: 'master'}}">
+        <source media="(min-width:540px)" srcset="{{ section.settings.mobile_banner | img_url: 'master'}}">
+        <img
+          src="{{ section.settings.mobile_banner | img_url: 'master'}}"
+          alt="Advanced Filtration Banner"
+          class="img-fluid"
+          width="332"
+          height="192"
+        >
+      </picture>
+      {% endif %}
+    </div>
+  {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.filtration.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "ctm_cls",
+      "label": "t:common.classname.custom"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_banner",
+      "label": "t:common.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_banner",
+      "label": "t:common.image_mobile.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Filtration Benefit",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "benefit_image",
+          "label": "t:common.icon.label"
+        },
+        {
+          "type": "text",
+          "id": "benefit_title",
+          "label": "t:common.title.label"
+        },
+        {
+          "type": "textarea",
+          "id": "benefit_description",
+          "label": "t:common.text.content"
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "name": "Accordion Item",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "accordion_title",
+          "label": "t:common.title.label"
+        },
+        {
+          "type": "textarea",
+          "id": "accordion_content",
+          "label": "t:common.text.content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.filtration.label"
+    }
+  ]
+}
+{% endschema %}

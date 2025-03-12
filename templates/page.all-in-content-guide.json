@@ -1,0 +1,288 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "header_landing_pFmaRH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_qLHgyD": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CONTENT REQUIREMENTS",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs1.webp"
+          }
+        },
+        "navigation_link_DgYaFx": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs2.webp"
+          }
+        },
+        "navigation_link_3X4mrf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "INSPIRING CONTENT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qLHgyD",
+        "navigation_link_DgYaFx",
+        "navigation_link_3X4mrf"
+      ],
+      "settings": {}
+    },
+    "section1": {
+      "type": "guide-header",
+      "blocks": {
+        "button_LUpm3B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about All-In-One Face Serum",
+            "button_url": "https://qureskincare.com/products/face-serum"
+          }
+        }
+      },
+      "block_order": [
+        "button_LUpm3B"
+      ],
+      "settings": {
+        "heading": "All-In-One Face Serum Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the All-In-One Face Serum with our creative content guide. This brief will help you craft engaging content that showcases how the science-backed ingredients transform skincare routines for radiant, glowing skin.</p>",
+        "wistia_id": "xy0i3qbm8p"
+      }
+    },
+    "qure_founder_LkfQUT": {
+      "type": "qure-founder",
+      "custom_css": [
+        "@media(max-width:767px) {.qure_founder_info {display: none; }}"
+      ],
+      "settings": {
+        "heading": "“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. It can really help simplify and consolidate steps!”",
+        "sub_heading": "<p>- <strong>Dr. Luke Maxfield, MD</strong>,Board certified dermatologist</p>",
+        "image": "shopify://shop_images/dr.luke.webp",
+        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trusted_image_mob": "shopify://shop_images/dr.luke_mob.webp"
+      }
+    },
+    "section3": {
+      "type": "guide-columns",
+      "blocks": {
+        "header_RA46tw": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 1",
+            "text": "Merge Qure into your creatives",
+            "image": "shopify://shop_images/ac_step7.webp",
+            "button_label": "Content Requirements"
+          }
+        },
+        "description_mHnPFA": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Key Messages",
+            "image": "shopify://shop_images/key_message.svg",
+            "content": "<p>Key Points to include in the messaging:</p>",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_aNzhwA": {
+          "type": "collapsed",
+          "settings": {
+            "show": true,
+            "style": "default",
+            "heading": "Science-backed active ingredients",
+            "content": "<ul><li>Formulated with a unique blend of the world’s most trusted active ingredients that help brighten, plump, and smooth the look of your skin.</li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwB": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "Treat multiple skin concerns",
+            "content": "<ul><li>Treat fine lines and wrinkles, dark spots and discoloration, dull and uneven skin tone in just one step.</li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwC": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "All-In-One",
+            "content": "<ul><li>This one “pick-me-up” serum helps save money and time: no need for multi-layering or multi-step routines.</li></ul>",
+            "code": ""
+          }
+        },
+        "description_tVQDHe": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Creative Direction",
+            "image": "shopify://shop_images/direction.svg",
+            "content": "<ul><li>High-quality, bright lighting and high-resolution imagery/ videography to be supplied. No obvious filters.</li><li>Qure All-In-One Face Serum to be the feature of the post. The background must be clean and bright.</li><li>When using the product, please do not wear any makeup, or no visible/noticeable makeup.</li><li>In cover photos for video content always show yourself using the All-In-One Face Serum, unless otherwise agreed on with Qure’s team.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_cpREQp": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Inclusion",
+            "image": "shopify://shop_images/inclusion.svg",
+            "content": "<ul><li>Tag and mention @qureskincare #QureSkincare #FaceSerum #Skincare #Argireline #Retinol</li><li>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can’t be placed in BIO, include it in linktr.ee or similar.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_LhpN6x": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 2",
+            "text": "Get to know All-In-One Face Serum",
+            "image": "shopify://shop_images/ac_step8.webp",
+            "button_label": "Product Information"
+          }
+        },
+        "description_BNpxL3": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Usage Instructions",
+            "image": "shopify://shop_images/usage_dir.svg",
+            "content": "<ul><li>After cleansing, apply 1-2 pumps onto the already cleansed face and neck.</li><li>Use every second night during the first two weeks of use whilst your skin builds tolerance.</li><li>Then use daily for best results.</li><li>PATCH TEST: Apply a small amount of the product on a discreet area of your skin, such as the inner forearm. Wait 24 hours before applying the serum to a larger area. Refrain from using the serum and consult a dermatologist if any adverse reactions occur, such as redness, irritation, or itching.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_GE3PNL": {
+          "type": "description",
+          "settings": {
+            "classname": "ingredient_text",
+            "heading": "Ingredient Details",
+            "image": "shopify://shop_images/product_claims.svg",
+            "content": "<p><strong>Argireline Peptides</strong><br/>The most trusted anti-aging peptide in the world. Stimulates collagen, which aids in reducing fine lines and boosting moisture for a firmer, youthful-looking complexion!</p><p><strong>Bakuchiol</strong><br/>Get the benefits of retinol - in a more natural way! Bakuchiol helps to stimulate cell turnover to make your skin look smooth and firm.</p><p><strong>Retinol (Vitamin A)</strong><br/>Encourages new cells to the surface to help reduce the visibility of wrinkles and age spots, and smooth skin texture.</p><p><strong>Niacinamide</strong><br/>All-star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.</p><p><strong>Lactic & Mandelic acid (Gentle Exfoliators)</strong><br/>Gentle chemical exfoliants gobble up the top layer of dead cells which can reveal clearer, smoother skin.</p><p><strong>Ethyl Ascorbic Acid (Vitamin C)</strong><br/>Known for its brightening, wrinkle reduction, firming, benefits. It helps with fading hyperpigmentation to restore a more even skin tone and helps maintain smooth, supple skin.</p><p><strong>Ferulic Acid</strong><br/>Works to stop all the damage that comes from extrinsic aging. Helps reduce the formation of fine lines and wrinkles, dark spots.</p><p><strong>Actiwhite™</strong><br/>Work to visibly brighten and even skin tone for a more radiant complexion. Actiwhite™ helps reduce the appearance of dark spots and works to prevent discoloration (by inhibiting melanin) with continued use.</p><p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">See FAQs for more information here</a></p>",
+            "wistia_id": ""
+          }
+        },
+        "header_AwT6ji": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 3",
+            "text": "Get inspired by other content creators",
+            "image": "shopify://shop_images/ac_step9.webp",
+            "button_label": "Inspiring Content"
+          }
+        },
+        "heading_YiyFGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show how it works for you"
+          }
+        },
+        "video_4Jjjcm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video42.webp",
+            "wistia_id": "6m1p4rgmza"
+          }
+        },
+        "video_iHceHC": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video43.webp",
+            "wistia_id": "xtts4c5jc2"
+          }
+        },
+        "video_DmtewU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video44.webp",
+            "wistia_id": "1tmoavwrap"
+          }
+        },
+        "video_ArWaTK": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/mi_system33.webp",
+            "wistia_id": "xk91sh74w9"
+          }
+        },
+        "heading_fUcJta": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explain the science behind"
+          }
+        },
+        "video_H9fmrV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video46.webp",
+            "wistia_id": "eitqjonxrn"
+          }
+        },
+        "video_dpGpUm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video47.webp",
+            "wistia_id": "75mjdeaqjq"
+          }
+        },
+        "video_6gLP6V": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video45.webp",
+            "wistia_id": "lkg4xlfydr"
+          }
+        }
+      },
+      "block_order": [
+        "header_RA46tw",
+        "description_mHnPFA",
+        "collapsed_aNzhwA",
+        "collapsed_aNzhwB",
+        "collapsed_aNzhwC",
+        "description_tVQDHe",
+        "description_cpREQp",
+        "header_LhpN6x",
+        "description_BNpxL3",
+        "description_GE3PNL",
+        "header_AwT6ji",
+        "heading_YiyFGP",
+        "video_4Jjjcm",
+        "video_iHceHC",
+        "video_DmtewU",
+        "video_ArWaTK",
+        "heading_fUcJta",
+        "video_H9fmrV",
+        "video_dpGpUm",
+        "video_6gLP6V"
+      ],
+      "custom_css": [
+        "#target_block_desktop_2 .ac_desc_grid {grid-template-columns: 1fr 1fr; position: relative;}"
+      ],
+      "settings": {
+        "heading": "All you need to know before you start creating your amazing content"
+      }
+    }
+  },
+  "order": [
+    "header_landing_pFmaRH",
+    "section1",
+    "qure_founder_LkfQUT",
+    "section3"
+  ]
+}

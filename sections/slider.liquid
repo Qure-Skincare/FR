@@ -1,0 +1,134 @@
+<!-- -- app out slider start -- -->
+<div class="app_out section">
+    <div class="container">
+        <div class="section_header text-center mb-3">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="gallery mw-mob-1001">
+        <div class="swiper-container gallery-slider">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    <div class="swiper-slide">
+                        {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | img_url: '450x' }}" alt="" class="img-fluid">
+                        {% endif %}
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+
+        <div class="swiper-container gallery-thumbs dot_pagination">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    <div class="swiper-slide">
+                        <div class="app_out_content">
+                            {% if block.settings.heading != blank %}
+                                <div class="app_subhheading">
+                                    {{ block.settings.heading }}
+                                </div>
+                            {% endif %}
+                            {{ block.settings.text }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination pt-2"></div>
+        </div>
+    </div>
+</div>
+<!-- -- app out slider end -- -->
+
+<script src="{{ '__app_slider.js' | asset_url }}"></script>
+
+{% schema %}
+    {
+        "name": "t:sections.slider.name",
+        "class": "section-slider",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 10,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.slider.name",
+                "settings": {
+                    "heading": "An app for out-of-this world skincare",
+                    "text": "<p>Your skin’s unique. So your treatment should be. Step into the world of personalized skincare with the Qure Skincare App. It gives you full control of your clinical-grade LED light therapy treatments. No more visits to beauty clinics, no more waiting rooms at the dermatologist.<\/p>"
+                },
+                "blocks": [
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "Customize Treatments",
+                            "text": "<p>Customize your LED light therapy treatments for a personalized program that’s unique to your skin’s profile. Tailor your treatments on 5 facial areas to treat your specific skin concerns, no one else's.<\/p>",
+                            "image": "shopify:\/\/shop_images\/app_i_1.webp"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "Plan and Schedule",
+                            "text": "<p>Use the Qure calendar to schedule in your home at clinical treatments on your own time and get reminders straight to your phone. Scheduled treatments appear as a clock icon and completed treatment appear solid ticks.<\/p>",
+                            "image": "shopify:\/\/shop_images\/app_i_2.webp"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "Track Treatments",
+                            "text": "<p>The Qure planner shows your treatment history and scheduled treatments in a monthly calendar. View your total summary of completed challenges, monthly and yearly treatments.<\/p>",
+                            "image": "shopify:\/\/shop_images\/app_i_3.webp"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "Stay on Track",
+                            "text": "<p>Join a challenge and complete a full-anti-aging or anti-breakout treatment course for maxiumum results.<\/p>",
+                            "image": "shopify:\/\/shop_images\/app_i_4.webp"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

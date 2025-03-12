@@ -1,0 +1,529 @@
+<!-- product bundle start -->
+<div class="product_bundle section" id="shop">
+    <div class="container">
+        <div class="product_bundle-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-md-block d-none">
+                        <div class="row gy-4 pe-md-3">
+                            {%- for block in section.blocks -%}
+                                {% case block.type %}
+                                    {% when 'image' %}
+                                        <div class="{% if forloop.index == 1 %}col-md-12{% else %}col-6{% endif %}">
+                                            <div>
+                                                <img src="{{ block.settings.image | img_url: '720x' }}" class="img-fluid" alt="image{{ forloop.index }}">
+                                            </div>
+                                        </div>
+                                    {% when 'video' %}
+                                        <div class="col-md-12">
+                                            <div class="videosQure_exernal">
+                                                <div class="wistia_responsive_padding" style="position:relative;">
+                                                    <div class="wistia_responsive_wrapper"
+                                                        style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                        <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true  h-100 rounded"
+                                                            style="height:100%;position:relative;width:100%;display:flex;align-items:center;">
+                                                            <div class="wistia_swatch"
+                                                                style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                                <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}/swatch"
+                                                                    style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                                    alt="" aria-hidden="true"
+                                                                    onload="this.parentNode.style.opacity=1;" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                {% endcase %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="row d-md-none">
+                        <div class="col-md-12">
+                            <div class="refill_slider pt-md-0 mw-mob-100 refill_slider_new">
+                                <div class="swiper twa__swiper pd_bundle dot_pagination"
+                                    id="twa__swiper-pd_bundle" data-section-id="pd_bundle" data-autoplay="false"
+                                    data-loop="false" data-centerslide="false" data-mobile="1" data-tablet="1"
+                                    data-desktop="1" data-spacing="10" data-arrowleft="pd_bundle-swiper-prev"
+                                    data-arrowright="pd_bundle-swiper-next">
+                                    <div class="swiper-wrapper">
+                                        {%- for block in section.blocks -%}
+                                            {% case block.type %}
+                                                {% when 'image' %}
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ block.settings.image | img_url: '720x' }}" class="img-fluid" alt="image_mobile_{{ forloop.index }}">
+                                                    </div>   
+                                                {% when 'video' %}
+                                                    <div class="swiper-slide">
+                                                        <div class="banner_img position-relative">
+                                                            {% if block.settings.image != blank %}
+                                                                <img src="{{ block.settings.image | img_url: '720x' }}" alt="" class="img-fluid tab_img">
+                                                            {% endif %}
+                                                            <a class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0">
+                                                                <div class="wistia_responsive_padding" style="position:relative;">
+                                                                    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                                        <span
+                                                                            class="wistia_embed wistia_async_{{ block.settings.wistia_id }} popover=true videoFoam=true"
+                                                                            style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+                                                                    </div>
+                                                                    <span class="d-flex justify-content-center h-100 align-items-center p-2">
+                                                                        <img src="https://qureskincaredns.com/new/assets/trusted_play_sm.svg" alt="" class="w-auto">
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                            {% endcase %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="pagination_navigation mx-4">
+                                        <div class="swiper-pagination"></div>
+                                        <div class="pd_bundle-swiper-prev swiper-button-prev swiper-button">
+                                        </div>
+                                        <div class="pd_bundle-swiper-next  swiper-button-next swiper-button">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bundle_select-main ps-md-3">
+                                <div class="product_details">
+                                    <div class="refill_review mb-2 justify-content-start">
+                                        <div class="star_gp">
+                                            <span>IN A STUDY...</span>
+                                        </div>
+                                        <a href="#review_section" class="text-dark">
+                                            <p class="text-sm fw-normal" style="text-decoration: none;">97%
+                                                customer satisfaction rate
+                                            </p>
+                                        </a>
+                                    </div>
+                                    {% if section.settings.heading != blank %}
+                                        <h2 class="title-lg">{{ section.settings.heading }}</h2>
+                                    {% endif %}
+                                    {% if section.settings.subheading != blank %}
+                                        <p>{{ section.settings.subheading }}</p>
+                                    {% endif %}
+                                    <div class="price_wrap justify-content-between">
+                                        {% if section.settings.price != blank %}
+                                            <div class="price align-items-center">
+                                                <div class="new_price">{{ section.settings.price }}</div>
+                                            </div>
+                                        {% endif %}
+
+                                        {% if section.settings.button_label != blank %}
+                                            <a class="see_action d-flex justify-content-center popup-youtube" href="{{ section.settings.button_url }}">
+                                                <p><span><img src="https://qureskincaredns.com/new/assets/play_circle-green.svg" alt="{{ section.settings.button_label | escape }}" class="img-fluid">{{ section.settings.button_label }}</p>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+
+                                    {% if section.settings.text != blank %}
+                                        <div class="bs_feature correctCircle ps-0">
+                                            {{ section.settings.text |  replace: '<ul>', '<ul class="rightCircle">' }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="product-section">
+                                    <!-- Product Selection Section -->
+                                    <div class="product_selection">
+                                        <p class="selection_title pb-md-3 pb-4">Choose your rejuvenating kit:
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="select_bundle">
+                                                    <div class="product" id="mask-only">
+                                                        <div class="pd_image">
+                                                            <img src="https://qureskincaredns.com/new/assets/mask_only.webp" class="img-fluid"
+                                                                alt="Mask Only">
+                                                        </div>
+                                                        <div class="product_txt">
+                                                            <h6>Q-Rejuvalight Pro LED Mask</h6>
+                                                            <div class="pd_detali-txt">
+                                                                <p>Target breakouts, fine lines and wrinkles and
+                                                                    more with just three minutes of use a day.
+                                                                </p>
+                                                            </div>
+                                                            <p class="price_txt">{{ 379 | times: 100 | money_without_trailing_zeros }}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="select_bundle">
+                                                    <p class="pd_info">FOR ENHANCED RESULTS</p>
+                                                    <button class="btn product_popup" data-bs-toggle="modal"
+                                                        data-bs-target="#productInfoModal">
+                                                        <img src="https://qureskincaredns.com/new/assets/i-mark.svg" alt="">
+                                                    </button>
+                                                    <div class="product" id="mask-decolletage">
+                                                        <div class="pd_image">
+                                                            <img src="https://qureskincaredns.com/new/assets/mask_decolletage.webp"
+                                                                class="img-fluid" alt="Mask + Decolletage">
+                                                        </div>
+                                                        <div class="product_txt">
+                                                            <h6>LED Mask + Decolletage LED Device</h6>
+                                                            <div class="pd_detali-txt">
+                                                                <p>Perfect combination for the ultimate skin
+                                                                    rejuvenation. Treat wrinkles, dark spots and
+                                                                    sagging skin beyond the face.</p>
+                                                            </div>
+                                                            <p class="price_txt">
+                                                                <span class="fw-bold">+</span><span
+                                                                    class="discounted-price price_txt">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
+                                                                <span class="original-price">+{{ 299 | times: 100 | money_without_trailing_zeros }}</span>
+                                                            </p>
+                                                            <p class="save_txt">Save {{ 200 | times: 100 | money_without_trailing_zeros }} on bundle</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Warranty Selection Section -->
+                                    <div class="warranty_selection">
+                                        <p class="selection_title pb-md-3 pb-4">Choose device warranty:</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="select_bundle">
+                                                    <div class="warranty" id="one-year">
+                                                        <div class="pd_image">
+                                                            <img src="https://qureskincaredns.com/new/assets/1-year.svg" class="img-fluid"
+                                                                alt="1 Year Warranty">
+                                                        </div>
+                                                        <h6>1 Year<br><span>Included</span></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="select_bundle">
+                                                    <p class="pd_info">RECOMMENDED</p>
+                                                    <div class="warranty" id="extended">
+                                                        <div class="pd_image">
+                                                            <img src="https://qureskincaredns.com/new/assets/2-year.svg" class="img-fluid"
+                                                                alt="2 Year Warranty">
+                                                        </div>
+                                                        <h6>Extended warranty<br class="d-md-none"> (2 Years total)</h6>
+                                                        <p>
+                                                            <span class="fw-bold">+</span>
+                                                            <span id="extended-warranty-price"
+                                                                class="discounted-price price_txt">{{ 49 | times: 100 | money_without_trailing_zeros }}</span>
+
+                                                            <span id="extended-warranty-mrp"
+                                                                class="original-price"><span
+                                                                    class="fw-bold">+</span>{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
+                                                        </p>
+                                                        <p id="extended-warranty-savings" class="save_txt"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Total Price and Installment Section -->
+                                    <div class="total-section">
+                                        <p>
+                                            Total:
+                                            <span class="original-price" id="original-total-price">{{ 777 | times: 100 | money_without_trailing_zeros }}</span>
+                                            <span id="total-price">{{ 527 | times: 100 | money_without_trailing_zeros }}</span>
+                                        </p>
+                                        <p class="savings">You Save: <span id="savings">{{ 250 | times: 100 | money_without_trailing_zeros }}</span></p>
+                                    </div>
+
+
+                                    <!-- Buy Now Button -->
+                                    <button class="buy-now" id="buy-now-button">Buy Now & Save</button>
+
+                                    <!-- Payment Methods -->
+                                    <div class="payment_method">
+                                        <p>OR pay 4 monthly payments of <span class="instalments"></span> with
+                                        </p>
+                                        <div class="pmt_img ps-2">
+                                            <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt="Klarna">
+                                            <img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt="Sezzle">
+                                            <img src="https://qureskincaredns.com/new/assets/afterpay.svg" alt="Afterpay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- product bundle end -->
+
+<script>
+    // Prices configuration
+    const productPrices = {
+        'mask-only': { price: 379, discount: 0 },
+        'mask-decolletage': { price: 478, discount: 200 }
+    };
+
+    const warrantyPrices = {
+        'extended': {
+            'mask-only': { price: 39, discount: 10, originalPrice: 49 },
+            'mask-decolletage': { price: 49, discount: 50, originalPrice: 99 }
+        }
+    };
+
+    // Default selections
+    let selectedProduct = 'mask-only';
+    let selectedWarranty = 'one-year';
+    let currentCurrency = "{{ shop.money_with_currency_format | remove: ' ' | split: '' | first }}";
+
+    // Update Total, Original Price, Savings, and Installments
+    function updateTotal() {
+        const product = productPrices[selectedProduct];
+        const warranty =
+            selectedWarranty === 'extended' ? warrantyPrices['extended'][selectedProduct] : { price: 0, discount: 0 };
+
+        // Calculate total price
+        const totalPrice = product.price + warranty.price;
+
+        // Calculate original prices
+        const originalProductPrice = selectedProduct === 'mask-only' ? 379 : 678; // Mask-only or bundle original price
+        const originalWarrantyPrice = selectedWarranty === 'extended' ? warranty.originalPrice : 0; // Dynamic original extended warranty price
+        const originalTotalPrice = originalProductPrice + originalWarrantyPrice;
+
+        // Calculate total discount
+        const totalDiscount = product.discount + warranty.discount;
+
+        // Update DOM elements
+        document.getElementById('total-price').innerText = currentCurrency + `${totalPrice}`;
+        document.getElementById('savings').innerText = currentCurrency + `${totalDiscount}`;
+        document.getElementById('original-total-price').innerText = currentCurrency + `${originalTotalPrice}`; // Update original total price
+
+        // Update installment price
+        const installmentAmount = (totalPrice / 4).toFixed(2);
+        document.querySelector('.instalments').innerText = currentCurrency + `${installmentAmount}`;
+
+        // Update button text dynamically
+        const button = document.querySelector('.buy-now'); // Replace with the actual button class or ID
+        if (button) {
+            // If no savings (1-year warranty with default pricing), set button to "Buy Now"
+            if (totalDiscount === 0) {
+                button.innerText = `Buy Now`;
+            } else {
+                button.innerText = `Buy Now & Save $${totalDiscount}`;
+            }
+        }
+    }
+
+    // Handle product selection
+    function __selectProduct(productId) {
+        selectedProduct = productId;
+
+        // Highlight selected product
+        document.querySelectorAll('.product').forEach((el) => el.classList.remove('selected'));
+        document.getElementById(productId).classList.add('selected');
+
+        updateWarrantyPricing();
+        updateTotal();
+
+        window.__productId = productId;
+    }
+
+    // Handle warranty selection
+    function __selectWarranty(warrantyId) {
+        selectedWarranty = warrantyId;
+
+        // Highlight selected warranty
+        document.querySelectorAll('.warranty').forEach((el) => el.classList.remove('selected'));
+        document.getElementById(warrantyId).classList.add('selected');
+
+        updateTotal();
+
+        window.__warantyId = warrantyId;
+    }
+
+    // Update extended warranty pricing text dynamically
+    function updateWarrantyPricing() {
+        const warrantyPrice = warrantyPrices['extended'][selectedProduct];
+
+        // Update displayed discounted price
+        document.getElementById('extended-warranty-price').innerText = currentCurrency + `${warrantyPrice.price}`;
+
+        // Update displayed original price dynamically
+        document.getElementById('extended-warranty-mrp').innerText = currentCurrency + `${warrantyPrice.originalPrice}`;
+
+        // Update savings text
+        const savingsText = selectedProduct === 'mask-only'
+            ? 'Save {{ 10 | times: 100 | money_without_trailing_zeros }}'
+            : 'Save {{ 50 | times: 100 | money_without_trailing_zeros }}';
+
+        const mobileSuffix = window.innerWidth > 768 ? ' Limited Time Deal' : ''; // Add text only for desktop
+        document.getElementById('extended-warranty-savings').innerText = savingsText + mobileSuffix;
+    }
+
+    // Add event listener for window resize to ensure correct text on viewport change
+    window.addEventListener('resize', updateWarrantyPricing);
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        __selectProduct('mask-decolletage'); // Preselect default product
+        __selectWarranty('extended'); // Preselect default warranty
+
+
+        document.getElementById('one-year').addEventListener('click', function() {
+            __selectWarranty('one-year')
+        });
+
+        document.getElementById('extended').addEventListener('click', function() {
+            __selectWarranty('extended')
+        });
+
+        document.getElementById('mask-only').addEventListener('click', function() {
+            __selectProduct('mask-only')
+        });
+
+        document.getElementById('mask-decolletage').addEventListener('click', function() {
+            __selectProduct('mask-decolletage')
+        });
+
+        document.getElementById('buy-now-button').addEventListener('click', function() {
+           let __discount = '';
+           let __items = [];
+
+           if(window.__productId == 'mask-only' && window.__warantyId == 'one-year')
+           {
+                __items.push({
+                    id: 37390541553813,
+                    quantity: 1
+                });
+           }
+
+           if(window.__productId == 'mask-only' && window.__warantyId == 'extended')
+           {
+                __items.push({
+                    id: 37390541553813,
+                    quantity: 1
+                });
+                __items.push({
+                    id: 44321737113839,
+                    quantity: 1
+                });
+           }
+
+           if(window.__productId == 'mask-decolletage' && window.__warantyId == 'one-year')
+           {
+                __items.push({
+                    id: 37390541553813,
+                    quantity: 1
+                });
+                __items.push({
+                    id: 44062187913455,
+                    quantity: 1
+                });
+                __discount = 'Qrejuvalightoffer';
+           }
+
+           if(window.__productId == 'mask-decolletage' && window.__warantyId == 'extended')
+           {
+                __items.push({
+                    id: 37390541553813,
+                    quantity: 1
+                });
+                __items.push({
+                    id: 44062187913455,
+                    quantity: 1
+                });
+                __items.push({
+                    id: 46070161703151,
+                    quantity: 1
+                });
+                __discount = 'Qrejuvalightoffer';
+           }
+
+           if(__discount)
+           {
+            fetch('/discount/' + __discount).then(async () => {
+                cartRequestAdd({ 
+                    items:  __items
+                }, {} )
+            });
+           }
+           else
+           {
+                cartRequestAdd({ 
+                    items:  __items
+                }, {} )
+           }
+        });
+    });
+</script>
+
+
+{% schema %}
+    {
+        "name": "Offer",
+        "class": "section-offer",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "t:common.button.label",
+                "info": "t:common.button.info"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image",
+                "limit": 5,
+                "name": "t:common.image.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    },
+            {
+                "type": "video",
+                "limit": 1,
+                "name": "t:common.video.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    }
+                ]
+		    },
+        ]
+    }
+{% endschema %}

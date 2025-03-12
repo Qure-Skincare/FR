@@ -1,0 +1,311 @@
+<!-- -- qurify water filter thumbnail start -- -->
+{% assign product = section.settings.product %}
+<div class="thumbnail_qurify section" id="shop">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-md-6">
+        <div class="tq_info mw-100">
+          {%- for block in section.blocks %}
+            {% assign divided_price = product.price
+              | divided_by: block.settings.instalment
+              | money_without_trailing_zeros
+            %}
+            {% assign bs = block.settings %}
+            {% case block.type %}
+              {%- when 'subheading' -%}
+                <div class="refill_review justify-content-start">
+                  {%- if bs.badge_text -%}
+                    <div class="green_tag">
+                      <p>{{ bs.badge_text }}</p>
+                    </div>
+                  {%- endif -%}
+                  {% if bs.text != blank %}
+                    <p class="text-sm fw-normal">{{ bs.text }}</p>
+                  {% endif %}
+                </div>
+              {%- when 'heading' -%}
+                {%- if bs.heading != blank -%}
+                  <div class="section_header ps-0 pb-0 pt-3 ms-0">
+                    <h2 class="title-lg">{{ bs.heading }}</h2>
+                    {%- if bs.des != blank -%}
+                      {{ bs.des }}
+                    {% endif %}
+                  </div>
+                {% endif %}
+              {%- when 'button' -%}
+                <div class="get_clearer_wrapper text-center mw-100 mt-3 mt-md-5">
+                  {%- if block.settings.btn_text != blank -%}
+                    <div class="d-flex justify-content-evenly mw-mob-100">
+                      <p>
+                        <span> <img src="{{ block.settings.w_icon | image_url: width: 16 }}" alt=""></span>
+                        {{ block.settings.warranty }}
+                      </p>
+                      <p>
+                        <span><img src="{{ block.settings.d_icon | image_url: width: 16 }}" alt=""></span>
+                        {{ block.settings.recomand }}
+                      </p>
+                    </div>
+                    <a
+                      class="btn btn-lg btn-primary btn_green mw-100"
+                      href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1"
+                      onclick="setEventProductHandler('{{ product.handle | escape }}')"
+                      data-ajax-cart-request-button
+                    >
+                      {{ block.settings.btn_text }}
+                    </a>
+                    <div class="payment_method p-0">
+                      <p>OR pay {{ block.settings.instalment }} monthly payments of {{ divided_price }} with</p>
+                      <div class="pmt_img ps-2">
+                        {% for p in (1..3) %}
+                          {% capture pmt_img %}payment_{{p}}{% endcapture %}
+                          {% if bs[pmt_img] != blank %}
+                            <img src="{{ bs[pmt_img] | img_url: 'original' }}" alt="{{ bs[pmt_img].alt }}">
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- when 'product_benefits' -%}
+                <div class="price">{{ product.price | money_without_trailing_zeros }}</div>
+                <div class="tq_list ss_list">
+                  {{ bs.benefits }}
+                </div>
+                {% when 'product_images' %}
+                  <div class="tq_img_wrap d-block d-md-none mt-4">
+                    <div class="tq_img">
+                      <img
+                        src="{{ bs.pd_image_1 | img_url: 'original' }}"
+                        class="largeImage img-fluid"
+                        alt="{{ bs.pd_image_1.alt }}"
+                      >
+                    </div>
+  
+                    <div class="thumbs">
+                      {% for i in (1..4) %}
+                        {%- capture image -%}pd_image_{{i}}{%- endcapture -%}
+                        {% if bs[image] != blank %}
+                          <img
+                            src="{{ bs[image] | img_url: 'original' }}"
+                            class="img-fluid current"
+                            alt="{{ bs[image].alt }}"
+                          >
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    {% comment %} {% if  %} {% endcomment %}
+                     {% if section.settings.video_txt != blank %}
+                    <a
+                      class="see_action d-flex justify-content-center popup-youtube"
+                      href="{{ section.settings.pd_video }}"
+                    >
+                      <p>
+                        <span>
+                          <img src="{{ 'see_it_btn.svg' | asset_url }}" alt="" class="img-fluid">{{ section.settings.video_txt }}</span>
+                      </p>
+                    </a>
+                    {% endif %}
+                  </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+      {%- assign image_block = section.blocks | where: 'type', 'product_images' | first -%}
+      <div class="col-md-6">
+        <div class="tq_img_wrap d-none d-md-block">
+          <div class="tq_img">
+            <img
+              src="{{ image_block.settings.pd_image_1 | img_url: 'original' }}"
+              class="largeImage img-fluid"
+              alt="{{ image_block.settings.pd_image_1.alt }}"
+            >
+          </div>
+          <div class="thumbs">
+            {%- for i in (1..4) -%}
+              {%- capture image -%}pd_image_{{i}}{%- endcapture -%}
+              <img
+                src="{{ image_block.settings[image] | img_url: 'original' }}"
+                class="img-fluid current"
+                alt="{{ image_block.settings[image].alt }}"
+              >
+            {%- endfor -%}
+          </div>
+          {% if section.settings.video_txt != blank %}
+            <a
+              class="see_action d-flex justify-content-center popup-youtube"
+              href="{{ section.settings.pd_video }}"
+            >
+            
+              <p>
+                <span style="text-decoration: underline;">
+                  <img src="{{ 'see_it_btn.svg' | asset_url }}" alt="" class="me-2">{{ section.settings.video_txt }}</span>
+              </p>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -- qurify water filter thumbnail end -- -->
+
+{% schema %}
+{
+  "name": "t:sections.f_product.name",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "t:product.name.label"
+    },
+    {
+      "type": "url",
+       "id": "pd_video",
+      "label": "t:product.video.label"
+    },
+    {
+      "type": "text",
+      "id": "video_txt",
+      "label": "t:product.video_txt.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subheading",
+      "name": "t:common.rating.label",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "t:product.badge.text"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:product.badge.label"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "t:common.heading.label",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "des",
+          "label": "t:common.desc.label"
+        }
+      ]
+    },
+    {
+      "type": "product_images",
+      "name": "t:common.product.images.label",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "pd_image_1",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "pd_image_2",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "pd_image_3",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "pd_image_4",
+          "label": "t:common.image.label"
+        }
+      ]
+    },
+    {
+      "type": "product_benefits",
+      "name": "t:product.benefits.p_benefits",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "benefits",
+          "label": "t:product.benefits.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:common.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "btn_text",
+          "default": "Buy Now",
+          "label": "t:common.button.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "w_icon",
+          "label": "t:product.warranty.icon"
+        },
+        {
+          "type": "text",
+          "id": "warranty",
+          "label": "t:product.warranty.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "d_icon",
+          "label": "t:common.recommended.icon"
+        },
+        {
+          "type": "text",
+          "id": "recomand",
+          "label": "t:common.recommended.label"
+        },
+        {
+          "type": "header",
+          "content": "Payment"
+        },
+        {
+          "type": "range",
+          "default": 4,
+          "min": 2,
+          "max": 10,
+          "step": 1,
+          "id": "instalment",
+          "label": "t:common.product.instalments.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "payment_1",
+          "label": "t:common.product.payment.icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "payment_2",
+          "label": "t:common.product.payment.icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "payment_3",
+          "label": "t:common.product.payment.icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.f_product.name"
+    }
+  ]
+}
+{% endschema %}

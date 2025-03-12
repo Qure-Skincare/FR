@@ -1,0 +1,108 @@
+<style>
+    .accordion_icon_list ul li {
+        list-style-type: none !important;
+    }
+</style>
+
+<div class="py-4">
+    <div class="container">
+        <div class="accordionTechnologyWrapper">
+            {% if section.blocks.size > 0 %}
+                <div class="accordion accordion-flush" id="accordionTechnology">
+                    {%- for block in section.blocks -%}
+                        <div class="accordion-item u_item_question">
+                            {% if block.settings.heading != blank %}
+                                <h2 class="accordion-header u_item_expandable bg-grey">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#t_item_accordion_{{ block.id }}_{{ forloop.index }}" aria-expanded="false"
+                                        aria-controls="t_item_accordion_{{ block.id }}_{{ forloop.index }}">
+                                        <div class="containers">{{ block.settings.heading }}</div>
+                                    </button>
+                                </h2>
+                            {% endif %}
+                            {% if block.settings.text != blank %}
+                                <div id="t_item_accordion_{{ block.id }}_{{ forloop.index }}" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionTechnology">
+                                    <div class="accordion-body bg-grey">
+                                        <div class="containers">
+                                            {% if block.settings.text contains '<ul>' %}
+                                                <div class="accordion_list li_circle">
+                                                    {{ block.settings.text }}
+                                                    {% if block.settings.code != blank %}
+                                                        {{ block.settings.code }}
+                                                    {% endif %}
+                                                </div>
+                                            {% else %}
+                                                {{ block.settings.text }}
+                                                {% if block.settings.code != blank %}
+                                                    {{ block.settings.code }}
+                                                {% endif %}
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                    {%- endfor -%}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.details.name",
+        "class": "section-details",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.details.name",
+                "blocks": [
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "Test header",
+                            "text": "<p>Test text<\/p>",
+                            "code": ""
+                        }
+                    },
+                    {
+                    "type": "object",
+                        "settings": {
+                            "heading": "Test header",
+                            "text": "<p>Test text<\/p>",
+                            "code": ""
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

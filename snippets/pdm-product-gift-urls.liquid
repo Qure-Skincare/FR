@@ -1,0 +1,22 @@
+{%- comment -%}
+  This snippet is used to check if the current product page is in the list of URLs that should not enable the gift feature.
+  If the current product page is in the list, the gift feature will be disabled.
+Usage:
+  capture url_dont_enable_gift
+    render 'pdm-product-gift-urls'
+  endcapture
+{%- endcomment -%}
+
+{% liquid
+  assign url_dont_enable_gift = settings.dont_enable_gift_urls
+  assign urls = url_dont_enable_gift | newline_to_br | replace: '<br />', '\n' | split: '\n' | replace: '\n', ''
+  assign urls_clean = urls | remove: '[' | remove: ']' | remove: '"' | remove: ' ' | split: ','
+
+  assign current_path = request.path
+  assign is_available = true
+  if urls_clean contains current_path
+    assign is_available = false
+  endif
+%}
+
+{{ is_available }}

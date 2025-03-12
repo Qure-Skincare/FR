@@ -1,0 +1,32 @@
+{% comment %}
+  Renders the countdown timer
+  Accepts:
+  - settings: [section.settings] - 
+  Usage:
+ {% render 'sidecart-timer-new', settings: section.settings %}
+{% endcomment %}
+{% if cart.item_count > 0 %}
+	<div class="sidecart-timer-container" data-finish-date="{{ settings.finish_date }}" data-start-date="{{ settings.start_date }}">
+    <div class="sidecart-timer-container__label">{{ settings.label_ends }}</div>
+    <div class="sidecart-timer-container__timer"> 
+      <div class="sidecart-timer-container__timer--days amount-wrapper">
+        <div class="sidecart-timer-container__timer--days-amount"></div>
+        <div class="sidecart-timer-container__timer--days-label">{{ settings.label_days }}</div>
+      </div>
+      <div class="sidecart-timer-container__timer--hours amount-wrapper">
+        <div class="sidecart-timer-container__timer--hours-amount"></div>
+        <div class="sidecart-timer-container__timer--hours-label">{{ settings.label_hours }}</div>
+      </div>
+      <div class="sidecart-timer-container__timer--minutes amount-wrapper">
+        <div class="sidecart-timer-container__timer--minutes-amount"></div>
+        <div class="sidecart-timer-container__timer--minutes-label">{{ settings.label_minutes }}</div>
+      </div>
+      <div class="sidecart-timer-container__timer--seconds amount-wrapper">
+        <div class="sidecart-timer-container__timer--seconds-amount"></div>
+        <div class="sidecart-timer-container__timer--seconds-label">{{ settings.label_seconds }}</div>
+      </div>
+    </div>
+	</div>
+{%- endif -%}
+
+

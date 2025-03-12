@@ -1,0 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "rating_JRyVkE": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "729 reviews"
+          }
+        },
+        "preorder_P3zKE8": {
+          "type": "preorder",
+          "disabled": true,
+          "settings": {}
+        },
+        "button_FhkPj8": {
+          "type": "button",
+          "settings": {
+            "button_label": "HOLIDAY BUNDLES",
+            "button_url": "shopify://pages/exclusive-holiday-bundle-deal-new"
+          }
+        }
+      },
+      "block_order": [
+        "rating_JRyVkE",
+        "preorder_P3zKE8",
+        "button_FhkPj8"
+      ],
+      "settings": {
+        "reserve": false,
+        "show_bf_prices": false
+      }
+    },
+    "pdm_product_social_proof_data_Vn6dfc": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "pdm_product_social_proof_data_Vn6dfc"
+  ]
+}

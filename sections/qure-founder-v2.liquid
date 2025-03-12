@@ -1,0 +1,51 @@
+<!-- -- qure founder start -- -->
+<div class="qure_founder">
+    <div class="container-fluid">
+        <div class="qure_founder_wrap">
+            {% if section.settings.image != blank %}
+                <div class="qure_founder_img"><img src="{{ section.settings.image | img_url: '500x' }}" alt="" class="img-fluid">
+            {% endif %}
+            </div>
+            <div class="qure_founder_info">
+                {% if section.settings.heading != blank %}
+                    <h3>{{ section.settings.heading }}</h3>
+                {% endif %}
+                
+                <div class="founder_info mt-3 text-end">
+                    {% if section.settings.subheading != blank %}
+                        <p>{{ section.settings.subheading }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- qure founder end -- -->
+
+{% schema %}
+{
+  "name": "t:sections.founder-v2.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:common.subheading.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:common.image.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.founder-v2.label"
+    }
+  ]
+}
+{% endschema %}

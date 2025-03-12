@@ -1,0 +1,55 @@
+{% comment %}  
+  Render Purchase Buttons
+
+  Note: This snippet is used to render the buttons of the purchase process.
+
+  Need:
+
+  Accepts:
+  - generalSettings: {Object} - The general settings of the section.
+
+  Usage:
+  {% render 'pdm_landing-purchase-buttons', generalSettings: page.metafields.custom.general_information_purchase_process.value %}
+{% endcomment %}
+
+
+<button
+  class="landing-back-btn"
+  id="landing-back"
+>
+  <div class="landing-back-btn-wrapper">
+    <div class="landing-arrow-left">
+      {% render 'pdm_landing-purchase-icons', icon: 'arrow-left' %}
+    </div>
+    <span>{{ generalSettings.button_back }}</span>
+  </div>
+</button>
+{% comment %} right {% endcomment %}
+<button
+  id="landing-next"
+  class="landing-next-btn"
+>
+  <div class="landing-next-btn-wrapper">
+    <span>
+      {{ generalSettings.button_next }}
+    </span>
+    <div class="landing-arrow-right">
+      {% render 'pdm_landing-purchase-icons', icon: 'arrow-right' %}
+    </div>
+  </div>
+</button>
+{% comment %} submit {% endcomment %}
+<button
+  id="landing-submit"
+  class="lading-button-submit"
+>
+  <div class="landing-button-submit-one">
+    <span>{{ generalSettings.final_button_one_product }}</span>
+    {% render 'pdm_landing-purchase-icons', icon: 'arrow-right' %}
+  </div>
+  <div class="landing-button-submit-bundle">
+    <span>{{ generalSettings.final_button }}</span>
+    <span id="landing-submit-text"></span>
+    {% render 'pdm_landing-purchase-icons', icon: 'arrow-right' %}
+  </div>
+</button>

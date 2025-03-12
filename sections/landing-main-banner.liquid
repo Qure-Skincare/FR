@@ -1,0 +1,191 @@
+{% assign button = false %}
+{% assign option = false %}
+
+{%- for block in section.blocks -%}
+    {% case block.type %}
+        {% when 'button' %}
+            {%- assign button = button | plus: 1 -%}
+        {% when 'option' %}
+            {%- assign option = option | plus: 1 -%}
+    {% endcase %}
+{% endfor %}
+
+<!-- -- main banner start -- -->
+<div class="anti_cream-banner tabSlider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="">
+                    <div>
+                        <div class="section_header text-start">
+                            {% if section.settings.heading != blank %}
+                                {% if section.settings.heading_tag == 'h1' %}
+                                    <h1 class="title-xl d-none d-md-block mb-0">{{ section.settings.heading | replace: '\n', '<br>' }}</h1>
+                                    <h1 class="title-xl d-md-none">{{ section.settings.heading | replace: '\n', '<br>' }}</h1>
+                                  {% else %}
+                                    <h2 class="title-xl d-none d-md-block mb-0">{{ section.settings.heading | replace: '\n', '<br>' }}</h2>
+                                    <h2 class="title-xl d-md-none">{{ section.settings.heading | replace: '\n', '<br>' }}</h2>
+                                {% endif %}
+                              {% endif %}
+                        </div>
+                        <div class="">
+                            {% if section.settings.text != blank %}
+                                <div class="anti_cream-text">
+                                    {{ section.settings.text }}
+                                </div>
+                            {% endif %}
+                            {% if option != false %}
+                                <div class="ss_list mw-473">
+                                    <ul>
+                                        {%- for block in section.blocks -%}
+                                            {% case block.type %}
+                                                {% when 'option' %}
+                                                    <li class="pb-md-3">{{ block.settings.text }}</li>
+                                            {% endcase %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                            {% if button != false %}
+                                {%- for block in section.blocks -%}
+                                    {% case block.type %}
+                                        {% when 'button' %}
+                                            <div class="mw-452">
+                                                <a class="btn btn-lg btn-primary buy_btn" href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</a>
+                                            </div>
+                                    {% endcase %}
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="c_guide_img mw-mob-100" style="min-height: 400px;">
+                    {% if section.settings.wistia_id != blank %}
+                        <div class="wistia_responsive_padding" style="position:relative;">
+                            <div class="wistia_responsive_wrapper"
+                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                <div class="wistia_embed wistia_async_{{ section.settings.wistia_id }} seo=false videoFoam=true"
+                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- main banner end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.landing-main-banner.name",
+        "class": "section-landing-main-banner",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+              "type": "select",
+              "id": "heading_tag",
+              "label": "Heading tag",
+              "options": [
+                {
+                  "value": "h1",
+                  "label": "H1"
+                },
+                {
+                  "value": "h2",
+                  "label": "H2"
+                }
+              ],
+              "default": "h1"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "wistia_id",
+                "label": "t:common.wistia.id.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "option",
+                "name": "t:common.option.name",
+                "limit": 10,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.landing-main-banner.name",
+                "settings": {
+                    "heading": "Fed Up With Creams That Don't Work The Way You Want?",
+                    "heading_tag": "h2",
+                    "text": "<p>Qure’s Micro-Infusion System stamps your skin and gets <strong>past your skin's <\/strong>defences to deliver active ingredients <strong>exactly where you need them, <\/strong>reducing the appearance of wrinkles and fine lines, and fading the look of dark spots.<\/p>",
+                    "wistia_id": "ri7eb8c11y"
+                },
+                "blocks": [
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Visible results after your very first treatment."
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Only takes 5-minutes every 2 weeks."
+                        }
+                    },
+                    {
+                        "type": "option",
+                        "settings": {
+                            "text": "Virtually painless with minimal downtime."
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "settings": {
+                            "button_label": "Discover Confident skin",
+                            "button_url": "#new-landing-purchase"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

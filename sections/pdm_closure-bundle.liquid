@@ -1,0 +1,176 @@
+<div class="cont-closure-bundle">
+  <div class="header">
+    <div class="cont-title">
+      <h2 class="title">{{ section.settings.section_title }} <span class="user-name hidden"><span class="name"></span></span>!</h2>
+    </div>
+    <div class="const-subtitle">
+      {{ section.settings.section_paragraph }}
+    </div>
+  </div>
+  {% liquid
+    assign is_used = false
+    for item in cart.items
+      if item.title == section.settings.bundle_info.name 
+        assign is_used = true
+      endif
+    endfor
+  %}
+  <closure-bundle class="closure-bundle" 
+                  data-bundle-name="{{ section.settings.bundle_info.name }}" 
+                  data-bundle-id="{{ section.settings.bundle_products.local_storage_name }}" 
+                  data-bundle-used={{ is_used }}
+                  data-bundle-array="[]">
+    <div class="cont-text">
+      <h3 class="info-title">{{ section.settings.section_info_title }}</h3>
+      <div class="info-products desktop">
+        {% assign products = section.settings.bundle_products.list_products.value | reverse | reverse %} 
+        {% for card in section.blocks %}
+          {% assign index_product = forloop.index | minus: 1 %}
+          {% assign product = products[index_product] %}
+          {% if product %}
+            <div class="info-closure" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+              <div class="cont-check">
+                <div class="info-check">
+                  <img class="icon-check" src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/check-bg-green.svg" alt="image {{ product.title }}">
+                </div>
+              </div>
+              <div class="product-text">
+                <p><strong>{{ card.settings.text_check_strong}}</strong><br>{{ card.settings.text_check }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="info-products mobile">
+        {% assign products = section.settings.bundle_products.list_products.value | reverse | reverse %} 
+        {% for card in section.blocks %}
+          {% assign index_product = forloop.index | minus: 1 %}
+          {% assign product = products[index_product] %}
+          {% if product %}
+            <div class="info-closure" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+              <div class="product-text">
+                <p>{{ card.settings.text_check_strong }}</p>
+                <svg class="btn-quit" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                  <path d="M8.41536 2.67148L7.82787 2.08398L5.4987 4.41315L3.16953 2.08398L2.58203 2.67148L4.9112 5.00065L2.58203 7.32982L3.16953 7.91732L5.4987 5.58815L7.82787 7.91732L8.41536 7.32982L6.0862 5.00065L8.41536 2.67148Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="cont-products">
+      {% for card in section.blocks %}
+        {% assign index_product = forloop.index | minus: 1 %}
+        {% assign product = products[index_product] %}
+        <div class="card-product" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+          <div class="mobile-text">
+            {{ card.settings.text_check_strong }}
+          </div>
+          <div class="cont-img">
+            {% assign image_alt = "image" |  append: product.title %}
+            {% if card.settings.image_product %}
+              {{ card.settings.image_product | image_url: width: 480 | image_tag: alt: image_alt , class: 'product-img', loading:"eager" }}
+            {% else %}
+              {{ product.featured_image | image_url: width: 480 | image_tag: alt: image_alt , class: 'product-img',loading:"eager" }}
+            {% endif %}
+          </div>
+          <div class="product-info">
+          <div class="product-title">{% if card.settings.custom_name != blank %}{{ card.settings.custom_name }}{% else %}{{ product.title }}{% endif %}</div>
+            <div class="btn-bundle" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+              <span class="uncheck desktop">{{ section.settings.button_card }}</span>
+              <span class="uncheck mobile">Add</span>
+              <span class="check">Added</span>
+            </div>
+          </div>        
+        </div>
+      {% endfor %}
+    </div>
+  </closure-bundle>
+</div>
+{% schema %}
+{
+  "name": "Closure Bundle (PDM)",
+  "tag": "section",
+  "class": "section-closure-bundle",
+  "settings": [
+    {
+      "type": "metaobject",
+      "id": "bundle_info",
+      "label": "Bundle Info",
+      "metaobject_type": "bundle_skincare_plan_results"
+    },
+    {
+      "type": "metaobject",
+      "id": "bundle_products",
+      "label": "Bundle Products",
+      "metaobject_type": "products_for_bundle_skincare_plan"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Text Button Save Bundle",
+      "default": "You’ve got this"
+    },
+    {
+      "type": "richtext",
+      "id": "section_paragraph",
+      "label": "Paragraph",
+      "default": "<p>We’re confident that with this skincare plan and the tips we’ve shared, you’re well-equipped  to take control of your skin’s journey to aging gracefully. Remember, we’re here to support  you every step of the way.</p>"
+    },
+    {
+      "type": "text",
+      "id": "section_info_title",
+      "label": "Info Product Title",
+      "default": "Have you tackled all your concerns?"
+    },
+    {
+      "type": "text",
+      "id": "button_card",
+      "label": "Text Button Card",
+      "default": "Add to your bundle"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card Product",
+      "settings": [
+        {
+          "type": "text",
+          "id": "custom_name",
+          "label": "custom Product Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_product",
+          "label": "Product' Image"
+        },
+        {
+          "type": "text",
+          "id": "text_check_strong",
+          "label": "Strong Text's Checks",
+          "default": "Loss of Volume & Wrinkles"
+        },
+        {
+          "type": "text",
+          "id": "text_check",
+          "label": "Text's Checks",
+          "default": "Q-Rejuvalight Pro LED Mask"
+        }  
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Closure Bundle (PDM)",
+      "blocks": [
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

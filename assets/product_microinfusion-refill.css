@@ -1,0 +1,211 @@
+/* .withoutTabSerum .supply_steps .step_block {
+    width: 100%
+} */
+
+.withoutTabSerum .supply-detail {
+    /* padding: 30px 50px; */
+    max-width: 512px;
+    margin: 0 0 0 auto;
+}
+
+.withoutTabSerum .tmtFtrs_image {
+    display: grid;
+    grid-template-columns: 52% 48%;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.withoutTabSerum .tmtFtrs_block {
+    display: flex;
+}
+
+.withoutTabSerum .tmtFtrs_block .tmtFtr_des {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 300;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.withoutTabSerum .refill_info h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: 'Canela Light';
+}
+
+.withoutTabSerum .tmtFtrs_image .refill_info h5 {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.withoutTabSerum .refill_info ul li {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.withoutTabSerum .refill_info ul li span img {
+    margin-right: 5px;
+}
+
+.withoutTabSerum .pmt_img {
+    justify-content: center;
+}
+
+/* .withoutTabSerum .supply_steps .step_block .step_content {
+    padding: 15px 0 15px 0;
+} */
+
+/* .mi_refill .serum_bl p {
+    font-weight: 300;
+} */
+
+.mi_refill .q_uses_bl .q_uses_item-outer+.q_uses_item-outer:before {
+    height: 286px;
+}
+
+.mi_refill .result_content p {
+    opacity: 0.8;
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.mi_refill .supply-detail .supply_steps:nth-child(2) .step_counter::before {
+    display: none;
+}
+
+.subscribe_save_wrapper.without_subscription .without_subscription {
+    flex-wrap: wrap;
+}
+
+.unique_c_item .u_item_wrapper .u_ftr {
+    gap: 0;
+}
+
+.mi_refill .choose_serum {
+    background: transparent;
+}
+
+.affect_howToUse p:not(:last-child) {
+    padding-bottom: 16px;
+}
+
+@media(max-width:767px) {
+    .refill_bl.tabSlider .refill_info .section_header .title-xl {
+        font-size: 34px;
+    }
+
+    .supply-detail-2 .supply_steps .step_block .serum_prd .serum_ttl {
+        font-size: 10px !important;
+        padding: 7px 5px !important;
+    }
+
+    .section.withoutTabSerum {
+        padding: 0;
+    }
+
+    .withoutTabSerum .supply-detail {
+        padding: 0px;
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .withoutTabSerum .qure__treatments {
+        margin-bottom: 0;
+        background: linear-gradient(180deg, #C7E7DC 0%, rgba(255, 255, 255, 0.00) 100%);
+        background: transparent;
+    }
+
+    .withoutTabSerum .tmtFtrs_image {
+        grid-template-columns: 100%;
+        margin: 30px 0;
+    }
+
+    .withoutTabSerum .refill_info h4 {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 300;
+        letter-spacing: 0.22px
+    }
+
+    .withoutTabSerum .refill_info h5 {
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .withoutTabSerum .refill_info ul li {
+        font-size: 10px;
+    }
+
+    /* .withoutTabSerum .step_block .step_header h3 {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 600;
+        font-family: 'Poppins';
+    } */
+
+    .btn.btn-atc {
+        font-size: 20px !important;
+        line-height: 20px;
+    }
+
+    .section__header .heading {
+        font-size: 28px !important;
+        line-height: 38px !important;
+    }
+
+    .see_slider_wrapper {
+        padding-bottom: 30px !important;
+    }
+
+    .u_ftr_item p {
+        font-size: 10px !important;
+    }
+
+    .mi_refill .result_content p {
+        padding-bottom: 10px;
+        font-size: 10px !important;
+    }
+
+    .supply-detail .supply_steps:nth-child(2) .step_counter::before {
+        display: none;
+    }
+
+    .choose_serum .c_s_shipping .c_s_bx {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .choose_serum .c_s_shipping .c_s_bx img {
+        margin-right: 5px;
+    }
+
+    .choose_serum .c_s_bx p {
+        text-align: left;
+    }
+
+    .unique_c_item .u_item_wrapper .u_ftr {
+        gap: 10px;
+    }
+
+    .mi_refill .trusted_cl {
+        background: linear-gradient(180deg, rgba(199, 231, 220, 0.91) -98.65%, #FFFFFF 69.3%);
+    }
+}
+
+
+@media(max-width:490px) {
+    .mi_refill .supply_steps .step_block .serum_prd {
+        padding: 10px 10px 55px 10px;
+    }
+}

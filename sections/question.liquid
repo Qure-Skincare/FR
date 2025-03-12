@@ -1,0 +1,85 @@
+{% style %}
+#contact_us-{{ section.id }} .section_header a {
+    text-decoration: underline;
+    color: #000;
+}
+{% endstyle %}
+
+<!-- -- contact us start -- -->
+<div class="contact_us_bl bg-white text-dark" id="contact_us-{{ section.id }}">
+  <div class="container">
+    <div class="contact_us_wrap">
+      <div class="section_header text-md-center mw-630">
+        {% if section.settings.heading != blank %}
+          <h2 class="title-md paddingB">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          {{ section.settings.text }}
+        {% endif %}
+      </div>
+      <div class="contact_btns">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'chat' %}
+              <a href="javascript:;" class="cu_btn" onclick="openChat()">
+                <img src="{{ 'chat_icon.svg' | asset_url }}" alt="">
+                <p>Chat With Us</p>
+              </a>
+            {% when 'call' %}
+              <a href="tel:+1 (240) 702-2228" class="cu_btn">
+                <img src="{{ 'call_icon.svg' | asset_url }}" alt="">
+                <p>Call Us</p>
+              </a>
+            {% when 'email' %}
+              <a href="mailto:support@qureskincare.com" class="cu_btn">
+                <img src="{{ 'email_icon.svg' | asset_url }}" alt="">
+                <p>Email Us</p>
+              </a>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -- contact us end -- -->
+
+{% schema %}
+{
+  "name": "t:sections.have_ques.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:common.text.label"
+    }
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "chat",
+      "name": "t:common.name.chat",
+      "limit": 1
+    },
+    {
+      "type": "call",
+      "name": "t:common.name.call",
+      "limit": 1
+    },
+    {
+      "type": "email",
+      "name": "t:common.name.email",
+      "limit": 1
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.have_ques.label"
+    }
+  ]
+}
+{% endschema %}

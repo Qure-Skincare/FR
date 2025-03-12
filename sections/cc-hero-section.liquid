@@ -1,0 +1,1115 @@
+{% assign cc_handle = cart.attributes['cc-creator-handle'] %}
+{% assign cc_creator = metaobjects.creator[cc_handle] %}
+<!-- Block Body -->
+{%- style -%}
+        #hero-section {
+          display: flex;
+          min-height: 90vh;
+          color: {{section.settings.textcolor}};
+          width: 100%;
+          flex-direction: row;
+          background-size: cover;
+          background-position: center;
+          background-color: {{section.settings.background}};
+          border-radius: {{ section.settings.container_border_radius }}px;
+        }
+
+      #super-background {
+        background-color: {{section.settings.section_background}};
+        padding: {{section.settings.section_padding_top_bottom}}px {{section.settings.section_padding_left_right}}px;
+      }
+
+      .responsive-flex {
+        display: flex;
+        flex-direction: row;
+      }
+
+        #hero-image {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;  /* Prevents overflow */
+          max-width: 100%;  /* Ensures container doesn't exceed viewport width */
+          box-sizing: border-box;  /* Includes padding in width calculations */
+        }
+
+        #image-width {
+          max-width: 500px;
+      max-height: 600px;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .hero-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 20px;
+          padding-left:{{section.settings.padding_left}}px;
+          max-width: 1100px;
+          box-sizing: border-box;
+      background-color: {{section.settings.background}};
+        }
+
+        .hero-header-copy {
+          font-size: {{section.settings.heading_text_size}}px;
+          max-width: 750px;
+          line-height: 1.05em;
+          margin: 0;
+      margin-top:1.5vh;
+      margin-bottom:{{ section.settings.heading_margin_bottom }}px;
+        }
+
+        #star-container {
+          display: flex;
+          flex-direction: row;
+          margin-right: 8px;
+
+        }
+
+        .product-card-featured {
+          display: flex;
+          width: 100%;
+          min-width:350px;
+          flex-direction: row;
+          gap: 30px;
+          text-align: left;
+          padding: 10px;
+          border: 0px solid #a1a1a1;
+          border-radius: {{section.settings.product_corner_radius}}px;
+          background-color: {{section.settings.product_background}};
+          justify-content: flex-start;
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
+          border: {{section.settings.product_border_width}}px solid {{section.settings.product_border_color}};
+        }
+
+      .product-card-grid {
+        display: flex;
+        height: 280px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        padding-bottom:15px;
+        border: {{section.settings.product_border_width}}px solid {{section.settings.product_border_color}};
+          border-radius: {{section.settings.product_corner_radius}}px;
+          background-color: {{section.settings.product_background}};
+        justify-content: flex-start;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
+      }
+
+        .product-info {
+          display: flex;
+          flex-direction: column;
+           justify-content: center;
+          color: {{section.settings.product_text_color}};
+        }
+
+        .featured-product-image {
+  width: 120px;  /* fixed width */
+  height: 120px;  /* automatically adjusts to maintain aspect ratio */
+  margin:auto;
+  display: block; /* or inline-block, to ensure predictable sizing in your layout */
+          border-radius: {{ section.settings.product_corner_radius }}px;
+        }
+
+  .product-image-grid {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 150px;
+    border-radius: {{ section.settings.product_corner_radius }}px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1.2; /* Sets the width to height ratio as 1:1 */
+  }
+
+
+        #grid-container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+          max-width: 1200px;
+          margin: 0;
+          margin-top: 2.2vh auto;
+      margin-top:20px;
+        }
+
+          #grid-container-grid {
+       display: grid;
+        grid-template-columns: repeat({{ section.settings.number_of_recommendations }}, 1fr);
+        gap: 10px;
+        max-width: 1200px;
+        margin: 0;
+        margin-top: 2.2vh auto;
+    margin-top:20px;
+        }
+
+        #star-text {
+          font-size: {{section.settings.star_text_size}}px;
+          font-weight:600;
+          padding-top:{{section.settings.star_adjustment_spacing}}px;
+        }
+
+        .star {
+          width: {{ section.settings.star_size }}px;
+          height: {{ section.settings.star_size }}px;
+        }
+
+        .hide-on-mobile {
+          display: flex !important;
+        }
+
+        .hide-on-desktop {
+          display: none !important;
+        }
+
+        .section-hero-padding {
+          padding-top: {{ section.settings.padding_top }}px;
+          padding-bottom: {{ section.settings.padding_bottom }}px;
+
+        }
+
+        .unique-video-slider {
+          position: relative;
+          overflow-x: hidden;
+          width: 100%; /* Full viewport width */
+        }
+
+        .unique-video-slider::before,
+        .unique-video-slider::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 25px; /* Width of the gradient edges */
+          z-index: 1;
+          pointer-events: none; /* Ensure it doesn't block interactions */
+        }
+
+        .unique-video-slider::after {
+           width: 100px; /* Width of the gradient edges */
+        }
+
+        .unique-video-slider::before {
+              width: 30px; /* Width of the gradient edges */
+          }
+
+        .unique-video-slider::before {
+          left: 0;
+          background: linear-gradient(to right, {{section.settings.background}}, rgba(243, 230, 202, 0));
+        }
+
+        .unique-video-slider::after {
+          right: 0;
+          background: linear-gradient(to left, {{section.settings.background}}, rgba(243, 230, 202, 0));
+        }
+
+        .unique-video-slider .unique-testimonial__image {
+          height: 600px;
+          width: 400px;
+          overflow: hidden;
+          border-radius: {{section.settings.video_corner_radius}}px;
+          position: relative;
+        }
+
+        .unique-video-slider video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: {{section.settings.video_corner_radius}}px;
+          border: {{section.settings.border_width}}px solid {{section.settings.border_color}};
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .unique-video-slider .unique-testimonial__image.media-wrapper {
+          margin-right: 0;
+        }
+
+        .unique-video-slider-item {
+          margin-left: 40px;
+          margin-right: 0px;
+          flex-shrink: 0;
+        }
+
+        .unique-video-slider-list {
+          display: flex;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+        }
+
+        .unique-video-slider-list::-webkit-scrollbar {
+          display: none;
+        }
+
+        @media (max-width: 1100px) {
+          .unique-video-slider .unique-testimonial__image {
+            margin-left: 0;
+            height: 300px;
+            width: 180px;
+          }
+
+            #super-background {
+        background-color: {{section.settings.section_background}};
+        padding: {{section.settings.section_padding_top_bottom_mobile}}px {{section.settings.section_padding_left_right_mobile}}px;
+      }
+
+          .unique-video-slider {
+            position: relative;
+            overflow-x: hidden;
+            width: 100%; /* Full viewport width */
+            margin-left: calc(-50vw + 50%); /* Aligns to the viewport edges */
+          }
+
+            .product-card-featured {
+            }
+
+                .product-card-grid {
+        height: 300px;
+      }
+
+          .unique-video-slider-item {
+          margin-left: 20px;
+        }
+
+          .unique-video-slider::before {
+            width: 0px; /* Adjust the gradient width for smaller screens */
+          }
+
+          .unique-video-slider::after {
+            width: 50px; /* Adjust the gradient width for smaller screens */
+          }
+
+          #hero-section {
+            flex-direction: column;
+            height: auto;
+          }
+
+            .featured-product-image {
+          max-width: 75px;
+        }
+
+          .hide-on-desktop {
+            display: flex !important;
+          }
+
+          .hide-on-mobile {
+            display: none !important;
+          }
+
+          .hero-content {
+            order: 1;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: center;
+          }
+
+          #hero-image {
+            order: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh; /* This ensures full viewport height */
+            padding: 0 0px; /* Replace the padding-right with symmetric padding */
+            text-align: center;
+            margin: 0; /* Reset any margins */
+          }
+
+          .hero-header-copy {
+            font-size: 2.0em;
+      margin-bottom:4vh;
+          }
+
+          #image-width {
+            width: 100%;
+          }
+
+        .responsive-flex {
+          flex-direction: column;
+        }
+
+          #grid-container {
+            grid-template-columns: repeat(1, 1fr);
+          }
+
+          #grid-container-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          #star-text {
+            font-size: 0.75em;
+          }
+
+          .star {
+            width: 16px;
+            height: 16px;
+          }
+        }
+{%- endstyle -%}
+<div id="super-background">
+  <div id="hero-section" class="section-hero-padding">
+    <!-- Right/Top Panel (Now First) -->
+    <div class="hero-content">
+      <div style="display: flex;align-items: center; margin-bottom: {{ section.settings.eyebrow_margin_bottom }}px; background-color: {{ section.settings.eyebrowbackground }}; border-radius: {{ section.settings.eyebrow_corner_radius }}px; padding: 8px 14px; border: {{section.settings.eyebrow_border_width}}px solid {{section.settings.eyebrowbordercolor}};">
+        <div style="font-size: {{ section.settings.eyebrow_text_size }}px; color: {{ section.settings.eyebrowtextcolor }};display: flex;flex-direction:row;align-items: center;gap:10px;">
+          {% if metaobject['cc-creator-profile-picture'] %}
+            <div
+              style="
+                border-radius: 100%;
+                height: 30px;
+                width: 30px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="{{ metaobject.cc-creator-profile-picture }}"
+                alt="Creator Profile"
+                style="height: 100%; width: 100%; object-fit: cover;"
+              >
+            </div>
+          {% endif %}
+          {{- section.settings.eyebrowcopy -}}
+        </div>
+      </div>
+      {%- if section.settings.title != blank -%}
+        <{{ section.settings.heading_size }}
+          class="hero-header-copy hide-on-mobile"
+          style="font-weight:500 !important;"
+        >
+          {{ section.settings.title }}
+        </{{ section.settings.heading_size }}>
+      {%- endif -%}
+      {% if section.settings.show_stars %}
+        <div style="display: flex; flex-direction: row; align-items: center; margin-top:5px;margin-bottom:{{ section.settings.star_margin_bottom }}px;">
+          <div id="star-container">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" fill="{{ section.settings.star_color }}"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" fill="{{ section.settings.star_color }}"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" fill="{{ section.settings.star_color }}"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" fill="{{ section.settings.star_color }}"/>
+            </svg>
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" fill="{{ section.settings.star_color }}"/>
+            </svg>
+          </div>
+          <p id="star-text">{{ section.settings.stars }}</p>
+        </div>
+      {% endif %}
+      <p style="font-size: {{ section.settings.description_text_size }}px; margin: 10px 0; max-width:650px; font-style:italic;">
+        {% assign drop_count = metaobject.data.value['cc-creator-drops'].size | minus: 1 %}
+        "Get a {{ metaobject['cc-collab-discount-amount'].value | round }}% discount by shopping from my favorites.
+        {%- if metaobject.data.value['cc-creator-drops'] -%}
+          {{ metaobject.data.value['cc-creator-drops'][drop_count]['cc-creator-drop-description'] }}" —
+          {{ metaobject['cc-creator-first-name'] }}
+        {%- endif %}
+      </p>
+
+      <!-- Updated Products -->
+      {% if section.settings.show_creator_products
+        and metaobject.data.value['cc-creator-drops'][0]['cc-creator-drop-products']
+        and metaobject.data.value['cc-creator-drops'][0]['cc-creator-drop-products'].size < 2
+      %}
+        <div id="grid-container">
+          {% for product in metaobject.data.value['cc-creator-drops'][0]['cc-creator-drop-products'] %}
+            <div class="product-card-featured">
+              <img
+                src="{{product.images[0].src}}"
+                alt="Product 1"
+                class="featured-product-image"
+              >
+              <div class="product-info">
+                <p style="font-size: 0.8em; margin: 0 10px 10px 0; -webkit-line-clamp: 3; line-clamp: 3;">
+                  {{ product.title }}
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: flex-start; gap: 10px;">
+                  <p style="font-size: 0.8em; margin: 0 0 10px 0; font-weight: 600;">
+                    $
+                    {{- product.variants[0].price | divided_by: 1.00 | times: section.settings.discount | append: '0' }}
+                  </p>
+                  {% if section.settings.show_compare == 'true' %}
+                    <p style="font-size: 0.8em; margin: 0 0 10px 0; font-weight: 400; text-decoration: line-through;">
+                      $
+                      {{- product.variants[0].price | divided_by: 1.00 | append: '.00' }}
+                    </p>
+                  {% endif %}
+                  <p style="font-size: 0.6em; margin: 2px 10px 2px 0px; font-weight: 400;">
+                    (With {{ metaobject['cc-creator-first-name'] }}'s' Code)
+                  </p>
+                </div>
+                <a
+                  data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1"
+                  onclick="setEventProductHandler('{{ product.handle | escape }}')"
+                  style="text-decoration: none;background-color: {{section.settings.product_cta_background}}; font-weight:600; color: {{ section.settings.product_cta_text_color }}; padding: 8px 12px; text-align: center; font-size: 0.7em; cursor: pointer; border-radius: {{ section.settings.product_cta_corner_radius }}px; border: {{section.settings.product_cta_border_width}}px solid {{section.settings.product_cta_border_color}};"
+                >
+                  {{ section.settings.productcta }}
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+      {% elsif section.settings.show_creator_products
+        and metaobject.data.value['cc-creator-drops'][0]['cc-creator-drop-products']
+      %}
+        <div id="grid-container-grid">
+          {% assign productcounter = 0 %}
+          {% for product in metaobject.data.value['cc-creator-drops'][0]['cc-creator-drop-products'] %}
+            {% if productcounter < section.settings.number_of_recommendations %}
+              <div class="product-card-grid">
+                <img
+                  src="{{product.images[0].src}}"
+                  alt="Product 1"
+                  class="product-image-grid"
+                >
+                <p
+                  style="
+                    font-size: 0.7em;
+                    margin: 0 0 10px 0;
+                    color: {{ section.settings.product_text_color }};
+                    position: relative;
+                    line-height: 1.2em;
+                    height: 3.5em;
+                    overflow: hidden;
+                  "
+                >
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      box-shadow: inset 0px -4px 8px {{ section.settings.product_background }}; /* Apply inner shadow to the span */
+                    "
+                  ></span>
+                  {{ product.title }}
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 10px;">
+                  <p style="font-size: 0.8em; margin: 0 0 10px 0; color: {{section.settings.product_text_color}}; font-weight: 600;">
+                    ${{ product.variants[0].price | times: section.settings.discount | round: 0 }}
+                  </p>
+                  {% if section.settings.show_compare == 'true' %}
+                    <p style="font-size: 0.8em; margin: 0 0 10px 0; color: {{section.settings.product_text_color}}; font-weight: 400; text-decoration: line-through;">
+                      ${{ product.variants[0].price | round: 0 }}
+                    </p>
+                  {% endif %}
+                </div>
+                <a
+                  data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1"
+                  onclick="setEventProductHandler('{{ product.handle | escape }}')"
+                  style="text-decoration: none;background-color: {{section.settings.product_cta_background}}; font-weight:600; color: {{ section.settings.product_cta_text_color }}; padding: 8px 12px; text-align: center; font-size: 0.7em; cursor: pointer; border-radius: {{ section.settings.product_cta_corner_radius }}px; border: {{section.settings.product_cta_border_width}}px solid {{section.settings.product_cta_border_color}};"
+                >
+                  {{ section.settings.productcta }}
+                </a>
+              </div>
+              {% assign productcounter = productcounter | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% else %}
+        {{ section.settings['featured-product'] }}
+      {% endif %}
+    </div>
+
+    <!-- Left/Bottom Panel (Now Second) -->
+    <div id="hero-image">
+      {%- if section.settings.title != blank -%}
+        <{{ section.settings.heading_size }}
+          class="hero-header-copy hide-on-desktop"
+          style="text-align: center; font-weight:500px;"
+        >
+          {{ section.settings.title }}
+        </{{ section.settings.heading_size }}>
+      {%- endif -%}
+
+      <!-- Video Slider -->
+      <div class="unique-video-slider">
+        <div class="unique-testimonials">
+          {%- assign block_count = section.blocks.size -%}
+          {%- if block_count > 0 -%}
+            {% assign counter = 0 %}
+            <testimonials-component
+              data-slider="{% if block_count > 1 %}true{% else %}false{% endif %}"
+              data-autorotate="{{ section.settings.autorotate }}"
+              data-autorotate-speed="{{ section.settings.autorotate_speed | times: 1000 }}"
+              style="--block-count: {{ block_count | minus: 1 }};"
+            >
+              <div class="unique-testimonial__list-wrapper">
+                <div class="unique-video-slider-list" id="Testimonials-{{ section.id }}">
+                  {% for drop in metaobject.data.value['cc-creator-drops'] %}
+                    {% for product in metaobject.data.value['cc-creator-drops'][forloop.index0]['cc-creator-drop-products'] %}
+                      {% for media in product.enhancement.media %}
+                        <div class="unique-video-slider-item">
+                          <div class="unique-testimonial__image media-wrapper media-wrapper--small">
+                            {% if media.mimeType contains 'video' %}
+                              <video autoplay loop muted playsinline controls>
+                                <source src="{{media.url}}" type="video/mp4">
+                              </video>
+                            {% else %}
+                              <img src="{{media.url}}">
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      {% endfor %}
+                    {% endfor %}
+                  {% endfor %}
+
+                  {%- for block in section.blocks -%}
+                    <div
+                      class="unique-video-slider-item{% if section.blocks.first == true or block_count == 1 %} is-selected{% endif %}"
+                      {{ block.shopify_attributes }}
+                    >
+                      <div class="unique-testimonial__image media-wrapper media-wrapper--small">
+                        {% if block.settings.video != blank and counter == 0 %}
+                          {{
+                            block.settings.video
+                            | video_tag:
+                              image_size: '3840px',
+                              autoplay: true,
+                              loop: true,
+                              controls: true,
+                              muted: true,
+                              playsinline: true
+                          }}
+
+                        {%- else -%}
+                          {{
+                            block.settings.video
+                            | video_tag:
+                              image_size: '3840px',
+                              autoplay: false,
+                              loop: true,
+                              controls: true,
+                              muted: true,
+                              playsinline: true
+                          }}
+                        {%- endif -%}
+                      </div>
+                    </div>
+                    {% assign counter = counter | plus: 1 %}
+                  {%- endfor -%}
+                </div>
+              </div>
+            </testimonials-component>
+          {%- endif -%}
+        </div>
+      </div>
+      <!-- End of Video Slider -->
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "CC Hero Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+  "type": "header",
+  "content": "Header Copy Settings",
+  "info": "Edit settings for the main header content"
+},
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Shop with {{ metaobject.cc-creator.first-name }}",
+      "label": "Hero title"
+    },
+          {
+      "type": "range",
+      "id": "heading_text_size",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Exact Size",
+      "default": 42
+    },
+       {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "h1"
+        },
+        {
+          "value": "h1",
+          "label": "h2"
+        },
+        {
+          "value": "h3",
+          "label": "h3"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+                   {
+      "type": "range",
+      "id": "description_text_size",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Description Exact Size",
+      "default": 18
+    },
+           {
+      "type": "inline_richtext",
+      "id": "eyebrowcopy",
+      "default": "Recommended by {{ metaobject.cc-creator-first-name }}",
+      "label": "Eyebrow Copy"
+    },
+                     {
+      "type": "range",
+      "id": "eyebrow_text_size",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Eyebrow Text Size",
+      "default": 18
+    },
+                  {
+      "type": "range",
+      "id": "eyebrow_corner_radius",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Eyebrow Corner Radius",
+      "default": 0
+    },
+           {
+      "type": "color",
+      "id": "eyebrowbackground",
+      "label": "Eyebrow Background Color",
+             "default":"#000000"
+    },
+    {
+      "type": "color",
+      "id": "eyebrowtextcolor",
+      "label": "Eyebrow Text Color",
+      "default":"#ffffff"
+    },
+           {
+      "type": "color",
+      "id": "eyebrowbordercolor",
+      "label": "Eyebrow Border Color"
+    },
+                {
+      "type": "range",
+      "id": "eyebrow_border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Eyebrow Border Width",
+      "default": 0
+    },
+        {
+      "type": "inline_richtext",
+      "id": "stars",
+      "default": "Trusted by 10,000 others",
+      "label": "Star Copy"
+    },
+                  {
+      "type": "checkbox",
+      "id": "show_stars",
+      "label": "Show Stars",
+      "default":true
+    },
+                        {
+      "type": "range",
+      "id": "star_text_size",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Star Text Size",
+      "default": 12
+    },
+                                {
+      "type": "range",
+      "id": "star_size",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Star Size",
+      "default": 15
+    },
+                            {
+      "type": "range",
+      "id": "star_adjustment_spacing",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Star Adjustment Spacing",
+      "default": 0
+    },
+              {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star Color",
+                "default":"#000000"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default":"#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "textcolor",
+      "label": "Text Color",
+      "default":"#000000"
+    },
+            {
+      "type": "range",
+      "id": "eyebrow_margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Eyebrow Margin Bottom",
+      "default": 10
+    },
+              {
+      "type": "range",
+      "id": "heading_margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Margin Bottom",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "star_margin_bottom",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Star Margin Bottom",
+      "default": 5
+    },
+    {
+  "type": "header",
+  "content": "Product Settings",
+  "info": "Edit settings for the products on the page"
+},
+                    {
+      "type": "checkbox",
+      "id": "show_creator_products",
+      "label": "Show Recent Recommendations",
+      "default":true
+    },
+             {
+      "type": "range",
+      "id": "number_of_recommendations",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "label": "Number of Affiliate Recommendations",
+      "default": 3
+    },
+          {
+      "type": "range",
+      "id": "product_corner_radius",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Product Corner Radius",
+      "default": 0
+    },
+              {
+      "type": "range",
+      "id": "product_cta_corner_radius",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Product CTA Corner Radius",
+      "default": 0
+    },
+       {
+      "type": "inline_richtext",
+      "id": "productcta",
+      "default": "Get 20% Off",
+      "label": "Product CTA Copy"
+    },
+    {
+  "type": "liquid",
+  "id": "featured-product",
+  "label": "Liquid to render featured product",
+  "default": "{% render ‘cc-serums-months-form’ with section: section %}"
+},
+          {
+      "type": "inline_richtext",
+      "id": "product_url",
+      "default": "https://productlink.com",
+      "label": "Featured Product URL"
+    },
+               {
+      "type": "number",
+      "id": "discount",
+      "default": 1,
+      "label": "Display Price (Ratio to Full Price)"
+    },
+               {
+      "type": "number",
+      "id": "full_price",
+      "label": "Full Price Amount"
+    },
+      {
+      "type": "select",
+      "id": "show_compare",
+      "options": [
+        {
+          "value": "true",
+          "label": "Yes"
+        },
+        {
+          "value": "false",
+          "label": "No"
+        }
+      ],
+      "default": "false",
+      "label": "Show Compare at Price"
+    },
+           {
+      "type": "color",
+      "id": "product_background",
+      "label": "Product Background Color",
+      "default":"#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "product_text_color",
+      "label": "Product Text Color",
+      "default":"#000000"
+    },
+           {
+      "type": "color",
+      "id": "product_border_color",
+      "label": "Product Border Color"
+    },
+               {
+      "type": "color",
+      "id": "product_cta_background",
+      "label": "Product CTA Background Color",
+      "default":"#000000"
+    },
+    {
+      "type": "color",
+      "id": "product_cta_text_color",
+      "label": "Product CTA Text Color",
+         "default":"#ffffff"
+    },
+           {
+      "type": "color",
+      "id": "product_cta_border_color",
+      "label": "Product CTA Border Color"
+    },
+                    {
+      "type": "range",
+      "id": "product_border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Product Border Width",
+      "default": 0
+    },
+                    {
+      "type": "range",
+      "id": "product_cta_border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Product CTA Border Width",
+      "default": 0
+    },
+    {
+  "type": "header",
+  "content": "Video Settings",
+  "info": "Edit settings for the videos on the page"
+},
+        {
+      "type": "color",
+      "id": "border_color",
+      "label": "Video Border Color",
+          "default":"#000000"
+    },
+           {
+      "type": "number",
+      "id": "border_width",
+      "label": "Video Border Width",
+        "default":0
+    },
+          {
+      "type": "range",
+      "id": "video_corner_radius",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Video Corner Radius",
+      "default": 0
+    },
+    {
+  "type": "header",
+  "content": "Section Settings",
+  "info": "Edit settings for the general section"
+},
+                {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section Super Backgroun",
+          "default":"#000000"
+    },
+                {
+      "type": "range",
+      "id": "section_padding_left_right_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Section Left/Right Padding Mobile",
+      "default": 0
+    },
+                {
+      "type": "range",
+      "id": "section_padding_top_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Section Top/Bottom Padding Mobile",
+      "default": 0
+    },
+            {
+      "type": "range",
+      "id": "section_padding_left_right",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Section Left/Right Padding",
+      "default": 0
+    },
+                {
+      "type": "range",
+      "id": "section_padding_top_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Section Top/Bottom Padding",
+      "default": 0
+    },
+        {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Left",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    },
+        {
+      "type": "range",
+      "id": "container_border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Container Border Radius",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "CC Hero Section",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}

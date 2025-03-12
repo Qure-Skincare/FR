@@ -1,0 +1,384 @@
+<!-- -- unique customizable start -- -->
+<div class="unique_c section" id="serum_guide_section">
+    <div class="container">
+        <div class="section_header text-start text-md-center mb-4">
+            <h2 class="title-lg paddingB">
+                {{ section.settings.heading }}
+            </h2>
+            {{ section.settings.subheading }}
+        </div>
+        <div class="unique_grid">
+            {% assign random_number='now' | date: "%s" | modulo: 100 | plus: 1 %}
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'Serum' %}
+                        <div class="unique_grid_col">
+                            <div class="unique_c_item">
+                                <img width="86" src="{{ block.settings.pd_img | img_url: '250x' }}" alt="{{ block.settings.pd_img.alt }}">
+                                <div class="u_item_wrapper {{ block.settings.background }}">
+                                    <div class="u_item_header">
+                                        {% if block.settings.serum_type != blank %}
+                                        <h3>{{ block.settings.serum_type }}</h3>
+                                        {% endif %}
+                                        {% if block.settings.name != blank %}
+                                        <p>{{ block.settings.name }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="u_item_wrapper {{ block.settings.background }}">
+                                    <div class="u_ftr">
+                                        <div class="u_ftr_item">
+                                            {% if block.settings.icon1 %}
+                                            <img src="{{ block.settings.icon1 | img_url: '40x' }}" alt="">
+                                            {% endif %}
+                                            <p>{{ block.settings.benefit1 }}</p>
+                                        </div>
+                                        <div class="u_ftr_item">
+                                            {% if block.settings.icon2 %}
+                                            <img src="{{ block.settings.icon2 | img_url: '40x' }}" alt="">
+                                            {% endif %}
+                                            <p>{{ block.settings.benefit2 }}</p>
+                                        </div>
+                                        <div class="u_ftr_item">
+                                            {% if block.settings.icon3 %}
+                                            <img src="{{ block.settings.icon3 | img_url: '40x' }}" alt="">
+                                            {% endif %}
+                                            <p>{{ block.settings.benefit3 }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordion-{{ random_number }}">
+                                    {% if block.settings.title1 != blank %}
+                                    <div class="accordion-item u_item_question {{ block.settings.background }}">
+                                        <h2 class="accordion-header u_item_expandable {{ block.settings.background }}">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#u_item_question_1{{ block.id }}" aria-expanded="false"
+                                                aria-controls="u_item_question_1{{ block.id }}">
+                                                <div class="containers">{{ block.settings.title1 }}</div>
+                                            </button>
+                                        </h2>
+                                        <div id="u_item_question_1{{ block.id }}" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion-{{ random_number }}">
+                                            <div class="accordion-body">
+                                                <div class="containers">
+                                                {{ block.settings.drop_txt1 }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    {% if block.settings.title2 != blank %}
+                                    <div class="accordion-item u_item_question {{ block.settings.background }}">
+                                        <h2 class="accordion-header u_item_expandable {{ block.settings.background }}">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#u_item_question_3{{ block.id }}"
+                                                aria-expanded="false" aria-controls="u_item_question_3{{ block.id }}">
+                                                <div class="containers">{{ block.settings.title2 }}</div>
+                                            </button>
+                                        </h2>
+                                        <div id="u_item_question_3{{ block.id }}" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion-{{ random_number }}">
+                                            <div class="accordion-body">
+                                                <div class="containers">
+                                                    {{ block.settings.drop_txt2 }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    {% if block.settings.title3 != blank %}
+                                    <div class="accordion-item u_item_question {{ block.settings.background }}">
+                                        <h2 class="accordion-header u_item_expandable {{ block.settings.background }}">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#u_item_question_3{{ block.id }}"
+                                                aria-expanded="false" aria-controls="u_item_question_3{{ block.id }}">
+                                                <div class="containers">{{ block.settings.title3 }}</div>
+                                            </button>
+                                        </h2>
+                                        <div id="u_item_question_3{{ block.id }}" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion-{{ random_number }}">
+                                            <div class="accordion-body">
+                                                <div class="containers">
+                                                    {{ block.settings.drop_txt3 }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.stars != blank %}
+                                <div class="unique_review">
+                                    <div class="star-gp">
+                                        <img src="{{ block.settings.stars | img_url: '98x' }}" alt="">
+                                    </div>
+                                    <div class="u_review">
+                                        <p>{{ block.settings.review }}</p>
+                                    </div>
+                                    <div class="u_verified">
+                                        <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                        <p><strong>{{ block.settings.client }}</strong> - {{ block.settings.place }}</p>
+                                    </div>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% when 'or' %}
+                        <div class="unique_grid_col">
+                            <div class="u_text_only">
+                                <p class="text-center">{{ block.settings.or_txt }}</p>
+                            </div>
+                        </div>
+                    {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+    <!-- -- can't decide start -- -->
+    {% if section.settings.bottom_txt != blank%}
+    <div class="cant_decide section {% if template.suffix == 'sunil-mi-landing-special2-reorder' %} test-reorder-landing {% endif %}">
+        <div class="container">
+            <div class="section_header text-center">
+                <h3>{{ section.settings.bottom_txt }}</h3>
+            </div>
+            <div class="cd_img d-flex justify-content-center">
+                {% if section.settings.desk_img != blank %}
+                <img src="{{ section.settings.desk_img | img_url: 'master' }}" alt="" class="img-fluid d-none d-md-block">
+                {% endif %}
+                {% if section.settings.mob_img != blank %}
+                <img src="{{ section.settings.mob_img | img_url: 'master' }}" alt="" class="img-fluid d-block d-md-none">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <!-- -- can't decide end -- -->
+</div>
+<!-- -- unique customizable end -- -->
+
+{% schema %}
+{
+    "name": "t:sections.serum_ingredients.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "richtext",
+            "id": "subheading",
+            "label": "t:common.subheading.label"
+        },
+        {
+            "type": "header",
+            "content": "Bottom Content"
+        },
+        {
+            "type": "text",
+            "id": "bottom_txt",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "desk_img",
+            "label": "t:common.image.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "mob_img",
+            "label": "t:commonMob.image.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Serum",
+            "name": "Product",
+            "limit": 2,
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "background",
+                    "label": "t:common.background.label",
+                    "options": [
+                        {
+                            "value": "bg-grey",
+                            "label": "Grey"
+                        },
+                        {
+                            "value": "bg-yellow",
+                            "label": "t:common.background.yellow"
+                        }
+                    ]
+                },
+                {
+                    "type": "image_picker",
+                    "id": "pd_img",
+                    "label": "t:common.product.image.label"
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "t:common.product.title.label"
+                },
+                {
+                    "type": "text",
+                    "id": "serum_type",
+                    "label": "t:common.product.type.label"
+                },
+                {
+                    "type": "header",
+                    "content": "t:product.benefits.label"
+                },
+                {
+                    "type": "text",
+                    "id": "benefit1",
+                    "label": "t:product.benefits.title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon1",
+                    "label": "t:common.icon.label"
+                },
+                {
+                    "type": "text",
+                    "id": "benefit2",
+                    "label": "t:product.benefits.title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon2",
+                    "label": "t:common.icon.label"
+                },
+                {
+                    "type": "text",
+                    "id": "benefit3",
+                    "label": "t:product.benefits.title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon3",
+                    "label": "t:common.icon.label"
+                },
+                {
+                    "type": "header",
+                    "content": "Dropdown Content"
+                },
+                {
+                    "type": "text",
+                    "id": "title1",
+                    "label": "t:common.title.label"
+                },
+                {
+                    "type": "richtext",
+                    "id": "drop_txt1",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "text",
+                    "id": "title2",
+                    "label": "t:common.title.label"
+                },
+                {
+                    "type": "richtext",
+                    "id": "drop_txt2",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "text",
+                    "id": "title3",
+                    "label": "t:common.title.label"
+                },
+                {
+                    "type": "richtext",
+                    "id": "drop_txt3",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "stars",
+                    "label": "t:common.rating.label"
+                },
+                {
+                    "type": "textarea",
+                    "id": "review",
+                    "label": "t:review.heading.label"
+                },
+                {
+                    "type": "text",
+                    "id": "client",
+                    "label": "t:common.client.label"
+                },
+                {
+                    "type": "text",
+                    "id": "place",
+                    "label": "t:common.client.country.label"
+                }
+            ]
+        },
+        {
+            "type": "or",
+            "name": "t:common.serum.or",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "or_txt",
+                    "label": "t:common.text.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.serum_ingredients.label",
+            "settings": {
+                "heading": "Science-backed Micro-Infusion serums",
+                "subheading": "<p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
+                "bottom_txt": "Can't decide?"
+            },
+            "blocks": [
+                {
+                    "type": "Serum",
+                    "settings": {
+                        "background": "bg-yellow",
+                        "name": "Rejuvenating Serum",
+                        "pd_img": "shopify:\/\/shop_images\/u_serum_1.webp",
+                        "serum_type": "Dark Spots & Uneven Skin Tone",
+                        "benefit1": "Brightens  <br>discolouration",
+                        "icon1": "shopify:\/\/shop_images\/brightens-even-skin-tone_1.png",
+                        "benefit2": "Fades <br> dark spots",
+                        "icon2": "shopify:\/\/shop_images\/unique_reduce_line.svg",
+                        "benefit3": "Promotes even<br>  skin tone",
+                        "icon3": "shopify:\/\/shop_images\/boosts-hydration-02_1_071958b6-9b9b-428b-bd41-944b7590d5bd.svg",
+                        "title1": "What can it do for your skin",
+                        "drop_txt1": "<p>Reveals a <strong>smoother, brighter looking,</strong> and evenly <strong>radiant complexion</strong> to generate a glow effect. Renewal properties to help fade the appearance of dark spots and restore even-looking, smoother-feeling skin.</p>",
+                        "title2": "All Ingredients"
+                    }
+                },
+                {
+                    "type": "or",
+                    "settings": {
+                        "or_txt": "Or"
+                    }
+                },
+                {
+                    "type": "Serum",
+                    "settings": {
+                        "name": "Hydra-Soothing Serum",
+                        "pd_img": "shopify:\/\/shop_images\/u_serum_2.webp",
+                        "serum_type": "Fine Lines & Wrinkles",
+                        "benefit1": "Reduces the look of  fine<br> lines & wrinkles",
+                        "icon1": "shopify:\/\/shop_images\/unique_plump_fine.svg",
+                        "benefit2": "Helps soothe <br> redness",
+                        "icon2": "shopify:\/\/shop_images\/unique_soothes_5240f732-2b27-4ebf-ba29-be729b08ac71.svg",
+                        "benefit3": "Boosts<br>  hydration",
+                        "icon3": "shopify:\/\/shop_images\/unique_hydrates_drop_b01213be-21ee-4f0a-a64e-8f4bafa5e86d.svg",
+                        "title1": "What can it do for your skin",
+                        "drop_txt1": "<p>Reveals a <strong>smoother, brighter looking,</strong> and evenly <strong>radiant complexion</strong> to generate a glow effect. Renewal properties to help fade the appearance of dark spots and restore even-looking, smoother-feeling skin.</p>",
+                        "title2": "All Ingredients"
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

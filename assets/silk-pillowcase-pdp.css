@@ -1,0 +1,335 @@
+.pillow_imgs{
+    position: relative;
+}
+.pillow_imgs p {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #C7E7DC;
+    padding: 7px 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 67px;
+    width: max-content;
+    border: 3px solid #fff;
+    bottom: -10px;
+    box-shadow: 1.69px 4.056px 2.704px 0px rgba(0, 0, 0, 0.12);
+}
+.silk_pillowcase .section_header .silk_heading {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+.silk_pillowcase .refill_bl .refill_info .ss_list ul li{
+    padding-bottom: 15px;
+}
+.silk_pillowcase .press_bl .ps_item img{
+    height: auto;
+}
+.silk_pillowcase .press_bl{
+    padding: 30px 0;
+}
+.newside_list ul li{
+    display: inline-block;
+}
+.silk_pillowcase .newside_list ul li img {
+    margin-right: 0;
+    min-width: 40px;
+    height: 40px;
+    width: 40px;
+}
+.silk_pillowcase .newside_list ul li{
+    border: none;
+}
+.silk_pillowcase .imageText .it_info{
+    padding-left: 36px;
+}
+.imageText .it_info p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+.love_silk-pillowcases .silk_pillow-benefit {
+    width: 100%;
+    max-width: 213px;
+    position: absolute;
+}
+.love_silk-pillowcases .silk_pillow-benefit.one {
+    top: 0;
+}
+.love_silk-pillowcases .silk_pillow-content {
+    position: relative;
+}
+.love_silk-pillowcases .silk_pillow-content img{
+    max-width: 525px;
+}
+.love_silk-pillowcases .silk_pillow-benefit.two {
+    top: 80%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+.love_silk-pillowcases .silk_pillow-benefit.three {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.silk_pillow-benefit.four {
+    right: 0;
+    top: 0;
+}
+.silk_pillow-benefit.five {
+    top: 80%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+.silk_pillowcase .bs_vs_item .bs_versace span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 33.5px;
+    letter-spacing: 0.112px;
+    text-transform: uppercase;
+}
+.silk_pillowcase .beauty_skincare .bs_item h4 {
+    border: unset;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.silk_pillowcase .beauty_skincare .bs_item .bs_content{
+    height: auto !important;
+    padding: 45px 0 22px;
+}
+/* .silk_pillowcase .beauty_skincare .bs_feature ul li{
+    border: unset;
+}
+.silk_pillowcase .beauty_skincare .correctCircle ul li::after {
+    content: '';
+    background: linear-gradient(90deg, rgba(202, 228, 219, 0.00) 0.35%, #BAEBDA 55%, rgba(202, 228, 219, 0.00) 100%);
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 80%;
+    left: 0;
+}
+.silk_pillowcase .beauty_skincare .incorrectCircle ul li::after{
+    content: '';
+    background: linear-gradient(90deg, rgba(202, 228, 219, 0.00) 0.35%, #808080 55%, rgba(202, 228, 219, 0.00) 100%);
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    left: 0;
+} */
+.what_included .included_content {
+    border: 2px solid #C7E7DC;
+    background: var(--White, #FFF);
+    padding: 28px 50px 18px;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+.what_included .included_content ul li {
+    border: unset;
+    padding: 10px 0 10px 28px;
+}
+/* .what_included .included_content:before {
+    content: 'FREE with every purchase $500 or over';
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #C7E7DC;
+    padding: 9px 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 67px;
+    width: max-content;
+} */
+.what_included .included_content-main{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.what_included .included_content-main a {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.22px;
+}
+.silk_pillowcase .press_bl .ps_item{
+    text-align: center;
+}
+.silk_pillowcase .subscribe_save_wrapper a {
+    font-size: 22px;
+    padding: 13px;
+}
+.silk_pillowcase .payment_method p{
+    font-size: 12px;
+}
+.imageText .it_info .p-head {
+    font-size: 14px;
+}
+.imageText .it_img .nav-pills .nav-link.active {
+    border: 2px solid #C7E7DC;
+    background-color: unset;
+    border-radius: 8px;
+}
+.imageText .it_img .nav-pills .nav-link {
+    border: 2px solid transparent;
+}
+.imageText .it_img .nav-pills .nav-link{
+    padding: 0;
+}
+
+.imageText .it_img .it_img_content {
+    display: grid;
+    grid-template-columns: 1fr 2.9fr;
+    gap: 13px;
+}
+.what_included .pillow_imgs p {
+    bottom: auto;
+    top: 0;
+    border: unset;
+    box-shadow: unset;
+}
+.imageText .it_img .it_img_content img{
+    border-radius: 7px;
+}
+@media(min-width: 768px){
+    .beauty_skincare-new .bs_vs_item {
+        padding: 0;
+        margin: 0 -48px;
+    }
+    .beauty_skincare-new .bs_versace {
+        border: 12px solid #fff;
+        height: 116px;
+        width: 116px;
+    }
+    
+}
+@media(max-width: 991px){
+    .love_silk-pillowcases .silk_pillow-content img{
+        max-width: 100%;
+    }
+    .love_silk-pillowcases .silk_pillow-benefit {
+        max-width: calc(50% - 10px);
+        position: static;
+        padding-top: 10px;
+    }
+    .love_silk-pillowcases .silk_pillow-benefit.two,
+    .love_silk-pillowcases .silk_pillow-benefit.three,
+    .silk_pillow-benefit.five {
+        transform: unset;
+    }
+    .love_silk-pillowcases .silk_pillow-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .love_silk-pillowcases .silk_pillow-benefit p{
+        font-size: 12px;
+    }
+    .love_silk-pillowcases .silk_pillow-benefit.three {
+        order: 5;
+    }
+}
+@media(max-width: 767px){
+    .silk_pillowcase
+    .refill_bl .refill_info .section_header .title-xl{
+        font-size: 34px;
+        line-height: 40px; /* 117.647% */
+        letter-spacing: 0.34px;
+    }
+    .silk_pillowcase .refill_bl .payment_method {
+        flex-direction: column;
+    }
+    .silk_pillowcase .refill_bl .payment_method
+    .pmt_img img{
+        max-width: fit-content;
+    }
+    .silk_pillowcase .imageText .it_info {
+        padding-left: 0;
+        padding-top: 14px;
+    }
+    .silk_pillowcase .beauty_skincare .title-lg{
+        font-size: 28px;
+    }
+    .silk_pillowcase .beauty_skincare ul li {
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        display: flex;
+        align-items: center;
+    }
+    .silk_pillowcase .beauty_skincare .bs_img img {
+        aspect-ratio: unset;
+        object-fit: unset;
+        border-radius: 0;
+    }
+    .silk_pillowcase .beauty_skincare .bs_item{
+        overflow: hidden;
+    }
+    .silk_pillowcase .bs_vs_item .bs_versace span{
+        font-size: 11px;
+    }
+    .silk_pillowcase .beauty_skincare .bs_versace{
+        border: 6px solid #fff;
+    }
+    .silk_pillowcase .beauty_skincare .bs_versace {
+        height: 40px;
+        width: 40px;
+    }
+    .silk_pillowcase .beauty_skincare .bs_item h4 {
+        font-size: 20px;
+    }
+    .silk_pillowcase .beauty_skincare .bs_item .bs_content {
+        padding: 20px 0 15px;
+    }
+    .what_included .included_content-main {
+        padding-top: 25px;
+    }
+    .what_included .included_content:before{
+        font-size: 13px;
+    }
+    .what_included .included_content ul li{
+        font-size: 14px;
+    }
+    .what_included .included_content {
+        padding: 28px 10px 18px 31px;
+    }
+    .silk_pillowcase .refill_bl .refill_info .ss_list ul li {
+        padding-bottom: 5px;
+    }
+    .imageText .it_info .p-head {
+        font-weight: 600;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    .swiper-slide-active .ps_item img {
+        filter: invert(1);
+    }
+    .silk_pillowcase .section_header .silk_heading{
+        padding-bottom: 0;
+    }
+    .pillow_imgs p {
+        font-size: 12px;
+        padding: 3px 16px;
+    }
+    .silk_pillowcase .dot_pagination .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+    }
+    .silk_pillowcase .subscribe_save_wrapper a {
+        font-size: 20px;
+    }
+    .what_included .included_content-main a{
+        font-size: 20px;
+    }
+}

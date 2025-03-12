@@ -1,0 +1,369 @@
+{% assign details_count = 0 %}
+{% assign details = blank %}
+{% assign code = blank %}
+{% assign image = blank %}
+{% assign image_custom = blank %}
+
+{% assign code_count = 0 %}
+{% assign image_count = 0 %}
+{% assign content_count = 0 %}
+
+{%- for block in section.blocks -%}
+    {% case block.type %}
+        {% when 'details' %}
+            {%- assign details_count = details_count | plus: 1 -%}
+        {% when 'code' %}
+            {% assign code = block.settings.code %}
+            {%- assign code_count = code_count | plus: 1 -%}
+        {% when 'image' %}
+            {%- assign image_count = image_count | plus: 1 -%}
+            {% capture image %}
+                {% if block.settings.image != blank %}
+                    <div class="{{ block.settings.classname }}">
+                        <picture>
+                            <source media="(min-width:1920px)" srcset="{{ block.settings.image | img_url: 'master' }}">
+                            <source media="(min-width:1600px)" srcset="{{ block.settings.image | img_url: '1600x' }}">
+                            <source media="(min-width:1100px)" srcset="{{ block.settings.image | img_url: '1100x' }}">
+                            {% if block.settings.image_mobile %}
+                                <source media="(min-width:720px)" srcset="{{ block.settings.image_mobile | img_url: '720x' }}">
+                                <source media="(min-width:540px)" srcset="{{ block.settings.image_mobile | img_url: '540x' }}">
+                            {% endif %}
+                            {% if block.settings.image_mobile %}
+                                <img class="img-fluid pb-3" src="{{ block.settings.image_mobile | img_url: '540x' }}" alt="{{ block.settings.image_mobile.alt | escape }}" width="125" height="173">
+                            {% else %}
+                                <img class="img-fluid pb-3" src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" width="125" height="173">
+                            {% endif %}
+                        </picture>
+                    </div>
+                {% endif %} 
+            {% endcapture %}
+        {% when 'content' %}
+            {%- assign content_count = content_count | plus: 1 -%}
+            {% if block.settings.text contains '[image_mobile]'  %}
+                {% assign image_custom = true %}
+            {% endif %}
+    {% endcase %}
+{% endfor %}
+
+{% if details_count > 0 %}
+    {% capture details %}
+        <div class="accordion accordion-flush mt-3 mt-md-5" id="accordionTechnology"></div>
+        {%- for block in section.blocks -%}
+            {% if block.type == 'details' %}
+                <div class="accordion-item u_item_question bg-grey">
+                    <h2 class="accordion-header u_item_expandable bg-grey">
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#t_item_accordion_{{ forloop.index }}"
+                            aria-expanded="false" aria-controls="t_item_accordion_{{ forloop.index }}">
+                            <div class="containers">{{ block.settings.heading }}</div>
+                        </button>
+                    </h2>
+                    <div id="t_item_accordion_{{ forloop.index }}" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionTechnology">
+                        <div class="accordion-body">
+                            <div class="containers">
+                               {{ block.settings.text }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %} 
+    {% endcapture %}
+    {% capture details_desktop %}<div class="header d-none d-md-block">{{ details }}</div>{% endcapture %}
+    {% capture details_mobile %}<div class="d-block d-md-none text-start">{{ details }}</div>{% endcapture %}
+{% endif %}
+
+{% if code != blank %}
+    {% capture code_desktop %}<div class="header d-none d-md-block code_desktop">{{ code }}</div>{% endcapture %}
+    {% capture code_mobile %}<div class="d-block d-md-none text-start code_mobile">{{ code }}</div>{% endcapture %}
+{% endif %}
+
+{% if image != blank %}
+    {% capture image_mobile %}<div class="d-block d-md-none">{{ image }}</div>{% endcapture %}
+{% endif %}
+
+{% capture only_desktop_start %}<div class="d-none d-md-block"><p>{% endcapture %}
+{% capture only_desktop_end %}</p></div>{% endcapture %}
+
+<div class="{{ section.settings.classname }}">
+    <div class="container">
+        {%- for block in section.blocks -%}
+            {% if block.type == 'heading' %}
+                <div class="{{ block.settings.classname }}">
+                    {% if block.settings.heading != blank %}
+                        <h2 class="title-lg paddingB">
+                            {{ block.settings.heading }}
+                        </h2>
+                    {% endif %}
+                    {% if block.settings.text != blank %}
+                        {{ block.settings.text |  replace: '<h2>', '<h2 class="title-lg">'  }}
+                    {% endif %}
+                    {% if block.settings.code != blank %}
+                        {{ block.settings.code }}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        {% if image_count > 0 or code_count > 0 or content_count > 0 %}
+            <div class="row">
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {% when 'image' %}
+                                {% comment %} custom view only for desktop image {% endcomment %}
+                            {% if image_custom != blank %}
+                                <div class="col-12 col-md-{{ section.settings.column_image }} d-none d-md-block">
+                                    {{ image }}
+                                </div>
+                            {% else %}
+                                {% comment %} default view for desktop-mobile images {% endcomment %}
+                                <div class="col-12 col-md-{{ section.settings.column_image }}">
+                                    {{ image }}
+                                </div>
+                            {% endif %}
+                        {% when 'content' %}
+                            <div class="original-copy col-12 col-md-{% if block.settings.column_content > 0 %}{{ block.settings.column_content }}{% else %}{{ section.settings.column_content }}{% endif %}">
+                                <div class="{{ block.settings.classname }}">
+                                        {% if block.settings.text != blank %}
+                                            {{ block.settings.text 
+                                                |  replace: '<h2>', '<h2 class="title-lg mb-4">' 
+                                                |  replace: '<h3>', '<h3 class="paddingB">' 
+                                                |  replace: '<ul>', '<div class="ss_list"><ul>' 
+                                                |  replace: '</ul>', '</ul></div>' 
+                                                |  replace: '<p>[code]</p>', code
+                                                |  replace: '[code]', code
+                                                |  replace: '<p>[code_desktop]</p>', code_desktop 
+                                                |  replace: '[code_desktop]', code_desktop 
+                                                |  replace: '<p>[code_mobile]</p>', code_mobile 
+                                                |  replace: '[code_mobile]', code_mobile 
+                                                |  replace: '<p>[details]</p>', details
+                                                |  replace: '[details]', details
+                                                |  replace: '<p>[details_desktop]</p>', details_desktop 
+                                                |  replace: '[details_desktop]', details_desktop 
+                                                |  replace: '<p>[details_mobile]</p>', details_mobile 
+                                                |  replace: '[details_mobile]', details_mobile 
+                                                |  replace: '<p>[image_mobile]</p>', image_mobile
+                                                |  replace: '[image_mobile]', image_mobile
+                                                |  replace: '<p>[only_desktop_start]</p>', only_desktop_start
+                                                |  replace: '[only_desktop_start]', only_desktop_start
+                                                |  replace: '<p>[only_desktop_end]</p>', only_desktop_end
+                                                |  replace: '[only_desktop_end]', only_desktop_end
+                                            }} 
+                                        {% endif %}
+                                </div>
+                            </div>
+                        {% when 'content_reduced' %}
+                            <div class="reduced-copy col-12 col-md-{% if block.settings.column_content > 0 %}{{ block.settings.column_content }}{% else %}{{ section.settings.column_content }}{% endif %}">
+                                <div class="{{ block.settings.classname }}">
+                                        {% if block.settings.text != blank %}
+                                            {{ block.settings.text 
+                                                |  replace: '<h2>', '<h2 class="title title-lg mb-4">' 
+                                                |  replace: '<h3>', '<h3 class="sub-title paddingB">' 
+                                                |  replace: '<ul>', '<div class="ss_list"><ul>' 
+                                                |  replace: '</ul>', '</ul></div>' 
+                                                |  replace: '<p>[code]</p>', code
+                                                |  replace: '[code]', code
+                                                |  replace: '<p>[code_desktop]</p>', code_desktop 
+                                                |  replace: '[code_desktop]', code_desktop 
+                                                |  replace: '<p>[code_mobile]</p>', code_mobile 
+                                                |  replace: '[code_mobile]', code_mobile 
+                                                |  replace: '<p>[details]</p>', details
+                                                |  replace: '[details]', details
+                                                |  replace: '<p>[details_desktop]</p>', details_desktop 
+                                                |  replace: '[details_desktop]', details_desktop 
+                                                |  replace: '<p>[details_mobile]</p>', details_mobile 
+                                                |  replace: '[details_mobile]', details_mobile 
+                                                |  replace: '<p>[image_mobile]</p>', image_mobile
+                                                |  replace: '[image_mobile]', image_mobile
+                                                |  replace: '<p>[only_desktop_start]</p>', only_desktop_start
+                                                |  replace: '[only_desktop_start]', only_desktop_start
+                                                |  replace: '<p>[only_desktop_end]</p>', only_desktop_end
+                                                |  replace: '[only_desktop_end]', only_desktop_end
+                                            }} 
+                                        {% endif %}
+                                </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.two-column-box.name",
+        "class": "section-two-column-box",
+        "settings": [
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "technology_light pt-30 section"
+            },
+            {
+                "type": "range",
+                "id": "column_image",
+                "min": 1,
+                "max": 11,
+                "step": 1,
+                "unit": "col",
+                "label": "t:common.column.image.label",
+                "default": 6
+            },
+            {
+                "type": "range",
+                "id": "column_content",
+                "min": 1,
+                "max": 11,
+                "step": 1,
+                "unit": "col",
+                "label": "t:common.column.content.label",
+                "default": 6
+            }
+        ],
+        "blocks": [
+            {
+                "type": "heading",
+                "name": "t:common.heading.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:common.classname.label",
+                        "default": "section_header mb-3 text-center"
+                    }
+                ]
+		    },
+            {
+                "type": "image",
+                "name": "t:common.image.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_mobile",
+                        "label": "t:common.image_mobile.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:common.classname.label",
+                        "default": "mw-mob-100"
+                    }
+                ]
+		    },
+            {
+                "type": "content",
+                "name": "t:common.content.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "column_content",
+                        "min": 0,
+                        "max": 11,
+                        "step": 1,
+                        "unit": "col",
+                        "label": "t:common.column.content.label",
+                        "default": 0
+                    },
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:common.classname.label",
+                        "default": "it_info p-0 pt-0 pt-md-3"
+                    }
+                ]
+		    },
+            {
+                "type": "content_reduced",
+                "name": "Content Reduced",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "column_content",
+                        "min": 0,
+                        "max": 11,
+                        "step": 1,
+                        "unit": "col",
+                        "label": "t:common.column.content.label",
+                        "default": 0
+                    },
+                    {
+                        "type": "text",
+                        "id": "classname",
+                        "label": "t:common.classname.label",
+                        "default": "it_info p-0 pt-0 pt-md-3"
+                    }
+                ]
+		    },
+            {
+                "type": "details",
+                "name": "t:sections.two-column-box.blocks.settings.details.label",
+                "limit": 3,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "code",
+                "name": "t:common.code.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.two-column-box.name"
+			}
+        ]
+    }
+{% endschema %}

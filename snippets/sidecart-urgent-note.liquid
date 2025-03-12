@@ -1,0 +1,78 @@
+
+{% comment %}
+  renders a urgency note container
+  Accepts:
+  - settings: { array }  - from slidecart section
+  Usage:
+  {% render 'sidecart-urgent-note', settings: section.settings %}
+{% endcomment %}
+{%liquid 
+  assign product_handles = ""
+  assign has_cart_urgency_products = false
+  assign product_titles = ""
+  assign quantity = 0
+  assign length = 0
+  assign product_handles_array = ""
+  assign products_ids = ""
+
+  
+  for product in settings.urgency_note_product_list
+    assign product_handles = product_handles | append: product.handle
+    assign products_ids = products_ids | append: product.selected_or_first_available_variant.id
+    if forloop.last == false 
+      assign product_handles = product_handles | append: ","
+      assign products_ids = products_ids | append: ","
+    endif
+  endfor
+  
+  assign product_handles_array = product_handles | split: ","
+
+  for item in cart.items
+    assign length = forloop.length
+    unless product_titles contains item.product.title
+      if product_handles_array contains item.product.handle
+        assign quantity = quantity | plus: 1
+        assign has_cart_urgency_products = true
+        assign product_titles = product_titles | append: item.product.title | append: ", "
+      endif
+    endunless
+  endfor
+  
+  if quantity > 1
+    assign label_subject = "are "
+  else 
+    assign label_subject = "is "
+  endif
+
+  assign product_titles_array = product_titles | split: ", "
+  assign product_titles = ""
+
+  for title in product_titles_array
+    if forloop.last == false
+      assign product_titles = product_titles | append: title | append: ", "
+    else 
+      assign product_titles = product_titles | append: title
+    endif
+  endfor
+
+  assign bold_text = settings.urgency_note_content
+  assign bold_text = bold_text | replace: "[]", product_titles
+  assign bold_text = bold_text | replace: "$quantity_label ", label_subject
+%}
+
+{% if has_cart_urgency_products %}
+  <div class="urgency-note-container"  data-length="{{ length }}" data-quantity="{{ quantity }}" data-products="{{ products_ids}}">
+    <div class="urgency-note">
+      <div class="urgency-note__logo">
+        {% render 'icons', icon: 'urgency-note-logo' %}
+      </div>
+      <div class="urgency-note__text">
+        <span class="urgency-note__text--bold">{{ bold_text }}</span>
+        <span class="urgency-note__text--single">{{ settings.urgency_note_label_single }}</span>
+      </div>
+      <div class="urgency-note__close-icon">
+        {% render 'icons', icon: 'urgency-note-close' %}
+      </div>
+    </div>
+  </div>
+{% endif %}

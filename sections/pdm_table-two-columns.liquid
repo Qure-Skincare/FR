@@ -1,0 +1,91 @@
+<div class="table-tc container">
+  <h2 class="section-title">{{ section.settings.section_title | raw }}</h2>
+    <table class="table">
+        <thead class="header">
+            <tr>
+              <th class="header-title">{{ section.settings.table_left_title }}</th>
+              <th class="header-content">{{ section.settings.table_right_title }}</th>
+            </tr>
+        </thead>
+        <tbody class="body">
+          {% for block in section.blocks %}
+            <tr class="table-row">
+              <td class="row-title">{{ block.settings.row_title | raw }} </td>
+              <td class="row-content"> <strong>{{ block.settings.row_content_strong}}</strong> <br/> <span>{{ block.settings.row_content | raw }}</span></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{{ 'pwd.theme-styles.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Table Two Columns (PDM)",
+  "tag": "section",
+  "class": "section-table-tc",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Heading",
+      "default": "Think You’ve Tried It All? <br/> Here’s Why Qure Is Different."
+    },
+    {
+      "type": "text",
+      "id": "table_left_title",
+      "label": "Table Left Title",
+      "default": "What You May Have Tried Before"
+    },
+    {
+      "type": "text",
+      "id": "table_right_title",
+      "label": "Table Right Title",
+      "default": "Why Qure Stands Out"
+    }
+  ],
+  "blocks":[
+    {
+      "type": "row",
+      "name": "Row",
+      "settings":[
+        
+        {
+          "type": "text",
+          "id": "row_title",
+          "label": "Heading Row",
+          "default": "Retinol/Tretinoin"
+        },
+        {
+          "type": "text",
+          "id": "row_content_strong",
+          "label": "Content Row Title",
+          "default": "Long-Lasting, Root-Cause Solutions"
+        },
+        {
+          "type": "text",
+          "id": "row_content",
+          "label": "Content Row",
+          "default": "Qure’s targeted products address the  underlying issues for results that last, unlike other treatments that only offer temporary fixes our general solutions."
+        }
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table Two Columns (PDM)",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "row"
+        },
+        {
+          "type": "row"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

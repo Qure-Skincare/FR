@@ -1,0 +1,170 @@
+<!-- -- stamping your skin start -- -->
+<div class="stamping_your-skin">
+    <div class="container">
+        <div class="section_header text-md-center {{ section.settings.custom_class }}">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB mb-3">{{ section.settings.heading }}</h2>
+            {% endif %}
+            
+            {% if section.settings.text != blank %}
+                {{ section.settings.text | replace: '<p>', '<p class="pb-3">' }}
+            {% endif %}
+        </div>
+        <div class="row justify-content-between {{ section.settings.custom_class2 }}">
+            <div class="col-md-6">
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {% when 'video' %}
+                            <div class="stamping_skin-gif  d-none d-md-block">
+                                <div class="wistia_responsive_padding" style="position:relative;">
+                                    <div class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                        <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true"
+                                            style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                <div class="stamping_skin-row">
+                    {%- for block in section.blocks -%}
+                        {% case block.type %}
+                            {% when 'video' %}
+                                <div class="stamping_skin-gif d-block d-md-none">
+                                    <div class="wistia_responsive_padding" style="position:relative;">
+                                        <div class="wistia_responsive_wrapper"
+                                            style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                            <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true"
+                                                style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                        {% endcase %}
+                    {% endfor %}
+
+                    <div class="stamping_content-main">
+                        {%- for block in section.blocks -%}
+                            {% case block.type %}
+                                {% when 'option' %}
+                                    <div class="stamping_skin-content">
+                                        <div class="stamping_content-head">
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                            {% endif %}
+                                            {% if block.settings.heading != blank %}
+                                                <h5>{{ block.settings.heading |  replace:  '\n', '<br />' }}</h5>
+                                            {% endif %}
+                                        </div>
+                                        {{ block.settings.text }}
+                                    </div>
+                            {% endcase %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'button' %}
+                    <div class="get_confident-btn mw-452 mx-auto">
+                        <a class="btn btn-lg btn-primary buy_btn" href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</a>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+<!-- -- stamping your skin end -- -->
+<script src="https://fast.wistia.com/embed/medias/pufckxmtin.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+{% schema %}
+    {
+        "name": "t:sections.text-block.name",
+        "class": "section-text-block",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "textarea",
+                "id": "custom_class",
+                "label": "t:common.classname.heading",
+                "default": "mw-680"
+            },
+            {
+                "type": "textarea",
+                "id": "custom_class2",
+                "label": "t:common.classname.content"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    }
+                ]
+		    },
+            {
+                "type": "option",
+                "name": "t:common.option.name",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.text-block.name"
+			}
+        ]
+    }
+{% endschema %}

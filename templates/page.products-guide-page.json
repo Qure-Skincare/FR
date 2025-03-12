@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_guide_y6fpLT": {
+      "type": "product-guide",
+      "blocks": {
+        "block_yVi68x": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify://shop_images/product_guide-1.webp",
+            "micro_title": "Micro-Infusion Facial System",
+            "micro_desc": "<p>How To Use, Safety Treatment Protocols, etc..</p>",
+            "micro_prod_link": "https://qureskincare.com/pages/microinfusion-safety-guide",
+            "arrow_img": "shopify://shop_images/arrow-next.png"
+          }
+        },
+        "block_VKPc3V": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify://shop_images/product_guide-2.webp",
+            "micro_title": "Faucet Filter",
+            "micro_desc": "<p>Installation & Filter Replacement</p>",
+            "micro_prod_link": "https://qureskincare.com/pages/faucet-online-guide",
+            "arrow_img": "shopify://shop_images/arrow-next.png"
+          }
+        },
+        "block_VEwRKX": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify://shop_images/product_guide-3.webp",
+            "micro_title": "Q-Rejuvalight Pro Facewear",
+            "micro_desc": "<p>Set Up Guide, How To Use, Troubleshooting, etc..</p>",
+            "micro_prod_link": "https://qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide",
+            "arrow_img": "shopify://shop_images/arrow-next.png"
+          }
+        },
+        "block_qdzPRU": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify://shop_images/product_guide-4.webp",
+            "micro_title": "Shower Filter",
+            "micro_desc": "<p>Installation & Filter Replacement</p>",
+            "micro_prod_link": "https://qureskincare.com/pages/shower-filter-online-guide",
+            "arrow_img": "shopify://shop_images/arrow-next.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_yVi68x",
+        "block_VKPc3V",
+        "block_VEwRKX",
+        "block_qdzPRU"
+      ],
+      "settings": {
+        "heading_id": "User Manuals Made Easy!",
+        "small_heading_id": "Easy Video Guides for a Quick Start"
+      }
+    }
+  },
+  "order": [
+    "product_guide_y6fpLT"
+  ]
+}

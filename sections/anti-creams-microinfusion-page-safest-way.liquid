@@ -1,0 +1,145 @@
+<!-- -- safest way start -- -->
+<div class="safest_way section">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-md-6">
+                <div class="section_header">
+                    {% if section.settings.heading != blank %}
+                        <h2 class="title-lg paddingB d-none d-md-block">{{ section.settings.heading }}</h2>
+                        <h2 class="title-lg paddingB d-block d-md-none">{{ section.settings.heading }}</h2>
+                    {% endif %}
+                    {{ section.settings.text | replace: '<p>', '<p class="pb-4">' }}
+                </div>
+                {% if section.settings.image != blank %}
+                    <div class="safest_way_img d-block d-md-none mb-5">
+                        <img src="{{ section.settings.image | img_url: '500x' }}" alt="image" class="img-fluid">
+                    </div>                    
+                {% endif %}
+
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {% when 'result' %}
+                            <div class="trusted_cl bg_clr_transparent p-0">
+                                <div class="t_c_info mb-3 d-flex">
+                                    {% if block.settings.text != blank %}
+                                        <p class="d-block d-md-none">{{ block.settings.text }}</p>
+                                    {% endif %}
+
+                                    {% if block.settings.image != blank %}
+                                        <div class="c_img">
+                                            <img src="{{ block.settings.image | img_url: '250x' }}" alt="result">
+                                        </div>                                                
+                                    {% endif %}
+
+                                    <div class="c_desc ps-2">
+                                        {% if block.settings.text != blank %}
+                                            <p class="d-none d-md-block">{{ block.settings.text }}</p>
+                                        {% endif %}
+                                        <h6><span>{{ block.settings.client }},</span><br> {{ block.settings.client_text }}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                {% if section.settings.image != blank %}
+                    <div class="safest_way_img ps-md-5 d-none d-md-block">
+                        <img src="{{ section.settings.image | img_url: '500x' }}" alt="image" class="img-fluid">
+                    </div>                   
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="safest_way_ftr">
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'option' %}
+                        <div class="safest_way_item">
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | img_url: '250x' }}" alt="option_{{ forloop.index }}" class="img-fluid">
+                            {% endif %}
+                            {{ block.settings.text }}
+                        </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- -- safest way start -- -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.text-block.name",
+        "class": "text-block",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "result",
+                "limit": 1,
+                "name": "t:common.result.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client",
+                        "label": "t:common.client.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client_text",
+                        "label": "t:common.client.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "option",
+                "name": "t:common.option.name",
+                "limit": 3,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.text-block.name"
+			}
+        ]
+    }
+{% endschema %}

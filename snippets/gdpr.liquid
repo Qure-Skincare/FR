@@ -1,0 +1,234 @@
+<link rel="stylesheet" href="{{ 'cookies.css' | asset_url }}">
+
+<div class="modal fade p-0" id="gdpr" aria-labelledby="gdpr" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end">
+        <div class="modal-content rounded-0 border-0">
+            <div class="container">
+                <div class="cookies_wrap">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h5>We value your privacy </h5>
+                            <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic.  </p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="cookie_btn_wrap">
+                                <button class="btn btn_black" id="gdpr_accept">Accept All</button>
+                                <button class="btn btn_white" id="gdpr_settings_change">Change settings</button>
+                                <button class="btn btn_white" id="gdpr_reject">Reject All</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade p-0" id="gdpr_settings" aria-labelledby="gdpr_settings" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end">
+        <div class="modal-content rounded-0 border-0">
+            <div class="container">
+                <div class="cookies_wrap">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h5>Customize Your Cookie Preferences</h5>
+                            <p>We respect your privacy and give you the option to customize your cookie
+                                settings. Please
+                                select which types of cookies you are willing to accept: <a
+                                    href="https://www.qureskincare.com/pages/privacy-page"
+                                    class="cookies_link">More
+                                    information</a></p>
+                            <div class="cookie_btn_wrap m-0 mt-4">
+                                <button class="btn btn_black" id="gdpr_accept_settings">Save Preferences</button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="cookies_dropdown faq">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6>Strictly Necessary Cookies</h6>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="b1" name="b2" value="" checked=""
+                                                        disabled>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                <div class="container">
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p> These cookies are essential for the website to function
+                                                    properly. They
+                                                    enable basic functionalities like page navigation and access
+                                                    to secure
+                                                    areas of the website. The website cannot function properly
+                                                    without these
+                                                    cookies.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6>Performance Cookies</h6>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="b2" name="b2" value="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="container">
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>These cookies help us understand how visitors interact with
+                                                    our website
+                                                    by
+                                                    collecting and reporting information anonymously. They
+                                                    enable us to
+                                                    improve
+                                                    the website's performance and user experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6>Functional Cookies</h6>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="b3" name="b3" value="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="container">
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>These cookies allow the website to remember choices you make
+                                                    (such as
+                                                    your
+                                                    username, language, or the region you are in) and provide
+                                                    enhanced, more
+                                                    personal features.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6>Targeting/Advertising Cookies</h6>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="b4" name="b4" value="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                <div class="container">
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>These cookies are used to deliver ads more relevant to you
+                                                    and your
+                                                    interests. They may also be used to limit the number of
+                                                    times you see an
+                                                    advertisement and help measure the effectiveness of the
+                                                    advertising
+                                                    campaign. They are usually placed by advertising networks
+                                                    with the
+                                                    website
+                                                    operator’s permission.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var gdrpModal = new bootstrap.Modal(document.getElementById('gdpr'), {});
+    var gdrpSettingsModal = new bootstrap.Modal(document.getElementById('gdpr_settings'), {});
+
+    function gdpr_setCookie(name, value, days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Function to get a cookie by name
+    function gdpr_getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+
+    
+        document.querySelector('#gdpr_settings_change').addEventListener('click', function() {
+            event.preventDefault();
+            gdrpSettingsModal.show();
+        });
+
+        if (!getCookie("gdrp")) {
+            setTimeout(() => {
+                gdrpModal.show();
+            }, 750);
+        }
+
+        document.querySelector('#gdpr_reject').addEventListener('click', function() {
+            event.preventDefault();
+            gdpr_setCookie("gdrp", "true", 365);
+            gdrpModal.hide();
+        });
+
+        document.querySelector('#gdpr_accept').addEventListener('click', function() {
+            event.preventDefault();
+            gdpr_setCookie("gdrp", "true", 365);
+            gdrpModal.hide();
+        });
+
+        document.querySelector('#gdpr_accept_settings').addEventListener('click', function() {
+            event.preventDefault();
+            gdpr_setCookie("gdrp", "true", 365);
+            gdrpModal.hide();
+            gdrpSettingsModal.hide();
+        });
+    });
+</script>

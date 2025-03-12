@@ -1,0 +1,97 @@
+<!-- -- effective and safer than other filters start -- -->
+<div class="effective_table section">
+    <div class="container">
+        <div class="section_header text-md-center">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+            {% endif %}
+        </div>
+        <div class="effective_table_wrap mw-765 mx-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <div class="etable_header text-center d-grid">
+                                <div class="order-2 order-md-1">
+                                    <img src="https://qureskincaredns.com/new/assets/qure-logo-bl.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="order-1 order-md-2">
+                                    {% if section.settings.image != blank %}
+                                        <img class="img-fluid mt-2 e_table_img" src="{{ section.settings.image | img_url: '250x' }}" alt="{{ section.settings.image.alt | escape }}">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="etable_header text-center d-grid">
+                                <div class="e_table_header order-2 order-md-1 d-flex align-items-center justify-content-center"
+                                    style="height:61px">Generic water filters</div>
+                                <div class="order-1 order-md-2">
+                                    {% if section.settings.image_second != blank %}
+                                        <img class="img-fluid mt-2 e_table_img" src="{{ section.settings.image_second | img_url: '250x' }}" alt="{{ section.settings.image_second.alt | escape }}">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%- for block in section.blocks -%}
+                        <tr>
+                            <td>{{ block.settings.text }}</td>
+                            <td>
+                                <div class="text-center"><img src="https://qureskincaredns.com/new/assets/correct-filled.svg" alt=""></div>
+                            </td>
+                            <td>
+                                <div class="text-center"><img src="https://qureskincaredns.com/new/assets/cross.svg" alt=""></div>
+                            </td>
+                        </tr>
+                    {%- endfor -%}
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+<!-- -- effective and safer than other filters end -- -->
+
+
+{% schema %}
+    {
+        "name": "Effective table",
+        "class": "section-effective-table",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_second",
+                "label": "t:common.image.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "text",
+                "name": "t:common.text.label",
+                "limit": 8,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

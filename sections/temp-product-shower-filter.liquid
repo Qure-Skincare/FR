@@ -1,0 +1,903 @@
+
+{% comment %} <!-- -- main banner start -- -->
+<div class="refill_bl tabSlider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+                <div id="shower_filter">
+                    <div class="refill_info pt-3 mw-546">
+                        <div class="section_header text-start">
+                            <h1 class="seo_heading">SHOWER FILTER</h1>
+                            <h2 class="title-lg mb-0">Save Your Hair & Skin from Dryness and Irritation</h2>
+                        </div>
+                        {% if settings.show_bf_price == true %}
+                            {% render 'bf-price-displaying', product: product %}
+                        {% else %}
+                            <div class="price_wrap d-block">
+                                <div class="price align-items-center">
+                                    <div class="new_price">{{ product.price |  money_without_trailing_zeros }}</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <div class="mw-464">
+                            <div class="ss_list pb-4 pt-0">
+                                <ul>
+                                    <li>Triple-filter showerhead for the purest head-to-toe hydration.</li>
+                                    <li>Reduces chlorine, heavy metals & contaminants that irritate the skin,
+                                        for an overall more hydrated, clearer skin.</li>
+                                    <li>Reduces limescale buildup which can dry out skin & hair, for smoother &
+                                        softer skin and tresses.</li>
+                                </ul>
+                            </div>
+
+                            <div class="subscribe_save_wrapper with_subscription mt-0">
+                                {% if product.variants.first.available %}
+                                    <a class="btn btn-primary with_subscription buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
+                                {% else %}
+                                    <a class="btn btn-primary with_subscription buy_btn" href="#">{% if section.settings.reserve == true %}Reserve now{% else %}Sold Out{% endif %}</a>
+                                {% endif %}
+                            </div>
+                            <div class="payment_method pb-0">
+                                <p>OR 4 monthly payments of <span class="payment_price">$74.25</span> with</p>
+                                <div class="pmt_img ps-2">
+                                    <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt=""><img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt=""><img
+                                        src="https://qureskincaredns.com/new/assets/afterpay.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="shipping shipping_bg bg-transparent d-flex pt-3">
+                                <div class="s_bx">
+                                    <img src="https://qureskincaredns.com/new/assets/dermatologist.svg" alt="">
+                                    <p class="d-none d-md-block">Dermatologist<br>Reviewed</p>
+                                    <p class="d-md-none">Dermatologist <br>Reviewed</p>
+                                </div>
+                                <div class="s_bx">
+                                    <img src="https://qureskincaredns.com/new/assets/90_days.svg" alt="">
+                                    <p class="d-none d-md-block">90-day <br>supply</p>
+                                    <p class="d-md-none">90-day supply</p>
+                                </div>
+                                <div class="s_bx">
+                                    <img src="https://qureskincaredns.com/new/assets/shipping.svg" alt="">
+                                    <p class="d-none d-md-block">Free Shipping <br>Over $100</p>
+                                    <p class="d-md-none">Free Shipping <br>Over $100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 px-md-2 px-0">
+                <div class="refill_slider mw-mob-100 pt-md-0 refill_slider_new">
+                    <div class="swiper twa__swiper realResultSlider dot_pagination"
+                        id="twa__swiper-realResultSlider" data-section-id="realResultSlider"
+                        data-autoplay="false" data-loop="false" data-centerslide="false" data-mobile="1"
+                        data-tablet="1" data-desktop="1" data-spacing="10"
+                        data-arrowleft="realResultSlider-swiper-prev"
+                        data-arrowright="realResultSlider-swiper-next">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://qureskincaredns.com/new/assets/shower_pd-1.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://qureskincaredns.com/new/assets/shower_pd-2.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://qureskincaredns.com/new/assets/shower_pd-3.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://qureskincaredns.com/new/assets/shower_pd-4.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://qureskincaredns.com/new/assets/shower_pd-5.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="pagination_navigation mw-464 mx-md-auto mx-4">
+                            <div class="swiper-pagination"></div>
+                            <div class="realResultSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                            <div class="realResultSlider-swiper-next  swiper-button-next swiper-button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- main banner end -- --> {% endcomment %}
+
+<!-- -- press slider start -- -->
+{% comment %} <div class="press_bl bg-lightGrey mt-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="ps_wrapper align-items-center">
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/vogue2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item d-none d-md-block">
+                        <img src="https://qureskincaredns.com/new/assets/women_health.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item d-none d-md-block">
+                        <img src="https://qureskincaredns.com/new/assets/cosmopolitan2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/elle2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/marie.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/grazia2.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- press slider end -- -->
+
+<!-- -- ingredients list start -- -->
+{% comment %} <div class="ingredients_list section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 m-md-auto mw-970">
+            <h2 class="title-lg">
+                Do you know what’s lurking in your shower? <br class="d-md-block d-none"> It’s time to get the
+                truth flowing
+            </h2>
+            <p>Your shower should be a sanctuary, but it’s actually the source of frustration for many.
+                Chlorine, heavy metals and other impurities found in “hard water” rain down on you with every
+                drop – draining the life from your skin and hair.</p>
+        </div>
+        <div class="ingredients_content">
+            <div class="row gy-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="ingredient">
+                        <div class="ingredient_flag flag3">
+                            <p>Hiding in Plain Sight!</p>
+                        </div>
+                        <div class="ingredients_text">
+                            <p class="fw-bold">Limescale</p>
+                            <p>Mineral buildup seeps into your water and sits on your skin. This leaves it
+                                feeling itchy and prevents your moisturizer from soaking in properly!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 pt-5 pt-md-0">
+                    <div class="ingredient">
+                        <div class="ingredient_flag flag2">
+                            <p>Hidden Hazards!</p>
+                        </div>
+                        <div class="ingredients_text">
+                            <p class="fw-bold">Heavy metals</p>
+                            <p>These can disrupt the skin’s natural barrier and moisture balance, making it more
+                                prone to irritation, eczema, psoriasis, and breakouts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 pt-5 pt-md-0">
+                    <div class="ingredient">
+                        <div class="ingredient_flag flag1">
+                            <p>The Water Wrecker!</p>
+                        </div>
+                        <div class="ingredients_text">
+                            <p class="fw-bold">Chlorine</p>
+                            <p>This chemical strips your skin of its natural oils which causes dry skin and
+                                flare-ups. It’s also behind dandruff and hair breakage!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3 pt-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="ingredients_img border-end">
+                                <img src="https://qureskincaredns.com/new/assets/rust.svg" alt="">
+                                <p>Rust</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ingredients_img">
+                                <img src="https://qureskincaredns.com/new/assets/many-more.svg" alt="">
+                                <p>Many more</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="ingredients_img border-end">
+                                <img src="https://qureskincaredns.com/new/assets/lead-particles.svg" alt="">
+                                <p>Lead particles</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ingredients_img">
+                                <img src="https://qureskincaredns.com/new/assets/micro-organisms.svg" alt="">
+                                <p>Micro-organisms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="ingredients_img border-end">
+                                <img src="https://qureskincaredns.com/new/assets/Micro-plastics.svg" alt="">
+                                <p>Micro-plastics</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ingredients_img">
+                                <img src="https://qureskincaredns.com/new/assets/Copper.svg" alt="">
+                                <p>Copper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- ingredients list end -- -->
+
+<!-- -- shower filter benefits start -- -->
+{% comment %} <div class="shower_filter-benefits section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 m-md-auto mw-970">
+            <h2 class="title-lg pb-md-0 pb-3">
+                Break Free from the Filth with the Qure Shower Filter
+            </h2>
+            <p>At Qure, we believe great skin starts at the source – and that’s the water you use every day. The
+                Qure Shower Filter<br> helps remove sneaky chemicals and minerals that live in your water and
+                linger
+                on your skin.</p>
+        </div>
+        <div class="shower_benefits-content mw-932">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 ">
+                    <div class="benefits_list">
+                        <ul>
+                            <li>Fewer breakouts</li>
+                            <li>Happier, hydrated skin</li>
+                            <li>Less redness & irritation</li>
+                            <li>Shiner hair with less frizz</li>
+                            <li>Less green hues on dyed hair</li>
+                        </ul>
+                        <p class="d-md-none pt-4">By optimizing your shower, you can start (or finish) every day with a cleanse you can
+                            see and feel. Soon you’ll be saying h-2-oooooh!</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 order-first order-md-0">
+                    <div class="benefits_img">
+                        <p class="d-md-block d-none">By optimizing your shower, you can start (or finish) every day with a cleanse you can
+                            see and feel. Soon you’ll be saying h-2-oooooh!</p>
+                        <img src="https://qureskincaredns.com/new/assets/shower_bath.webp" class="img-fluid d-md-block d-none" alt="">
+                        <img src="https://qureskincaredns.com/new/assets/shower_bath-mob.webp" class="img-fluid d-md-none" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- shower filter benefits end -- -->
+
+<!-- -- doctor's advice start -- -->
+{% comment %} <div class="doctor_advice section">
+    <div class="container">
+        <div class="doctor_advice-content mw-932">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="dr_img">
+                        <img src="https://qureskincaredns.com/new/assets/dr_sahh-2.webp" class="img-fluid d-md-block d-none" alt="">
+                        <img src="https://qureskincaredns.com/new/assets/dr_sahh-2-mob.webp" class="img-fluid d-md-none" alt="">
+                        <div class="dr_text">
+                            <h6>Dr Shah, MD </h6>
+                            <p>Board-Certified Dermatologist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6">
+                    <div class="dr_advice">
+                        <p><strong>“Throughout my life…</strong>living in Wilmington, [my] skin was great. Then
+                            I… move to Charlotte and… every week my skin would get irritated especially after
+                            showering. Even my hair wouldn't cooperate. I was convinced it was the water I was
+                            exposed to.</p>
+                        <p>Turns out, <strong>there’s an overwhelming amount of data that the water hardness
+                                could affect your skin.”</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- doctor's advice end -- -->
+
+<!-- -- advanced filtration start -- -->
+{% comment %} <div class="advanced-filtration section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 m-md-auto mb-4">
+            <h2 class="title-lg">
+                Triple the Filtration Tech (for Triple the Clean)
+            </h2>
+        </div>
+        <div>
+            <div class="row gy-3">
+                <div class="col-md-4">
+                    <div class="filter_benefit text-center px-md-2">
+                        <img src="https://qureskincaredns.com/new/assets/carbon_fiber_layer.svg" alt="" class="pb-md-3">
+                        <div class="text-md-center text-start">
+                            <h6>Carbon Fiber Layer</h6>
+                            <p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your
+                                skin and hair healthier.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="filter_benefit text-center px-md-2">
+                        <img src="https://qureskincaredns.com/new/assets/kdf_layer.svg" alt="" class="pb-md-3">
+                        <div class="text-md-center text-start">
+                            <h6>KDF Layer</h6>
+                            <p>Targets and removes heavy metals like lead and mercury, providing cleaner water
+                                for your shower.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="filter_benefit text-center px-md-2">
+                        <img src="https://qureskincaredns.com/new/assets/fof.svg" alt="" class="pb-md-3">
+                        <div class="text-md-center text-start">
+                            <h6>FOF (Filter of Future)</h6>
+                            <p>Helps reduce the buildup of hard water minerals such as calcium and magnesium,
+                                preventing scale and improving water flow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter_details faq">
+            <div class="accordion" id="details_drop">
+                <div class="accordion-item detail d-1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter_details-1" aria-expanded="true"
+                            aria-controls="filter_details-1">
+                            <div class="container">KDF Layer</div>
+                        </button>
+                    </h2>
+                    <div id="filter_details-1" class="accordion-collapse collapse"
+                        data-bs-parent="#details_drop">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <p>Reduces harmful heavy metals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item detail d-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter_details-2" aria-expanded="false"
+                            aria-controls="filter_details-2">
+                            <div class="container">Carbon Fiber Layer</div>
+                        </button>
+                    </h2>
+                    <div id="filter_details-2" class="accordion-collapse collapse"
+                        data-bs-parent="#details_drop">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <p>Removes up to 99% of chlorine & contaminants</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item detail d-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filter_details-3" aria-expanded="false"
+                            aria-controls="filter_details-3">
+                            <div class="container">FOF Descaling</div>
+                        </button>
+                    </h2>
+                    <div id="filter_details-3" class="accordion-collapse collapse"
+                        data-bs-parent="#details_drop">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <p>Reduces hard water mineral buildup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <picture>
+                <source media="(min-width:1920px)" srcset="https://qureskincaredns.com/new/assets/shower_filter-banner.webp" width="253"
+                    height="109">
+                <source media="(min-width:1600px)" srcset="https://qureskincaredns.com/new/assets/shower_filter-banner.webp" width="253"
+                    height="109">
+                <source media="(min-width:1100px)" srcset="https://qureskincaredns.com/new/assets/shower_filter-banner.webp" width="253"
+                    height="109">
+                <source media="(min-width:720px)" srcset="https://qureskincaredns.com/new/assets/shower_filter-banner.webp" width="253"
+                    height="109">
+                <source media="(min-width:540px)" srcset="https://qureskincaredns.com/new/assets/shower_filter-banner-mob.webp" width="332"
+                    height="192">
+                <img src="https://qureskincaredns.com/new/assets/shower_filter-banner-mob.webp" alt="" class="img-fluid" width="332"
+                    height="192">
+            </picture>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- advanced filtration end -- -->
+
+<!-- -- Perfect for start -- -->
+{% comment %} <div class="ingredients_list">
+    <div class="container">
+        <div class="section_header text-start pb-md-5 pb-4 text-md-center ms-0 m-md-auto">
+            <h6 class="n_sub-heading">Perfect for</h6>
+        </div>
+        <div class="skin_problems">
+            <div class="problem_inner">
+                <img src="https://qureskincaredns.com/new/assets/acne_skin.webp" class="img-fluid" alt="">
+                <div class="pt-md-4 pt-2">
+                    <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Acne prone skin</p>
+                </div>
+            </div>
+            <div class="problem_inner">
+                <img src="https://qureskincaredns.com/new/assets/Eczema.webp" class="img-fluid" alt="">
+                <div class="pt-md-4 pt-2">
+                    <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Eczema</p>
+                </div>
+            </div>
+            <div class="problem_inner">
+                <img src="https://qureskincaredns.com/new/assets/dry_skin.webp" class="img-fluid" alt="">
+                <div class="pt-md-4 pt-2">
+                    <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Dry skin</p>
+                </div>
+            </div>
+            <div class="problem_inner">
+                <img src="https://qureskincaredns.com/new/assets/sensitive_skin.webp" class="img-fluid" alt="">
+                <div class="pt-md-4 pt-2">
+                    <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Sensitive skin</p>
+                </div>
+            </div>
+            <div class="problem_inner">
+                <img src="https://qureskincaredns.com/new/assets/Color-treated hair.webp" class="img-fluid" alt="">
+                <div class="pt-md-4 pt-2">
+                    <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Color-treated hair</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- Perfect for end -- -->
+
+<!-- -- featured promotion start -- -->
+{% comment %} <div class="featured_promotion bg-lightGrey my-5">
+    <div class="container">
+        <div class="fp-wrapper">
+            <div class="fp_item">
+                <div class="fp_icon">
+                    <img src="https://qureskincaredns.com/new/assets/free-shipping-ftr.svg" alt="">
+                </div>
+                <div class="fp_icon_text text-md-center">
+                    <p>Free Shipping </p>
+                    <p>Orders Over $100</p>
+                </div>
+            </div>
+            <div class="fp_item">
+                <div class="fp_icon">
+                    <img src="https://qureskincaredns.com/new/assets/buy-now-ftr.svg" alt="">
+                </div>
+                <div class="fp_icon_text text-md-center">
+                    <p>Buy Now,</p>
+                    <p>Pay Later</p>
+                </div>
+            </div>
+            <div class="fp_item">
+                <div class="fp_icon">
+                    <img src="https://qureskincaredns.com/new/assets/derma-ftr.svg" alt="">
+                </div>
+                <div class="fp_icon_text text-md-center">
+                    <p>Dermatologist Tested</p>
+                    <p>& Approved</p>
+                </div>
+            </div>
+            <div class="fp_item">
+                <div class="fp_icon">
+                    <img src="https://qureskincaredns.com/new/assets/science-ftr.svg" alt="">
+                </div>
+                <div class="fp_icon_text text-md-center">
+                    <p>Proven Results, </p>
+                    <p>Backed by science</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- featured promotion end -- -->
+
+<!-- -- image with text start -- -->
+{% comment %} <div class="imageText section qure_MI_ftr_wrap">
+    <div class="container">
+        <div class="hollywood_skin mt-0">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5">
+                    <img src="https://qureskincaredns.com/new/assets/shower_filter.webp" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="it_info p-0 ps-md-5 pt-md-0 pt-3">
+                        <h2 class="title-lg mb-3">Triple the Water Pressure Options</h2>
+                        <div class="nozzel_benefit mw-493 py-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <img src="https://qureskincaredns.com/new/assets/shower_rainfall.webp" class="img-fluid" alt="">
+                                        <p class="pt-3">Rainfall</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <img src="https://qureskincaredns.com/new/assets/shower_massage.webp" class="img-fluid" alt="">
+                                        <p class="pt-3">Massage</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="text-center">
+                                        <img src="https://qureskincaredns.com/new/assets/shower_power_spray.webp" class="img-fluid" c alt="">
+                                        <p class="pt-3">Power Spray</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fw-normal">Adjust until you find the perfect pressure.</p>
+                        <a href="#shower_filter" class="mt-4 btn btn-lg btn-primary mw-268 fw-medium">Shop
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- image with text end -- -->
+
+<!-- -- result section start -- -->
+{% comment %} <div class="result_s section mi_landing_result" id="result_section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 mb-md-4 m-md-auto">
+            <h2 class="title-lg">
+                Qure filtering technology results 
+            </h2>
+        </div>
+        <div class="result_s_wrapper">
+            <div class="swiper dot_pagination result_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="result_item">
+                            <div class="result_img_m">
+                                <img src="https://qureskincaredns.com/new/assets/results_kim_l.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="result_c_info">
+                                <div class="r_flag">
+                                    <div class="flag_img">
+                                        <img src="https://qureskincaredns.com/new/assets/australia_f.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="r_c_name pe-2">Kim L.</p>
+                                </div>
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/results_star-full.svg" alt="">
+                                    <p>Source of my unclear skin</p>
+                                </div>
+                                <div class="reviewed">
+                                    <p>Reviewed in Australia</p>
+                                </div>
+                                <div class="verified_img">
+                                    <img src="https://qureskincaredns.com/new/assets/verified.svg" alt="">
+                                    <p>Verified customer</p>
+                                </div>
+                            </div>
+                            <div class="result_item_info">
+                                <div class="result_content">
+                                    <p>“I didn’t realize how big impact water has on our skin... I almost got
+                                        used to
+                                        my skin never getting better than mediocre, but this Water Filter is a
+                                        game changer in my skincare routine.”</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="result_item h-100">
+                            <div class="result_img_m">
+                                <img src="https://qureskincaredns.com/new/assets/results_hanna.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="result_c_info">
+                                <div class="r_flag">
+                                    <div class="flag_img">
+                                        <img src="https://qureskincaredns.com/new/assets/england_f.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="r_c_name pe-2">Hanna</p>
+                                </div>
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/results_star-full.svg" alt="">
+                                    <p>Hydrated more than ever</p>
+                                </div>
+                                <div class="reviewed">
+                                    <p>Reviewed in United Kingdom</p>
+                                </div>
+                                <div class="verified_img">
+                                    <img src="https://qureskincaredns.com/new/assets/verified.svg" alt="">
+                                    <p>Verified customer</p>
+                                </div>
+                            </div>
+                            <div class="result_item_info">
+                                <div class="result_content">
+                                    <p class="pb-0">“I never had any major issues with skin before I moved. Then
+                                        I started to
+                                        get irritation and my makeup would look cakey cause my skin was always
+                                        so dry no matter what moisturiser I used...</p>
+                                    <div class="read-more-content">
+                                        <p class="nomargin">I didn’t change anything in my skincare routine
+                                            except filtered water. I’m never washing my face with anything less
+                                            than Q-urified water because my skin is so much better.”</p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="read-more" title="Read More">See
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="result_item">
+                            <div class="result_img_m">
+                                <img src="https://qureskincaredns.com/new/assets/results_josie.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="result_c_info">
+                                <div class="r_flag">
+                                    <div class="flag_img">
+                                        <img src="https://qureskincaredns.com/new/assets/america_f.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="r_c_name pe-2">Josie</p>
+                                </div>
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/results_star-full.svg" alt="">
+                                    <p>Acne and dryness gone</p>
+                                </div>
+                                <div class="reviewed">
+                                    <p>Reviewed in United States</p>
+                                </div>
+                                <div class="verified_img">
+                                    <img src="https://qureskincaredns.com/new/assets/verified.svg" alt="">
+                                    <p>Verified customer</p>
+                                </div>
+                            </div>
+                            <div class="result_item_info">
+                                <div class="result_content">
+                                    <p>“My skin has cleared up so much thanks to Qure! I use the LED mask and
+                                        water filter daily and it’s cleared up my acne, and my complexion so
+                                        much smoother and less red! My skin feels soft and hydrated. I can
+                                        actually walk out of the house without makeup now. THANK YOU QURE!!!”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination_navigation">
+                    <div class="swiper-pagination"></div>
+                    <div class="qureSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                    <div class="qureSlider-swiper-next  swiper-button-next swiper-button"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- result section end -- -->
+
+<!-- -- image with text start -- -->
+{% comment %} <div class="imageText new_side pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="d-md-none pb-3">
+                    <h2 class="title-lg mb-md-4">How to use</h2>
+                </div>
+                <div class="it_img pb-3 pb-md-0 pe-0 pe-md-4">
+                    <img src="https://qureskincaredns.com/new/assets/shower_white.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="it_info ps-md-4 pe-0 pt-0 pt-md-0">
+                    <div class="d-md-block d-none">
+                        <h2 class="title-lg mb-md-4">How to use</h2>
+                    </div>
+                    <div class="newside_list mw-100 pt-md-0 pt-2">
+                        <ul>
+                            <li>
+                                <img src="https://qureskincaredns.com/new/assets/shower_s1.svg" alt="">
+                                <p>Step 1:<br>
+                                <span>Unscrew your old shower head by hand, or use the wrench (included) for a more secure grip if needed.</span></p>
+                            </li>
+                            <li>
+                                <img src="https://qureskincaredns.com/new/assets/shower_s2.svg" alt="">
+                                <p>Step 2:<br>
+                                    <span>Wrap the plumber tape (included) around the shower pipe.</span></p>
+                            </li>
+                            <li>
+                                <img src="https://qureskincaredns.com/new/assets/shower_s3.svg" alt="">
+                                <p>Step 3:<br>
+                                    <span>Twist the Qure Shower Filter onto the pipe and tighten it securely with the wrench.</span></p>
+                            </li>
+                            <li>
+                                <img src="https://qureskincaredns.com/new/assets/shower_s4.svg" alt="">
+                                <p>Step 4:<br>
+                                    <span>Turn on the water and check for leaks. And that’s it—enjoy your filtered water!</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- -- image with text end -- -->
+
+<!-- -- faq start -- -->
+{% comment %} <div class="faq pt-md-5 pt-3 bg-yellow" id="faq_section">
+    <div class="container">
+        <div class="section_header text-center mb-3">
+            <h2 class="title-lg">
+                The answers to your questions
+            </h2>
+        </div>
+        <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQOne" aria-expanded="true" aria-controls="accFAQOne">
+                        <div class="container">What does the Qure Shower Filter do?</div>
+                    </button>
+
+                </h2>
+                <div id="accFAQOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>The Qure Shower Filter removes harmful impurities like heavy metals, chlorine, and unwanted minerals from your water, helping to protect your skin and hair from damage caused by hard water.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQTwo" aria-expanded="false" aria-controls="accFAQTwo">
+                        <div class="container">How will the Qure Shower Filter benefit my skin and hair?</div>
+                    </button>
+                </h2>
+                <div id="accFAQTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>By filtering out water impurities, the Qure Shower Filter helps reduce dryness, irritation, and brittleness, leaving your skin hydrated and your hair smoother and more manageable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-3 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQThree" aria-expanded="false" aria-controls="accFAQThree">
+                        <div class="container">How long does the filter last?</div>
+                    </button>
+                </h2>
+                <div id="accFAQThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>The Qure Shower Filter lasts approximately 3 months, depending on your water quality and usage. We recommend replacing it after 3 months for optimal performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-3 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQFour" aria-expanded="false" aria-controls="accFAQFour">
+                        <div class="container">Is it easy to install?</div>
+                    </button>
+                </h2>
+                <div id="accFAQFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>Yes, the Qure Shower Filter is designed for easy, tool-free installation. It fits most standard showerheads, so you can quickly start enjoying clean, filtered water.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-3 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQFive" aria-expanded="false" aria-controls="accFAQFive">
+                        <div class="container">Does the Qure Shower Filter affect water pressure?</div>
+                    </button>
+                </h2>
+                <div id="accFAQFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>The Qure Shower Filter is designed to maintain water pressure while effectively filtering impurities. You’ll enjoy clean water without compromising your shower experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-3 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQSix" aria-expanded="false" aria-controls="accFAQSix">
+                        <div class="container">How do I know when it’s time to replace the filter?</div>
+                    </button>
+                </h2>
+                <div id="accFAQSix" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>A subtle drop in water pressure or visible buildup on the filter may indicate it’s time for a replacement. We recommend changing the filter every 6 months to maintain its effectiveness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-3 collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQSeven" aria-expanded="false" aria-controls="accFAQSeven">
+                        <div class="container">Is the Qure Shower Filter compatible with all showerheads?</div>
+                    </button>
+                </h2>
+                <div id="accFAQSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>The Qure Shower Filter fits most standard showerheads, but we recommend checking your showerhead's specifications to ensure compatibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<!-- --faq end -- -->
+
+<script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', function () {
+                // Get the closest '.detail' element to the clicked button
+                const detailElement = this.closest('.detail');
+
+                // Get the corresponding accordion collapse element
+                const collapseElement = detailElement.querySelector('.accordion-collapse');
+
+                // Listen for the 'shown.bs.collapse' event
+                collapseElement.addEventListener('shown.bs.collapse', function () {
+                    // Add the 'active' class when the accordion is fully shown
+                    detailElement.classList.add('active');
+                });
+
+                // Listen for the 'hidden.bs.collapse' event to remove the 'active' class
+                collapseElement.addEventListener('hidden.bs.collapse', function () {
+                    // Remove the 'active' class when the accordion is collapsed
+                    detailElement.classList.remove('active');
+                });
+            });
+        });
+
+        $('.read-more').click(function () {
+            $(this).prev().slideToggle();
+            if (($(this).text()) == "See Less") {
+                $(this).text("See More");
+            } else {
+                $(this).text("See Less");
+            }
+        });
+    });
+</script>

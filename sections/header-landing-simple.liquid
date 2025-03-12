@@ -1,0 +1,184 @@
+{%- assign announcement_count = 0 -%}
+{%- assign navigation_link_count = 0 -%}
+{%- assign navigation_link_image = false -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'announcement' -%}
+            {%- assign announcement_count = announcement_count | plus: 1 -%}
+        {%- when 'navigation-link' -%}
+            {%- assign navigation_link_count = navigation_link_count | plus: 1 -%}
+            {% if block.settings.image %}
+                {% assign navigation_link_image = true %}
+            {% endif %}
+    {%- endcase -%}
+{%- endfor -%}
+
+<div class="wrapper header-wrapperBlock home-default-wrapper mi-landing-page" id="include_header_landing">
+    {% if settings.enable_site_gamification %}
+        <div class="announcement_bar site-gamification-active">
+            {% render 'pdm_site-wide-gamification', settingsGamification: settings, cartTotal: cart.items_subtotal_price  %}
+            {% if settings.enable_site_wide_timer %}
+                <div class="announcement_bar__timer">
+                    {% render 'pdm_site-wide-timer' %}
+                </div>
+            {% endif %}
+        </div>
+    {% else %}
+        {% for block in section.blocks %}
+            {% if block.type == 'announcement' %}
+                <!-- -- announcement bar start -- -->
+                <div class="announcement_bar bg_Darkgreen text-light">
+                    <p class="d-none d-md-block">{{ block.settings.heading }}</p>
+                </div>
+                <div class="announcement_bar bg-light text-dark">
+                    <p class="d-block d-md-none">{% if block.settings.heading_mobile != blank %}{{ block.settings.heading_mobile }}{% else %}{{ block.settings.heading }}{% endif %}</p>
+                </div>
+                <!-- -- announcement bar end -- -->
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+
+    <div class="deks-header bg-black">
+        <div class="container">
+            <div class="dek-menu">
+
+                {% if navigation_link_image == true %}
+                    <nav class="mobile-menu-custome">
+                        <div class="hamburger-container">
+                            <ul class="hamburger">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div id="menu" class="menu_with_icons">
+                            {% if navigation_link_count > 0 %}
+                                <ul>
+                                    {%- for block in section.blocks offset:announcement_count -%}
+                                        {% if block.type == 'navigation-link' %}
+                                            <li class="title"><a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" id="hsm_{{ forloop.index }}">
+                                                <div class="menuBlock">
+                                                    {% if block.settings.image != blank %}
+                                                        <img class="img-fluid" src="{{ block.settings.image | img_url: '150x' }}" alt="mobile menu image" />
+                                                    {% endif %}
+                                                    <span>{{ block.settings.link_label }}</span>
+                                                </div>
+                                                <img class="mob_icon" src="{{ 'header_arrow_right_white.svg' | asset_url }}" alt="mobile menu arrow">
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                    {%- endfor -%}
+                                </ul>
+                            {% endif %}
+                        </div>
+                    </nav>
+                {% else %}
+                    <nav class="mobile-menu-custome">
+                        <div class="hamburger-container">
+                            <ul class="hamburger">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <ul id="menu">
+                            {%- for block in section.blocks offset:announcement_count -%}
+                                {% if block.type == 'navigation-link' %}
+                                    <li class="title">
+                                        <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" id="hsm_{{ forloop.index }}">{{ block.settings.link_label }}</a>
+                                    </li>
+                                {% endif %}
+                            {%- endfor -%}
+                        </ul>
+                    </nav> 
+                {% endif %}
+
+                <div class="menu saf-menu">
+                    <ul>
+                        {%- for block in section.blocks offset:announcement_count -%}
+                            {% if block.type == 'navigation-link' %}
+                                <li>
+                                    <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.link_label | escape }}" id="hs_{{ forloop.index }}">{{ block.settings.link_label }}</a>
+                                </li>
+                            {% endif %}
+                        {%- endfor -%}
+                    </ul>
+
+                </div>
+
+                <div class="logo">
+                    <a href="{{ routes.root_url }}" class="logo-image" aria-label="Qure">
+                        <img class="img-fluid" src="{{ 'logo.svg' | asset_url }}" alt="{{ link.title | escape }}">
+                    </a>
+                </div>
+
+                <div class="saf-icon d-flex justify-content-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAccount" aria-controls="offcanvasAccount">
+                    <a href="#" class="nav__url ac_url">
+                        <img src="{{ 'login.svg' | asset_url }}" class="fa fa-user nav__icon" alt="navigation">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.header-landing-simple.name",
+        "class": "section-header-landing-simple",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "announcement",
+                "name": "t:sections.header-sales.blocks.announcement.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type" : "text",
+                        "id" : "heading",
+                        "label" : "t:common.heading.label"
+                    },
+                    {
+                        "type" : "text",
+                        "id" : "heading_mobile",
+                        "label" : "t:common.heading.mobile.label"
+                    }
+                ]
+            },
+            {
+                "type": "navigation-link",
+                "name": "t:sections.header-sales.blocks.navigation-link.name",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "default": "Link label",
+                        "label": "t:common.link.label",
+                        "info": "t:common.link.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.header-landing-simple.name"
+			}
+        ]       
+    }
+{% endschema %}

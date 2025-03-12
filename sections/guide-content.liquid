@@ -1,0 +1,94 @@
+<!-- -- craetive guide start -- -->
+<div class="creative_guide section pt-0">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <div class="c_guide_infos h-100">
+          {% if section.settings.heading != blank %}
+            <h1 class="title-lg mb-4 mb-md-5">
+              {{ section.settings.heading }}
+            </h1>
+          {% endif %}
+          {% if section.settings.sub_heading != blank %}
+            {{ section.settings.sub_heading }}
+          {% endif %}
+          {% if section.settings.button_url != blank %}
+            <p class="mt-3 text-decoration-underline text-dark">
+              <img
+                src="{{'correct_circle.svg' | asset_url }}"
+                alt=""
+                class="img-fluid me-2"
+
+              ><a
+                href="{{section.settings.button_url}}"
+                class="text-decoration-underline text-dark"
+              >
+                {{- section.settings.button_label -}}
+              </a>
+            </p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="offset-md-1 col-md-5 order-1 order-md-2">
+        <div class="c_guide_img mw-mob-100" id="video_mobile">
+          <div class="wistia_responsive_padding" style="position:relative;">
+            <div
+              class="wistia_responsive_wrapper"
+              style="height:100%;left:0;position:absolute;top:0;width:100%;"
+            >
+              <div
+                class="wistia_embed wistia_async_{{ section.settings.wistia_id }} seo=false videoFoam=true"
+                style="height:100%;position:relative;width:100%"
+              >
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -- craetive guide end -- -->
+{% schema %}
+{
+  "name": "Guide Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "sub_heading",
+      "label": "t:common.subheading.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:common.button.label",
+      "info": "t:common.button.info"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "t:common.button.url.label"
+    },
+    {
+      "type": "text",
+      "id": "wistia_id",
+      "label": "t:common.wistia.id.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guide Content"
+    }
+  ]
+}
+{% endschema %}
+
+<script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>

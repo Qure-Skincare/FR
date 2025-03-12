@@ -1,0 +1,127 @@
+<!-- -- skin hydration start -- -->
+<div class="skin_hydration section">
+    <div class="container">
+        <div class="skin_hydration_grid">
+            <div class="skin_hydration_info">
+                <div class="section_header text-start p-0">
+                    {% if section.settings.heading != blank %}
+                        <h2 class="title-lg">{{ section.settings.heading }}</h2> 
+                    {% endif %}
+                </div>
+                <div class="progress_grid">
+                    <div class="progressInfo">
+                        <div class="progressCont">
+                            <p><span class="progressWrapper">
+                                    <span class="progessInfo text-dark">90%</span>
+                                    <svg class="vMQQx" height="77" width="77" viewBox="-29 -29 58 58">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0" x2="0" y1="1" y2="0">
+                                                <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                                <stop offset="100%" stop-color="#C7E7DC"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle stroke="rgba(221, 224, 228, 1)" fill="none" pathLength="100"
+                                            class="K4v4P" r="24" style="stroke-width: 1px;"></circle>
+                                        <circle visibility="visible" fill="none" pathLength="100"
+                                            transform="rotate(-90)" class="OKwUu" r="24" stroke="url(#gradient)"
+                                            style="stroke-dasharray: 100; stroke-dashoffset: 9; stroke-width: 5px;">
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </p>
+                        </div>
+                        <p>
+                            participants wouldn't go back to tap water.
+                        </p>
+                    </div>
+                    <div class="progressInfo">
+                        <div class="progressCont">
+                            <p><span class="progressWrapper">
+                                    <span class="progessInfo text-dark">60%</span>
+                                    <svg class="vMQQx" height="77" width="77" viewBox="-29 -29 58 58">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0" x2="0" y1="1" y2="0">
+                                                <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                                <stop offset="100%" stop-color="#C7E7DC"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle stroke="rgba(221, 224, 228, 1)" fill="none" pathLength="100"
+                                            class="K4v4P" r="24" style="stroke-width: 1px;"></circle>
+                                        <circle visibility="visible" fill="none" pathLength="100"
+                                            transform="rotate(-90)" class="OKwUu" r="24" stroke="url(#gradient)"
+                                            style="stroke-dasharray: 70; stroke-dashoffset: 9; stroke-width: 5px;">
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </p>
+                        </div>
+                        <p>noticed their skin was more radiant and clearer.
+                        </p>
+                    </div>
+                    <div class="progressInfo">
+                        <div class="progressCont">
+                            <p><span class="progressWrapper">
+                                    <span class="progessInfo text-dark">100%</span>
+                                    <svg class="vMQQx" height="77" width="77" viewBox="-29 -29 58 58">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0" x2="0" y1="1" y2="0">
+                                                <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                                <stop offset="100%" stop-color="#C7E7DC"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle stroke="rgba(221, 224, 228, 1)" fill="none" pathLength="100"
+                                            class="K4v4P" r="24" style="stroke-width: 1px;"></circle>
+                                        <circle visibility="visible" fill="none" pathLength="100"
+                                            transform="rotate(-90)" class="OKwUu" r="24" stroke="url(#gradient)"
+                                            style="stroke-dasharray: 110; stroke-dashoffset: 9; stroke-width: 5px;">
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </p>
+                        </div>
+                        <p>say the filter was easy to fit into their skincare routine.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-none d-md-block">
+                    {{ section.settings.text }}
+                </div>
+                <div class="d-block d-md-none">
+                    {{ section.settings.text }}
+                </div>
+            </div>
+            {% if section.settings.image != blank %}
+                <div class="skin_hydration_img">
+                    <img src="{{ section.settings.image | img_url: '800x' }}" alt="" class="img-fluid">
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+</div>
+<!-- -- skin hydration end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.skin-hydration.name",
+        "class": "section-skin-hydration",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            }
+        ]
+    }
+{% endschema %}

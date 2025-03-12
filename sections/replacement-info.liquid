@@ -1,0 +1,63 @@
+<!-- replacement_info.liquid -->
+<div class="replacement_info section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 m-md-auto mw-100">
+            <h2 class="title-lg">
+                {{ section.settings.title }}
+            </h2>
+            <p>{{ section.settings.description }}</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-md-center gap-3">
+            {% for pill in section.blocks %}
+                <div class="replacement_pill">
+                    <img src="{{ pill.settings.image | img_url: '15x' }}" alt="">
+                    <p>{{ pill.settings.text }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.Replacement_Info.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:common.title.label",
+      "default": "Once you get clean water on tap, you’ll never go back"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "t:common.description.label",
+      "default": "Filtered water for your skin is at its best when used consistently on the daily – so you’ll want to replace your filter about once every three months. Once you get used to your skin feeling cleaner, softer and more refreshed, you’ll never want to go back to tap water again."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "replacement_pill",
+      "name": "Replacement Pill",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.icon.label"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:common.text.content",
+          "default": "90-day supply"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.Replacement_Info.label"
+    }
+  ]
+}
+{% endschema %}

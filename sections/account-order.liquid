@@ -1,0 +1,132 @@
+<div class="acc_address section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="address_header d-flex justify-content-center mb-4 flex-wrap">
+                    <p class="me-3">WELCOME <span class="cus_name text-uppercase">{{ customer.name }}</span></p>
+                    <div>
+                        <a href="{{ routes.account_logout_url }}" class="text-secondary">LOGOUT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="your_address qure_form py-0">
+                    <div class="section_header ps-0 mw-100">
+                        <h2 class="title-lg">Account Details</h2>
+                    </div>
+                    
+                    {{ customer.default_address | format_address }}
+
+                    <div class="qure_form_btn gap-4 d-flex my-4">
+                        <button onclick="location.href='{{ routes.account_url }}'" class="btn btn-lg btn-primary">BACK</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="col-new_address qure_form py-0">
+                    <form id="create_account">
+                        <div class="row">
+                            <div class="section_header ps-0 mw-100">
+                                <h2 class="title-lg">Order {{ order.name }}</h2>
+                            </div>
+
+                            {% if order.cancelled %}
+                              {%- assign cancelled_at = order.cancelled_at | date: "%m-%d-%Y %H:%M" -%}
+                              <p>{{ 'customer.order.cancelled' | t: date: cancelled_at }}</p>
+                              <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason }}</p>
+                            {% endif %}
+                            
+                            <table class="table order_history">
+                              <thead>
+                                <tr>
+                                  <th>{{ 'customer.order.product' | t }}</th>
+                                  <th>{{ 'customer.order.sku' | t }}</th>
+                                  <th>{{ 'customer.order.price' | t }}</th>
+                                  <th>{{ 'customer.order.quantity' | t }}</th>
+                                  <th>{{ 'customer.order.total' | t }}</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {% for line_item in order.line_items %}
+                                  <tr id="{{ line_item.key }}" class="responsive-table-row">
+                                    <td data-label="{{ 'customer.order.product' | t }}">
+                                      {{ line_item.title | link_to: line_item.product.url }}
+                                      {% if line_item.fulfillment %}
+                                        <dl>
+                                          <dt>{{ 'customer.order.fulfilled_at' | t }}</dt>
+                                          <dd>{{ line_item.fulfillment.created_at | date: "%m-%d-%Y %H:%M" }}</dd>
+                            
+                                          {% if line_item.fulfillment.tracking_url %}
+                                            <dt>{{ 'customer.order.tracking_url' | t }}</dt>
+                                            <dd>
+                                              <a href="{{ line_item.fulfillment.tracking_url }}">
+                                                {{ 'customer.order.track_shipment' | t }}
+                                              </a>
+                                            </dd>
+                                          {% endif %}
+                            
+                                          <dt>{{ 'customer.order.tracking_company' | t }}</dt>
+                                          <dd>{{ line_item.fulfillment.tracking_company }}</dd>
+                            
+                                          {% if line_item.fulfillment.tracking_number %}
+                                            <dt>{{ 'customer.order.tracking_number' | t }}</dt>
+                                            <dd>{{ line_item.fulfillment.tracking_number }}</dd>
+                                          {% endif %}
+                                        </dl>
+                                      {% endif %}
+                                    </td>
+                                    <td data-label="{{ 'customer.order.sku' | t }}">{{ line_item.sku }}</td>
+                                    <td data-label="{{ 'customer.order.price' | t }}">{{ line_item.price | money }}</td>
+                                    <td data-label="{{ 'customer.order.quantity' | t }}">{{ line_item.quantity }}</td>
+                                    <td data-label="{{ 'customer.order.total' | t }}">{{ line_item.quantity | times: line_item.price | money }}</td>
+                                  </tr>
+                                {% endfor %}
+                              </tbody>
+                              <tfoot>
+                                <tr class="responsive-table-row">
+                                  <td colspan="3" class="small--hide">Placed on</td>
+                                  <td colspan="2" data-label="Placed on">{{ order.created_at | date: "%m-%d-%Y" }}</td>
+                                </tr>
+
+                                <tr class="responsive-table-row">
+                                  <td colspan="3" class="small--hide">{{ 'customer.order.subtotal' | t }}</td>
+                                  <td colspan="2" data-label="{{ 'customer.order.subtotal' | t }}">{{ order.subtotal_price | money }}</td>
+                                </tr>
+                            
+                                {% for discount in order.discounts %}
+                                  <tr>
+                                    <td colspan="3" class="small--hide">{{ discount.code }} {{ 'customer.order.discount' | t }}</td>
+                                    <td colspan="2" data-label="{{ 'customer.order.discount' | t }}">{{ discount.savings | money }}</td>
+                                  </tr>
+                                {% endfor %}
+                            
+                                {% for shipping_method in order.shipping_methods %}
+                                  <tr>
+                                    <td colspan="3" class="small--hide">{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</td>
+                                    <td colspan="2" data-label="{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})">{{ shipping_method.price | money }}</td>
+                                  </tr>
+                                {% endfor %}
+                            
+                                {% for tax_line in order.tax_lines %}
+                                  <tr>
+                                    <td colspan="3" class="small--hide">{{ 'customer.order.tax' | t }} ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%)</td>
+                                    <td colspan="2" data-label="{{ 'customer.order.tax' | t }} ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%)">{{ tax_line.price | money }}</td>
+                                  </tr>
+                                {% endfor %}
+                            
+                                <tr>
+                                  <td colspan="3" class="small--hide">{{ 'customer.order.total' | t }}</td>
+                                  <td colspan="2" data-label="{{ 'customer.order.total' | t }}">{{ order.total_price | money }} {{ order.currency }}</td>
+                                </tr>
+                              </tfoot>
+                            </table>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,182 @@
+{% assign random_number = 'now' | date: '%s' | modulo: 100 | plus: 1 %}
+<!-- -- image with text start -- -->
+<div class="imageText new_side {{ section.settings.background }} {{ section.settings.custom_class }}">
+    <div class="container">
+        <div class="section_header px-md-0 px-2 text-center pb-md-5">
+            {% if section.settings.sub_head != blank %}
+            <p class="silk_heading">{{ section.settings.sub_head }}</p>
+            {% endif %}
+            {% if section.settings.heading != blank %}
+            <h2 class="title-lg">{{ section.settings.heading }}</h2>
+            {% endif %}
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="it_img pb-3 pb-md-0">
+                    <div class="it_img_content">
+                        <div>
+                            <div 
+                                class="nav d-flex justify-content-between h-100 flex-column nav-pills" 
+                                id="pd_{{ random_number }}" 
+                                role="tablist" 
+                                aria-orientation="vertical">
+                                {% for block in section.blocks %}
+                                    {% case block.type %}
+                                    {% when 'tabs' %}
+                                    <button 
+                                        class="nav-link {% if forloop.index == 2 %}active{% endif %}" 
+                                        id="pd_{{ random_number }}_{{ block.id }}" 
+                                        data-bs-toggle="pill" 
+                                        data-bs-target="#collapse_{{ random_number }}_{{ block.id }}" 
+                                        type="button" 
+                                        role="tab" 
+                                        aria-controls="collapse_{{ random_number }}_{{ block.id }}" 
+                                        aria-selected="{% if forloop.index == 2 %}true{% else %}false{% endif %}">
+                                        {% if block.settings.sm_image != blank %}
+                                        <img src="{{ block.settings.sm_image | img_url: 'master' }}" class="img-fluid" alt="{{ block.settings.sm_image.alt }}">
+                                        {% endif %}
+                                    </button>
+                                    {% endcase %}
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tab-content" id="tabContent_{{ random_number }}">
+                                {% for block in section.blocks %}
+                                    {% case block.type %}
+                                    {% when 'tabs' %}
+                                    <div 
+                                        class="tab-pane fade {% if forloop.first %}show active{% endif %}" 
+                                        id="collapse_{{ random_number }}_{{ block.id }}" 
+                                        role="tabpanel" 
+                                        aria-labelledby="pd_{{ random_number }}_{{ block.id }}">
+                                        {% if block.settings.images != blank %}
+                                        <img src="{{ block.settings.images | img_url: 'master' }}" class="img-fluid" alt="{{ block.settings.images.alt }}">
+                                        {% endif %}
+                                    </div>
+                                    {% endcase %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="it_info">
+                    <div class="newside_list mw-100">
+                        <ul>
+                            {% for block in section.blocks %}
+                                {% case block.type %}
+                                {% when 'text' %}
+                                <li>
+                                    {% if block.settings.icon != blank %}
+                                    <img src="{{ block.settings.icon | img_url: '40x' }}" alt="Tab image {{ forloop.index }}">
+                                    {% endif %}
+                                    <div>
+                                        {% if block.settings.p_head != blank %}
+                                        <p class="p-head">{{ block.settings.p_head }}</p>
+                                        {% endif %}
+                                        {% if block.settings.desk != blank %}
+                                        <p class="fw-normal">{{ block.settings.desk }}</p>
+                                        {% endif %}
+                                    </div>
+                                </li>
+                                {% endcase %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- image with text end -- -->
+
+{% schema %}
+{
+    "name": "t:sections.pd_tabs.label",
+    "settings": [
+        {
+            "type": "select",
+            "id": "background",
+            "label": "t:common.background.label",
+            "options": [
+              {
+                "value": "bg-grey",
+                "label": "Grey"
+              },
+              {
+                "value": "bg-yellow",
+                "label": "Yellow"
+              },
+              {
+                "value": "trasnparent",
+                "label": "Transparent"
+              }
+            ]
+          },
+          {
+            "type": "textarea",
+            "id": "heading",
+            "label": "t:common.heading.label"
+          },
+          {
+            "type": "text",
+            "id": "sub_head",
+            "label": "t:common.subheading.label"
+          },
+          {
+            "type": "textarea",
+            "id": "custom_class",
+            "label": "t:common.classname.custom",
+            "default": "section"
+          }
+    ],
+    "blocks": [
+        {
+            "type": "tabs",
+            "name": "t:common.tab.image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "images",
+                    "label": "t:common.tab.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "sm_image",
+                    "label": "t:common.button.image.label"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "name": "t:common.text.content",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "t:common.icon.label"
+                },
+                {
+                    "type": "text",
+                    "id": "p_head",
+                    "label": "t:common.heading.label"
+                },
+                {
+                    "type": "textarea",
+                    "id": "desk",
+                    "label": "t:common.desc.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.pd_tabs.label"
+        }
+    ]
+}
+{% endschema %}

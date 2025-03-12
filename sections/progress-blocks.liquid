@@ -1,0 +1,125 @@
+<!-- -- user report start -- -->
+
+<div class="user_report bg-lightGrey section {{ section.settings.ctm_cls_prog }}" id="{{ section.id }}">
+    <div class="container">
+        {%- if section.settings.section_heading != blank -%}
+            <div class="section_header mb-3 text-center">
+                <h2 class="title-lg paddingB">{{ section.settings.section_heading }}</h2>
+                {{ section.settings.subheading }}
+            </div>
+        {% endif %}
+        <div class="user_report_wrap">
+            {%- for block in section.blocks -%}
+                {% if block.type == 'column' %}
+                    <div class="progressCont"><span class="progressWrapper">
+                            <span class="progessInfo text-dark">{{ block.settings.percent_text }}%</span>
+                            <svg class="vMQQx" height="77" width="77" viewBox="-29 -29 58 58">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="1" y2="0">
+                                        <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                        <stop offset="100%" stop-color="#C7E7DC"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle stroke="rgba(221, 224, 228, 1)" fill="none" pathLength="100" class="K4v4P"
+                                    r="24" style="stroke-width: 1px;"></circle>
+                                <circle visibility="visible" fill="none" pathLength="100" transform="rotate(-90)"
+                                    class="OKwUu" r="24" stroke="url(#gradient)"
+                                    style="stroke-dasharray: 100; {% assign dashoffset = 100 | minus: block.settings.percent_bar %} stroke-dashoffset: {{ dashoffset }}; stroke-width: 5px;">
+                                </circle>
+                            </svg>
+                        </span>
+                        <div class="tooltip_wrap">
+                            <div class="tooltip_btn">
+                                <div class="tootltip_text {{ block.settings.block_className }}" style="--heading-font-size: {{ block.settings.font_size | append:'px' }}">
+                                    {{ block.settings.toolip_hed}}
+                                    <img src="{{ 'info_lg.svg' | asset_url }}" alt="">
+                                    <div class="tooltip_info">
+                                        <div>{{ block.settings.toolip_desc }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+<!-- -- user report end -- -->
+
+{% style %}
+#section.id .tootltip_text * {
+    font-size: var(--heading-font-size);
+}
+{% endstyle %}
+
+{% schema %}
+    {
+        "name": "t:sections.progress_blocks.label",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_heading",
+                "label": "t:common.heading.label",
+                "default": "Proof In Numbers"
+            },
+            {
+                "type": "text",
+                "id": "ctm_cls_prog",
+                "label": "t:common.classname.custom"
+            },
+            {
+                "type": "richtext",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "column",
+                "name": "t:common.column.label",
+                "limit": 3,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "percent_text",
+                        "label": "t:progressBlock.column.percent_text"
+                    },
+                    {
+                        "type": "range",
+                        "id": "percent_bar",
+                        "min": 0,
+                        "max": 100,
+                        "default": 10,
+                        "step": 1,
+                        "label": "t:progressBlock.column.percent_bars"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "toolip_hed",
+                        "label": "t:common.heading.info"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "toolip_desc",
+                        "label": "t:common.desc.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "font_size",
+                        "min": 0,
+                        "max": 100,
+                        "default": 12,
+                        "step": 1,
+                        "label": "t:common.font.size"
+                    },
+                ]
+		    }
+        ],
+        "presets": [
+            {
+                "name": "t:sections.progress_blocks.label"
+            }
+        ]
+    }
+{% endschema %}

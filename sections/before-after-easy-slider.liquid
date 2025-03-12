@@ -1,0 +1,214 @@
+<!-- --  skincare slider start  -- -->
+<div class="skincare_slider bg_gradient_yellow_bt">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="section_header text-md-center mb-3">
+                <h2 class="title-lg paddingB">
+                    {{ section.settings.heading }}
+                </h2>
+                {% if section.settings.text %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </div>   
+        {% endif %}
+        {% if section.blocks.size > 0 %}
+            <div class="swiper twa__swiper skin_slider1 dot_pagination" id="twa__swiper-skinSlider"
+                data-section-id="skinSlider" data-autoplay="false" data-loop="false" data-centerslide="false"
+                data-mobile="1" data-tablet="1" data-desktop="1" data-spacing="30"
+                data-arrowleft="skinSlider-swiper-prev" data-arrowright="skinSlider-swiper-next">
+                <div class="swiper-wrapper">
+                    {%- for block in section.blocks -%}
+                        <div class="swiper-slide">
+                            <div class="skin_item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        {% if block.settings.heading != blank %}
+                                            <div class="skin_item_header d-block d-md-none">{{ block.settings.heading }}</div>
+                                        {% endif %}
+                                        <div class="skincare_left">
+                                            <div class="row gx-2">
+                                                <div class="col-6">
+                                                    <div class="result_img_m before_img">
+                                                        {% if block.settings.image_before != blank %}
+                                                            <img class="img-fluid" src="{{ block.settings.image_before | img_url: '400x' }}" alt="">
+                                                        {% endif %}
+                                                        {% if block.settings.text_before != blank %}
+                                                            <span class="result_badge">{{ block.settings.text_before }}</span>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="result_img_m after_img">
+                                                        {% if block.settings.image_after != blank %}
+                                                            <img class="img-fluid" src="{{ block.settings.image_after | img_url: '400x' }}" alt="">
+                                                        {% endif %}
+                                                        {% if block.settings.text_after != blank %}
+                                                            <span class="result_badge">{{ block.settings.text_after }}</span>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="r_c_info">
+                                                <div class="c_information">
+                                                    {% if block.settings.image_country != blank %}
+                                                        <div class="flag_img pe-2">
+                                                            <img class="img-fluid" src="{{ block.settings.image_country | img_url: '100x' }}" alt="">
+                                                        </div>
+                                                    {% else %}
+                                                        <div class="flag_img pe-2">
+                                                            <img src="{{ 'america_f.webp' | asset_url }}" alt="" class="img-fluid">
+                                                        </div> 
+                                                    {% endif %}
+                                                    <p class="r_c_name pe-4">{{ block.settings.client }}</p>
+                                                    <div class="verified_img pe-2">
+                                                        <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                                    </div>
+                                                    <p>Verified customer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="skincare_right">
+                                            {% if block.settings.heading %}
+                                                <div class="skin_item_header d-none d-md-block">{{ block.settings.heading }}</div>
+                                            {% endif %}
+
+                                            {% if block.settings.text != blank %}
+                                                <div class="ss_list">
+                                                    {{ block.settings.text }}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    {%- endfor -%}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+<!-- --  skincare slider end  -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.before-after-easy-slider.name",
+        "class": "section-before-after-easy-slider",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "t:sections.before-after-easy-slider.blocks.slide.name",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_before",
+                        "label": "t:sections.before-after-easy-slider.blocks.slide.settings.image_before.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_before",
+                        "label": "t:sections.before-after-easy-slider.blocks.slide.settings.text_before.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_after",
+                        "label": "t:sections.before-after-easy-slider.blocks.slide.settings.image_after.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_after",
+                        "label": "t:sections.before-after-easy-slider.blocks.slide.settings.text_after.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_country",
+                        "label": "t:common.client.country.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client",
+                        "label": "t:common.client.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.before-after-easy-slider.name",
+                "settings": {
+                    "heading": "Qure’s 2-In-1 System isn’t like any other at-home needling treatment",
+                    "text": "<p>Qure’s Micro-Infusion System <strong>stimulates and infuses,<\/strong> making it uniquely effective.<\/p><p>First, it “stamps” your skin with 24K gold 0.5mm needles. This helps create controlled trauma in your skin which can help <strong>boost the feel of firmness and smooth the look of fine lines and wrinkles.<\/strong> The needles are thinner than the average human hair, so you will hardly even feel them.<\/p><p>Second, the invisible micro-channels help “infuse” serums, with science-backed ingredients, of your choice, into the top layer of your skin, aiding absorption for <strong>visible results.<\/strong><\/p>"
+                },
+                "blocks": [
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Fine Lines and Blemishes",
+                            "text": "<ul><li>Smooths rough skin texture, reduces pores and <strong>evens out skin tone<\/strong><\/li><li>Helps reduce appearance of fine lines for <strong>firmer, plumper<\/strong> feeling skin<\/li><li>Supports in <strong>fading<\/strong> look of <strong>dark spots<\/strong> and <strong>post-acne marks<\/strong><\/li><\/ul>",
+                            "image_before": "shopify:\/\/shop_images\/mica_1_before_img.webp",
+                            "text_before": "BEFORE",
+                            "image_after": "shopify:\/\/shop_images\/mica_after_img.webp",
+                            "text_after": "AFTER 1 TREATMENT",
+                            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+                            "client": "Mica A."
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Skin Tone & Texture",
+                            "text": "<ul><li>Brightens the skin for a <strong>healthier, more radiant complexion<\/strong><\/li><li>Assists in fading the appearance of dark spots and post-acne marks for more <strong>even-looking skin<\/strong><\/li><li>Helps promote hydration for <strong>dewy, plump looking skin<\/strong><\/li><\/ul>",
+                            "image_before": "shopify:\/\/shop_images\/monika_1_before_img.webp",
+                            "text_before": "BEFORE",
+                            "image_after": "shopify:\/\/shop_images\/monika_after_img.webp",
+                            "text_after": "AFTER 1 TREATMENT",
+                            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+                            "client": "Monika"
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "Overall Transformation",
+                            "text": "<ul><li>Skin appears <strong>brighter, smoother,<\/strong> and more <strong>youthful<\/strong><\/li><li>Helps with <strong>better serum absorption<\/strong> for results you can see<\/li><li>Helps minimize <strong>appearance of pores and wrinkles<\/strong><\/li><\/ul>",
+                            "image_before": "shopify:\/\/shop_images\/ellie_1_before_img.webp",
+                            "text_before": "BEFORE",
+                            "image_after": "shopify:\/\/shop_images\/ellie_after_img.webp",
+                            "text_after": "AFTER 6 TREATMENTS",
+                            "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
+                            "client": "Ellie V."
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,41 @@
+{% if blogs[blog_handle].articles.size > 0 %}
+    <div class="blogSliderLED_outer">
+    <div class="swiper twa__swiper blogSlider dot_pagination"
+        id="twa__swiper-blogSliderSkincare" data-section-id="blogSliderSkincare"
+        data-autoplay="false" data-loop="false" data-centerslide="false"
+        data-mobile="1" data-tablet="2" data-desktop="3" data-spacing="20"
+        data-arrowleft="blogSliderSkincare-swiper-prev"
+        data-arrowright="blogSliderSkincare-swiper-next">
+        <div class="swiper-wrapper">
+            {% for article in blogs[blog_handle].articles limit: 10 %}
+                <div class="swiper-slide">
+                    <div class="blog_wrap">
+                        <div class="blog_img">
+                            <picture>
+                                <source media="(min-width:1920px)" srcset="{{ article.image | img_url: 'master' }}" width="253" height="109">
+                                <source media="(min-width:1600px)" srcset="{{ article.image | img_url: '1600x' }}" width="253" height="109">
+                                <source media="(min-width:1100px)" srcset="{{ article.image | img_url: '1100x' }}" width="253" height="109">
+                                <source media="(min-width:720px)" srcset="{{ article.image | img_url: '720x' }}" width="253" height="109">
+                                <source media="(min-width:540px)" srcset="{{ article.image | img_url: '540x' }}" width="332" height="192">
+                                <img src="{{ article.image | img_url: '720x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" width="332" height="192">
+                            </picture>
+                        </div>
+                        <div class="blog_content">
+                            <h6 class="blog_info">#{{ blogs[blog_handle].title }}</h6>
+                            <h5 class="blog_title">{{ article.title | truncatewords: 8 }}</h5>
+                        </div>
+                        <div class="blog_btn_wrapper">
+                            <a class="btn btn-primary blog_btn" href="{{ article.url }}" aria-label="{{ article.title | truncatewords: 8 | escape }}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="pagination_navigation">
+            <div class="swiper-pagination"></div>
+            <div class="blogSliderSkincare-swiper-prev swiper-button-prev swiper-button"></div>
+            <div class="blogSliderSkincare-swiper-next  swiper-button-next swiper-button"></div>
+        </div>
+    </div>
+</div>
+{% endif %}

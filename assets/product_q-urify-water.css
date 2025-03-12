@@ -1,0 +1,234 @@
+.free_grid {
+    display: grid;
+    grid-template-columns: 492px 1fr;
+    align-items: center;
+    gap: 49px;
+}
+
+.free_report_info .section_header p {
+    max-width: 550px;
+}
+
+.free_report_info .form-control {
+    border-radius: 30px;
+    border: 1px solid #4E4E4E;
+    padding: 10px 18px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.free_report_info .form-control:nth-child(2) {
+    margin: 5px;
+}
+
+.free_report_info form .btn-primary {
+    border-radius: 30px;
+    padding: 12px;
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.free_report_info form p {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+.free_report_info form p>a {
+    color: #000;
+}
+
+.skin_hydration_grid {
+    display: grid;
+    grid-template-columns: 490px 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.progress_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.skin_hydration_grid .skin_hydration_info .progressInfo {
+    text-align: center;
+}
+
+.trusted_bl,
+.trusted_cl {
+    background: transparent;
+}
+
+.trusted_cl_m .t_m_img {
+    min-height: 100%;
+}
+
+.qurify_water .result_content p {
+    font-weight: 300;
+}
+
+.ingredients_slider {
+    max-width: 550px;
+    margin: 0 50px;
+}
+
+.ingredients_item {
+    text-align: center;
+    max-width: 112px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.ingredients_item p {
+    display: flex;
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    min-height: 49px;
+    align-items: center;
+    justify-content: center;
+}
+
+.qurify_water .see_item_info p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.it_info .header {
+    margin-top: -14px;
+}
+
+.qurify_water .newside_list ul li p {
+    font-weight: 400;
+}
+
+.qurify_water .cp_item {
+    max-width: 156px;
+}
+
+.qurify_water .cp_ftr_wrapper {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .free_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .free_report_info form .btn-primary {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .skin_hydration_grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .progress_grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .skin_hydration_grid .skin_hydration_info .progressInfo {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .mi_landing_result .result_item_info {
+        padding-top: 10px;
+    }
+/* 
+    .qurify_water .technology_light {
+        padding-top: 0px;
+    } */
+
+    .qurify_water .see_item_info p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .qurify_water .subscribe_save_wrapper .subscribeInfo p {
+        font-weight: 300;
+    }
+
+    .qurify_water .subscribe_save_wrapper .with_subscription.buy_btn {
+        font-size: 20px;
+        padding: 17px 0;
+    }
+
+    .qurify_water .payment_method p {
+        font-weight: 400;
+    }
+
+    .free_report_info .form-control {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    .skin_hydration_grid .skin_hydration_info p:not(:last-child) {
+        padding-bottom: 10px;
+    }
+
+    .qurify_water .newside_list ul li p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .qurify_water .new_side .header {
+        padding: 30px 0;
+    }
+
+    .ingredients_slider {
+        max-width: 100%;
+        margin: 0 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        overflow: unset;
+    }
+
+    .ingredients_item img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .ingredients_item p {
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 45px;
+        align-items: center;
+        display: flex;
+    }
+
+    .it_info .header {
+        margin-top: 0px;
+    }
+
+    .qurify_water .cp_ftr_wrapper {
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .qurify_water .cp_item {
+        max-width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+}

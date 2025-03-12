@@ -1,0 +1,22 @@
+@media(max-width:767px) {
+    .our_story .qa__inner {
+        bottom: 30px;
+    }
+
+    .our_story .trusted_bl {
+        background: transparent;
+    }
+    .our_story .trusted_withInfo p {
+        padding: 20px 0;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+
+    .our_story .trusted_withInfo p:last-child {
+        padding-bottom: 0px;
+        padding-top: 0;
+    }
+
+}

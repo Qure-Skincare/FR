@@ -1,0 +1,62 @@
+<script>
+function updateSlideCart() {
+  return new Promise((resolve, reject) => {
+    const slidecartContainer = document.querySelector('#shopify-section-slidecart');
+    
+    if (slidecartContainer) {
+      fetch(`${window.Shopify.routes.root}?sections=slidecart`)
+        .then(res => res.json())
+        .then(response => {
+          const slidecartHTML = response['slidecart'];
+      
+          if (slidecartHTML) {
+            // Create a new temporary container to hold the new HTML
+            const tempContainer = document.createElement('div');
+            tempContainer.innerHTML = slidecartHTML;
+      
+            const newSlidecartNode = tempContainer.firstElementChild;
+      
+            if (newSlidecartNode) {
+              slidecartContainer.replaceWith(newSlidecartNode);
+              // new sidecart timer 
+              const sidecartTimerContainer = document.querySelector('.slide_cart .sidecart-timer-container');
+              if (sidecartTimerContainer) initSidecarTimer(sidecartTimerContainer);
+             
+              // sitewide timer (header) 
+              const siteWideTimerContainer = document.querySelector('.announcement_bar.site-gamification-active .sidecart-timer-container');
+              if (siteWideTimerContainer) initSidecarTimer(siteWideTimerContainer);
+      
+              const customEvent = new CustomEvent('cartUpdated', {
+                detail: {
+                  message: 'cart updated',
+                  time: new Date()
+                }
+              });
+              document.dispatchEvent(customEvent);
+              resolve();
+            }
+          }
+        })
+        .catch(error => {
+          console.error('Error updating slide cart:', error);
+          reject(error);
+        });
+    } else {
+      reject(new Error('Slidecart container not found'));
+    }
+  });
+}
+
+const slidecartObserver = new MutationObserver((mutations, obs) => {
+  const slidecartContainer = document.querySelector('#shopify-section-slidecart');
+  if (slidecartContainer) {
+    obs.disconnect();
+    updateSlideCart();
+  }
+});
+
+slidecartObserver.observe(document.body, {
+  childList: true,
+  subtree: true
+});
+</script>

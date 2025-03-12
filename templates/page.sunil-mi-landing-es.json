@@ -1,0 +1,1317 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header_landing_yzqaEc": {
+      "type": "header-landing",
+      "blocks": {
+        "announcement_QmXGJK": {
+          "type": "announcement",
+          "settings": {
+            "heading": "Envío GRATIS a todo el mundo | AHORRE 43% Oferta por tiempo limitado que finaliza este mes",
+            "heading_mobile": "La oferta limitada acaba pronto!",
+            "color": "white",
+            "font_size_desktop": 12,
+            "font_size_mobile": 12
+          }
+        },
+        "navigation_link_97aJVY": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "BENEFICIOS",
+            "link_url": "#reasons_section",
+            "image": "shopify://shop_images/nav_1.png"
+          }
+        },
+        "navigation_link_CmRG9V": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "OPINIONES Y RESULTADOS",
+            "link_url": "#result_section",
+            "image": "shopify://shop_images/header_2.webp"
+          }
+        },
+        "navigation_link_wMtKmt": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PREGUNTAS FRECUENTES",
+            "link_url": "#faq_section",
+            "image": "shopify://shop_images/header_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_QmXGJK",
+        "navigation_link_97aJVY",
+        "navigation_link_CmRG9V",
+        "navigation_link_wMtKmt"
+      ],
+      "settings": {
+        "button_label": "AHORRA HASTA UN 50%",
+        "button_url": "#productSubscription"
+      }
+    },
+    "main": {
+      "type": "product-landing",
+      "blocks": {
+        "rating_TfBQ9X": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "<p>4,8/5 Basado en 43.893 usuarios</p>",
+            "product": ""
+          }
+        },
+        "button_L9q6wE": {
+          "type": "button",
+          "settings": {
+            "button_label": "OBTÉN UNA PIEL MÁS SUAVE Y RADIANTE",
+            "button_url": "#productSubscription"
+          }
+        },
+        "list_pQxE9h": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li><strong>Transforma la piel de aspecto opaco,</strong> ayuda a reducir la apariencia de líneas finas y suaviza la textura</li><li><strong>Simple</strong> tratamiento facial de 5 minutos, sueros personalizados para abordar tus problemas de la piel con resultados visibles</li><li><strong>Efecto casi inmediato,</strong> prácticamente <strong>indoloro</strong> y fácil de realizar <strong>en casa</strong></li></ul>"
+          }
+        },
+        "media_bfYhdk": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_refill-product-3.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_4iwCUn": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-2.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_BGGnJg": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-5.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_ewbVL3": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_refill-product-1.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_yDrJ3B": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-3.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_bxHfGb": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-7.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_7jTHzN": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_refill-result-1-es.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_JqRMtg": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_refill-result-3-es_980f4445-41c6-44b9-adb9-94658e8fc906.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_Hb9Dce": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_refill-result-4-es.webp",
+            "wistia_id": ""
+          }
+        },
+        "video_GAjMEW": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/see_work.png",
+            "image_mobile": "shopify://shop_images/see_work_mob.webp",
+            "video": "shopify://files/videos/Qure Micro-infusing Applicate (Music).mp4",
+            "video_label": "Ver cómo funciona"
+          }
+        }
+      },
+      "block_order": [
+        "rating_TfBQ9X",
+        "button_L9q6wE",
+        "list_pQxE9h",
+        "media_bfYhdk",
+        "media_4iwCUn",
+        "media_BGGnJg",
+        "media_ewbVL3",
+        "media_yDrJ3B",
+        "media_bxHfGb",
+        "media_7jTHzN",
+        "media_JqRMtg",
+        "media_Hb9Dce",
+        "video_GAjMEW"
+      ],
+      "settings": {
+        "seo_heading": "",
+        "heading": "Más de 50,000 personas están revolucionando su cuidado de la piel desde casa.",
+        "heading_mobile": "Más de 50,000 personas están revolucionando su cuidado de la piel desde casa.",
+        "product": "",
+        "product_images_offset": 0,
+        "product_images_limit": 6,
+        "product_button_label": "Producto",
+        "before_after_images_limit": 3,
+        "before_after_button_label": "Vea los resultados reales",
+        "reserve": false,
+        "selected_design": "old",
+        "text_label_real_result_1": "Producto",
+        "text_label_real_result_2": "Vea los resultados reales",
+        "text_label_real_result_3": "Dermatólogo",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
+      }
+    },
+    "featuredin_zWyY3U": {
+      "type": "featuredin",
+      "blocks": {
+        "image_CMHyhX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_TXKk7A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_CE8JHg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/elle.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_DGN3zc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/glamour.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_wdPDGq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/grazia.svg",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "image_CMHyhX",
+        "image_TXKk7A",
+        "image_CE8JHg",
+        "image_DGN3zc",
+        "image_wdPDGq"
+      ],
+      "settings": {
+        "heading": "",
+        "custom_cls": ""
+      }
+    },
+    "two_column_box_p7J7bk": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_WeCezk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/microinfusion-animation.webp",
+            "classname": "it_img mw-mob-100"
+          }
+        },
+        "content_DLpMJ6": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>Descubre lo que los<br/>expertos no te cuentan</h2><p>[code]</p><p>[image_mobile]</p>",
+            "column_content": 0,
+            "classname": "secret_grid_wrap ps-0 ps-md-5"
+          }
+        },
+        "code_ENeDfJ": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"secret_grid mw-mob-100\">\n                        <img src=\"{{ 'unlock_derma.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        <div class=\"secret_grid_info\">\n                            <h6>Miles de mujeres están cancelando sus costosos tratamientos faciales.</h6>\n                            <p>Los esteticistas culpan a este tratamiento doméstico.</p>\n                        </div>\n                    </div>"
+          }
+        }
+      },
+      "block_order": [
+        "image_WeCezk",
+        "content_DLpMJ6",
+        "code_ENeDfJ"
+      ],
+      "custom_css": [
+        ".row {align-items: center !important;}"
+      ],
+      "settings": {
+        "classname": "imageText buzz_about bg-transparent p-0",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "two_column_box_cqD687": {
+      "type": "two-column-box",
+      "blocks": {
+        "content_Hham8b": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>La piel \"Hollywood\" finalmente es accesible sin un presupuesto excesivo[image_mobile]</h2><p>¿Alguna vez te has preguntado cómo se vería y sentiría tu piel si tuvieras acceso a los tratamientos más avanzados?</p><p>Aquellos que solo los \"ricos y famosos\" pueden pagar, realizados por los mejores dermatólogos, solo disponibles en clínicas exclusivas.</p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        },
+        "image_VkznhH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/carpet_2.webp",
+            "classname": "pt-2"
+          }
+        }
+      },
+      "block_order": [
+        "content_Hham8b",
+        "image_VkznhH"
+      ],
+      "settings": {
+        "classname": "imageText section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "two_column_box_wJmxTY": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_NwMbgP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hollywood_skin_before-es.webp",
+            "classname": "pt-2"
+          }
+        },
+        "content_XdKeWR": {
+          "type": "content",
+          "settings": {
+            "text": "<h2>El refuerzo de piel predilecto<br/>creado para días seguros sin maquillaje[image_mobile]</h2><p>Microinfusión –<strong>un tratamiento de piel adorado por las celebridades</strong>– finalmente está accesible para el público general.</p><p>Ahora puedes experimentar el tratamiento facial de Microinfusión para <strong>ayudar a aclarar el cutis, suavizar la textura y obtener un brillo listo para la 'alfombra roja'.</strong></p><p>¿La mejor parte? ¡Puedes disfrutarlo por aproximadamente una <strong>fracción del costo en la comodidad de tu hogar, </strong>con un tiempo de acción casi inmediato!</p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        }
+      },
+      "block_order": [
+        "image_NwMbgP",
+        "content_XdKeWR"
+      ],
+      "settings": {
+        "classname": "imageText section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "line_M99hQR": {
+      "type": "line",
+      "settings": {
+        "heading": "UNO DE LOS ÚNICOS TRATAMIENTOS FACIALES QUE TU PIEL NECESITA",
+        "classname": "bg-green text-dark"
+      }
+    },
+    "product_box_b3WBQC": {
+      "type": "product-box",
+      "blocks": {
+        "product_4qqcQV": {
+          "type": "product",
+          "settings": {
+            "heading": "",
+            "text": "<h2>Presentación del Sistema de microinfusión Qure</h2><p>[rating]</p><p>Clínicas, dermatólogos y famosos están de acuerdo: <strong>realmente funciona.</strong></p><ul><li>Ayuda a reducir las líneas de expresión</li><li>Despiértate con una <strong>piel radiante y con aspecto</strong> de rocío</li><li>Piel más <strong>luminosa y firme</strong></li><li>Ayuda a difuminar las manchas oscuras y las <strong>marcas de acné</strong></li></ul><p><strong> </strong></p>",
+            "product": ""
+          }
+        },
+        "image_gnyiNf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/micro_grid.webp"
+          }
+        },
+        "button_rznYjF": {
+          "type": "button",
+          "settings": {
+            "button_label": "COMPRA AHORA Y AHORRA HASTA UN 43%",
+            "button_url": "#productSubscription"
+          }
+        },
+        "rating_PGdBXE": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star4.8.svg",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_4qqcQV",
+        "image_gnyiNf",
+        "button_rznYjF",
+        "rating_PGdBXE"
+      ],
+      "custom_css": [
+        ".mb_contents {max-width: unset !important;}",
+        ".btn-primary {max-width: 100% !important;}"
+      ],
+      "settings": {
+        "classname": "main_banner section pt-0",
+        "heading": "",
+        "text": "",
+        "text_reduced": ""
+      }
+    },
+    "before_after_short_slider_pYmNqR": {
+      "type": "before-after-short-slider",
+      "blocks": {
+        "slide_beViXV": {
+          "type": "slide",
+          "settings": {
+            "heading": "Líneas finas e imperfecciones",
+            "text": "<ul><li>Suaviza la textura áspera de la piel, reduce los poros <strong>y unifica el tono de la piel</strong></li><li>Ayuda a reducir la apariencia de líneas finas para una <strong>piel </strong>más <strong>firme</strong> y rellena</li><li>Contribuye en <strong>desvanecer</strong> la <strong>apariencia de manchas </strong>oscuras y <strong>marcas de acné</strong></li></ul>",
+            "image": "shopify://shop_images/results_mica_es.webp",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "client": "Mica A."
+          }
+        },
+        "slide_YFJAPx": {
+          "type": "slide",
+          "settings": {
+            "heading": "Tono y textura de la piel",
+            "text": "<ul><li>Ilumina la piel para un cutis más <strong>saludable y radiante</strong></li><li>Ayuda a desvanecer la apariencia de manchas oscuras y marcas de acné para una piel de <strong>aspecto más uniforme</strong></li><li>Ayuda a promover la <strong>hidratación</strong> para una piel <strong>suave y firme</strong></li></ul>",
+            "image": "shopify://shop_images/results_monika_es.webp",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "client": "Monika"
+          }
+        },
+        "slide_qcrUGK": {
+          "type": "slide",
+          "settings": {
+            "heading": "Transformación general",
+            "text": "<ul><li>La piel se ve <strong>más brillante, suave y juvenil</strong></li><li>Ayuda a una <strong>mejor absorción</strong> del suero para <strong>resultados visibles</strong></li><li>Ayuda a minimizar <strong>la apariencia de poros y arrugas</strong></li></ul>",
+            "image": "shopify://shop_images/results_ellie1_es.webp",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "client": "Ellie V."
+          }
+        }
+      },
+      "block_order": [
+        "slide_beViXV",
+        "slide_YFJAPx",
+        "slide_qcrUGK"
+      ],
+      "custom_css": [
+        ".section_header {max-width: 100% !important;}"
+      ],
+      "settings": {
+        "heading": "Logra tus objetivos de cuidado de la piel",
+        "text": "",
+        "slide_count": false,
+        "text_verified_customer": "Cliente verificado"
+      }
+    },
+    "videos_list_9mL4h8": {
+      "type": "videos-list",
+      "blocks": {
+        "video_6Mp4ny": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img7.webp",
+            "video": "shopify://files/videos/insta-video.mp4"
+          }
+        },
+        "wistia_NNkDBD": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "ren04vix0l",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "video_pxN89b": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img9.webp",
+            "video": "shopify://files/videos/insta_3.mp4"
+          }
+        },
+        "video_PCt47J": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img10.webp",
+            "video": "shopify://files/videos/video.mp4"
+          }
+        },
+        "video_WCKqeb": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/videosQure_img11.webp",
+            "video": "shopify://files/videos/Snaptik.app_7172647262294723886.mp4"
+          }
+        },
+        "wistia_ctwd8i": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "albsf16uog",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_6Mp4ny",
+        "wistia_NNkDBD",
+        "video_pxN89b",
+        "video_PCt47J",
+        "video_WCKqeb",
+        "wistia_ctwd8i"
+      ],
+      "settings": {
+        "heading": "Una piel sin problemas comienza aquí",
+        "sub_heading": "",
+        "classname": "section videosQure",
+        "btn": "",
+        "btn_url": "",
+        "desk_slide": 6,
+        "mob_slide": 1.7,
+        "slide_space": 10
+      }
+    },
+    "two_column_box_f67akQ": {
+      "type": "two-column-box",
+      "blocks": {
+        "image_HGqFfY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/micro_grid_2-es.webp",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_PyFkn7": {
+          "type": "content",
+          "settings": {
+            "text": "<p>[code]</p>",
+            "column_content": 0,
+            "classname": ""
+          }
+        },
+        "code_3Ljyfa": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"it_info dual_bl\">\n                        <div class=\"dual_bl_steps\">\n                            <p>El Sistema de Micro-Infusión de Qure tiene un <strong>efecto doble</strong>, haciéndolo singularmente efectivo.\n                            </p>\n                        </div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">1</div>\n                            <p>Primero, te permite un <strong>\"microestampado\" de piel con agujas de oro de 24K de grado clínico</strong>. Esto crea un trauma controlado en tu piel, lo que puede ayudar a mejorar la sensación de firmeza y alisar la apariencia de líneas finas y arrugas. Las agujas son más delgadas que el cabello humano, así que apenas las sentirás.\n                            </p>\n                        </div>\n                        <div class=\"dual_bl_steps\">\n                            <div class=\"d_step\">2</div>\n                            <p>Segundo, los microcanales invisibles infunden la capa superior de tu piel <strong>con sueros, que están llenos de ingredientes avalados por la ciencia</strong>.\n                            </p>\n                        </div>\n                        <div class=\"dual_bl_steps\">\n                            <p>Esto ayuda a que los ingredientes penetren en tu piel y aumenten la <strong>absorción</strong>.</p>\n                        </div>\n                        <p>Perfecto para cualquier persona que quiera añadir un aspecto fresco y luminoso a su piel, especialmente antes de un evento u ocasión.</p>\n\n                    </div>"
+          }
+        }
+      },
+      "block_order": [
+        "image_HGqFfY",
+        "content_PyFkn7",
+        "code_3Ljyfa"
+      ],
+      "settings": {
+        "classname": "imageText section pt-0 pt-md-5",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "reasons_khXbp7": {
+      "type": "reasons",
+      "blocks": {
+        "icon_kDV8nw": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/mi-lp-reason1.svg",
+            "text": "<p><strong>Ahorra tiempo, dinero </strong>y las molestias de asistir a tratamientos en clínicas.</p>"
+          }
+        },
+        "icon_LN8RVc": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/mi-lp-reason2.svg",
+            "text": "<p>Una manera <strong>rápida de 5</strong>minutos para ayudar a mejorar la piel con <strong>tiempo de acción casi inmediato.</strong></p>"
+          }
+        },
+        "icon_3jJA6X": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/mi-lp-reason3.svg",
+            "text": "<p>Perfecto antes de tu gran evento para transformar <strong>la piel de aspecto opaco.</strong></p>"
+          }
+        },
+        "icon_hQTWT9": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/mi-lp-reason4.svg",
+            "text": "<p>Tratamiento facial simple que puedes hacer tú mismo desde <strong>la comodidad </strong>y <strong>conveniencia </strong>de tu hogar.</p>"
+          }
+        },
+        "icon_6qiFmi": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/mi-lp-reason5_61b38139-0048-433f-a998-91e57b8bf3e0.svg",
+            "text": "<p><strong>Mejora la absorción </strong>delsuero realizado para tus nescecidades específicas.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_kDV8nw",
+        "icon_LN8RVc",
+        "icon_3jJA6X",
+        "icon_hQTWT9",
+        "icon_6qiFmi"
+      ],
+      "custom_css": [
+        ".section_header {max-width: 100% !important;}"
+      ],
+      "settings": {
+        "classname": "reasons section bg-yellow",
+        "heading": "5 Razones por las que todos no pueden obtener suficiente",
+        "text": "<p>El tratamiento facial doméstico que falta en tu rutina de cuidado de la piel y que te ahorra cientos de dólares cada mes</p>"
+      }
+    },
+    "trusted_qGtbnC": {
+      "type": "trusted",
+      "blocks": {
+        "feedback_9Aa4j6": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify://shop_images/cl_shah.webp",
+            "text": "<p>\"...[La Micro-Infusión de Qure] ayudará a que sus productos <strong>se absorban mejor\"</strong>\"</p><h6><strong>Dr Shah, MD,</strong> Dermatólogo certificado</h6>"
+          }
+        },
+        "feedback_NVbkWM": {
+          "type": "feedback",
+          "settings": {
+            "image": "shopify://shop_images/cl_max.webp",
+            "text": "<p>\"En términos de <strong>seguridad,</strong> los dispositivos de microestampado, como [Micro-Infusión de Qure] son geniales...\"</p><h6><strong>Dr Maxfield, MD,</strong> Dermatólogo certificado</h6>"
+          }
+        },
+        "video_pEM9DL": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_maren1.webp",
+            "video_url": "https://www.youtube.com/watch?v=0DYmxvyKAVI",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"El sistema de Qure es mucho más asequible y conveniente que el procedimiento en la clínica porque se realiza en la comodidad de tu hogar.\"</p><h6><strong>Dr Maren Locke</strong> Dermatólogo certificado</h6>"
+          }
+        },
+        "video_XF3pgt": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_anthony.webp",
+            "video_url": "https://www.youtube.com/watch?v=gGVKgTHloXw",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"¡El Sistema de Qure es lo más cercano que puedes tener a llevar a tu esteticista a casa contigo!\"</p><h6><strong>Dr Anthony Youn</strong> Cirujano plástico certificado</h6>"
+          }
+        },
+        "video_8nkLFi": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_chris.webp",
+            "video_url": "https://www.youtube.com/watch?v=OI1HL25GlHc",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"Te verás con un aspecto luminoso y húmedo después de usarlo, pero en un par de días tu piel realmente se ve bastante increíble.\"</p><h6><strong>Chris Gibson,</strong> Experto en cuidado de la piel</h6>"
+          }
+        },
+        "video_tEFAkm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_davim.webp",
+            "video_url": "https://www.youtube.com/watch?v=0Lxofv19620",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"A diferencia de usar microagujas duras o dermarollers, este es súper seguro...\"</p><h6><strong>Dr Davin Lim</strong> Dermatólogo certificado</h6>"
+          }
+        },
+        "video_PECKPL": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_mona.webp",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/71857fdec6b0497294117ed84cab480e.mp4",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"Te verás con un aspecto luminoso y húmedo después de usarlo, pero en un par de días tu piel realmente se ve bastante increíble.\"</p><h6><strong>Dr Mona Patel</strong> Medicina interna</h6>"
+          }
+        },
+        "video_C6tFxe": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/trusted_dylan.webp",
+            "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+            "video_label": "Ver vídeo",
+            "wistia_id": "",
+            "text": "<p>\"El sistema de microinfusión Qure va un paso más allá, ya que no sólo aumenta la hidratación, sino que también suministra factores de regenerativos justo donde se necesitan\".</p><h6><strong>Dr Dylan Greeney</strong> Dermatólogo certificado</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "feedback_9Aa4j6",
+        "feedback_NVbkWM",
+        "video_pEM9DL",
+        "video_XF3pgt",
+        "video_8nkLFi",
+        "video_tEFAkm",
+        "video_PECKPL",
+        "video_C6tFxe"
+      ],
+      "settings": {
+        "classname": "trusted_bl",
+        "heading": "Revisado por Dermatólogos líderes en el mundo",
+        "heading_reduced": "",
+        "likes": "23K",
+        "views": "1.3M VIEWS",
+        "image": "shopify://shop_images/trusted_3.webp",
+        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8",
+        "video_label": "Ver Reseña",
+        "dermatoglist_check_text": "Trusted and recommended by world leading Dermatologists",
+        "dermatoglist_left_subtext": "",
+        "dermatoglist_right_name": "Dr Shah, MD",
+        "dermatoglist_right_especiality": "Board certified dermatologist",
+        "dermatoglist_right_video_url": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg"
+      }
+    },
+    "results_3LEkF7": {
+      "type": "results",
+      "blocks": {
+        "result_ABGGxX": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_andrea-a-es.webp",
+            "heading": "El mejor brillo natural",
+            "text": "<p>“Al principio dudaba porque no sabía cuánto dolería, pero para mi sorpresa fue bastante indoloro. ¡El segundo día después del tratamiento, mi piel tenía un brillo natural increíble! También me alegró ver cuánto se había aclarado mi pigmentación después del tercer tratamiento :)</p><p>Cambio entre los sueros dependiendo de cómo está mi piel antes de la aplicación.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Glorija",
+            "code": ""
+          }
+        },
+        "result_XTrTim": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_ellie_es.webp",
+            "heading": "¡Mi piel VOLVIÓ a la VIDA!",
+            "text": "<p>“Acabo de cumplir 57 años. Mi piel estaba extremadamente seca y mientras usaba este producto mi piel VOLVIÓ a la VIDA! Estoy tan impresionada con él! Mis compañeros de trabajo me preguntan qué uso en mi piel... y se los digo. Producto fácil de usar y las agujas son mejores que un dermaroller. Este es un producto increíble que no te arrepentirás de comprar. Realmente veo el cambio en mi piel. ¡Excelente trabajo QURE!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ellie V.",
+            "code": ""
+          }
+        },
+        "result_k8AMBy": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_mona_es.webp",
+            "heading": "¡Después de solo DOS tratamientos!",
+            "text": "<p>“Personalmente creo que mis productos se absorbieron mejor, mi piel se ve un poco más brillante y esa gran cicatriz de acné en mi mejilla derecha ha comenzado a desvanecerse después de solo DOS tratamientos!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Mona P.",
+            "code": ""
+          }
+        },
+        "result_BfhK8p": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_ela_es.webp",
+            "heading": "Sorprendida con los resultados",
+            "text": "<p>“¡Sorprendida con los resultados después de solo un tratamiento! No suelo dejar reseñas... pero me sorprendió cómo lucía mi piel la mañana después de probarlo!</p><p>La textura era muchísimo más suave, mi piel se veía clara, luminosa y saludable. El sistema fue muy fácil de usar y no puedo esperar hasta mi próximo tratamiento.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Ela O.",
+            "code": ""
+          }
+        },
+        "result_XR3Qam": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_ann_es.webp",
+            "heading": "Lo fácil que es de usar",
+            "text": "<p>“Había escuchado sobre la microinfusión en clínicas pero no podía permitirme gastar cientos de dólares en un tratamiento. Así que cuando vi esto en línea, lo compré al instante. Sí, no inyecta botox ni rellenos PERO personalmente AMO los resultados y lo fácil que es de usar en casa por mí misma. Funciona genial para mi piel, he notado que la textura de mi piel es mucho más suave y brillante.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Ann",
+            "code": ""
+          }
+        },
+        "result_HpftjG": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_jess1_es.webp",
+            "heading": "¡¡¡Totalmente vale la pena!!!",
+            "text": "<p>“Me comprometí con el paquete de ahorro de 3 meses y después de 6 tratamientos (con 2 semanas de diferencia) ¡estoy MUY feliz con los resultados! Mis poros son más pequeños y he notado principalmente una diferencia en la textura de mi piel. Esta se pone un poco roja justo después del tratamiento, pero eso desaparece rápidamente. Es un poco incómodo cuando lo hago en mi frente, pero está bien en todos los demás lugares. ¡¡¡Totalmente vale la pena!!!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Jess",
+            "code": ""
+          }
+        },
+        "result_bAgYxr": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_andrea-a-es_48f041cc-060d-41db-afb4-b915233e8c64.webp",
+            "heading": "¡Me encanta absolutamente!",
+            "text": "<p>“He usado muchos tratamiento tópicos para ayudar con las marcas post acné. Este sistema de microinfusión me ha dado los resultados más consistentes. ¡Me encanta!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Andrea A.",
+            "code": ""
+          }
+        },
+        "result_NQdtBQ": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_priya_es.webp",
+            "heading": "¡Más firme, más hidratada!",
+            "text": "<p>\"Después del primer uso de EGF, mi piel estaba más firme, más hidratada y el tono de piel mejoró radicalmente, literalmente al día siguiente. Me encanta este producto, definitivamente compraré más ya que realmente ayudó a suavizar también las líneas finas”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/england_f.webp",
+            "text_country": "England",
+            "client": "Priya P",
+            "code": ""
+          }
+        },
+        "result_9zp48n": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_chelsea_es.webp",
+            "heading": "¡Resultados asombrosos!",
+            "text": "<p>“Resultados asombrosos. Estoy simplemente en shock de lo bien que se ve mi piel. Este producto ha sido increíble para la hiperpigmentación y también para algunos quistes de acné hormonal. Continuaré apoyando a este negocio porque ha traído de vuelta la piel que conozco. Estaba al límite con un brote hormonal y mala hiperpigmentación.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
+            "text_country": "United States",
+            "client": "Chelsea J.",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "result_ABGGxX",
+        "result_XTrTim",
+        "result_k8AMBy",
+        "result_BfhK8p",
+        "result_XR3Qam",
+        "result_HpftjG",
+        "result_bAgYxr",
+        "result_NQdtBQ",
+        "result_9zp48n"
+      ],
+      "settings": {
+        "classname": "mi_landing_result",
+        "heading": "Resultados que verás con tus propios ojos",
+        "heading_reduced": "",
+        "text_verified_customer": "Cliente verificado",
+        "text_reviewed": "Evaluado en"
+      }
+    },
+    "liquid_9GnXBn": {
+      "type": "liquid",
+      "settings": {
+        "code": "<!-- Difference table with slider start-->\n        <div class=\"compare_section section bg-yellow\">\n            <div class=\"container\">\n                <div class=\"section_header text-start text-md-center\">\n                    <h2 class=\"title-lg\">\n                        Date un brillo de \"Calidad Clínica\" sin los \"Precios de Clínica\"\n                    </h2>\n                </div>\n                <div class=\"compare_listRow\">\n                    <div class=\"compare_listHeadings\">\n                        <div class=\"compare_listHeader\">\n                            <div class=\"compare__img\"></div>\n                        </div>\n                        <div class=\"compare__titleBlock\">\n                            <h4 class=\"compare__title\"><strong>Comparemos</strong></h4>\n                        </div>\n                        <div class=\"compare_listitems\">\n                            <div class=\"compare_listBlock\">Resultados en</div>\n                            <div class=\"compare_listBlock\">Personalizado</div>\n                            <div class=\"compare_listBlock active\">Seguro para la piel</div>\n                            <div class=\"compare_listBlock\">Costo</div>\n                        </div>\n                    </div>\n                    <div class=\"compare_list_column\">\n                        <div class=\"swiper-container compare-slider twa__swiper\" id=\"twa__swiper-compareSlider\"\n                            data-section-id=\"compareSlider\" data-autoplay=\"false\" data-loop=\"true\"\n                            data-centerslide=\"false\" data-mobile=\"1\" data-tablet=\"3\" data-desktop=\"3\" data-spacing=\"0\"\n                            data-arrowleft=\"compareSlider-swiper-prev\" data-arrowright=\"compareSlider-swiper-next\">\n                            <div class=\"swiper-wrapper\">\n                                <!-- slide start -->\n                                <div class=\"swiper-slide\">\n                                    <div class=\"compare_list_elements active\">\n                                        <div class=\"compare_listHeader\">\n                                            <div class=\"compare__img\"><img src=\"{{ 'compare_micro.webp' | asset_url }}\" alt=\"\"\n                                                    class=\"img-fluid d-block mx-auto\"></div>\n                                        </div>\n                                        <div class=\"compareTxt__element\">\n                                            <div class=\"compare__titleBlock\">\n                                                <h4 class=\"compare__title text-center\">Sistema de Microinfusión\n                                                    <br /><strong>Qure</strong>\n                                                </h4>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Tan solo en 1-2 días</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Adaptado a las necesidades de tu piel</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Acción casi inmediata y prácticamente indoloro</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Menos de 25€ por tratamiento</h5>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"compare_list_elements\">\n                                        <div class=\"compare_listHeader\">\n                                            <div class=\"compare__img\"><img src=\"{{ 'compare_cs_1.png' | asset_url }}\" alt=\"\"\n                                                    class=\"img-fluid d-block mx-auto\"></div>\n\n                                        </div>\n                                        <div class=\"compareTxt__element\">\n                                            <div class=\"compare__titleBlock\">\n                                                <h4 class=\"compare__title text-center\">Tratamiento\n                                                    <strong>Clínico</strong> de\n                                                    <br /> Microinfusión\n                                                </h4>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Tan solo en 1-2 días</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Adaptado a las necesidades de tu piel</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Acción casi inmediata</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'cross_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Alrededor de $300 por tratamiento</h5>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"compare_list_elements\">\n                                        <div class=\"compare_listHeader\">\n                                            <div class=\"compare__img\"><img src=\"{{ 'compare_cs_2.png' | asset_url }}\" alt=\"\"\n                                                    class=\"img-fluid d-block mx-auto\"></div>\n                                        </div>\n                                        <div class=\"compareTxt__element\">\n                                            <div class=\"compare__titleBlock\">\n                                                <h4 class=\"compare__title text-center\">Tratamiento en Casa con Derma\n                                                    Roller </h4>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'cross_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Varios días para ver resultados</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'cross_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>No personalizado para la piel</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'cross_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Posibles efectos secundarios</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>\n                                                    < $10 por tratamiento</h5>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n\n                            </div>\n                            <div class=\"swiper-pagination\"></div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- Difference table with slider end-->"
+      }
+    },
+    "compare_rGUQ9y": {
+      "type": "compare",
+      "blocks": {
+        "object_drRUDz": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_micro.webp",
+            "heading": "Sistema de microinfusión de Qure",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "correctCircle",
+            "list": "<ul><li>El estampado no daña <strong>excesivamente la piel</strong></li><li><strong>Acción casi inmediata</strong> y <strong>rapida regeneración</strong> de la piel</li><li>Las nuevas cabezas de aguja las hacen afiladas y rectas para cada tratamiento - diseñadas para una <strong>mejor eficacia</strong></li><li>Las cabezas desechables <strong>minimizan el riesgo</strong> de infección/irritación</li><li>Inyecta el suero directamente en la piel para ayudar <strong>a aumentar la absorción</strong> y los resultados</li></ul>"
+          }
+        },
+        "object_THMRbY": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_needle.webp",
+            "heading": "Otras decisiones sobre agujas en casa",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "incorrectCircle",
+            "list": "<ul><li>El rodillo puede causar <strong>daño innecesario</strong> de la piel</li><li><strong>Recuperación más lenta</strong> y tiempo de curación más largo</li><li>Las agujas se vuelven romas después de varios usos y crean <strong>trauma innecesario</strong> en la piel que puede <strong>disminuir la eficacia</strong></li><li>La infección/irritación aumenta si no se desinfecta bien</li><li>Absorción <strong>menos efectiva del suero</strong> al aplicarse tópicamente</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_drRUDz",
+        "object_THMRbY"
+      ],
+      "custom_css": [
+        ".section_header {max-width: 800px !important;}"
+      ],
+      "settings": {
+        "classname": "beauty_skincare section",
+        "sub_head": "",
+        "heading": "Por lo general, más efectivo y seguro que otros dispositivos domésticos de agujas",
+        "heading_reduced": "",
+        "text": "<p>A diferencia de los dispositivos domésticos de rodillo con aguja, la microinfusión apenas requiere <strong>tiempo para actuar, </strong>es prácticamente <strong>in dolora y minimiza el riesgo de infección </strong>o irritación.</p>",
+        "text_reduced": "",
+        "design": false
+      }
+    },
+    "guide_xibEe6": {
+      "type": "guide",
+      "blocks": {
+        "video_eqTzJU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/demo.png",
+            "video": "shopify://files/videos/Qure Micro-infusing Applicate (Music).mp4"
+          }
+        },
+        "object_hkPUHC": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp_step1_aaa00f01-0535-41a0-92e5-8395ca15e96b.webp",
+            "text": "<p>Gire para abrir la cámara del dispositivo y llénela con una ampolla de suero. Gire la cabeza de la aguja con la tapa para cerrarla bien.</p>",
+            "step": "PASO"
+          }
+        },
+        "object_hP3C9q": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp_step2.webp",
+            "text": "<p>Deje el dispositivo boca abajo durante 1-2 minutos. Durante este tiempo, lave su cara y asegúrese de que sus manos estén limpias.</p>",
+            "step": "PASO"
+          }
+        },
+        "object_QnrbNQ": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp_step3.webp",
+            "text": "<p>Una vez que el suero ha tenido suficiente tiempo para penetrar en las agujas, ¡puede quitar la tapa y comenzar la microinfusión!</p>",
+            "step": "PASO"
+          }
+        },
+        "object_THFDbC": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp_step4.webp",
+            "text": "<p>Comience en el centro de la cara y trabaje hacia afuera para cubrirla completamente. Tome cualquier suero restante del dispositivo y aplíquelo en su cara y cuello para dejarlo actuar durante la noche.</p>",
+            "step": "PASO"
+          }
+        },
+        "object_tMTm7n": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp_step5_f85c08be-1937-47f5-81e4-084b716d6352.webp",
+            "text": "<p>Una vez completado el tratamiento, vuelva a colocar la tapa en la cabeza de la aguja. Gire la tapa para quitarla y deséchela de forma segura. Abra una nueva cabeza de aguja estéril y colóquela en el dispositivo listo para su próximo tratamiento.</p>",
+            "step": "PASO"
+          }
+        }
+      },
+      "block_order": [
+        "video_eqTzJU",
+        "object_hkPUHC",
+        "object_hP3C9q",
+        "object_QnrbNQ",
+        "object_THFDbC",
+        "object_tMTm7n"
+      ],
+      "settings": {
+        "classname": "",
+        "heading": "Véalo en acción — un brillo sin esfuerzo que se ve tan bien como se siente",
+        "text": "<h5>Solo 5 minutos, cada 2-4 semanas</h5>"
+      }
+    },
+    "line_a8KbFQ": {
+      "type": "line",
+      "settings": {
+        "heading": "AGOTADO 10 VECES - DISPONIBLE HASTA QUE SE AGOTEN LAS EXISTENCIAS",
+        "classname": ""
+      }
+    },
+    "product_box_second_xRWY78": {
+      "type": "product-box-second",
+      "blocks": {
+        "image_zBrcTE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/boost_m_4.webp",
+            "image_mobile": "shopify://shop_images/boost_m_4_sm.webp"
+          }
+        },
+        "image_Rr8RWB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mInfusion_1.webp"
+          }
+        },
+        "image_U77RcU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mInfusion_2.webp"
+          }
+        },
+        "image_Yajaxi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mInfusion_1_a7d473dc-912f-44ae-a286-8f8f46aa0d86.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_zBrcTE",
+        "image_Rr8RWB",
+        "image_U77RcU",
+        "image_Yajaxi"
+      ],
+      "settings": {
+        "heading": "Hacemos que el cuidado de la piel avalado por la ciencia sea fácilmente accesible y asequible",
+        "text": "<p><strong>\"¡Incluso mi esteticista está asombrada!</strong> Y ahora puedo visitar clínicas de belleza con menos frecuencia.\"</p><ul><li>Ayuda a <strong>potenciar</strong> la absorción del suero para resultados visibles</li><li><strong>Acción casi inmediata</strong></li><li>Prácticamente <strong>indoloro</strong></li><li><strong>Fácil de usar,</strong> tratamiento de 5 minutos</li><li><strong>Acción 2 en 1:</strong> estimular y regenerar</li></ul>",
+        "button_label": "COMPRA AHORA Y AHORRA HASTA UN 43%",
+        "button_url": "#productSubscription",
+        "underbutton_text_left": "Garantía de devoluciónde dinero de 90 días",
+        "underbutton_text_right": "Envío internacional gratuitoen compras superiores a 100€"
+      }
+    },
+    "liquid_7dQkU7": {
+      "type": "liquid",
+      "settings": {
+        "code": "<!-- -- unique customizable start -- -->\n        <div class=\"available_bar bg-black\">\n            <p>INCLUIDOS EN EL LOTE: </p>\n        </div>\n        <div class=\"unique_c  section\">\n            <div class=\"container\">\n                <div class=\"section_header text-start text-md-center mb-4\">\n                    <h2 class=\"title-lg paddingB\">\n                        Sueros de Micro-Infusión avalados por la ciencia\n                    </h2>\n                    <p><strong>Elije el suero exacto para usar en tu tratamiento de Micro-Infusión, </strong> u obtén\n                        ambos y mézclalos para experimentar un conjunto completo de beneficios que aborden tus\n                        <strong>problemas específicos de la piel.</strong>\n                    </p>\n                </div>\n                <div class=\"unique_grid\">\n                    <div class=\"unique_grid_col\">\n                        <div class=\"unique_c_item\">\n                            <img src=\"{{ 'u_serum_1.webp' | asset_url }}\" alt=\"\" style=\"max-width: 86px;\">\n                            <div class=\"u_item_wrapper bg-yellow\">\n                                <div class=\"u_item_header\">\n                                    <h3>Suero Rejuvenecedor</h3>\n                                    <p>Suero de factor de crecimiento epidérmico <br>(E.G.F) serum • 4 ml / 0.14 fl. Oz\n                                    </p>\n                                </div>\n                            </div>\n                            <div class=\"u_item_wrapper bg-yellow\">\n                                <div class=\"u_ftr\">\n                                    <div class=\"u_ftr_item\">\n                                        <img src=\"{{ 'unique_bright_skin.svg' | asset_url }}\" alt=\"\">\n                                        <p>Ilumina y unifica la <br>apariencia del tono de la piel</p>\n                                    </div>\n                                    <div class=\"u_ftr_item\">\n                                        <img src=\"{{ 'unique_reduce_line.svg' | asset_url }}\" alt=\"\">\n                                        <p>Reduce la aparición <br>de líneas finas y arrugas</p>\n                                    </div>\n                                    <div class=\"u_ftr_item\">\n                                        <img src=\"{{ 'unique_boosts_drop.svg' | asset_url }}\" alt=\"\">\n                                        <p>Ayuda a<br> potenciar la hidratación</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"accordion accordion-flush\" id=\"accordionQuesExample\">\n                                <div class=\"accordion-item u_item_question bg-yellow\">\n                                    <h2 class=\"accordion-header u_item_expandable bg-yellow\">\n                                        <button class=\"accordion-button collapsed\" type=\"button\"\n                                            data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_1\"\n                                            aria-expanded=\"false\" aria-controls=\"u_item_question_1\">\n                                            <div class=\"containers\">Qué puede hacer por tu piel</div>\n                                        </button>\n                                    </h2>\n                                    <div id=\"u_item_question_1\" class=\"accordion-collapse collapse\"\n                                        data-bs-parent=\"#accordionQuesExample\">\n                                        <div class=\"accordion-body\">\n                                            <div class=\"containers\">\n                                                <p>Revela un cutis más suave, de <strong>aspecto más luminoso y\n                                                        uniformemente radiante</strong> para generar un\n                                                    <strong>efecto de brillo. </strong> Propiedades estimulantes para\n                                                    ayudar a combatir la aparición de las arrugas y a restaurar una piel\n                                                    juvenil.\n                                                </p>\n                                                <p><strong>Problemas de la piel:</strong>\n                                                    Diseñado para piel con líneas finas y arrugas, textura áspera,\n                                                    manchas oscuras, sequedad.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"accordion-item u_item_question bg-yellow\">\n                                    <h2 class=\"accordion-header u_item_expandable bg-yellow\">\n                                        <button class=\"accordion-button collapsed\" type=\"button\"\n                                            data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_3\"\n                                            aria-expanded=\"false\" aria-controls=\"u_item_question_3\">\n                                            <div class=\"containers\">Todos los ingredientes</div>\n                                        </button>\n                                    </h2>\n                                    <div id=\"u_item_question_3\" class=\"accordion-collapse collapse\"\n                                        data-bs-parent=\"#accordionQuesExample\">\n                                        <div class=\"accordion-body\">\n                                            <div class=\"containers\">\n                                                <p>Libre de fragancias, Libre de alcohol.</p>\n                                                <p><strong>Factor de Crecimiento Epidérmico (EGF): </strong><br>\n                                                    Funciona a nivel celular para reparar y rejuvenecer la piel. Reduce\n                                                    la apariencia de las arrugas, mejora la hidratación y previene la\n                                                    pigmentación.\n                                                </p>\n                                                <p><strong>Otros ingredientes:</strong><br>\n                                                    <strong>Niacinamida:</strong> Ingrediente estrella aprobado por\n                                                    dermatólogos que ayuda con la mayoría de los problemas de la piel,\n                                                    desde calmar hasta iluminar y aclarar, y reducir líneas finas y\n                                                    arrugas.\n                                                </p>\n                                                <p><strong>Glicerina:</strong>\n                                                    Reabastece la humedad que la piel pierde en las capas más profundas\n                                                    de la dermis y hace que parezca más fresca.\n                                                </p>\n                                                <p><strong>Todos los ingredientes:</strong><br>\n                                                    Agua Floral de Rosa Damascena, Zemea Propanediol 1,3, Glicerina\n                                                    Vegetal, Niacinamida, Pantenol, MacDermaTM TA (Ácido Tranexámico),\n                                                    Extracto de Chrysanthellum indicum, Tripéptido-1 / Oligopeptido-1,\n                                                    Evermild EHG (Etilhexilglicerina), Alantoína, Goma Xantana,\n                                                    sh-Oligopeptido-1.\n                                                </p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"unique_review\">\n                                <div class=\"star-gp\">\n                                    <img src=\"{{ 'unique-star.svg' | asset_url }}\" alt=\"\">\n                                </div>\n                                <div class=\"u_review\">\n                                    <p>\"Estoy obsesionada con esto, mis manchas oscuras se han desvanecido en pocos\n                                        días, mis líneas de expresión también.. ¡wow!\"</p>\n                                </div>\n                                <div class=\"u_verified\">\n                                    <img src=\"{{ 'verified.svg' | asset_url }}\" alt=\"\">\n                                    <p><strong>Jessie Hardy</strong> - Dallas, EE. UU.</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"unique_grid_col\">\n                        <div class=\"u_text_only\">\n                            <p class=\"text-center\">o</p>\n                        </div>\n                    </div>\n                    <div class=\"unique_grid_col\">\n                        <div class=\"unique_c_item\">\n                            <img src=\"{{ 'u_serum_2.webp' | asset_url }}\" alt=\"\" style=\"max-width: 86px;\">\n                            <div class=\"u_item_wrapper bg-grey\">\n                                <div class=\"u_item_header\">\n                                    <h3>Suero Hydra-Calmante </h3>\n                                    <p>Suero de Beta Glucano <br>(β-G) serum • 4 ml / 0.14 fl. Oz </p>\n                                </div>\n                            </div>\n                            <div class=\"u_item_wrapper bg-grey\">\n                                <div class=\"u_ftr\">\n                                    <div class=\"u_ftr_item\">\n                                        <img src=\"{{ 'unique_soothes.svg' | asset_url }}\" alt=\"\">\n                                        <p>Ayuda a calmar<br> la aparición de rojeces</p>\n                                    </div>\n                                    <div class=\"u_ftr_item\">\n                                        <img src=\"{{ 'unique_hydrates_drop.svg' | asset_url }}\" alt=\"\">\n                                        <p>Ultra-<br>hidratante</p>\n                                    </div>\n                                    <div class=\"u_ftr_item\">\n                                        <img src=\"{{ 'unique_plump_fine.svg' | asset_url }}\" alt=\"\">\n                                        <p>Hidrata para reducir<br> la aparición de las líneas finas</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"accordion accordion-flush\" id=\"accordionQuesExample_2\">\n                                <div class=\"accordion-item u_item_question bg-grey\">\n                                    <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                        <button class=\"accordion-button collapsed\" type=\"button\"\n                                            data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_4\"\n                                            aria-expanded=\"false\" aria-controls=\"u_item_question_4\">\n                                            <div class=\"containers\">Qué puede hacer por tu piel</div>\n                                        </button>\n                                    </h2>\n                                    <div id=\"u_item_question_4\" class=\"accordion-collapse collapse\"\n                                        data-bs-parent=\"#accordionQuesExample_2\">\n                                        <div class=\"accordion-body\">\n                                            <div class=\"containers\">\n                                                <p><strong>Ultra hidratación.</strong> Hidrata para ayudar a regenerar\n                                                    la piel, reduciendo la aparición de líneas finas y de rojeces,\n                                                    además de reforzar la barrera de la piel para que sea sana y\n                                                    flexible.</p>\n                                                <p><strong>Problemas de la piel:</strong> Diseñado para piel de aspecto\n                                                    apagado con deshidratación, sequedad, rojeces y líneas finas.</p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"accordion-item u_item_question bg-grey\">\n                                    <h2 class=\"accordion-header u_item_expandable bg-grey\">\n                                        <button class=\"accordion-button collapsed\" type=\"button\"\n                                            data-bs-toggle=\"collapse\" data-bs-target=\"#u_item_question_6\"\n                                            aria-expanded=\"false\" aria-controls=\"u_item_question_6\">\n                                            <div class=\"containers\">Todos los ingredientes</div>\n                                        </button>\n                                    </h2>\n                                    <div id=\"u_item_question_6\" class=\"accordion-collapse collapse\"\n                                        data-bs-parent=\"#accordionQuesExample_2\">\n                                        <div class=\"accordion-body\">\n                                            <div class=\"containers\">\n                                                <p>Libre de fragancias y de alcohol.</p>\n                                                <p><strong>Beta Glucano:</strong>\n                                                    Un vaso de agua para tu piel. Refuerza la barrera cutánea, suaviza\n                                                    la piel, antioxidante.\n                                                </p>\n                                                <p><strong>Otros ingredientes:</strong><br>\n                                                    <strong>Niacinamida:</strong> Ingrediente estrella aprobado por\n                                                    dermatólogos que ayuda con la mayoría de los problemas de la piel,\n                                                    desde calmar hasta iluminar y aclarar, además de reducir líneas\n                                                    finas y arrugas.\n                                                </p>\n                                                <p><strong>Butilenglicol:</strong>\n                                                    Hidratante respaldado por expertos que mejora la penetración para\n                                                    ayudar a que actúe más eficazmente.\n                                                </p>\n                                                <p><strong>Glicerina:</strong>\n                                                    Reabastece la humedad que la piel pierde en sus capas más profundas\n                                                    y hace que parezca más fresca.\n                                                </p>\n                                                <p><strong>Todos los Ingredientes:</strong><br>\n                                                    Agua floral de Rosa Damascena, Zemea Propanediol 1,3, Glicerina\n                                                    vegetal, Pantenol, Niacinamida, Extracto de hoja / tallo de\n                                                    Myrothmnus Flabellifolia Agua / Butilenglicol /\n                                                    4'Hidroxiacetofenona, Beta Glucano de Avena, Extracto de\n                                                    Chrysanthellum indicum, Evermild EHG (Etilhexilglicerina), Palmitoil\n                                                    Tripéptido-1, Hialuronato sódico (VLMW), Alantoína.\n                                                </p>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"unique_review\">\n                                <div class=\"star-gp\">\n                                    <img src=\"{{ 'unique-star.svg' | asset_url }}\" alt=\"\">\n                                </div>\n                                <div class=\"u_review\">\n                                    <p>Mi piel siempre tenía sequedad, esto la revitalizó\n                                        ¡y ahora mi piel está radiante!</p>\n                                </div>\n                                <div class=\"u_verified\">\n                                    <img src=\"{{ 'verified.svg' | asset_url }}\" alt=\"\">\n                                    <p><strong>Monika Smith </strong>- Miami, EE. UU.</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <!-- -- can't decide start -- -->\n            <div class=\"cant_decide section pb-100\">\n                <div class=\"container\">\n                    <div class=\"section_header text-center\">\n                        <h3>¿No puedes decidir?</h3>\n                    </div>\n                    <div class=\"cd_img d-flex justify-content-center\">\n                        <img src=\"{{ 'cant_d_desk_es.webp' | asset_url }}\" alt=\"\" class=\"img-fluid d-none d-md-block\">\n                        <img src=\"{{ 'cant_d_mob_es.webp' | asset_url }}\" alt=\"\" class=\"img-fluid d-block d-md-none\">\n                    </div>\n                </div>\n            </div>\n            <!-- -- can't decide end -- -->\n        </div>\n        <!-- -- unique customizable end -- -->\n\n        <!-- -- zero risk start -- -->\n        <div class=\"risk\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-md-12\">\n                        <div class=\"risk-detail\">\n                            <div class=\"risk-img\">\n                                <img src=\"{{ 'money-back.webp' | asset_url }}\">\n                            </div>\n                            <div class=\"risk-content\">\n                                <h2 class=\"title-lg text-start text-md-center mw-100\">Pruébalo ahora sin ningún riesgo.\n                                    Nuestra\n                                    garantía<br>\n                                    de devolución de dinero de 90 días</h2>\n                                <div class=\"risk_expandable text-start text-md-center\">\n                                    <div class=\"risk__wrapper\">\n                                        <p class=\"risk__text\">¡Tienes 90 días para probar el Sistema de Micro-Infusión\n                                            de Qure con nuestro suministro de 3 meses para ver y sentir los efectos\n                                            cambiantes en la piel de 6 tratamientos!</p>\n                                        <div class=\"risk__hidden-div hidden\">\n                                            <p class=\"risk__text\">\n                                                Si no experimentas ningún cambio en tu piel, en términos de\n                                                <strong>firmeza, brillo o suavidad y</strong> si no ahorras horas de tu\n                                                <strong>tiempo y cientos de dólares disfrutando </strong>de tus\n                                                tratamientos faciales en la comodidad de tu hogar en lugar de hacer cola\n                                                en la clínica de belleza - simplemente ponte en contacto con nosotros,\n                                                envíanos por correo electrónico todas tus fotos de antes y después. Lo\n                                                arreglaremos!\n                                            </p>\n                                            <p>\n                                                Si deseas más información sobre nuestra oferta de devolución del dinero,\n                                                no dudes en ponerte en contacto con nosotros.\n                                            </p>\n                                        </div>\n                                        <a class=\"risk__accordion\" data-more=\"Mostrar mas\" data-less=\"Mostrar menos\">Mostrar mas</a>\n         \n</div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- -- zero risk end -- -->"
+      }
+    },
+    "liquid_86wfLd": {
+      "type": "liquid",
+      "settings": {
+        "code": "{% render 'serums-months-image-landing-form-es' with section_id: section.id %}"
+      }
+    },
+    "compare_box_p4B7wy": {
+      "type": "compare-box",
+      "blocks": {
+        "object_7Ybjri": {
+          "type": "object",
+          "settings": {
+            "heading": "Que HACER + NORMAS DE SEGURIDAD",
+            "text": "<p><strong>Antes del tratamiento:</strong></p><ul><li>Realice primero una prueba de parche para entender mejor cómo reaccionará su piel.</li><li>Asegúrese de que su cara y manos estén limpias.</li></ul><p><strong>Después del tratamiento:</strong></p><ul><li>Aplique el resto del suero después del tratamiento y déjelo actuar durante la noche.</li><li>Deseche la cabeza de la aguja de forma segura y use una nueva cabeza de aguja por tratamiento.</li><li>Lave la cámara del suero.</li></ul>"
+          }
+        },
+        "object_CjVVCc": {
+          "type": "object",
+          "settings": {
+            "heading": "Que NO HACER + NORMAS DE SEGURIDAD",
+            "text": "<p><strong>Antes del tratamiento:</strong></p><ul><li>Evite estampar directamente sobre brotes activos.</li><li>No use con sueros diferentes a los del sistema de Qure.</li></ul><p><strong>Después del tratamiento:</strong></p><ul><li>Evite estar al sol durante 24 horas.</li><li>Evite tocar la cara con manos sucias.</li><li>Evite productos exfoliantes durante 24 horas.</li></ul>"
+          }
+        },
+        "button_dAehhB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ver Protocolo de Tratamiento",
+            "button_url": "shopify://pages/microinfusion-safety-guide"
+          }
+        }
+      },
+      "block_order": [
+        "object_7Ybjri",
+        "object_CjVVCc",
+        "button_dAehhB"
+      ],
+      "settings": {
+        "heading": "Lo que debes saber para obtener los mejores resultados",
+        "text": "<p><strong>El Sistema de Microinfusión Qure está diseñado teniendo en cuenta tu seguridad.</strong></p><p>A diferencia de los rodillos derma populares para uso doméstico, nuestro dispositivo tipo sello cuenta con cabezales estériles de un solo uso que ayudan a minimizar el riesgo de infección o daños en la piel innecesarios causados por agujas desafiladas y de múltiples usos..</p><p>Para obtener más información sobre el protocolo de tratamiento, por favor haz clic en el botón de abajo para acceder a la guía completa de tratamiento.</p><p><strong>A continuación, se presentan algunas reglas que debes seguir al usar tu Sistema de Microinfusión Qure:</strong></p>"
+      }
+    },
+    "faq_ABfhyg": {
+      "type": "faq",
+      "blocks": {
+        "object_QiNmNp": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuándo veré resultados y cuánto durarán?",
+            "text": "<p>El tratamiento de Micro-Infusión actúa como un potente potenciador de la piel, proporcionando un aumento visible de la luminosidad, suavizando las líneas finas y dando un aspecto general de una piel sana y fresca en solo uno o dos días.</p><p>Cuantos más tratamientos realices, mayores serán los beneficios para la piel con el tiempo. Este tratamiento facial doméstico rápido y fácil es perfecto para realizar uno o dos días antes de un gran evento, cuando quieras mejorar rápidamente el aspecto de tu piel.</p><p>Recuerda seguir con tu rutina diaria de cuidado de la piel para amplificar la efectividad visible de tus resultados de Micro-Infusión y mantener una piel que se vea y sienta saludable, hidratada y luminosa a largo plazo.</p>",
+            "code": ""
+          }
+        },
+        "object_4yYPQ4": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Es doloroso? ¿Duele?",
+            "text": "<p>¡Experimentarás una mínima incomodidad y resultados máximos con el Sistema de Microinfusión de Qure!</p><p>Aunque las agujas en sí son en realidad más largas que la mayoría de los sistemas de microagujas para uso doméstico (lo que lo hace más efectivo), las agujas ultrafinas son más delgadas que un cabello humano, por lo que eso significa que sentirás un dolor mínimo o nulo durante el tratamiento.</p><p>Durante las etapas iniciales del tratamiento, puedes experimentar una ligera sensación o un cosquilleo cuando las agujas entran en contacto con la piel, pero rápidamente te acostumbrarás a la sensación.</p>",
+            "code": ""
+          }
+        },
+        "object_faRVVk": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Se puede usar alrededor de los ojos y en el cuello?",
+            "text": "<p>Sí, puedes microinfundir alrededor del área de los ojos para ayudar a suavizar las patas de gallo. Solo asegúrate de aplicar una presión muy suave y hacer solo una pasada. ¡Monitorea tu piel de acuerdo ya que la piel de todos es diferente!</p><p>Realizar Micro-Infusión en el cuello puede ayudar a mejorar la apariencia de las líneas finas y rejuvenecer la piel. Puedes centrarte en problemas como pliegues en el cuello, líneas horizontales y preocupaciones relacionadas con la edad para ayudar a mejorar la textura general, el tono y la juventud de la piel.</p>",
+            "code": ""
+          }
+        },
+        "object_7ViJwh": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Con qué frecuencia puedo hacer el tratamiento?",
+            "text": "<p>¡Recomendamos un tratamiento de Micro-Infusión cada 2 semanas para obtener los mejores resultados!</p>",
+            "code": ""
+          }
+        },
+        "object_tERiWN": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuál es el mejor momento para realizar un tratamiento de Micro-Infusión?",
+            "text": "<p>Recomendamos realizar el tratamiento por la noche antes de acostarse. Evite estar en el sol y usar maquillaje durante 24 horas después del tratamiento. Para obtener más información sobre el cuidado posterior al tratamiento, visita nuestra guía de seguridad.</p>",
+            "code": ""
+          }
+        },
+        "object_b4xRkF": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuántos tratamientos puedo realizar con un dispositivo Micro-Infusión?",
+            "text": "<p>Cada cabezal de aguja debe utilizarse una vez por tratamiento y desecharse después de cada uno. De este modo se minimiza el riesgo de infección y de daños innecesarios en la piel. Utiliza 1 ampolla de suero completa por tratamiento.</p>",
+            "code": ""
+          }
+        },
+        "object_qfXzf3": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Puedo usar cualquier suero?",
+            "text": "<p>Ten en cuenta que no todos los sueros son adecuados para la microinfusión. Algunos pueden causar irritación y deben evitarse. Hemos desarrollado nuestras potentes ampollas de suero que son perfectas para el sistema de micro infusión de Qure. Están formuladas para tener un bajo riesgo de irritación y sin fragancia.</p>",
+            "code": ""
+          }
+        },
+        "object_9UagXp": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuáles son los beneficios de la Micro-Infusión?",
+            "text": "<p>Las agujas del dispositivo de Micro-Infusión y la acción de estampado desencadenan el proceso natural de curación del cuerpo y a su vez impulsan la producción de colágeno, haciendo que su piel tenga un aspecto más firme y que las líneas finas se vean más suaves.</p><p>El suero potenciador que elijas infundir durante su Micro-Infusión determinará los principales beneficios de su tratamiento. Unas agujas huecas muy finas infunden microgotas de suero concentrado a una profundidad específica en la dermis (capa superior) de la piel, precisamente donde se necesitan para acelerar la absorción de los ingredientes activos dirigidos a problemas específicos de la piel.</p><p>Puedes variar sus tratamientos e incluso mezclar los dos sueros.</p><p>Algunos beneficios más:</p><ul><li>Tono y textura de la piel más uniformes</li><li>Tez más luminosa y fresca</li><li>Líneas de expresión más suaves</li><li>Piel más firme y rejuvenecida.</li></ul>",
+            "code": ""
+          }
+        },
+        "object_iNjJHr": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Hay algún efecto secundario?",
+            "text": "<p>La piel de cada persona es diferente. Es posible que la piel se enrojezca un poco durante las primeras horas después del tratamiento. Sin embargo, este enrojecimiento debería ser mínimo y desaparecer rápidamente.</p><p>Te recomendamos que consultes a su dermatólogo o médico antes de utilizarlo si padeces alguna afección cutánea. También se recomienda realizar una prueba de parche en una zona de la piel que no esté demasiado expuesta antes del tratamiento, para comprender mejor cómo reaccionará tu piel y el tiempo de acción que debe esperar.</p>",
+            "code": ""
+          }
+        },
+        "object_ArEa6g": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuál es la diferencia entre el rodillo de microagujas casero y la microinfusión?",
+            "text": "<p>La micropunción se centra en estimular el colágeno del propio cuerpo creando microlesiones. Pero no administra ningún ingrediente directamente en la piel.</p><p>Con la microinfusión, no solo se obtienen los beneficios de la micropunción, sino que también se administran soluciones de ingredientes activos para tratar los problemas específicos de la piel.</p>",
+            "code": ""
+          }
+        },
+        "object_n7R7ar": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Debo seguir algún cuidado posterior después del tratamiento?",
+            "text": "<p>Después de haber infundido a tu piel todo ese suero potenciador de la piel, intenta mantenerla piel limpia durante 24 horas y sigue estas pautas post-tratamiento:</p><ul><li>Al día siguiente del tratamiento, lávate la cara con un limpiador suave y aplica una crema hidratante nutritiva.</li><li>Los usuarios pueden experimentar enrojecimiento e irritación leves después del procedimiento, pero deberían remitir rápidamente. La piel puede experimentar una leve hinchazón, descamación o descamación. Puedes minimizar estos efectos manteniendo la piel hidratada, lo que reducirá la descamación y aliviará la tirantez.</li><li>No te maquilles durante todo el tiempo que puedas, pero como mínimo durante 24 horas.</li><li>No hagas ejercicio ni actividades extenuantes durante las primeras 24 horas posteriores al tratamiento. El sudor y el ambiente del gimnasio son perjudiciales, están plagados de bacterias y pueden provocar reacciones adversas.</li><li>Ten en cuenta que cualquier cosa que te pongas en la piel después de utilizar Qure Microinfusion se absorberá más fácilmente, por lo que es importante mantener la piel limpia y utilizar productos que no contengan ingredientes agresivos (¡sin ácidos!).</li><li>Evita tocarte la cara, especialmente con las manos sucias y sin desinfectar.</li><li>Evita nadar, las saunas y las salas de vapor durante al menos 24 horas después del tratamiento.</li><li>Evitar la aplicación de productos para el cuidado de la piel que contengan fragancias, ingredientes activos o ácidos como alfahidroxiácidos, betahidroxiácidos, retinol (vitamina A), vitamina C o cualquier otro producto que se considere \"activo\" para el cuidado de la piel, como exfoliantes o tónicos, durante al menos dos o tres días después del tratamiento, ya que puede causar irritación.</li><li>Evita los productos exfoliantes durante 2-3 días después del tratamiento porque pueden ser abrasivos para la piel cuando está en ese estado.</li><li>Evita la exposición directa al sol inmediatamente después del tratamiento. Aplica un protector solar de alta protección cuando salga al exterior y evita la exposición prolongada al sol. Utiliza un protector solar no comedogénico de buena calidad si vas a tomar el sol.</li></ul><p>Al día siguiente, deberías poder reanudar tus actividades normales, tu rutina de cuidado de la piel y el maquillaje que quieras aplicarte, pero puede que ni siquiera lo necesites. Sólo tienes que vigilar la reacción de tu piel.</p>",
+            "code": ""
+          }
+        },
+        "object_jh9h8Y": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuál es la diferencia entre el dermaroller casero de microagujas y la microinfusión?",
+            "text": "<p>La micropunción se centra en estimular el colágeno del propio cuerpo creando microlesiones. Pero no administra ningún ingrediente directamente en la piel. La reutilización de las agujas puede causar daños innecesarios en la piel y tiene un mayor riesgo de infección, ya que el uso de alcohol desinfecta la herramienta, pero es difícil esterilizarla por completo y las agujas también se desafilan cuando se reutilizan, lo que compromete seriamente la técnica.</p><p>Con la microinfusión, no sólo se obtienen los beneficios de la micropunción, sino que también se administran soluciones con ingredientes activos para tratar los problemas específicos de la piel.</p><p>El sistema de microinfusión de Qure tiene cabezales de aguja de un solo uso que se desechan después de cada uno para garantizar que cualquier riesgo de infección es mínimo - a diferencia de los rodillos de microneedling en casa varias veces.</p>",
+            "code": ""
+          }
+        },
+        "object_yjEtVU": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cuál es la longitud de las agujas?",
+            "text": "<p>Las cabezas de aguja del sistema de microinfusión de Qure tienen 0,5 mm de longitud para la \"punción epidérmica\", que está diseñada para mejorar la absorción de los ingredientes para el cuidado de la piel y la textura de la piel.</p>",
+            "code": ""
+          }
+        },
+        "object_R4mRcJ": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cómo uso/realizo la Micro-Infusión facial?",
+            "text": "<ul><li>Abre la cámara del dispositivo y llénala con una (1) ampolla de suero y vuelve a colocar la tapa en el dispositivo. Opción: Puedes mezclar dos de los sueros para tratar múltiples problemas.</li><li>Déjalo boca abajo durante 1-2 minutos. Durante este tiempo, puedes lavarte la cara y asegurarte de tener las manos bien limpias.</li><li>Una vez que el sérum haya tenido tiempo suficiente para penetrar en las agujas, ¡puedes quitar la tapa y empezar a estampar! Comienza por el centro del rostro y sigue hacia fuera hasta cubrir todo el rostro. Estampa con una superposición del 50%. Esto significa que cada vez que estampes, superpondrás el estampado anterior hasta la mitad. Si deseas aumentar la formación de colágeno en una zona específica, como una marca rebelde o una cicatriz de acné, puedes estamparla 2 ó 3 veces para tratarla. Si tienes alguna imperfección activa, puedes acercarte lo máximo posible, pero evita estampar directamente sobre cualquier brote activo en la piel.</li></ul><p>[code]</p><ul><li>Repite 2-3 pasadas para obtener mejores resultados.</li><li>Aplica los restos de sérum sobre el rostro y el cuello para que la piel absorba todo ese nutritivo sérum. (Truco: coge los restos de sérum del envase y aplícatelos en la cara y el cuello).</li></ul>",
+            "code": "<img src=\"{{ 'faq_refill.png' | asset_url }}\" alt=\"\" class=\"py-2\">"
+          }
+        },
+        "object_hkgHBN": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cómo limpio el dispositivo?",
+            "text": "<p>Una vez que hayas terminado de estampar para conseguir una piel más luminosa y tersa, sigue las siguientes instrucciones de limpieza:</p><ul><li>Desenrosque el cabezal de la aguja con el capuchón puesto y deséchelo de forma segura.</li><li>Lava la cámara con agua y un limpiador suave.</li><li>Deja que el aparato se seque completamente al aire sobre una superficie limpia antes de guardarlo.</li><li>Abre un cabezal de aguja nuevo y colócalo en el dispositivo. Asegúrate de tener las manos limpias y no abras el capuchón del cabezal de la aguja.</li></ul>",
+            "code": ""
+          }
+        },
+        "object_jkgKEm": {
+          "type": "object",
+          "settings": {
+            "heading": "¿Cómo funciona la garantía de devolución de dinero de 90 días?",
+            "text": "<p>Tienes 90 días para probar el Sistema de Micro Infusión de Qure y ver los resultados por ti mismo. Si no ves ninguna diferencia en tu piel, si no experimentas una piel más firme, brillante y de aspecto más joven, simplemente ponte en contacto con nosotros y te devolveremos el dinero encantados. Esta garantía se aplica al paquete de 3 meses. Sólo tendrás que proporcionar fotos de antes y después de cada tratamiento de 2 semanas para calificar.</p>",
+            "code": ""
+          }
+        },
+        "button_F67Uh4": {
+          "type": "button",
+          "settings": {
+            "ext_btn": "",
+            "ext_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_QiNmNp",
+        "object_4yYPQ4",
+        "object_faRVVk",
+        "object_7ViJwh",
+        "object_tERiWN",
+        "object_b4xRkF",
+        "object_qfXzf3",
+        "object_9UagXp",
+        "object_iNjJHr",
+        "object_ArEa6g",
+        "object_n7R7ar",
+        "object_jh9h8Y",
+        "object_yjEtVU",
+        "object_R4mRcJ",
+        "object_hkgHBN",
+        "object_jkgKEm",
+        "button_F67Uh4"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "",
+        "heading": "Las respuestas a tus preguntas",
+        "text": "",
+        "button_label": "Mostrar más preguntas",
+        "button_hide_label": "Ocultar más preguntas"
+      }
+    },
+    "social_zwVAqW": {
+      "type": "social",
+      "blocks": {
+        "image_amGdKK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/insta_1.webp"
+          }
+        },
+        "image_BJKxWw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/insta_2.webp"
+          }
+        },
+        "image_4KxaLE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/insta_3.webp"
+          }
+        },
+        "image_XeTxa8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/insta_4.webp"
+          }
+        },
+        "image_pJBwRK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/insta_5.webp"
+          }
+        },
+        "image_TfLXhY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/insta_6.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_amGdKK",
+        "image_BJKxWw",
+        "image_4KxaLE",
+        "image_XeTxa8",
+        "image_pJBwRK",
+        "image_TfLXhY"
+      ],
+      "settings": {
+        "heading": "Únete a más de 30,000 fanáticos de Qure que están revolucionando su cuidado de la piel en casa",
+        "text": "<h5>@qureskincare</h5>"
+      }
+    },
+    "liquid_4mHpUK": {
+      "type": "liquid",
+      "settings": {
+        "code": "<!-- -- image with text start -- -->\n        <div class=\"imageText joinMicro\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-6 order-2 order-md-1\">\n                        <div class=\"ba_wrapper\">\n                            <div class=\"ss_list d-none d-md-block\">\n                                <ul>\n                                    <li><strong>Transforma la piel de aspecto opaco,</strong> ayuda a reducir la\n                                        aparición de líneas finas y suaviza la textura\n                                    </li>\n                                    <li>Tratamiento facial <strong>sencillo</strong> de 5 minutos, sueros\n                                        <strong>personalizados</strong> para abordar los problemas de tu piel con resultados visibles\n                                    </li>\n                                    <li>Tiempo de acción casi inmediato, prácticamente <strong>indoloro</strong> y\n                                        <strong>fácil </strong>de realizar desde casa\n                                    </li>\n                                </ul>\n                            </div>\n                            <div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                                <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center mw-100\"\n                                    href=\"#productSubscription\">COMPRA AHORA AHORRA HASTA UN 43%</a>\n                                <div class=\"progress_bar progress_bar d-block d-md-block\">\n                                    <div class=\"loading_bar_wrap\">\n                                        <div class=\"loading_bar\" style=\"width:52%\">\n                                        </div>\n                                    </div>\n                                    <p>Se está agotando RÁPIDO</p>\n                                </div>\n                                <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                        <p>Garantía de devolución<br> de dinero de 90 días </p>\n                                    </div>\n                                    <div class=\"s_bx\">\n                                        <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                        \n<p>Envío internacional <br> gratuito en compras mayores a 100 €</p>\n                                    </div>\n                                </div>\n                            </div>\n\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6 order-1 order-md-2\">\n                        <div class=\"ss_list d-block d-md-none\">\n                            <ul>\n                                <li><strong>Transforma la piel de aspecto opaco,</strong> ayuda a reducir la aparición\n                                    de líneas finas y suaviza la textura\n                                </li>\n                                <li>Tratamiento facial\n                                    <strong>sencillo</strong> de 5 minutos, sueros <strong>personalizados</strong> para\n                                    abordar los problemas de tu piel con resultados visibles\n                                </li>\n                                <li>\n                                    Tiempo de acción casi inmediato, prácticamente <strong>indoloro</strong> y\n                                    <strong>fácil </strong>\n                                    de realizar desde casa\n                                </li>\n                            </ul>\n                        </div>\n                        <div class=\"it_img position-relative mw-mob-100\">\n                            <div class=\"aboveText mw-394\">\n                                <h2 class=\"title-lg\">Únete a la revolución de la Micro-Infusión</h2>\n                            </div>\n                            <img src=\"{{ 'micro_grid_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- -- image with text end -- -->"
+      }
+    }
+  },
+  "order": [
+    "header_landing_yzqaEc",
+    "main",
+    "featuredin_zWyY3U",
+    "two_column_box_p7J7bk",
+    "two_column_box_cqD687",
+    "two_column_box_wJmxTY",
+    "line_M99hQR",
+    "product_box_b3WBQC",
+    "before_after_short_slider_pYmNqR",
+    "videos_list_9mL4h8",
+    "two_column_box_f67akQ",
+    "reasons_khXbp7",
+    "trusted_qGtbnC",
+    "results_3LEkF7",
+    "liquid_9GnXBn",
+    "compare_rGUQ9y",
+    "guide_xibEe6",
+    "line_a8KbFQ",
+    "product_box_second_xRWY78",
+    "liquid_7dQkU7",
+    "liquid_86wfLd",
+    "compare_box_p4B7wy",
+    "faq_ABfhyg",
+    "social_zwVAqW",
+    "liquid_4mHpUK"
+  ]
+}

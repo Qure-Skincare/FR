@@ -1,0 +1,180 @@
+{%- assign videos_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'video' -%}
+            {%- assign videos_count = wistia_videos_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<!-- -- qure uses start -- -->
+<div class="q_uses_bl section bg_gradient_yellow_bt{% if videos_count == 0 %} pt-5{% endif %}">
+    <div class="container">
+        {%- if section.settings.section_heading != blank -%}
+            <div class="section_header mb-3 text-center">
+                <h2 class="title-lg paddingB">{{ section.settings.section_heading }}</h2>
+                {%- if section.settings.subheading != blank -%}
+                {{ section.settings.subheading }}
+                {%- endif -%}
+            </div>
+        {%- endif -%}
+        {%- for block in section.blocks -%}
+            {% if block.type == 'video' %}
+                <div class="q_video">
+                    <img class="img-fluid" src="{{ block.settings.image | img_url: '900x' }}" alt="{{ block.settings.image.alt | escape }}">
+                    <div class="q_v_info">
+                        {% if block.settings.heading %}
+                            <div class="title-xxl">{{ block.settings.heading }}</div>
+                        {% endif %}
+                        {% if block.settings.video_url %}
+                            <a class="popup-youtube d-flex align-items-center" href="{{ block.settings.video_url }}"><img src="{{ 'qure_play.svg' | asset_url }}" alt="play"><span>WATCH VIDEO</span></a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+    {%- endfor -%}
+        <div class="row">
+            {%- for block in section.blocks -%}
+                {% if block.type == 'column' %}
+                    <div class="col-12 col-md-6 col-lg-3 q_uses_item-outer">
+                        <div class="q_uses_item px-3">
+                            <div class="q_uses_res">
+                                <div class="q_use_img">
+                                    <img class="img-fluid" src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                </div>
+                                <div class="q_uses_header">
+                                    {% if block.settings.heading %}
+                                        <p>{{ block.settings.heading }}</p>
+                                    {% endif %}
+                                    <div class="arrow text-end">
+                                        <img src="{{ 'arrow-down.svg' | asset_url }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            {% if block.settings.text %}
+                                <div class="q_uses_desc">
+                                    
+                                        {{ block.settings.text }}
+                                 
+                                </div> 
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+<!-- -- qure uses end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.uses.name",
+        "class": "section-uses",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_heading",
+                "label": "Heading"
+            },
+            {
+                "type": "richtext",
+                "id": "subheading",
+                "label": "Sub Heading"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "video_url",
+                        "label": "t:common.video.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "column",
+                "name": "t:common.column.label",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.uses.name",
+                "blocks": [
+                    {
+                        "type": "video",
+                        "settings": {
+                            "heading": "Why Qure?",
+                            "image": "shopify:\/\/shop_images\/why_qure.webp",
+                            "video_url": "https:\/\/www.youtube.com\/watch?v=X9KXJPv6rno"
+                        }
+                    },
+                    {
+                        "type": "column",
+                        "settings": {
+                            "heading": "Science-Backed, Dermatologist Approved",
+                            "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals <\/strong>and <strong>scientific studies <\/strong>that <strong>prove <\/strong>Qure’s skincare <strong>works.<\/strong><\/p>",
+                            "image": "shopify:\/\/shop_images\/q_uses_1.webp"
+                        }
+                    },
+                    {
+                        "type": "column",
+                        "settings": {
+                            "heading": "Safe and Easy To Use",
+                            "text": "<p>Perform <strong>safely <\/strong>from home for quick and <strong>easy <\/strong>regular <strong>DIY therapies <\/strong>so you can maintain long term smooth and healthy skin.<\/p>",
+                            "image": "shopify:\/\/shop_images\/q_uses_2.webp"
+                        }
+                    },
+                    {
+                        "type": "column",
+                        "settings": {
+                            "heading": "Saves You Time, and Money",
+                            "text": "<p>No one has the time, or the money, to attend regular in-clinic treatments in order to see long lasting results. With Qure, it’s like going to the clinic 5x a week - Minus the cost and the time commitment.<\/p>",
+                            "image": "shopify:\/\/shop_images\/q_uses_3.webp"
+                        }
+                    },
+                    {
+                        "type": "column",
+                        "settings": {
+                            "heading": "Clinically Proven Results",
+                            "text": "<p>Keep your skin looking like you for longer. We put <strong>clinically proven <\/strong>technology and skincare that’s backed by science in your hands, so you can <strong>achieve in-clinic results without the guess work<\/strong><\/p>",
+                            "image": "shopify:\/\/shop_images\/q_uses_4.webp"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

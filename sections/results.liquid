@@ -1,0 +1,326 @@
+<!-- -- result section start -- -->
+<div class="result_s section {{ section.settings.classname }} cc" id="result_section">
+    <div class="container">
+        <div class="section_header text-start text-md-center ms-0 m-md-auto mw-100">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB original-copy">
+                    {{ section.settings.heading }}
+                </h2>
+            {% endif %}
+            {% if section.settings.heading_reduced != blank %}
+                <h2 class="title-lg paddingB reduced-copy">
+                    {{ section.settings.heading_reduced }}
+                </h2>
+            {% endif %}
+        </div>
+
+        <div class="result_s_wrapper">
+            <div class="swiper dot_pagination result_slider">
+                <div class="swiper-wrapper">
+                    {%- for block in section.blocks -%}
+                        {% case block.type %}
+                            {% when 'result' %}
+                                <div class="swiper-slide">
+                                    <div class="result_item{% if block.settings.code != blank %} result_item_info_with_fixed{% endif %} {% if block.settings.see-more != blank %} h-100 {% endif %}">
+                                        {% if block.settings.image != blank %}
+                                            <div class="result_img_m">
+                                                <img class="img-fluid" src="{{ block.settings.image | img_url: '450x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                            </div>
+                                        {% endif %}
+
+                                        <div class="result_c_info">
+                                            <div class="r_flag">
+                                                {% if block.settings.image_country != blank %}
+                                                    <div class="flag_img">
+                                                        <img class="img-fluid" src="{{ block.settings.image_country | img_url: '100x' }}" alt="">
+                                                    </div>
+                                                {% else %}
+                                                    <div class="flag_img">
+                                                        <img src="{{ 'america_f.webp' | asset_url }}" alt="" class="img-fluid">
+                                                    </div>
+                                                {% endif %}
+
+                                                <p class="r_c_name pe-2">{{ block.settings.client }}</p>
+                                            </div>
+                                            <div class="star_gp">
+                                                <img src="{{ 'results_star-full.svg' | asset_url }}" alt="">
+                                                {% if block.settings.heading != blank %}
+                                                    <p>{{ block.settings.heading }}</p>
+                                                {% endif %}
+                                            </div>
+                                            <div class="reviewed">
+                                                <p>{{ section.settings.text_reviewed | default: 'Reviewed in' }} {{ block.settings.text_country |  default: 'United States' }}</p>
+                                            </div>
+                                            <div class="verified_img">
+                                                <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                                <p>{{ section.settings.text_verified_customer }}</p>
+                                            </div>
+                                        </div>
+                                        <div class="result_item_info">
+                                            <div class="result_content">
+                                                {% if block.settings.text != blank %}
+                                                    {{ block.settings.text }}
+                                                {% endif %}
+                                                {% if block.settings.see-more != blank %}
+                                                <div class="read-more-content2">
+                                                    <p class="nomargin">{{ block.settings.see-more }}</p>
+                                                </div>
+                                                <a href="javascript:void(0);" class="read-more2 text-black" title="Read More">See
+                                                More</a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        {% if block.settings.code != blank %}
+                                            {{ block.settings.code }}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endcase %}
+                    {%- endfor -%}
+                </div>
+                <div class="pagination_navigation">
+                    <div class="swiper-pagination"></div>
+                    <div class="qureSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                    <div class="qureSlider-swiper-next  swiper-button-next swiper-button"></div>
+                </div>
+            </div>
+        </div>
+
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'button' %}
+                    <div class="get_confident-btn mx-auto {{ block.settings.custom_class }}">
+                        <a class="btn btn-lg btn-primary buy_btn" href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</a>
+                    </div>
+            {% endcase %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+<!-- -- result section end -- -->
+{% style %}
+.read-more-content2 {
+    display: none;
+    padding-top: 22px;
+}
+.read-more2 {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    text-decoration-line: underline;
+    color: #000;
+}
+{% endstyle %}
+
+
+{% schema %}
+    {
+        "name": "t:sections.results.name",
+        "class": "section-results",
+        "settings": [
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "mi_landing_result"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "heading_reduced",
+                "label": "Header Reduced"
+            },
+            {
+                "type": "text",
+                "id": "text_verified_customer",
+                "label": "t:common.text.label",
+                "default": "Verified customer"
+            },
+            {
+                "type": "text",
+                "id": "text_reviewed",
+                "label": "t:common.text.label",
+                "default": "Reviewed in"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "result",
+                "name": "t:common.result.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "see-more",
+                        "label": "t:common.read_more"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_country",
+                        "label": "t:common.client.country.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_country",
+                        "label": "t:common.client.country.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client",
+                        "label": "t:common.client.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "custom_class",
+                        "label": "t:common.classname.custom",
+                        "default": "mw-452"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.results.name",
+                "settings": {
+                    "heading": "Results you‘ll see with your own eyes"
+                },
+                "blocks": [
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_teresa.webp",
+                            "heading": "IT REALLY WORKS!!",
+                            "text": "<p>“I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.\"<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "text_country": "United States",
+                            "client": "Teresa S."
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_tiffany.webp",
+                            "heading": "Renewed Skin!",
+                            "text": "<p>\"My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!\"<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "text_country": "United States",
+                            "client": "Tiffany L."
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_anton.webp",
+                            "heading": "Can’t go a day without it",
+                            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.<\/p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+                            "text_country": "Australia",
+                            "client": "Anton M."
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_michelle.webp",
+                            "heading": "Zero Maskne for 8 weeks",
+                            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "text_country": "United States",
+                            "client": "Michelle S."
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_june.webp",
+                            "heading": "Amazing results!",
+                            "text": "<p>“Amazing! I never expected this miracle. I’ve had red blotches above my lips for years and they are vastly improved after using the mask daily<br\/>for only 6 weeks. I bought it hoping for better skin texture and less wrinkles. It has improved those, but having the redness gone is what I’m<br\/>most excited about.”<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "text_country": "United States",
+                            "client": "June T."
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_jess.webp",
+                            "heading": "So much smoother",
+                            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+                            "text_country": "United States",
+                            "client": "Jess"
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_john.webp",
+                            "heading": "Healthier-looking glow",
+                            "text": "<p>“My skin feels a lot more clear, considerably less oily, and all round a healthier-looking glow. My breakout scars had even been reduced!”<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+                            "text_country": "Canada",
+                            "client": "John P."
+                        }
+                    },
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/results_bj_nardi.webp",
+                            "heading": "Completely qured my acne",
+                            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br\/>face. I’ve been using my Qure for 1 month now and it has completely<br\/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”<\/p>",
+                            "image_country": "shopify:\/\/shop_images\/canada_f.svg",
+                            "text_country": "Canada",
+                            "client": "BJ Nardi"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}
