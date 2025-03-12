@@ -1,0 +1,26 @@
+<div class="announcement_bar">
+    <p>
+        <a href="{{ block.settings.button_url }}">
+            <span class="pe-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
+                    <path d="M7.31978 7.99717C0.623654 6.81023 -0.303042 12.3987 0.0706252 15.3413C2.22296 11.6614 4.40516 12.2258 5.22722 12.968L11.6543 18.7543C12.4016 18.0372 14.4792 16.0392 16.8109 13.784C19.1426 11.5288 18.6793 11.3359 18.754 10.5199C18.6793 9.6297 18.2309 8.59113 16.8109 7.99717C15.5257 7.45956 12.875 9.38209 11.6543 10.5199C10.5781 9.21427 8.31622 8.29407 7.31978 7.99717Z" fill="#C7E7DC"/>
+                    <path d="M2.01731 14.4062C0.582604 15.7206 1.31988 17.4932 1.86786 18.2151L11.8062 27.7752L22.4918 16.8711C23.4632 15.2281 23.8667 13.2116 23.0896 11.1204C22.3124 9.02919 19.6273 8.05828 18.3819 7.83423C18.5065 7.9587 18.9349 8.53627 19.6523 9.85073C20.3696 11.1652 19.6523 12.6888 19.2786 13.1369L11.8062 20.0079L5.6788 14.7049C5.0561 14.0576 3.45202 13.0917 2.01731 14.4062Z" fill="#C7E7DC"/>
+                    <ellipse cx="7.47823" cy="3.32349" rx="3.2048" ry="3.32349" fill="#C7E7DC"/>
+                    <circle cx="16.8547" cy="3.32349" r="3.32349" fill="#C7E7DC"/>
+                </svg>
+            </span>
+            <span>{{ block.settings.heading }} </span> <span class="fw-normal d-md-inline-block d-none">{{ block.settings.text }}   </span>
+            <span class="bar_shop-btn text-white text-decoration-none bg-black text-white px-2 rounded-20 ms-2">{{ block.settings.button_label }}</span>
+        </a>
+    </p>
+</div>
+
+
+{% comment %} 
+<link rel="stylesheet" href="{{ 'womens_day.css' | asset_url }}">
+
+<div class="announcement_bar womens_day">
+    <span style="margin-right:5px"><img src="{{ 'womens_day.svg' | asset_url }}" alt=""> </span>
+    <p>{{ block.settings.heading }}</p> <a href="{{ block.settings.button_url }}" class="pink_coloured">{{ block.settings.button_label }}</a>
+</div> 
+{% endcomment %}

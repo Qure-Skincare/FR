@@ -1,0 +1,186 @@
+<div class="welcome_wrapper section">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="section_header ms-0 ms-md-auto d-md-none">
+                <h2 class="title-xl mb-2 mb-md-5 text-center">{{ section.settings.heading }}</h2>
+            </div>
+        {% endif %}
+        <div class="welcome_grid">
+            {% if section.settings.wistia_id != blank %}
+                <div class="pe-md-2">
+                    <div class="wistia_responsive_padding" style="position:relative;">
+                        <div class="wistia_responsive_wrapper"
+                            style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                            <div class="wistia_embed wistia_async_{{ section.settings.wistia_id }} seo=false videoFoam=true"
+                                style="height:100%;position:relative;width:100%">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://fast.wistia.com/embed/medias/{{ section.settings.wistia_id }}.jsonp" async></script>
+                <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            {% endif %}
+            {%- for block in section.blocks -%}
+                <div class="welcome_item_wrap">
+                    {% if section.settings.heading != blank %}
+                        {% if forloop.index == 1 %}
+                            <div class="section_header text-center ms-0 ms-md-auto d-md-block d-none">
+                                <h2 class="title-xl mb-0">{{ section.settings.heading }}</h2>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                    {% if block.settings.heading != blank %}
+                        <div class="section_header text-center pb-3 d-md-none">
+                            <h2 class="title-lg">{{ block.settings.heading }}</h2>
+                        </div>
+                    {% endif %}
+                    <div class="welcome_info">
+                        {% if block.settings.heading != blank %}
+                            <div class="section_header text-center pb-2 d-md-block d-none">
+                                <h2 class="title-lg">{{ block.settings.heading }}</h2>
+                            </div>
+                        {% endif %}
+                        <div class="welcome_item">
+                            {% if block.settings.image != blank %}
+                                <div class="welcome_img">
+                                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="img-fluid">
+                                </div>
+                            {% endif %}
+                            <div class="welcome_desc">
+                                {{ block.settings.text }}
+                            </div>
+                        </div>
+                        <div class="welcome_btns">
+                            <a href="{{ block.settings.button_url }}" class="black_btn">
+                                {% if block.settings.button_image != blank %}
+                                    <span><img src="{{ block.settings.button_image | img_url: 'master' }}" alt=""></span>
+                                {% endif %}
+                                {{ block.settings.button_label }}
+                            </a>
+                            {% if block.settings.button_url_second != blank %}
+                                <div class="or_text">
+                                    <p>or</p>
+                                </div>
+                                <a target="_blank" href="{{ block.settings.button_url_second }}" class="download_btn">
+                                    {% if block.settings.button_image_second != blank %}
+                                        <span><img src="{{ block.settings.button_image_second | img_url: 'master' }}" alt=""></span>
+                                    {% endif %}
+                                    {{ block.settings.button_label_second }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+<!-- ===== contact us start ===== -->
+{%- if section.settings.btm_text != blank -%}
+<div class="any_question">
+    <div class="container">
+        <div class="any_question-content">
+            {{ section.settings.btm_text }}
+            {%- if section.settings.btn_label != blank -%}
+            <a href="{{ section.settings.btn_url }}" class="btn">{{ section.settings.btn_label }}</a>
+            {%- endif -%}
+        </div>
+    </div>
+ </div>
+ {%- endif -%}
+ <!-- ===== contact us end ===== -->
+
+{% schema %}
+    {
+        "name": "Welcome",
+        "class": "section-welcome",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "header",
+                "content": "Bottom Bar"
+            },
+            {
+                "type": "richtext",
+                "id": "btm_text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "wistia_id",
+                "label": "t:common.wistia.id.label"
+            },
+            {
+                "type": "text",
+                "id": "btn_label",
+                "default": "Contact Us",
+                "label": "t:common.button.label"
+            },
+            {
+                "type": "url",
+                "id": "btn_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "button_image",
+                        "label": "t:common.button.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_label_second",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url_second",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "button_image_second",
+                        "label": "t:common.button.image.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

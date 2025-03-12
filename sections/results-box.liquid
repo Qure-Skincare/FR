@@ -1,0 +1,159 @@
+<!-- -- result section start -- -->
+<div class="result_s section mw-970">
+    <div class="container">
+        {% if section.blocks.size > 0 %}
+            <div class="result_s_wrapper">
+                <div class="swiper dot_pagination result_slides_2">
+                    <div class="swiper-wrapper">
+                        {%- for block in section.blocks -%}
+                            <div class="swiper-slide">
+                                <div class="result_item">
+                                    {% if block.settings.heading != blank %}
+                                        <div class="result_heading py-3 text-center">
+                                            <h3>{{ block.settings.heading }} </h3>
+                                        </div>
+                                    {% endif %}
+                                    <div class="result_img_m">
+                                        {% if block.settings.image != blank %}
+                                            <img class="img-fluid" src="{{ block.settings.image | img_url: '450x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                        {% endif %}
+                                        <div class="r_c_info">
+                                            <div class="c_information">
+                                                <div class="flag_img pe-2">
+                                                    {% if block.settings.image_country != blank %}
+                                                        <img class="img-fluid" src="{{ block.settings.image_country | img_url: '100x' }}" alt="">
+                                                    {% else %}
+                                                        <img src="{{ 'america_f.webp' | asset_url }}" alt="" class="img-fluid">
+                                                    {% endif %}
+                                                </div>
+                                                <p class="r_c_name pe-2">{{ block.settings.client }}</p>
+                                                <div class="verified_img pe-2">
+                                                    <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                                </div>
+                                                <p>Verified customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skin_content_wrap">
+                                        <div class="skincare_percent">
+                                            <div class="progressCont">
+                                                <p><span class="progressWrapper">
+                                                        <span class="progessInfo text-dark">{{ block.settings.progress }}%</span>
+                                                        {% if block.settings.progress_image != blank %}
+                                                            {{ block.settings.progress_image }}
+                                                        {% else %}
+                                                            <svg class="vMQQx" height="68" width="68"
+                                                                viewBox="-29 -29 58 58">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0" x2="0" y1="1"
+                                                                        y2="0">
+                                                                        <stop offset="0%" stop-color="#C7E7DC"></stop>
+                                                                        <stop offset="100%" stop-color="#C7E7DC"></stop>
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <circle stroke="rgba(221, 224, 228, 1)" fill="none"
+                                                                    pathLength="100" class="K4v4P" r="24"
+                                                                    style="stroke-width: 1px;"></circle>
+                                                                <circle visibility="visible" fill="none" pathLength="100"
+                                                                    transform="rotate(-90)" class="OKwUu" r="24"
+                                                                    stroke="url(#gradient)"
+                                                                    style="stroke-dasharray: 100; stroke-dashoffset: 20; stroke-width: 5px;">
+                                                                </circle>
+                                                            </svg>   
+                                                        {% endif %}
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            {% if block.settings.progress_text != blank %}
+                                                {{ block.settings.progress_text |  replace: '<p>', '<p class="ps-1"' }}
+                                            {% endif %}
+                                        </div>
+                                        {% if block.settings.text != blank %}
+                                            <div class="rc_desc">
+                                                <div class="ss_list">
+                                                    {{ block.settings.text }}
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        {% endif %}
+    </div>
+</div>
+<!-- -- result section end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.results-box.name",
+        "class": "section-results-box",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "result",
+                "name": "t:common.result.label",
+                "limit": 8,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_country",
+                        "label": "t:common.client.country.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client",
+                        "label": "t:common.client.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "progress_image",
+                        "label": "t:common.progress.image.label"
+                    },
+                    {
+                        "type": "range",
+                        "id": "progress",
+                        "min": 40,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.progress.label",
+                        "default": 85
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "progress_text",
+                        "label": "t:common.progress.text.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.results-box.name"
+			}
+        ]
+    }
+{% endschema %}

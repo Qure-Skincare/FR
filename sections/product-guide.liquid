@@ -1,0 +1,100 @@
+<!-- -- main banner start -- -->
+<div class="product_guide-section section mb-3">
+  <div class="container">
+    <div class="section_header mw-100 text-md-start text-center">
+      <h2 class="title-xl pb-3 px-md-0 px-4">
+        {{ section.settings.heading_id }}
+      </h2>
+      <h3 class="pb-3">{{ section.settings.small_heading_id }}</h3>
+    </div>
+    <div class="row gy-3">
+      {%- for block in section.blocks -%}
+        <div class="col-md-6">
+          <div class="product_block me-md-2">
+            <div class="pd_block-img">
+              {% if block.settings.product_guide_img != blank %}
+                <img src="{{ block.settings.product_guide_img | img_url: 'master' }}" alt="" class="img-fluid">
+              {% endif %}
+            </div>
+            <div class="pd_block-info">
+              <h5>{{ block.settings.micro_title }}</h5>
+              {{ block.settings.micro_desc }}
+            </div>
+            <div class="pd_block-btn">
+              <a href="{{block.settings.micro_prod_link}}" class="btn btn-primary rounded-circle">
+                {% if block.settings.arrow_img != blank %}
+                  <img src="{{ block.settings.arrow_img | img_url: 'master' }}" alt="" class="img-fluid">
+                {% endif %}
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- -- main banner end -- -->
+
+<script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+{% schema %}
+{
+  "name": "t:common.Product-guide.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_id",
+      "label": "t:common.heading.label",
+      "default": "User Manuals Made Easy!"
+    },
+    {
+      "type": "text",
+      "id": "small_heading_id",
+      "label": "t:common.subheading.label",
+      "default": "Easy Video Guides for a Quick Start"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Block",
+      "name": "t:common.Block.label",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_guide_img",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "text",
+          "id": "micro_title",
+          "label": "t:common.title.label",
+          "default": "Micro-Infusion Facial System"
+        },
+        {
+          "type": "richtext",
+          "id": "micro_desc",
+          "label": "t:common.description.label"
+        },
+        {
+          "type": "url",
+          "id": "micro_prod_link",
+          "label": "t:common.link.url.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "arrow_img",
+          "label": "t:common.image.label"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "t:common.Product-guide.label",
+    }
+  ]
+}
+{% endschema %}

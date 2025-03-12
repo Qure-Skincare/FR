@@ -1,0 +1,282 @@
+<!-- Difference table with slider start -->
+<div class="compare_section section bg-grey">
+  <div class="container">
+    {%- if section.settings.heading != blank -%}
+      <div class="section_header text-md-center text-start">
+        <h2 class="title-lg">{{ section.settings.heading }}</h2>
+      </div>
+    {%- endif -%}
+    <div class="compare_listRow">
+      <div class="compare_listHeadings">
+        <div class="compare_listHeader">
+          <div class="compare__img"></div>
+        </div>
+        {%- if section.settings.heading2 != blank -%}
+          <div class="compare__titleBlock">
+            <h4 class="compare__title">
+              <strong>{{ section.settings.heading2 }}</strong>
+            </h4>
+          </div>
+        {%- endif -%}
+        <div class="compare_listitems">
+          {%- if section.settings.point1 != blank -%}
+            <div class="compare_listBlock">{{ section.settings.point1 }}</div>
+          {%- endif -%}
+          {%- if section.settings.point2 != blank -%}
+            <div class="compare_listBlock">{{ section.settings.point2 }}</div>
+          {%- endif -%}
+          {%- if section.settings.point3 != blank -%}
+            <div class="compare_listBlock active">{{ section.settings.point3 }}</div>
+          {%- endif -%}
+          {%- if section.settings.point4 != blank -%}
+            <div class="compare_listBlock">{{ section.settings.point4 }}</div>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="compare_list_column">
+        <div
+          class="swiper-container compare-slider twa__swiper"
+          id="twa__swiper-compareSlider"
+          data-section-id="compareSlider"
+          data-autoplay="false"
+          data-loop="true"
+          data-centerslide="false"
+          data-mobile="1"
+          data-tablet="3"
+          data-desktop="3"
+          data-spacing="0"
+          data-arrowleft="compareSlider-swiper-prev"
+          data-arrowright="compareSlider-swiper-next"
+        >
+          <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'column' -%}
+                  <!-- slide start -->
+                  {% if block.settings.pd_image != blank %}
+                    <div class="swiper-slide">
+                      <div class="compare_list_elements {% if forloop.first %} active {%endif %}">
+                        <div class="compare_listHeader">
+                          <div class="compare__img">
+                            <img
+                              src="{{ block.settings.pd_image | img_url:'master' }}"
+                              alt="{{ block.settings.pd_image.alt }}"
+                              class="img-fluid d-block mx-auto"
+                            >
+                          </div>
+                        </div>
+                        <div class="compareTxt__element">
+                          {%- if block.settings.pd_name != blank -%}
+                            <div class="compare__titleBlock">
+                              <div class="compare__title text-center">{{ block.settings.pd_name }}</div>
+                            </div>
+                          {%- endif -%}
+                          <div class="compare_list_Block">
+                            <div class="compare_list_icon">
+                            {%  if block.settings.mark1 == 'tick' %}
+                              <img src="{{ 'tick_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                              {% else %}
+                              <img src="{{ 'cross_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                            {% endif %}
+                            </div>
+                            {%- if block.settings.point5 != blank -%}
+                              <h5>{{ block.settings.point5 }}</h5>
+                            {%- endif -%}
+                          </div>
+                          <div class="compare_list_Block">
+                            <div class="compare_list_icon">
+                            {%  if block.settings.mark2 == 'tick' %}
+                                <img src="{{ 'tick_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                                {% else %}
+                                <img src="{{ 'cross_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                            {% endif %}
+                            </div>
+                            {%- if block.settings.point6 != blank -%}
+                              <h5>{{ block.settings.point6 }}</h5>
+                            {%- endif -%}
+                          </div>
+                          <div class="compare_list_Block">
+                            <div class="compare_list_icon">
+                            {%  if block.settings.mark3 == 'tick' %}
+                                <img src="{{ 'tick_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                                {% else %}
+                                <img src="{{ 'cross_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                            {% endif %}
+                            </div>
+                            {%- if block.settings.point7 != blank -%}
+                              <h5>{{ block.settings.point7 }}</h5>
+                            {%- endif -%}
+                          </div>
+                          <div class="compare_list_Block">
+                            <div class="compare_list_icon">
+                            {%  if block.settings.mark4 == 'tick' %}
+                                <img src="{{ 'tick_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                                {% else %}
+                                <img src="{{ 'cross_circle.svg' | asset_url }}" alt="" class="img-fluid">
+                            {% endif %}
+                            </div>
+                            {%- if block.settings.point8 != blank -%}
+                              <h5>{{ block.settings.point8 }}</h5>
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Difference table with slider end -->
+
+{% schema %}
+{
+  "name": "t:sections.compare_products.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.compare.product",
+      "info": "t:sections.compare.info"
+    },
+    {
+      "type": "text",
+      "id": "heading2",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "point1",
+      "label": "t:sections.compare.points.one"
+    },
+    {
+      "type": "text",
+      "id": "point2",
+      "label": "t:sections.compare.points.two"
+    },
+    {
+      "type": "text",
+      "id": "point3",
+      "label": "t:sections.compare.points.three"
+    },
+    {
+      "type": "text",
+      "id": "point4",
+      "label": "t:sections.compare.points.four"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:product.label",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "pd_image",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "pd_name",
+          "label": "t:product.name.label"
+        },
+        {
+          "type": "text",
+          "id": "point5",
+          "label": "t:sections.compare.points.one"
+        },
+        {
+          "type": "select",
+          "id": "mark1",
+          "label": "t:common.mark",
+          "options": [
+            {
+              "value": "tick",
+              "label": "t:common.icon.check"
+            },
+            {
+              "value": "cross",
+              "label": "t:common.icon.cross"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "point6",
+          "label": "t:sections.compare.points.two"
+        },
+        {
+          "type": "select",
+          "id": "mark2",
+          "label": "t:common.mark",
+          "options": [
+            {
+              "value": "tick",
+              "label": "t:common.icon.check"
+            },
+            {
+              "value": "cross",
+              "label": "t:common.icon.cross"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "point7",
+          "label": "t:sections.compare.points.three"
+        },
+        {
+            "type": "select",
+            "id": "mark3",
+            "label": "t:common.mark",
+            "options": [
+              {
+                "value": "tick",
+                "label": "t:common.icon.check"
+              },
+              {
+                "value": "cross",
+                "label": "t:common.icon.cross"
+              }
+            ]
+        },
+        {
+          "type": "text",
+          "id": "point8",
+          "label": "t:sections.compare.points.four"
+        },
+        {
+            "type": "select",
+            "id": "mark4",
+            "label": "t:common.mark",
+            "options": [
+              {
+                "value": "tick",
+                "label": "t:common.icon.check"
+              },
+              {
+                "value": "cross",
+                "label": "t:common.icon.cross"
+              }
+            ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.compare_products.label"
+    }
+  ]
+}
+{% endschema %}

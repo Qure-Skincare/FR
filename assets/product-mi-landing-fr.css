@@ -1,0 +1,114 @@
+.mi-landing-fr .header-new .menu li {
+    padding-right: 29px;
+}
+
+.mi-landing-fr .header-new .menu {
+    width: 41.33%;
+}
+
+.mi-landing-fr .header-new .header-logo {
+    width: 13.33%;
+}
+
+.mi-landing-fr .main_banner .btn-lg {
+    padding: 20px 0;
+}
+
+.mi-landing-fr .imageText .aboveText {
+    max-width: 420px;
+}
+
+.mi-landing-fr .play_btn .popup-youtube {
+    /* max-width: 337px; */
+    text-align: left;
+}
+
+.mi-landing-fr .compare_list_elements .compare_list_Block {
+    padding: 7px 2px 7px 15px;
+}
+
+.mi-landing-fr .bs_item {
+    max-width: 455px;
+}
+
+.mi_landing.mi-landing-fr .beauty_img {
+    max-width: 375px;
+}
+
+.mi-landing-fr .buy_btn.see_detailed {
+    max-width: 453px;
+}
+
+.mi-landing-fr .mi_landing_result .result_c_info .star_gp p {
+    font-size: 11px;
+}
+
+.mi-landing-fr .imageText .it_info p {
+    padding-bottom: 6px;
+    font-size: 13px;
+}
+
+@media(max-width:1024px) {
+    .mi-landing-page .icon-section-landing.icon-section .header_btn {
+        margin-right: 5px;
+    }
+
+    .header-new.new-hp-header {
+        padding: 5px 17px;
+    }
+    .mi-landing-fr .imageText.hollywood_skin .it_info p {
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .mi_landing.mi-landing-fr .main_banner .btn-lg,
+    .mi_landing.mi-landing-fr .clinical_grade .btn-lg {
+        padding: 5px 15px;
+    }
+
+    .mi-landing-fr .featured_promotion {
+        background-color: transparent;
+    }
+
+    .mi-landing-fr .play_btn .popup-youtube {
+        max-width: 291px;
+        text-align: left;
+    }
+
+    .mi-landing-fr .compare_list_elements .compare_list_Block {
+        padding: 7px 2px 7px 6px;
+    }
+
+    .mi-landing-fr .bs_item h4 {
+        word-break: unset;
+    }
+
+    .mi-landing-fr .choose_serum .c_s_wrapper {
+        align-items: start;
+    }
+
+    .mi-landing-fr .joinMicro .shipping_bg {
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media(max-width:480px) {
+    .mi-landing-fr .trusted_cl_m .play_btn span h6 {
+        padding-left: 17px;
+    }
+
+    .planBlock .plan_choosed span {
+        padding: 2px 13px;
+    }
+
+    .pmtBlock .pmt_plans .pmt_des {
+        font-size: 10px;
+    }
+
+    .mi-landing-fr .buy_btn.see_detailed {
+        padding: 12px 70px;
+    }
+}

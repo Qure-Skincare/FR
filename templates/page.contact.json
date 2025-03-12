@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page-contact",
+      "blocks": {
+        "object_XPg864": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/live-chat.svg",
+            "heading": "LIVE CHAT",
+            "text": "<p>Experts are Available: Mon-Sat</p><p>9AM - 5PM EST<br/>9AM - 5PM AEST</p><p>9AM -5PM CET</p>"
+          }
+        },
+        "object_UNNXkx": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/call-us.svg",
+            "heading": "CALL US",
+            "text": "<p><strong>+1 (240) 702-2228</strong></p><p>Availability: Mon-Sat</p><p>9AM - 5PM EST</p>"
+          }
+        },
+        "object_ejQnXh": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/email.svg",
+            "heading": "EMAIL",
+            "text": "<p>Send a Message to Customer Service Using the Form Below</p>"
+          }
+        }
+      },
+      "block_order": [
+        "object_XPg864",
+        "object_UNNXkx",
+        "object_ejQnXh"
+      ],
+      "custom_css": [],
+      "settings": {
+        "heading": "Contact Us",
+        "text": "<h5>We are here to help</h5>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

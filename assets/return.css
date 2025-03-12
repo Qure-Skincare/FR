@@ -1,0 +1,123 @@
+.title-xl {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 69px;
+    letter-spacing: 0.45px;
+}
+
+.section {
+    /* padding: 80px 0; */
+}
+
+.subscriptions_section ul,
+.subscriptions_section ol {
+    padding-left: 20px;
+}
+
+.return_step {
+    border-radius: 4px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 20px 16px;
+    height: 100%;
+}
+
+.return_step h6 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    margin-bottom: 0;
+}
+
+.return_step_bx {
+    background-color: #C7E7DC;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+
+.return_step p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+.contact_us .customer_details {
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.contact_btns .cu_btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.stepsReturn .swiper-slide {
+    height: auto;
+}
+
+.contact_us .section_header .title-md {
+    font-size: 36px;
+    font-family: 'Canela Web';
+}
+
+@media(max-width:767px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    .title-xl {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.34px;
+    }
+
+    .subscriptions_section .without_padding li {
+        padding-bottom: 0px !important;
+    }
+
+    .stepsReturn {
+        overflow: unset;
+    }
+
+    .return_ftrs .rtn_ftr img {
+        max-width: 35px;
+    }
+
+    .return_ftrs .rtn_ftr:last-child {
+        margin-bottom: 50px;
+    }
+
+    .subscriptions_section .subscriptions_content {
+        margin-top: 0px;
+    }
+
+    .contact_us .section_header .title-md {
+        font-size: 28px;
+        font-family: 'Canela Web';
+    }
+
+    .banner_content .section_header h3 {
+        font-family: 'Canela Web';
+        font-weight: 500;
+    }
+
+    .target_skin .target_skin_img img {
+        border-radius: 10px;
+    }
+}

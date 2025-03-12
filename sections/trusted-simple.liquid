@@ -1,0 +1,113 @@
+<div class="trusted_bl section">
+    <div class="trusted_cl">
+        <div class="container">
+            <div class="section_header d-block d-lg-none">
+                {% if section.settings.heading != blank %}
+                    <h2 class="title-lg text-center">
+                        {{ section.settings.heading }}
+                    </h2>
+                {% endif %}
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="trusted_left mw-452">
+                        <div class="section_header d-none d-lg-block pt-0">
+                            {% if section.settings.heading != blank %}
+                                <h2 class="title-lg">
+                                    {{ section.settings.heading }}
+                                </h2>
+                            {% endif %}
+                            {{ section.settings.text }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="trusted_cl_m mb-2 mb-md-0">
+                        <div class="trusted_tag">
+                            <div class="t_like_img pe-2">
+                                <img src="{{ 'trusted_thumb.svg' | asset_url }}" alt="">
+                            </div>
+                            <p class="border-r pe-2">{{ section.settings.likes }}</p>
+                            <p class="px-2">{{ section.settings.views }}</p>
+                        </div>
+                        {% if section.settings.image %}
+                            <img class="img-fluid t_m_img" src="{{ section.settings.image | img_url: '600x' }}" alt="" >
+                        {% endif %}
+
+                        {% if section.settings.video_url != blank %}
+                            <div class="play_btn">
+                                <a class="popup-youtube" rel="nofollow"  href="{{ section.settings.video_url }}">
+                                    <span><img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
+                                        <h6>{{ section.settings.video_label }}</h6>
+                                    </span>
+                                </a>
+                            </div>   
+                        {% endif %}
+                    </div>
+                    <div class="trusted_withInfo text-start d-block d-lg-none">
+                        {{ section.settings.text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "t:sections.trusted-simple.name",
+        "class": "section-trusted-simple",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "text",
+                "id": "video_url",
+                "label": "t:common.video.url.label"
+            },
+            {
+                "type": "text",
+                "id": "video_label",
+                "label": "t:common.video.cta.label",
+                "default": "Click To Watch Review"
+            },
+            {
+                "type": "text",
+                "id": "likes",
+                "label": "t:common.likes.label"
+            },
+            {
+                "type": "text",
+                "id": "views",
+                "label": "t:common.views.label"
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.trusted-simple.name",
+                "settings": {
+                    "heading": "Trusted by world leading Dermatologists",
+                    "text": "<p>What sets us apart is the unwavering trust we've earned from dermatologists on a mission to democratize professional skincare.<\/p><p>We're proud to bridge the gap between professional expertise and accessible skincare, bypassing the industry’s “skin gatekeepers” to give you science-based, clinical-grade skin treatments you can do easily, all by yourself, in the comfort and privacy of your own home.<\/p>",
+                    "image": "shopify:\/\/shop_images\/trusted_main.webp",
+                    "video_url": "https:\/\/www.youtube.com\/watch?v=I2Fe-kP-2Jg",
+                    "likes": "4.8K",
+                    "views": "192k views"
+                }
+			}
+        ]
+    }
+{% endschema %}

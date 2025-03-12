@@ -1,0 +1,155 @@
+<div id="faqs" class="faq_page section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col--mobile">
+                <div class="on-scr on-src-mobile">
+                    <div class="mobile-dropdown">
+                        <div class="mobile-dropdown__content">
+                            {% case request.path %}
+                                {% when '/pages/q-rejuvalight-pro-facewear' %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-led.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-ledGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Q-Rejuvalight Pro Facewear</span> 
+                                {% when '/pages/faq-microinfusion' %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-micro.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-microGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Micro-Infusion System</span> 
+                                {% when '/pages/returns-refunds' %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-returns.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-returnsGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Returns &amp; Exchanges</span> 
+                                {% when '/pages/billing-payments-1' %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-billing.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-billingGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Billing &amp; Payments</span> 
+                                {% when '/pages/warranty' %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-warranty.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-warrantyGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Warranty</span> 
+                                {% when '/pages/faq-troubleshooting' %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-troubleshot.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-troubleshotGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Troubleshooting</span>                                     
+                                {% else %}
+                                    <div class="mobile-dropdown-svg">
+                                        <img src="{{ 'faq-shipping.svg' | asset_url }}" alt="">
+                                        <img src="{{ 'faq-shippingGreen.svg' | asset_url }}" alt="">
+                                    </div>
+                                    <span>Shipping &amp; Orders</span>    
+                            {% endcase %}
+                        </div>
+                        <img src="{{ 'faq_down_arrow.svg' | asset_url }}" alt="">
+                    </div>
+                    <ul class="faq-menu">
+
+                        <li class="faq-menu__item{% if request.path == '/pages/faqs' or request.path == '/pages/faq-orders-shipping' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-shipping.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-shippingGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/faq-orders-shipping" class="faq-menu__url">
+                                Shipping &amp; Orders
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/q-rejuvalight-pro-facewear' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-led.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-ledGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/q-rejuvalight-pro-facewear" class="faq-menu__url ">
+                                Q-Rejuvalight Pro Facewear
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/faq-microinfusion' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-micro.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-microGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/faq-microinfusion" class="faq-menu__url ">
+                                Micro-Infusion System
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/returns-refunds' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-returns.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-returnsGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/returns-refunds" class="faq-menu__url ">
+                                Returns &amp; Exchanges
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/billing-payments-1' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-billing.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-billingGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/billing-payments-1" class="faq-menu__url ">
+                                Billing &amp; Payments
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/warranty' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-warranty.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-warrantyGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/warranty" class="faq-menu__url ">
+                                Warranty
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/app-page' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-qureskincare.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-qureskincareGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/app-page" class="faq-menu__url ">
+                                Qure Skincare App
+                            </a>
+                        </li>
+
+                        <li class="faq-menu__item{% if request.path == '/pages/faq-troubleshooting' %} active{% endif %}">
+                            <div class="faq-menu__item-img-wrapper">
+                                <img src="{{ 'faq-troubleshot.svg' | asset_url }}" alt="">
+                                <img src="{{ 'faq-troubleshotGreen.svg' | asset_url }}" alt="">
+                            </div>
+
+                            <a href="/pages/faq-troubleshooting" class="faq-menu__url ">
+                                Troubleshooting
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 faq__texts">
+                <div id="faq_page-custom-faq">
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

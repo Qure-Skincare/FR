@@ -1,0 +1,69 @@
+.content_instructions_pro .u_item_question{
+    border-radius: 17.125px !important;
+}
+.pd_details-list{
+    padding-top: 14px;
+}
+.accordion-item.pd_claims-item {
+    margin-top: 25px;
+}
+.pd_claims-item .percentage_bar span {
+    display: inline-block;
+    width: 50%;
+    height: 7.308px;
+}
+.pd_claims-item .percentage_bar2 span{
+    display: inline-block;
+    width: 25%;
+    height: 7.308px;
+}
+.pd_claims-item .percentage_bar,
+.pd_claims-item  .percentage_bar2 {
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.percent_1{
+    background-color: #0B76B8;
+}
+.percent_2{
+    background-color: #E83C3F;
+}
+.percent_3{
+    background-color: #912A5C;
+}
+.percent_4{
+    background-color: #B82C2E;
+}
+.percent_6{
+    background-color: #F79D34;
+}
+.pd_claims-item .percentage_bar p{
+    width: 50%;
+}
+.percent_1-text,
+.percent_2-text,
+.percent_3-text,
+.percent_4-text,
+.percent_6-text{
+    font-size: 10px;
+    font-weight: 400;
+}
+.percent_1-text{
+    color: #0B76B8;
+}
+.percent_2-text{
+    color: #E83C3F;
+}
+.percent_3-text{
+    color: #912A5C;
+}
+.percent_4-text{
+    color: #B82C2E;
+}
+.percent_6-text{
+    color: #F79D34;
+}

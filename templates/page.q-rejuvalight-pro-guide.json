@@ -1,0 +1,448 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "header_landing_pFmaRH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_qLHgyD": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CONTENT REQUIREMENTS",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs1.webp"
+          }
+        },
+        "navigation_link_DgYaFx": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs2.webp"
+          }
+        },
+        "navigation_link_3X4mrf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "INSPIRING CONTENT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qLHgyD",
+        "navigation_link_DgYaFx",
+        "navigation_link_3X4mrf"
+      ],
+      "settings": {
+      }
+    },
+    "section1": {
+      "type": "guide-header",
+      "blocks": {
+        "button_LUpm3B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about the Q-Rejuvalight Pro",
+            "button_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear"
+          }
+        }
+      },
+      "block_order": [
+        "button_LUpm3B"
+      ],
+      "settings": {
+        "heading": "Q-Rejuvalight Pro Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Our creative guide will help you showcase the magic of the Q-Rejuvalight Pro</p><p>Facewear. Let's create stunning, engaging content that highlights how this game-changing tool transforms skincare routines and your confidence.</p>",
+        "wistia_id": "p19i5hn8jl"
+      }
+    },
+    "qure_founder_LkfQUT": {
+      "type": "qure-founder",
+      "settings": {
+        "heading": "“This is my absolute favorite mask. It’s quick, effective and patients see great results with consistent use.”",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "image": "shopify://shop_images/dr.shah_new.webp",
+        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
+      }
+    },
+    "section3": {
+      "type": "guide-columns",
+      "blocks": {
+        "header_RA46tw": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 1",
+            "text": "Merge Qure into your creatives",
+            "image": "shopify://shop_images/ac_pro1.webp",
+            "button_label": "Content Requirements"
+          }
+        },
+        "description_mHnPFA": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Key Messages",
+            "image": "shopify://shop_images/key_message.svg",
+            "content": "<p>Key Points to include in the messaging:</p>",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_aNzhwA": {
+          "type": "collapsed",
+          "settings": {
+            "show": true,
+            "style": "default",
+            "heading": "Backed by clinical research - proven to work!",
+            "content": "<p>This FDA-cleared at-home LED mask combines 5 clinically proven wavelengths to actively treat the entire face and penetrate at a cellular level, deeper than any topical skincare, to treat a multitude of skin concerns.</p>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwB": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "Clinical results from home - minus the ‘clinical’ costs",
+            "content": "<p>The Q-Rejuvalight Pro uses the same technology clinics use, but is an affordable option and conveniently accessible from home. Daily 3-minute treatments give you corrective results  for a fraction of the usual in-clinic cost. One-time cost investment of the Q-Rejuvalight Pro means unlimited treatments, with no ongoing payments. No appointments, no waiting, and no hassle.</p>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwC": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "Personalized treatments - world’s 1st customizable LED mask",
+            "content": "<p>Choose a treatment on 5 different facial areas to suit your skin’s unique needs and target specific concerns on different facial areas. Help prevent breakouts on your chin while smoothing the appearance of \"crow’s feet\" at the same time.</p>",
+            "code": ""
+          }
+        },
+        "collapsed_aNzhwD": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "App operated",
+            "content": "<p>Schedule and track treatments, and get motivated with treatment challenge courses for maximum results. Get reminders sent to your phone so you never miss a treatment.</p>",
+            "code": ""
+          }
+        },
+        "collapsed_WXBjFq": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "default",
+            "heading": "Personal Experience & Benefits",
+            "content": "<p>Share personal experience! Discuss your results, and how you fit it into your daily skincare routine. Talk about the benefits of LED light therapy for skin health and why one should incorporate it into their skincare routine.</p>",
+            "code": ""
+          }
+        },
+        "description_tVQDHe": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Creative Direction",
+            "image": "shopify://shop_images/direction.svg",
+            "content": "<ul><li>High quality, bright lighting and high resolution imagery/videography to be supplied. No obvious filters.</li><li>Q-Rejuvalight Pro Facewear is the feature of the content. The background must be clean and bright.</li><li>When wearing the product, please do not wear any make-up, or no visible/noticeable makeup.</li><li>In cover photos for video content always show yourself using the Q-Rejuvalight Pro Facewear, unless otherwise agreed on with the brand.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_cpREQp": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Inclusion",
+            "image": "shopify://shop_images/inclusion.svg",
+            "content": "<ul><li>Tag and mention @qureskincare</li><li>Tag @qureskincare and use #QRejuvalightPro #LEDtherapy for a chance to be featured on Qure Skincare social media pages.</li><li>Please include your affiliate link or link provided by Qure in Instagram stories and in captions of YouTube videos. If can’t be placed in BIO then please include in linktree or similar.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_LhpN6x": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 2",
+            "text": "Get to know your Q-Rejuvalight Pro",
+            "image": "shopify://shop_images/ac_pro2.webp",
+            "button_label": "Product Information"
+          }
+        },
+        "description_6WtF8b": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Details",
+            "image": "shopify://shop_images/search.svg",
+            "image_large": "shopify://shop_images/pd_detail.webp",
+            "content": "",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_MF4HVR": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "grey",
+            "heading": "Technical specifications",
+            "content": "<ul><li><strong>TREATMENT TIME:</strong> 3 minutes</li><li><strong>CERTIFICATIONS:</strong> FDA, TGA, CE, UKCA</li><li><strong>OPERATION:</strong> Wireless, hands-free</li><li><strong>WAVELENGTH:</strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</li><li><strong>CHARGING TIME:</strong> 2 hours</li><li><strong>LEDs:</strong> 160 dual core</li></ul>",
+            "code": ""
+          }
+        },
+        "collapsed_RPxPyF": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "grey",
+            "heading": "Treatment details",
+            "content": "<ul><li><strong>USE:</strong> Use daily after cleansing, before topical skincare</li><li><strong>ANTI-AGING TREATMENT:</strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</li><li><strong>ANTI-BREAKOUT TREATMENT:</strong> 415nm (Blue), 630nm (Red)</li><li><strong>CUSTOMIZED TREATMENT: </strong>Choose treatment modes for each facial area</li><li><strong>SKIN TYPE: </strong>Most suitable for Fitzpatrick Skin Types I-IV</li></ul>",
+            "code": ""
+          }
+        },
+        "content_a4X9pc": {
+          "type": "content",
+          "settings": {
+            "text": "<ul><li><strong>Easy to use and travel-friendly -</strong><br/>Rechargeable and hands-free operation.</li><li><strong>Fits a busy lifestyle.</strong> Delivers quick 3 minute, fully personalized LED treatment.</li><li>Comes with a universal USB charger cord, luxury storage pouch, and light-blocking protective eyewear.</li><li><strong>Compatible Qure Skincare app</strong><br/>to track, schedule, plan, and customize treatments.</li><li>LED Lights are near the skin which maximizes penetration, and results.</li><li><strong>Innovative, premium design</strong> with high-quality materials used</li><li><strong>Excellent value for money -</strong> Performing unlimited treatments at home and not needing to pay for in-clinic LED treatments.</li><li><strong>Universal shape</strong> to fit various facial shapes and treat the entire face.</li><li>Combination of market-leading wavelengths and customization - Customize treatments to treat specific concerns and adapt to changing skin conditions with 1 device.</li></ul><p><a href=\"https://www.qureskincare.com/products/q-rejuvalight-pro-facewear\" title=\"Learn more about the Q-Rejuvalight Pro\">Learn more about the Q-Rejuvalight Pro &gt;</a></p>"
+          }
+        },
+        "description_BNpxL3": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Usage Instructions",
+            "image": "shopify://shop_images/usage_dir.svg",
+            "content": "<ul><li>Use Q-Rejuvalight Pro Facewear daily for the best results. Make sure to be consistent, it takes you only 3 minutes per treatment.</li><li>Make sure to scan the QR-code on the packaging before use or see detailed guide <a href=\"https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide\">here.</a></li><li>Before using the Q-Rejualight Pro please watch the video below. It will show you how to <strong>correctly attach the strap</strong> and <strong>insert the goggles.</strong></li></ul>",
+            "wistia_id": "jlz3itwzrb"
+          }
+        },
+        "description_GE3PNL": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Product Claims",
+            "image": "shopify://shop_images/product_claims.svg",
+            "content": "",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_tQnGxp": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "image",
+            "image_large": "shopify://shop_images/pd_claim1.webp",
+            "heading": "Anti-Aging Treatments",
+            "content": "<ul><li>Boosts collagen (naturally) as much as 81% for youthful, plump skin</li><li>Smooths fine lines and reduces wrinkles, and boosts skin firmness</li><li>Increases skin radiance, fades dark spots and promotes even-toned complexion</li><li>Reduces inflammation, rosacea, and redness</li></ul>",
+            "code": "<div class=\"percentage_bar2\">\n                                                        <span class=\"percent_3\"></span>\n                                                        <span class=\"percent_4\"></span>\n                                                        <span class=\"percent_2\"></span>\n                                                        <span class=\"percent_6\"></span>\n                                                    </div>\n                                                    <div class=\"d-flex justify-content-between\">\n                                                        <p class=\"percent_3-text\">IR 880nm</p>\n                                                        <p class=\"percent_4-text\">Deep Red 660nm</p>\n                                                        <p class=\"percent_2-text\">Red 630nm</p>\n                                                        <p class=\"percent_6-text\">Amber 605nm</p>\n                                                    </div>"
+          }
+        },
+        "collapsed_E4TeAh": {
+          "type": "collapsed",
+          "settings": {
+            "show": false,
+            "style": "image",
+            "image_large": "shopify://shop_images/pd_claim2.webp",
+            "heading": "Anti-Breakout Treatment",
+            "content": "<ul><li>Reduces acne by up to 83.3% and prevents future breakouts for clearer skin</li><li>Regulates oil production for clearer skin</li><li>Speeds up healing and fades post-breakout marks for more even-toned skin</li><li>Soothes redness and calms breakouts</li></ul>",
+            "code": "<div class=\"percentage_bar\">\n                                                <span class=\"percent_1\"></span>\n                                                <span class=\"percent_2\"></span>\n                                            </div>\n                                            <div class=\"d-flex justify-content-between\">\n                                                <p class=\"percent_1-text\">Blue light 415 nm</p>\n                                                <p class=\"percent_2-text\">Red light 630 nm</p>\n                                            </div>"
+          }
+        },
+        "header_AwT6ji": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 3",
+            "text": "Get inspired by other content creators",
+            "image": "shopify://shop_images/ac_pro3.webp",
+            "button_label": "Inspiring Content"
+          }
+        },
+        "heading_YiyFGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show how it works for you"
+          }
+        },
+        "video_4Jjjcm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video13.webp",
+            "wistia_id": "xenma1ywwu"
+          }
+        },
+        "video_iHceHC": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video14.webp",
+            "wistia_id": "snrh8omy3z"
+          }
+        },
+        "video_DmtewU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video15.webp",
+            "wistia_id": "2k5pyt2jwx"
+          }
+        },
+        "heading_fUcJta": {
+          "type": "heading",
+          "settings": {
+            "heading": "Personal story"
+          }
+        },
+        "video_H9fmrV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video16.webp",
+            "wistia_id": "6zad6prblh"
+          }
+        },
+        "video_dpGpUm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video17.webp",
+            "wistia_id": "34bd8287ue"
+          }
+        },
+        "video_6gLP6V": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video18.webp",
+            "wistia_id": "42nw130tue"
+          }
+        },
+        "heading_t3inkx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Skincare recommendation"
+          }
+        },
+        "video_TJgxNn": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video19.webp",
+            "wistia_id": "l0778c8k8s"
+          }
+        },
+        "video_r6etLp": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video20.webp",
+            "wistia_id": "oofgzce5um"
+          }
+        },
+        "video_4EXT9E": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video21.webp",
+            "wistia_id": "o8qeiis1bz"
+          }
+        },
+        "heading_wNDqjx": {
+          "type": "heading",
+          "settings": {
+            "heading": "What experts say"
+          }
+        },
+        "video_BqjDk8": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video22.webp",
+            "wistia_id": "0i8pfurpvb"
+          }
+        },
+        "video_qMmgj9": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video23.webp",
+            "wistia_id": "rn3wzjsvxt"
+          }
+        },
+        "video_Wc6f74": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video24.webp",
+            "wistia_id": "ldobpcr3kw"
+          }
+        },
+        "video_MnMe8j": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video25.webp",
+            "wistia_id": "e4m01a84lp"
+          }
+        },
+        "video_fzPqiN": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video26.webp",
+            "wistia_id": "hz8lijz1lt"
+          }
+        },
+        "video_GUaTcE": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video27.webp",
+            "wistia_id": "e5c3v0327i"
+          }
+        }
+      },
+      "block_order": [
+        "header_RA46tw",
+        "description_mHnPFA",
+        "collapsed_aNzhwA",
+        "collapsed_aNzhwB",
+        "collapsed_aNzhwC",
+        "collapsed_aNzhwD",
+        "collapsed_WXBjFq",
+        "description_tVQDHe",
+        "description_cpREQp",
+        "header_LhpN6x",
+        "description_6WtF8b",
+        "collapsed_MF4HVR",
+        "collapsed_RPxPyF",
+        "content_a4X9pc",
+        "description_BNpxL3",
+        "description_GE3PNL",
+        "collapsed_tQnGxp",
+        "collapsed_E4TeAh",
+        "header_AwT6ji",
+        "heading_YiyFGP",
+        "video_4Jjjcm",
+        "video_iHceHC",
+        "video_DmtewU",
+        "heading_fUcJta",
+        "video_H9fmrV",
+        "video_dpGpUm",
+        "video_6gLP6V",
+        "heading_t3inkx",
+        "video_TJgxNn",
+        "video_r6etLp",
+        "video_4EXT9E",
+        "heading_wNDqjx",
+        "video_BqjDk8",
+        "video_qMmgj9",
+        "video_Wc6f74",
+        "video_MnMe8j",
+        "video_fzPqiN",
+        "video_GUaTcE"
+      ],
+      "settings": {
+        "heading": "All you need to know before you start creating your amazing content"
+      }
+    }
+  },
+  "order": [
+    "header_landing_pFmaRH",
+    "section1",
+    "qure_founder_LkfQUT",
+    "section3"
+  ]
+}

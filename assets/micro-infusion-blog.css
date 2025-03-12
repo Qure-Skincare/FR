@@ -1,0 +1,443 @@
+/* micro infusion blog banner css start */
+.mi_blog_bnr_prod .new_img {
+    margin: 0 40px 0 80px;
+}
+
+.mi_blog_bnr_title_desktop {
+    text-align: start;
+    color: #fff;
+    max-width: 360px;
+}
+
+.mi_blog_bnr_title_desktop h1 {
+    font-size: 46.709px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 71.361px;
+    letter-spacing: 0.467px;
+}
+
+.mi_blog_bnr_title_desktop p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+
+.mi_blog_bnr_title_mob h2 {
+    font-family: "Canela Web";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.34px;
+}
+
+/* micro infusion blog banner css start */
+
+.img_scars {
+    padding-bottom: 40px;
+}
+
+.micro_infusion_blog .blog_wrap-new {
+    max-width: 740px;
+    margin: 20px 0;
+}
+
+.micro_infusion_blog .blog_wrap .blog_title {
+    font-family: "Canela Light";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.28px;
+}
+
+.micro_infusion_blog .blog_wrap .blog_btn {
+    display: flex;
+    height: 47.519px;
+    padding: 16.334px 31.848px 17.184px 35.652px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35.639px;
+    letter-spacing: 0.2px;
+    width: max-content;
+    margin-top: 15px;
+}
+
+.micro_infusion_blog .blog_wrap-new {
+    grid-template-columns: 1fr 2.5fr;
+}
+
+.micro_infusion_blog .video_icon {
+    height: 115px;
+    width: 115px;
+}
+
+.micro_infusion_blog .play_btn .popup-youtube {
+    background: unset;
+}
+
+.micro_infusion_blog .trusted_cl_m .play_btn {
+    bottom: 50%;
+}
+
+.drs_reviews {
+    position: relative;
+    max-width: max-content;
+}
+
+.drs_reviews .play_btn {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.common_cls_mi_tech {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #C7E7DC;
+}
+
+.mi_tech {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.18px;
+    padding-bottom: 20px;
+}
+
+.chemical_peels {
+    margin-top: 60px;
+}
+
+/* Ready to Tackle Your Acne Scars */
+.ready_to_tackle_your_acne_scars {
+    max-width: 1120px;
+    width: 100%;
+    padding: 42px 96px 42px 97px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFFAF1;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 70px;
+}
+
+.ready_tackle_content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+}
+
+.ready_tackle_content p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+}
+
+.ready_tackle_content h3,
+.ready_tackle_content p {
+    font-family: Poppins;
+    font-style: normal;
+    line-height: 26px;
+}
+
+.dark_spots_uneven_skin_tone_content {
+    gap: 80px
+}
+
+.dark_spots_uneven_skin_tone_content ul li {
+    list-style: disc;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+
+.dark_spots_uneven_skin_tone_content ul {
+    padding-left: 30px;
+}
+
+.dark_spots_uneven_skin_tone_content h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.18px;
+}
+.limited_time_offer{
+    color: #FF0001;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: 0.036px;
+}
+.most_popular_bundle {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    padding: 40px 20px;
+    border: 2px solid #C7E7DC;
+    border-radius: 20px;
+}
+.ser_icons {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+.popular_bundle_content h3 {
+    font-family: Canela web;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+.with_pop_bundle, .get_consistent_results{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+.get_consistent_results {
+    font-weight: 400;
+}
+.ser_icons p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+/* Ready to Tackle Your Acne Scars end*/
+
+/* Have questions  */
+.have_questions {
+    max-width: 1120px;
+    width: 100%;
+}
+.have_questions h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.24px;
+}
+.have_questions p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+}
+.have_questions .article-list { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.have_questions .article-list li {
+    margin-bottom: 8px;
+}
+.have_questions .article-list li a{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+}
+.have_questions .article-list li a:hover{
+    color: #000;
+    font-weight: 500;
+}
+.types_of_scars_ctm h4{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.18px;
+}
+.how_to_get_rid_of_acne_scars .subscriptions_section .cancel_section h6 {
+    margin-bottom: 20px;
+}
+.scars_types{
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+    margin-bottom: 10px !important;
+}
+.types_of_scars_ctm ul.without_padding {
+    padding-bottom: 0;
+}
+.how_to_get_rid_of_acne_scars a {
+    font-weight: 500;
+}
+.parti_eff{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    letter-spacing: 0.16px;
+}
+.derma_inclu{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+}
+.derma_inclu span{
+    font-weight: 700;
+}
+.watch_full_rev{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+    letter-spacing: 0.16px;
+}
+
+@media(max-width:767px) {
+    .have_questions .article-list li {
+        margin-bottom: 5px;
+    }
+    .img_scars {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    .micro_infusion_blog .video_icon {
+        width: 44.601px;
+        height: 44.601px;
+    }
+    .mi_blog_bnr_prod .new_img {
+        margin: 0;
+    }
+    .comp_treatement{
+        line-height: 34px !important;  
+    }
+    .how_to_get_rid_of_acne_scars h5.blog_title {
+        font-size: 22px !important;
+    }
+    .micro_infusion_blog .blog_wrap-new {
+        grid-template-columns: 1fr;
+    }
+    .micro_infusion_blog .blog_wrap .blog_btn {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+    }
+    .lh_34_mob{
+        line-height: 34px !important;
+    }
+    .types_of_scars_ctm h4{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+    }
+    .scars_types {
+        font-size: 13px !important;
+        line-height: 24px!important;
+        letter-spacing: 0.13px;
+    }
+    .mi_tech {
+        font-size: 16px;
+        line-height: 24px; 
+        letter-spacing: 0.16px;
+    }
+    .parti_eff{
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.13px;
+    }
+    .derma_inclu{
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.13px;
+    }
+    .watch_full_rev{
+        font-size: 13px;
+        line-height: 24px; 
+        letter-spacing: 0.13px;
+    }
+    .chemical_peels {
+        margin-top: 50px;
+    }
+    .ready_to_tackle_your_acne_scars{
+        padding: 29px 20px 48.645px 19px;
+    }
+    .ready_tackle_content h3{
+        font-size: 22px;
+        font-style: normal;
+        line-height: 34px;
+        letter-spacing: 0.22px;
+    }
+    .ready_tackle_content p{
+        font-size: 13px;
+        line-height: 22px; 
+        letter-spacing: 0.13px;
+    }
+    .dark_spots_uneven_skin_tone_content h4 {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+    }
+    .dark_spots_uneven_skin_tone_content {
+        gap: 32px
+    }
+    .dark_spots_dv{
+        margin-bottom: 32px;
+    }
+    .most_popular_bundle {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 20px 12px;
+    }
+    .popular_bundle_image {
+        display: flex;
+        justify-content: center;
+    }
+    .popular_bundle_content .buy_btn {
+        width: 266px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        padding: 10px;
+        height: 38px;
+    }
+    .popular_bundle_content h3{
+        font-size: 32px;
+        letter-spacing: 0.32px;
+    }
+    .popular_bundle_content .buy_btn img {
+        display: none;
+    }
+    .ser_icons{
+        gap:2px
+    }
+}

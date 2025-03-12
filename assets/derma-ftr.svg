@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+                                fill="none">
+                                <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.157 3.5V31.5C16.157 31.5 4.48374 28.2958 3.06934 8.09245C3.06934 8.09245 13.5202 5.67399 16.157 3.50873V3.5Z"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="2.61313"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.1572 3.5V31.5C16.1572 31.5 27.8304 28.2958 29.2448 8.09245C29.2448 8.09245 18.794 5.67399 16.1572 3.50873V3.5Z"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="2.61313"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M16.1565 24.3248C20.5264 24.3248 24.0689 20.7823 24.0689 16.4124C24.0689 12.0425 20.5264 8.5 16.1565 8.5C11.7866 8.5 8.24414 12.0425 8.24414 16.4124C8.24414 20.7823 11.7866 24.3248 16.1565 24.3248Z"
+                                        fill="#FFFAF1" stroke="black" stroke-width="1.5" stroke-miterlimit="2.61313"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.6313 21.2124C15.089 21.4464 15.6077 21.5786 16.1569 21.5786C16.7061 21.5786 17.2247 21.4464 17.6824 21.2124C18.7909 20.6531 19.5435 19.5039 19.5435 18.1919C19.5435 18.1105 19.5435 18.0393 19.5334 17.958C19.5334 17.958 19.5334 17.9478 19.5334 17.9376H19.5435C19.5537 17.7241 19.5028 16.1172 16.1569 11.2559C12.8211 16.1172 12.76 17.7241 12.7702 17.9376H12.7804C12.7804 17.958 12.7804 17.958 12.7804 17.958C12.7702 18.0393 12.7702 18.1105 12.7702 18.1919C12.7702 19.514 13.5228 20.6632 14.6313 21.2124Z"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="2.61313"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>

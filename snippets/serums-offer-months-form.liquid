@@ -1,0 +1,195 @@
+<style>
+    .refill_bl .product-price {
+        display: none;
+    }
+</style>
+
+{% liquid
+    assign show_free_shiping_guarantee_test = false
+    assign products_free_shipping_guarantee = "face-serum, micro-infusion-targeted-patches" | split: ", "
+    if products_free_shipping_guarantee contains product.handle
+        assign show_free_shiping_guarantee_test = true
+    endif
+%}
+
+<div class="mw-402 mi_patches_pdp {% if show_free_shiping_guarantee_test %}free-shiping-guarantee-test{% endif %}">
+    <div class="serum_bl pt-0">
+        <div class="s_bl_wrapper">
+            <div class="supply-detail supply-detail-without-counter pb-0 d-block">
+                <div class="supply_steps month_plan_steps">
+                    <div class="step_block">
+                        <div class="step_content">
+                            <div class="step_conten_blocks">
+
+                                {% assign product = all_products['micro-infusion-targeted-patches-3-month-supply-24-pairs'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+                                {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                                <div class="planBlock planBlockTop {% if show_free_shiping_guarantee_test %}active{% endif %}" data-variantid="{{ product_variant_id }}">
+                                    <div class="plan_choosed">
+                                        <span>Over 7,000 people chose this supply</span>
+                                    </div>
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_3_month" checked="">
+                                    <label class="monthly_plans {% if show_free_shiping_guarantee_test %}background-white{% endif %}" for="mBanner_3_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                            <div class="monthly_plans__circle free-shipping-guarentee-variant">
+                                                {% render 'pdm_icons', icon: 'circle-empty' %}
+                                                {% render 'pdm_icons', icon: 'circle-full' %}
+                                            </div>
+                                            <div class="plan_des">
+                                            <div class="plan_hdr">
+                                                <h3>3 Month Supply</h3>
+                                                <span class="saved_price">{{ discount_percentage }}% OFF</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                                <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                            </div>
+                                        </div>
+                                        <div class="plan_des d-none d-md-block free-shipping-guarentee-original"><span>3 Boxes /24 pairs of patches + <b> Free Shipping </b></span></div>
+                                        <div class="plan_des d-none d-md-block free-shipping-guarentee-variant">{{ 'products.product.3_serum_label_mi_patches' | t }}</div>
+                                        <div class="plan_des d-md-none"><span>3 Boxes /48 patches (24 pairs) + <b> Free Shipping </b></span></div>
+                                        <div class="free-shipping-guarentee-variant free-shipping-icon">
+                                            {% render 'pdm_icons', icon: "free-shipping-truck" %}
+                                            <span class="free-shipping-icon__label">{{ 'products.product.includes_free_shipping_label' | t }}</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                {% assign product = all_products['micro-infusion-targeted-patches-2-month-supply-16-pairs'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+                                {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                                <div class="planBlock planBlockTop" data-variantid="{{ product_variant_id }}">
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_2_month">
+                                    <label class="monthly_plans" for="mBanner_2_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                            <div class="monthly_plans__circle free-shipping-guarentee-variant">
+                                                {% render 'pdm_icons', icon: 'circle-empty' %}
+                                                {% render 'pdm_icons', icon: 'circle-full' %}
+                                            </div>
+                                            <div class="plan_des">
+                                            <div class="plan_hdr">
+                                                <h3>2 Month Supply</h3>
+                                                <span class="saved_price">{{ discount_percentage }}% OFF</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                                <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                            </div>
+                                        </div>
+                                        <div class="plan_des d-none d-md-block free-shipping-guarentee-original"><span>2 Boxes / 16 pairs of patches + <b> Free Shipping </b></span></div>
+                                        <div class="plan_des d-md-none free-shipping-guarentee-variant"><span>{{ 'products.product.2_boxes_label' | t }}</span></div>
+                                    </label>
+                                </div>
+
+                                {% assign product = all_products['micro-infusion-targeted-patches'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+
+                                <div class="planBlock planBlockTop" data-variantid="{{ product_variant_id }}">
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_1_month">
+                                    <label class="monthly_plans" for="mBanner_1_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                        <div class="monthly_plans__circle free-shipping-guarentee-variant">
+                                            {% render 'pdm_icons', icon: 'circle-empty' %}
+                                            {% render 'pdm_icons', icon: 'circle-full' %}
+                                        </div>
+                                        <div class="plan_des_indiv">
+                                            <div class="plan_hdr">
+                                                <h3 class="plan_des_indiv__label-one-month d-none d-md-block">1 Month Supply</h3>
+                                                <h3 class="plan_des_indiv__label-one-month d-md-none">1 Month Supply</h3>
+                                            </div>
+                                            <div class="plan_des d-none d-md-block free-shipping-guarentee-original">1 Box / 8 pairs of patches </div>
+                                            <div class="plan_des d-md-none free-shipping-guarentee-original">1 Box / 16 patches (8 pairs)</div>
+                                            <div class="plan_des plan_des_indiv__label-one-month--subtitle d-md-none free-shipping-guarentee-variant">{{ 'products.product.1_box_label' | t }}</div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% assign product = all_products['micro-infusion-targeted-patches-3-month-supply-24-pairs'] %}
+    {% assign product_price_divided = product.price | divided_by: 4 %}
+    {% assign product_variant_id = product.variants.first.id %}
+    {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+    <a class="btn btn-lg btn-primary buy_btn submit_btn_top reserve_btn mt-4" href="/cart/add?id={{ product_variant_id }}&amp;quantity=1" onclick="setEventProductHandler('{{ product.handle }}')" data-ajax-cart-request-button>
+        Buy Now <span class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="https://qureskincaredns.com/new/assets/arrow_right.svg" alt="">
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitBtnTop = document.querySelector('.submit_btn_top');
+            const stickyBtn = document.querySelector('.button_sticky');
+            
+            $('.planBlockTop').click(function () {
+                
+                const variantIdTop = $(this).data('variantid');
+
+                if (submitBtnTop && variantIdTop) {
+                    submitBtnTop.href = submitBtnTop.href.replace(/id=\d+/, `id=${variantIdTop}`);
+                }
+
+                if (stickyBtn && variantIdTop) {
+                    stickyBtn.href = stickyBtn.href.replace(/id=\d+/, `id=${variantIdTop}`);
+                }
+            });
+        });
+    </script>
+
+    <div class="payment_method">
+        <p>OR 4 monthly payments of <span class="payment_price">$36.75</span> with</p>
+        <div class="pmt_img ps-2">
+            <img src="{{ 'klarna.svg' | asset_url }}" alt=""><img src="{{ 'sezzle.svg' | asset_url }}" alt=""><img src="{{ 'afterpay.svg' | asset_url }}" alt="">
+        </div>
+    </div>
+    <div class="certified_derm mb-4 mb-md-5">
+        <img src="{{ 'certified_derma.webp' | asset_url }}" alt="">
+        <p><b>50+ Board Certified Dermatologists</b> recommended Qure to their patients. <a href="https://qureskincare.com/pages/derm-reviews" class="text-black text-decoration-underline">See More</a> </p>
+    </div>
+    <div class="shipping shipping_bg bg-transparent py-md-0 px-0 free-shipping-guarentee-original">
+        <div class="s_bx">
+            <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
+            <p>Dermatologist Reviewed</p>
+        </div>
+        <div class="s_bx">
+            <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+            <p class="d-none d-md-block">Free Shipping Over $100</p>
+            <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+        </div>
+    </div>
+    {% if settings.show_icons_product_microinfusion_targeted %}
+        <div class="shipping-badges-container free-shipping-guarentee-variant">
+            <div class="shipping-badges-container__money-back">
+                {% render 'pdm_icons', icon: 'money-back-guarantee' %}
+                <div class="shipping-badges-container__money-back--label">{{ settings.money_back_guarantee_label }}</div>
+            </div>
+            <div class="shipping-badges-container__free-return">
+                {% render 'pdm_icons', icon: 'free-returns' %}
+                <div class="shipping-badges-container__free-return--label">{{ settings.free_returns_label }}</div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+{% if product.compare_at_price != blank %}
+    {% render 'product-sticky-button' with
+        variant_id: product.variants.first.id, 
+        current_price: product.price, 
+        original_price: product.compare_at_price, 
+    %}                    
+{% else %}
+    {% render 'product-sticky-button' with
+        variant_id: product.variants.first.id, 
+        current_price: product.price, 
+        original_price: product.price, 
+    %}
+{% endif %}

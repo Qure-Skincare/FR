@@ -1,0 +1,97 @@
+{% comment %} 
+  Render Purchase Step 1 Card with image, price, value props and dropdown.
+  Accepts:
+  - productData: {Object} - The product data to be rendered (Metafield).
+  - productInfo: {Object} - The product information to be rendered (Metafield).
+  - parentContainer: {String} - The parent container name.
+  - uniqueId: {String} - The unique id of the card.
+  - starIcon: {String} - The star icon.
+  - checkIcon: {String} - The check icon.
+  - crossIcon: {String} - The cross icon.
+  - nameProp: {String} - The name of the parent container.
+  - parentName: {String} - The name of the parent container.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step1-card',
+    productData: product.metafields.custom.purchase_step_1_product_1.value,
+    productInfo: product.metafields.custom.purchase_step_1.value,
+    parentContainer: 'parent-{{ name }}',
+    uniqueId: 'collapseOne',
+    starIcon: starIcon,
+    checkIcon: checkIcon,
+    crossIcon: crossIcon
+  %}
+
+{% endcomment %}
+
+{% liquid
+  assign nameProp = parentContainer
+  assign parentName =  nameProp
+%}
+
+<div class="step1-purchase-card-container">
+  {% if productInfo.people_choise != blank %}
+    <div class="step1-card-choise-container">
+      <p class="step1-card-choise-desk_text">
+        {{ productInfo.people_choise }}
+      </p>
+      <p class="step1-card-choise-mobile_text">
+        {{ productInfo.people_choise_mobile | replace: '(star)', starIcon  }}
+      </p>
+    </div>
+  {% endif %}
+  {% comment %} image {% endcomment %}
+  <div class="card-img-container">
+    {{ productInfo.image | image_url: width: 400 | image_tag: alt: productData.title }}
+  </div>
+  <div class="step1-card-price-container">
+    {% unless productInfo.discount_product == 0 %}
+      <div class="step1-card-price-discount">
+        <p>SAVE {{ productInfo.discount_product }}%</p>
+      </div>
+    {% endunless %}
+    <div class="step1-card-price">
+      <div class="step1-card-price-information">
+        <span class="step1-card-price__title-mobile">{{ productInfo.title_product_mobile }}</span>
+        <span class="step1-card-price__title">{{ productInfo.title_product }}</span>
+        <div class="step1-card-price-wrapper">
+          <span class="step1-card-price-wrapper__real">
+            {{- productData.compare_at_price | money_without_trailing_zeros }}
+          </span>
+          <span class="step1-card-price-wrapper__discount">{{ productData.price | money_without_trailing_zeros }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step1-card-value-props">
+    {% comment %} value props {% endcomment %}
+    <div class="step1-card-value-props-wrapper">
+      {% if productInfo.doctor_recommendation != blank %}
+        <div class="step1-value-doctor">
+          {% render 'pdm_landing-purchase-icons', icon: 'check-doctor' %}
+          <p>{{ productInfo.doctor_recommendation }}</p>
+        </div>
+      {% endif %}
+      <div class="step1-value-static-props">
+        {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon | replace: '(cross)', crossIcon }}
+      </div>
+    </div>
+    {% comment %} dropdown {% endcomment %}
+    <div class="step1-value-props-dropdown">
+      <button class="step1-value-dropdown-title" id="{{ parentName }}">
+        <div class="step1-value-dropdown-title-wrapper">
+          <span class="step1-value-dropdown-title-wrapper__title">{{ productInfo.title_included }}</span>
+          <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
+        </div>
+        <div id="svg-btn-landing-card-{{ uniqueId }}" class="landing-rotate-svg-button">
+          {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
+        </div>
+      </button>
+      <div class="step1-value-dropdown-information ">
+        {{ productInfo.value_props_included | metafield_tag }}
+      </div>
+    </div>
+  </div>
+</div>
+

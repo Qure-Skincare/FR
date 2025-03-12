@@ -1,0 +1,3365 @@
+<!-- -- amazing content start -- -->
+<div class="amazing_content section" id="tabsAccordion">
+  <div class="container">
+    <div class="section_header mw-680 text-md-center mb-3">
+      {% if section.settings.heading != blank %}
+        <h2 class="title-lg">{{ section.settings.heading }}</h2>
+      {% endif %}
+    </div>
+    <div class="amazing_content_wrap d-none d-md-block">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'content_requirements' %}
+              <li class="nav-item" role="presentation">
+                {% if block.settings.step != blank %}
+                  <h6>{{ block.settings.step }}</h6>
+                {% endif %}
+                {% if block.settings.heading != blank %}{{ block.settings.heading }}{% endif %}
+                {% if block.settings.image != blank -%}
+                  <img
+                    src="{{ block.settings.image | img_url:'master' }}"
+                    alt="{{ block.settings.image.alt }}"
+                    class="img-fluid mt-2"
+                  >
+                {%- endif %}
+                {% if block.settings.button_label != blank %}
+                  <button
+                    class="nav-link active ac_drop_btn"
+                    id="{{block.id}}-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#{{block.id}}"
+                    type="button"
+                    role="tab"
+                    aria-controls="{{block.id}}"
+                    aria-selected="true"
+                  >
+                    <div class="container">
+                      <p>{{ block.settings.button_label }}</p>
+                    </div>
+                  </button>
+                {% endif %}
+              </li>
+            {% when 'product_information' %}
+              <li class="nav-item" role="presentation">
+                {% if block.settings.step != blank %}
+                  <h6>{{ block.settings.step }}</h6>
+                {% endif %}
+                {% if block.settings.heading != blank %}{{ block.settings.heading }}{% endif %}
+                {% if block.settings.image != blank -%}
+                  <img
+                    src="{{ block.settings.image | img_url:'master' }}"
+                    alt="{{ block.settings.image.alt }}"
+                    class="img-fluid mt-2"
+                  >
+                {%- endif %}
+                {% if block.settings.button_label != blank %}
+                  <button
+                    class="nav-link active ac_drop_btn"
+                    id="{{block.id}}-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#{{block.id}}"
+                    type="button"
+                    role="tab"
+                    aria-controls="{{block.id}}"
+                    aria-selected="true"
+                  >
+                    <div class="container">
+                      <p>{{ block.settings.button_label }}</p>
+                    </div>
+                  </button>
+                {% endif %}
+              </li>
+            {% when 'inspiring_content' %}
+              <li class="nav-item" role="presentation">
+                {% if block.settings.step != blank %}
+                  <h6>{{ block.settings.step }}</h6>
+                {% endif %}
+                {% if block.settings.heading != blank %}{{ block.settings.heading }}{% endif %}
+                {% if block.settings.image != blank -%}
+                  <img
+                    src="{{ block.settings.image | img_url:'master' }}"
+                    alt="{{ block.settings.image.alt }}"
+                    class="img-fluid mt-2"
+                  >
+                {%- endif %}
+                {% if block.settings.button_label != blank %}
+                  <button
+                    class="nav-link active ac_drop_btn"
+                    id="{{block.id}}-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#{{block.id}}"
+                    type="button"
+                    role="tab"
+                    aria-controls="{{block.id}}"
+                    aria-selected="true"
+                  >
+                    <div class="container">
+                      <p>{{ block.settings.button_label }}</p>
+                    </div>
+                  </button>
+                {% endif %}
+              </li>
+          {% endcase %}
+        {% endfor %}
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'content_requirements' %}
+              <div
+                class="tab-pane {% if forloop.first %} active show {%endif %}"
+                id="{{block.id}}"
+                role="tabpanel"
+                aria-labelledby="{{block.id}}-tab"
+              >
+                <div class="ac_desc_grid">
+                  <div class="ac_desc faq">
+                    <div class="as_desc_header">
+                      {% if block.settings.heading1_icon != blank %}
+                        <img
+                          src="{{ block.settings.heading1_icon | img_url:'master'}}"
+                          alt="block.settings.heading1_icon.alt"
+                          class="img-fluid me-2"
+                        >
+                      {% endif %}
+                      {% if block.settings.bl1_heading != blank %}
+                        {{ block.settings.bl1_heading }}
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl1_subheading != blank %}
+                      <p>{{ block.settings.bl1_subheading }}</p>
+                    {% endif %}
+
+                    <div class="accordion" id="as_dropdown">
+                      {% if block.settings.dropdown1_heading != blank %}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="asHeaderOne">
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#asCollapseOne"
+                              aria-expanded="true"
+                              aria-controls="asCollapseOne"
+                            >
+                              <div class="container">
+                                {% if block.settings.dropdown1_heading != blank -%}
+                                  {{- block.settings.dropdown1_heading -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="asCollapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="asHeaderOne"
+                            data-bs-parent="#as_dropdown"
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.dropdown1_content != blank -%}
+                                {{ block.settings.dropdown1_content }}
+                              {%- endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                      {% if block.settings.dropdown2_heading != blank %}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="asheadingTwo">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#ascollapseTwo"
+                              aria-expanded="false"
+                              aria-controls="ascollapseTwo"
+                            >
+                              <div class="container">
+                                {% if block.settings.dropdown2_heading != blank -%}
+                                  {{- block.settings.dropdown2_heading -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="ascollapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="asheadingTwo"
+                            data-bs-parent="#as_dropdown"
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.dropdown2_content != blank -%}
+                                {{ block.settings.dropdown2_content }}
+                              {%- endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                      {% if block.settings.dropdown3_heading != blank -%}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="asheadingThree">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#ascollapseThree"
+                              aria-expanded="false"
+                              aria-controls="ascollapseThree"
+                            >
+                              <div class="container">
+                                {% if block.settings.dropdown3_heading != blank -%}
+                                  {{- block.settings.dropdown3_heading -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="ascollapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="asheadingThree"
+                            data-bs-parent="#as_dropdown"
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.dropdown3_content != blank -%}
+                                {{ block.settings.dropdown3_content }}
+                              {%- endif %}
+                              {% if block.settings.serum_yellow_heading != blank %}
+                                <div class="serums_wrap">
+                                  {% if block.settings.serum_yellow_img != blank %}
+                                    <img
+                                      src="{{block.settings.serum_yellow_img | img_url:'master'}}"
+                                      alt=""
+                                      class="img-fluid"
+                                    >
+                                  {%- endif %}
+                                  <div>
+                                    {% if block.settings.serum_yellow_tag != blank %}
+                                      <h5 class="bg-yellow">{{ block.settings.serum_yellow_tag }}</h5>
+                                    {% endif %}
+                                    {% if block.settings.serum_yellow_heading != blank %}
+                                      <p>{{ block.settings.serum_yellow_heading }}</p>
+                                    {% endif %}
+                                  </div>
+                                </div>
+                                {% if block.settings.serum_yellow_info != blank %}
+                                  {{ block.settings.serum_yellow_info }}
+                                {% endif %}
+                              {% endif %}
+                              {% if block.settings.serum_grey_heading != blank %}
+                                <div class="serums_wrap">
+                                  {% if block.settings.serum_grey_img != blank %}
+                                    <img
+                                      src="{{block.settings.serum_grey_img | img_url:'master'}}"
+                                      alt=""
+                                      class="img-fluid"
+                                    >
+                                  {%- endif %}
+                                  <div>
+                                    {% if block.settings.serum_grey_tag != blank %}
+                                      <h5 class="bg-grey">{{ block.settings.serum_grey_tag }}</h5>
+                                    {% endif %}
+                                    {% if block.settings.serum_grey_heading != blank %}
+                                      <p>{{ block.settings.serum_grey_heading }}</p>
+                                    {% endif %}
+                                  </div>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.serum_grey_info != blank %}
+                                {{ block.settings.serum_grey_info }}
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="ac_desc">
+                    <div class="as_desc_header">
+                      {% if block.settings.heading2_icon != blank %}
+                        <img
+                          src="{{ block.settings.heading2_icon | img_url:'master'}}"
+                          alt="block.settings.heading2_icon.alt"
+                          class="img-fluid me-2"
+                        >
+                      {% endif %}
+                      {% if block.settings.bl2_heading != blank %}
+                        {{ block.settings.bl2_heading }}
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl2_list != blank %}
+                      {{ block.settings.bl2_list }}
+                    {% endif %}
+                  </div>
+                  <div class="ac_desc">
+                    <div class="as_desc_header">
+                      {% if block.settings.heading3_icon != blank %}
+                        <img
+                          src="{{ block.settings.heading3_icon | img_url:'master'}}"
+                          alt="block.settings.heading3_icon.alt"
+                          class="img-fluid me-2"
+                        >
+                      {% endif %}
+                      {% if block.settings.bl3_heading != blank %}
+                        {{ block.settings.bl3_heading }}
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl3_list != blank %}
+                      {{ block.settings.bl3_list }}
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% when 'product_information' %}
+              <div
+                class="tab-pane"
+                id="{{block.id}}"
+                role="tabpanel"
+                aria-labelledby="{{block.id}}-tab"
+              >
+                <div class="ac_desc_grid">
+                  <div class="ac_desc">
+                    <div class="as_desc_header">
+                      {% if block.settings.heading1_icon != blank %}
+                        <img
+                          src="{{ block.settings.heading1_icon | img_url:'master'}}"
+                          alt="block.settings.heading1_icon.alt"
+                          class="img-fluid me-2"
+                        >
+                      {% endif %}
+                      {% if block.settings.bl1_heading != blank %}
+                        {{ block.settings.bl1_heading }}
+                      {% endif %}
+                    </div>
+                    <div class="tab_step2">
+                      <div class="device-img d-flex">
+                        {% if block.settings.pdt_spec_img != blank %}
+                          <img
+                            src="{{ block.settings.pdt_spec_img | img_url:'master'}}"
+                            class="d-block1 d-lg-none1 {%  if block.settings.image_width %} w-100 {% endif %}"
+                            alt="{{ block.settings.pdt_spec_img.alt }}"
+                          >
+                        {% endif %}
+                        {% if block.settings.pdt_spec_ul != blank %}
+                          {{ block.settings.pdt_spec_ul }}
+                        {% endif %}
+                      </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="pd_details">
+                      {% if block.settings.technical_specification != blank %}
+                        <div class="accordion-item u_item_question bg-grey">
+                          <h2 class="accordion-header" id="pd_HeaderOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#pd_CollapseOne"
+                              aria-expanded="false"
+                              aria-controls="pd_CollapseOne"
+                            >
+                              <div class="container">
+                                {% if block.settings.technical_specification != blank -%}
+                                  {{- block.settings.technical_specification -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="pd_CollapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="pd_HeaderOne"
+                            data-bs-parent="#pd_details"
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.technical_specification_info != blank -%}
+                                {{- block.settings.technical_specification_info -}}
+                              {%- endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                      {% if block.settings.treatment_details != blank %}
+                        <div class="accordion-item u_item_question bg-grey">
+                          <h2 class="accordion-header" id="pd_headingTwo">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#pd_collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="pd_collapseTwo"
+                            >
+                              <div class="container">
+                                {% if block.settings.treatment_details != blank -%}
+                                  {{- block.settings.treatment_details -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="pd_collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="pd_headingTwo"
+                            data-bs-parent="#pd_details"
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.treatment_details_info != blank -%}
+                                {{- block.settings.treatment_details_info -}}
+                              {%- endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl1_list != blank %}
+                      {{ block.settings.bl1_list }}
+                    {% endif %}
+                    {% if block.settings.link_text != blank %}
+                      <a
+                        href="{{ block.settings.link_url }}"
+                        class="text-decoration-underline text-dark mt-4"
+                      >
+                        {% if block.settings.link_text != blank %} {{ block.settings.link_text }}{% endif -%}
+                      </a>
+                    {% endif %}
+                  </div>
+                  <div class="ac_desc">
+                    <div class="as_desc_header">
+                      {% if block.settings.heading2_icon != blank %}
+                        <img
+                          src="{{ block.settings.heading2_icon | img_url:'master'}}"
+                          alt="block.settings.heading2_icon.alt"
+                          class="img-fluid me-2"
+                        >
+                      {% endif %}
+                      {% if block.settings.bl2_heading != blank %}
+                        {{ block.settings.bl2_heading }}
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl2_list != blank %}
+                      {{ block.settings.bl2_list }}
+                    {% endif %}
+                    {% if block.settings.wistia_video_id != blank %}
+                      <div class="micro_video mt-4">
+                        <div class="micro_vide_main">
+                          <div class="actVideo_block mx-auto">
+                            <div class="ctmVideo__block">
+                              <div class="player">
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <div
+                                      class="wistia_embed wistia_async_{{block.settings.wistia_video_id}} seo=false videoFoam=true"
+                                      style="height:100%;position:relative;width:100%"
+                                    >
+                                      <div
+                                        class="wistia_swatch"
+                                        style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"
+                                      >
+                                        <img
+                                          src="https://fast.wistia.com/embed/medias/yy9nv8vwsn/swatch"
+                                          style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                          alt=""
+                                          aria-hidden="true"
+                                          onload="this.parentNode.style.opacity=1;"
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if block.settings.video_btn_text != blank %}
+                      <a
+                        class="btn btn-lg btn-primary buy_btn see_detailed"
+                        href="{{ block.settings.video_btn_url }}"
+                      >
+                        {{- block.settings.video_btn_text -}}
+                        <img
+                          src="{{ 'arrow_right.svg' | asset_url }}"
+                          alt=""
+                        >
+                      </a>
+                    {% endif %}
+                  </div>
+                  <div class="ac_desc faq">
+                    <div class="as_desc_header">
+                      {% if block.settings.heading3_icon != blank %}
+                        <img
+                          src="{{ block.settings.heading3_icon | img_url:'master'}}"
+                          alt="block.settings.heading3_icon.alt"
+                          class="img-fluid me-2"
+                        >
+                      {% endif %}
+                      {% if block.settings.bl3_heading != blank %}
+                        {{ block.settings.bl3_heading }}
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl3_list != blank %}
+                      {{ block.settings.bl3_list }}
+                    {% endif %}
+                    <div class="accordion" id="pdt_c_dropdown">
+                      {% if block.settings.pdt_acc_1_heading != blank %}
+                        <div class="accordion-item pd_claims-item mt-0">
+                          <h2 class="accordion-header" id="pdt_c_HeaderOne">
+                            {% if block.settings.pdt_acc_1_img != blank %}
+                              <img src="{{ block.settings.pdt_acc_1_img | img_url:'master'}}" class="w-100">
+                            {% endif %}
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#pdt_c_CollapseOne"
+                              aria-expanded="false"
+                              aria-controls="pdt_c_CollapseOne"
+                            >
+                              <div class="container">
+                                {% if block.settings.pdt_acc_1_heading -%}
+                                  {{- block.settings.pdt_acc_1_heading -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="pdt_c_CollapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="pdt_c_HeaderOne"
+                            data-bs-parent="#pdt_c_dropdown"
+                            style=""
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.pdt_acc_2_status_bar != blank %}
+                                <div class="percentage_bar2">
+                                  <span class="percent_3"></span>
+                                  <span class="percent_4"></span>
+                                  <span class="percent_2"></span>
+                                  <span class="percent_6"></span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <p class="percent_3-text">IR 880nm</p>
+                                  <p class="percent_4-text">Deep Red 660nm</p>
+                                  <p class="percent_2-text">Red 630nm</p>
+                                  <p class="percent_6-text">Amber 605nm</p>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.pdt_acc_1_list %}
+                                {{ block.settings.pdt_acc_1_list }}
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                      {% if block.settings.pdt_acc_2_heading != blank %}
+                        <div class="accordion-item pd_claims-item">
+                          <h2 class="accordion-header" id="pdt_c_headingTwo">
+                            {% if block.settings.pdt_acc_2_img != blank %}
+                              <img src="{{ block.settings.pdt_acc_2_img | img_url:'master'}}" class="w-100">
+                            {% endif %}
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#pdt_c_collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="pdt_c_collapseTwo"
+                            >
+                              <div class="container">
+                                {% if block.settings.pdt_acc_2_heading -%}
+                                  {{- block.settings.pdt_acc_2_heading -}}
+                                {%- endif %}
+                              </div>
+                            </button>
+                          </h2>
+                          <div
+                            id="pdt_c_collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="pdt_c_headingTwo"
+                            data-bs-parent="#pdt_c_dropdown"
+                            style=""
+                          >
+                            <div class="accordion-body">
+                              {% if block.settings.pdt_acc_2_status_bar != blank %}
+                                <div class="percentage_bar">
+                                  <span class="percent_1"></span>
+                                  <span class="percent_2"></span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <p class="percent_1-text">Blue light 415 nm</p>
+                                  <p class="percent_2-text">Red light 630 nm</p>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.pdt_acc_2_list %}
+                                {{ block.settings.pdt_acc_2_list }}
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                    {% if block.settings.bl3_list_ing != blank %}
+                      {{ block.settings.bl3_list_ing }}
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% when 'inspiring_content' %}
+              <div
+                class="tab-pane"
+                id="{{block.id}}"
+                role="tabpanel"
+                aria-labelledby="{{block.id}}-tab"
+              >
+                <div class="ac_desc_grid d-block">
+                  <div class="row g-md-5">
+                    <div class="col-md-6">
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.bl1_heading != blank %}
+                            {{ block.settings.bl1_heading }}
+                          {% endif %}
+                        </div>
+                        <div class="ac_desc_grid_video show_how-work">
+                          {% if block.settings.bl1_i1 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl1_i1 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl1_v1 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl1_i2 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl1_i2 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl1_v2 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl1_i3 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl1_i3 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl1_v3 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl1_i4 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl1_i4 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl1_v4 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.bl2_heading != blank %}
+                            {{ block.settings.bl2_heading }}
+                          {% endif %}
+                        </div>
+                        <div class="ac_desc_grid_video show_how-work">
+                          {% if block.settings.bl2_i1 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl2_i1 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl2_v1 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl2_i2 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl2_i2 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl2_v2 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl2_i3 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl2_i3 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl2_v3 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.bl3_heading != blank %}
+                            {{ block.settings.bl3_heading }}
+                          {% endif %}
+                        </div>
+                        <div class="ac_desc_grid_video show_how-work">
+                          {% if block.settings.bl3_i1 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl3_i1 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl3_v1 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl3_i2 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl3_i2 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl3_v2 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl3_i3 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl3_i3 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl3_v3 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.bl4_heading != blank %}
+                            {{ block.settings.bl4_heading }}
+                          {% endif %}
+                        </div>
+                        <div class="ac_desc_grid_video show_how-work">
+                          {% if block.settings.bl4_i1 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl4_i1 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl4_v1 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl4_i2 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl4_i2 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl4_v2 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl4_i3 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl4_i3 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl4_v3 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl4_i4 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl4_i4 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl4_v4 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+
+                          {% if block.settings.bl4_i5 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl4_i5 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl4_v5 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.bl4_i6 != blank %}
+                            <div class="banner_img position-relative">
+                              <img
+                                src="{{ block.settings.bl4_i6 | img_url:'master' }}"
+                                alt=""
+                                class="img-fluid tab_img"
+                              >
+                              <a
+                                class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                              >
+                                <div
+                                  class="wistia_responsive_padding"
+                                  style="position:relative;"
+                                >
+                                  <div
+                                    class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                  >
+                                    <span
+                                      class="wistia_embed wistia_async_{{ block.settings.bl4_v6 }} popover=true videoFoam=true"
+                                      style="display:inline-block;height:100%;position:relative;width:100%"
+                                      >&nbsp;</span
+                                    >
+                                  </div>
+                                  <span class="d-flex justify-content-end p-2"
+                                    ><img
+                                      src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                      alt=""
+                                      class="w-auto"
+                                    >
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="amazing_content_wrap d-block d-md-none">
+      <div class="accordion" id="acAccordion">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'content_requirements' %}
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="acheadingOne">
+                  {% if block.settings.step != blank %}
+                    <h6>{{ block.settings.step }}</h6>
+                  {% endif %}
+                  {% if block.settings.heading != blank %}{{ block.settings.heading }}{% endif %}
+                  {% if block.settings.image != blank -%}
+                    <img
+                      src="{{ block.settings.image | img_url:'master' }}"
+                      alt="{{ block.settings.image.alt }}"
+                      class="img-fluid mt-2"
+                    >
+                  {%- endif %}
+                  {% if block.settings.button_label != blank %}
+                    <button
+                      class="accordion-button ac_drop_btn collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#ac_collapseOne"
+                      aria-expanded="true"
+                      aria-controls="ac_collapseOne"
+                    >
+                      <p>{{ block.settings.button_label }}</p>
+                    </button>
+                  {% endif %}
+                </h2>
+                <div id="ac_collapseOne" class="accordion-collapse collapse" aria-labelledby="acheadingOne">
+                  <div class="accordion-body">
+                    <div class="ac_desc_grid">
+                      <div class="ac_desc faq">
+                        <div class="as_desc_header">
+                          {% if block.settings.heading1_icon != blank %}
+                            <img
+                              src="{{ block.settings.heading1_icon | img_url:'master'}}"
+                              alt="block.settings.heading1_icon.alt"
+                              class="img-fluid me-2"
+                            >
+                          {% endif %}
+                          {% if block.settings.bl1_heading != blank %}
+                            {{ block.settings.bl1_heading }}
+                          {% endif %}
+                        </div>
+                        {% if block.settings.bl1_subheading != blank %}
+                          <p>{{ block.settings.bl1_subheading }}</p>
+                        {% endif %}
+                        <div class="accordion" id="as_Inner_dropdown">
+                          {% if block.settings.dropdown1_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="as_Inner_HeaderOne">
+                                <button
+                                  class="accordion-button"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#as_Inner_CollapseOne"
+                                  aria-expanded="true"
+                                  aria-controls="as_Inner_CollapseOne"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.dropdown1_heading != blank -%}
+                                      {{- block.settings.dropdown1_heading -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="as_Inner_CollapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="as_Inner_HeaderOne"
+                                data-bs-parent="#as_Inner_dropdown"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown1_content != blank -%}
+                                    {{ block.settings.dropdown1_content }}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown2_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="as_Inner_headingTwo">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#as_Inner_collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="as_Inner_collapseTwo"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.dropdown2_heading != blank -%}
+                                      {{- block.settings.dropdown2_heading -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="as_Inner_collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="as_Inner_headingTwo"
+                                data-bs-parent="#as_Inner_dropdown"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown2_content != blank -%}
+                                    {{ block.settings.dropdown2_content }}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown3_heading != blank -%}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="as_Inner_headingThree">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#as_Inner_collapseThree"
+                                  aria-expanded="false"
+                                  aria-controls="as_Inner_collapseThree"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.dropdown3_heading != blank -%}
+                                      {{- block.settings.dropdown3_heading -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="as_Inner_collapseThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="as_Inner_headingThree"
+                                data-bs-parent="#as_Inner_dropdown"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown3_content != blank -%}
+                                    {{ block.settings.dropdown3_content }}
+                                  {%- endif %}
+                                  {% if block.settings.serum_yellow_heading != blank %}
+                                    <div class="serums_wrap">
+                                      {% if block.settings.serum_yellow_img != blank %}
+                                        <img
+                                          src="{{block.settings.serum_yellow_img | img_url:'master'}}"
+                                          alt=""
+                                          class="img-fluid"
+                                        >
+                                      {%- endif %}
+                                      <div>
+                                        {% if block.settings.serum_yellow_tag != blank %}
+                                          <h5 class="bg-yellow">{{ block.settings.serum_yellow_tag }}</h5>
+                                        {% endif %}
+                                        {% if block.settings.serum_yellow_heading != blank %}
+                                          <p>{{ block.settings.serum_yellow_heading }}</p>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+                                    {% if block.settings.serum_yellow_info != blank %}
+                                      {{ block.settings.serum_yellow_info }}
+                                    {% endif %}
+                                  {% endif %}
+                                  {% if block.settings.serum_grey_heading != blank %}
+                                    <div class="serums_wrap">
+                                      {% if block.settings.serum_grey_img != blank %}
+                                        <img
+                                          src="{{block.settings.serum_grey_img | img_url:'master'}}"
+                                          alt=""
+                                          class="img-fluid"
+                                        >
+                                      {%- endif %}
+                                      <div>
+                                        {% if block.settings.serum_grey_tag != blank %}
+                                          <h5 class="bg-grey">{{ block.settings.serum_grey_tag }}</h5>
+                                        {% endif %}
+                                        {% if block.settings.serum_grey_heading != blank %}
+                                          <p>{{ block.settings.serum_grey_heading }}</p>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+                                  {% endif %}
+                                  {% if block.settings.serum_grey_info != blank %}
+                                    {{ block.settings.serum_grey_info }}
+                                  {% endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.heading2_icon != blank %}
+                            <img
+                              src="{{ block.settings.heading2_icon | img_url:'master'}}"
+                              alt="block.settings.heading2_icon.alt"
+                              class="img-fluid me-2"
+                            >
+                          {% endif %}
+                          {% if block.settings.bl2_heading != blank %}
+                            {{ block.settings.bl2_heading }}
+                          {% endif %}
+                        </div>
+                        {% if block.settings.bl2_list != blank %}
+                          {{ block.settings.bl2_list }}
+                        {% endif %}
+                      </div>
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.heading3_icon != blank %}
+                            <img
+                              src="{{ block.settings.heading3_icon | img_url:'master'}}"
+                              alt="block.settings.heading3_icon.alt"
+                              class="img-fluid me-2"
+                            >
+                          {% endif %}
+                          {% if block.settings.bl3_heading != blank %}
+                            {{ block.settings.bl3_heading }}
+                          {% endif %}
+                        </div>
+                        {% if block.settings.bl3_list != blank %}
+                          {{ block.settings.bl3_list }}
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% when 'product_information' %}
+              <div class="accordion-item" id="mob_item2">
+                <h2 class="accordion-header" id="acheadingTwo">
+                  {% if block.settings.step != blank %}
+                    <h6>{{ block.settings.step }}</h6>
+                  {% endif %}
+                  {% if block.settings.heading != blank %}{{ block.settings.heading }}{% endif %}
+                  {% if block.settings.image != blank -%}
+                    <img
+                      src="{{ block.settings.image | img_url:'master' }}"
+                      alt="{{ block.settings.image.alt }}"
+                      class="img-fluid mt-2"
+                    >
+                  {%- endif %}
+                  {% if block.settings.button_label != blank %}
+                    <button
+                      class="accordion-button collapsed ac_drop_btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#ac_collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="ac_collapseTwo"
+                    >
+                      {{ block.settings.button_label }}
+                    </button>
+                  {% endif %}
+                </h2>
+                <div id="ac_collapseTwo" class="accordion-collapse collapse" aria-labelledby="acheadingTwo">
+                  <div class="accordion-body">
+                    <div class="ac_desc_grid">
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.heading1_icon != blank %}
+                            <img
+                              src="{{ block.settings.heading1_icon | img_url:'master'}}"
+                              alt="block.settings.heading1_icon.alt"
+                              class="img-fluid me-2"
+                            >
+                          {% endif %}
+                          {% if block.settings.bl1_heading != blank %}
+                            {{ block.settings.bl1_heading }}
+                          {% endif %}
+                        </div>
+                        <div class="tab_step2">
+                          <div class="device-img d-flex">
+                            {% if block.settings.pdt_spec_img != blank %}
+                              <img
+                                src="{{ block.settings.pdt_spec_img | img_url:'master'}}"
+                                class="d-block1 d-lg-none1 {%  if block.settings.image_width %} w-100 {% endif %}"
+                                alt="{{ block.settings.pdt_spec_img.alt }}"
+                              >
+                            {% endif %}
+                            {% if block.settings.pdt_spec_ul != blank %}
+                              {{ block.settings.pdt_spec_ul }}
+                            {% endif %}
+                          </div>
+                        </div>
+                        <div class="accordion accordion-flush" id="pd_details">
+                          {% if block.settings.technical_specification != blank %}
+                            <div class="accordion-item u_item_question bg-grey">
+                              <h2 class="accordion-header" id="pd_HeaderOne">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#pd_CollapseOne"
+                                  aria-expanded="false"
+                                  aria-controls="pd_CollapseOne"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.technical_specification != blank -%}
+                                      {{- block.settings.technical_specification -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="pd_CollapseOne"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="pd_HeaderOne"
+                                data-bs-parent="#pd_details"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.technical_specification_info != blank -%}
+                                    {{- block.settings.technical_specification_info -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.treatment_details != blank %}
+                            <div class="accordion-item u_item_question bg-grey">
+                              <h2 class="accordion-header" id="pd_headingTwo">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#pd_collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="pd_collapseTwo"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.treatment_details != blank -%}
+                                      {{- block.settings.treatment_details -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="pd_collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="pd_headingTwo"
+                                data-bs-parent="#pd_details"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.treatment_details_info != blank -%}
+                                    {{- block.settings.treatment_details_info -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                        </div>
+                        {% if block.settings.bl1_list != blank %}
+                          {{ block.settings.bl1_list }}
+                        {% endif %}
+                        {% if block.settings.link_text != blank %}
+                          <a
+                            href="{{ block.settings.link_url }}"
+                            class="text-decoration-underline text-dark mt-4"
+                          >
+                            {% if block.settings.link_text != blank %} {{ block.settings.link_text }}{% endif -%}
+                          </a>
+                        {% endif %}
+                      </div>
+                      <div class="ac_desc">
+                        <div class="as_desc_header">
+                          {% if block.settings.heading2_icon != blank %}
+                            <img
+                              src="{{ block.settings.heading2_icon | img_url:'master'}}"
+                              alt="block.settings.heading2_icon.alt"
+                              class="img-fluid me-2"
+                            >
+                          {% endif %}
+                          {% if block.settings.bl2_heading != blank %}
+                            {{ block.settings.bl2_heading }}
+                          {% endif %}
+                        </div>
+                        {% if block.settings.bl2_list != blank %}
+                          {{ block.settings.bl2_list }}
+                        {% endif %}
+                        {% if block.settings.wistia_video_id != blank %}
+                          <div class="micro_video mt-4">
+                            <div class="micro_vide_main">
+                              <div class="actVideo_block mx-auto">
+                                <div class="ctmVideo__block">
+                                  <div class="player">
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <div
+                                          class="wistia_embed wistia_async_{{block.settings.wistia_video_id}} seo=false videoFoam=true"
+                                          style="height:100%;position:relative;width:100%"
+                                        >
+                                          <div
+                                            class="wistia_swatch"
+                                            style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"
+                                          >
+                                            <img
+                                              src="https://fast.wistia.com/embed/medias/yy9nv8vwsn/swatch"
+                                              style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                              alt=""
+                                              aria-hidden="true"
+                                              onload="this.parentNode.style.opacity=1;"
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        {% endif %}
+                        {% if block.settings.video_btn_text != blank %}
+                          <a
+                            class="btn btn-lg btn-primary buy_btn see_detailed"
+                            href="{{ block.settings.video_btn_url }}"
+                          >
+                            {{- block.settings.video_btn_text -}}
+                            <img
+                              src="{{ 'arrow_right.svg' | asset_url }}"
+                              alt=""
+                            >
+                          </a>
+                        {% endif %}
+                      </div>
+                      <div class="ac_desc faq">
+                        <div class="as_desc_header">
+                          {% if block.settings.heading3_icon != blank %}
+                            <img
+                              src="{{ block.settings.heading3_icon | img_url:'master'}}"
+                              alt="block.settings.heading3_icon.alt"
+                              class="img-fluid me-2"
+                            >
+                          {% endif %}
+                          {% if block.settings.bl3_heading != blank %}
+                            {{ block.settings.bl3_heading }}
+                          {% endif %}
+                        </div>
+                        {% if block.settings.bl3_list != blank %}
+                          {{ block.settings.bl3_list }}
+                        {% endif %}
+                        <div class="accordion" id="pdt_c_mob_dropdown">
+                          {% if block.settings.pdt_acc_1_heading != blank %}
+                            <div class="accordion-item pd_claims-item mt-0">
+                              <h2 class="accordion-header" id="pdt_c_mob_HeaderOne">
+                                {% if block.settings.pdt_acc_1_img != blank %}
+                                  <img src="{{ block.settings.pdt_acc_1_img | img_url:'master'}}" class="w-100">
+                                {% endif %}
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#pdt_c_mob_CollapseOne"
+                                  aria-expanded="false"
+                                  aria-controls="pdt_c_mob_CollapseOne"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.pdt_acc_1_heading -%}
+                                      {{- block.settings.pdt_acc_1_heading -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="pdt_c_mob_CollapseOne"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="pdt_c_mob_HeaderOne"
+                                data-bs-parent="#pdt_c_mob_dropdown"
+                                style=""
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.pdt_acc_2_status_bar != blank %}
+                                    <div class="percentage_bar2">
+                                      <span class="percent_3"></span>
+                                      <span class="percent_4"></span>
+                                      <span class="percent_2"></span>
+                                      <span class="percent_6"></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <p class="percent_3-text">IR 880nm</p>
+                                      <p class="percent_4-text">Deep Red 660nm</p>
+                                      <p class="percent_2-text">Red 630nm</p>
+                                      <p class="percent_6-text">Amber 605nm</p>
+                                    </div>
+                                  {% endif %}
+                                  {% if block.settings.pdt_acc_1_list %}
+                                    {{ block.settings.pdt_acc_1_list }}
+                                  {% endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.pdt_acc_2_heading != blank %}
+                            <div class="accordion-item pd_claims-item">
+                              <h2 class="accordion-header" id="pdt_c_mob_headingTwo">
+                                {% if block.settings.pdt_acc_2_img != blank %}
+                                  <img src="{{ block.settings.pdt_acc_2_img | img_url:'master'}}" class="w-100">
+                                {% endif %}
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#pdt_c_mob_collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="pdt_c_mob_collapseTwo"
+                                >
+                                  <div class="container">
+                                    {% if block.settings.pdt_acc_2_heading -%}
+                                      {{- block.settings.pdt_acc_2_heading -}}
+                                    {%- endif %}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="pdt_c_mob_collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="pdt_c_mob_headingTwo"
+                                data-bs-parent="#pdt_c_mob_dropdown"
+                                style=""
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.pdt_acc_2_status_bar != blank %}
+                                    <div class="percentage_bar">
+                                      <span class="percent_1"></span>
+                                      <span class="percent_2"></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                      <p class="percent_1-text">Blue light 415 nm</p>
+                                      <p class="percent_2-text">Red light 630 nm</p>
+                                    </div>
+                                  {% endif %}
+                                  {% if block.settings.pdt_acc_2_list %}
+                                    {{ block.settings.pdt_acc_2_list }}
+                                  {% endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                        </div>
+                        <div class="accordion ingredient_text faq p-0" id="ingDetails">
+                          {% if block.settings.dropdown1_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="ingDetails_headingOne">
+                                <button
+                                  class="accordion-button"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#ingDetails_collapseOne"
+                                  aria-expanded="true"
+                                  aria-controls="ingDetails_collapseOne"
+                                >
+                                  <div class="container">
+                                    {{ block.settings.dropdown1_heading }}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="ingDetails_collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="ingDetails_headingOne"
+                                data-bs-parent="#ingDetails"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown1_content != blank -%}
+                                    {{- block.settings.dropdown1_content -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown2_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="ingDetails_headingTwo">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#ingDetails_collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="ingDetails_collapseTwo"
+                                >
+                                  <div class="container">{{ block.settings.dropdown2_heading }}</div>
+                                </button>
+                              </h2>
+                              <div
+                                id="ingDetails_collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="ingDetails_headingTwo"
+                                data-bs-parent="#ingDetails"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown2_content != blank -%}
+                                    {{- block.settings.dropdown2_content -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown3_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="ingDetails_headingThree">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#ingDetails_collapseThree"
+                                  aria-expanded="false"
+                                  aria-controls="ingDetails_collapseThree"
+                                >
+                                  <div class="container">
+                                    {{ block.settings.dropdown3_heading }}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="ingDetails_collapseThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="ingDetails_headingThree"
+                                data-bs-parent="#ingDetails"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown3_content != blank -%}
+                                    {{- block.settings.dropdown3_content -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown4_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="ingDetails_headingFour">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#ingDetails_collapseFour"
+                                  aria-expanded="false"
+                                  aria-controls="ingDetails_collapseFour"
+                                >
+                                  <div class="container">
+                                    {{ block.settings.dropdown4_heading }}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="ingDetails_collapseFour"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="ingDetails_headingFour"
+                                data-bs-parent="#ingDetails"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown4_content != blank -%}
+                                    {{- block.settings.dropdown4_content -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown5_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="ingDetails_headingFive">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#ingDetails_collapseFive"
+                                  aria-expanded="false"
+                                  aria-controls="ingDetails_collapseFive"
+                                >
+                                  <div class="container">
+                                    {{ block.settings.dropdown5_heading }}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="ingDetails_collapseFive"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="ingDetails_headingFive"
+                                data-bs-parent="#ingDetails"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown5_content != blank -%}
+                                    {{- block.settings.dropdown5_content -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.dropdown6_heading != blank %}
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="ingDetails_headingSix">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#ingDetails_collapseSix"
+                                  aria-expanded="false"
+                                  aria-controls="ingDetails_collapseSix"
+                                >
+                                  <div class="container">
+                                    {{ block.settings.dropdown6_heading }}
+                                  </div>
+                                </button>
+                              </h2>
+                              <div
+                                id="ingDetails_collapseSix"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="ingDetails_headingSix"
+                                data-bs-parent="#ingDetails"
+                              >
+                                <div class="accordion-body">
+                                  {% if block.settings.dropdown6_content != blank -%}
+                                    {{- block.settings.dropdown6_content -}}
+                                  {%- endif %}
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% when 'inspiring_content' %}
+              <div class="accordion-item" id="mob_item3">
+                <h2 class="accordion-header" id="ac_headingThree">
+                  {% if block.settings.step != blank %}
+                    <h6>{{ block.settings.step }}</h6>
+                  {% endif %}
+                  {% if block.settings.heading != blank %}{{ block.settings.heading }}{% endif %}
+                  {% if block.settings.image != blank -%}
+                    <img
+                      src="{{ block.settings.image | img_url:'master' }}"
+                      alt="{{ block.settings.image.alt }}"
+                      class="img-fluid mt-2"
+                    >
+                  {%- endif %}
+                  {% if block.settings.button_label != blank %}
+                    <button
+                      class="accordion-button collapsed ac_drop_btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#ac_collapseThree"
+                      aria-expanded="false"
+                      aria-controls="ac_collapseThree"
+                    >
+                      {{ block.settings.button_label }}
+                    </button>
+                  {% endif %}
+                </h2>
+                <div id="ac_collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="ac_desc_grid d-block">
+                      <div class="row g-4 g-md-5">
+                        <div class="col-md-6">
+                          <div class="ac_desc">
+                            <div class="as_desc_header">
+                              {% if block.settings.bl1_heading != blank %}
+                                {{ block.settings.bl1_heading }}
+                              {% endif %}
+                            </div>
+                            <div class="ac_desc_grid_video show_how-work">
+                              {% if block.settings.bl1_i1 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl1_i1 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl1_v1 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl1_i2 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl1_i2 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl1_v2 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl1_i3 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl1_i3 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl1_v3 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl1_i4 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl1_i4 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl1_v4 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="ac_desc">
+                            <div class="as_desc_header">
+                              {% if block.settings.bl2_heading != blank %}
+                                {{ block.settings.bl2_heading }}
+                              {% endif %}
+                            </div>
+                            <div class="ac_desc_grid_video show_how-work">
+                              {% if block.settings.bl2_i1 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl2_i1 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl2_v1 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl2_i2 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl2_i2 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl2_v2 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl2_i3 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl2_i3 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl2_v3 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="ac_desc">
+                            <div class="as_desc_header">
+                              {% if block.settings.bl3_heading != blank %}
+                                {{ block.settings.bl3_heading }}
+                              {% endif %}
+                            </div>
+                            <div class="ac_desc_grid_video show_how-work">
+                              {% if block.settings.bl3_i1 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl3_i1 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl3_v1 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl3_i2 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl3_i2 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl3_v2 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl3_i3 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl3_i3 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl3_v3 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="ac_desc">
+                            <div class="as_desc_header">
+                              {% if block.settings.bl4_heading != blank %}
+                                {{ block.settings.bl4_heading }}
+                              {% endif %}
+                            </div>
+                            <div class="ac_desc_grid_video show_how-work">
+                              {% if block.settings.bl4_i1 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl4_i1 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl4_v1 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl4_i2 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl4_i2 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl4_v2 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl4_i3 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl4_i3 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl4_v3 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl4_i4 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl4_i4 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl4_v4 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+
+                              {% if block.settings.bl4_i5 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl4_i5 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl4_v5 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.bl4_i6 != blank %}
+                                <div class="banner_img position-relative">
+                                  <img
+                                    src="{{ block.settings.bl4_i6 | img_url:'master' }}"
+                                    alt=""
+                                    class="img-fluid tab_img"
+                                  >
+                                  <a
+                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0"
+                                  >
+                                    <div
+                                      class="wistia_responsive_padding"
+                                      style="position:relative;"
+                                    >
+                                      <div
+                                        class="wistia_responsive_wrapper"
+                                        style="height:100%;left:0;position:absolute;top:0;width:100%;"
+                                      >
+                                        <span
+                                          class="wistia_embed wistia_async_{{ block.settings.bl4_v6 }} popover=true videoFoam=true"
+                                          style="display:inline-block;height:100%;position:relative;width:100%"
+                                          >&nbsp;</span
+                                        >
+                                      </div>
+                                      <span class="d-flex justify-content-end p-2"
+                                        ><img
+                                          src="{{ 'trusted_play_eesm.svg' | file_url }}"
+                                          alt=""
+                                          class="w-auto"
+                                        >
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div>
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // for making the amazing content inactive all tabs by default
+  document.addEventListener('DOMContentLoaded', function () {
+    // Ensure no tab is active
+    document.querySelectorAll('#myTab .nav-link').forEach(function (tab) {
+      tab.classList.remove('active');
+      tab.setAttribute('aria-selected', 'false');
+    });
+
+    // Ensure no tab content is active
+    document.querySelectorAll('#myTabContent .tab-pane').forEach(function (content) {
+      content.classList.remove('show', 'active');
+    });
+  });
+</script>
+<!-- -- amazing content end -- -->
+{% schema %}
+{
+  "name": "Mega Tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "t:sections.content-guide.blocks.content_requirements.name",
+      "type": "content_requirements",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:sections.header.name"
+        },
+        {
+          "type": "text",
+          "id": "step",
+          "label": "t:sections.header.name",
+          "default": "Step"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:common.button.label",
+          "info": "t:common.button.info"
+        },
+        {
+          "type": "header",
+          "content": "Dropdown Content"
+        },
+        {
+          "type": "header",
+          "content": "Key Messages"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading1_icon",
+          "label": "Block 1 Icon"
+        },
+        {
+          "type": "text",
+          "id": "bl1_heading",
+          "label": "Block 1 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "bl_subheading",
+          "label": "Block Subheading"
+        },
+        {
+          "type": "text",
+          "id": "dropdown1_heading",
+          "label": "Dropdown Heading 1",
+          "default": "Dropdown Heading 1"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown1_content",
+          "label": "Dropdown 1 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown2_heading",
+          "label": "Dropdown Heading 2",
+          "default": "Dropdown Heading 2"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown2_content",
+          "label": "Dropdown 2 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown3_heading",
+          "label": "Dropdown Heading 3",
+          "default": "Dropdown Heading 3"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown3_content",
+          "label": "Dropdown 3 Content"
+        },
+        {
+          "type": "header",
+          "content": "Serum 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "serum_yellow_img",
+          "label": "Serum 1 Image"
+        },
+        {
+          "type": "text",
+          "id": "serum_yellow_tag",
+          "label": "Serum 1 Tag",
+          "default": "Dark Spots"
+        },
+        {
+          "type": "text",
+          "id": "serum_yellow_heading",
+          "label": "Serum 1 Tag",
+          "default": "Serum 1 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "serum_yellow_info",
+          "label": "Serum 1 List"
+        },
+        {
+          "type": "header",
+          "content": "Serum 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "serum_grey_img",
+          "label": "Serum 2 Image"
+        },
+        {
+          "type": "text",
+          "id": "serum_grey_tag",
+          "label": "Serum 2 Tag",
+          "default": "Dark Spots"
+        },
+        {
+          "type": "text",
+          "id": "serum_grey_heading",
+          "label": "Serum 2 Tag",
+          "default": "Serum 2 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "serum_grey_info",
+          "label": "Serum 1 List"
+        },
+        {
+          "type": "text",
+          "id": "dropdown4_heading",
+          "label": "Dropdown Heading 4",
+          "default": "Dropdown Heading 4"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown4_content",
+          "label": "Dropdown 4 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown5_heading",
+          "label": "Dropdown Heading 5",
+          "default": "Dropdown Heading 5"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown5_content",
+          "label": "Dropdown 5 Content"
+        },
+        {
+          "type": "richtext",
+          "id": "block1_list",
+          "label": "Block 1 List"
+        },
+        {
+          "type": "header",
+          "content": "Creative Direction"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading2_icon",
+          "label": "Block 2 Icon"
+        },
+        {
+          "type": "text",
+          "id": "bl2_heading",
+          "label": "Block 2 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "bl2_list",
+          "label": "Block 2 List"
+        },
+        {
+          "type": "header",
+          "content": "Inclusion"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading3_icon",
+          "label": "Block 3 Icon"
+        },
+        {
+          "type": "text",
+          "id": "bl3_heading",
+          "label": "Block 3 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "bl3_list",
+          "label": "Block 3 List"
+        }
+      ]
+    },
+    {
+      "name": "Product Information",
+      "type": "product_information",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header"
+        },
+        {
+          "type": "text",
+          "id": "step",
+          "label": "Step",
+          "default": "Step"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:common.button.label",
+          "info": "t:common.button.info"
+        },
+        {
+          "type": "header",
+          "content": "Dropdown Content"
+        },
+        {
+          "type": "header",
+          "content": "Product Details"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading1_icon",
+          "label": "Block 1 Icon"
+        },
+        {
+          "type": "text",
+          "id": "bl1_heading",
+          "label": "Block 1 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "bl_subheading",
+          "label": "Block Subheading"
+        },
+        {
+          "type": "image_picker",
+          "id": "pdt_spec_img",
+          "label": "Product Spefication Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_width",
+          "label": "Image Width",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "pdt_spec_ul",
+          "label": "Product Specification List"
+        },
+        {
+          "type": "richtext",
+          "id": "bl1_list",
+          "label": "Block 1 List"
+        },
+        {
+          "type": "text",
+          "id": "technical_specification",
+          "label": "Technical Specification"
+        },
+        {
+          "type": "richtext",
+          "id": "technical_specification_info",
+          "label": "Technical Specification Info"
+        },
+        {
+          "type": "text",
+          "id": "treatment_details",
+          "label": "Treatment Details"
+        },
+        {
+          "type": "richtext",
+          "id": "treatment_details_info",
+          "label": "Treatment Details Info"
+        },
+        {
+          "type": "header",
+          "content": "Block 1 Link"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link Text"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "header",
+          "content": "Usage Instruction"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading2_icon",
+          "label": "Block 2 Icon"
+        },
+        {
+          "type": "text",
+          "id": "bl2_heading",
+          "label": "Block 2 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "bl2_list",
+          "label": "Block 2 List"
+        },
+        {
+          "type": "text",
+          "id": "wistia_video_id",
+          "label": "Wistia Video ID"
+        },
+        {
+          "type": "url",
+          "id": "video_btn_url",
+          "label": "Button"
+        },
+        {
+          "type": "text",
+          "id": "video_btn_text",
+          "label": "Button Label"
+        },
+        {
+          "type": "header",
+          "content": "Product Claims"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading3_icon",
+          "label": "Block 3 Icon"
+        },
+        {
+          "type": "text",
+          "id": "bl3_heading",
+          "label": "Block 3 Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "bl3_list",
+          "label": "Block 3 Content"
+        },
+        {
+          "type": "text",
+          "id": "pdt_acc_1_heading",
+          "label": "Treatment 1 Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "pdt_acc_1_img",
+          "label": "Treatment 1 Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "pdt_acc_1_status_bar",
+          "label": "Enable Status Bar"
+        },
+        {
+          "type": "richtext",
+          "id": "pdt_acc_1_list",
+          "label": "Treatment 1 Content"
+        },
+        {
+          "type": "text",
+          "id": "pdt_acc_2_heading",
+          "label": "Treatment 2 Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "pdt_acc_2_img",
+          "label": "Treatment 2 Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "pdt_acc_2_status_bar",
+          "label": "Enable Status Bar"
+        },
+        {
+          "type": "richtext",
+          "id": "pdt_acc_2_list",
+          "label": "Treatment 2 Content"
+        },
+        {
+          "type": "header",
+          "content": "Ingredient Details",
+          "info": "Dropdown only for Mobile"
+        },
+        {
+          "type": "richtext",
+          "id": "bl3_list_ing",
+          "label": "Block 3 Content Ingredients"
+        },
+        {
+          "type": "text",
+          "id": "dropdown1_heading",
+          "label": "Dropdown Heading 1"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown1_content",
+          "label": "Dropdown 1 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown2_heading",
+          "label": "Dropdown Heading 2"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown2_content",
+          "label": "Dropdown 2 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown3_heading",
+          "label": "Dropdown Heading 3"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown3_content",
+          "label": "Dropdown 3 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown4_heading",
+          "label": "Dropdown Heading 4"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown4_content",
+          "label": "Dropdown 4 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown5_heading",
+          "label": "Dropdown Heading 5"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown5_content",
+          "label": "Dropdown 5 Content"
+        },
+        {
+          "type": "text",
+          "id": "dropdown6_heading",
+          "label": "Dropdown Heading 6"
+        },
+        {
+          "type": "richtext",
+          "id": "dropdown6_content",
+          "label": "Dropdown 6 Content"
+        }
+      ]
+    },
+    {
+      "name": "Inspiring Content",
+      "type": "inspiring_content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header"
+        },
+        {
+          "type": "text",
+          "id": "step",
+          "label": "Step",
+          "default": "Step"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:common.button.label",
+          "info": "t:common.button.info"
+        },
+        {
+          "type": "header",
+          "content": "Dropdown Content"
+        },
+        {
+          "type": "header",
+          "content": "Block 1 Info"
+        },
+        {
+          "type": "text",
+          "id": "bl1_heading",
+          "label": "Block 1 Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl1_i1",
+          "label": "Block 1 Image 1"
+        },
+        {
+          "type": "text",
+          "id": "bl1_v1",
+          "label": "Block 1 Video 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl1_i2",
+          "label": "Block 1 Image 2"
+        },
+        {
+          "type": "text",
+          "id": "bl1_v2",
+          "label": "Block 1 Video 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl1_i3",
+          "label": "Block 1 Image 3"
+        },
+        {
+          "type": "text",
+          "id": "bl1_v3",
+          "label": "Block 1 Video 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl1_i4",
+          "label": "Block 1 Image 4"
+        },
+        {
+          "type": "text",
+          "id": "bl1_v4",
+          "label": "Block 1 Video 4"
+        },
+        {
+          "type": "header",
+          "content": "Block 2 Info"
+        },
+        {
+          "type": "text",
+          "id": "bl2_heading",
+          "label": "Block 2 Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl2_i1",
+          "label": "Block 2 Image 1"
+        },
+        {
+          "type": "text",
+          "id": "bl2_v1",
+          "label": "Block 2 Video 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl2_i2",
+          "label": "Block 2 Image 2"
+        },
+        {
+          "type": "text",
+          "id": "bl2_v2",
+          "label": "Block 2 Video 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl2_i3",
+          "label": "Block 2 Image 3"
+        },
+        {
+          "type": "text",
+          "id": "bl2_v3",
+          "label": "Block 2 Video 3"
+        },
+        {
+          "type": "header",
+          "content": "Block 3 Info"
+        },
+        {
+          "type": "text",
+          "id": "bl3_heading",
+          "label": "Block 3 Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl3_i1",
+          "label": "Block 3 Image 1"
+        },
+        {
+          "type": "text",
+          "id": "bl3_v1",
+          "label": "Block 3 Video 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl3_i2",
+          "label": "Block 3 Image 2"
+        },
+        {
+          "type": "text",
+          "id": "bl3_v2",
+          "label": "Block 3 Video 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl3_i3",
+          "label": "Block 3 Image 3"
+        },
+        {
+          "type": "text",
+          "id": "bl3_v3",
+          "label": "Block 3 Video 3"
+        },
+        {
+          "type": "header",
+          "content": "Block 4 Info"
+        },
+        {
+          "type": "text",
+          "id": "bl4_heading",
+          "label": "Block 4 Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl4_i1",
+          "label": "Block 4 Image 1"
+        },
+        {
+          "type": "text",
+          "id": "bl4_v1",
+          "label": "Block 4 Video 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl4_i2",
+          "label": "Block 4 Image 2"
+        },
+        {
+          "type": "text",
+          "id": "bl4_v2",
+          "label": "Block 4 Video 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl4_i3",
+          "label": "Block 4 Image 3"
+        },
+        {
+          "type": "text",
+          "id": "bl4_v3",
+          "label": "Block 4 Video 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl4_i4",
+          "label": "Block 4 Image 4"
+        },
+        {
+          "type": "text",
+          "id": "bl4_v4",
+          "label": "Block 4 Video 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl4_i5",
+          "label": "Block 4 Image 5"
+        },
+        {
+          "type": "text",
+          "id": "bl4_v5",
+          "label": "Block 4 Video 5"
+        },
+        {
+          "type": "image_picker",
+          "id": "bl4_i6",
+          "label": "Block 4 Image 6"
+        },
+        {
+          "type": "text",
+          "id": "bl4_v6",
+          "label": "Block 4 Video 6"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mega Tabs"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,47 @@
+.mi_landing_de .btn-lg {
+    padding: 20px 26px;
+}
+
+.mi_landing_de .trusted_bl .trust_img .play_btn a {
+    max-width: 179px;
+}
+
+.mi_landing_de .imageText .aboveText {
+    max-width: 442px;
+}
+
+.header-new .menu {
+    width: auto;
+}
+
+.header-new .header-logo {
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    .mi_landing_de .btn-lg {
+        padding: 10px;
+        font-size: 16px !important;
+    }
+
+    .mi_landing_de .section__header .heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .mi_landing_de .pmtBlock .pmt_plans .pmt_des {
+        font-size: 10px;
+    }
+
+    .mi_landing_de .pmtBlock .pmt_plans .pmt_options {
+        max-width: 135px;
+        margin-top: 1px;
+    }
+    .mi_landing_de .btn.btn-atc {
+        padding: 10px;
+    }
+
+    .mi_landing_de .c_s_wrapper {
+        align-items: start;
+    }
+}

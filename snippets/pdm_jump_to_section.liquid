@@ -1,0 +1,35 @@
+{%- comment -%}
+  This snippet is used to create a jump to section in the product description
+
+  Usage: 
+  {% render 'pdm_jump_to_section', section_data: section, class:'' %}
+{%- endcomment -%}
+
+{% assign title_jump_to = section_data.settings.text_jump_to_section %}
+{% if title_jump_to!= blank %}
+  <div class="jump_to_section {{ class }}">
+    <h3 class="jump_to_section__head">
+      {{ title_jump_to }}
+    </h3>
+    <div class="jump_to_section__body">
+      {% for block in section_data.blocks %}
+        {% case block.type %}
+          {% when 'jump_to_section' %}  
+            {% liquid
+              assign title = block.settings.title
+              assign section_id = block.settings.section_id
+            %} 
+           
+            {% if title != empty and section_id != empty %}
+              <a href="#{{ section_id }}" class="jump_to_section__body-link">
+                <span class="jump_to_section__body-link-text">
+                  {% render 'pdm_icon-arrow-down' %}
+                  {{ title }}
+                </span>
+              </a>
+            {% endif %} 
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

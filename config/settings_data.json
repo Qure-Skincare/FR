@@ -1,0 +1,434 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "show_bf_price": false,
+    "favicon": "shopify://shop_images/qure.png",
+    "social_instagram_link": "https://www.instagram.com/qureskincare/",
+    "social_facebook_link": "https://www.facebook.com/Qureskincare/",
+    "social_tiktok_link": "https://www.tiktok.com/@qureskincare",
+    "social_youtube_link": "https://youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA",
+    "product_list_microinfusion_refill": [
+      "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum",
+      "micro-infusion-3-month-refill-6x-hydra-soothing-serum",
+      "micro-infusion-3-month-refill-6x-rejuvenating-serum"
+    ],
+    "product_list_microinfusion": [
+      "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+      "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
+      "micro-infusion-1-month-bundle-2x-e-g-f-serum",
+      "micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum",
+      "micro-infusion-2-month-bundle-4x-beta-glucan-serum",
+      "micro-infusion-2-month-bundle-4x-e-g-f-serum",
+      "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
+      "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+      "micro-infusion-3-month-bundle"
+    ],
+    "frontrow_health_image_1": "shopify://shop_images/frontrow-health1.png",
+    "frontrow_health_image_2": "shopify://shop_images/User_Image_1.png",
+    "frontrow_health_count_circle_color": "#c8e6dc",
+    "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
+    "frontrow_product_list_to_exclude": [
+      "silk-pillowcase",
+      "dermal-mist",
+      "shower-filter",
+      "faucet-filter-refill",
+      "faucet-filter"
+    ],
+    "show_order_by_receive_by": true,
+    "today_text": "Order today",
+    "start_time_order": "2024-10-30T23:00",
+    "end_time_order": "2024-11-04T23:59",
+    "show_order_by_receive_by_us": false,
+    "enable_corner_treatment_bfcm": false,
+    "enable_site_gamification": false,
+    "enable_free_shipping_treshold": false,
+    "enable_product_gift": false,
+    "product_free_gift": "",
+    "dont_enable_gift_urls": "/pages/led-mask-offer-2\n/pages/q-rejuvalight-pro-offer",
+    "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
+    "icon_product_gift_clean": "shopify://shop_images/Gift-grey1.svg",
+    "icon_product_gift_gradient": "shopify://shop_images/Gift-grey2.svg",
+    "icon_product_gift_full": "shopify://shop_images/Gift-black.svg",
+    "icon_gift_width": 20,
+    "icon_gift_height": 20,
+    "enable_site_wide_timer": false,
+    "start_date": "11-20-2024 22:00",
+    "finish_date": "12-02-2024 11:59",
+    "promotion": "promotion",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "announcement_TPxBgi": {
+            "type": "announcement",
+            "settings": {
+              "heading": "<p><strong>FREE World-Wide Shipping</strong> All Orders Above $100</p>",
+              "button_label": "SHOP NOW",
+              "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
+            }
+          },
+          "tab_3Wyyea": {
+            "type": "tab",
+            "settings": {
+              "heading": "🤍 Rediscover The Qure"
+            }
+          },
+          "banner_jrcxU4": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify://shop_images/Navigation.png",
+              "button_label": "Save up to 55% on [Exclusive Bundles]",
+              "button_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
+            }
+          },
+          "banner_CiNYWN": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify://shop_images/header_drop3.webp",
+              "button_label": "Q-Rejuvalight Pro [Quick Start Guide]",
+              "button_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide"
+            }
+          },
+          "banner_9fKdQK": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify://shop_images/header_drop4.webp",
+              "button_label": "See Micro-Infusion [Detailed Guide]",
+              "button_url": "https://www.qureskincare.com/pages/microinfusion-safety-guide"
+            }
+          },
+          "banner_jibKaz": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify://shop_images/header_drop1.webp",
+              "button_label": "Shop [Micro-Infusion]: reduce look of wrinkles",
+              "button_url": "https://www.qureskincare.com/pages/microinfusion"
+            }
+          },
+          "banner_pe7PzR": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify://shop_images/header_drop2.webp",
+              "button_label": "Shipping & Exchanges",
+              "button_url": "shopify://pages/faq-orders-shipping"
+            }
+          }
+        },
+        "block_order": [
+          "announcement_TPxBgi",
+          "tab_3Wyyea",
+          "banner_jrcxU4",
+          "banner_CiNYWN",
+          "banner_9fKdQK",
+          "banner_jibKaz",
+          "banner_pe7PzR"
+        ],
+        "settings": {}
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "blocks": {
+          "form_Wgkcrq": {
+            "type": "form",
+            "settings": {
+              "form_id": "YpweK2"
+            }
+          }
+        },
+        "block_order": [
+          "form_Wgkcrq"
+        ],
+        "settings": {
+          "heading": "Get the latest from Qure",
+          "social_text": "Follow Us",
+          "social_show": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "menu_8c9EX9": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer-menu"
+            }
+          },
+          "content_kxJQ6T": {
+            "type": "content",
+            "settings": {
+              "heading": "Download Our App",
+              "text": "Access additional features and customize your treatments."
+            }
+          },
+          "link_c3yUqG": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/app_store.svg",
+              "link_url": "https://apps.apple.com/nl/app/qure-skincare/id1670113821"
+            }
+          },
+          "link_wfYX8m": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/google_play.svg",
+              "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure"
+            }
+          }
+        },
+        "block_order": [
+          "menu_8c9EX9",
+          "content_kxJQ6T",
+          "link_c3yUqG",
+          "link_wfYX8m"
+        ],
+        "settings": {
+          "heading": "© 2024 Qure™ Skincare. All rights reserved.",
+          "menu": "footer-bottom-menu",
+          "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
+        }
+      },
+      "slidecart": {
+        "type": "slidecart",
+        "blocks": {
+          "saving_FbLdxK": {
+            "type": "saving",
+            "disabled": true,
+            "settings": {
+              "text": "Black Friday Savings",
+              "color": "#c4121a"
+            }
+          },
+          "gift_ccQgi4": {
+            "type": "gift",
+            "disabled": true,
+            "settings": {
+              "product": "pink-headband-pouch-breast-cancer-awareness-month",
+              "price_limit": "0",
+              "quantity": "1",
+              "discount": "FREEHEADBAND",
+              "disable": true
+            }
+          },
+          "upsell_8Karyz": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
+              "upsell_product_first": "led-mask-extended-1-year-warranty",
+              "upsell_product_first_description": "Protect your LED Device for 1 more year.",
+              "upsell_product_second": "breakout-control-advanced",
+              "upsell_product_second_description": "Upgrade your treatment & treat multiple skin concerns.",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Boost your LED light therapy results"
+            }
+          },
+          "upsell_DQMajg": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/neck-decolletage-led",
+              "upsell_product_first": "micro-infusion-targeted-patches-single",
+              "upsell_product_first_description": "Reduces appearance of fine lines and wrinkles.",
+              "upsell_product_second": "nec-and-deck-extended-1-year-warranty",
+              "upsell_product_second_description": "Protect your LED Device for 1 more year.",
+              "upsell_product_third": "fade-firm-bundle-advance",
+              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+            }
+          },
+          "upsell_a74n8t": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/face-serum",
+              "upsell_product_first": "q-rejuvalight-pro-facewear",
+              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_second": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
+              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_third": "line-refine-bundle-pro",
+              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+            }
+          },
+          "upsell_ej4ULU": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches",
+              "upsell_product_first": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+              "upsell_product_first_description": "Reveal smoother, radiant skin",
+              "upsell_product_second": "dermal-mist",
+              "upsell_product_second_description": "Purifies and refreshes",
+              "upsell_product_third": "fade-firm-bundle-essentials",
+              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+            }
+          },
+          "upsell_GiyUV9": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle",
+              "upsell_product_first": "micro-infusion-darkspots-treatments",
+              "upsell_product_first_description": "Reveal Smoother, Radiant Skin",
+              "upsell_product_second": "face-serum",
+              "upsell_product_second_description": "Plump, smooth & brighten in just one step",
+              "upsell_product_third": "q-rejuvalight-pro-facewear",
+              "upsell_product_thid_description": "Rejuvenate skin where the first signs of aging show"
+            }
+          },
+          "upsell_UiGexh": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://qureskincare.com/products/faucet-filter",
+              "upsell_product_first": "fade-firm-bundle-advance",
+              "upsell_product_first_description": "Complete your treatment & treat multiple skin concerns.",
+              "upsell_product_second": "shower-filter",
+              "upsell_product_second_description": "Reduces irritants in water for clearer, hydrated skin.",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
+            }
+          },
+          "upsell_MBrVMA": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://qureskincare.com/products/dermal-mist",
+              "upsell_product_first": "q-rejuvalight-pro-facewear",
+              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_second": "fade-firm-bundle-essentials",
+              "upsell_product_second_description": "Complete your treatment & treat multiple skin concerns.2",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step."
+            }
+          },
+          "upsell_zaLtWh": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://qureskincare.com/pages/microinfusion",
+              "upsell_product_first": "micro-infusion-darkspots-treatments",
+              "upsell_product_first_description": "Reveal smoother, radiant skin.",
+              "upsell_product_second": "breakout-control-advanced",
+              "upsell_product_second_description": "Reduces appearance of fine lines and wrinkles.",
+              "upsell_product_third": "dermal-mist",
+              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+            }
+          },
+          "upsell_pDFytd": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://qureskincare.com/products/shower-filter",
+              "upsell_product_first": "q-rejuvalight-pro-facewear",
+              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_second": "line-refine-bundle-advanced",
+              "upsell_product_second_description": "Complete your treatment & treat multiple skin concerns.",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step."
+            }
+          }
+        },
+        "block_order": [
+          "saving_FbLdxK",
+          "gift_ccQgi4",
+          "upsell_8Karyz",
+          "upsell_DQMajg",
+          "upsell_a74n8t",
+          "upsell_ej4ULU",
+          "upsell_GiyUV9",
+          "upsell_UiGexh",
+          "upsell_MBrVMA",
+          "upsell_zaLtWh",
+          "upsell_pDFytd"
+        ],
+        "custom_css": [],
+        "settings": {
+          "upsell_heading": "Achieve your skin goals faster",
+          "upsell_product_first": "q-rejuvalight-pro-facewear",
+          "upsell_product_first_description": "Add the ultimate skincare investment to your routine",
+          "upsell_product_second": "neck-decolletage-led",
+          "upsell_product_second_description": "Rejuvenate skin where the first signs of aging show",
+          "upsell_product_third": "face-serum",
+          "upsell_product_third_description": "Plump, smooth & brighten in just one step",
+          "sidecart_timer_old_enable": false,
+          "sidecart_timer_new_enable": true,
+          "start_date": "12-10-2024 00:00",
+          "finish_date": "12-25-2024 11:59",
+          "label_ends": "Holidays Sale Ends In:",
+          "label_days": "DAYS",
+          "label_hours": "HOURS",
+          "label_minutes": "MINUTES",
+          "label_seconds": "SECONDS",
+          "enable_free_shipping_treshold": true,
+          "enable_product_gift": true,
+          "product_free_gift": "all-in-one-face-serum-8-ml",
+          "icon_product_gift_clean": "shopify://shop_images/Layer_1_1.svg",
+          "icon_product_gift_full": "shopify://shop_images/Layer_1_0f98f0bb-ebbd-41bc-96dc-f905b2948e10.svg",
+          "icon_gift_width": 18,
+          "icon_gift_height": 26,
+          "enable_show_gift_price": true,
+          "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
+          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Face Serum </strong>worth &product-price&</p>",
+          "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
+          "show_urgency_note": true,
+          "urgency_note_content": "Due to high demand, [] $quantity_label only saved for 30 minutes.",
+          "urgency_note_label_single": "Checkout now!",
+          "urgency_note_product_list": [
+            "breakout-control-pro-1",
+            "fade-firm-bundle-pro",
+            "line-refine-bundle-pro",
+            "micro-infusion-limited-edition-bundle"
+          ]
+        }
+      },
+      "footer-landing": {
+        "type": "footer-landing",
+        "settings": {
+          "heading": "Have More Questions? Contact Us!",
+          "text": "<p>Our beauty experts will answer any questions you may have and provide professional guidance in using your Qure Micro-Infusion System</p>",
+          "menu": "footer-bottom-menu",
+          "text_bottom": "<p>Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice.</p>"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "8218531531362863771": {
+        "type": "shopify://apps/kite-free-gift-discounts/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
+        "disabled": true,
+        "settings": {}
+      },
+      "11945366711752539959": {
+        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
+        "disabled": true,
+        "settings": {}
+      },
+      "4215564508307704909": {
+        "type": "shopify://apps/sitemap-noindex-pro/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
+        "disabled": false,
+        "settings": {}
+      },
+      "471852632697159186": {
+        "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+        "disabled": false,
+        "settings": {}
+      },
+      "1291562577487733835": {
+        "type": "shopify://apps/black-crow-ai-that-delivers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
+        "disabled": false,
+        "settings": {}
+      },
+      "9595312320780652085": {
+        "type": "shopify://apps/creatorcommerce-creator-shops/blocks/ccsdk/4dbde762-1068-4d2d-8b03-4505bf4cf377",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {}
+  }
+}

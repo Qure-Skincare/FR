@@ -1,0 +1,426 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Qure",
+    "theme_version": "1.0.1",
+    "theme_author": "Paul Iakushenkov",
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/speedup.guru\/"
+  },
+  {
+    "name": "Black Friday",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_bf_price",
+        "label": "Show price",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.logo.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.logo.settings.favicon.label",
+        "info": "t:settings_schema.logo.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.social-media.name",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_facebook_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "t:settings_schema.social-media.settings.social_youtube_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_youtube_link.info"
+      }
+    ]
+  },
+  {
+    "name": "Product",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_social_proof",
+        "label": "Show Social Proof Component",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "social_proof_label",
+        "label": "Social Proof Label",
+        "default": "purchased in the last 48 hours"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_microinfusion_refill",
+        "label": "Micro-Infusion Refill Products",
+        "limit": 12
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_microinfusion",
+        "label": "MicroInfusion Products",
+        "limit": 12
+      },
+      {
+        "type": "header",
+        "content": "Frontrow Health",
+      },
+      {
+        "type": "image_picker",
+        "id": "frontrow_health_image_1",
+        "label": "First Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "frontrow_health_image_2",
+        "label": "Second Image"
+      },
+      {
+        "type": "text",
+        "id": "frontrow_health_count_text",
+        "label": "Count Text",
+        "default": "+50"
+      },
+      {
+        "type": "color",
+        "id": "frontrow_health_count_circle_color",
+        "label": "Count Circle Color",
+        "default": "#e3f6f5"
+      },
+      {
+        "type": "text",
+        "id": "frontrow_health_heading",
+        "label": "Heading",
+        "default": "50+ Board Certified Dermatologists"
+      },
+      {
+        "type": "textarea",
+        "id": "frontrow_health_description",
+        "label": "Description",
+        "default": "recommended Qure to their patients."
+      },
+      {
+        "type": "text",
+        "id": "frontrow_health_link_text",
+        "label": "Link Text",
+        "default": "See More"
+      },
+      {
+        "type": "url",
+        "id": "frontrow_health_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "color",
+        "id": "frontrow_health_background_color",
+        "label": "Background Color",
+        "default": "#f8f8f8"
+      },
+      {
+        "type": "product_list",
+        "id": "frontrow_product_list_to_exclude",
+        "label": "Products To Exclude",
+        "limit": 12
+      },
+      {
+        "type": "header",
+        "content": "Free Shipping + Guarantee Emphasize",
+      },
+      {
+        "type": "checkbox",
+        "id": "show_icons_product_face_serum",
+        "label": "Show Icons Free Shipping Product Face Serum",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_icons_product_microinfusion_targeted",
+        "label": "Show Icons Free Shipping  Product MicroInfusion Targeted Patches",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_icons_product_q_rejuvalight",
+        "label": "Show Icons Free Shipping Product Q-rejuvalight",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_icons_product_neck_decolletage_led",
+        "label": "Show Icons Free Shipping Neck Decolletage Led",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_badge_free_shipping_qrejuvalight",
+        "label": "Show Badge Free Shipping Qrejuvalight",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_badge_free_shipping_neck_decolletage",
+        "label": "Show Badge Free Shipping Neck Decolletage",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "money_back_guarantee_label",
+        "label": "Money Back Guarantee Label",
+        "default": "30 day money back guarantee"
+      },
+      {
+        "type": "text",
+        "id": "free_returns_label",
+        "label": "Free Returns Label",
+        "default": "Simple hassle free returns"
+      }
+    ]
+  },
+  {
+    "name": "Order By - Receive By",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_order_by_receive_by",
+        "label": "Show Order By - Receive By",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "today_text",
+        "label": "Today Text",
+        "default": "Order today"
+      },
+      {
+        "type": "text",
+        "id": "international_text",
+        "label": "International Text",
+        "default": "Ships within 2 days"
+      },
+      {
+        "type": "text",
+        "id": "national_text",
+        "label": "National Text",
+        "default": "Get in [] business days",
+        "info": "Use [] to replace the number of days"
+      },
+      {
+        "type": "header",
+        "content": "Time",
+        "info": "The following date range is used to hide the Order by Received By feature. This only affects the US."
+      },
+      {
+        "type": "text",
+        "id": "start_time_order",
+        "default": "2023-05-30T23:00",
+        "label": "Start date and time",
+        "info": "Format ISO: yyyy-mm-ddTHH:mm"
+      },
+      {
+        "type": "text",
+        "id": "end_time_order",
+        "default": "2023-05-30T23:00",
+        "label": "End date and time",
+        "info": "Format ISO: yyyy-mm-ddTHH:mm"
+      },
+      {
+        "type": "checkbox",
+        "label": "show order by receive by in us",
+        "info": "This checkbox takes precedence over the date range, caution.",
+        "id": "show_order_by_receive_by_us",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Corner Treatment BFCM",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_corner_treatment_bfcm",
+        "label": "Enable corner treatment BFCM",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "copy_corner_treatment_bfcm",
+        "label": "Copy corner treatment BFCM",
+        "default": "Save 21%"
+      }
+    ]
+  },
+  {
+    "name": "SiteGamification",
+    "settings": [
+      {
+        "type": "header",
+        "content": "GAMIFICATION",
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_site_gamification",
+        "label": "t:sections.side_gamification.settings.enable_site_gamification.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_free_shipping_treshold",
+        "label": "t:sections.slidecart.settings.enable_free_shipping.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_gift",
+        "label": "t:sections.slidecart.settings.enable_product_gift.label",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "t:sections.slidecart.settings.header_product_gift.label",
+      },
+      {
+        "type": "product",
+        "id": "product_free_gift",
+        "label": "t:sections.slidecart.settings.product_gift.label",
+      },
+      {
+        "type": "textarea",
+        "id": "dont_enable_gift_urls",
+        "label": "t:sections.slidecart.settings.dont_enable_gift_urls.label",
+        "info": "t:sections.slidecart.settings.dont_enable_gift_urls.info"
+      },
+      {
+        "type": "richtext",
+        "id": "copy_get_free_shipping",
+        "label": "t:sections.slidecart.settings.copy_get_free_shipping.label",
+        "info":  "t:sections.slidecart.settings.copy_get_free_shipping.info",
+        "default": "<p>You are &price-left& away from <strong>Free Shipping!<\/strong><\/p>"
+      },
+      {
+        "type": "richtext",
+        "id": "copy_get_product_free",
+        "label": "t:sections.slidecart.settings.copy_get_product_free.label",
+        "info": "t:sections.slidecart.settings.copy_get_product_free.info",
+        "default": "<p>You’re &price-left& away from <strong>Free &product-title& <\/strong>worth $100!<\/p>"
+      },
+      {
+        "type": "richtext",
+        "id": "copy_congrats",
+        "label": "t:sections.slidecart.settings.copy_congrats.label",
+        "info": "t:sections.slidecart.settings.copy_congrats.info",
+        "default": "<p>Congrats! You've unlocked your &product-title&<\/p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_product_gift_clean",
+        "label": "Icon product gift clean"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_product_gift_gradient",
+        "label": "Icon product gift Gradient"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_product_gift_full",
+        "label": "Icon product gift full"
+      },
+      {
+        "type": "range",
+        "id": "icon_gift_width",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon Product gift width",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "icon_gift_height",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Icon Product gift height",
+        "default": 21
+      },
+      {
+        "type": "header",
+        "content": "TIMER",
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_site_wide_timer",
+        "label": "Enable Site Wide Timer",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "start_date",
+        "label": "Start Date",
+        "info": "Required format: 'MM-DD-YYYY HH:MM, Example: 12-31-2024 24:00"
+      },
+      {
+        "type": "text",
+        "id": "finish_date",
+        "label": "Finish Date",
+        "info": "Required format: 'MM-DD-YYYY HH:MM, Example: 12-31-2024 24:00"
+      },
+      {
+        "type": "text",
+        "id": "label_ends",
+        "label": "Label Ends in",
+        "default": "Sale Ends In:"
+      },
+      {
+        "type": "text",
+        "id": "label_days",
+        "label": "Label Days",
+        "default": "DAYS"
+      },
+      {
+        "type": "text",
+        "id": "label_hours",
+        "label": "Label Hours",
+        "default": "HOURS"
+      },
+      {
+        "type": "text",
+        "id": "label_minutes",
+        "label": "Label Minutes",
+        "default": "MINUTES"
+      },
+      {
+        "type": "text",
+        "id": "label_seconds",
+        "label": "Label Seconds",
+        "default": "SECONDS"
+      }
+    ]
+  }
+]

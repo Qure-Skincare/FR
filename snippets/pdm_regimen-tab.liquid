@@ -1,0 +1,9 @@
+{% if length > 1 %}
+<div class="tab {{ class }} {% if active-tab == index %}active{% endif %}" index="{{ index }}" length="{{ length }}">
+    <div class="icon">
+        <img loading="lazy" class="tab-icon light" src="{{ icon_light | image_url: width: 16, crop: 'center' }}" alt="icon for {{ title }}">
+        <img loading="lazy" class="tab-icon dark" src="{{ icon_dark | image_url: width: 16, crop: 'center' }}" alt="icon for {{ title }}">
+    </div>
+    <p class="text">{{ title }}</p>
+</div>
+{% endif %}

@@ -1,0 +1,175 @@
+<!-- -- trusted section start -- -->
+<div class="trusted_bl section">
+    <div class="trusted_cl bg_clr_transparent">
+        <div class="container">
+            {% if section.settings.heading != blank %}
+                <div class="section_header text-start  d-block d-lg-none">
+                    <h2 class="title-lg">
+                        {{ section.settings.heading }}
+                    </h2>
+                </div>
+            {% endif %}
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="trusted_cl_m mb-2 mb-md-0">
+                        {% if section.settings.image != blank %}
+                            <img src="{{ section.settings.image | img_url: '500x' }}" alt="video" class="img-fluid t_m_img">
+                        {% endif %}
+                        {% if section.settings.video_url != blank %}
+                            <div class="play_btn">
+                                <a class="popup-youtube" href="{{ section.settings.video_url }}">
+                                    <span>
+                                        <img src="{{ 'trusted_play_md.svg' | asset_url }}" alt="" class="">
+                                        <h6>Watch Review</h6>
+                                    </span>
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-6">
+                    <div class="trusted_left">
+                        {% if section.settings.heading != blank %}
+                            <div class="section_header d-none d-lg-block pt-0">
+                                <h2 class="title-lg">
+                                    {{ section.settings.heading }}
+                                </h2>
+                            </div>
+                        {% endif %}
+
+                        {%- for block in section.blocks -%}
+                            {% case block.type %}
+                                {% when 'result' %}
+                                    <div class="t_c_wrapper">
+                                        <div class="t_c_info mb-3 d-flex">
+                                            {% if block.settings.text != blank %}
+                                                <p class="d-block d-md-none">{{ block.settings.text }}</p>
+                                            {% endif %}
+                                            {% if block.settings.image != blank %}
+                                                <div class="c_img">
+                                                    <img src="{{ block.settings.image | img_url: '250x' }}" alt="result">
+                                                </div>                                                
+                                            {% endif %}
+
+                                            <div class="c_desc ps-2">
+                                                {% if block.settings.text != blank %}
+                                                    <p class="d-none d-md-block">{{ block.settings.text }}</p>
+                                                {% endif %}
+                                                <h6><span>{{ block.settings.client }},</span><br> {{ block.settings.client_text }}</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                            {% endcase %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'button' %}
+                        <div class="mw-546 mx-auto mt-4 d-block d-md-none">
+                            <a href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}" class="btn btn-lg btn-primary buy_btn">{{ block.settings.button_label }}</a>
+                        </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- -- trusted section end -- -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.choice.name",
+        "class": "section-choice",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "text",
+                "id": "video_url",
+                "label": "t:common.video.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "result",
+                "limit": 1,
+                "name": "t:common.result.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client",
+                        "label": "t:common.client.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "client_text",
+                        "label": "t:common.client.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.choice.name",
+                "settings": {
+                    "heading": "The dermatologist's choice for safety and effectiveness…",
+                    "image": "shopify:\/\/shop_images\/trusted_anthony_main.webp",
+                    "video_url": "https:\/\/www.youtube.com\/watch?v=gGVKgTHloXw"
+                },
+                "blocks": [
+                    {
+                        "type": "result",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/cl_anthony.webp",
+                            "text": "\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"",
+                            "client": "Dr Anthony Youn",
+                            "client_text": "Board-Certified Plastic Surgeon"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

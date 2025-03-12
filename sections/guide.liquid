@@ -1,0 +1,298 @@
+{%- assign wistia_videos_count = 0 -%}
+{%- assign object_count = 0 -%}
+
+{%- for block in section.blocks -%}
+	{%- case block.type -%}
+        {%- when 'wistia' -%}
+            {%- assign wistia_videos_count = wistia_videos_count | plus: 1 -%}
+        {%- when 'object' -%}
+            {%- assign object_count = object_count | plus: 1 -%}
+    {%- endcase -%}
+{%- endfor -%}
+
+<!-- -- how to use start -- -->
+<div class="see_it 1 section {{ section.settings.classname }}" id="see_it_section">
+    <div class="container">
+        <div class="row">
+            <div class="section_header d-block text-start d-md-none mb-4">
+                {% if section.settings.heading != blank %}
+                    <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+                {% endif %}
+    
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </div>
+        </div>
+        
+        {% if section.blocks.size > 0 %}
+            <div class="video_with_slide">
+                {%- for block in section.blocks -%}
+                    {% case block.type %}
+                        {% when 'wistia' %}
+                            <div class="actVideo_block">
+                                <div class="ctmVideo__block">
+                                    <div class="player">
+                                        <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;">
+                                            <div class="wistia_responsive_wrapper"
+                                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true"
+                                                    style="height:100%;position:relative;width:100%">
+                                                    <div class="wistia_swatch"
+                                                        style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                        <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}/swatch"
+                                                            style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                            alt="" aria-hidden="true"
+                                                            onload="this.parentNode.style.opacity=1;" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        {% when 'video' %}
+                            {% if block.settings.video.sources[1].url != blank %}
+                                {% assign video_source_url = block.settings.video.sources[1].url %}
+                            {% else %}
+                                {% assign video_source_url = block.settings.video.sources[0].url %}
+                            {% endif %}
+
+                            <div class="actVideo_block">
+                                <div class="ctmVideo__block">
+                                    <div class="player">
+                                        {% if block.settings.image != blank %}
+                                            <video poster="{{ block.settings.image | img_url: '500x' }}" class="player__video viewer video-js ctmVideo-js" src="{{ video_source_url }}"></video>
+                                        {% else %}
+                                            <video poster="{{ block.settings.video.preview_image | img_url: '500x' }}" class="player__video viewer video-js ctmVideo-js" src="{{ video_source_url }}"></video>
+                                        {% endif %}
+                                        <div class="player__controls">
+                                            <div class="progress">
+                                                <div class="progress__filled"></div>
+                                            </div>
+                                            <button class="player__button toggle" title="Toggle Play">►</button>
+                                            <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05"
+                                                value="1">
+                                            <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2"
+                                                step="0.1" value="1">
+                                            <button data-skip="-10" class="player__button">« 10s</button>
+                                            <button data-skip="25" class="player__button">25s »</button>
+                                            <button class="player__button player__fullscreen">⧉</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    {% endcase %}
+                {%- endfor -%}
+
+
+                <div class="vidSlideBox">
+                    <div class="section_header ms-0 p-0 d-none d-md-block mb-3">
+                        {% if section.settings.heading != blank %}
+                            <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+                        {% endif %}
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text }}
+                        {% endif %}
+                    </div>
+                    <div class="see_slider_wrapper">
+                        <div class="swiper see_slider see_slider3 step_slider">
+                            {% if object_count > 0 %}
+                            <div class="swiper-wrapper">
+                                {%- for block in section.blocks -%}
+                                    {% if block.type == 'object' %}
+                                        <div class="swiper-slide">
+                                            <div class="see_item">
+                                                {% if block.settings.image != blank %}
+                                                    <img src="{{ block.settings.image | img_url: '350x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                                {% endif %}
+                                                <div class="see_item_info">
+                                                    <h5>{{ block.settings.step }} {{ forloop.index0 }}:</h5>
+                                                    {% if block.settings.text != blank %}
+                                                        {{ block.settings.text }}
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%}
+                            </div>
+                            <div class="swiper-pagination position-relative"></div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        {% endif %}
+        {%- for block in section.blocks -%}
+            {% if block.type == 'button' %}
+                {% if block.settings.button_label != blank %} 
+                    <a class="btn btn-lg btn-primary buy_btn see_detailed mt-0 mt-md-5" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}<img src="{{ 'arrow_right.svg' | asset_url }}" alt=""></a>
+                {% endif %}
+            {% endif %}
+        {%- endfor -%}
+    </div>
+</div>
+<!-- -- how to use end -- -->
+
+{% if wistia_videos_count > 0 %}
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+{% endif %}
+
+{% schema %}
+    {
+        "name": "t:sections.guide.name",
+        "class": "section-guide",
+        "settings": [
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "bg_yellow"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "wistia",
+                "name": "t:common.wistia.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    }
+                ]
+		    },
+            {
+                "type": "video",
+                "name": "t:common.video.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "video",
+                        "id": "video",
+                        "label": "t:common.video.label"
+                    }
+                ]
+		    },
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "step",
+                        "label": "t:common.step.label",
+                        "default": "STEP"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.guide.name",
+                "settings": {
+                    "heading": "How to install",
+                    "text": "<p>You change the filter cartridge for the water you drink frequently, so change the one for your skin too. Easy replacement as 1-2-3.<\/p>"
+                },
+                "blocks": [
+                    {
+                        "type": "wistia",
+                        "settings": {
+                        "wistia_id": "qi96cehl7z"
+                    }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/qurify_use_s_1.webp",
+                            "text": "<p>Remove faucet aerator. Simply attach and twist it off using the key                                                        for removal.<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/qurify_use_s_2.webp",
+                            "text": "<p>Find the faucet thread accessory which best fits your faucet by size                                                        from the 7 provided. If none of the faucet thread accessories fit,                                                        then use the Universal Joint. <\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/qurify_use_s_3.webp",
+                            "text": "<p>Find the silicone ring that best fits and place it inside the faucet                                                        thread accessory.<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/qurify_use_s_4.webp",
+                            "text": "<p>Detach the mounting nut from the Q-urify Water Filter. Put the faucet                                                        thread accessory (with the silicone ring inside) through the                                                        mounting nut and secure it onto your faucet. <\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/qurify_use_s_5.webp",
+                            "text": "<p>Once tightened, secure the Q-urify Water Filter to the mounting nut.<\/p>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/qurify_use_s_6.webp",
+                            "text": "<p>For filtered water, turn to “PUR” (short for purify). Turn to “TAP”                                                        if you prefer unfiltered water.                                                        Enjoy healthier, clearer skin!<\/p>"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

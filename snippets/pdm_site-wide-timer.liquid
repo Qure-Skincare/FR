@@ -1,0 +1,25 @@
+{% comment %}
+  Renders the countdown timer
+  Accepts:
+  - settings: [section.settings] - 
+  Usage:
+ {% render 'pdm_site-wide-timer' %}
+{% endcomment %}
+	<div class="sidecart-timer-container" data-finish-date="{{ settings.finish_date }}" data-start-date="{{ settings.start_date }}">
+    <div class="sidecart-timer-container__label">{{ settings.label_ends }}</div>
+    <div class="sidecart-timer-container__timer"> 
+      <div class="sidecart-timer-container__timer--days amount-wrapper">
+        <div class="sidecart-timer-container__timer--days-amount"></div>
+      </div>
+      <div class="sidecart-timer-container__timer--hours amount-wrapper">
+        <div class="sidecart-timer-container__timer--hours-amount"></div>
+      </div>
+      <div class="sidecart-timer-container__timer--minutes amount-wrapper">
+        <div class="sidecart-timer-container__timer--minutes-amount"></div>
+      </div>
+      <div class="sidecart-timer-container__timer--seconds amount-wrapper">
+        <div class="sidecart-timer-container__timer--seconds-amount"></div>
+      </div>
+    </div>
+	</div>
+  

@@ -1,0 +1,252 @@
+.review_and-results .main_banner .main_b_wrapper {
+    align-items: start;
+    top: 30px;
+}
+
+/* .review_and-results .main_banner .main_b_wrapper h1 {
+    line-height: 57.37px;
+    padding-top: 45px;
+} */
+
+.review_and-results .main_banner .main_b_wrapper h1+img {
+    max-width: 354px;
+    padding: 22px 0 10px;
+}
+
+.reviews_tabs .reviews_tabs-content .qure_tabs {
+    border-bottom: unset;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 55px;
+}
+
+.reviews_tabs .reviews_tabs-content .nav-tabs button {
+    border-radius: 40px;
+    border: 1px solid #D0D0D0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    color: #000;
+    padding: 0px 15px;
+}
+
+.reviews_tabs .reviews_tabs-content .nav-tabs button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.review_and-results .videosQure_exernal .wistia_responsive_padding [data-handle="bigPlayButton"] .w-bpb-wrapper button.w-big-play-button,
+.videosQure_exernal .wistia_responsive_padding [data-handle="bigPlayButton"] .w-bpb-wrapper .w-big-play-button svg {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.review_and-results .ctmVideo__block .player>.wistia_responsive_padding [data-handle="bigPlayButton"] .w-bpb-wrapper .w-big-play-button svg,
+.videosQure_exernal .wistia_responsive_padding [data-handle="bigPlayButton"] .w-bpb-wrapper .w-big-play-button svg {
+    background-color: transparent !important;
+    background-size: 35px !important;
+}
+
+.review_and-results .skincare_slider_n .skin_item_n_tag p {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0;
+    flex-wrap: nowrap;
+}
+
+.review_and-results .skincare_slider_n .skin_item_n_tag .sn_tag {
+    padding: 0px 8px;
+    line-height: 30px;
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.pd_videos-mob .toggle-columns {
+    font-size: 12px;
+    opacity: 0.8;
+    border: 0;
+    background-color: transparent;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.12px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.pd_videos-mob {
+    text-align: center;
+}
+
+.certified_derm p {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0;
+}
+
+.certified_derm img {
+    max-width: 65px;
+    margin-right: 15px;
+}
+
+.certified_derm {
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 4px 14px;
+    max-width: 427px;
+    margin-top: 80px;
+}
+
+.derma_review .main_b_wrapper .title-xl {
+    line-height: 57px;
+}
+.derma_review .main_banner .main_b_wrapper{
+    align-items: center;
+}
+.derma_review .trusted_bl.bg_trust .trust_img .play_btn a {
+    background: rgb(0 0 0 / 30%);
+}
+.derma_review .trusted_bl.trustedVerified {
+    padding: 0;
+}
+.derma_review .trusted_cl_m .t_m_img {
+    border-radius: 24px;
+}
+.derma_review .trusted_bl .trust_item .trust_item_info .result_content p {
+    font-size: 12px;
+    line-height: 22px;
+}
+.advisor_content .accordion-button::after {
+    margin-left: initial;
+    width: 33px;
+    height: 33px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background-image: none;
+    content: url(../assets/arrow-down-sm.svg);
+    transform: unset;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.advisor_content .accordion-button:not(.collapsed):after{
+    content: url(../assets/arrow-up-sm.svg);
+}
+.advisor_content .accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.advisor_content .advisor_detail {
+    margin-top: -120px;
+}
+.advisor_content .advisor_detail h6{
+    font-weight: 600;
+    line-height: 21.538px;
+}
+.advisor_detail .accordion-body p {
+    line-height: 22px;
+}
+.advisor_content .accordion-header p {
+    font-weight: 400;
+    line-height: 21.538px;
+}
+.advisor_4 .advisor_detail {
+    margin-top: -140px;
+}
+.board_of-advisors .swiper {
+    overflow: unset;
+}
+.derma_review .trusted_bl.trustedVerified .trust_item {
+    height: 100% !important;
+}
+@media(min-width:768px) {
+    .reviews_tabs {
+        overflow: hidden;
+    }
+
+    .reviews_tabs .skincare_slider_n .twa__swiper {
+        overflow: unset;
+    }
+
+    /* .reviews_tabs .skincare_slider_n .twa__swiper#twa__swiper-skinSliderN5 .swiper-wrapper {
+        justify-content: center;
+    } */
+}
+
+@media(max-width: 767px) {
+    .reviews_tabs .reviews_tabs-content .qure_tabs {
+        overflow-x: auto;
+        justify-content: unset;
+        overflow-y: hidden;
+        margin: 0 -24px;
+        margin-bottom: 30px;
+    }
+
+    .reviews_tabs .reviews_tabs-content .nav-tabs button {
+        width: max-content;
+        margin-bottom: 5px;
+    }
+
+    .reviews_tabs .reviews_tabs-content .qure_tabs li:nth-child(1) {
+        padding-left: 24px;
+    }
+
+    .review_and-results .skincare_slider_n .skin_item_n_tag .sn_tag {
+        line-height: 22px;
+    }
+
+    .review_and-results .skincare_slider_n .skin_item_n_tag p {
+        gap: 5px;
+        justify-content: flex-start;
+    }
+
+    .review_and-results .main_banner .main_b_wrapper h1+img {
+        max-width: 100%;
+    }
+
+    .reviews_tabs-content ul li:nth-last-child(1) {
+        margin-right: 24px;
+    }
+
+    .derma_review .main_b_wrapper .title-xl {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .certified_derm p {
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 0.1px;
+    }
+    .derma_review .section_header h5 {
+        font-size: 13px;
+        text-align: center;
+    }
+    .derma_review .main_banner .main_b_wrapper {
+        align-items: start;
+    }
+    .certified_derm {
+        margin: 10px -4px;
+        padding: 4px 10px;
+    }
+    .certified_derm img {
+        max-width: 42px;
+        margin-right: 6px;
+    }
+    .derma_review .main_banner .main_b_wrapper .section_header {
+        padding-top: 35px;
+    }
+    .derma_review .trusted_cl {
+        padding: 0 !important;
+    }
+}

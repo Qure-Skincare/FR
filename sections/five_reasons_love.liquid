@@ -1,0 +1,80 @@
+<!-- -- Love silk pillowcases start -- -->
+<div class="love_silk-pillowcases section">
+    <div class="container">
+        <div class="section_header text-center">
+            <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="silk_pillow-content text-center">
+                    {% if section.settings.main_image != blank %}
+                    <img src="{{ section.settings.main_image | img_url: 'master' }}" alt="Silk Pillowcase" class="img-fluid">
+                    {% endif %}
+                    
+                    {% assign css_classes = "one two three four five six seven eight nine ten" | split: " " %}
+                    
+                    {% for block in section.blocks %}
+                        {% case block.type %}
+                        {% when 'silk_benefit' %}
+                        {% assign css_class = css_classes[forloop.index0] %}
+                        <div class="silk_pillow-benefit {{ css_class }}">
+                            {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | img_url: 'master' }}" alt="Benefit Image {{ forloop.index }}">
+                            {% endif %}
+                            {% if block.settings.description != blank %}
+                            <p class="pt-3">{{ block.settings.description }}</p>
+                            {% endif %}
+                        </div>
+                        {% endcase %}
+                    {% endfor %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- Love silk pillowcases end -- -->
+
+{% schema %}
+{
+    "name": "t:sections.five_reasons.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label",
+            "default": "5 reasons why everyone loves silk pillowcases"
+        },
+        {
+            "type": "image_picker",
+            "id": "main_image",
+            "label": "t:common.image.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "silk_benefit",
+            "name": "t:sections.reasons.name",
+            "limit": 5,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.icon.label"
+                },
+                {
+                    "type": "text",
+                    "id": "description",
+                    "label": "t:common.description.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.five_reasons.label"
+        }
+    ]
+}
+
+{% endschema %}

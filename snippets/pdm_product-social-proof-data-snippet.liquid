@@ -1,0 +1,41 @@
+{%liquid
+  assign product_list_micro_infusion_refill = settings.product_list_microinfusion_refill | map: 'id'
+  assign product_list_micro_infusion = settings.product_list_microinfusion | map: 'id'
+%}
+
+{% if template == 'product' %}
+  {% assign suffix = product.template_suffix %}
+{% elsif template == 'page' %}
+  {% assign suffix = page.template_suffix %}
+{% endif %}
+
+{% if settings.show_social_proof %}
+  {% if product.id == 6153582215317 
+    or product.id == 5657784025237 
+    or product.id == 8110118535407 
+    or product.id == 8111729049839 
+    or page.handle contains "qure-microinfusion-offer" 
+    or page.handle contains "micro-infusion-refill"
+    or page.handle contains "microinfusion"
+    or page.handle contains "qure-micro-infusion-landing-page-affiliate"
+     %} 
+    <div class="social-proof-data-container hidden" 
+      data-suffix="{{ suffix }}"
+      data-product-id="{{ product.id }}"
+      data-page-handle="{% if page.handle contains "microinfusion" or page.handle contains "qure-microinfusion-offer" or page.handle contains "micro-infusion-refill" or page.handle contains "qure-micro-infusion-landing-page-affiliate" %}{{page.handle}}{% endif %}" 
+      data-product-list="{% if page.handle contains "micro-infusion-refill" %}{{ product_list_micro_infusion_refill | join: ', ' }}{% elsif page.handle contains "qure-microinfusion-offer" or page.handle contains "microinfusion" or page.handle contains "qure-micro-infusion-landing-page-affiliate" %}{{ product_list_micro_infusion | join: ', ' }}{% endif %}"
+    >
+      <div class="circle-container">
+       {%- render 'icon-social-proof-circle' -%}
+       {%- render 'icon-social-proof-shine' -%}
+      </div>
+      <div class="text-container">
+        <span id="quantity" class="quantity"></span>
+        <span class="label">{{ settings.social_proof_label }}</span>
+      </div>
+      <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3.68882 4.18882C3.74852 4.12897 3.81945 4.08148 3.89753 4.04908C3.97562 4.01668 4.05933 4 4.14387 4C4.22841 4 4.31211 4.01668 4.3902 4.04908C4.46828 4.08148 4.53921 4.12897 4.59891 4.18882L8.00017 7.59137L11.4014 4.18882C11.4612 4.12906 11.5321 4.08166 11.6102 4.04932C11.6883 4.01698 11.772 4.00034 11.8565 4.00034C11.941 4.00034 12.0247 4.01698 12.1027 4.04932C12.1808 4.08166 12.2518 4.12906 12.3115 4.18882C12.3713 4.24858 12.4187 4.31952 12.451 4.3976C12.4834 4.47567 12.5 4.55936 12.5 4.64387C12.5 4.72838 12.4834 4.81206 12.451 4.89013C12.4187 4.96821 12.3713 5.03915 12.3115 5.09891L8.90897 8.50017L12.3115 11.9014C12.3713 11.9612 12.4187 12.0321 12.451 12.1102C12.4834 12.1883 12.5 12.272 12.5 12.3565C12.5 12.441 12.4834 12.5247 12.451 12.6027C12.4187 12.6808 12.3713 12.7518 12.3115 12.8115C12.2518 12.8713 12.1808 12.9187 12.1027 12.951C12.0247 12.9834 11.941 13 11.8565 13C11.772 13 11.6883 12.9834 11.6102 12.951C11.5321 12.9187 11.4612 12.8713 11.4014 12.8115L8.00017 9.40897L4.59891 12.8115C4.53915 12.8713 4.46821 12.9187 4.39013 12.951C4.31206 12.9834 4.22838 13 4.14387 13C4.05936 13 3.97567 12.9834 3.8976 12.951C3.81952 12.9187 3.74858 12.8713 3.68882 12.8115C3.62906 12.7518 3.58166 12.6808 3.54932 12.6027C3.51698 12.5247 3.50034 12.441 3.50034 12.3565C3.50034 12.272 3.51698 12.1883 3.54932 12.1102C3.58166 12.0321 3.62906 11.9612 3.68882 11.9014L7.09137 8.50017L3.68882 5.09891C3.62897 5.03921 3.58148 4.96828 3.54908 4.8902C3.51668 4.81211 3.5 4.72841 3.5 4.64387C3.5 4.55933 3.51668 4.47562 3.54908 4.39753C3.58148 4.31945 3.62897 4.24852 3.68882 4.18882Z" fill="#870B0F"/>
+      </svg>
+    </div>
+  {% endif %} 
+{% endif %}

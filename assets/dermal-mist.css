@@ -1,0 +1,249 @@
+.dermal_main-main .refill_s_tab_content .swiper.dot_pagination .swiper-pagination {
+    bottom: 0px;
+}
+.press_bl .ps_item img {
+    height: auto;
+}
+.dermal_main-main .imageText .it_info p {
+    padding-bottom: 0;
+}
+.dermal_main-main .newside_list ul li img {
+    margin-right: 22px;
+    min-width: 45px;
+    height: 45px;
+}
+.dermal_main-main .bs_content {
+    padding: 40px 0 28px 0;
+}
+.dermal_main-main .bs_item h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.dermal_main-main .beauty_skincare .bs_item {
+    max-width: 100%;
+}
+.purify_anything .accordion-button {
+    border-radius: 50px !important;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    display: grid;
+    grid-template-columns: 1.4fr 3fr 1fr;
+    padding: 8px 14px 8px 10px;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: -50px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+.purify_anything .accordion-item .accordion-body{
+    border-radius: 0px 0px 20px 20px;
+    background: rgba(255, 255, 255, 0.30);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    padding-top: 60px;
+}
+.purify_anything .accordion-button::after {
+    content: '\2212'; /* Minus icon */
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    width: 24px;
+    background-color: #F0EFED;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.purify_anything .accordion-button.collapsed{
+    background-color: #fff;
+}
+
+.purify_anything .accordion-button.collapsed::after {
+    content: '\002B';
+    transform: rotate(180deg);
+    width: 24px;
+    background-color: #F0EFED;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.purify_anything .accordion-item {
+    border: unset;
+    background: transparent;
+}
+.purify_anything .accordion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.purify_anything .purify_anything-inner {
+    background: rgb(236 236 236);
+    padding: 88px 0 142px 0;
+}
+.purify_anything .accordion-button::after {
+    background-image: unset;
+}
+.affect_skin  .affect_item h6 {
+    margin: 22px 0 18px 0;
+    font-weight: 600;
+}
+.dermal_main-main .affect_skin.section {
+    overflow-x: hidden;
+}
+.dermal_main-main .refill_bl .ss_list ul li {
+    padding-bottom: 10px;
+}
+.refill_bl .refill_info .buy_btn {
+    font-size: 22px;
+}
+.dermal_main-main .refill_bl .refill_info .payment_method{
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+.dermal_main-main .newside_list ul li:not(:last-child){
+    border-bottom-width: 0;
+}
+.dermal_main-main .beauty_skincare .bs_item h4 {
+    font-size: 28px;
+}
+.imageText .newside_list ul li {
+    align-items: start;
+}
+.imageText .newside_list ul li img {
+    padding-top: 4px;
+}
+@media (max-width: 767px) {
+    .press_bl {
+        padding: 23px 0;
+    }
+    .dermal_main-main .refill_bl.tabSlider .refill_info .section_header .title-xl {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .dermal_main-main .imageText .it_info p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .dermal_main-main .imageText .it_info p:nth-child(1){
+        font-weight: 600;
+    }
+    .dermal_main-main .newside_list ul li img {
+        margin-right: 7px;
+        min-width: 28px;
+        height: 28px;
+    }
+    .dermal_main-main .newside_list ul li {
+        display: flex;
+        align-items: start;
+        border-bottom: 1px solid #E8E8E8;
+    }
+    .purify_anything .accordion {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    .purify_anything .accordion-item .accordion-body {
+        padding: 50px 14px 14px 14px;
+        margin-top: -45px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .purify_anything .accordion-button {
+        margin-bottom: 0;
+        grid-template-columns: 1.3fr 4fr 1fr;
+    }
+    .purify_anything .purify_anything-inner {
+        padding: 64px 0;
+    }
+    .affect_skin .dsn-right-container {
+        padding-left: 20px;
+    }
+    .refill_bl .swiper-button-prev, .affect_skin .swiper-button-prev {
+        left: var(--swiper-navigation-sides-offset, 50px);
+    }
+    .refill_bl .swiper-button-next, .affect_skin .swiper-button-next {
+        right: var(--swiper-navigation-sides-offset, 50px);
+    }
+    .refill_bl .refill_info .buy_btn {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .upgrade_routine .ur_heading {
+        font-size: 22px;
+    }
+    .beauty_skincare .section_header h2 {
+        font-size: 28px;
+        letter-spacing: 0.28px;
+        line-height: 38px;
+    }
+    .bs_vs_item {
+        display: none;
+    }
+    .beauty_skincare .bs_item .bs_img {
+        max-width: 100px;
+        margin: auto;
+    }
+    .dermal_main-main .beauty_skincare .bs_item h4 {
+        font-size: 14px;
+        line-height: 17.945px;
+    }
+    .beauty_skincare .bs_feature ul li {
+        font-size: 10px;
+        line-height: 16px;
+        border-bottom: unset;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0px 2.071px 24.156px 0px rgba(208, 208, 208, 0.25);
+        letter-spacing: 0.1px;
+        height: auto !important;
+        padding-bottom: 6px;
+    }
+    .dermal_main-main .bs_content {
+        padding: 26px 0 26px 0;
+        height: auto;
+        border-bottom: unset;
+    }
+    .beauty_skincare .bs_feature.incorrectCircle ul li:before {
+        content: url(./incorrect_circle-mob.svg);
+    }
+    .beauty_skincare .bs_feature.correctCircle ul li:before {
+        content: url(./correct_circle-mob.svg);
+    }
+    .beauty_skincare .bs_feature ul li:before, .bs_feature_l ul li:before {
+        left: 5px;
+        top: 10px;
+    }
+    .beauty_skincare .rightCircle li{
+        margin-bottom: 6px;
+    }
+    .beauty_skincare .wrongCircle li{
+        margin-bottom: 6px;
+    }
+    .beauty_skincare .bs_grid {
+        gap: 8px;
+    }
+    .dermal_main-main .beauty_skincare .bs_item {
+        width: 50%;
+    }
+    .bs_img .beauty_img {
+        object-fit: contain;
+    }
+    .swiper-containerAffect2 {
+        overflow: unset;
+    }
+    .dermal_main-main .newside_list ul li:not(:last-child){
+        border-bottom-width: 1px;
+        margin-bottom: 10px;
+    }
+}

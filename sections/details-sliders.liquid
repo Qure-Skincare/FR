@@ -1,0 +1,125 @@
+<!-- -- skin promises start -- -->
+<div class="skin_promises section" id="skin_promise">
+    <div class="container">
+        <div class="section_header text-start text-md-center mb-3 mw-949">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        {% if section.blocks.size > 0 %}
+            <div class="row">
+                <div class="skin_p_slider">
+                    <div class="swiper skin_promises_slider dot_pagination">
+                        <div class="swiper-wrapper">
+                            {%- for block in section.blocks -%}
+                                <div class="swiper-slide">
+                                    <div class="sp_item">
+                                        <div class="sp_img">
+                                            <div class="sp_text">
+                                                {% if block.settings.heading != blank %}
+                                                    {{ block.settings.heading | replace: '<h2>', '<h2 class="title-lg">' }}
+                                                {% endif %}
+                                            </div>
+                                            {% if block.settings.image != blank %}
+                                                <img class="img-fluid" src="{{ block.settings.image | img_url: '350x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                            {% endif %}
+                                        </div>
+                                        {% if block.settings.code != blank %}
+                                            {{ block.settings.code }}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {%- endfor -%}
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-arrow swiper-arrow-next swiper-button-next"></div>
+                    <div class="swiper-arrow swiper-arrow-prev swiper-button-prev"></div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+<!-- -- skin promises end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.details-slider.name",
+        "class": "section-details-slider",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "t:common.object.label",
+                "limit": 8,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "liquid",
+                        "id": "code",
+                        "label": "t:common.code.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.details-slider.name",
+                "settings": {
+                    "heading": "Sick of wasting time and money with failed skin promises?",
+                    "text": "<p>Our clinical-grade treatments and skincare is scientifically-proven to change your skin, and your self-esteem, for the better.<\/p>"
+                },
+                "blocks": [
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "<h2>Micro-Infusion<br\/>Facial System<\/h2>",
+                            "image": "shopify:\/\/shop_images\/skinPromise_1.png",
+                            "code": ""
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "<h2>Q-Rejuvalight Pro<br\/>LED Mask<\/h2>",
+                            "image": "shopify:\/\/shop_images\/skinPromise_2.png",
+                            "code": ""
+                        }
+                    },
+                    {
+                        "type": "slide",
+                        "settings": {
+                            "heading": "<h2>Q-urify<br\/>Tap Water Filter<\/h2>",
+                            "image": "shopify:\/\/shop_images\/skinPromise_3.png",
+                            "code": ""
+                        }
+                    } 
+                ]
+			}
+        ]
+    }
+{% endschema %}

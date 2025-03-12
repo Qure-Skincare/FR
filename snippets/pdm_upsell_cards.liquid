@@ -1,0 +1,99 @@
+
+{% assign upsell_object_handle = blank %}
+{% assign upsell_product_first = blank %}
+{% assign upsell_product_second = blank %}
+{% assign upsell_product_third = blank %}
+
+{% if section.settings.upsell_product_first != blank %}
+  {% assign upsell_product_first = all_products[section.settings.upsell_product_first] %}
+  {% assign upsell_product_first_description = section.settings.upsell_product_first_description %}
+{% endif %}
+
+{% if section.settings.upsell_product_second != blank %}
+  {% assign upsell_product_second = all_products[section.settings.upsell_product_second] %}
+  {% assign upsell_product_second_description = section.settings.upsell_product_second_description %}
+{% endif %}
+
+{% if section.settings.upsell_product_third != blank %}
+  {% assign upsell_product_third = all_products[section.settings.upsell_product_third] %}
+  {% assign upsell_product_third_description = section.settings.upsell_product_third_description %}
+{% endif %}
+
+{% if page %}
+  {% assign upsell_object_handle = page.handle %}
+{% endif %}
+
+{% if product %}
+  {% assign upsell_object_handle = product.handle %}
+{% endif %}
+
+{% if collection %}
+  {% assign upsell_object_handle = collection.handle %}
+{% endif %}
+
+{% if upsell_object_handle %}
+  {% if  cart.item_count > 0  %}
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+            {%- when 'upsell' -%}
+                {% if block.settings.page_url contains upsell_object_handle %}
+
+                  {% if block.settings.upsell_product_first != blank %}
+                    {% assign upsell_product_first = all_products[block.settings.upsell_product_first] %}
+                  {% endif %}
+
+                  {% if block.settings.upsell_product_first_description != blank %}
+                    {% assign upsell_product_first_description = block.settings.upsell_product_first_description %}
+                  {% endif %}
+
+                  {% if block.settings.upsell_product_second != blank %}
+                    {% assign upsell_product_second = all_products[block.settings.upsell_product_second] %}
+                  {% endif %}
+
+                  {% if block.settings.upsell_product_second_description != blank %}
+                    {% assign upsell_product_second_description = block.settings.upsell_product_second_description %}
+                  {% endif %}
+
+                  {% if block.settings.upsell_product_third != blank %}
+                    {% assign upsell_product_third = all_products[block.settings.upsell_product_third] %}
+                  {% endif %}
+
+                  {% if block.settings.upsell_product_third_description != blank %}
+                    {% assign upsell_product_third_description = block.settings.upsell_product_third_description %}
+                  {% endif %}
+
+                {% endif %}
+        {%- endcase -%}
+    {%- endfor -%}
+  
+    <div class="swiper custom_upsell ">
+      <h3 class="upsell_title">{{ section.settings.upsell_heading }}</h3>
+        <div class="swiper-wrapper mask">
+          {% if upsell_product_first.id != blank %}
+            {% assign image_slide = upsell_product_first.featured_image | img_url: '300x' %}
+            {% assign title_copy = upsell_product_first.title %}
+            {% assign description_copy = upsell_product_first_description %}
+            {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: upsell_product_first   %}
+          {% endif %}
+
+          {% if upsell_product_second.id != blank %}
+            {% assign image_slide = upsell_product_second.featured_image | img_url: '300x' %}
+            {% assign title_copy = upsell_product_second.title %}
+            {% assign description_copy = upsell_product_second_description %}
+            {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: upsell_product_second   %}
+          {% endif %}
+
+          {% if upsell_product_third != blank %}
+            {% assign image_slide = upsell_product_third.featured_image | img_url: '300x' %}
+            {% assign title_copy = upsell_product_third.title %}
+            {% assign description_copy = upsell_product_third_description %}
+            {% render 'pdm_upsell_cards_slide', image_slide:image_slide, title_copy:title_copy, description_copy:description_copy, product_slide: upsell_product_third   %}
+          {% endif %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  {%- endif -%}
+{% endif %}

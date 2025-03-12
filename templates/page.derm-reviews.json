@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-derm-reviews"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

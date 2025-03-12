@@ -1,0 +1,1004 @@
+/* ====== faq of bf-sale page start ==== */
+.faq-menu__item {
+    width: 100%;
+    float: left;
+    padding-bottom: 25px
+}
+
+.faq-tab {
+    margin: 0 -15px
+}
+
+.faq-tab__item {
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+    border: 3px solid transparent;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.faq-tab__item:hover {
+    cursor: pointer
+}
+
+.faq-tab__item:hover .faq-tab__item__inner {
+    background-color: inherit;
+    border: 3px solid #cbe4de;
+    text-decoration: none
+}
+
+.faq-tab__item:hover .faq-tab__image {
+    -webkit-filter: none;
+    filter: none
+}
+
+.faq-tab__item:hover .faq-tab__title {
+    color: #cbe4de
+}
+
+.faq-tab__item__inner {
+    background-color: #cbe4de;
+    color: #fff;
+    padding: 30px 10px 15px;
+    min-height: 180px;
+    display: block
+}
+
+.faq-tab__title {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+    color: #fff
+}
+
+.faq-tab__image {
+    -webkit-filter: brightness(100);
+    filter: brightness(100)
+}
+
+.faq-search {
+    max-width: 530px;
+    margin: 30px auto 70px;
+    position: relative
+}
+
+.faq-search__input input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 18px
+}
+
+
+.faq-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.faq-menu__item img {
+    width: 40px;
+    float: left
+}
+
+.faq-menu__url {
+    width: calc(100% - 40px);
+    float: left;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    line-height: 25px;
+    padding-top: 5px;
+    color: #cbe4de
+}
+
+.faq-menu__url.faq-menu_current {
+    color: #111
+}
+
+.faq-menu__url:hover {
+    text-decoration: none
+}
+
+.faq__texts {
+    font-size: 18px
+}
+
+.faq__texts hr {
+    border: none;
+    border-bottom: 1px solid #adadad;
+    margin-top: 35px
+}
+
+
+.faq-tab__title {
+    font-size: 16px
+}
+
+.faq-tab__item {
+    width: 100%
+}
+
+
+.faq-section .faq-title h2 {
+    font-style: normal;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    font-family: Canela-Thin;
+    font-weight: 600
+}
+
+.faq-section {
+    padding: 130px 0
+}
+
+.faq-section .faq-title h2 {
+    letter-spacing: .3px;
+    color: #000
+}
+
+.faq-section .faq-caption {
+    width: 100%;
+    margin-top: 38px;
+    max-width: 75% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.faq-section .faq-caption p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .3px;
+    color: #000
+}
+
+.faq-section .faq-caption p a {
+    text-decoration: underline
+}
+
+#faqs ul li {
+    list-style: unset;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot-list li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+ol {
+    padding-top: 10px
+}
+
+ol li {
+    padding-bottom: 10px;
+    padding-left: 12px;
+}
+
+.dot-list li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    background: #000;
+    border-radius: 10px;
+    top: 10px;
+}
+
+#faqs ul {
+    padding: 0 30px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+#faqs .on-scr ul.faq-menu {
+    padding: 0;
+    margin-left: 0px;
+}
+
+.faq-info__side-by {
+    padding-top: 20px;
+}
+
+/* .faq_item_wrapper {
+    padding-bottom: 40px;
+} */
+
+.faq-menu__item .faq-menu__item-img-wrapper img:nth-child(1),
+.mobile-dropdown .mobile-dropdown__content .mobile-dropdown-svg img:nth-child(1) {
+    display: block;
+}
+
+.faq-menu__item .faq-menu__item-img-wrapper img:nth-child(2),
+.mobile-dropdown .mobile-dropdown__content .mobile-dropdown-svg img:nth-child(2) {
+    display: none;
+}
+
+.faq-menu__item.active .faq-menu__item-img-wrapper img:nth-child(2),
+.mobile-dropdown .mobile-dropdown__content .mobile-dropdown-svg img:nth-child(2) {
+    display: block;
+}
+
+.faq-menu__item.active .faq-menu__item-img-wrapper img:nth-child(1),
+.mobile-dropdown .mobile-dropdown__content .mobile-dropdown-svg img:nth-child(1) {
+    display: none;
+}
+
+#faq_page-custom-faq p a,
+#faq_page-custom-faq li a {
+    color: #008763;
+    font-style: italic
+}
+
+@media(max-width:1024px) {
+    body {
+        overflow-x: unset !important;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .on-scr.on-src-mobile .faq-menu .faq-menu__item {
+        display: grid !important;
+        justify-content: space-between;
+        grid-template-columns: auto 80%;
+
+    }
+
+    #faqs ul {
+        padding: 0;
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+
+    .mobile-dropdown {
+        display: none
+    }
+
+    .faq-tab__item__inner {
+        padding: 20px 10px 15px;
+        min-height: 10px
+    }
+
+    .mobile-dropdown,
+    .on-scr {
+        padding: 0 15px;
+        display: flex;
+    }
+
+    .faq-tab__image img {
+        height: 60px;
+        width: auto
+    }
+
+    .faq-search {
+        margin: 0 auto 35px
+    }
+
+    ul.faq-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap
+    }
+
+    li.faq-menu__item {
+        width: calc(100% / 5);
+        text-align: center
+    }
+
+    a.faq-menu__url {
+        font-size: 12px;
+        padding: 0;
+        width: 100%;
+        line-height: 16px
+    }
+
+    .faq-menu__item img {
+        width: auto;
+        float: none;
+        height: 35px
+    }
+
+    .faq__texts {
+        font-size: 14px;
+        margin-top: 15px
+    }
+
+    .faq-section .accordion-container {
+        padding: 0 24px
+    }
+
+    .faq-section .container {
+        max-width: 100%
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 40px;
+        line-height: 44px
+    }
+
+    #shopify-section-prd-faq-section .faq-section {
+        padding: 80px 15px
+    }
+
+    .faq-section {
+        padding: 80px 10px
+    }
+
+    .faq-section .faq-title h2 {
+        letter-spacing: .2px;
+        margin-bottom: 48px
+    }
+
+    .faq-section .faq-caption {
+        margin-top: 35px;
+        max-width: 88% !important
+    }
+
+    .faq-section .faq-caption p a {
+        text-decoration: underline;
+        color: #000
+    }
+
+    .faq-section .faq-caption p {
+        margin: 0
+    }
+
+
+    #faqs #faq_page-custom-faq h2 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: .3px;
+        color: #000;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-family: 'Canela Web';
+    }
+
+    #faqs #faq_page-custom-faq h2:not(:first-child) {
+        margin-top: 40px
+    }
+
+    .on-scr.on-src-mobile {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        z-index: 11;
+        padding: 0;
+        left: unset;
+        position: relative
+    }
+
+    .col-md-4.col--mobile {
+        margin-top: 24px
+    }
+
+    .on-src-mobile .mobile-dropdown {
+        border-radius: 6px;
+        height: 56px;
+        border: .5px solid rgba(0, 0, 0, .8);
+        padding: 0 22px
+    }
+
+    .mobile-dropdown__content span {
+        padding-left: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .faq__texts li,
+    .faq__texts p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: .003em;
+        color: #000
+    }
+
+    .faq__texts .faq-info__side-by strong {
+        font-size: 14px
+    }
+
+    #faqs .custom-faq__title,
+    #faqs .custom-faq__title b,
+    #faqs .custom-faq__title span,
+    #faqs .custom-faq__title strong {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: .003em
+    }
+
+    .custom-faq__text-bold {
+        font-size: 13px !important
+    }
+
+    .faq__texts hr {
+        margin-top: 25px;
+        margin-bottom: 25px !important
+    }
+
+    #faqs .faq-menu__item img {
+        /* display: block; */
+        height: 35px
+    }
+
+    .faq-menu__item-img-wrapper {
+        width: 40px
+    }
+
+    #faqs .faq-menu__item {
+        border-bottom: 1px solid #d9d9d9
+    }
+
+    #faqs a.faq-menu__url {
+        border-bottom: none !important
+    }
+
+    #shopify-section-product-faq {
+        padding: 28px 0 38px
+    }
+
+    #shopify-section-product-faq h2.landing-title.faq__title {
+        font-size: 30px !important;
+        max-width: 228px;
+        margin-bottom: 15px !important;
+        line-height: 44px !important
+    }
+
+    #shopify-section-product-faq .faq-wrapper .faq__question {
+        font-size: 13px;
+        line-height: 24px;
+        padding-right: 45px
+    }
+
+    #shopify-section-product-faq .faq-wrapper .faq__item .faq__answer {
+        font-size: 12px;
+        line-height: 20px
+    }
+
+    #shopify-section-product-faq .faq-wrapper .faq__item .faq__answer ul {
+        padding-left: 30px
+    }
+
+    #shopify-section-product-faq .show-more {
+        margin-top: 34px
+    }
+
+    #shopify-section-product-faq .faq-wrapper {
+        padding: 0 10px
+    }
+
+    #shopify-section-product-faq .faq__answer {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: .3px
+    }
+
+    .mobile-dropdown {
+        width: 100%;
+        border-radius: 15px;
+        height: 40px;
+        align-items: center;
+        border: 1px solid #54697a;
+        justify-content: space-between;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+        background: #fff;
+    }
+
+    .mobile-dropdown__content {
+        display: flex;
+    }
+
+    .on-scr.on-src-mobile {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        z-index: 11;
+        padding: 0;
+        left: unset;
+        position: relative
+    }
+}
+
+@media (max-width:991px) {
+
+    #shopify-section-prd-faq-section .faq-section .container,
+    #shopify-section-serum-boost-section .container,
+    #shopify-section-serum-prd-template .container,
+    #shopify-section-serum-result-section .see-result .result-info h2,
+    .signific-section .signicfic-content h2,
+    .signific-section .signicfic-content p {
+        max-width: 100%
+    }
+
+    #shopify-section-serum-prd-template .contain-banner {
+        padding-left: 25px;
+        padding-top: 30px
+    }
+
+    .result-info {
+        padding-left: 0;
+        padding-bottom: 50px
+    }
+
+    #shopify-section-prd-faq-section .faq-section {
+        padding: 80px 0 88px
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 40px;
+        line-height: 44px
+    }
+
+}
+
+@media (min-width:767px) {
+    .on-scr {
+        position: sticky;
+        top: 150px;
+    }
+
+    #faqs .faq-menu__item img {
+        float: unset;
+        width: unset
+    }
+
+    #faqs .faq-menu__item-img-wrapper {
+        width: 40px;
+        text-align: center
+    }
+
+    #faqs .faq-menu__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 20px
+    }
+
+    #faqs .faq-menu__url {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #000;
+        padding-top: 0;
+        padding-left: 22px
+    }
+
+    #faqs .active .faq-menu__url {
+        font-weight: 600;
+        color: #000;
+        line-height: 24px;
+        font-size: 17px;
+    }
+
+    #faqs #faq_page-custom-faq h2 {
+        font-size: 36px;
+        line-height: 55px;
+        letter-spacing: .3px;
+        margin: 0px 0 25px 0;
+        color: #000;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        font-family: 'Canela Web';
+        font-weight: 500;
+        letter-spacing: 0.36px;
+    }
+
+    #faqs #faq_page-custom-faq h2:not(:first-child) {
+        padding-top: 26px;
+        margin-top: 32px
+    }
+
+
+
+    .col-md-4.col--mobile {
+        /* margin-top: 24px */
+    }
+
+    .on-src-mobile .mobile-dropdown {
+        border-radius: 6px;
+        height: 56px;
+        border: .5px solid rgba(0, 0, 0, .8);
+        padding: 0 22px
+    }
+
+    .mobile-dropdown__content span {
+        padding-left: 15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center
+    }
+
+    .faq__texts hr {
+        border-bottom: .5px solid #000;
+        opacity: .3
+    }
+
+    #faqs .custom-faq__title,
+    #faqs .custom-faq__title b,
+    #faqs .custom-faq__title span,
+    #faqs .custom-faq__title strong {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 26px
+    }
+
+    #faqs .faq__texts hr {
+        margin-top: 40px;
+        margin-bottom: 40px
+    }
+
+    #faqs .custom-faq__title {
+        margin-bottom: 12px
+    }
+
+    .faq-info__side-by {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .faq-info__side-by ul {
+        padding-left: 48px
+    }
+
+    .faq-info__side-by li {
+        line-height: 26px
+    }
+
+    #faq_page-custom-faq p a {
+        color: #008763;
+        font-style: italic
+    }
+
+    .faq-info__side-by li::marker {
+        font-size: 12px
+    }
+
+    .mobile-dropdown {
+        display: none;
+    }
+
+    .on-scr .faq-menu {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width:480px) {
+
+    #shopify-section-serum-faq-section .accordion-container .set a {
+        display: inherit
+    }
+}
+
+span.custom-faq__text-bold {
+    font-weight: 500
+}
+
+@media(max-width:560px) {
+    li.faq-menu__item {
+        width: auto !important;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+        margin: 10px 0 0 10px
+    }
+
+    li.faq-menu__item a.faq-menu__url {
+        color: #000;
+        padding: 5px
+    }
+
+    .faq-menu__item img {
+        display: none
+    }
+
+    ul.faq-menu {
+        justify-content: center
+    }
+
+    .faq-menu__url.faq-menu_current {
+        background: #cbe4de
+    }
+}
+
+
+.faq__texts {
+    font-size: 14px !important
+}
+
+.faq_item p {
+    margin-bottom: 20px;
+}
+
+.active .faq-menu__url,
+.app-links h4 {
+    font-weight: 700
+}
+
+.faq__texts p b,
+.faq__texts p strong,
+.footer__newsletter p {
+    font-size: 14px
+}
+
+.faq__texts p:blank,
+.faq__texts p:empty {
+    display: none !important
+}
+
+#faq_page-custom-faq>div {
+    margin-top: 50px;
+    display: none;
+    transition: .5s linear
+}
+
+.faq-menu {
+    display: flex;
+    flex-direction: column;
+    width: 330px !important;
+    max-width: 100% !important
+}
+
+.faq-menu__url {
+    color: #000;
+    padding-right: 0 !important
+}
+
+#faq_page-custom-faq>div:first-child,
+.afterpay-paragraph {
+    margin-top: 0 !important
+}
+
+
+
+
+
+#faq_page-custom-faq>div.active {
+    display: block;
+    transition: .5s linear;
+    margin-top: 0
+}
+
+@media (max-width:992px) {
+    .faq-menu {
+        max-width: 240px !important
+    }
+
+    .faq-menu__url {
+        font-size: 14px !important
+    }
+}
+
+.faq__texts hr {
+    margin-bottom: 35px
+}
+
+
+@media (max-width:767px) {
+
+    li.faq-menu__item {
+        width: 100% !important;
+        display: flex;
+        margin-left: 0
+    }
+
+    .faq-menu__item img,
+    ul.faq-menu {
+        display: none
+    }
+
+
+    ul.faq-menu {
+        max-width: 100% !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        background: #fff;
+        margin-top: 15px;
+        padding: 15px
+    }
+
+    li.faq-menu__item {
+        text-align: left;
+        padding: 0
+    }
+
+    a.faq-menu__url {
+        padding: 10px 0;
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+        width: 100%
+    }
+}
+
+@media screen and (max-width:480px) {
+    #faqs .container.cus-container {
+        max-width: 100%;
+        padding: 0 20px
+    }
+}
+
+#shopify-section-product-upsell-second .upsell-second__line,
+.faq__item.cus-6,
+.faq__item.cus-7,
+.faq__item.cus-8,
+.faq__item.cus-9,
+.sezzle-shopify-info-button.sezzlewidgetindex-0.sezzle-4c00ac67-4d68-4b44-95c1-190a7b67b92a,
+.use-mask-cont .swiper-button-next:after,
+.use-mask-cont .swiper-button-prev:after,
+body#q-rejuvalight-pro-facewear .header-new li.cart-custom.sticky a.btn.klaviyo-bis-trigger {
+    display: none
+}
+
+
+#shopify-section-product-faq .faq-wrapper .faq__item,
+#shopify-section-product-img-with-text-third .imgText__item--0 .cus-dekstop .left-img img:last-child,
+#shopify-section-product-img-with-text-third .imtText-second__text p {
+    margin-bottom: 0
+}
+
+#shopify-section-product-faq {
+    padding: 100px 0 75px
+}
+
+#shopify-section-product-faq h2.landing-title.faq__title {
+    margin-bottom: 75px;
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 55px;
+    font-family: Canela-thin
+}
+
+#shopify-section-product-faq .faq-wrapper .faq__question {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: .3px;
+    position: relative;
+    padding: 15px 0
+}
+
+#shopify-section-product-faq .land-container.faq-container {
+    max-width: 1140px
+}
+
+#shopify-section-product-faq .faq-wrapper .faq__ask-us {
+    color: #008763;
+    font-size: 12px;
+    line-height: 24px
+}
+
+#shopify-section-product-faq .faq-wrapper .faq__item .faq__answer {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: .3px;
+    color: #000
+}
+
+#shopify-section-product-faq .show-more {
+    margin-top: 60px;
+    display: block !important
+}
+
+#shopify-section-product-faq .show-more span {
+    font-size: 14px
+}
+
+/* New css */
+#microinfusion .video-faq {
+    display: flex;
+    align-items: self-start;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#microinfusion .video-faq video#myVideo4 {
+    width: 300px;
+}
+
+#microinfusion .video-faq .faq-video-txt {
+    margin-left: 0;
+    width: calc(100% - 300px);
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+#microinfusion .video-faq .faq-video-txt ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#microinfusion .video-faq .faq-video-txt ul li {
+    font-size: 13x;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    margin-bottom: 15px;
+}
+
+#microinfusion .video-faq .faq-video-txt p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+@media (max-width:767px) {
+    #microinfusion .video-faq {
+        flex-wrap: wrap;
+    }
+
+    #microinfusion .video-faq video#myVideo4 {
+        height: auto;
+        width: 100%;
+    }
+
+    #microinfusion .video-faq .faq-video-txt {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    #microinfusion .video-faq {
+        flex-wrap: wrap;
+    }
+
+    #microinfusion .video-faq video#myVideo4 {
+        width: 100%;
+    }
+
+    #microinfusion .video-faq .faq-video-txt {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .infusion-treat .landing-treatment .new-supply .new-image img {
+        order: 1;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .faq__texts ul {
+        padding: 0;
+        margin-left: 0px;
+    }
+}
+
+
+
+.bg_yellow .mobile-dropdown {
+    background: var(--clr-yellow)
+}
+
+.bg_yellow ul.faq-menu {
+    background: var(--clr-yellow)
+}
+
+.bg_yellow #faq_page-custom-faq h2 {
+    background-color: var(--clr-yellow) !important;
+}
+
+/* ====== faq of bf-sale page end ==== */

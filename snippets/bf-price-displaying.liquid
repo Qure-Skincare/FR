@@ -1,0 +1,81 @@
+<style>
+    /* -- Black Friday Nov 2024 css start -- */
+    .black_friday .price_wrap h6 {
+        color: #C4121A;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    .black_friday .price_wrap h6 span{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.14px;
+        color: #000;
+    }
+    .black_friday .price_wrap .new_price span {
+        margin-right: 4px;
+    }
+    .black_friday .bf_discount,
+    .black_friday .planBlock .monthly_plans .bf_discount {
+        height: fit-content;
+        padding: 4px 11px;
+        background: #C4121A;
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 500;
+        border-radius: 25px;
+    }
+    .black_friday .bf_price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .black_friday .price_BF:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #C4121A;
+        transform: rotate(8deg);
+    }
+    .black_friday .sale_price{
+        font-weight: 700;
+    }
+    .black_friday .price_BF {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin-left: auto;
+    }
+    .black_friday .bf_price_wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .black_friday .bf_price .black_friday-text {
+        color: #C4121A;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.12px;
+        margin-bottom: 0;
+    }
+</style>
+
+<div class="black_friday">
+    <div class="price_wrap d-block">
+        <div class="price align-items-center">
+            {% if product.price %}
+                <div class="new_price fw-bold">{{ product.price | money_without_trailing_zeros }}</div>
+            {% endif %}
+            <span class="bf_discount">Save 21%</span>
+            <h6 class="mb-0"><span>use code: </span>BLACKFRIDAY</h6>
+        </div>
+    </div>
+</div>

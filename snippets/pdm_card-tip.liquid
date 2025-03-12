@@ -1,0 +1,52 @@
+{% comment %}
+this snippets is used in pdm_lifestyle-tips.liquid section, render each tip in section
+  Usage:
+  {% render 'pdm_card-tip'
+    class: "test",
+    index: forloop.index,
+    length: forloop.length,
+    active-card:1,
+    image: block.settings.image_card,
+    title: block.settings.title,
+    description: block.settings.description
+    sources: block.settings.sources %}
+{% endcomment %}
+<div class="card {{ class }} {% if active-card == index %}active{% endif %}" index="{{ index }}" length="{{ length }}" > 
+    <div class="cont-image">
+        <img src="{{ image | img_url: "original" }}" alt="picture for {{ title }}" />
+    </div>
+    <div class="cont-text">
+        <div class="pagination">
+        {% if length > 1 %}
+            {% for i in (1..length)%}
+                <div data-card={{ i }} class="num {% if i == index %}active{% endif %}">{{ i }}</div>
+            {% endfor %}
+        {% endif %}
+        </div>
+        <div class="full-text">
+            <div class="title">
+                <h3 class="h3">{{ title }}</h3>
+            </div>
+            <div class="description">{{ description }} </div>
+            {% if sources != blank %}<span data-index={{ index}} class=" btn-popup source-{{ index }}">[Source]</span>{% endif %}
+        </div>
+        <div class="arrows">
+        {% if length > 1 %}
+                <button class="previous {% if index > 1 %}active{% endif %}">{% render "pdm_svg-arrow" %}</button> 
+                <button class="next {% if index < length %}active{% endif %}">{% render "pdm_svg-arrow" %}</button> 
+        {% endif %}
+        </div>
+    </div>
+</div>
+{% if sources != blank  %}
+    <div data-index={{ index }} class="popup-source hidden">
+    <div class="cont-source">
+        <div class="close" data-index={{ index }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M5.99865 4.82227L10.1236 0.697266L11.302 1.8756L7.17698 6.0006L11.302 10.1256L10.1228 11.3039L5.99781 7.17893L1.87365 11.3039L0.695312 10.1248L4.82031 5.99977L0.695312 1.87477L1.87365 0.698099L5.99865 4.82227Z" fill="black"/>
+            </svg>
+        </div>
+        <div class="source-text"><p class="reference">References:</p>{{ sources }}</div>
+    </div>   
+</div>
+{% endif %}

@@ -1,0 +1,121 @@
+<!-- -- single step start -- -->
+<div class="single_step section bg-yellow">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-6">
+                <div class="single_step">
+                    <div class="section_header ps-0">
+                        {% if section.settings.heading != blank %}
+                            <h2 class="title-lg">{{ section.settings.heading }}</h2> 
+                        {% endif %}
+            
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text }}
+                        {% endif %}
+                    </div>
+
+                    {%- for block in section.blocks -%}
+                        {% if block.type == 'button' %}
+                            {% if block.settings.button_label != blank %}
+                                <div class="get_clearer_wrapper text-center ms-0 d-none d-md-block">
+                                    <p><span><img src="https://qureskincaredns.com/new/assets/derma-sm.svg" alt=""></span>{{ block.settings.text_first }}</p>
+                                    <a class="btn btn-lg btn-primary btn_green" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</span>
+                                    </a>
+                                    <p><span> <img src="https://qureskincaredns.com/new/assets/money-sm.svg" alt=""></span>{{ block.settings.text_second }}</p>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {%- endfor -%}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="single-step_img h-100 d-none d-md-block">
+                    {% if section.settings.image != blank %}
+                        <img class="img-fluid h-100 rounded-20" src="{{ section.settings.image | img_url: '650x' }}" alt="{{ section.settings.image.alt | escape }}">
+                    {% endif %}
+                </div>
+                <div class="single-step_img d-block d-md-none">
+                    {% if section.settings.image != blank %}
+                        <img class="img-fluid rounded-20" src="{{ section.settings.image | img_url: '650x' }}" alt="{{ section.settings.image.alt | escape }}">
+                    {% endif %}
+                </div>
+
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'button' %}
+                        {% if block.settings.button_label != blank %}
+                            <div class="get_clearer_wrapper text-center ms-0 d-block d-md-none mt-3">
+                                <p><span><img src="https://qureskincaredns.com/new/assets/derma-sm.svg" alt=""></span>{{ block.settings.text_first }}</p>
+                                <a class="btn btn-lg btn-primary btn_green" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</span>
+                                </a>
+                                <p><span> <img src="https://qureskincaredns.com/new/assets/money-sm.svg" alt=""></span>{{ block.settings.text_second }}</p>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- single step end -- -->
+
+{% schema %}
+    {
+        "name": "Single step",
+        "class": "section-water-single-step",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_first",
+                        "label": "t:common.text.label",
+                        "default": "Dermatologist-Reviewed"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_second",
+                        "label": "t:common.text.label",
+                        "default": "30-Day Money-Back Guarantee"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+            {
+                "name": "Single step"
+            }
+        ]
+    }
+{% endschema %}

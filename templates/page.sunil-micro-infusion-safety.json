@@ -1,0 +1,55 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "header_landing_simple_3CxYX4": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_g84yGa": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO USE",
+            "link_url": "https://qureskincare.com/pages/microinfusion-safety-guide#step6"
+          }
+        },
+        "navigation_link_ReYBdr": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "SAFETY GUIDE",
+            "link_url": "https://qureskincare.com/pages/microinfusion-safety-guide#step4"
+          }
+        },
+        "navigation_link_38etq9": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQ",
+            "link_url": "https://qureskincare.com/pages/microinfusion-safety-guide#step10"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_g84yGa",
+        "navigation_link_ReYBdr",
+        "navigation_link_38etq9"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "temp-page-sunil-micro-infusion-safety",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "header_landing_simple_3CxYX4",
+    "main"
+  ]
+}

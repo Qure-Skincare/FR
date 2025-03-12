@@ -1,0 +1,84 @@
+{% comment %} 
+  Render Purchase Step 1 Cards Container
+  
+    Note: This snippet is used to render the container of the first step of the purchase process.
+  
+    Need:
+  
+    Accepts:
+    - name: {String} - The name of the section.
+    - productOne: {Object} - The first product data.
+    - productTwo: {Object} - The second product data.
+    - productThree: {Object} - The third product data.
+    - productOneInfo: {Object} - The first product information.
+    - productTwoInfo: {Object} - The second product information.
+    - productThreeInfo: {Object} - The third product information.
+    - checkIcon: {String} - The check icon.
+    - crossIcon: {String} - The cross icon.
+  
+    Usage:
+    {% render 'pdm_landing-purchase-step1-cards-container-mobile', 
+      name: 'products1',
+      productOne: productOne,
+      productTwo: productTwo,
+      productThree: productThree,
+      productOneInfo: productOneInfo,
+      productTwoInfo: productTwoInfo,
+      productThreeInfo: productThreeInfo,
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+
+{% endcomment %}
+
+
+{% liquid
+  assign price_3 = productThree.price | money_without_currency
+  if price_3 == blank
+    assign price_3 = 0
+  endif
+%}
+
+  <div
+    data-position="1"
+    data-input="{{ name }}"
+    class="step1-purchase-card-container"
+  >
+    {% render 'pdm_landing-purchase-step1-card-mobile', 
+      productData: productOne, 
+      productInfo: productOneInfo
+      parentContainer: 'parent-mobile-{{ name }}',
+      uniqueId: 'collapseOneMobile'
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+  </div>
+
+  <div
+    data-position="2"
+    data-input="{{ name }}"
+    class="step1-purchase-card-container"
+  >
+    {% render 'pdm_landing-purchase-step1-card-mobile', 
+      productData: productTwo, 
+      productInfo: productTwoInfo 
+      uniqueId: 'collapseTwo'
+      parentContainer: 'parent-{{ name }}',
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+  </div>
+  <div
+    data-position="3"
+    data-input="{{ name }}"
+    class="step1-purchase-card-container"
+  >
+    {% render 'pdm_landing-purchase-step1-card-mobile', 
+      productData: productThree, 
+      productInfo: productThreeInfo 
+      uniqueId: 'collapseThree'
+      parentContainer: 'parent-{{ name }}',
+      checkIcon: checkIcon,
+      crossIcon: crossIcon
+    %}
+  </div>

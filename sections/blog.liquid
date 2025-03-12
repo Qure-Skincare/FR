@@ -1,0 +1,53 @@
+<div class="blogs_wrapper">
+    <div class="blogs_tab_wrapper">
+        <div class="container">
+            <ul>
+                {% for link in linklists.blog-menu.links %}
+                    <li>
+                        <a href="{{ link.url }}" class="blogs_tab{% if link.current %} active{% endif %}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="blogs_tab_info" style="--column-gap:45px; --column-gap-mobile:30px;">
+        <div class="container">
+            <div class="row custom__grid">
+                <div class="col-md-9 custom__block">
+                    <div class="post_wrapper">
+                        {% case blog.handle %}
+                            {% when 'light-therapy' %}
+                                {% render 'blog-post' with blog_handle: 'light-therapy', limit: 9 %}
+                            {% when 'skin' %}
+                                {% render 'blog-post' with blog_handle: 'skin', limit: 9 %}
+                            {% when 'skincare' %}
+                                {% render 'blog-post' with blog_handle: 'skincare', limit: 9 %}
+                            {% when 'all' %}
+                                {% render 'blog-post' with blog_handle: 'all', limit: 9 %}   
+                        {% endcase %}
+                    </div>
+                </div>
+                <div class="col-md-3 custom__block d-md-inline-block d-none">
+                    <div class="most_popular">
+                        <div class="most_popular_title"><strong>Don’t miss</strong> <span class="mx-2">|</span>
+                            <span style="font-style: italic;letter-spacing: 0.3px;">Most Popular</span>
+                        </div>
+                        </div>
+                        {% render 'blog-post-popular' with blog_handle: 'all', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'all', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                        {% render 'blog-post-popular' with blog_handle: 'all', limit: 1, offset:2 %}
+                        {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                        {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

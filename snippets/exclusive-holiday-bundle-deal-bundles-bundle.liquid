@@ -1,0 +1,379 @@
+{% if block.settings.product != blank %}
+
+    {% assign product = block.settings.product %}
+    {% assign bundleId = product.handle %}
+    {% assign product_variant = product.variants.first.id %}
+    {% assign product_variant_available = product.variants.first.available %}
+    {% assign product_price = product.price | money_without_trailing_zeros %}
+    {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
+    {% assign product_price_divided = product.price | divided_by: 4 | money_without_trailing_zeros %}
+    {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+    {% assign __media_limit = 10 %}
+    {% if block.settings.media_limit > 0 %}
+        {% assign __media_limit = block.settings.media_limit %}
+    {% endif %}
+
+    {% if block.settings.default_variant_id != blank %}
+        {% assign product_variant = block.settings.default_variant_id %}
+    {% endif %}
+
+    <script>
+        if (typeof bundle_variants === 'undefined') {
+            var bundle_variants = {};
+        }
+        {% if product.variants.size > 0 %}
+            bundle_variants['{{ bundleId }}'] = {};
+            {% for variant in product.variants %}
+                bundle_variants['{{ bundleId }}']['{{ variant.title }}'] = {{ variant.id }};
+            {% endfor %}
+        {% endif %}
+    </script>
+
+    {% if block.settings.recommended_heading != blank %}
+        {% capture recommended %}
+            <div class="bfs_recommendItem">
+                <div class="bfs_recommend">
+                    {% if block.settings.recommended_image != blank %}
+                        <div class="bfs_recommend_img">
+                            <img src="{{ block.settings.recommended_image | img_url: '150x' }}" alt="{{ block.settings.recommended_image.alt | escape }}" class="img-fluid" />
+                        </div>
+                    {% endif %}
+                    {% if block.settings.recommended_text != blank %}
+                        <div class="bfs_recommend_marquee">
+                            {{ block.settings.recommended_text }}
+                        </div>
+                    {% endif %}
+                </div>
+                {% if block.settings.recommended_heading != blank %}
+                    {{ block.settings.recommended_heading }}
+                {% endif %}
+            </div>
+            {% if block.settings.is_top_rated == true %}
+                <div class="bfs_top-rated">
+                    <p>Dermatologist</p>
+                    <h6>TOP RATED</h6>
+                </div>
+            {% endif %}
+        {% endcapture %}
+    {% endif %}
+    
+    {% if block.settings.is_preorder == true %}
+        {% capture preorder %}
+            <div class="bfs_preOrderItem">
+                <p class="pre">PRE-ORDER</p>
+                <p class="ships">{{ block.settings.preorder_text }}</p>
+            </div>      
+        {% endcapture %}
+    {% endif %}
+
+    {% assign is_types = false %}
+
+    {% for __id in children %}
+        {% unless is_type %}
+            {% assign __block = section.blocks | where: "id", __id | first %}
+            {% if __block %}
+                {% if __block.type == 'include' and __block.settings.type != blank %}
+                    {% assign is_types = true %}
+                {% endif %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %} 
+
+    {% if is_types == true %}
+        {% capture types %}
+            <div class="tmt_type">
+                <h6>Select treatment type:</h6>
+                <div class="tmt_type_grid">
+                    {% assign is_type_count = 1 %}
+                    {% for __id in children %}
+                        {% assign __block = section.blocks | where: "id", __id | first %}
+                        {% if __block %}
+                            {% if __block.type == 'include' and __block.settings.type != blank %}
+                                <div class="form-check">
+                                    <input class="form-check-input type_radio" type="radio" name="type_d1" id="{{ __id }}" value="{{ __block.settings.type }}"{% if is_type_count == 1 %}checked{% endif %}>
+                                    <label class="tmt_type_label form-check-label" for="{{ __id }}">{{ __block.settings.type }}</label>
+                                </div>
+                                {%- assign is_type_count = is_type_count | plus: 1 -%}
+    
+                                {% if __block.settings.text != blank %}
+                                    <div 
+                                        id="{{ __id }}_settings"
+                                        {% if __block.settings.heading != blank %}data-title="{{ __block.settings.heading | escape }}"{% endif %}
+                                        {% if __block.settings.image != blank %}data-image="{{ __block.settings.image | img_url: '200x' }}"{% endif %}
+                                        style="display:none">
+                                        {{ __block.settings.text }}
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %} 
+                </div>
+            </div>
+    
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function {{ bundleId |  replace: '-', '_'  }}_types() {
+                        var bundleBlock = document.getElementById("{{ bundleId }}");
+    
+                        if (bundleBlock) {
+                            var radioInputs = bundleBlock.querySelectorAll("input.type_radio");
+                            var imageElement = bundleBlock.querySelector(".imageFaucet");
+                            var titleElement = bundleBlock.querySelector(".bfs_tbx_title");
+                            var modalElement = bundleBlock.querySelector(".modal-body");
+    
+                            radioInputs.forEach(input => {
+                                input.addEventListener("click", function () {
+                                    var sourceElement = document.getElementById(this.id + '_settings');
+                                    
+                                    if(imageElement)
+                                    {
+                                        titleElement.textContent = sourceElement.getAttribute('data-title')
+                                    }
+    
+                                    if(titleElement)
+                                    {
+                                        imageElement.src = sourceElement.getAttribute('data-image');
+                                    }
+    
+                                    if(modalElement)
+                                    {
+                                        modalElement.innerHTML = sourceElement.innerHTML;
+                                    }
+                                });
+                            });
+                        }
+                    };
+    
+                    {{ bundleId |  replace: '-', '_'  }}_types();
+                });
+            </script>       
+        {% endcapture %}     
+    {% endif %}
+
+    <div class="bfs_bf_item{% if is_types == true %} type-varient{% endif %}{% if block.settings.classname != blank %} {{ block.settings.classname }}{% endif %}{% if block.settings.hide_us %} hide_us{% endif %}" id="{{ bundleId }}">
+        <div class="bfs_bf_item_slider">
+            <div class="swiper twa__swiper_thumbs" data-section-id="{{ bundleId }}" data-autoplay="false"
+                data-loop="false" data-speed="500" data-mobile="1" data-tablet="1"
+                data-desktop="1" data-arrowleft="twa__swiper_thumbs-{{ bundleId }}-swiper-prev"
+                data-arrowright="twa__swiper_thumbs-{{ bundleId }}-swiper-next">
+                <div id="twa__swiper_thumbs-{{ bundleId }}">
+                    <div class="swiper-wrapper">
+                        {% for media in product.media limit: __media_limit %}
+                            {% assign add_recommended = false %}
+                            {% assign add_preorder = false %}
+
+                            {% if forloop.first and recommended != blank %}
+                                {% assign add_recommended = true %}
+                            {% endif %}
+
+                            {% if forloop.first and preorder != blank %}
+                                {% assign add_preorder = true %}
+                            {% endif %}
+
+                            <div class="swiper-slide">
+                                <div class="bfs_bf_itemSlide{% if add_recommended %} bfs_recommend_wrap{% endif %}">
+                                    <img src="{{ media | img_url: '540x' }}" class="img-fluid" />
+                                    {% if add_recommended %}
+                                        {{ recommended }}
+                                    {% endif %}
+                                    {% if add_preorder %}
+                                        {{ preorder }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="thumbsSlider_wrap">
+                    <div id="twa__thumb-{{ bundleId }}" class="swiper-thumbs">
+                        <div class="swiper-wrapper">
+                            {% for media in product.media limit: __media_limit %}
+                                <div class="swiper-slide">
+                                    <div class="bfs_bf_itemThumb">
+                                        <img src="{{ media | img_url: '240x' }}" class="img-fluid" />
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="twa__swiper_thumbs-{{ bundleId }}-swiper-next custom-next swiper-button"
+                        style="color:#fff;">
+                    </div>
+                    <div class="twa__swiper_thumbs-{{ bundleId }}-swiper-prev custom-prev swiper-button"
+                        style="color:#fff;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bfs_bf_item_pdtInfo text-start bf-bundles__content">
+            <div class="bfs_pdtTitle">
+                {{ product.title }}
+            </div>
+            <div class="bfs_pdtPriceWrap">
+                <div class="bfs_pdtPriceAfter">
+                    {{ product_price  }}
+                </div>
+                <div class="bfs_pdtPriceBefore">
+                    {{ product_price_compare }}
+                </div>
+                {% if product.compare_at_price %}
+                    <div class="bfs_pdtPriceOff">
+                        {{ discount_percentage }}% OFF
+                    </div>
+                {% endif %}
+            </div>
+            <div class="payment_method m-0">
+                <p>OR 4 monthly payments {{ product_price_divided }} with</p>
+                <div class="pmt_img ps-2">
+                    <img src="{{ 'bfs_pm.svg' | asset_url }}" alt="">
+                </div>
+            </div>
+            {{ types }}
+        </div>
+            <button data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" class="bfs_bf_item_buyBtn{% if product_variant_available == false and preorder == blank %} soldout{% endif %}" style="--bgPercent:30%">
+                <div class="stock_left">{{ block.settings.percent }}%<div>of stock left</div>
+                </div>
+                {% if preorder != blank %}
+                    <div class="add_cart">Pre-Order Now</div>
+                {% else %}
+                    <div class="add_cart"><span class="me-1">+</span>{% if product_variant_available %}Add to Cart{% else %}Sold out{% endif %}</div>
+                {% endif %}
+            </button>
+            {% if children != blank %}
+                <div class="bfs_bf_item_tabs mt-4">
+                    <ul class="nav nav-pills mb-3" id="pills-{{ bundleId }}-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-included-{{ bundleId }}-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-included-{{ bundleId }}" type="button"
+                                role="tab" aria-controls="pills-included-{{ bundleId }}" aria-selected="true">What’s
+                                Included</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-use-{{ bundleId }}-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-use-{{ bundleId }}" type="button" role="tab"
+                                aria-controls="pills-use-{{ bundleId }}" aria-selected="false">How to
+                                Use</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-{{ bundleId }}-tabContent">
+                        <!-- included -->
+                        <div class="tab-pane fade show active" id="pills-included-{{ bundleId }}" role="tabpanel" aria-labelledby="pills-included-{{ bundleId }}-tab">
+                            <div class="bfs_bf_item_tabContent">
+                                {% for __id in children %}
+                                    {% assign __block = section.blocks | where: "id", __id | first %}
+
+                                    {% if __block %}
+                                        {% if __block.type == 'include' %}
+
+                                            {% assign target = 'Faucet' %}
+
+                                            {% if __block.settings.heading contains 'Shower' %}
+                                                {% assign target = 'Shower' %}
+                                            {% endif %}
+
+                                            <div class="bfs_tabContent_bx text-start"{% if __block.settings.hide %} style="display:none;"{% endif %}>
+                                                {% if __block.settings.image != blank %}
+                                                    <img src="{{ __block.settings.image | img_url: '200x' }}" alt="{{ __block.settings.image.alt | escape }}" class="img-fluid image{{ target }}">
+                                                {% endif %}
+
+                                                <div class="bfs_tbx_info">
+                                                    {% if __block.settings.is_limited == true %}
+                                                        <div class="bfs_tbx_limited">Limited Edition</div>
+                                                    {% endif %}
+                                                    {% if __block.settings.heading != blank %}
+                                                        <div class="bfs_tbx_title">{{ __block.settings.heading }}</div>
+                                                    {% endif %}
+                                                    {% if __block.settings.count != blank %}
+                                                        <div class="bfs_tbx_lowStock">Low Stock <span>- {{ __block.settings.count }}</span></div>
+                                                    {% endif %}
+                                                </div>
+
+                                                {% if __block.settings.code != blank %}
+                                                    {% capture __selector %}colorSelector{{ target }}{% endcapture %}
+                                                    {{ __block.settings.code |  replace: 'colorSelector', __selector }}
+                                                {% else %}
+                                                    {% if __block.settings.hide_variants == false %}
+                                                        {% if product.variants.size > 1 and __block.settings.text == blank %}
+                                                            <div class="bfs_tbx_color">
+                                                                <select class="form-select colorSelector{{ target }}" aria-label="{{ product.title | escape }} variants">
+                                                                    {% for variant in product.variants %}
+                                                                        <option value="{{ forloop.index }}" data-variant-id="{{ variant.id }}"{% if forloop.index == 1 %}selected{% endif %}>{{ variant.title }}</option>
+                                                                    {% endfor %}
+                                                                </select>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                {% endif %}
+
+                                                {% if __block.settings.text != blank %}
+                                                    <div class="popup-content">
+                                                        <button type="button" class="btn bfs_tbx_ing" data-bs-toggle="modal" data-bs-target="#pop-{{ __block.id }}">Ingredients List</button>
+                                                        <div class="modal fade" id="pop-{{ __block.id }}"
+                                                            data-bs-backdrop="static" data-bs-keyboard="false"
+                                                            tabindex="-1" aria-labelledby="pop-{{ __block.id }}-Label"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        {{ __block.settings.text }}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>     
+                                                {% endif %}
+                                            </div>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <!-- how to use slider -->
+                        <div class="tab-pane fade popup-content" id="pills-use-{{ bundleId }}" role="tabpanel" aria-labelledby="pills-use-{{ bundleId }}-tab">
+                            <div>
+                                <div class="swiper twa__swiper dot_pagination"
+                                    id="twa__swiper-bfs_howUse-{{ bundleId }}" data-section-id="bfs_howUse-{{ bundleId }}"
+                                    data-autoplay="false" data-loop="false" data-centerslide="false"
+                                    data-mobile="1" data-tablet="1" data-desktop="1" data-spacing="10"
+                                    data-arrowleft="bfs_howUse-{{ bundleId }}-swiper-prev"
+                                    data-arrowright="bfs_howUse-{{ bundleId }}-swiper-next">
+                                    <div class="swiper-wrapper">
+                                        {% for __id in children %}
+                                            {% assign __block = section.blocks | where: "id", __id | first %}
+
+                                            {% if __block %}
+                                                {% if __block.type == 'how-to-use' %}
+                                                    <div class="swiper-slide">
+                                                        <div class="bfs_howUseWrap">
+                                                            {% if __block.settings.image != blank %}
+                                                                <img src="{{ __block.settings.image | img_url: '200x' }}" alt="{{ __block.settings.image.alt | escape }}" class="img-fluid">
+                                                            {% endif %}
+                                                            {% if __block.settings.text != blank %}
+                                                                <div class="bfs_howUseInfo text-start">
+                                                                    {{ __block.settings.text 
+                                                                        |  replace: '<ul>', '<ul class="li_decimal">' 
+                                                                    }}
+                                                                </div>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+    </div>
+{% endif %}

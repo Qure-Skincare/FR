@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header_landing_simple_zFxaEH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_T4mJ8V": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO USE",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#how-to-use"
+          }
+        },
+        "navigation_link_LteKNY": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "QURE APP",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#getting-started"
+          }
+        },
+        "navigation_link_bzjzjf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "TROUBLESHOOT",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#troubleshooting"
+          }
+        },
+        "navigation_link_4nUk64": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CARE",
+            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#take-care"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_T4mJ8V",
+        "navigation_link_LteKNY",
+        "navigation_link_bzjzjf",
+        "navigation_link_4nUk64"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "custom-q-rejuvalight-pro-welcome",
+      "blocks": {
+        "object_jkjVz9": {
+          "type": "object",
+          "settings": {
+            "heading": "Let’s get started",
+            "image": "shopify://shop_images/knowledge.svg",
+            "text": "<p>Everything you need to know to kickstart your journey with Q-Rejuvalight Pro.</p>",
+            "button_label": "Quick-Start Guide",
+            "button_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide",
+            "button_image": "shopify://shop_images/quick_start.svg",
+            "button_label_second": "Download Full Manual",
+            "button_url_second": "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Q-Rejuvalight_Pro_Facewear-Manual-Jan-2025-160x140mm_5.pdf?v=1738945249",
+            "button_image_second": "shopify://shop_images/download.svg"
+          }
+        },
+        "object_HhDQ9F": {
+          "type": "object",
+          "settings": {
+            "heading": "Changed your mind?",
+            "image": "shopify://shop_images/return.svg",
+            "text": "<p>See how you can easily return<br/>your Q-Rejuvalight Pro.</p>",
+            "button_label": "Hassle-Free Returns",
+            "button_url": "shopify://pages/returns-exchanges",
+            "button_label_second": "Button label",
+            "button_url_second": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_jkjVz9",
+        "object_HhDQ9F"
+      ],
+      "settings": {
+        "heading": "Welcome to Qure!",
+        "btm_text": "<p>If you have any questions, our team is here for support!</p>",
+        "wistia_id": "2jl8ah5r5n",
+        "btn_label": "Contact Us",
+        "btn_url": "https://www.qureskincare.com/pages/contact-us"
+      }
+    }
+  },
+  "order": [
+    "header_landing_simple_zFxaEH",
+    "main"
+  ]
+}

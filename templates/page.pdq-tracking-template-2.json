@@ -1,0 +1,43 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "17115385750c73305f": {
+      "type": "apps",
+      "blocks": {
+        "pdq_checkout_fulfill_ship_tracking_page_cCxNPg": {
+          "type": "shopify:\/\/apps\/pdq-checkout-fulfill-ship\/blocks\/tracking-page\/a668eab0-b569-4206-8f4c-a0f244820a6b",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "pdq_checkout_fulfill_ship_tracking_page_cCxNPg"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+      }
+    },
+    "1723811635f4799cbc": {
+      "type": "apps",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "17115385750c73305f",
+    "main",
+    "1723811635f4799cbc"
+  ]
+}

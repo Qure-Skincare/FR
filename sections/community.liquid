@@ -1,0 +1,100 @@
+<!-- -- skincare journey start -- -->
+<div class="skincare_journey section" id="{{ section.id }}">
+    <div class="container">
+        <div class="sj_grid">
+            <div class="sj_header">
+                <div class="section_header">
+                    {% if section.settings.head_txt != blank %}
+                    <h2 class="title-lg  mx-auto mb-0 mb-md-4">
+                        {{ section.settings.head_txt }}
+                    </h2>
+                    {% endif %}
+                    {% if section.settings.btn_txt != blank %}
+                    <a target="_blank" href="{{ section.settings.btn_url }}"
+                        class="btn_black d-none d-md-inline-block mt-4">{{ section.settings.btn_txt }}</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="sj_content_wrap">
+                
+                {% for block in section.blocks %}
+                {% case block.type %}
+                {% when 'blog' %}  
+                {% assign articleId = block.settings.article %}
+                
+                    <a target="_blank"
+                        href="{{ articleId.url }}"
+                        class="sj_item">
+                        <div class="sj_img">
+                            <img src="{{ articleId.image | img_url: 'master' }}" alt="{{ articleId.image.alt }}" class="img-fluid">
+                        </div>
+                        <div class="sj_content">
+                            <div class="sj_info">#{{ articleId | split: '/' | first }}
+                            </div>
+                            <div class="sj_title">{{ articleId.title }}
+                            </div>
+                        </div>
+                    </a>
+                {% endcase %} 
+                {% endfor %}
+            </div>
+            <a target="_blank" href="{{ section.settings.btn_url }}" class="btn_black d-inline-block d-md-none">{{ section.settings.btn_txt }}</a>
+        </div>
+    </div>
+</div>
+
+{% style %}
+#{{ section.id }} .sj_img img{
+    height: 116px;
+    width: 116px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+@media(max-width: 767px){
+    #{{ section.id }} .sj_img img{
+        height: 75px;
+    }
+}
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "t:sections.posts.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "head_txt",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "text",
+            "id": "btn_txt",
+            "label": "t:common.button.label"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "t:common.button.url.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "blog",
+            "name": "t:common.blog.label",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "article",
+                    "id": "article",
+                    "label": "t:common.blog.label"
+                    }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.posts.name"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,150 @@
+.offer-lp .thumbsSlider_wrap .swiper-thumbs {
+    max-width: calc(100% - 70px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.offer-lp .thumbsSlider_wrap {
+    position: relative;
+}
+
+.offer-lp .thumbsSlider_wrap .swiper-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
+}
+
+.offer-lp .thumbsSlider_wrap .swiper-button-next,
+.offer-lp .thumbsSlider_wrap .custom-next {
+    right: -20px;
+}
+
+.offer-lp .thumbsSlider_wrap .swiper-button-prev {
+    left: -20px;
+}
+
+.bfs_bf_item_slider {
+    position: relative;
+}
+
+.thumbsSlider_wrap .swiper-thumbs .swiper-slide {
+    overflow: hidden;
+}
+
+.thumbsSlider_wrap .swiper-thumbs .swiper-slide-thumb-active img {
+    border: 1px solid #000;
+    border-radius: 8px;
+    opacity: 1;
+}
+.thumbsSlider_wrap .swiper-thumbs img{
+    border: 1px solid transparent;
+    opacity: .5;
+}
+.offer-lp .thumbsSlider_wrap {
+    position: relative;
+}
+.subscribe_save_wrapper .with_subscription.buy_btn {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 14px;
+}
+.choose_bundle-offer h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Canela Web";
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 57.37px;
+    letter-spacing: 0.45px;
+}
+.choose_bundle-offer .bundle_offer-content {
+    border-radius: 9.156px;
+    border: 2px solid #C7E7DC;
+    padding: 30px 40px 30px;
+    height: 100%;
+}
+.offer-lp .thumbsSlider_wrap .swiper-button-next {
+    right: 0;
+}
+.offer-lp .thumbsSlider_wrap .swiper-button {
+    height: 44px;
+    width: max-content;
+    background: transparent;
+    box-shadow: unset;
+}
+.offer-lp .thumbsSlider_wrap .swiper-button-prev {
+    left: 0;
+}
+.offer-lp .refill_info .section_header p {
+    letter-spacing: 0.16px;
+    padding: 0;
+}
+.press_bl .ps_wrapper .ps_item {
+    margin: 0;
+}
+.planBlock .monthly_plans .plan_hdr h3 {
+    font-size: 16px;
+}
+.planBlock .monthly_plans .price {
+    font-size: unset;
+}
+.planBlock .monthly_plans .price .regular_price{
+    font-size: 23px;
+}
+.planBlock .monthly_plans .price .sale_price{
+    font-size: 21px;
+}
+.offer-lp .silk_heading {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+}
+.btn_green{
+    font-size: 22px;
+}
+@media(max-width: 767px){
+    .btn_green{
+        font-size: 22px;
+    }
+    .choose_bundle-offer h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .choose_bundle-offer .bundle_offer-content {
+        border: 0;
+        padding: 20px 0 10px;
+    }
+    .trusted_bl.trustedVerified {
+        padding: 30px 0;
+    }
+    .black_friday .bf_discount, .black_friday .planBlock .monthly_plans .bf_discount {
+        padding: 1px 6px;
+        font-size: 10px;
+    }
+    .planBlock .monthly_plans .price .regular_price{
+        font-size: 20px;
+    }
+    .planBlock .monthly_plans .price .sale_price{
+        font-size: 18px;
+    }
+    .planBlock .monthly_plans .plan_hdr h3 {
+        font-size: 14px;
+    }
+    .offer-lp .ss_list ul li {
+        line-height: 22px;
+    }
+    .all_in_one .skincare_slider {
+        padding: 20px 0 10px;
+    }
+    .all_in_one .accordionTechnologyWrapper {
+        padding-top: 0px;
+    }
+    .planBlock .monthly_plans .plan_des .plan_des{
+        max-width: 163px;
+    } 
+}

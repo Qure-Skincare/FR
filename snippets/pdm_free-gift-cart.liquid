@@ -1,0 +1,18 @@
+{% comment %}
+  For show quantity and price to gift product
+  Usage: render 'pdm_free-gift-cart', itemCart: item
+{% endcomment %}
+<div class="drawer__cart-quantity drawer__pdm-free-test">
+  <a href="javascript:;" style="color:#e4e0e0">
+    -
+  </a>
+  <p class="drawer__cart-item-q">{{ itemCart.quantity }}</p>
+  <a href="javascript:;" style="color:#e4e0e0">
+    +
+  </a>
+</div>
+
+<div class="drawer__cart-item-price drawer__pdm-free-test">
+  <p class="old-price"><span class="money">{{ itemCart.variant.price | money_without_trailing_zeros }}</span></p>
+  <p class="new-price test"><span class="money">{{ itemCart.price | money_without_trailing_zeros }}</span></p>
+</div>

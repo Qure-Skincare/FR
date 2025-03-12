@@ -1,0 +1,418 @@
+.mi_lp.mi_lp_v2 .offer_active .supply_steps .step_block .step_content .serumBlock input.active+.serum_prd:after {
+    display: none;
+}
+
+.mi_lp.mi_lp_v2 .planBlock .plan_choosed span {
+    background: #000;
+}
+
+.mi_lp.mi_lp_v2 .planBlock .plan_choosed {
+    text-align: left;
+    position: relative;
+    left: 30px;
+    max-width: 100%;
+}
+
+.mi_landing .img_grid.img_grid_row .cg_thumnail {
+    padding-top: 4px;
+}
+
+.mi_landing .shipping.one_line .s_bx p {
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+.mi_landing .refill_bl .refill_info {
+    max-width: 558px;
+}
+
+.see_work.video_popup {
+    position: relative;
+}
+
+.mi_landing .announcement_bar p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.13px
+}
+
+.mi_landing .see_work .play_btn {
+    right: 15px;
+    justify-content: flex-end;
+    bottom: 0;
+}
+
+.mi_landing .main_banner .unique_c_list ul li {
+    padding: 5px 0;
+}
+
+.mi_landing .reasons {
+    background: var(--clr-grey)
+}
+
+.result_content p {
+    font-style: italic;
+}
+
+.mi_landing .announcement_bar p {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.13px
+}
+
+.mi_landing .refill_bl .refill_info .ss_list ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.mi_landing .buy_btn a {
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mi_landing .skin_item_header {
+    font-weight: 300;
+    font-family: 'Canela Light';
+    font-size: 28px;
+    line-height: 32px;
+    padding: 10px;
+    margin: 0 10px;
+    border-bottom: 1px solid #EDE7DD;
+    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+.mi_landing .skincare_right {
+    padding: 10px;
+}
+
+.mi_landing .result_s .r_c_info {
+    padding: 4px 10px;
+    background: #f4f4f4;
+}
+
+.mi_landing .result_s .result_s_wrapper .result_item .ss_list li {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.mi_landing .result_content p {
+    opacity: 0.8;
+    font-style: normal;
+}
+
+.mi_landing .beauty_skincare .section_header {
+    max-width: 650px;
+    padding-bottom: 70px;
+}
+
+
+.mi_landing .tmtFtrs_block .tmtFtr_des {
+    font-size: 11px;
+}
+
+.mi_landing .cg_desc_green {
+    color: #008763;
+}
+
+.mi_lp .planBlock .plan_choosed span {
+    background: #C92127;
+}
+
+.mi_lp .offer_tag {
+    background-color: #C92127;
+    max-width: fit-content;
+    padding: 0 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.13px;
+}
+
+.mi_lp .offer_active .supply_steps .step_block .step_content .serumBlock input.active+.serum_prd:after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: '';
+    background-image: url("../assets/1+1free.svg");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.limited_offer-text {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.11px;
+    padding-bottom: 10px;
+}
+
+.available_bar p {
+    font-weight: 500;
+}
+
+.offer_active .btn_icon {
+    display: none;
+}
+
+.mi_landing .joinMicro .ba_wrapper .ss_list ul li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 26px;
+}
+
+.mi_landing .joinMicro .ba_wrapper .ss_list ul li:before {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.best_result .section_header {
+    max-width: 898px;
+}
+
+.best_result .safety_wrapper {
+    max-width: 929px;
+    margin: 0 auto;
+}
+
+.progress_bar .loading_bar_wrap {
+    height: 20px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    overflow: hidden;
+}
+
+.progress_bar .loading_bar {
+    background-color: #C92127;
+    height: 100%;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 1rem;
+}
+
+.progress_bar p {
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16.8px;
+}
+
+.mi_landing .beauty_skincare .bs_content {
+    padding: 0px;
+}
+
+.mi_landing .beauty_img {
+    width: 100%;
+}
+
+.mi_landing .main_banner .btn-lg,
+.mi_landing .clinical_grade .btn-lg {
+    font-size: 22px;
+    line-height: 25px;
+}
+
+
+.trusted_bl {
+    padding: 60px 0;
+}
+
+.trusted_cl {
+    padding: 0 !important;
+}
+
+.trusted_left .section_header {
+    padding: 20px 0px 50px 0;
+}
+
+.mi_landing_result .result_c_info .star_gp p {
+    line-height: 18px;
+}
+
+.choose_serum-note {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.11px;
+    padding-bottom: 10px;
+}
+
+
+@media(min-width:767px) {
+    .mi_landing .tmtFtrs_image img {
+        max-width: 455px;
+        max-height: 415px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .mi_landing .cg_desc_green {
+        margin-top: 20px;
+    }
+
+    .mi_landing .buy_btn a {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .mi_landing .shipping.one_line .s_bx p {
+        white-space: wrap;
+    }
+
+    .mi_landing .clinical_grade .img_grid.img_grid_row {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .mi_landing .clinical_grade .img_grid.img_grid_row .cg_main img {
+        border-radius: 7px;
+    }
+
+    .mi_landing .img_grid.img_grid_row .cg_thumnail {
+        padding-top: 0;
+        padding-left: 10px;
+    }
+
+    .mi_landing .see_work .play_btn {
+        justify-content: center;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .mb_contents {
+        text-align: center;
+    }
+
+    .mi_landing .skin_item_header {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .mi_landing .result_s .skincare_left {
+        padding: 24px 16px 0px;
+    }
+
+    .mi_landing .beauty_skincare .section_header {
+        padding-bottom: 40px;
+    }
+
+    .mi_landing .social_media {
+        padding-bottom: 0 !important;
+    }
+
+    .mi_landing .imageText.joinMicro .ss_list {
+        padding: 40px 0;
+    }
+
+    .mi_landing .main_banner .btn-lg,
+    .mi_landing .clinical_grade .btn-lg {
+        font-size: 18px;
+    }
+
+    .qure_MI_ftr {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .trusted_bl {
+        padding: 30px 0;
+    }
+
+    .qure_MI_ftr_wrap .btn-primary {
+        max-width: 100% !important;
+    }
+
+    .featured_promotion {
+        background-color: transparent;
+    }
+
+    .qure_MI_ftr_wrap {
+        padding-top: 0;
+    }
+
+    .mi_lp .planBlock .plan_choosed span {
+        font-size: 12px;
+        padding: 0px 10px;
+        vertical-align: bottom;
+    }
+
+    .planBlock .monthly_plans .price {
+        gap: 8px;
+    }
+
+    .pmtBlock .pmt_plans .price .regular_price {
+        font-size: 20px;
+    }
+
+    .pmtBlock .pmt_plans .price .pmt_prc+.pmt_prc {
+        font-size: 18px;
+    }
+
+    .planBlock .monthly_plans .price .regular_price {
+        font-size: 20px;
+    }
+
+    .planBlock .limited__offer .price .regular_price {
+        font-size: 18px;
+    }
+
+    .planBlock .limited__offer .price .plan_prc+.plan_prc {
+        font-size: 16px !important;
+    }
+
+    .planBlock .monthly_plans .price .plan_prc+.plan_prc {
+        font-size: 18px;
+    }
+
+    .planBlock .monthly_plans .price .sale_price {
+        font-size: 18px;
+    }
+
+    .supply_steps .step_block .serum_prd .serum_ttl span {
+        font-size: 10px;
+    }
+
+    .choose_serum .cs_item__accordion {
+        font-size: 12px;
+    }
+
+    .planBlock .monthly_plans .saved_price.saved_price50 {
+        font-size: 11px;
+    }
+
+    .planBlock .monthly_plans .plan_hdr .saved_price,
+    .planBlock .monthly_plans .saved_price {
+        font-size: 9px;
+    }
+
+    .supply_steps .step_counter span {
+        font-size: 11px;
+    }
+
+    .supply_steps .step_block .serum_prd .serum_ttl {
+        padding: 4px;
+    }
+
+    .supply_steps .step_block input:checked+.serum_prd .serum_ttl span {
+        font-weight: 500;
+    }
+
+    .limited__offer.monthly_plans {
+        padding: 6px 14px;
+    }
+}

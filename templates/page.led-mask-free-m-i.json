@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "header_landing_SSnaTx": {
+      "type": "header-landing",
+      "blocks": {
+        "announcement_68YDyx": {
+          "type": "announcement",
+          "settings": {
+            "heading": "SAVE $100 | FREE Worldwide Shipping",
+            "heading_mobile": "SAVE $100 | FREE Worldwide Shipping",
+            "color": "white",
+            "font_size_desktop": 14,
+            "font_size_mobile": 13
+          }
+        },
+        "navigation_link_enLf8t": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "REVIEWS",
+            "link_url": "#result_section",
+            "image": "shopify://shop_images/headerLanding-2.png"
+          }
+        },
+        "navigation_link_wPNEr9": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "SPECIAL OFFER",
+            "link_url": "#shop",
+            "image": "shopify://shop_images/header_specialOffer.webp"
+          }
+        },
+        "navigation_link_wVVWXW": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQS",
+            "link_url": "#faq_section",
+            "image": "shopify://shop_images/headerLanding-4.png"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_68YDyx",
+        "navigation_link_enLf8t",
+        "navigation_link_wPNEr9",
+        "navigation_link_wVVWXW"
+      ],
+      "settings": {
+        "button_label": "Save $357",
+        "button_url": "#shop"
+      }
+    },
+    "main": {
+      "type": "temp-page-mask-free-m-i",
+      "settings": {}
+    }
+  },
+  "order": [
+    "header_landing_SSnaTx",
+    "main"
+  ]
+}

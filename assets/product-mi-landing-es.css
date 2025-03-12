@@ -1,0 +1,148 @@
+.mi_landing_es .btn-lg {
+    padding: 20px 20px;
+}
+
+.mi-landing-page-es .header-new .header-logo,
+.mi-landing-page-es .header-new .menu {
+    /* width: auto; */
+}
+
+.mi_landing_es .compare_list_elements {
+    padding: 0 16px 45px;
+}
+
+.mi_landing_es .btn-atc {
+    padding: 12px 45px;
+}
+
+.mi_landing_es .buy_btn.see_detailed {
+    max-width: 440px;
+}
+
+.mi_landing_es .refill_s_tab .nav-pills .nav-link {
+    padding: 0 10px;
+}
+
+.mi_landing_es .mi_landing_result .result_c_info .star_gp p {
+    font-size: 12px;
+}
+
+.mi_landing_es .skin_item_header {
+    font-size: 22px;
+}
+
+.mi_landing_es .qure__treatments {
+    padding-right: 30px;
+}
+
+.mi_landing_es .pmtBlock .pmt_plans .pmt_options {
+    max-width: 180px;
+}
+
+.mi_landing_es .compare_listRow .compare_listHeadings {
+    padding: 0 24px 39px;
+}
+
+.mi_landing_es .imageText .it_info p {
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.13px;
+}
+.mi-landing-page-es .header-new .menu li {
+    padding-right: 19px;
+}
+.header-new .menu {
+    width: 44.33%;
+}
+.header-new .header-logo {
+    width: 13.33%;
+}
+@media (max-width: 767px) {
+    .mi-landing-page-es .header-new.new-hp-header {
+        padding: 5px 13px;
+    }
+
+    .mi-landing-page-es .header-new.new-hp-header .mobile-menu-custome {
+        margin-right: 22px;
+    }
+
+    .mi-landing-page-es .header_btn {
+        padding: 4px 6px;
+    }
+
+    .mi-landing-page-es .header_btn a {
+        font-size: 11px;
+    }
+
+    .mi_landing_es .btn-lg {
+        padding: 10px;
+        font-size: 14px !important;
+    }
+
+    .mi_landing_es .clinicla_grade_bar p,
+    .mi_landing_es .choose_serum .c_s_ques .ask-ques {
+        font-size: 9px;
+    }
+
+    .mi_landing_es .treatment_bar p {
+        font-size: 11px;
+    }
+
+    .mi_landing_es .featured_promotion {
+        background-color: transparent;
+    }
+
+    .mi_landing_es .bs_item h4 {
+        font-size: 17px;
+    }
+
+    .mi_landing_es .see_it .section_header h5 {
+        letter-spacing: 0.22px;
+    }
+
+    .mi_landing_es .planBlock .plan_choosed span {
+        font-size: 8px;
+    }
+
+    .mi_landing_es .pmtBlock .pmt_plans .pmt_options {
+        max-width: 140px;
+    }
+
+    .mi_landing_es .pmtBlock .pmt_plans .price {
+        font-size: 18px;
+    }
+
+    .mi_landing_es .see_detailed {
+        font-size: 20px !important;
+    }
+
+    .mi_landing_es .c_s_shipping .c_s_wrapper p,
+    .mi_landing_es .step_content .pmt_des,
+    .mi_landing_es .step_content .monthly_plans .plan_hdr h3,
+    .mi_landing_es .uno_bar p {
+        font-size: 10px;
+    }
+
+    .mi_landing_es .result_s .r_c_info {
+        padding: 4px 0px;
+    }
+
+    .mi_landing_es .imageText .it_info.dual_bl {
+        padding-left: 48px;
+    }
+
+    .mi_landing_es .choose_serum .col-md-6:last-child {
+        padding: 0;
+    }
+
+    .mi_landing_es .btn-atc {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .mi_landing_es .step_content .pmtBlock+.pmtBlock .pmt_options img {
+        width: 100%;
+        max-width: 40px;
+    }
+}

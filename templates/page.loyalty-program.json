@@ -1,0 +1,91 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-page-loyalty-program",
+      "settings": {}
+    },
+    "17333325327bc1f4c8": {
+      "type": "apps",
+      "blocks": {
+        "stamped_loyalty_referrals_page_summary_AKHFNP": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-summary\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_greeting_anonymous": "Hello there,",
+            "label_greeting_customer": "Hello {0},",
+            "label_greeting_description": "Get more from your skincare routine with Qure. Shop your favorite products and earn rewards like exclusive discounts and free products. The more you interact, the more you earn.\n\nIt’s time to drown out all the noise, forget all the hype and start listening to your skin.\n\nWith our Loyalty Qoins, you’ll keep earning rewards every time you shop with Qure.\n\nCreate an account and start collecting Qoins to help you on your way to confident, radiant skin.",
+            "label_signup": "Create your account",
+            "label_signin": "Login here",
+            "label_redeem": "Redeem Now",
+            "label_history": "Rewards History"
+          }
+        },
+        "stamped_loyalty_referrals_page_spendings_BFy4qR": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-spendings\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_title": "What do I get?",
+            "label_description": ""
+          }
+        },
+        "stamped_loyalty_referrals_page_how_it_works_6gNM6M": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-how-it-works\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_title": "How it Works",
+            "label_step_title_one": "Create Your Account",
+            "label_step_description_one": "Sign up today in just a few minutes\n\nand join the Skin I-Q Club!",
+            "label_step_title_two": "Earn Qoins ",
+            "label_step_description_two": "Every time you shop with Qure or share our message about skincare that respects and celebrates everyone’s beauty, you’ll earn more Qoins.",
+            "label_step_title_three": "Redeem Your Qoins",
+            "label_step_description_three": "We believe in choice which is why you can choose what to do with your Qoins. Save them up for free products or redeem them for their cash value."
+          }
+        },
+        "stamped_loyalty_referrals_vip_tiers_4FwJ9K": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/vip-tiers\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_title": "Club tiers & rewards"
+          }
+        },
+        "stamped_loyalty_referrals_page_earnings_c7HNiL": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-earnings\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_title": "Ways to earn Qure Qoins"
+          }
+        },
+        "stamped_loyalty_referrals_page_referral_n6N7Ky": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-referral\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_subtitle": "",
+            "label_title": "Refer a Friend",
+            "label_description": "Give your friend {0} off on their first skin-vestment and get {1} Qoins for each member you introduce to the Skin I-Q Club.",
+            "label_button": "Start referring now",
+            "label_send": "Send",
+            "label_email_customer": "Enter your email address:",
+            "label_email_friend": "Enter your friend's email address:",
+            "label_thank_you": "Your referral has been sent to your friend, thank you!"
+          }
+        },
+        "stamped_loyalty_referrals_rewards_activities_Xr8YHK": {
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/rewards-activities\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_title": "",
+            "label_activity": "",
+            "label_date": ""
+          }
+        }
+      },
+      "block_order": [
+        "stamped_loyalty_referrals_page_summary_AKHFNP",
+        "stamped_loyalty_referrals_page_spendings_BFy4qR",
+        "stamped_loyalty_referrals_page_how_it_works_6gNM6M",
+        "stamped_loyalty_referrals_vip_tiers_4FwJ9K",
+        "stamped_loyalty_referrals_page_earnings_c7HNiL",
+        "stamped_loyalty_referrals_page_referral_n6N7Ky",
+        "stamped_loyalty_referrals_rewards_activities_Xr8YHK"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "17333325327bc1f4c8"
+  ]
+}

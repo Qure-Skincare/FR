@@ -1,0 +1,178 @@
+/* .sc_table .row>* {
+    padding: 0;
+} */
+
+.sc_table .row {
+    padding: 10px 0;
+}
+
+.border-top-grey {
+    border-top: 1px solid #ddd;
+}
+
+.sc_header {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+    letter-spacing: 0.14px;
+}
+
+.sc_table a {
+    color: #000;
+}
+
+
+.sc_table {
+    text-align: left;
+}
+
+.cart_button_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.cart_button_wrap .cart_btn {
+    max-width: fit-content;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.018px;
+    letter-spacing: 0.18px;
+    padding: 14px 20px;
+}
+
+.cart_button_wrap .cart_btn.update_cart {
+    border: 1px solid #DADADA;
+}
+
+.shop_icon {
+    width: 157px;
+    border-radius: 100px;
+    text-align: center;
+    height: 55px;
+    position: relative;
+}
+
+.shop_icon div {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.shop_icon.shop_pay {
+    background-color: #5A31F4;
+}
+
+.shop_icon.pay_pal {
+    background-color: #F6C657;
+}
+
+.shop_icon.google_pay {
+    background-color: #000;
+}
+
+.cost_price {
+    text-decoration: line-through;
+}
+
+.sc_desc .c_desc a {
+    font-family: 'Canela Web';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+}
+
+.shop_button_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sc_table_headingMob {
+    display: none;
+    font-weight: 500;
+}
+
+.empty-img img {
+    max-width: 185px;
+}
+
+@media(max-width:767px) {
+    .c_desc {
+        text-align: left;
+        font-size: 13px;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .sc_header {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .sc_table {
+        font-size: 12px;
+    }
+
+    .cart_button_wrap {
+        justify-content: flex-end;
+        column-gap: 5px;
+        padding: 10px 13px;
+        margin-top: 20px;
+    }
+
+    .cart_button_wrap .cart_btn {
+        font-size: 16px;
+        padding: 11px 13px;
+        line-height: 20px;
+    }
+
+    .shop_button_wrap {
+        flex-direction: column;
+        align-items: end;
+        margin-top: 50px;
+    }
+
+    .sc_table_headingMob {
+        margin-right: 5px;
+        display: block;
+    }
+
+    .c_price {
+        display: flex;
+        gap: 10px;
+    }
+
+    .shop_icon {
+        height: 45px;
+    }
+}
+
+@media(max-width:400px) {
+    .cart_button_wrap {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .cart_button_wrap .cart_btn {
+        max-width: 100%;
+    }
+
+    .c_price {
+        display: flex;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,26 @@
+{% assign discount_value = block.settings.discount | divided_by: 100.0 | times: product.price | minus: product.price | abs %}
+
+{% if product.compare_at_price %}
+    {% assign product_price_discount = product.compare_at_price %}
+{% else %}
+    {% assign product_price_discount = discount_value %}
+{% endif %}
+
+{%- if product.handle contains 'q-urify-water-filter' -%}
+    {%- assign future_price = all_products['q-rify-replacement-water-filter'].price | times: 0.7 | money_without_trailing_zeros %}
+{%- else -%}
+    {%- assign future_price = discount_value | money_without_trailing_zeros -%}
+{%- endif -%}
+
+{% assign product_id = product.id %}
+{% assign product_variant_id = product.variants.first.id %}
+{% assign product_price = product.price | money_without_trailing_zeros %}
+{% assign discount_price = product_price_discount | money_without_trailing_zeros %}
+
+{% if product_custom == true %}
+    <style>
+        .new_price {
+            display: none;
+        }
+    </style>
+{% endif %}

@@ -1,0 +1,91 @@
+<section class="before-after-container">
+  <div class="before-after-container-wrapper">
+    <div class="panel__container refill_s_tab_content">
+      {% comment %} data {% endcomment %}
+      <div id="info-product" class="panel">
+        {% if template.name == 'product' %}
+          {% comment %} product {% endcomment %}
+          {% render 'pdm_product_carousel' %}
+        {% endif %}
+        {% unless template.name == 'product' %}
+          {% comment %} pages {% endcomment %}
+          {% for block in data %}
+            {% if block.type == 'product_in_page' %}
+              {% render 'pdm_products_page_carousel', block: block %}
+            {% endif %}
+          {% endfor %}
+        {% endunless %}
+      </div>
+      {% comment %} real results {% endcomment %}
+      <div id="info-result" class="panel active">
+        {% for block in data %}
+          {% if block.type == 'before_and_after' %}
+            {% render 'pdm_real_results', block: block %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% comment %} dermatologist {% endcomment %}
+      <div id="info-derma" class="panel">
+        <div class="derma-wrapper">
+          {% for block in data %}
+            {% if block.settings.video_new_section %}
+              <div class="video-container">
+                {{
+                  block.settings.video_new_section
+                  | video_tag: autoplay: true, controls: true, muted: true, loop: false, class: 'derma-video'
+                }}
+              </div>
+            {% endif %}
+            {%- if block.settings.video_wistia_id != blank -%}
+              <div class="wistia_responsive_padding" style="position:relative;">
+                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                  <div
+                    class="wistia_embed wistia_async_{{ block.settings.video_wistia_id }} seo=false videoFoam=true"
+                    style="height:100%;position:relative;width:100%;display: flex;align-items: center;"
+                  >
+                    <div
+                      class="wistia_swatch"
+                      style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"
+                    >
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% comment %} selector {% endcomment %}
+    <div class="selector-container">
+      <ul class="nav-wrapper">
+        <li class="nav-item">
+          <button
+            class="nav-button"
+            id="productButton"
+          >
+            {{ dataSection.text_label_real_result_1 }}
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            id="resultButton"
+            class="nav-button active"
+          >
+            {{ dataSection.text_label_real_result_2 }}
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            id="dermaButton"
+            class="nav-button"
+          >
+            {{ dataSection.text_label_real_result_3 }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

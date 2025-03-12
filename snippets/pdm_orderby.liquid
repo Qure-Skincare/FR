@@ -1,0 +1,32 @@
+{% comment %} 
+
+
+{% endcomment %}
+{% liquid
+  assign show_order_us = settings.show_order_by_receive_by_us
+  assign start_date_order = settings.start_time_order
+  assign end_date_order = settings.end_time_order
+%}
+
+{% if settings.today_text != blank %}
+  <div class="orderby-receiveby hidden">
+    <div class="orderby-receiveby__today">
+      {% render 'pdm_icon-package' %}
+      <span class="orderby-receiveby__today-text">{{ settings.today_text }}</span>
+      {% render 'pdm_icon-arrow-right' %}
+    </div>
+    <div class="orderby-receiveby__dates">
+      {% render 'pdm_icon-truck' %}
+      <span class="orderby-receiveby__shipping-text">
+      </span>
+    </div>
+  </div>
+{% endif %}
+
+<script>
+  var orderByConfig = {
+    showOrderByReceiveByUS: {{ show_order_us }},
+    startDateOrder: new Date("{{ start_date_order }}"),
+    endDateOrder: new Date("{{ end_date_order }}")
+  };
+</script>

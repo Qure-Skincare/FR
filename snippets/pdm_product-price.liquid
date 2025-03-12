@@ -1,0 +1,64 @@
+{% assign landing = landing |  default: false %}
+{% if landing %}
+  {% if product.handle == 'micro-infusion-targeted-patches'  %}
+
+     {{ product.price | money_without_trailing_zeros }}
+  {% else %}
+  {% assign product = all_products['micro-infusion-3-month-refill-6x-hydra-soothing-serum'] %}
+
+  {% case product.handle %}
+      {% when 'micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum' %}
+          {% assign product_index = 1 %}
+          {% assign selling_plan = 5012914415 %}
+      {% when 'micro-infusion-3-month-refill-6x-rejuvenating-serum' %}
+          {% assign product_index = 2 %}
+          {% assign selling_plan = 5012914415 %}
+      {% when 'micro-infusion-3-month-refill-6x-hydra-soothing-serum' %}
+          {% assign product_index = 3 %}
+          {% assign selling_plan = 5012914415 %}
+  {% endcase %}
+
+  {% assign product_price = product.price %}
+  {% assign product_price_discount = product.price | times: 0.70 %}
+  {% assign product_price_divided = product.price | divided_by: 4 %}
+  {% assign product_variant_id = product.variants.first.id %}
+  <div id="subscription" class="subscriptions-prices">
+    <del>
+    {{ product.price | money_without_trailing_zeros }}
+    </del>
+    {{ product_price_discount | money_without_trailing_zeros  }}
+  </div>
+  <div id="no-subscription" class="subscriptions-prices hidden">
+    {{ product.price | money_without_trailing_zeros }}
+  </div>
+  {% endif %}
+  {% else %}
+  {% if subscribe_count > 0 %}
+    {%- for block in section.blocks -%}
+      {% if block.type == 'subscribe' %}
+        {% assign discount_value = block.settings.discount 
+        | divided_by: 100.0 
+        | times: product.price 
+        | minus: product.price | abs 
+        %}
+        {% if product.compare_at_price %}
+            {% assign product_price_discount = product.compare_at_price %}
+        {% else %}
+            {% assign product_price_discount = discount_value %}
+        {% endif %}
+  
+        <div id="subscription" class="subscriptions-prices">
+          <del>
+          {{ product.price | money_without_trailing_zeros }}
+          </del>
+          {{ product_price_discount | money_without_trailing_zeros  }}
+        </div>
+        <div id="no-subscription" class="subscriptions-prices hidden">
+          {{ product.price | money_without_trailing_zeros }}
+        </div>
+      {% endif %}
+    {%- endfor -%}
+  {% else %}
+    {{ product.price | money_without_trailing_zeros }}
+  {% endif %}
+{% endif %}

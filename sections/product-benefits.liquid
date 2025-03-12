@@ -1,0 +1,293 @@
+{% if request.path contains 'dermal-mist' %}
+  <!-- -- image with text start -- -->
+  <div class="imageText new_side section mt-md-4 {{ section.settings.background }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
+                  {% for block in section.blocks %}
+                    {% if block.type == 'heading' %}
+                      <div class="header d-md-none d-block pb-3">
+                        <h2 class="title-lg mb-md-4 text-capitalize">{{ block.settings.heading }}</h2>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                  {% for block in section.blocks %}
+                    {% if block.settings.image != blank %}
+                      <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="img-fluid">
+                    {% endif %}
+                  {% endfor %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="it_info p-0 pt-0 pt-md-0">
+                  {% for block in section.blocks %}
+                    {% if block.settings.heading != blank %}
+                      <div class="header d-md-block d-none">
+                        <h2 class="title-lg mb-md-4">{{ block.settings.heading }}</h2>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                    <div class="newside_list mw-100">
+                        <ul class="d-md-block d-none">
+                          {% for block in section.blocks %}
+                            {% case block.type %}
+                              {% when 'content' %}
+                                <li>
+                                  {% if block.settings.icon != blank %}
+                                    <img src="{{ block.settings.icon | img_url: '45x' }}" alt="">
+                                  {% endif %}
+                                  {% if block.settings.text != blank %}
+                                    <div>
+                                      {{ block.settings.text |  replace: '<p>', '<p class="fw-normal">' }}
+                                    </div>
+                                  {% endif %}
+                                </li>
+                            {% endcase %}
+                          {% endfor %}
+                        </ul>
+                        <ul class="d-md-none">
+                            {% for block in section.blocks %}
+                              {% case block.type %}
+                                {% when 'content' %}
+                                    <li>
+                                      {% if block.settings.iconMob != blank %}
+                                        <img src="{{ block.settings.iconMob | img_url: '28x' }}" width="28px" alt="">
+                                      {% endif %}
+                                      {% if block.settings.textMob != blank %}
+                                        <div>
+                                          {{ block.settings.textMob }}
+                                        </div>
+                                      {% endif %}
+                                    </li>
+                                {% endcase %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- -- image with text end -- -->
+{% else %}
+  <!-- -- image with text start -- -->
+  <div class="imageText new_side section mt-md-4 {{ section.settings.background }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
+            {% for block in section.blocks %}
+              {% if block.type == 'heading' %}
+                <div class="header d-md-none d-block pb-3">
+                  <h2 class="title-lg mb-md-4 text-capitalize">{{ block.settings.heading }}</h2>
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% for block in section.blocks %}
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="p-0 pt-0 pt-md-0">
+            {% for block in section.blocks %}
+              {% if block.settings.heading != blank %}
+                <div class="header d-md-block d-none">
+                  <h2 class="title-lg mb-md-4">{{ block.settings.heading }}</h2>
+                </div>
+              {% endif %}
+            {% endfor %}
+            <div class="mw-100">
+              <ul class="d-md-block d-none">
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'content' %}
+                      <li class="d-flex align-items-start gap-4 pb-4">
+                        {% if block.settings.icon != blank %}
+                          <img class="pt-1" src="{{ block.settings.icon | img_url: '45x' }}" alt="">
+                        {% endif %}
+                        {% if block.settings.text != blank %}
+                          <div>
+                            {{ block.settings.text }}
+                          </div>
+                        {% endif %}
+                      </li>
+                  {% endcase %}
+                {% endfor %}
+              </ul>
+              <ul class="d-md-none">
+                {% for block in section.blocks %}
+                  <li class="d-flex align-items-start gap-1 pb-3">
+                    {% if block.settings.iconMob != blank %}
+                      <img src="{{ block.settings.iconMob | img_url: '28x' }}" width="28px" alt="">
+                    {% endif %}
+                    {% if block.settings.textMob != blank %}
+                      <div>
+                        {{ block.settings.textMob }}
+                      </div>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -- image with text end -- -->
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "t:sections.benefits.label",
+  "settings": [
+    {
+      "type": "select",
+      "id": "background",
+      "label": "t:common.background.label",
+      "options": [
+        {
+          "value": "bg-yellow",
+          "label": "t:common.background.yellow"
+        },
+        {
+          "value": "bg-lightGrey",
+          "label": "t:common.background.grey"
+        },
+        {
+          "value": "bg_clr_transparent",
+          "label": "t:common.background.transparent"
+        }
+      ],
+      "default": "bg_clr_transparent"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "t:common.image.label",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image.label"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "t:common.heading.label",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:common.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "t:common.content.label",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "t:common.icon.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text.label"
+        },
+        {
+          "type": "header",
+          "content": "t:commonMob.header.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "iconMob",
+          "label": "t:common.icon.label"
+        },
+        {
+          "type": "richtext",
+          "id": "textMob",
+          "label": "t:common.text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.benefits.label",
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/newside.webp"
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "heading": "5 Reasons Dermal Mist deserves a VIP spot in your routine"
+          }
+        },
+        {
+          "type": "content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/bacteria.svg",
+            "text": "<p><strong>Purifies Beyond The Surface:<\/strong><\/p><p>Removes impurities and bacteria, helping to prevent irritation and breakouts.<\/p>",
+            "iconMob": "shopify:\/\/shop_images\/bacteria.svg",
+            "textMob": "<p><strong>It Cleanses Beyond The Surface:<\/strong><\/p><p>Dermal Mist works to remove impurities and bacteria, helping to prevent irritation and breakouts.<\/p>"
+          }
+        },
+        {
+          "type": "content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Soothes.svg",
+            "text": "<p><strong>Soothes Redness and Irritation:<\/strong><\/p><p>Hypochlorous acid helps to calm your skin, providing relief from everyday stressors.<\/p>",
+            "iconMob": "shopify:\/\/shop_images\/Soothes.svg",
+            "textMob": "<p><strong>It Soothes Redness And Irritation:<\/strong><\/p><p>Hypochlorous acid helps to calm your skin, providing relief from everyday stressors.<\/p>"
+          }
+        },
+        {
+          "type": "content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Dry-skin.svg",
+            "text": "<p><strong>Doesn’t Dry Out Skin:<\/strong><\/p><p>Alcohol-free formula is designed to be gentle, leaving your skin comfortable, not tight or dry.<\/p>",
+            "iconMob": "shopify:\/\/shop_images\/Dry-skin.svg",
+            "textMob": "<p><strong>It Doesn’t Dry You Out:<\/strong><\/p><p>The alcohol-free formula is designed to be gentle, leaving your skin comfortable, not tight or dry.<\/p>"
+          }
+        },
+        {
+          "type": "content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/spray.svg",
+            "text": "<p><strong>Super Versatile:<\/strong><\/p><p>From your face and body to your devices, this mist fits effortlessly into different parts of your day.<\/p>",
+            "iconMob": "shopify:\/\/shop_images\/spray.svg",
+            "textMob": "<p><strong>It’s Super Versatile:<\/strong><\/p><p>From your face and body to your devices, this mist fits effortlessly into different parts of your day.<\/p>"
+          }
+        },
+        {
+          "type": "content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/sparkling.svg",
+            "text": "<p><strong>Fits Into Any Routine:<\/strong><\/p><p>Just spray, let it dry, and continue with your routine—no extra steps needed.<\/p>",
+            "iconMob": "shopify:\/\/shop_images\/sparkling.svg",
+            "textMob": "<p><strong>It Fits Into Any Routine:<\/strong><\/p><p>Just spray, let it dry, and continue with your routine—no extra steps needed.<\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

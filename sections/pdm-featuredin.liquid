@@ -1,0 +1,179 @@
+<div class="press_bl {{ section.settings.custom_cls }}">
+  <div class="container">
+    <div class="row align-items-center">
+      {% if heading_count > 0 %}
+        {%- for block in section.blocks -%}
+          {% if block.type == 'heading' %}
+            <div class="col-lg-2">
+              <div class="p_bl_header">
+                <p>{{ block.settings.heading }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {%- endfor -%}
+        <div class="col-lg-10">
+          <div class="press_slider press_slider_row2">
+            <div class="ps_wrapper">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="ps_wrapper">
+                    {%- for block in section.blocks offset: 1 limit: 3 -%}
+                      {% if block.type == 'image' %}
+                        <div class="ps_item">
+                          <img
+                            class="img-fluid"
+                            src="{{ block.settings.image | img_url: '300x' }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                          >
+                        </div>
+                      {% endif %}
+                    {%- endfor -%}
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="ps_wrapper">
+                    {%- for block in section.blocks offset: 4 limit: 3 -%}
+                      {% if block.type == 'image' %}
+                        <div class="ps_item">
+                          <img
+                            class="img-fluid"
+                            src="{{ block.settings.image | img_url: '300x' }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                          >
+                        </div>
+                      {% endif %}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% else %}
+        {% if section.settings.heading != blank %}
+          <div class="col-lg-2">
+            <div class="p_bl_header">
+              <p>{{ section.settings.heading }}</p>
+            </div>
+          </div>
+        {% endif %}
+        <div class="col-lg-{% if section.settings.heading != blank %}10{% else %}12{% endif %}">
+          <div class="ps_wrapper">
+            {%- for block in section.blocks -%}
+              {% if block.type == 'image' %}
+                <div class="ps_item{% if block.settings.mobile_hide %} d-none d-md-block{% endif %}">
+                  <img
+                    class="img-fluid"
+                    src="{{ block.settings.image | img_url: '300x' }}"
+                    alt="{{ block.settings.image.alt | escape }}"
+                  >
+                </div>
+              {% endif %}
+            {%- endfor -%}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "pdm featuredin",
+    "class": "section-featured-in",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.heading.label"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_cls",
+        "label": "t:common.classname.custom"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:common.heading.label",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "t:common.image.label",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "mobile_hide",
+            "label": "t:common.image.hide.mobile.label",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "pdm featuredin",
+        "blocks": [
+          {
+            "type": "heading",
+            "settings": {
+              "heading": "FEATURED IN"
+            }
+          },
+          {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vogue.svg"
+            }
+          },
+          {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/elle.svg"
+            }
+          },
+          {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/glamour.svg"
+            }
+          },
+          {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/grazia.svg"
+            }
+          },
+          {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cosmopolitan.svg"
+            }
+          },
+          {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  

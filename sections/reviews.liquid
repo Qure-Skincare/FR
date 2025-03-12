@@ -1,0 +1,47 @@
+<div class="reviews_section section" style="padding-bottom:0px;">
+    <div class="container">
+        <div class="section_header text-center mb-3">
+            {% if section.settings.heading != blank %}
+                <div class="title-lg d-none d-md-block">{{ section.settings.heading }}</div> 
+            {% endif %}
+            
+            {% if section.settings.heading_mobile != blank %}
+                <div class="title-lg d-block d-md-none">{{ section.settings.heading_mobile }}</div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% if section.settings.product != blank %}
+    {% assign product = section.settings.product %}
+    <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}" data-product-type="{{product.type}}" data-widget-language="{{shop.locale}}"></div>
+{% endif %}
+
+{% schema %}
+    {
+        "name": "t:sections.reviews.name",
+        "class": "section-reviews",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "heading_mobile",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "product",
+                "id": "product",
+                "label": "t:common.product.label"
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.reviews.name"
+			}
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,34 @@
+ <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="31" height="33" viewBox="0 0 31 33"
+                                                                            fill="none">
+                                                                            <circle cx="13.8598" cy="16.4573"
+                                                                                r="10.9003"
+                                                                                transform="rotate(0.8271 13.8598 16.4573)"
+                                                                                stroke="black" stroke-width="0.75" />
+                                                                            <circle cx="23.871" cy="16.4968" r="6.15832"
+                                                                                transform="rotate(0.8271 23.871 16.4968)"
+                                                                                fill="#F5F5F5" stroke="black"
+                                                                                stroke-width="0.75" />
+                                                                            <circle cx="8.19703" cy="7.20703"
+                                                                                r="6.15832"
+                                                                                transform="rotate(0.8271 8.19703 7.20703)"
+                                                                                fill="#F5F5F5" stroke="black"
+                                                                                stroke-width="0.75" />
+                                                                            <circle cx="7.93537" cy="25.3298"
+                                                                                r="6.15832"
+                                                                                transform="rotate(0.8271 7.93537 25.3298)"
+                                                                                fill="#F5F5F5" stroke="black"
+                                                                                stroke-width="0.75" />
+                                                                            <path
+                                                                                d="M16.2122 25L14.2301 27.7782L16.6725 30.1619"
+                                                                                stroke="black" stroke-width="0.75"
+                                                                                stroke-linecap="round" />
+                                                                            <path
+                                                                                d="M19 9.91431L22.4212 10.3372L23.2853 7.00006"
+                                                                                stroke="black" stroke-width="0.75"
+                                                                                stroke-linecap="round" />
+                                                                            <path
+                                                                                d="M5.22217 14.9026L3.57822 11.9119L0.371247 13.0791"
+                                                                                stroke="black" stroke-width="0.75"
+                                                                                stroke-linecap="round" />
+                                                                        </svg>

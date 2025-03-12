@@ -1,0 +1,214 @@
+<!-- -- result section start -- -->
+<div class="result_s section mi_landing_result {{ section.settings.ctm_cls_results }}" id="result_section">
+    <div class="container">
+        <div class="section_header text-lg-center text-start mb-3 mw-100">
+            {% if section.settings.heading != blank %}
+            <h2 class="title-lg">
+                {{ section.settings.heading }}
+            </h2>
+            {% endif %}
+            {% if section.settings.stars != blank %}
+            <div class="refill_review justify-content-center">
+                <div class="star_gp">
+                    <img src="{{ section.settings.stars | img_url: '130px' }}" alt="">
+                </div>
+                <p>{{ section.settings.rating_text }}</p>
+            </div>
+            {% endif %}
+        </div>
+        <div class="result_s_wrapper">
+            <div class="swiper dot_pagination result_slider">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.settings.image != blank %} 
+                    <div class="swiper-slide">
+                        <div class="result_item result_item_info_with_fixed">
+                            <div class="result_img_m">
+                                {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | img_url: '400x' }}" alt="">
+                                {% endif %}
+                            </div>
+                            <div class="result_c_info">
+                                {% if block.settings.stars_img != blank %}
+                                    <div class="star_gp">
+                                        <img src="{{ block.settings.stars_img | img_url: '98px' }}" width="98px" alt="">
+                                    </div>
+                                {% endif %}
+                                {% if block.settings.heading != blank %}
+                                <div class="star_gp">
+                                    <p>{{ block.settings.heading }}</p>
+                                </div>
+                               {% endif %}
+                            </div>
+                            {% if block.settings.product != blank %}
+                                <div class="result_product_name">
+                                    {{ block.settings.product }}
+                                </div>
+                                {% endif %}
+                            <div class="result_item_info">
+                                {% if block.settings.text != blank %}
+                                <div class="result_content">
+                                    {{ block.settings.text }}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="result_learnMore d-block">
+                                <div class="result_learnMore_wrap">
+                                    <div class="result_c_info">
+                                        <div class="r_flag">
+                                            {% if block.settings.image_country != blank %}
+                                            <div class="flag_img">
+                                                <img src="{{ block.settings.image_country | img_url: '25x' }}" alt="">
+                                            </div>
+                                            {% endif %}
+                                            {% if block.settings.client != blank %}
+                                            <p class="r_c_name pe-2">{{ block.settings.client }}</p>
+                                            {% endif %}
+                                        </div>
+                                        {% if block.settings.verified != blank %}
+                                        <div class="verified_img">
+                                            <img src="{{ 'verified.svg' | asset_url }}" alt="">
+                                            <p>Verified customer</p>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% if block.settings.concerns != blank %}
+                                <div class="skin_concerns">
+                                    Skin concerns: {{ block.settings.concerns }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="pagination_navigation">
+                    <div class="swiper-pagination"></div>
+                    <div class="qureSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                    <div class="qureSlider-swiper-next  swiper-button-next swiper-button"></div>
+
+                </div>
+            </div>
+        </div>
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'button' %}
+                    <div class="get_clearer_wrapper text-center mt-5">
+                        <a class="btn btn-lg btn-primary btn_green mw-402" href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}">{{ block.settings.button_label }}</a>
+                    </div>
+            {% endcase %}
+        {% endfor %}        
+    </div>
+</div>
+<!-- -- result section end -- -->
+
+{% schema %}
+{
+    "name": "t:sections.result_slider.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "ctm_cls_results",
+            "label": "t:common.classname.custom"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label",
+            "default": "Thousands are out-glowing their insecurities"
+        },
+        {
+            "type": "text",
+            "id": "rating_text",
+            "label": "t:common.rating.label"
+        },
+        {
+            "type": "image_picker",
+            "id": "stars",
+            "label": "t:common.rating.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Slide",
+            "name": "t:sections.before-after-box.blocks.slide.name",
+            "limit": 10,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.heading.label"
+                },
+                {
+                    "type": "text",
+                    "id": "product",
+                    "label": "t:common.product.label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "stars_img",
+                    "label": "t:common.rating.label"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "default": "<p>I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.</p>",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image.label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_country",
+                    "label": "t:common.client.country.label"
+                },
+                {
+                    "type": "text",
+                    "id": "client",
+                    "label": "t:common.client.label"
+                },
+                {
+                    "type": "text",
+                    "id": "concerns",
+                    "label": "t:common.skin.concerns"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "verified",
+                    "label": "t:common.checkbox.verified",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "name": "t:common.button.name",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "default": "Button label",
+                    "label": "t:common.button.label",
+                    "info": "t:common.button.info"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button.url.label"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.result_slider.label"
+        }
+    ]
+}
+{% endschema %}

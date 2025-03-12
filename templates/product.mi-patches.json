@@ -1,0 +1,844 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "product-landing": {
+      "type": "product-landing",
+      "blocks": {
+        "rating_BgbMYG": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "<p>97% customer satisfaction rate</p>",
+            "product": "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum"
+          }
+        },
+        "list_mMY6Hf": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li>Reduces appearance of <strong>fine lines</strong> and <strong>wrinkles</strong>, under-eye darkness, and puffiness.</li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface</strong> for faster results.</li><li><strong>Science backed</strong>, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul>"
+          }
+        },
+        "liquid_EH7JLe": {
+          "type": "liquid",
+          "settings": {
+            "code": "{% render 'serums-offer-months-form' with section_id: section.id, product: product %}"
+          }
+        }
+      },
+      "block_order": [
+        "rating_BgbMYG",
+        "list_mMY6Hf",
+        "liquid_EH7JLe"
+      ],
+      "settings": {
+        "seo_heading": "Micro-Infusion Dart Patches",
+        "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
+        "heading_mobile": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
+        "product": "",
+        "product_images_offset": 0,
+        "product_images_limit": 0,
+        "product_button_label": "Product",
+        "before_after_images_limit": 4,
+        "before_after_button_label": "Before & After",
+        "reserve": false,
+        "selected_design": "new",
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
+      }
+    },
+    "featuredin_extended_mjJV3b": {
+      "type": "featuredin_extended",
+      "blocks": {
+        "text_TKq9Ug": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"This helps bring life and radiance to your eyes,the focal point of your face.\"</p>"
+          }
+        },
+        "image_XPFdHy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vogue-black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "text_TKq9Ug",
+        "image_XPFdHy"
+      ],
+      "custom_css": [
+        ".app_subhheading {max-width: 540px;}",
+        ".swiper-wrapper {justify-content: center !important;}"
+      ],
+      "settings": {
+        "heading": "FEATURED IN",
+        "slider_type": "five_slides",
+        "slide_per_view_desktop": 3,
+        "slide_per_view_mobile": 3
+      }
+    },
+    "image_text_QphRck": {
+      "type": "image-text",
+      "blocks": {
+        "wistia_FDYHjn": {
+          "type": "wistia",
+          "settings": {
+            "wistia": "f4cj3x9e99",
+            "wistia_m": "f4cj3x9e99"
+          }
+        },
+        "text_NUAcKN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target and treat wrinkles, under-eye puffiness and dark circles.</strong></p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin</strong>, infusing serum for <strong>deeper delivery.</strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for deeper, better, faster results <strong>– yet gentle enough for sensitive skin!</strong></p>",
+            "btn_text": "",
+            "btn_url": "",
+            "custom_class": "",
+            "heading2": "",
+            "text2": "",
+            "heading3": "",
+            "text3": ""
+          }
+        }
+      },
+      "block_order": [
+        "wistia_FDYHjn",
+        "text_NUAcKN"
+      ],
+      "settings": {
+        "background": "bg_clr_transparent",
+        "heading": "80 Serum-Enriched Micro-Darts for precise improvement",
+        "hide_on_mob": true,
+        "column": 6,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_comment": false,
+        "custom_class": ""
+      }
+    },
+    "confidence_slider_ir7cWU": {
+      "type": "confidence-slider",
+      "blocks": {
+        "option_EQVwQB": {
+          "type": "option",
+          "settings": {
+            "text": "<p>noticed continued improvement in <strong>wrinkle reduction.</strong></p>",
+            "percent_bar": 77
+          }
+        },
+        "option_c9N4Dk": {
+          "type": "option",
+          "settings": {
+            "text": "<p>reported under eyes were visibly <strong>brighter.</strong></p>",
+            "percent_bar": 90
+          }
+        },
+        "option_wyzHY6": {
+          "type": "option",
+          "settings": {
+            "text": "<p><strong>would recommend </strong>Micro-Infusion Targeted Patches to a friend.</p>",
+            "percent_bar": 87
+          }
+        },
+        "image_wgcQht": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sn_5.webp",
+            "text": "<p>Proven to visually improve <strong>“Crow's Feet”</strong></p>"
+          }
+        },
+        "image_kNNPRw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sn_6.webp",
+            "text": "<p>Proven to visually improve <strong>Dark under-eyes</strong></p>"
+          }
+        },
+        "image_PbkTkc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sn_7.webp",
+            "text": "<p>Proven to visually improve <strong>Wrinkles</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "option_EQVwQB",
+        "option_c9N4Dk",
+        "option_wyzHY6",
+        "image_wgcQht",
+        "image_kNNPRw",
+        "image_PbkTkc"
+      ],
+      "settings": {
+        "heading": "No promises, just results.",
+        "text": "<p>In an independent user study, participants' skin was measured and showed proven visible improvement after just one month.</p>"
+      }
+    },
+    "product_science_8BYxLK": {
+      "type": "product-science",
+      "blocks": {
+        "column_6fKLNb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/patches_tech4.webp",
+            "title": "DELIVER",
+            "pd_text": "<p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into the skin for deeper delivery.</p>"
+          }
+        },
+        "column_Y8MDCC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/patches_tech2.webp",
+            "title": "DISSOLVE",
+            "pd_text": "<p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb into the skin.</p>"
+          }
+        },
+        "column_UwQ4xn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/patches_tech5.webp",
+            "title": "PROTECT",
+            "pd_text": "<p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients and delivering fast, visible results.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_6fKLNb",
+        "column_Y8MDCC",
+        "column_UwQ4xn"
+      ],
+      "settings": {
+        "heading": "Technology that delivers anti-aging ingredients directly to the source",
+        "sub_text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential.</strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.</strong></p>",
+        "custom_class": ""
+      }
+    },
+    "results_KkTxAy": {
+      "type": "results",
+      "blocks": {
+        "result_4VYRVN": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_katie.webp",
+            "heading": "Dark undereye",
+            "text": "<p>“I had to try these Micro-Infusion patches as soon as I saw them. Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep. BRB checking out other Qure products.\"</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Katie P",
+            "code": ""
+          }
+        },
+        "result_NixPTE": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_marry1.webp",
+            "heading": "Love these patches",
+            "text": "<p>“I started to see fine lines around my eyes and these patches work wonders! I wear them overnight and they don’t come off. I’VE SEEN A HUGE DIFFERENCE, leaving my skin smoother and firmer after just a few uses. Highly recommend.” </p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "text_country": "australia",
+            "client": "Mary",
+            "code": ""
+          }
+        },
+        "result_PJyaUt": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_shannon.webp",
+            "heading": "Stubborn laugh lines",
+            "text": "<p>“I found Qure's Micro-Infusion Patches as a targeted solution for my laugh lines. These impressed me so much that now I want to tape them all over my face to target all wrinkles. Patches have become an essential part of my skincare routine, and I highly recommend them to anyone seeking a non-invasive, effective solution for aging skin. I'm excited to see how they tackle wrinkles in other areas of my face.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "united states",
+            "client": "Shannon",
+            "code": ""
+          }
+        },
+        "result_LFDkHK": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_harper.webp",
+            "heading": "Plumped up wrinkles",
+            "text": "<p>“I've been using these patches once a week, I'm absolutely stoked with the results. I'm already noticing a gradual improvement in my laugh lines. I'm really looking forward to seeing even more progress as I keep using them in my routine.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/australia_f.webp",
+            "text_country": "Australia",
+            "client": "Harper",
+            "code": ""
+          }
+        },
+        "result_GGWAKq": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_lisa1.webp",
+            "heading": "Thin skin feels hydrated",
+            "text": "<p>“I just tried out the Qure Micro Infusion Patches for one night, and let me tell you, my skin felt so hydrated and refreshed when I woke up. I could even see a subtle improvement in my fine lines already. I can only imagine how much better it'll get with consistent use! For now, I can definitely say my skin looks smoother.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Lisa N.",
+            "code": ""
+          }
+        },
+        "result_8TqdaA": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_lucy.webp",
+            "heading": "Dark circles",
+            "text": "<p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for my dark circles and I don't look tired anymore! I used them 2x a week to get these results. The shipping was very fast too!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "United States",
+            "client": "Lucy",
+            "code": ""
+          }
+        },
+        "result_6AhijC": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_katharina.webp",
+            "heading": "Under-eye circles",
+            "text": "<p>“Waking up with these patches makes getting out of bed in the morning that much easier as I'm so excited to rush to the mirror and see the results! My usual under-eye wrinkles have visibly reduced and I finally feel more confident to step out of the house without concealer. Also, the patches feel super refreshing on the skin which I love!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/germany_f.webp",
+            "text_country": "germany",
+            "client": "Katharina",
+            "code": ""
+          }
+        },
+        "result_9hQdCp": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/results_damiano.webp",
+            "heading": "Tired under-eye",
+            "text": "<p>“I always struggled with puffy eyes and dark circles. The results I got with these patches were pretty remarkable. The puffiness visibly decreased, and the dark circles lightened, giving my eyes a much-needed boost and I no longer look tired all the time.”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/england_f.webp",
+            "text_country": "england",
+            "client": "Damiano",
+            "code": ""
+          }
+        },
+        "result_aJycFe": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/result_Andrea.webp",
+            "heading": "I am blown away by the results!",
+            "text": "<p>“I am loving these new micro-infusion patches from @qureskincare each box contains 8 packs with patches. You can put these patches anywhere you have concerns, number 11’s, under eyes, marionette lines, forehead- you choose! You put these on clean skin and leave on at least 2-3 hours, but I sleep in them over night! I do them once a week and I am blown away by the results!\"</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "america",
+            "client": "Andrea",
+            "code": ""
+          }
+        },
+        "result_PcxiWH": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/result_Denise.webp",
+            "heading": "I’m loving the results so far",
+            "text": "<p>\"I’m loving the results so far and look forward to continuing!\"</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/america_f.webp",
+            "text_country": "america",
+            "client": "Denise",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "result_4VYRVN",
+        "result_NixPTE",
+        "result_PJyaUt",
+        "result_LFDkHK",
+        "result_GGWAKq",
+        "result_8TqdaA",
+        "result_6AhijC",
+        "result_9hQdCp",
+        "result_aJycFe",
+        "result_PcxiWH"
+      ],
+      "settings": {
+        "classname": "mi_landing_result",
+        "heading": "Words directly from the source",
+        "heading_reduced": "",
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
+      }
+    },
+    "liquid_EH7JLe2": {
+      "type": "liquid",
+      "settings": {
+        "code": "{% render 'serums-offer-months-image-form' with section_id: section.id %}"
+      }
+    },
+    "icons_list_hrRbkg": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_X3Uyit": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+          }
+        },
+        "icon_kpXUbm": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/buy-now-ftr.svg",
+            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+          }
+        },
+        "icon_fFdaXF": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/derma-ftr.svg",
+            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+          }
+        },
+        "icon_fqNhA8": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/science-ftr.svg",
+            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_X3Uyit",
+        "icon_kpXUbm",
+        "icon_fFdaXF",
+        "icon_fqNhA8"
+      ],
+      "settings": {
+        "background": "bg-yellow"
+      }
+    },
+    "videos_list_CfJjwV": {
+      "type": "videos-list",
+      "blocks": {
+        "wistia_MnFzVQ": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "suqimfilsp",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_kNinzd": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "iv94ue7wqt",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_CtKy4c": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "ysiwr8pux7",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_zKHEYF": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "xf02ub5lry",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_UrTMYr": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "equ3v6w8n9",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_wEwjjx": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "gj1az9jxew",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_RxQRci": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "4ma2mlpqtb",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_9dLLX4": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "l6q62jsw6p",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_iFLMaU": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "6mdfof7669",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "wistia_MnFzVQ",
+        "wistia_kNinzd",
+        "wistia_CtKy4c",
+        "wistia_zKHEYF",
+        "wistia_UrTMYr",
+        "wistia_wEwjjx",
+        "wistia_RxQRci",
+        "wistia_9dLLX4",
+        "wistia_iFLMaU"
+      ],
+      "settings": {
+        "heading": "Confident skin starts here",
+        "sub_heading": "",
+        "classname": "section videosQure",
+        "btn": "",
+        "btn_url": "",
+        "desk_slide": 6,
+        "mob_slide": 2,
+        "slide_space": 10
+      }
+    },
+    "two_column_box_bkFG8d": {
+      "type": "two-column-box",
+      "blocks": {
+        "heading_XT6geW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Target specific areas to combat multiple concerns",
+            "text": "",
+            "code": "",
+            "classname": "section_header text-start text-md-center mw-100"
+          }
+        },
+        "image_t63tjY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/micro_grid-combat-patches_12efc9c2-5dc1-4d8c-9e23-bb08433a78b2.webp",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_UfttPf": {
+          "type": "content",
+          "settings": {
+            "text": "<p>[code]</p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        },
+        "code_3X3NK4": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"swiper ingredients_slider combat_slider\">\n    <div class=\"swiper-wrapper\">\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-fine_line.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Fine lines</p>\n            </div>\n        </div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-wrinkles.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Wrinkles</p>\n            </div>\n        </div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-dark_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Dark circles</p>\n            </div>\n        </div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-puffiness.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Puffiness</p>\n            </div>\n        </div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item mw-100\">\n                <img src=\"{{ 'mi-patches-under-eys.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Under-eye bags</p>\n            </div>\n        </div>\n    </div>\n    <div class=\"swiper-pagination\"></div>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XT6geW",
+        "image_t63tjY",
+        "content_UfttPf",
+        "code_3X3NK4"
+      ],
+      "settings": {
+        "classname": "technology_light pt-30 section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
+    "compare_eYNU3L": {
+      "type": "compare",
+      "blocks": {
+        "object_Cg7rxf": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/targeted-patches-blue.webp",
+            "heading": "Micro-Infusion Targeted Patches",
+            "mob_text": "Micro-Infusion Targeted Patches",
+            "text": "",
+            "price": "",
+            "style": "correctCircle",
+            "list": "<ul><li>Micro-Darts melt into the skin for <strong>deeper ingredient delivery</strong></li><li><strong>Versatile</strong> (11 lines, crow’s feet, under eye, laugh lines)</li><li><strong>Stay</strong> comfortably for 2-6 hours, or <strong>overnight</strong> for best results</li><li><strong>Continually works</strong> to give a rejuvenated look to your skin</li></ul>"
+          }
+        },
+        "object_kT7BfV": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/mi-eye-patches.webp",
+            "heading": "Alternative Eye Patches",
+            "mob_text": "Alternative Eye Patches",
+            "text": "",
+            "price": "",
+            "style": "incorrectCircle",
+            "list": "<ul><li>Ingredients <strong>sit</strong> mostly <strong>on top of skin</strong></li><li>Created for <strong>eye area only</strong></li><li><strong>Slippery,</strong> move around on the face</li><li>Provides <strong>temporary results</strong></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_Cg7rxf",
+        "object_kT7BfV"
+      ],
+      "settings": {
+        "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
+        "heading": "These are not your ordinary eye patches",
+        "heading_reduced": "",
+        "text": "",
+        "text_reduced": "",
+        "design": false
+      }
+    },
+    "ingredients_dropdown_7zxb7X": {
+      "type": "ingredients-dropdown",
+      "blocks": {
+        "left_column_xN3pjV": {
+          "type": "left_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_left": "Retinol",
+            "text_left": "A natural derivative of vitamin A, this hero ingredient speeds up the removal of old skin cells to reveal your best, most rejuvenated skin underneath.",
+            "image_left": "shopify://shop_images/pi_retinol.webp"
+          }
+        },
+        "left_column_xfEQwV": {
+          "type": "left_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_left": "Niacinamide",
+            "text_left": "A type of vitamin B3, this powerhouse ingredient helps maintain skin health for a brighter, more even skin tone. It also helps smooth the look of wrinkles – especially when combined with retinol.",
+            "image_left": "shopify://shop_images/pi_niacinamide.webp"
+          }
+        },
+        "left_column_PNRXyp": {
+          "type": "left_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_left": "Caffeine",
+            "text_left": "Caffeine works through micro-circulation, helping to fade the look of dark circles and under-eye bags – like a pick-me-up for the skin.",
+            "image_left": "shopify://shop_images/pi_caffeine.webp"
+          }
+        },
+        "right_column_q3kHtw": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "Acetyl Hexapeptide-8 Peptides ",
+            "text_right": "This safe, synthetic form of Botox visibly reduces the appearance of fine lines and wrinkles & boosts collagen production. It’s the first peptide designed to target expression lines.",
+            "image_right": "shopify://shop_images/pi_acetyl.webp"
+          }
+        },
+        "right_column_MtfhLN": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "Copper Peptides",
+            "text_right": "Copper peptides promote collagen and elastin production which helps plump and tighten the skin. They also serve as an antioxidant, working to protect the skin against further barrier damage.",
+            "image_right": "shopify://shop_images/pi_copper.webp"
+          }
+        },
+        "right_column_xBgVGJ": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "Licorice",
+            "text_right": "Licorice boasts anti-inflammatory properties that work wonders in reducing puffiness and soothing irritated skin.",
+            "image_right": "shopify://shop_images/pi_licorice.webp"
+          }
+        },
+        "right_column_BRzcGx": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "without_image",
+            "name_right": "All Ingredients",
+            "text_right": "Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin, Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil, Allantoin, Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica Extract,  Acetyl Hexapeptide-8, BHT.    \n<br>\nPlease note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites."
+          }
+        }
+      },
+      "block_order": [
+        "left_column_xN3pjV",
+        "left_column_xfEQwV",
+        "left_column_PNRXyp",
+        "right_column_q3kHtw",
+        "right_column_MtfhLN",
+        "right_column_xBgVGJ",
+        "right_column_BRzcGx"
+      ],
+      "settings": {
+        "heading": "Deeply replenishes the skin with these powerful, science-backed ingredients"
+      }
+    },
+    "how_to_use_wC7khU": {
+      "type": "how-to-use",
+      "blocks": {
+        "tab_PBUUDn": {
+          "type": "Tab",
+          "settings": {
+            "tab_txt": "Prepare",
+            "tab_desc": "<p>Wash and dry your face prior to use, removing all makeup.</p><p>Make sure your hands are clean.</p><p>Take the patch and simply peel off the adhesive strips.</p><p>Avoid touching the adhesive and the darts with your hands.</p>",
+            "image": "shopify://shop_images/imagesaa.png"
+          }
+        },
+        "tab_pwMUJN": {
+          "type": "Tab",
+          "settings": {
+            "tab_txt": "Treatment",
+            "tab_desc": "<p>Apply the patch on a desired area (11 lines, Crow’s feet, under-eye area or smile lines) with adhesive side facing down.</p><p>Gently press for 5-10 seconds.</p><p>Use 1-2 times per week for at least two hours.</p><p>For best results, leave them on overnight!</p>",
+            "image": "shopify://shop_images/eee.png"
+          }
+        },
+        "tab_bWCRAy": {
+          "type": "Tab",
+          "settings": {
+            "tab_txt": "Aftercare",
+            "tab_desc": "<p>After the treatment (ideally in the morning) peel off the patches gently.</p><p>Wash your face and continue with your regular routine.</p>",
+            "image": "shopify://shop_images/patsssches.png"
+          }
+        },
+        "wistia_FDDfkR": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "xnr8wpyi8i",
+            "image": "shopify://shop_images/patches.png"
+          }
+        }
+      },
+      "block_order": [
+        "tab_PBUUDn",
+        "tab_pwMUJN",
+        "tab_bWCRAy",
+        "wistia_FDDfkR"
+      ],
+      "settings": {
+        "heading": "How to use"
+      }
+    },
+    "faq_mw3Aqn": {
+      "type": "faq",
+      "blocks": {
+        "object_tJywiK": {
+          "type": "object",
+          "settings": {
+            "heading": "Is there any discomfort when using the patches?",
+            "text": "<p>None whatsoever! All you’ll feel is a slight prickly sensation as you apply the patches and press down the micro darts onto your skin. Our Micro-Infusion patches are designed to penetrate the skin deeply to deliver active ingredients without causing any pain, or downtime.</p>",
+            "code": ""
+          }
+        },
+        "object_kJeN8K": {
+          "type": "object",
+          "settings": {
+            "heading": "How many patches come per box?",
+            "text": "<p>There are 8 patches (pairs) per box. We recommend using 1-2 times per week so there is 1 month supply!</p>",
+            "code": ""
+          }
+        },
+        "object_hpxAyi": {
+          "type": "object",
+          "settings": {
+            "heading": "How long should I apply the patches for?",
+            "text": "<p>For optimal results, we suggest applying the patches for a minimum of 2 hours, but preferably overnight. Leaving the patches on whilst you sleep ensures that the serum has ample time to dissolve and penetrate into the skin, maximizing its effectiveness to give you the best results.</p><p>Use 1-2 times per week.</p>",
+            "code": ""
+          }
+        },
+        "object_TpK4in": {
+          "type": "object",
+          "settings": {
+            "heading": "Are they safe?",
+            "text": "<p>Absolutely! Each of our patches undergoes rigorous dermatologist approval and testing. Our Micro-Infusion patches are crafted in a state-of-the-art facility laboratory in South Korea, adhering to the highest standards of safety.</p><p>For individuals with sensitive skin, we advise conducting a patch test before using our Micro-Infusion patches. Avoid applying them on open wounds, cuts, irritated, or infected skin. If you experience any irritation or rash then discontinue usage immediately.</p>",
+            "code": ""
+          }
+        },
+        "object_qyFrVm": {
+          "type": "object",
+          "settings": {
+            "heading": "Can I use the patches whilst pregnant or breast-feeding?",
+            "text": "<p>Yes! Many pregnant women avoid  injectables, retinols, or any strong acids for anti-aging during this time, so many turn to Qure as a safer alternative. However we always recommend speaking with a medical professional for advice prior to use.</p>",
+            "code": ""
+          }
+        },
+        "object_CTTzyf": {
+          "type": "object",
+          "settings": {
+            "heading": "How are they packaged?",
+            "text": "<p>Each Micro-Infusion Targeted patch (2/ pair) is packaged individually in a sealed container and then wrapped within a protective sealed foil pouch to prevent contamination and lock in moisture.</p>",
+            "code": ""
+          }
+        },
+        "object_zVnnDP": {
+          "type": "object",
+          "settings": {
+            "heading": "Are they suitable just for around the eyes only?",
+            "text": "<p>The best thing about our Micro-Infusion patches is that you can target different areas of concern. Whether it be under eyes, crows feet, smile lines or frown lines. </p>",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_tJywiK",
+        "object_kJeN8K",
+        "object_hpxAyi",
+        "object_TpK4in",
+        "object_qyFrVm",
+        "object_CTTzyf",
+        "object_zVnnDP"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "Your burning questions, our glowing answers",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
+      }
+    }
+  },
+  "order": [
+    "product-landing",
+    "featuredin_extended_mjJV3b",
+    "image_text_QphRck",
+    "confidence_slider_ir7cWU",
+    "product_science_8BYxLK",
+    "results_KkTxAy",
+    "liquid_EH7JLe2",
+    "icons_list_hrRbkg",
+    "videos_list_CfJjwV",
+    "two_column_box_bkFG8d",
+    "compare_eYNU3L",
+    "ingredients_dropdown_7zxb7X",
+    "how_to_use_wC7khU",
+    "faq_mw3Aqn"
+  ]
+}

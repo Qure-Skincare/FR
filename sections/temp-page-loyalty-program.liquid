@@ -1,0 +1,90 @@
+<!-- -- main banner start -- -->
+<div class="main_banner">
+    <picture>
+        <source media="(min-width:1920px)" srcset="https://qureskincaredns.com/new/assets/loyalty-program-banner.webp"
+            class="img-fluid bg_banner" width="432" height="167">
+        <source media="(min-width:1600px)" srcset="https://qureskincaredns.com/new/assets/loyalty-program-banner.webp"
+            class="img-fluid bg_banner" width="432" height="167">
+        <source media="(min-width:1100px)" srcset="https://qureskincaredns.com/new/assets/loyalty-program-banner.webp"
+            class="img-fluid bg_banner" width="432" height="167">
+        <source media="(min-width:720px)" srcset="https://qureskincaredns.com/new/assets/loyalty-program-banner.webp"
+            class="img-fluid bg_banner" width="432" height="167">
+        <source media="(min-width:540px)" srcset="https://qureskincaredns.com/new/assets/loyalty-banner-mob.webp" class="img-fluid bg_banner"
+            width="125" height="173">
+        <img src="https://qureskincaredns.com/new/assets/loyalty-banner-mob.webp" width="125" height="173" alt="" class="img-fluid bg_banner">
+    </picture>
+    <div class="main_b_wrapper">
+        <div class="container">
+            <div class="m_b_content">
+                <div class="section_header pb-0">
+                    <p class="pt-0">Unlock Exclusive Rewards With Loyalty Qoins</p>
+                    <img src="https://qureskincaredns.com/new/assets/qure_logo_tm.png" class="qure_logo" alt="">
+                    <h1 class="text-center text-md-start mt-1">Loyalty Program</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- main banner end -- -->
+
+{% if customer.id %}
+
+    <style>
+        [data-campaign-event="custom"]:has([data-type="view"]) [data-type="view"] {
+            display: inline !important;
+        }
+    </style>
+
+    <script>
+        function addEventListenerStamped(el, eventName, handler) {
+            if (el.addEventListener) { el.addEventListener(eventName, handler); }
+            else { el.attachEvent('on' + eventName, function () { handler.call(el); }); }
+        }
+
+        addEventListenerStamped(document, 'stamped:launcher:loaded', function(e) {
+
+            setTimeout(() => {
+                const parentElement = document.querySelector('[data-campaign-event="custom"]');
+
+                if (parentElement) {
+                    const targetElement = parentElement.querySelector('[data-type="view"]');
+                    if (targetElement) {
+                        targetElement.addEventListener("click", function(event) {
+                            event.preventDefault();
+
+                            let key = '356d1e80e7a736ba8c1d6a4693becab6b4b229130a74a8c746aeecdde9f6f350'
+                            let customer_email = '{{ customer.email }}';
+                            let shopId = 198244;
+                            let campaignId = '9412190f-966a-4efe-a76c-9f1d793ea605';
+
+                            const options = {
+                                method: 'POST',
+                                headers: {
+                                accept: 'application/json',
+                                'stamped-api-key': key
+                                }
+                            };
+                            
+                            fetch('https://stamped.io/api/v3/loyalty/shops/' + shopId + '/activities?email='+ customer_email + '&campaignId=' + campaignId, options)
+                                .then(res => res.json())
+                                .then(res => {
+                                    setTimeout(() => {
+                                        const button = document.querySelector('.stamped-rewards-widget-modal-button[data-campaign-event="custom"][data-type="earn"]');
+
+                                        if (button) {
+                                            button.addEventListener("click", function (event) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                                window.location.href = "https://qureskincare.com/pages/reviews";
+                                            });
+                                        }
+                                    }, 500);
+                                })
+                                .catch(err => console.error(err));
+                        });
+                    }
+                }
+            }, 1500)
+        });
+    </script>
+{% endif %}

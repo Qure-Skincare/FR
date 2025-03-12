@@ -1,0 +1,41 @@
+<div class="reviews_section section" style="padding-bottom:0px;">
+    <div class="container">
+        <div class="section_header text-center mb-3">
+            {% if section.settings.heading != blank %}
+                <div class="title-lg d-none d-md-block">{{ section.settings.heading }}</div> 
+            {% endif %}
+            
+            {% if section.settings.heading_mobile != blank %}
+                <div class="title-lg d-block d-md-none">{{ section.settings.heading_mobile }}</div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "t:sections.heading.name",
+        "class": "section-heading",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "heading_mobile",
+                "label": "t:common.heading.label"
+            }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.heading.name",
+                "settings": {
+                    "heading": "<h2>Real reviews, real results<\/h2><h2>from people just like you.<\/h2>",
+                    "heading_mobile": "<h2>Our customer reviews<\/h2>"
+                }
+			}
+        ]
+    }
+{% endschema %}

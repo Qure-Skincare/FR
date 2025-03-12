@@ -1,0 +1,417 @@
+{% assign insuranceProduct = all_products["shipping-insurance"] %}
+
+<script>
+	var CustomInsuraceVariants = [
+	{% for variant in insuranceProduct.variants %}
+		"{{variant.id}}", 
+	{% endfor %}
+	]
+
+	var currency = '{{ shop.money_with_currency_format | remove: ' ' | split: '' | first }}';
+	var cart_price = '{{ cart.items_subtotal_price | money_without_currency | round:2 }}';
+	var __discount_applied = false;
+</script>
+
+<dynamic>
+  <script type="application/json" data-ajax-cart-initial-state> {{ cart | json }} </script> 
+</dynamic>
+<script type="application/json" data-ajax-cart-configuration> { "addToCartCssClass": "js-my-cart-open" } </script>
+
+<!-- Swiper JS Add PDM By Samu3le-->
+
+<!-- Initialize Swiper -->
+<script>
+  // align cards center when they neddeds
+  const displayCard = () => {
+      const customUpsell = document.querySelector(".my-floating-cart form.my-cart .custom_upsell .swiper-wrapper");
+      if (!customUpsell) return;
+      const shouldCenterSlide = customUpsell.querySelectorAll(".swiper-slide").length <= 2;
+      customUpsell.classList.toggle('align-slide', shouldCenterSlide);
+  }
+  //create swiper Upsell 
+  const upsellSwiper = () => {
+    const isMobile = window.innerWidth <= 768;
+    if(isMobile){
+      return new Swiper('.swiper.custom_upsell', {
+        slidesPerView: "auto",
+        centeredSlides: false,
+        slidesOffsetAfter: 20, 
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        mousewheel:{
+          forceToAxis:true
+        }
+      });
+    }else{
+      return new Swiper('.swiper.custom_upsell', {
+        slidesPerView: "auto",
+        centeredSlides: false,
+        slidesOffsetAfter: 20, 
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        mousewheel:{
+          forceToAxis:true
+        }
+      });
+    }
+  }
+  //show upsell data only if the contain product
+  const showUpsell = () => {
+      const myCart = document.querySelector('form.my-cart');
+      if (myCart) {
+        const upsell = myCart.querySelector('.swiper.custom_upsell');
+        if (upsell) {
+          const upsellProducts = document.querySelectorAll('.swiper-slide.upsell_main');
+          const hasUpsellProducts = upsellProducts.length == 0;
+          upsell.classList.toggle('notVisible', hasUpsellProducts);
+        }
+      }
+  };
+  //init functionalities swiper upsell by pdm
+  const initUpsellSwiper = () => {
+    displayCard();
+    showUpsell();
+    const upsell = upsellSwiper();
+      const isMobile = window.innerWidth <= 1179;
+      if(isMobile && upsell){
+        upsell.init();
+      }
+  }
+  window.initUpsellSwiper =   initUpsellSwiper; 
+</script>
+
+<script type="module"> import { configureCart, subscribeToCartSectionsUpdate, cartRequestAdd, cartRequestChange, subscribeToCartAjaxRequests, getCartState, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}'; 
+
+let hasAttemptedGiftAdd = false;
+let hasAttemptedGiftRemove = false;
+window.cartRequestAdd = cartRequestAdd;
+window.cartRequestChange = cartRequestChange;
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	configureCart('addToCartCssClass', 'js-my-cart-open'); 
+  let timeoutId = null;
+  let shouldDeleteUrgencyNoteProducts = false;
+
+  subscribeToCartAjaxRequests((myRequestCallback, subscribeToResult) => {
+    if(myRequestCallback.requestType === 'add') {
+      if(!window.event_product_handle) {
+        let atc_href = myRequestCallback.info.initiator.getAttribute('href');
+        let atc_url = new URL(atc_href, window.location.origin);
+        let atc_variant_id = atc_url.searchParams.get('id');
+
+        //console.log('atc_variant_id [' + atc_variant_id + ']'); 
+        updateItemObject(atc_variant_id);
+      }
+
+      setTimeout(() => {
+        if(window.event_product_handle)
+        {
+          //console.log('window.event_product_handle [' + window.event_product_handle + ']');
+
+          fetchProductData(window.event_product_handle)
+          .then(() => {
+            console.log(window.item);
+            _learnq.push(['track', 'Added to Cart', window.item]);
+            window.event_product_handle = null;
+          })
+        }
+        else
+        {
+          if(window.item != undefined)
+          {
+            console.log(window.item);
+            _learnq.push(['track', 'Added to Cart', window.item]);
+          }
+        }
+      }, 500);
+    }
+
+    const customEvent = new CustomEvent('cartUpdated', {
+      detail: {
+        message: 'cart updated', 
+        time: new Date()
+      }
+    });
+    document.dispatchEvent(customEvent);
+    // urgency note
+    // Subscribes to cart actions to manage urgency products, setting a timeout to remove them after 30 minutes.
+
+    subscribeToResult( myRequestCallback => {
+      if (myRequestCallback.requestType === 'change'){
+        const initiatorData = myRequestCallback.info.initiator
+        if(initiatorData && initiatorData?.classList.contains('bundle-product-remove')) {
+          const customEvent = new CustomEvent('cartRemoveBundle', {
+            detail: { message: 'cart updated' }
+          });
+          document.dispatchEvent(customEvent);
+        }
+      }
+      if(myRequestCallback.requestType === 'add') {
+
+        setTimeout(() => {
+          getShopifyCart()
+            .then(cart => {
+              const TIMER_TO_DELETE_URGENCY_PRODUCTS = 1800000;
+              const includedUrgencyNoteProducts = checkUrgencyNoteProducts(cart);
+
+              if (!includedUrgencyNoteProducts) return;
+
+              saveUrgencyNoteCloseIconToStorage(false);
+              
+              // Clear the existing timeout if it exists
+              if (timeoutId) { 
+                clearTimeout(timeoutId);
+              }
+
+              // Set a new timeout to remove urgency products after a delay
+              timeoutId = setTimeout(() => {
+                removeUrgencyProductsFromCart();
+                shouldDeleteUrgencyNoteProducts = true;
+              },TIMER_TO_DELETE_URGENCY_PRODUCTS);
+            });
+        },5000); 
+      } else if(shouldDeleteUrgencyNoteProducts) {
+        removeUrgencyProductsFromCart();
+      }
+    })
+  })
+
+	subscribeToCartSectionsUpdate( sections => {
+		if(typeof startCartTimer == 'function') {
+			startCartTimer(15 * 60);
+		}
+    // new sidecart timer 
+    const sidecartTimerContainer = document.querySelector('.slide_cart .sidecart-timer-container');
+    initSidecarTimer(sidecartTimerContainer);
+
+    	initUpsellSwiper();
+
+      // urgent note 
+      initSidecartUrgencyNote();
+	});
+
+  subscribeToCartStateUpdate( state => {
+    if ( state.status.cartStateSet && !state.status.requestInProgress ) {
+      const cart = state.cart;
+      if (window.location.href.includes("q-rejuvalight-pro-offer")) {
+        dicount(cart,37390541553813, 44062187913455, 'N&D100');
+      } else {
+        {% if giftProduct != blank and giftQuantity != blank and giftPriceLimit != blank and giftDiscount != blank %}
+          gift(cart,'{{ giftProduct.variants.first.id }}', '{{ giftQuantity }}', '{{ giftPriceLimit }}', '{{ giftDiscount }}');
+        {% endif %}
+      }
+
+      {% capture url_dont_enable_gift %}
+        {% render 'pdm-product-gift-urls' %}
+      {% endcapture %}
+
+      {% assign url_dont_enable_gift = url_dont_enable_gift | strip %}
+
+      {% if enableProductGift and productGiftPdm.available and giftTresholdPdm != 0 and productGiftPdm != blank %}
+        productGiftPdm(cart,'{{ productGiftPdm.variants.first.id }}', {{ giftTresholdPdm }}, {{url_dont_enable_gift}});
+      {% endif %}
+    }
+  });
+
+	function dicount(cart,productId, dproductId, discountCode) {
+        if(window.__discount_applied == false)
+        {
+          if (cart.items.some(item => item.id === +(productId)) && cart.items.some(item => item.id === +(dproductId))) {
+            fetch('/discount/' + discountCode).then(async () => {
+              var event = new Event('click', {
+                  'bubbles': true,
+                  'cancelable': true
+              });
+
+              document.querySelector("#cart-reload").dispatchEvent(event);
+              window.__discount_applied = true;
+            });
+                  }
+          else {
+            window.__discount_applied = false;
+          }
+        }
+	}
+
+  function giftException()
+  {
+    const pages = [
+      'micro-infusion-special-offer',
+      'micro-infusion-special-offer-v2',
+      'micro-infusion-faq-page-2',
+      'qure-microinfusion-offer-ar',
+      'qure-microinfusion-offer-fr',
+      'qure-microinfusion-offer-es',
+      'qure-microinfusion-offer-de',
+      'anti-creams-microinfusion-page',
+      'qure-micro-infusion-landing-page-affiliate',
+      'qure-microinfusion-offer-men'
+    ];
+
+    const currentUrl = window.location.href;
+
+    if (pages.some(page => currentUrl.includes(page))) {
+      return true;
+    }
+
+    return false;
+  }
+
+  function gift(cart,productId, productQuantity, priceLimit, discountCode = '') {
+    if(!giftException()) {
+      var total_price = cart.total_price / 100;
+      var gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
+
+      if (total_price > priceLimit && !gift) {
+        //fetch('/discount/' + discountCode).then(async () => {
+          cartRequestAdd({ 
+          items: [
+            {
+              id: productId,
+              quantity: productQuantity,
+              properties: {
+                _required_validation: 'validated',
+              }
+            }
+          ]  
+        }, {} )
+        return true;
+        //});
+      }
+      else if(total_price <= priceLimit && gift)
+      {
+        const giftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
+        cartRequestChange({ 
+          id: giftInCart.key,
+          quantity: 0
+        },  {} )
+      }
+    }
+  }
+  
+
+  function productGiftPdm (cart, productId,priceLimit, url_dont_enable_gift) {
+
+    const gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
+    const total_price = cart.total_price;
+    if (total_price >= priceLimit && !gift && !hasAttemptedGiftAdd) {
+
+      if (url_dont_enable_gift != true) return;
+
+      hasAttemptedGiftAdd = true;
+      hasAttemptedGiftRemove = false;
+      cartRequestAdd({
+        items: [
+          {
+            id: productId,
+            quantity: 1,
+            properties: {
+              _required_validation: 'validated',
+            }
+          }
+        ]
+      }, {} )
+
+    }else if (total_price < priceLimit && gift && !hasAttemptedGiftRemove) {
+
+      hasAttemptedGiftRemove = true;
+      hasAttemptedGiftAdd = false;
+      const getGiftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
+      cartRequestChange({
+        id: getGiftInCart.key,
+        quantity: 0
+      },  {} )
+    }
+
+  }
+
+  /** Saves the urgency note close icon status to local storage. */
+  function saveUrgencyNoteCloseIconToStorage (status) {
+    localStorage.setItem('urgencyCloseIcon', JSON.stringify(status));
+  };
+
+  /** Retrieves the urgency note close icon status from local storage. */
+  function getUrgencyNoteCloseIconToStorage () {
+    const urgencyCloseIcon = localStorage.getItem('urgencyCloseIcon');
+    return urgencyCloseIcon ? JSON.parse(urgencyCloseIcon) : null;
+  };
+
+  /** Initializes sidecart urgency note, handling visibility and close icon actions. */
+  function initSidecartUrgencyNote () {
+    const urgencyNoteContainer = document.querySelector('.slide_cart .urgency-note-container');
+    if (!urgencyNoteContainer) return false;
+
+    const closeIcon = urgencyNoteContainer.querySelector('.urgency-note__close-icon');
+    const urgencyCloseIconStatus = getUrgencyNoteCloseIconToStorage();
+
+    if (urgencyCloseIconStatus) urgencyNoteContainer.classList.add('closed');
+
+    closeIcon.addEventListener('click', () => {
+      urgencyNoteContainer.classList.add('closed');
+      saveUrgencyNoteCloseIconToStorage(true);
+    });
+  }
+
+  /** Checks if the cart contains any products from the urgency note list. */
+  function checkUrgencyNoteProducts (cart) {
+    const urgencyNoteContainer = document.querySelector('.slide_cart .urgency-note-container');
+    if (!urgencyNoteContainer) return;
+
+    let includedUrgencyNoteProducts = [];
+    let { products:urgencyNoteProducts } = urgencyNoteContainer.dataset;
+    urgencyNoteProducts = urgencyNoteProducts.split(",").map(ele => Number(ele));
+    includedUrgencyNoteProducts = cart.items.filter(item => urgencyNoteProducts.includes(item.id));
+
+    return includedUrgencyNoteProducts;
+  }
+
+  /** Fetches the current Shopify cart data from the server. */
+  function getShopifyCart () {
+    return fetch('/cart.js', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+  };
+  
+  /** Removes urgency products from the cart if they are present. */
+  function removeUrgencyProductsFromCart () {
+    saveUrgencyNoteCloseIconToStorage(false);
+
+    getShopifyCart()
+      .then(cart => {
+        let includedUrgencyNoteProducts = checkUrgencyNoteProducts(cart);
+        
+        if (!includedUrgencyNoteProducts) return;
+
+        if (includedUrgencyNoteProducts.length > 0) {
+          cartRequestChange({
+            id: includedUrgencyNoteProducts[0].key,
+            quantity: 0
+          },  {} )
+        } else {
+          shouldDeleteUrgencyNoteProducts = false;
+        }
+      });
+  }
+});
+</script>

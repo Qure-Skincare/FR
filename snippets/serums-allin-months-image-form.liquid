@@ -1,0 +1,162 @@
+<div class="available_bar block-offer-test-original" style="margin-top: 30px;">
+    <p>AVAILABLE UNTIL STOCK LASTS</p>
+</div>
+
+<!-- -- choose bundle offer -- -->
+<div class="choose_bundle-offer section block-offer-test-original" id="choose_bundle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section_header text-start d-md-none">
+                    <h2 class="mb-0">Choose Your Bundle</h2>
+                </div>
+                <div class="pe-md-4">
+                    <img src="https://qureskincaredns.com/new/assets/all_in_one-3.webp" alt="" id="bundleImage" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bundle_offer-content">
+                    <div class="section_header text-start d-md-block d-none">
+                        <h2 class="mb-0">Choose Your Bundle</h2>
+                    </div>
+                    <div class="step_content">
+                        <div class="step_conten_blocks">
+                            {% assign product = all_products['all-in-one-face-serum-6-month-bundle'] %}
+                            {% assign product_price_divided = product.price | divided_by: 4 %}
+                            {% assign product_variant_id = product.variants.first.id %}
+                            {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                            <a class="planBlock planBlockDown active" data-variantid="{{ product_variant_id }}" href="month_3" data-tab="month_3" data-per="& SAVE {{ discount_percentage }}%"
+                                data-image="https://qureskincaredns.com/new/assets/all_in_one-3.webp">
+                                <div class="plan_choosed">
+                                    <span>Over 13,000 people chose this supply</span>
+                                </div>
+                                <input type="radio" name="monthlyPlan" id="3_month" checked>
+                                <label class="monthly_plans" for="3_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                    <div class="plan_des">
+                                        <div class="plan_hdr">
+                                            <h3>6 Month Supply</h3>
+                                            <span class="bf_discount ms-2">{{ discount_percentage }}% OFF</span>
+                                        </div>
+                                        <div class="plan_des">3 Serums + Free Shipping</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                        <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                    </div>
+                                </label>
+                            </a>
+
+                            {% assign product = all_products['all-in-one-face-serum-3-month-bundle'] %}
+                            {% assign product_price_divided = product.price | divided_by: 4 %}
+                            {% assign product_variant_id = product.variants.first.id %}
+                            {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                            <a class="planBlock planBlockDown new_block active" data-variantid="{{ product_variant_id }}" href="month_2" data-tab="month_2"
+                                data-per="& SAVE {{ discount_percentage }}%" data-image="https://qureskincaredns.com/new/assets/all_in_one-2.webp">
+                                <input type="radio" name="monthlyPlan" id="2_month">
+                                <label class="monthly_plans" for="2_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                    <div class="plan_des">
+                                        <div class="plan_hdr">
+                                            <h3>4 Month Supply</h3>
+                                            <span class="bf_discount ms-2">SAVE {{ discount_percentage }}%</span>
+                                        </div>
+                                        <div class="plan_des">2 Serums + Free Shipping</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                        <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                    </div>
+                                </label>
+                            </a>
+
+                            {% assign product = all_products['face-serum'] %}
+                            {% assign product_price_divided = product.price | divided_by: 4 %}
+                            {% assign product_variant_id = product.variants.first.id %}
+
+                            <a class="planBlock planBlockDown new_block" data-variantid="{{ product_variant_id }}" href="month_1" data-tab="month_1" data-per="- {{ product.price | money_without_trailing_zeros }}"
+                                data-image="https://qureskincaredns.com/new/assets/all_in_one-1.webp">
+                                <input type="radio" name="monthlyPlan" id="1_month">
+                                <label class="monthly_plans" for="1_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                    <div class="plan_des">
+                                        <div class="plan_hdr">
+                                            <h3>2 Month Supply</h3>
+                                        </div>
+                                        <div class="plan_des">1 Serum</div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                    </div>
+                                </label>
+                            </a>
+
+                            {% assign product = all_products['all-in-one-face-serum-6-month-bundle'] %}
+                            {% assign product_price_divided = product.price | divided_by: 4 %}
+                            {% assign product_variant_id = product.variants.first.id %}
+                            {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                            <a class="btn btn-atc submit_btn_down mt-md-2 mt-4" href="/cart/add?id={{ product_variant_id }}&amp;quantity=1" onclick="setEventProductHandler('{{ product.handle }}')" data-ajax-cart-request-button>
+                                Buy Now <span class="btn_value">&amp; SAVE {{ discount_percentage }}%</span>
+                            </a>
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const submitBtnDown = document.querySelector('.submit_btn_down');
+                                    $('.planBlockDown').click(function () {
+                                        
+                                        var selectedImage = $(this).data('image');
+                                        $('#bundleImage').attr('src', selectedImage);
+
+                                        const variantIdDown = $(this).data('variantid');
+
+                                        if (submitBtnDown && variantIdDown) {
+                                            submitBtnDown.href = submitBtnDown.href.replace(/id=\d+/, `id=${variantIdDown}`);
+                                        }
+                                    });
+                                });
+                            </script>
+
+                            <div class="payment_method pb-0">
+                                <p>OR 4 monthly payments of <span class="payment_price">{{ product_price_divided | money_without_trailing_zeros }}</span> with</p>
+                                <div class="pmt_img ps-2">
+                                    <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt=""><img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt=""><img src="https://qureskincaredns.com/new/assets/afterpay.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- choose bundle offer -- -->
+
+<script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script>
+    var swiper = new Swiper(".bfs_mb_sl", {
+        spaceBetween: 8,
+        slidesPerView: 4.4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            768: {
+                spaceBetween: 0,
+                slidesPerView: 6.3,
+            },
+
+        },
+    });
+    var swiper2 = new Swiper(".bfs_mb_sl2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".thumb-next",
+            prevEl: ".thumb-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+
+</script>

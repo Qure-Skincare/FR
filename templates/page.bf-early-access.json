@@ -1,0 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "bf-early-access",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "text": "Buy before anyone else \\n whilst stocks last. \\n Save up to 55%",
+        "image": "shopify://shop_images/black_friday-banner.webp",
+        "image_mobile": "shopify://shop_images/black_friday-bannerMob.webp",
+        "timer": "2024-10-31T23:59:59",
+        "password": "EXCLUSIVE31241F",
+        "password_wrong": "The password is wrong",
+        "destination_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

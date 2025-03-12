@@ -1,0 +1,124 @@
+<div class="slider-derm-feature container">
+  <h2 class="section-title">{{ section.settings.title }}</h2>
+
+  <slider-df class="slider-container">
+    <div class="swiper sdf">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+
+          {% render 'pdm_derm-feature-slide'
+          video: block.settings.video,
+          img_ovl: block.settings.img,
+          img_play: section.settings.icon_play,
+          review: block.settings.review_doctor,
+          doctor: block.settings.name_doctor,
+          certified: block.settings.certified_doctor,
+          product: block.settings.product,
+          index: forloop.index %}
+
+        {% endfor %}
+      </div>
+      <div class="sdf-pagination"></div>
+    </div>
+<div class="overlay-popup-sdf hidden" >
+  <div class="popup-sdf">
+    <div class="close mfp-close">X</div>
+    {% for block in section.blocks %}
+      <div class="pwd-video hidden" data-index="{{ forloop.index }}" data-active="false">
+      {% if block.settings.video_external != blank %}
+        <iframe class='video' width="100%" height="auto" src="https://www.youtube.com/embed/{{ block.settings.video_external.id }}" frameborder="0" ></iframe>
+      {% else %}
+        {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: false, controls: true }}
+      {% endif %}
+      </div> 
+    {% endfor %}
+  </div>
+</div>
+  </slider-df>
+</div>
+
+{% schema %}
+{
+  "name": "Slider Derm Feature (PDM)",
+  "tag": "section",
+  "class": "section-slider-derm-feature",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Título de la sección",
+      "id": "title",
+      "default": "Trustworthy skincare recommended by Dermatologist"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_play",
+      "label": "Icon Play"
+    }
+  ],
+  "max_blocks":20,
+  "blocks":[
+    {
+      "name":"slide-df",
+      "type":"slide-df",
+      "settings":[
+        {
+          "type": "text",
+          "id": "review_doctor",
+          "label": "Review",
+          "default": "“Qure has a really good serum. It probably has the best-known peptide complex. It’s an amazing serum. This product is always sold out from Qure. So get it when you see it.”"
+        },
+        {
+          "type": "text",
+          "id": "name_doctor",
+          "label": "Doctor Name",
+          "default": "Dr Shah and Dr Maxfield"
+        },
+        {
+          "type": "text",
+          "id": "certified_doctor",
+          "label": "Doctor Certified",
+          "default": "Board-Certified Dermatologists"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video review"
+        },
+        {
+          "type": "video_url",
+          "id": "video_external",
+          "label": "Youtube",
+          "accept": [
+            "youtube"
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Derm Feature (PDM)",
+      "settings": {
+        "title": "Slider Derm Feature"
+      },
+      "blocks":[
+        {
+          "type":"slide-df"
+        }
+      ]
+    }
+  ],
+}
+{% endschema %}
+
+

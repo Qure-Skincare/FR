@@ -1,0 +1,40 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-gift",
+      "blocks": {
+        "rating_N4rKLx": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "26 reviews"
+          }
+        },
+        "button_j84CiF": {
+          "type": "button",
+          "settings": {
+            "button_label": "See more special deals",
+            "button_url": "shopify://pages/exclusive-holiday-bundle-deal-new"
+          }
+        }
+      },
+      "block_order": [
+        "rating_N4rKLx",
+        "button_j84CiF"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,109 @@
+<!-- -- featured promotion start -- -->
+<div class="featured_promotion {{ section.settings.background }}">
+    <div class="container">
+        <div class="fp-wrapper">
+            {%- for block in section.blocks -%}
+                <div class="fp_item">
+                    {% if block.settings.image != blank %}
+                        <div class="fp_icon">
+                            <img src="{{ block.settings.image | img_url: '150x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                        </div>
+                    {% endif %}
+                    {% if block.settings.text != blank %}
+                        <div class="fp_icon_text">
+                            {{ block.settings.text }}
+                        </div> 
+                    {% endif %}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+<!-- -- featured promotion end -- -->
+
+
+{% schema %}
+    {
+        "name": "t:sections.icons-list.name",
+        "class": "section-icons-list",
+        "settings": [
+            {
+                "type": "select",
+                "id": "background",
+                "label": "t:common.background.label",
+                "options": [
+                    {
+                        "value": "bg-grey",
+                        "label": "Grey"
+                    },
+                    {
+                        "value": "bg-white",
+                        "label": "White"
+                    },
+                    {
+                        "value": "bg-yellow",
+                        "label": "Yellow"
+                    },
+                    {
+                        "value": "bg-transparent",
+                        "label": "Transparent"
+                    }
+                ]
+            }
+        ],
+        "blocks": [
+            {
+                "type": "icon",
+                "name": "t:common.icon.label",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.icons-list.name",
+                "blocks": [
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+                            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
+                            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
+                            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/science-ftr.svg",
+                            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

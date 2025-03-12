@@ -1,0 +1,265 @@
+{% assign product_variant = false %}
+{% assign product_handle = 'q-urify-water-filter' %}
+{% assign product = all_products[product_handle] %}
+{% if product.variants.size %}
+	{% assign product_variant = product.variants.first.id %}
+{% endif %}
+
+{% assign product_handle = product.handle %}
+
+{% if product.compare_at_price %}
+	{% assign discount_price = product.price | times: 0.7 %}
+{% else %}
+	{% assign discount_price = product.price | times: 0.7 %}
+{% endif %}
+
+{% capture images %}
+    {% assign f_image = 0 %}
+    {%- for block in section.blocks -%}
+        {% if block.type == 'image' %}
+            {% assign f_image = f_image | plus: 1 %}
+
+            {% if f_image == 1 %}
+                <div class="tq_img">
+                    <img class="largeImage img-fluid"
+                        src="{{ block.settings.image | img_url: '750x' }}" alt="Default Image">
+                </div> 
+            {% endif %}
+        {% endif %}
+    {%- endfor -%}
+
+    {% assign f_image_thumb = 0 %}
+    <div class="thumbs">
+        {%- for block in section.blocks -%}
+            {% if block.type == 'image' %}
+                {% assign f_image_thumb = f_image_thumb | plus: 1 %}
+                <img src="{{ block.settings.image | img_url: '750x' }}" class="img-fluid current" alt="{{ f_image_thumb }}st image description" />
+            {% endif %}
+        {%- endfor -%}  
+    </div> 
+{% endcapture %}
+
+<!-- -- qurify water filter thumbnail start -- -->
+<div class="thumbnail_qurify section" id="shop">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="tq_img_wrap d-none d-md-block">
+                    {{ images }}     
+                    {% if section.settings.video_url != blank %}
+                        <a class="see_action d-flex justify-content-center popup-youtube" href="{{ section.settings.video_url }}">
+                            <p>
+                                <span>
+                                    <img src="https://qureskincaredns.com/_sunil_qurify-filter-lp/assets/images/see_it_btn.svg" alt="" class="img-fluid">{{ section.settings.video_label }}
+                                </span>
+                            </p>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="tq_info">
+                    <div class="refill_review justify-content-start">
+                        <div class="green_tag">
+                            <p>IN A STUDY...</p>
+                        </div>
+                        {% comment %} {% if section.settings.rating_image != blank %}
+                            <div class="star_gp">
+                                <img src="{{ section.settings.rating_image | img_url: 'master' }}" alt="">
+                            </div>
+                        {% endif %} {% endcomment %}
+                        <p class="text-sm fw-normal">{{ section.settings.rating_text }}</p>
+                    </div>
+                    <div class="section_header ps-0 pb-0 pt-3 ms-0">
+                        <h2 class="title-lg">{{ section.settings.heading }}</h2>
+                        <p>{{ section.settings.text }}</p>
+                    </div>
+                    <div class="tq_list">
+                        {% assign f_list = false %}
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'list' %}
+                                <p {% if f_list == false %}class="pb-2"{% endif %}>
+                                    {% if block.settings.image != blank %}
+                                        <span class="me-2">
+                                            <img src="{{ block.settings.image | img_url: '150x' }}" alt="" class="img-fluid">
+                                        </span>
+                                    {% endif %}
+                                    <strong>{{ block.settings.text }}</strong>
+                                </p>
+                            {% endif %}
+                            {% assign f_list = true %}
+                        {%- endfor -%}
+                    </div>
+                    <div class="tq_img_wrap d-block d-md-none mt-4">
+                        {{ images }}
+                        {% if section.settings.video_url != blank %}
+                            <a class="see_action d-flex justify-content-center popup-youtube" href="{{ section.settings.video_url }}">
+                                <p>
+                                    <span>
+                                        <img src="https://qureskincaredns.com/_sunil_qurify-filter-lp/assets/images/see_it_btn.svg" alt="" class="img-fluid">{{ section.settings.video_label }}
+                                    </span>
+                                </p>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="tq_form_wrap">
+                    <div class="tq_form mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault1" checked>
+                            <label class="form-check-label d-block" for="flexRadioDefault1">
+                                <div class="tq_form_label">
+                                    <div class="tqf_wrap">
+                                        <div class="tqf_wrap_title">Subscribe & SAVE 30%</div>
+                                        <div class="tqf_price">
+                                            <div class="tqf_salesPrice">{{ discount_price | money_without_trailing_zeros  }}</div>
+                                            <div class="tqf_oldPrice">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <ul class="mt-2">
+                            <li>3-month replacement filter delivers every 90 days for only {{ all_products['q-rify-replacement-water-filter'].price | times: 0.7 | money_without_trailing_zeros }}</li>
+                            <li>Skip or cancel anytime</li>
+                        </ul>
+                        <div class="best_value">
+                            BEST VALUE
+                        </div>
+                    </div>
+                    <div class="tq_form">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault2">
+                            <label class="form-check-label d-block" for="flexRadioDefault2">
+                                <div class="tq_form_label">
+                                    <div class="tqf_wrap">
+                                        <div class="tqf_wrap_title">One-Time Order</div>
+                                        <div class="tqf_price">
+                                            <div class="tqf_salesPrice">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="get_clearer_wrapper text-center mw-100">
+                    <p><span><img src="https://qureskincaredns.com/new/assets/derma-sm.svg" alt=""></span>Dermatologist-Reviewed
+                    </p>
+
+                    <script>
+                        document.getElementById("flexRadioDefault1").addEventListener("click", function() {
+                        var subscriptionButton = document.getElementById("subscription_button");
+                        var regularButton = document.getElementById("regular_button");
+                        subscriptionButton.style.display = (subscriptionButton.style.display === 'none' ? '' : 'none');
+                        regularButton.style.display = (regularButton.style.display === 'none' ? '' : 'none');
+                        });
+
+                        document.getElementById("flexRadioDefault2").addEventListener("click", function() {
+                        var subscriptionButton = document.getElementById("subscription_button");
+                        var regularButton = document.getElementById("regular_button");
+                        subscriptionButton.style.display = (subscriptionButton.style.display === 'none' ? '' : 'none');
+                        regularButton.style.display = (regularButton.style.display === 'none' ? '' : 'none');
+                        });
+                    </script>
+
+                    <div id="subscription_button">
+                        {% form 'product', product, data-form-id: product.id %}
+                            <input type="hidden" name="selling_plan" value="4980998383">
+                            <button type="submit" class="btn btn-lg btn-primary btn_green mw-100" name="Submit" value="Submit">Subscribe Now | {{ discount_price | money_without_trailing_zeros  }} <span
+                                style="text-decoration: line-through;font-weight: 400;color:#C6E4DC">{{ product.price | money_without_trailing_zeros }}</span>
+                            </button>
+                            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                        {% endform %}
+                    </div>
+
+                    <div id="regular_button" style="display:none">
+                        <a class="btn btn-lg btn-primary btn_green mw-100" href="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now {{ product.price | money_without_trailing_zeros }}
+                        </a>
+                    </div>
+
+                    <p>
+                        <span> 
+                            <img src="https://qureskincaredns.com/new/assets/money-sm.svg" alt="">
+                        </span>30-Day Money-Back Guarantee
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- qurify water filter thumbnail end -- -->
+
+{% schema %}
+    {
+        "name": "Form",
+        "class": "section-form",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "rating_text",
+                "label": "t:common.rating.label"
+            },
+            {
+                "type": "image_picker",
+                "id": "rating_image",
+                "label": "t:common.image.label"
+            },
+            {
+                "type": "text",
+                "id": "video_url",
+                "label": "t:common.video.url.label"
+            },
+            {
+                "type": "text",
+                "id": "video_label",
+                "label": "t:common.video.cta.label",
+                "default": "See it in action"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "list",
+                "name": "t:common.object.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "image",
+                "name": "t:common.image.label",
+                "limit": 12,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    }
+        ]
+    }
+{% endschema %}

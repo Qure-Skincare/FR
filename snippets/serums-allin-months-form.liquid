@@ -1,0 +1,254 @@
+<style>
+    .refill_bl .product-price {
+        display: none;
+    }
+</style>
+
+{% liquid
+    assign show_free_shiping_guarantee_test = false
+    assign products_free_shipping_guarantee = "face-serum, micro-infusion-targeted-patches" | split: ", "
+    if products_free_shipping_guarantee contains product.handle
+        assign show_free_shiping_guarantee_test = true
+    endif
+%}
+
+<div class="mw-402 all_in_one_face_serum_offer {% if show_free_shiping_guarantee_test %}free-shiping-guarantee-test{% endif %}">
+    <div class="serum_bl pt-0">
+        <div class="s_bl_wrapper">
+            <div class="supply-detail supply-detail-without-counter pb-0 d-block">
+                <div class="supply_steps month_plan_steps">
+                    <div class="step_block">
+                        <div class="step_content">
+                            <div class="step_conten_blocks">
+                                
+                                {% assign product = all_products['all-in-one-face-serum-6-month-bundle'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+                                {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                                <div class="planBlock planBlockTop pdm-product-original-pdp {% if show_free_shiping_guarantee_test %}active{% endif %}" data-variantid="{{ product_variant_id }}">
+                                    <div class="plan_choosed text-end">
+                                        <span class="text-1">Over 13,000 people chose this supply</span>
+                                        <span class="text-2 free-shipping-guarentee-original"><strong>SPECIAL OFFER</strong> - Limited Time</span>
+                                    </div>
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_3_month" checked="">
+                                    <label class="monthly_plans {% if show_free_shiping_guarantee_test %}background-white{% endif %}" for="mBanner_3_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                        <div class="monthly_plans__circle free-shipping-guarentee-variant">
+                                            {% render 'pdm_icons', icon: 'circle-empty' %}
+                                            {% render 'pdm_icons', icon: 'circle-full' %}
+                                        </div>
+                                        <div class="plan_des plan_des_top-original">
+                                            <div class="plan_hdr">
+                                                <h3>6 Month Supply</h3>
+                                                <span class="saved_price">{{ discount_percentage }}% OFF</span>
+                                            </div>
+                                            <div class="plan_des free-shipping-guarentee-original">3 Serums + Free Shipping</div>
+                                            <div class="plan_des free-shipping-guarentee-variant">{{ 'products.product.3_serum_label' | t }}</div>
+                                        </div>
+
+                                        <div class="plan_des plan_des_top-test">
+                                            <div class="plan_hdr">
+                                                <h3>Buy 2, Get 1 <span>FREE</span></h3>
+                                                <p>6 Months Supply | FREE Shipping</p>
+                                            </div>
+                                        </div>
+                                        <div class="price plan_des_top-original">
+                                            <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                        <div class="price plan_des_top-test">
+                                            <p class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</p>
+                                            <p class="saved_price saved_price-desktop">SAVE {{ discount_percentage }}% - GET ONE FREE</p>
+                                            <p class="saved_price saved_price-mobile">SAVE {{ discount_percentage }}% <span>GET ONE FREE</span></p>
+                                        </div>
+                                        <div class="free-shipping-guarentee-variant free-shipping-icon">
+                                            {% render 'pdm_icons', icon: "free-shipping-truck" %}
+                                            <span class="free-shipping-icon__label">{{ 'products.product.includes_free_shipping_label' | t }}</span>
+                                        </div>
+                                    </label>
+                                </div>
+                         
+                                {% assign product = all_products['all-in-one-face-serum-6-month-bundle-1'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+                                {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                                <div class="planBlock planBlockTop pdm-product-test-pdp" data-variantid="{{ product_variant_id }}">
+                                    <div class="plan_choosed text-end">
+                                        <span class="text-1">Over 13,000 people chose this supply</span>
+                                        <span class="text-2"><strong>SPECIAL OFFER</strong> - Limited Time</span>
+                                    </div>
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_3_month" checked="">
+                                    <label class="monthly_plans" for="mBanner_3_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                        <div class="plan_des plan_des_top-original">
+                                            <div class="plan_hdr">
+                                                <h3>6 Month Supply</h3>
+                                                <span class="saved_price">{{ discount_percentage }}% OFF</span>
+                                            </div>
+                                            <div class="plan_des">3 Serums + Free Shipping</div>
+                                        </div>
+
+                                        <div class="plan_des plan_des_top-test">
+                                            <div class="plan_hdr">
+                                                <h3>Buy 2, Get 1 <span>FREE</span></h3>
+                                                <p>6 Months Supply | FREE Shipping</p>
+                                            </div>
+                                        </div>
+                                        <div class="price plan_des_top-original">
+                                            <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                        <div class="price plan_des_top-test">
+                                            <p class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</p>
+                                            <p class="saved_price saved_price-desktop">SAVE {{ discount_percentage }}% - GET ONE FREE</p>
+                                            <p class="saved_price saved_price-mobile">SAVE {{ discount_percentage }}% <span>GET ONE FREE</span></p>
+                                        </div>
+                                    </label>
+
+                                    
+                                </div>
+
+                                {% assign product = all_products['all-in-one-face-serum-3-month-bundle'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+                                {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+                                <div class="planBlock planBlockTop hidde-second-step" data-variantid="{{ product_variant_id }}">
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_2_month">
+                                    <label class="monthly_plans" for="mBanner_2_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                        <div class="monthly_plans__circle free-shipping-guarentee-variant">
+                                            {% render 'pdm_icons', icon: 'circle-empty' %}
+                                            {% render 'pdm_icons', icon: 'circle-full' %}
+                                        </div>
+                                        <div class="plan_des">
+                                            <div class="plan_hdr">
+                                                <h3>4 Month Supply</h3>
+                                                <span class="saved_price">{{ discount_percentage }}% OFF</span>
+                                            </div>
+                                            <div class="plan_des free-shipping-guarentee-original">2 Serums + Free Shipping</div>
+                                            <div class="plan_des free-shipping-guarentee-variant">{{ 'products.product.2_Serums_label' | t }}</div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                {% assign product = all_products['face-serum'] %}
+                                {% assign product_price_divided = product.price | divided_by: 4 %}
+                                {% assign product_variant_id = product.variants.first.id %}
+
+                                <div class="planBlock planBlockTop" data-variantid="{{ product_variant_id }}">
+                                    <input type="radio" name="mBanner_monthlyPlan" id="mBanner_1_month">
+                                    <label class="monthly_plans" for="mBanner_1_month" payment-price="{{ product_price_divided | money_without_trailing_zeros }}">
+                                        <div class="monthly_plans__circle free-shipping-guarentee-variant">
+                                            {% render 'pdm_icons', icon: 'circle-empty' %}
+                                            {% render 'pdm_icons', icon: 'circle-full' %}
+                                        </div>
+                                        <div class="plan_des plan_des_bottom-original">
+                                            <div class="plan_hdr">
+                                                <h3>2 Month Supply</h3>
+                                            </div>
+                                            <div class="plan_des">1 Serum</div>
+                                        </div>
+                                        <div class="price plan_des_bottom-original">
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                        <div class="plan_des plan_des_bottom-test">
+                                            <div class="plan_hdr">
+                                                <h3>1 Serum</h3>
+                                            </div>
+                                            <div class="plan_des">2 month Supply</div>
+                                        </div>
+                                        <div class="price plan_des_bottom-test">
+                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% assign product = all_products['all-in-one-face-serum-6-month-bundle'] %}
+    {% assign product_price_divided = product.price | divided_by: 4 %}
+    {% assign product_variant_id = product.variants.first.id %}
+    {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+
+    <a class="btn btn-lg btn-primary buy_btn submit_btn_top reserve_btn mt-3" href="/cart/add?id={{ product_variant_id }}&amp;quantity=1" onclick="setEventProductHandler('{{ product.handle }}')" data-ajax-cart-request-button>
+        Buy Now <span class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitBtnTop = document.querySelector('.submit_btn_top');
+            const stickyBtn = document.querySelector('.button_sticky');
+
+            $('.planBlockTop').click(function () {
+                
+                const variantIdTop = $(this).data('variantid');
+
+                if (submitBtnTop && variantIdTop) {
+                    submitBtnTop.href = submitBtnTop.href.replace(/id=\d+/, `id=${variantIdTop}`);
+                }
+
+                if (stickyBtn && variantIdTop) {
+                    stickyBtn.href = stickyBtn.href.replace(/id=\d+/, `id=${variantIdTop}`);
+                }
+            });
+        });
+    </script>
+
+    
+    <div class="payment_method">
+        <p>OR 4 monthly payments of <span class="payment_price">$36.75</span> with</p>
+        <div class="pmt_img ps-2">
+            <img src="{{ 'klarna.svg' | asset_url }}" alt=""><img src="{{ 'sezzle.svg' | asset_url }}" alt=""><img src="{{ 'afterpay.svg' | asset_url }}" alt="">
+        </div>
+    </div>
+    <div class="certified_derm">
+        <img src="{{ 'certified_derma.webp' | asset_url }}" alt="">
+        <p><b>50+ Board Certified Dermatologists</b> recommended Qure to their patients. <a href="https://qureskincare.com/pages/derm-reviews" class="text-black text-decoration-underline">See More</a> </p>
+    </div>
+    <div class="shipping shipping_bg bg-transparent py-md-0 free-shipping-guarentee-original">
+        <div class="s_bx">
+            <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
+            <p>Dermatologist<br class="d-md-none"> Reviewed</p>
+        </div>
+        <div class="s_bx">
+            <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+            <p class="d-none d-md-block">Free Shipping Over $100</p>
+            <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+        </div>
+    </div>
+    {% if settings.show_icons_product_face_serum %}
+        <div class="shipping-badges-container free-shipping-guarentee-variant">
+            <div class="shipping-badges-container__money-back">
+                {% render 'pdm_icons', icon: 'money-back-guarantee' %}
+                <div class="shipping-badges-container__money-back--label">{{ settings.money_back_guarantee_label }}</div>
+            </div>
+            <div class="shipping-badges-container__free-return">
+                {% render 'pdm_icons', icon: 'free-returns' %}
+                <div class="shipping-badges-container__free-return--label">{{ settings.free_returns_label }}</div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+{% if product.compare_at_price != blank %}
+    {% render 'product-sticky-button' with
+        variant_id: product.variants.first.id, 
+        current_price: product.price, 
+        original_price: product.compare_at_price, 
+    %}                    
+{% else %}
+    {% render 'product-sticky-button' with
+        variant_id: product.variants.first.id, 
+        current_price: product.price, 
+        original_price: product.price, 
+    %}
+{% endif %}

@@ -1,0 +1,333 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "header_landing_pFmaRH": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_qLHgyD": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "CONTENT REQUIREMENTS",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs1.webp"
+          }
+        },
+        "navigation_link_DgYaFx": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "PRODUCT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs2.webp"
+          }
+        },
+        "navigation_link_3X4mrf": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "INSPIRING CONTENT",
+            "link_url": "#tabsAccordion",
+            "image": "shopify://shop_images/header_cs3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_qLHgyD",
+        "navigation_link_DgYaFx",
+        "navigation_link_3X4mrf"
+      ],
+      "settings": {
+      }
+    },
+    "section1": {
+      "type": "guide-header",
+      "blocks": {
+        "button_LUpm3B": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about Micro-Infusion Targeted Patches",
+            "button_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
+          }
+        }
+      },
+      "block_order": [
+        "button_LUpm3B"
+      ],
+      "settings": {
+        "heading": "Neck & Décolletage LED Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the Neck & Décolletage LED Device with our creative content guide. This brief will help you craft engaging content that showcases how our innovative tool transforms skincare routines for radiant, glowing skin.</p>",
+        "wistia_id": "f9a8svw294"
+      }
+    },
+    "qure_founder_LkfQUT": {
+      "type": "qure-founder",
+      "settings": {
+        "heading": "\"LED light targets fibroblasts to increase collagen production and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "image": "shopify://shop_images/dr.shah_new.webp",
+        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
+      }
+    },
+    "section3": {
+      "type": "guide-columns",
+      "blocks": {
+        "header_RA46tw": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 1",
+            "text": "Merge Qure into your creatives",
+            "image": "shopify://shop_images/ac_step4.webp",
+            "button_label": "Content Requirements"
+          }
+        },
+        "description_mHnPFA": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Key Messages",
+            "image": "shopify://shop_images/key_message.svg",
+            "content": "<p>Key Points to include in the messaging:</p>",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_aNzhwA": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Advanced Technology",
+            "content": "<ul><li>A combination of Red and Near Infra-Red wavelengths reaches deep within the skin to stimulate collagen and elastin production. Specifically designed to repair and rejuvenate neck and decolletage skin where the first signs of aging show.</li></ul>",
+            "show": true
+          }
+        },
+        "collapsed_aNzhwB": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Time-Saving",
+            "content": "<ul><li>Reclaim time from your busy schedule as this device requires only 10 minutes of your day. Achieve glowing skin without lengthy treatments or going to the clinic.</li></ul>",
+            "show": false
+          }
+        },
+        "collapsed_aNzhwC": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Clinical results from home - minus the “clinical” costs",
+            "content": "<ul><li>Get smoother, firmer, brighter-looking neck and décolletage skin with consistent treatment. One-time cost investment of the Neck & Décolletage LED Device means unlimited treatments, with no ongoing payments or hassle of attending in-clinic appointments.</li></ul>",
+            "show": false
+          }
+        },
+        "collapsed_aNzhwD": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Benefits",
+            "content": "<ul><li>Neck & Décolletage LED Device repairs sun-damaged skin, and reduces the appearance of redness, pigmentation, age spots, and fine lines and wrinkles. It evens skin tone and boosts firmness for radiant younger-looking skin</li></ul>",
+            "show": false
+          }
+        },
+        "collapsed_8awDR6": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Portability",
+            "content": "<ul><li>Our fully portable mask allows you to multitask, whether you're working or unwinding, so you never have to compromise on self-care.</li></ul>",
+            "show": false
+          }
+        },
+        "description_tVQDHe": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Creative Direction",
+            "image": "shopify://shop_images/direction.svg",
+            "content": "<ul><li>High-quality, bright lighting and high-resolution imagery/ videography to be supplied. No obvious filters.</li><li>Qure Neck & Décolletage LED Device to be the feature of the post. The background must be clean and bright.</li><li>When using the device, please do not wear any makeup, or no visible/noticeable makeup.</li><li>In cover photos for video content always show yourself using the Neck & Décolletage LED Device, unless otherwise agreed on with Qure’s team.</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_cpREQp": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Inclusion",
+            "image": "shopify://shop_images/inclusion.svg",
+            "content": "<ul><li>Tag and mention @qureskincare #QureSkincare #QureLEDMask #LEDlighttherapy #Neck&DécolletageLEDevice</li><li>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can’t be placed in BIO, include it in linktr.ee or similar</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_LhpN6x": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 2",
+            "text": "Get to know your Neck & Décolletage LED",
+            "image": "shopify://shop_images/ac_step5.webp",
+            "button_label": "Product Information"
+          }
+        },
+        "description_6WtF8b": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Details",
+            "image": "shopify://shop_images/search.svg",
+            "content": "<ul><li><strong>TREATMENT TIME: </strong>10 minutes</li><li><strong>USE: </strong>5-7 times per week</li><li><strong>WAVELENGTH: </strong>633nm (Red), 830nm (Near-Infrared)</li><li><strong>CHARGING TIME: </strong>4 hours</li><li><strong>LEDs: </strong>55 dual core<br/><br/><a href=\"https://www.qureskincare.com/products/neck-decolletage-led\" title=\"https://www.qureskincare.com/products/neck-decolletage-led\">Learn more about the Neck & Décolletage LED &gt;</a></li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "description_BNpxL3": {
+          "type": "description",
+          "settings": {
+            "classname": "faq",
+            "heading": "Usage Instructions",
+            "image": "shopify://shop_images/usage_dir.svg",
+            "content": "",
+            "wistia_id": ""
+          }
+        },
+        "collapsed_N6miTX": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Prepare & set",
+            "content": "<ul><li>Cleanse and dry your skin to prepare it for ultimate LED light absorption.</li><li>Secure the device around your neck using the adjustable velcro straps.</li></ul>",
+            "show": true
+          }
+        },
+        "collapsed_xhxiYz": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Quick Start",
+            "content": "<ul><li>Press & hold to start your 10-minute treatment.</li></ul>",
+            "show": false
+          }
+        },
+        "collapsed_EJJWTr": {
+          "type": "collapsed",
+          "settings": {
+            "heading": "Aftercare",
+            "content": "<ul><li>The device will automatically shut off after 10 minutes. Remove the device and gently wipe it down. Follow up with your usual skincare routine. That’s it!</li></ul>",
+            "show": false
+          }
+        },
+        "description_GE3PNL": {
+          "type": "description",
+          "settings": {
+            "classname": "",
+            "heading": "Product Claims",
+            "image": "shopify://shop_images/product_claims.svg",
+            "content": "<ul><li>This device features LED lights placed in the center of the chest where most fine lines appear.</li><li>Our LED uses clinical-grade technology to deliver safe, concentrated wavelengths deep into the layers of the skin where even the best creams and serums can’t reach. That’s where the magic happens.</li><li>Your skin absorbs the natural light, kickstarting production of elastin, collagen, and fibroblasts – known to enhance skin firmness and smoothness. It’s truly working to repair and rejuvenate your skin from the inside out!</li></ul>",
+            "wistia_id": ""
+          }
+        },
+        "header_AwT6ji": {
+          "type": "header",
+          "settings": {
+            "heading": "STEP 3",
+            "text": "Get inspired by other content creators",
+            "image": "shopify://shop_images/ac_step6.webp",
+            "button_label": "Inspiring Content"
+          }
+        },
+        "heading_YiyFGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Show how it works"
+          }
+        },
+        "video_4Jjjcm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video35.webp",
+            "wistia_id": "00xu5jy96f"
+          }
+        },
+        "video_iHceHC": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video36.webp",
+            "wistia_id": "xqaygwj7nv"
+          }
+        },
+        "video_DmtewU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video37.webp",
+            "wistia_id": "yrv6jnsupt"
+          }
+        },
+        "heading_fUcJta": {
+          "type": "heading",
+          "settings": {
+            "heading": "What experts say"
+          }
+        },
+        "video_H9fmrV": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video38.webp",
+            "wistia_id": "yql55cz3yz"
+          }
+        },
+        "video_dpGpUm": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video39.webp",
+            "wistia_id": "ha3jsau5v8"
+          }
+        },
+        "video_6gLP6V": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video40.webp",
+            "wistia_id": "in5j96xz0d"
+          }
+        },
+        "video_WTaxf8": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/ac_video41.webp",
+            "wistia_id": "k857b7n6ze"
+          }
+        }
+      },
+      "block_order": [
+        "header_RA46tw",
+        "description_mHnPFA",
+        "collapsed_aNzhwA",
+        "collapsed_aNzhwB",
+        "collapsed_aNzhwC",
+        "collapsed_aNzhwD",
+        "collapsed_8awDR6",
+        "description_tVQDHe",
+        "description_cpREQp",
+        "header_LhpN6x",
+        "description_6WtF8b",
+        "description_BNpxL3",
+        "collapsed_N6miTX",
+        "collapsed_xhxiYz",
+        "collapsed_EJJWTr",
+        "description_GE3PNL",
+        "header_AwT6ji",
+        "heading_YiyFGP",
+        "video_4Jjjcm",
+        "video_iHceHC",
+        "video_DmtewU",
+        "heading_fUcJta",
+        "video_H9fmrV",
+        "video_dpGpUm",
+        "video_6gLP6V",
+        "video_WTaxf8"
+      ],
+      "settings": {
+        "heading": "All you need to know before you start creating your amazing content"
+      }
+    }
+  },
+  "order": [
+    "header_landing_pFmaRH",
+    "section1",
+    "qure_founder_LkfQUT",
+    "section3"
+  ]
+}

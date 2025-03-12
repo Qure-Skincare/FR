@@ -1,0 +1,46 @@
+{% comment %} 
+  Render Purchase Breadcrumbs
+
+  Note: This snippet is used to render the breadcrumbs of the purchase process.
+
+  Need: 
+
+  Accepts:
+  - generalSettings: {Object} - The general settings of the section. 
+
+  Usage:
+  {% render 'pdm_landing-purchase-breadcrumbs', generalSettings: page.metafields.custom.general_information_purchase_process.value %}
+{% endcomment %}
+
+<nav class="landing-breadcrumbs-container">
+  <ul class="landing-breadcrumbs-wrapper">
+    <li class="landing-breadcrumbs-item active-breadcrumb breadcrumb-arrow-shape-start-cricle breadStep-1">
+      <button id="breadCrumb-btn-1" class="landing-breadcrumbs-item__btn">
+        <p class="landing-breadcrumbs-item__text desktop-text-breadcrumb">{{ generalSettings.step_1 }}</p>
+        <p  class="landing-breadcrumbs-item__text mobile-text-breadcrumb">{{ generalSettings.step_1_mobile  }}</p>
+        <p class="landing-breadcrumbs-item__text--select1"></p>
+      </button>
+      <span class="arrow-part"></span>
+    </li>
+    <li class="landing-breadcrumbs-item breadStep-2">
+      <button id="breadCrumb-btn-2" disabled class="landing-breadcrumbs-item__btn">
+        <p class="landing-breadcrumbs-item__text desktop-text-breadcrumb">{{ generalSettings.step_2 }}</p>
+        <p class="landing-breadcrumbs-item__text mobile-text-breadcrumb">{{ generalSettings.step_2_mobile  }}</p>
+        <p class="landing-breadcrumbs-item__text--select2"></p>
+      </button>
+    </li>
+    <li class="landing-breadcrumbs-item breadStep-3">
+      <button id="breadCrumb-btn-3" disabled class="landing-breadcrumbs-item__btn">
+        <p class="landing-breadcrumbs-item__text desktop-text-breadcrumb">{{ generalSettings.step_3 }}</p>
+        <p  class="landing-breadcrumbs-item__text mobile-text-breadcrumb">{{ generalSettings.step_3_mobile  }}</p>
+        <p class="landing-breadcrumbs-item__text--select3"></p>
+      </button>
+    </li>
+    <li class="landing-breadcrumbs-item breadcrumb-arrow-shape-end-cricle breadStep-4">
+      <button id="breadCrumb-btn-4" disabled class="landing-breadcrumbs-item__btn">
+        <p class="landing-breadcrumbs-item__text desktop-text-breadcrumb">{{ generalSettings.step_4 }}</p>
+        <p  class="landing-breadcrumbs-item__text mobile-text-breadcrumb">{{ generalSettings.step_4_mobile  }}</p>
+      </button>
+    </li>
+  </ul>
+</nav>

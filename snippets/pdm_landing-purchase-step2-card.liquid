@@ -1,0 +1,42 @@
+{% comment %} 
+
+  Render Purchase Step 2 Card with product image, title and value props.
+
+  Accepts:
+  - data: {Object} - The product data to be rendered (Metafield).
+
+  Usage:
+  {% render 'pdm_landing-purchase-step2-card', data: product.metafields.custom.purchase_step_2.value %}
+ {% endcomment %}
+
+<div class="step2-purchase-card-container-mobile">
+  <div class="step2-card-title-container">   
+    <div class="step2-card-title">
+      <h3>{{ data.title }}</h3>
+      <span>{{ data.product_name }}</span>
+    </div>
+  </div>
+  <div class="step2-card-information-container">
+    <div class="step2-card-img-container">
+      {{ data.image | image_url: width: 300 | image_tag: alt: data.title }}
+    </div>
+    <div class="step2-card-value-props">
+      {{ data.value_props |  metafield_tag }}
+    </div>
+  </div>
+</div>
+
+<div class="step2-purchase-card-container-desktop">
+  <div class="step2-card-img-container">
+    {{ data.image | image_url: width: 300 | image_tag: alt: data.title }}
+  </div>
+  <div class="step2-card-title-container">   
+    <div class="step2-card-title">
+      <h3>{{ data.title }}</h3>
+      <span>{{ data.product_name }}</span>
+    </div>
+  </div>
+  <div class="step2-card-value-props">
+    {{ data.value_props |  metafield_tag }}
+  </div>
+</div>

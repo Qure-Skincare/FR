@@ -1,0 +1,72 @@
+{% comment %}
+ snippet for science section used on featuredin.liquid
+Usage:
+  {% render 'pdm_science_section', data: block.settings %}
+{% endcomment %}
+
+<div class="science-section-container" id="science-section">
+  <div class="container">
+    <div class="science-section-wrapper">
+      <div class="left-panel">
+        {% comment %} delete if no need it, and the part of schema {% endcomment %}
+        <div class="science-video-container-horizontal">
+          {{ data.video_science_section | video_tag: loop: true, autoplay: true }}
+        </div>
+        <div class="science-video-container-vertical">
+          {{ data.video_science_section_vertical | video_tag: loop: true, autoplay: true }}
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="science-text-container">
+          <div class="science-text-container-information">
+            <h2 class="original_heading">{{ data.science_heading }}</h2>
+            <h2 class="new_heading">{{ data.new_science_heading }}</h2>
+            <p class="original_subheading">{{ data.science_subheading }}</p>
+          </div>
+          <div class="science-text-container-value-props original">
+            {% assign value_props_number = (1..4) %}
+            {% for i in value_props_number %}
+              {% assign value_img = 'value_prop_img_' | append: i %}
+              {% assign value_text = 'value_prop_text_' | append: i %}
+              <div class="value-prop-card">
+                {% if data[value_img] != blank %}   
+                  <div class="value-prop-card__img">
+                    {{ data[value_img] | image_url: width: 120 | image_tag: alt: 'value prop image' }}
+                  </div>
+                {% endif %}
+                <div class="value-prop-card__text">
+                  <p>{{ data[value_text] }}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="science-text-container-value-props new">
+            {% assign value_props_number = (1..3) %}
+            {% for i in value_props_number %}
+              {% assign value_title = 'new_value_prop_title_' | append: i %}
+              {% assign value_text = 'new_value_prop_text_' | append: i %}
+              <div class="value-prop-card">
+                <span class="value-prop-card_count">{{ i }}</span>
+                <div class="value-prop-card_body">
+                  {% if data[value_title] != blank %}   
+                    <div class="value-prop-card__title">
+                      {{ data[value_title] }}
+                      {% comment %} {{ data[value_img] | image_url: width: 120 | image_tag: alt: 'value prop image' }} {% endcomment %}
+                    </div>
+                  {% endif %}
+                  <div class="value-prop-card__text">
+                    {% render 'pdm_check-icon' %}
+                    <p>{{ data[value_text] }}</p>
+                  </div>                  
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="science-text-anchor-container">
+            <a href="#{{ data.cta_link }}" class="">{{ data.cta_text | capitalize }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

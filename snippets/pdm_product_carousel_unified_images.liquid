@@ -1,0 +1,150 @@
+{% comment %}
+  This snippet render the main and thumbnail product sliders 
+  Accepts:
+  - metaobject: { metaobject } - metaobject with all the product images
+  Usage:
+  {% render 'pdm_product_carousel_unified_images', 
+   metaobject: product_metaobject %}
+{% endcomment %}
+
+{% liquid 
+  for wistia_index in metaobject.wistia_index_for_video_list.value
+    assign wistia_found = false
+    assign index = ''
+    if wistia_index != blank
+      assign wistia_found = true
+      assign index = wistia_index
+      assign wistia_id = metaobject.wistia_id_for_video_list.value[forloop.index0]
+    endif
+  endfor
+  assign index = index | plus: 0
+%}
+
+
+<div class="swiper swiper-products-carousel" data-product-handle="{{ product.handle }}">
+  <div class="swiper-wrapper {% if product.handle != "neck-decolletage-led" %}reduce-video-size{% endif %}">
+    {% for media in metaobject.image_or_video.value %}
+        {% if media.media_type == 'video' %}
+          {% if media.sources[1].url != blank %}
+            {% assign video_source_url = media.sources[1].url %}
+          {% else %}
+            {% assign video_source_url = media.sources[0].url %}
+          {% endif %}
+
+          <div class="swiper-slide video_popup" data-media="{{ media.media_type }}">
+            {% if forloop.last == false and product.handle != "faucet-filter" and product.handle != "shower-filter" %}
+              <a
+                class="popup-youtube d-block"
+                href="{{ video_source_url }}"
+              >
+                <img
+                  class="img-fluid swiper-products-carousel__image"
+                  src="{{ media | image_url: width: 560, height: 496 }}"
+                  width="560"
+                  height="496"
+                  alt="{{ media.alt | escape }}"
+                >
+              </a>
+            {% else %}
+              <div class="video-container">
+                {% assign video_controls = true %}
+                {% if product.handle == "faucet-filter" %}
+                  {% assign video_controls = false %}
+                {% endif %}
+               {{ media | video_tag: autoplay: true, controls: video_controls, muted: true, loop: false, class: 'swiper-products-carousel__video' }}
+              </div>
+            {% endif %}
+          </div>
+        {% else %}
+          {% comment %} wistia video  {% endcomment %}
+          {% if index == forloop.index0 and wistia_id != blank %}
+            <div class="swiper-slide video_popup">
+              <div class="banner_img position-relative">
+                <img class="img-fluid tab_img d-none d-md-block" src="{{ media | img_url: '900x' }}" alt="">
+                <img class="img-fluid d-block d-md-none" src="{{ media | img_url: '540x' }}" alt="">
+                <a class="popup-youtube1 position-absolute top-0 bottom-0 start-0 end-0">
+                  <div class="wistia_responsive_padding" style="position:relative;">
+                    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                      <span
+                        class="wistia_embed wistia_async_{{ wistia_id }} popover=true videoFoam=true"
+                        style="display:inline-block;height:100%;position:relative;width:100%"
+                        >&nbsp;</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          {% else %}
+            <div class="swiper-slide" data-media="{{ media.media_type }}" data-index="{{ index }}" data-wistia_id="{{ wistia_id }}" data-forloopindex0={{ forloop.index0 }}>
+              <picture class="swiper-products-carousel__image-container {% if product.handle == "dermal-mist" or product.handle == "faucet-filter" or product.handle == "shower-filter" %}margin-auto{% endif %}">
+                <source media="(min-width:1920px)" srcset="{{ media | img_url: 'master' }}">
+                <source media="(min-width:1600px)" srcset="{{ media | img_url: '1600x' }}">
+                <source media="(min-width:1100px)" srcset="{{ media | img_url: '1100x' }}">
+                <source media="(min-width:720px)" srcset="{{ media | img_url: '720x' }}">
+                <source media="(min-width:540px)" srcset="{{ media | img_url: '540x' }}">
+                  {{ media | image_url: width: 1600 | image_tag: class: 'swiper-products-carousel__image', alt: media.alt | escape}} 
+                </picture>
+            </div>
+          {% endif %}
+        {% endif %} 
+    {% endfor %}
+
+     {% comment %} wistia video  {% endcomment %}
+    {% if metaobject.wistia_id != blank %}
+      <div class="swiper-slide video_popup pe-none" >
+        <div class="wistia_responsive_padding" style="position:relative;">
+            <div class="wistia_responsive_wrapper"
+                style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_{{ metaobject.wistia_id }} seo=false videoFoam=true"
+                    style="height:100%;position:relative;width:100%">
+                  <div class="wistia_swatch"
+                      style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                      <img src="https://fast.wistia.com/embed/medias/{{ metaobject.wistia_id }}/swatch"
+                          style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                          alt="" aria-hidden="true"
+                          onload="this.parentNode.style.opacity=1;" 
+                      />
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+</div>
+
+{% comment %} thumbnails  {% endcomment %}
+<div thumbsSlider="" class="swiper swiper-products-thumbs__container">
+  <div class="swiper-wrapper">
+    {% for media in metaobject.image_or_video.value %}
+        <div class="swiper-slide" data-media="{{ media.media_type }}">
+          <img
+            class="swiper-products-carousel__thumb-image"
+            src="{{ media | image_url: width: 500 }}"
+            width="64"
+            height="64"
+            alt="{{ media.alt | escape }}"
+          >
+        </div>
+    {% endfor %}
+      {% comment %} wistia video  {% endcomment %}
+    {% if metaobject.wistia_id != blank %}
+      <div class="swiper-slide">
+        <img src="https://fast.wistia.com/embed/medias/{{ metaobject.wistia_id }}/swatch"
+          alt="" aria-hidden="true"
+          width="200"
+          class="swiper-products-carousel__thumb-image"
+        />
+      </div>
+    {% endif %}
+  </div>
+  
+</div>
+<!-- navigation buttons -->
+<div class="swiper-products-thumbs-next">
+  {% render 'pdm_icons', icon: 'arrow-right-black' %}  
+</div>
+<div class="swiper-products-thumbs-prev">
+  {% render 'pdm_icons', icon: 'arrow-left-black' %}  
+</div>

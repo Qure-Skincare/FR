@@ -1,0 +1,144 @@
+<!-- -- 6 reasons section start -- -->
+<div class="{{ section.settings.classname }} section-{{ section.id }} reasons section" id="reasons_section">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+        <div class="section_header text-start text-md-center">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="reasons_wrapper{% if section.blocks.size == 6 %} reasons_wrapper_6{% endif %}">
+                {%- for block in section.blocks -%}
+                    {% assign variable_name = section.blocks.size %}
+                    {% if block.type == 'icon' %}
+                    <div class="rs_item">
+                        {% if block.settings.image != blank %}
+                            <div class="r_use_img">
+                                <img src="{{ block.settings.image | img_url: '200x' }}" alt="{{ block.settings.image.alt | escape }}">
+                            </div>
+                        {% endif %}
+                        {% if block.settings.text != blank %}
+                            <div class="rs_item_content">
+                                {{ block.settings.text }}
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- 6 reasons section end -- -->
+
+{% style %}
+.chest_pdp .section-{{ section.id }} .reasons_wrapper {
+    display: grid;
+    grid-template-columns: repeat({{ variable_name }},auto);
+}
+@media(max-width:767px) {
+    .chest_pdp .section-{{ section.id }} .reasons_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
+{% endstyle %}
+
+{% schema %}
+    {
+        "name": "t:sections.reasons.name",
+        "class": "section-reasons",
+        "settings": [
+            {
+                "type": "text",
+                "id": "classname",
+                "label": "t:common.classname.label",
+                "default": "bg-transparent pb-0 pt-0"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "icon",
+                "name": "t:common.icon.label",
+                "limit": 6,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.reasons.name",
+                "blocks": [
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_icon_b1.svg",
+                            "text": "<p>Reduce fine lines and wrinkles<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_icon_b2.svg",
+                            "text": "<p>Clear and prevent acne breakouts<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_icon_b3.svg",
+                            "text": "<p>Even skin tone and fade dark spots<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_icon_b4.svg",
+                            "text": "<p>Calm redness and reduce inflammation<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_icon_b5.svg",
+                            "text": "<p>Lift and firm sagging skin<\/p>"
+                        }
+                    },
+                    {
+                        "type": "icon",
+                        "settings": {
+                            "image": "shopify:\/\/shop_images\/led_icon_b6.svg",
+                            "text": "<p>Promote a healthy, glowing complexion<\/p>"
+                        }
+                    }                    
+                ]
+			}
+        ]
+    }
+{% endschema %}

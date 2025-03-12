@@ -1,0 +1,16 @@
+{%- comment -%}
+Usage:  {% render 'pdm_confidence-slider-image', slide_image:data.image_slide_second, text_image:data.text_slide_second %}
+{%- endcomment -%}
+<div class="swiper-slide">
+  <div class="skin_item_n">
+  {% if slide_image != blank %}
+    <div class="skin_item_n_img">
+      <img src="{{ slide_image | img_url: 'master' }}" alt="{{  slide_image.alt | escape }}" class="img-fluid">
+    </div>
+  {% endif %}
+
+    <div class="skin_item_n_tag">
+        {{ text_image |  replace: '<strong>', '<span class="sn_tag">' |  replace: '</strong>', '</span>' }}
+    </div>
+  </div>
+</div>

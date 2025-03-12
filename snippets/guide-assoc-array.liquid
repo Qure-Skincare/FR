@@ -1,0 +1,58 @@
+{% if section.blocks != blank %}
+    {% if __parent_title != blank %}
+        {% assign __parent_counter = 0 %}
+
+        {% unless __separator %}
+            {% assign __separator = '###' %}
+        {% endunless %}
+    
+        {% for block in section.blocks %}
+            {% if block.type == __parent_title %}
+                {% assign __parent_counter = __parent_counter | plus: 1 %}    
+            {% else %}
+                {% include 'guide-assoc-array-content', section: section %}
+                {% if __content %}
+                    {% case __parent_counter %}
+                        {% when 1 %}
+                            {% assign __items1 = __items1 |  append: __content  |  append: __separator %}
+                            {% assign __types1 = __types1 |  append: block.type |  append: __separator %}
+                            {% if block.settings.classname != blank %}
+                                {% assign __classname1 = __classname1 |  append: block.settings.classname |  append: __separator %}
+                            {% else %}
+                                {% assign __classname1 = __classname1 |  append: 'none' |  append: __separator %}
+                            {% endif %}
+                        {% when 2 %}
+                            {% assign __items2 = __items2 |  append: __content  |  append: __separator %}
+                            {% assign __types2 = __types2 |  append: block.type |  append: __separator %}
+                            {% if block.settings.classname != blank %}
+                                {% assign __classname2 = __classname2 |  append: block.settings.classname |  append: __separator %}
+                            {% else %}
+                                {% assign __classname2 = __classname2 |  append: 'none' |  append: __separator %}
+                            {% endif %}
+                        {% when 3 %}
+                            {% assign __items3 = __items3 |  append: __content  |  append: __separator %}
+                            {% assign __types3 = __types3 |  append: block.type |  append: __separator %}
+                            {% if block.settings.classname != blank %}
+                                {% assign __classname3 = __classname3 |  append: block.settings.classname |  append: __separator %}
+                            {% else %}
+                                {% assign __classname3 = __classname3 |  append: 'none' |  append: __separator %}
+                            {% endif %}
+                    {% endcase %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        
+        {% assign __itemsArray1 = __items1 | split: __separator %}
+        {% assign __typesArray1 = __types1 | split: __separator %}
+        {% assign __classnamesArray1 = __classname1 | split: __separator %}
+
+        {% assign __itemsArray2 = __items2 | split: __separator %}
+        {% assign __typesArray2 = __types2 | split: __separator %}
+        {% assign __classnamesArray2 = __classname2 | split: __separator %}
+
+        {% assign __itemsArray3 = __items3 | split: __separator %}
+        {% assign __typesArray3 = __types3 | split: __separator %}
+        {% assign __classnamesArray3 = __classname3 | split: __separator %}
+
+    {% endif %}
+{% endif %}

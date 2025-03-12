@@ -1,0 +1,165 @@
+<!-- -- best results start -- -->
+<div class="best_result bg_yellow section">
+    <div class="container">
+        <div class="section_header text-start text-md-center mb-3">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg paddingB">{{ section.settings.heading }}</h2> 
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        {% if section.blocks.size > 0 %}
+            <div class="safety_wrapper">
+                <div 
+                    class="swiper safety_guide dot_pagination twa__swiper" 
+                    id="twa__swiper-safety_guide-{{ block.id }}"
+                    data-section-id="safety_guide-{{ block.id }}" 
+                    data-autoplay="false" 
+                    data-loop="false" 
+                    data-centerslide="false"
+                    data-mobile="1" 
+                    data-tablet="2" 
+                    data-desktop="2" 
+                    data-spacing="20"
+                    data-arrowleft="safety_guide-swiper-prev" 
+                    data-arrowright="safety_guide-swiper-next">
+                    <div class="swiper-wrapper">
+                        {%- for block in section.blocks -%}
+                            {% if block.type == 'object' %}
+                                <div class="swiper-slide">
+                                    <div class="safety_content{% if forloop.index == 1 %} do_safety{% else %} dont_safety{% endif %}">
+                                        {% if block.settings.heading != blank %}
+                                            <div class="safety_tab">
+                                                {{ block.settings.heading }}
+                                            </div>
+                                        {% endif %}
+
+                                        {% if block.settings.text != blank %}
+                                            <div class="safety_info">
+                                                {% if forloop.index == 1 %}
+                                                    {{ 
+                                                        block.settings.text
+                                                            |  replace: '<ul>', '<div class="ss_list"><ul>' 
+                                                            |  replace: '</ul>', '</ul></div>' 
+                                                     }}
+                                                {% else %}
+                                                    {{ 
+                                                        block.settings.text
+                                                            |  replace: '<ul>', '<div class="ss_list incorrectCircle"><ul>' 
+                                                            |  replace: '</ul>', '</ul></div>' 
+                                                    }}
+                                                {% endif %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {%- endfor -%}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'button' %}
+                        {% if block.settings.button_label != blank %}
+                            <a class="btn btn-lg btn-primary buy_btn mt-3 see_detailed" href="{{ block.settings.button_url }}" aria-label="{{ block.settings.button_label |  escape }}">{{ block.settings.button_label }}
+                                <img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
+                            </a>
+                        {% endif %}
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        {% endif %}
+    </div>
+</div>
+<!-- -- best results end -- -->
+
+{% schema %}
+    {
+        "name": "t:sections.compare-box.name",
+        "class": "section-personalized",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "object",
+                "name": "t:common.object.label",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    }
+        ],
+        "presets": [
+			{
+				"name": "t:sections.compare-box.name",
+                "settings": {
+                    "heading": "What you should know for the best results",
+                    "text": "<p><strong>The Qure Micro-Infusion System is designed with your safety in mind.<\/strong><\/p><p>Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimise the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.<\/p><p>For more information on the treatment protocol, please click button below for the full treatment guide.<\/p><p><strong>Below are a few rules you should follow while using your Qure Micro-Infusion System:<\/strong><\/p>"
+                },
+                "blocks": [
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "DO+ SAFETY GUIDELINES",
+                            "text": "<p><strong>Before treatment:<\/strong><\/p><ul><li>Perform patch test first to have a better understanding of how your skin will react<\/li><li>Ensure your face and hands are clean<\/li><\/ul><p><\/p><p><strong>After treatment:<\/strong><\/p><ul><li>Apply the rest of the serum post-treatment and leave on overnight<\/li><li>Dispose the needle head safely and use new needle head per treatment<\/li><li>Wash out the serum chamber<\/li><\/ul>"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "settings": {
+                            "heading": "DONT+ SAFETY GUIDELINES",
+                            "text": "<p><strong>Before treatment:<\/strong><\/p><ul><li>Avoid stamping directly on active breakouts<\/li><li>Don’t use with serums other than those in Qure’s system<\/li><\/ul><p><strong>After treatment:<\/strong><\/p><ul><li>Avoid being in the sun for 24 hours<\/li><li>Avoid touching face with dirty hands<\/li><li>Avoid acids and exfoliating products for 24 hours<\/li><\/ul>"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "settings": {
+                            "button_label": "See Treatment Protocol",
+                            "button_url": "shopify:\/\/pages\/microinfusion-safety-guide"
+                        }
+                    }
+                ]
+			}
+        ]
+    }
+{% endschema %}

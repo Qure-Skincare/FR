@@ -1,0 +1,155 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 order-2 order-md-1">
+            <div class="best_seller_info">
+                <div class="section_header text-start m-0 d-grid">
+                    <h1 class="title-xl order-2 order-md-1">{{ product.title }}</h1>
+                    {%- for block in section.blocks -%}
+                        {% case block.type %}
+                            {% when 'preorder' %}
+                                <h6 class="order-3 order-md-2">Pre-Order</h6>
+                            {% when 'rating' %}
+                                <div class="star_gp order-1 order-md-3">
+                                    {% if block.settings.image != blank %}
+                                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <a href="#">{{ block.settings.text }}</a>
+                                    {% endif %}
+                                </div>
+                        {% endcase %}
+                    {%- endfor -%}
+                </div>
+
+                <div class="gift_card_details">
+                    <div class="enjoy_cards_details">
+                        {{ product.description }}
+                    </div>
+                </div>
+                <div class="gift_card_variants">
+                    {% for variant in product.variants %}
+                        <button data-variant-id="{{ variant.id }}" data-price="{{ variant.price | divided_by: 100.0 }}" data-slideTo="{{ forloop.index0 }}" class="gift_variant{% if variant.id == product.variants.first.id %} gift_variant_active{% endif %}"><span class="money">{{ variant.price | money_without_trailing_zeros }}</span> Gift Card</button>
+                    {% endfor %}
+                </div>
+                <div class="gift_cal">
+                    <div class="bundle_quantity_wrap">
+                        <div class="bundle_quantity">
+                            <a href="#">-</a>
+                            <p>1</p>
+                            <a href="#">+</a>
+                        </div>
+                        <a class="btn btn-lg btn-primary buy_btn d-none d-md-block" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Add to cart<img
+                                src="{{ 'arrow_right.svg' | asset_url }}" alt="">
+                        </a>
+                        <a class="btn btn-lg btn-primary buy_btn d-block d-md-none" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Add to cart
+                        </a>
+                    </div>
+                    <div class="payment_method">
+                        <p>OR pay 4 monthly payments of $<span class="resultPrice">{{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
+                        <div class="pmt_img ps-2">
+                            <img src="{{ 'klarna.svg' | asset_url }}" alt="">
+                            <img src="{{ 'sezzle.svg' | asset_url }}" alt="">
+                            <img src="{{ 'afterpay.svg' | asset_url }}" alt="">
+                        </div>
+                    </div>
+                    {%- for block in section.blocks -%}
+                        {% if block.type == 'button' %}
+                            <div class="special_deals">
+                                <img src="{{ 'special_deals_n.webp' | asset_url }}" alt="">
+                                <div class="special_deal_btn">
+                                    {% if block.settings.button_label != blank %}
+                                        <a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}<img src="{{ 'arrow-right-white.png' | asset_url }}"></a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {%- endfor -%}
+                    <div class="shipping shipping_bg bg-transparent">
+                        <div class="s_bx">
+                            <img src="{{ 'product_clinically.svg' | asset_url }}" alt="">
+                            <p>Products Backed<br> by Clinical Study </p>
+                        </div>
+                        <div class="s_bx">
+                            <img src="{{ 'gift.svg' | asset_url }}" alt="">
+                            <p>Instant Gift,<br> Delivered Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+            <div>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                    class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        {% for media in product.media %}
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="{{ media | img_url: '540x' }}" >
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ '__app-product-gift.js' | asset_url }}"></script>
+
+{% schema %}
+    {
+        "name": "t:sections.product-gift.name",
+        "class": "section-product-gift",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "type": "rating",
+                "name": "t:common.rating.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "button",
+                "name": "t:common.button.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Button label",
+                        "label": "t:common.button.label",
+                        "info": "t:common.button.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button.url.label"
+                    }
+                ]
+		    },
+            {
+                "type": "preorder",
+                "name": "t:common.preorder.label",
+                "limit": 1,
+                "settings": [
+
+                ]
+		    }
+        ]
+    }
+{% endschema %}

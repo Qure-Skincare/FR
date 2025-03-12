@@ -1,0 +1,78 @@
+{% comment %} 
+  Render Purchase Step 1 Card Mobile
+
+  Note: This snippet is used to render the card of the first step of the purchase process.
+
+  Need:
+  
+  Accepts:
+  - productInfo: {Object} - The product information.
+  - productData: {Object} - The product data.
+  - checkIcon: {String} - The check icon.
+  - crossIcon: {String} - The cross icon.
+
+  Usage:
+  {% render 'pdm_landing-purchase-step1-card-mobile',
+    productInfo: productInfo,
+    productData: productData,
+    checkIcon: checkIcon,
+    crossIcon: crossIcon
+  %}
+
+ {% endcomment %}
+
+{% liquid
+  assign product_save = productData.compare_at_price | minus: productData.price | times: 100 | divided_by: productData.compare_at_price | round: 0
+%}
+
+{% comment %} image {% endcomment %}
+<div class="step1-card-price-container">
+  {% if product_save != null %}
+    <div class="step1-card-price-discount">
+      <p>SAVE {{ product_save }}%</p>
+    </div>
+  {% endif %}
+  <div class="step1-card-price">
+    <div class="step1-card-price-information">
+      <span class="step1-card-price__title">{{ productInfo.title_product }}</span>
+      <div class="step1-card-price-wrapper">
+        <span class="step1-card-price-wrapper__real">
+          {{- productData.compare_at_price | money_without_trailing_zeros }}
+        </span>
+        <span class="step1-card-price-wrapper__discount">{{ productData.price | money_without_trailing_zeros }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="step1-card-value-props">
+  {% comment %} value props {% endcomment %}
+  {% if productInfo.doctor_recommendation != blank %}
+    <div class="step1-value-doctor">
+      {% render 'pdm_landing-purchase-icons', icon: 'check-doctor' %}
+      <p>{{ productInfo.doctor_recommendation }}</p>
+    </div>
+  {% endif %}
+  <div class="step1-value-static-props">
+    {{ productInfo.value_props | metafield_tag | replace: '(check)', checkIcon | replace: '(cross)', crossIcon }}
+  </div>
+  {% comment %} dropdown {% endcomment %}
+  <div class="step1-mobile-value-props-dropdown">
+    <button
+      class="step1-mobile-value-dropdown-title"
+    >
+      <div class="step1-mobile-value-dropdown-title-wrapper">
+        <span class="step1-value-dropdown-title-wrapper__title">{{ productInfo.title_included }}</span>
+        <span class="step1-value-dropdown-title-wrapper__text">{{ productInfo.text_quantity_included }}</span>
+      </div>
+      <div class="landing-rotate-svg-button">
+        {% render 'pdm_landing-purchase-icons', icon: 'collapse-arrow' %}
+      </div>
+    </button>
+    <div
+      class="step1-mobile-value-dropdown-information"
+    >
+      {{ productInfo.value_props_included | metafield_tag }}
+    </div>
+  </div>
+</div>
