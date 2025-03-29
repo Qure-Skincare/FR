@@ -852,7 +852,7 @@
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>saves you time</li><li>comfort and privacy of your own home</li><li>better results with more frequent treatments</li><li>customized approach</li></ul>"
+            "list": "<ul><li>gagnez du temps</li><li>le confort et l'intimité de chez soi</li><li>meilleurs résultats avec des traitements réguliers</li><li>approche personnalisée</li></ul>"
           }
         },
         "object_zdxnBH": {
@@ -864,7 +864,7 @@
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>time-consuming commute to clinic</li><li>according to clinic’s availability</li><li>less treatments - less results</li><li>ongoing payments required</li></ul>"
+            "list": "<ul><li>trajet chronophage jusqu'à la clinique</li><li>selon la disponibilité de la clinique</li><li>moins de traitements - moins de résultats</li><li>paiements continus nécessaires</li></ul>"
           }
         }
       },
@@ -875,7 +875,7 @@
       "settings": {
         "classname": "beauty_skincare section bg-white",
         "sub_head": "",
-        "heading": "Hello make up free days, goodbye clinical costs",
+        "heading": "Bonjour les journées sans maquillage, adieu les dépenses cliniques.",
         "heading_reduced": "",
         "text": "",
         "text_reduced": "",
@@ -917,10 +917,10 @@
         "image_z4kpCb"
       ],
       "settings": {
-        "heading": "Feeling good in your skin is not a privilege —  it's a right.",
+        "heading": "Être dans sa peau n'est pas un privilège, c'est un droit.",
         "text": "",
-        "text_content": "<p>At Qure, we're redefining beauty boundaries by making professional clinical treatments accessible to everyone from the comfort of peoples home—without the clinical price tag. </p>",
-        "button_label": "Our story",
+        "text_content": "<p>Chez Qure, nous redéfinissons les frontières de la beauté en rendant les traitements cliniques professionnels accessibles à tous, depuis le confort de leur domicile, sans les prix cliniques.</p>",
+        "button_label": "Découvrir notre histoire",
         "button_url": "https://www.qureskincare.com/pages/our-story"
       }
     },
@@ -952,8 +952,8 @@
         "blog_Kn6TKx"
       ],
       "settings": {
-        "head_txt": "Learn more and share your skincare journey",
-        "btn_txt": "Join our skincare community",
+        "head_txt": "Découvrez-en plus et partagez votre skincare",
+        "btn_txt": "Rejoignez notre communauté",
         "btn_url": "https://m.facebook.com/groups/140594262121805/"
       }
     },
@@ -971,9 +971,9 @@
         "form_FCEpBt"
       ],
       "settings": {
-        "heading": "Personalized solutions for your skin’s unique needs",
-        "text": "<p>Answer a few questions and we’ll tell you how to achieve your skincare goals.</p>",
-        "btn_text": "Claim Free Consultation",
+        "heading": "Solutions personnalisées pour les besoins uniques de votre peau.",
+        "text": "<p>Répondez à quelques questions et obtenez nos conseils pour obtenir la peau de vos rêves.</p>",
+        "btn_text": "Obtenir ma consultation gratuite",
         "btn_url": "https://www.qureskincare.com/pages/skin-consultation"
       }
     }
