@@ -802,31 +802,31 @@
         "box_kKUckK": {
           "type": "Box",
           "settings": {
-            "heading": "Dispositifs sûrs et faciles à utiliser",
+            "heading": "Sûrs et simple à utiliser",
             "text": "<p>Effectuez des traitements en toute <strong>sécurité</strong> à la <strong>maison</strong> pour des thérapies rapides et faciles, afin de maintenir une peau lisse et saine à long terme.</p>",
             "btn_img": "shopify://shop_images/derma-ft-lg.svg",
-            "btn_text": "<p>Dispositifs sûrs et faciles à utiliser</p>",
-            "btn_textm": "<p>Dispositifs sûrs et faciles à utiliser</p>"
+            "btn_text": "<p>Sûrs et simple à utiliser</p>",
+            "btn_textm": "<p>Sûrs et simple à utiliser</p>"
           }
         },
         "box_ideJJP": {
           "type": "Box",
           "settings": {
-            "heading": "Saves You Time, and Money",
-            "text": "<p>No one has the time, or the money, to attend regular in-clinic treatments in order to see long lasting results. With Qure, it’s like going to the clinic 5x a week - Minus the cost and the time commitment.</p>",
+            "heading": "Économisez temps et argent",
+            "text": "<p>Personne n'a le temps ni l'argent pour suivre des traitements réguliers en clinique afin d'obtenir des résultats durables. Avec Qure, c'est comme aller en clinique 5 fois par semaine, sans le coût ni l'engagement en temps.</p>",
             "btn_img": "shopify://shop_images/money_time.svg",
-            "btn_text": "<p>Saves You Time, and Money</p>",
-            "btn_textm": "<p>Saves You Time & Money</p>"
+            "btn_text": "<p>Économisez temps et argent</p>",
+            "btn_textm": "<p>Économisez temps et argent</p>"
           }
         },
         "box_tkGFdT": {
           "type": "Box",
           "settings": {
-            "heading": "Treat Multiple Skin Concerns",
-            "text": "<p>Feel good in your skin with personalized treatments for your specific skin type and concern. We put <strong>clinically proven</strong> skincare in your hands so you can <strong>achieve in-clinic results without the guess work.</strong></p>",
+            "heading": "Traitez tous vos problèmes de peau",
+            "text": "<p>Sentez-vous bien dans votre peau avec des traitements pour votre type de peau et vos besoins spécifiques. Nous vous offrons des soins de la peau <strong>cliniquement prouvés</strong> pour des <strong>résultats dignes d'un cabinet.</strong></p>",
             "btn_img": "shopify://shop_images/treat-skin-lg.svg",
-            "btn_text": "<p>Treat Multiple Skin Concerns</p>",
-            "btn_textm": "<p>Treat Multiple Skin Concerns</p>"
+            "btn_text": "<p>Traitez tous vos problèmes de peau</p>",
+            "btn_textm": "<p>Traitez tous vos problèmes de peau</p>"
           }
         }
       },
