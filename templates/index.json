@@ -284,7 +284,7 @@
         "text_dUdLVN"
       ],
       "settings": {
-        "heading": "FEATURED IN",
+        "heading": "APPARUS DANS",
         "slider_type": "five_slides",
         "slide_per_view_desktop": 3,
         "slide_per_view_mobile": 3
@@ -418,7 +418,7 @@
       ],
       "settings": {
         "ctm_cls_results": "",
-        "heading": "See the results yourself",
+        "heading": "Regardez par vous-mêmes",
         "rating_text": ""
       }
     },
@@ -429,7 +429,7 @@
           "type": "object",
           "settings": {
             "heading": "Dr Shah, MD",
-            "subheading": "Dermatologue · Membre du comité",
+            "subheading": "Dermatologue certifié par le comité",
             "text": "<p>\"J'apprécie qu'ils investissent beaucoup dans la recherche et le développement de leurs produits - En fin de compte, je pense qu'ils se soucient vraiment des produits qu'ils mettent sur le marché.\"</p>",
             "image": "shopify://shop_images/advisor_1.webp",
             "customClass": ""
@@ -439,8 +439,8 @@
           "type": "object",
           "settings": {
             "heading": "Dr Maxfield, MD",
-            "subheading": "Board-Certified Dermatologist",
-            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to hep what you’re doing for your skincare routine”</p>",
+            "subheading": "Dermatologue certifié par le comité",
+            "text": "<p>\"L'équipe de Qure réalise des études, analyse l'efficacité, afin que vous puissiez avoir confiance en leurs produits et qu'ils puissent compléter votre skincare.\"</p>",
             "image": "shopify://shop_images/advisor_2.webp",
             "customClass": ""
           }
@@ -449,8 +449,8 @@
           "type": "object",
           "settings": {
             "heading": "Dr Alexis Stephens, MD",
-            "subheading": "Board-Certified Dermatologist",
-            "text": "<p>\"What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create\"</p>",
+            "subheading": "Dermatologue certifié par le comité",
+            "text": "<p>\"Ce qui distingue vraiment Qure, c'est le niveau d'innovation et d'attention qu'ils mettent dans chaque produit. Leur engagement envers la qualité et leur souci du détail se reflètent vraiment dans tout ce qu'ils créent.\"</p>",
             "image": "shopify://shop_images/advisor_3.webp",
             "customClass": ""
           }
@@ -459,8 +459,8 @@
           "type": "object",
           "settings": {
             "heading": "Dr Prem Tripathi, MD",
-            "subheading": "Double Board Certified Facial Plastic Surgeon",
-            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "subheading": "Chirurgien plastique certifié par le comité",
+            "text": "<p>\"J'adore que les produits Qure Skincare aillent au-delà des simples traitements topiques, en aidant à maintenir les résultats que l'on obtient en cabinet.\"</p>",
             "image": "shopify://shop_images/advisor_4.webp",
             "customClass": ""
           }
@@ -476,10 +476,10 @@
         ".targetSkin .swiper-slide:nth-of-type(4) .text-white {margin-top: -10px;}"
       ],
       "settings": {
-        "heading": "Meet our board of advisors",
-        "heading_mobile": "Board of advisors",
-        "subheading": "At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.",
-        "subheading_mobile": "Meet our board of advisors:"
+        "heading": "Rencontrez notre comité scientifique",
+        "heading_mobile": "Comité Scientifique",
+        "subheading": "Chez Qure Skincare, nous sommes fiers de compter sur une équipe de dermatologues de renom qui nous guident dans notre mission de proposer des solutions de soins de la peau de haute qualité.",
+        "subheading_mobile": "Rencontrez notre comité scientifique :"
       }
     },
     "featured_collection_Hj3Xcw": {
@@ -489,8 +489,8 @@
           "type": "column",
           "settings": {
             "c_image": "shopify://shop_images/skin_c1.webp",
-            "name": "Signs of aging, fine lines & wrinkles",
-            "button": "Shop Now",
+            "name": "Signes de l'âge, ridules et rides.4o mini",
+            "button": "Obtenir maintenant",
             "btn_url": "https://www.qureskincare.com/collections/fine-line-wrinkles"
           }
         },
@@ -498,8 +498,8 @@
           "type": "column",
           "settings": {
             "c_image": "shopify://shop_images/skin_c2.webp",
-            "name": "Dark spots & uneven skin tone",
-            "button": "Shop Now",
+            "name": "Taches brunes et teint irrégulier.",
+            "button": "Obtenir maintenant",
             "btn_url": "https://www.qureskincare.com/collections/dark-spots?ose=false"
           }
         },
@@ -507,8 +507,8 @@
           "type": "column",
           "settings": {
             "c_image": "shopify://shop_images/skin_c3.webp",
-            "name": "Acne Breakouts & Blemishes",
-            "button": "Shop Now",
+            "name": "Éruptions d'acné et imperfections.",
+            "button": "Obtenir maintenant",
             "btn_url": "https://www.qureskincare.com/collections/acne-breakouts?ose=false"
           }
         },
@@ -516,8 +516,8 @@
           "type": "column",
           "settings": {
             "c_image": "shopify://shop_images/skin_c4.webp",
-            "name": "Large pores & textured skin",
-            "button": "Shop Now",
+            "name": "Pores dilatés et grain de peau irrégulier.",
+            "button": "Obtenir maintenant",
             "btn_url": "https://www.qureskincare.com/collections/dark-spots?"
           }
         }
@@ -532,8 +532,8 @@
         ".container-fluid {padding: 0;}"
       ],
       "settings": {
-        "heading": "Get the Qure",
-        "sub_heading": "<h4>Reclaim your confidence at any age, no matter what your skin concern is.</h4>",
+        "heading": "Obtenez la Qure",
+        "sub_heading": "<h4>Récupérez votre confiance à tout âge, qu'importe votre problème de peau.</h4>",
         "container": "container-fluid",
         "slide_on_desktop": 4,
         "slide_on_tablet": 2,
@@ -547,12 +547,12 @@
           "type": "product",
           "settings": {
             "pd_img": "shopify://shop_images/MI_new.png",
-            "pd_name": "Micro-Infusion Facial System",
+            "pd_name": "Système Facial Micro-Infusion",
             "from": true,
             "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
             "bestseller": true,
             "rating": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-            "rating_text": "283 Reviews",
+            "rating_text": "283 Avis",
             "pd_link": "https://www.qureskincare.com/pages/microinfusion"
           }
         },
@@ -560,12 +560,12 @@
           "type": "product",
           "settings": {
             "pd_img": "shopify://shop_images/fav_pdt2.webp",
-            "pd_name": "Q-Rejuvalight Pro Facewear",
+            "pd_name": "Masque Q-Rejuvalight Pro",
             "from": false,
             "product": "q-rejuvalight-pro-facewear",
             "bestseller": false,
             "rating": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-            "rating_text": "283 Reviews",
+            "rating_text": "283 Avis",
             "pd_link": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear"
           }
         },
@@ -573,12 +573,12 @@
           "type": "product",
           "settings": {
             "pd_img": "shopify://shop_images/fav_pdt3.webp",
-            "pd_name": "All-In-One Face Serum",
+            "pd_name": "Sérum Visage Tout-en-Un",
             "from": false,
             "product": "face-serum",
             "bestseller": false,
             "rating": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-            "rating_text": "85 Reviews",
+            "rating_text": "85 Avis",
             "pd_link": "https://www.qureskincare.com/products/face-serum"
           }
         },
@@ -586,12 +586,12 @@
           "type": "product",
           "settings": {
             "pd_img": "shopify://shop_images/MITP.png",
-            "pd_name": "Micro-Infusion Targeted Patches",
+            "pd_name": "Patches Ciblés Micro-Infusion",
             "from": false,
             "product": "micro-infusion-targeted-patches",
             "bestseller": false,
             "rating": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-            "rating_text": "57 Reviews",
+            "rating_text": "57 Avis",
             "pd_link": ""
           }
         }
@@ -603,8 +603,8 @@
         "product_3hFb8X"
       ],
       "settings": {
-        "heading": "Best Sellers",
-        "btn": "Shop All Best-Sellers",
+        "heading": "Best-Sellers",
+        "btn": "Voir tous les best-sellers",
         "btn_url": "shopify://collections/best-sellers"
       }
     },
@@ -615,28 +615,28 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Livraison gratuite à partir de 100$</p>"
           }
         },
         "icon_VEziHa": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Achetez maintenant, payez plus tard</p>"
           }
         },
         "icon_MjQxFD": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/derma-ftr.svg",
-            "text": "<p>Dermatologist Tested</p><p>& Approved</p>"
+            "text": "<p>Testés et approuvés par des dermatogues</p>"
           }
         },
         "icon_iah3Eg": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/science-ftr.svg",
-            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+            "text": "<p>Résultats prouvés, validés par la science</p>"
           }
         }
       },
@@ -659,15 +659,15 @@
             "image": "shopify://shop_images/dr_shah_trusted.webp",
             "video": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg",
             "title": "Dr Shah, MD",
-            "des": "Board certified dermatologist"
+            "des": "Dermatologue certifié par le comité"
           }
         },
         "text_content_zQrNN6": {
           "type": "text_content",
           "settings": {
             "trust_icon": "shopify://shop_images/verified_design.svg",
-            "trust_des": "Trusted and recommended by world leading Dermatologists",
-            "title": "\"The best LED mask <strong>on the market in my opinion at this time, that being said you do need to </strong>use this consistently to see results…\"",
+            "trust_des": "Validé par des dermatologues de renommée mondiale",
+            "title": "<strong>\"</strong>Le meilleur masque LED sur le marché à mon avis en ce moment<strong>, cela dit, </strong>vous devez l'utiliser <strong>de manière régulière pour voir des résultats...\"</strong>",
             "title_clr": "#000000",
             "title_strong_clr": "#797d7c"
           }
@@ -693,9 +693,9 @@
             "video_link": "",
             "youtube_link": "https://www.youtube.com/watch?v=JPWycy8cwN8",
             "wistia_id": "",
-            "badge_txt": "3.03M Subscribers",
-            "title": "There have been studies to show that this will definitely work to help your products penetrate better...",
-            "client_details": "<strong>Dr Shah & Dr Maxfield,</strong>   Certified Dermatologists"
+            "badge_txt": "3.03M Abonnés",
+            "title": "Des études ont montré que cela fonctionne définitivement pour aider vos produits à mieux pénétrer...",
+            "client_details": "<strong>Dr Shah & Dr Maxfield,</strong>   Dermatologues Certifiés"
           }
         },
         "testimonial_niJCUK": {
@@ -707,8 +707,8 @@
             "youtube_link": "",
             "wistia_id": "",
             "badge_txt": "155K Followers",
-            "title": "I’ve liked using this in between my in-office treatments. It’s convenient and you get all the benefits of micro-needling treatment from the comfort of your home...",
-            "client_details": "<strong>Dr Brown,</strong>  Medical Doctor"
+            "title": "J'ai aimé l'utiliser entre mes traitements en cabinet. C'est pratique et vous obtenez tous les bienfaits du traitement de microneedling depuis le confort de chez vous...",
+            "client_details": "<strong>Dr Brown,</strong>  Docteur"
           }
         },
         "testimonial_d3pmRz": {
