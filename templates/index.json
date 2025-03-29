@@ -114,8 +114,8 @@
         "link_GirQqh": {
           "type": "link",
           "settings": {
-            "link_label": "Shop Best Sellers",
-            "link_label_mobile": "Shop Best Sellers",
+            "link_label": "Voir nos best-sellers",
+            "link_label_mobile": "Voir nos best-sellers",
             "link_url": "shopify://collections/best-sellers"
           }
         },
@@ -130,10 +130,10 @@
         "banner_6wgzUN": {
           "type": "banner",
           "settings": {
-            "heading": "Save up to 55% on Exclusive Bundles",
+            "heading": "Économisez jusqu'à 55% sur des bundles exclusifs",
             "image": "shopify://shop_images/sub_banner.webp",
             "image_mobile": "shopify://shop_images/sub_banner-mob.webp",
-            "link_label": "Buy Now",
+            "link_label": "Acheter",
             "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
           }
         }
@@ -169,10 +169,10 @@
         "banner_6wgzUN": {
           "type": "banner",
           "settings": {
-            "heading": "Save up to 55% on Exclusive Bundles",
+            "heading": "Économisez jusqu'à 55% sur des bundles exclusifs",
             "image": "shopify://shop_images/sub_banner.webp",
             "image_mobile": "shopify://shop_images/sub_banner-mob.webp",
-            "link_label": "Buy Now",
+            "link_label": "Acheter",
             "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
           }
         }
@@ -205,7 +205,7 @@
         "text_hjVp7i": {
           "type": "text",
           "settings": {
-            "text": "<p>“The professional grade is the perfect addition to any at-home skincare routine.”</p>"
+            "text": "<p>\"Le « grade professionnel » est l'ajout parfait à toute skincare maison.\"</p>"
           }
         },
         "image_XrzjQ3": {
@@ -217,7 +217,7 @@
         "text_t9tnXK": {
           "type": "text",
           "settings": {
-            "text": "<p>\"Treatment time is only three minutes—among the fastest of all devices.\"</p>"
+            "text": "<p>\"Le traitement ne dure que trois minutes, un des appareils les plus rapides.\"</p>"
           }
         },
         "image_PmUxLt": {
@@ -229,7 +229,7 @@
         "text_bxTn4H": {
           "type": "text",
           "settings": {
-            "text": "<p>\"A multi-use LED mask with five different light setting options to plump smooth and rejuvenate all skin types.\"<br/>                                    </p>"
+            "text": "<p>\"Un masque LED multifonction avec cinq réglages de lumière différents pour repulper, lisser et rajeunir tous les types de peau.\"</p>"
           }
         },
         "image_hNLLqX": {
@@ -241,7 +241,7 @@
         "text_k6KEBE": {
           "type": "text",
           "settings": {
-            "text": "<p>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”<br/>                            </p>"
+            "text": "<p>\"La combinaison de couleurs vous permet de personnaliser les lumières utilisées, optimisant ainsi ses bienfaits pour votre peau...\"</p>"
           }
         },
         "image_ebp8NW": {
@@ -253,7 +253,7 @@
         "text_Mnmb4P": {
           "type": "text",
           "settings": {
-            "text": "<p>“The Qure mask is the FIRST mask in the world that adapts to your skin!...There is an app that reminds you of the treatments too.”</p>"
+            "text": "<p>\"Le masque Qure est le PREMIER masque au monde qui s'adapte à votre peau ! Il y a aussi une appli qui vous rappelle les traitements.\"</p>"
           }
         },
         "image_a8KMPg": {
@@ -265,7 +265,7 @@
         "text_dUdLVN": {
           "type": "text",
           "settings": {
-            "text": "<p>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</p>"
+            "text": "<p>\"Le Q-Rejuvalight Pro utilise la puissance des lumières, du bleu à l'infrarouge, pour traiter presque tous les problèmes de la peau que vous pouvez imaginer.\"</p>"
           }
         }
       },
@@ -296,10 +296,10 @@
         "slide_ApYVrJ": {
           "type": "Slide",
           "settings": {
-            "heading": "IT REALLY WORKS!!",
+            "heading": "ÇA MARCHE VRAIMENT !!!",
             "product": "Q-Rejuvalight Pro LED Mask",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.</p>",
+            "text": "<p>J'étais très sceptique lorsque mon mari m'a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J'ai essayé de nombreux sérums pour mes taches de soleil, mais rien n'a fonctionné jusqu'à ce que j'utilise ce masque. L'investissement vaut le coup.</p>",
             "image": "shopify://shop_images/results_teresa.webp",
             "image_country": "shopify://shop_images/america_f_92cbd39d-f0e3-42b9-a692-c714420fbe53.webp",
             "client": "Teresa S.",
@@ -310,10 +310,10 @@
         "slide_8DpTJn": {
           "type": "Slide",
           "settings": {
-            "heading": "My skin returned to life!",
+            "heading": "Ma peau est revenue à la vie !",
             "product": "Micro-Infusion System",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "text": "<p>Je viens de fêter mes 57 ans. Ma peau était extrêmement sèche et, en utilisant ce produit, ma peau EST REVENU À LA VIE ! Je suis tellement impressionnée ! Mes amies me demandent ce que j'utilise pour ma peau... et je leur ai dit. Le produit est facile à utiliser et les aiguilles sont bien meilleures que celles d'un stylo pour le microneedling. C'est un produit incroyable que vous ne regretterez pas d'avoir acheté. Je vois vraiment la différence sur ma peau !!</p>",
             "image": "shopify://shop_images/ellie_412942fe-4036-4c4e-a52b-10020082a2c1.png",
             "image_country": "shopify://shop_images/america_f_92cbd39d-f0e3-42b9-a692-c714420fbe53.webp",
             "client": "Ellie V.",
@@ -324,10 +324,10 @@
         "slide_wwBJ3B": {
           "type": "Slide",
           "settings": {
-            "heading": "Can’t go a day without it",
+            "heading": "Je ne peux pas passer une journée sans !",
             "product": "Q-Rejuvalight Pro LED Mask",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>“I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts of skincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "text": "<p>J'ai commencé à avoir de l'acné à l'adolescence. Et ça n'a fait qu'empirer. J'ai tout essayé : des régimes (je suis devenue complètement vegan), j'ai testé toutes sortes de soins de peau (chers comme moins chers), sans résultat. Avec Qure, dès le début, j'ai remarqué des résultats. Après la 1ère semaine, je n'avais plus de boutons. Les gens me demandent maintenant comment j'ai réussi à avoir une peau hydratée, sans acné, lumineuse et sans rougeurs. Je ne peux que leur recommander Qure, perso je ne peux plus m'en passer.</p>",
             "image": "shopify://shop_images/results_anton_cdc44f21-b8dc-4a5f-a020-6741e12ac25e.webp",
             "image_country": "shopify://shop_images/australia_f_35e9b6f0-d77f-4184-afaf-224d96562185.webp",
             "client": "Anton M.",
@@ -338,10 +338,10 @@
         "slide_xWKmb6": {
           "type": "Slide",
           "settings": {
-            "heading": "Definitely pleased with the product",
+            "heading": "Vraiment satisfaite du produit.",
             "product": "Micro-Infusion System",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>“I've started seeing a lot of changes to my face it's softer and much more nourished making some of the lines around my mouth softer and fuller. I've even gotten my color tone and glow back. Definitely pleased with the product and will be continuing to use the products. Also purchased the face serum and the micro dart patches. We'll see how they work as well. I'm still in the beginning stages this weekend will be my 4th treatment and using the patches as well. Stay tuned another update soon.”</p>",
+            "text": "<p>J'ai commencé à remarquer beaucoup de changements sur mon visage, il est plus doux, hydraté, ce qui rend certaines des rides autour de ma bouche plus légères. J'ai même retrouvé mon teint et mon éclat. Je suis vraiment satisfaite du produit et je continuerai à l'utiliser. J'ai aussi acheté le sérum pour le visage et les patchs à micro-aiguilles. On verra comment ils fonctionnent aussi. Je suis encore dans les premières étapes, ce week-end ce sera mon 4e traitement, et j'utilise aussi les patchs. Je vous tiens au courant !</p>",
             "image": "shopify://shop_images/review_home_page.png",
             "image_country": "shopify://shop_images/america_f_92cbd39d-f0e3-42b9-a692-c714420fbe53.webp",
             "client": "Tami T.",
@@ -352,10 +352,10 @@
         "slide_8TxkNC": {
           "type": "Slide",
           "settings": {
-            "heading": "Best natural glow",
+            "heading": "Le meilleur éclat naturel",
             "product": "Micro-Infusion System",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>“I was hesitant at first as I didn’t know how much it would hurt but to my surprise it was pretty painless. The 2nd day after the treatment, my skin has the best natural glow! I was also happy to to see how much my pigmentation had lightened after 3rd treatment :) I switch between the serums depending on how my skin is before the treatment.”</p>",
+            "text": "<p>\"J'étais hésitante au début car je ne savais pas à quel point cela ferait mal, mais à ma surprise, c'était presque indolore. Le 2e jour après le traitement, ma peau n'avait jamais été aussi éclatante ! J'étais aussi ravie de voir à quel point ma pigmentation s'était éclaircie après le 3e traitement :) Je varie les sérums en fonction de l'état de ma peau avant le traitement.\"</p>",
             "image": "shopify://shop_images/results_glorija.webp",
             "image_country": "shopify://shop_images/australia_f_35e9b6f0-d77f-4184-afaf-224d96562185.webp",
             "client": "Glorija",
@@ -366,10 +366,10 @@
         "slide_hFbVVd": {
           "type": "Slide",
           "settings": {
-            "heading": "Fade after just two treatments",
+            "heading": "Disparu après seulement 2 traitements",
             "product": "Micro-Infusion System",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
+            "text": "<p>Je trouve que mes produits sont mieux absorbés, ma peau semble un peu plus lumineuse et cette grande cicatrice d'acné sur ma joue droite a commencé à s'estomper après seulement DEUX traitements ! </p>",
             "image": "shopify://shop_images/results_mona.webp",
             "image_country": "shopify://shop_images/america_f_92cbd39d-f0e3-42b9-a692-c714420fbe53.webp",
             "client": "Mona P.",
@@ -380,10 +380,10 @@
         "slide_yWqyRW": {
           "type": "Slide",
           "settings": {
-            "heading": "Thrilled with the results!",
+            "heading": "Ravie des résultats !",
             "product": "Q-Rejuvalight Pro LED Mask",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. I haven’t had a single breakout since I started using the mask, plus I notice a definite smoothing of fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\"</p>",
+            "text": "<p>J'ai 45 ans, donc je lutte contre les signes du vieillissement, mais je fais aussi face à des poussées d'acné. Je n'ai eu aucun bouton depuis que j'ai commencé à utiliser le masque, et je remarque également un lissage  des petites rides sur mes joues et autour de mes yeux. Je recommande ce produit à tout le monde. Cela vaut vraiment le coup !!</p><p>4o mini</p>",
             "image": "shopify://shop_images/Jessica_k_led_mask_b_a.png",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "client": "Jessica K.",
@@ -394,10 +394,10 @@
         "slide_PmixWy": {
           "type": "Slide",
           "settings": {
-            "heading": "Feels like Heaven",
+            "heading": "Je suis au paradis",
             "product": "All in one Face Serum",
             "stars_img": "shopify://shop_images/results_star-full.svg",
-            "text": "<p>\"Feels like heaven. Sad the bottle won’t last 😒\"</p>",
+            "text": "<p>C'est le paradis. Dommage que le flacon ne dure pas davantage 😒</p>",
             "image": "shopify://shop_images/Elizabeth_e05bd0ad-8f29-43f7-8f84-9deaf17f4d33.png",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "client": "Elizabeth R.",
@@ -429,7 +429,7 @@
           "type": "object",
           "settings": {
             "heading": "Dr Shah, MD",
-            "subheading": "Board-Certified Dermatologist",
+            "subheading": "Dermatologue · Membre du comité",
             "text": "<p>“I like that they put a lot of R&D into their products -                                                       Ultimately, I think that they care a lot about the products they                                                        are putting out”</p>",
             "image": "shopify://shop_images/advisor_1.webp",
             "customClass": ""
