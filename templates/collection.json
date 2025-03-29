@@ -126,8 +126,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_teresa.webp",
-            "heading": "IT REALLY WORKS!!",
-            "text": "<p>“I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.\"</p>",
+            "heading": "ÇA MARCHE VRAIMENT !!!",
+            "text": "<p>\"J'étais très sceptique lorsque mon mari m'a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J'ai essayé de nombreux sérums pour mes taches de soleil, mais rien n'a fonctionné jusqu'à ce que j'utilise ce masque. L'investissement vaut le coup.\"</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -139,8 +139,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_tiffany.webp",
-            "heading": "Renewed Skin!",
-            "text": "<p>\"My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!\"</p>",
+            "heading": "Peau renouvelée !",
+            "text": "<p>\"Mon masque Qure a été incroyable ! En tant que personne qui lutte contre l'acné et la rosacée, votre masque de luminothérapie LED a tellement amélioré ma peau que je me sens désormais à l'aise sans maquillage. Je suis très contente de ce produit !\"</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -152,8 +152,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_anton.webp",
-            "heading": "Can’t go a day without it",
-            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.</p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"</p>",
+            "heading": "Je ne peux plus m'en passer !",
+            "text": "<p>J'ai commencé à avoir de l'acné à l'adolescence. Et ça n'a fait qu'empirer. J'ai tout essayé : des régimes (je suis devenue complètement vegan), j'ai testé toutes sortes de soins de peau (chers comme moins chers), sans résultat. Avec Qure, dès le début, j'ai remarqué des résultats. Après la 1ère semaine, je n'avais plus de boutons. </p><p>Les gens me demandent maintenant comment j'ai réussi à avoir une peau hydratée, sans acné, lumineuse et sans rougeurs. Je ne peux que leur recommander Qure, perso je ne peux plus m'en passer.</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
             "text_country": "Australia",
@@ -239,10 +239,10 @@
       ],
       "settings": {
         "classname": "mi_landing_result all_bg_gradient_green_tb",
-        "heading": "Results you‘ll see with your own eyes",
+        "heading": "Des résultats que vous verrez de vos propres yeux",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
-        "text_reviewed": "Reviewed in"
+        "text_verified_customer": "Avis vérifié",
+        "text_reviewed": "Avis provenant"
       }
     }
   },
