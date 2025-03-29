@@ -147,9 +147,9 @@
         "heading": "",
         "heading_mobile": "",
         "heading_tag": "h1",
-        "subheading": "<h3>Get clinic-level results</h3><h4>from home- minus</h4><h5>the ‘clinical’ costs.</h5>",
-        "subheading_mobile": "<h3>Get clinic-level results</h3><h4>from home- minus</h4><h5>the ‘clinical’ costs.</h5>",
-        "text": "<p><strong>50,000+ </strong>customers feel more confident in their own skin.</p>",
+        "subheading": "<h3>Obtenez des résultats professionnels</h3><h4>depuis chez vous </h4><h5>sans les coûts cliniques</h5>",
+        "subheading_mobile": "<h3>Obtenez des résultats professionnels</h3><h4>depuis chez vous</h4><h5>sans les coûts cliniques</h5>",
+        "text": "<p><strong>50,000+ </strong>client(es) ont aujourd'hui plus confiance en leur peau.</p>",
         "image": "shopify://shop_images/hm_banner_clinic_results.webp",
         "image_mobile": "shopify://shop_images/hm_banner_clinic_results.png_mob.webp",
         "wistia_id": ""
@@ -185,7 +185,7 @@
       "settings": {
         "heading": "INTERNATIONAL WOMEN’S DAY",
         "heading_mobile": "",
-        "subheading": "<p>Love your skin, own your glow.</p>",
+        "subheading": "<p>Aimez votre peau, assumez son éclat.</p>",
         "subheading_mobile": "",
         "text": "",
         "image": "shopify://shop_images/hm_womens_day_banner_desk.webp",
@@ -430,7 +430,7 @@
           "settings": {
             "heading": "Dr Shah, MD",
             "subheading": "Dermatologue · Membre du comité",
-            "text": "<p>“I like that they put a lot of R&D into their products -                                                       Ultimately, I think that they care a lot about the products they                                                        are putting out”</p>",
+            "text": "<p>\"J'apprécie qu'ils investissent beaucoup dans la recherche et le développement de leurs produits - En fin de compte, je pense qu'ils se soucient vraiment des produits qu'ils mettent sur le marché.\"</p>",
             "image": "shopify://shop_images/advisor_1.webp",
             "customClass": ""
           }
