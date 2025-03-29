@@ -16,10 +16,10 @@
           "type": "banner",
           "disabled": true,
           "settings": {
-            "heading": "INTERNATIONAL WOMEN’S DAY",
-            "subheading": "<h3>Claim a FREE Micro-Infusion Bundle</h3>",
+            "heading": "JOURNÉE INTERNATIONALE DE LA FEMME",
+            "subheading": "<h3>Obtenez un pack Micro-Infusion GRATUIT</h3>",
             "link_url": "https://qureskincare.com/pages/international-womens-offer",
-            "link_label": "SHOP & SAVE $357"
+            "link_label": "ACHETEZ & ÉCONOMISEZ $357"
           }
         }
       },
@@ -41,28 +41,28 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Livraison gratuite à partir de 100$</p>"
           }
         },
         "icon_PKBzbi": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Achetez maintenant, payez plus tard</p>"
           }
         },
         "icon_MAhtJW": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/derma-ftr.svg",
-            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+            "text": "<p>Testés et approuvés par des dermatos</p>"
           }
         },
         "icon_PncCDy": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/science-ftr.svg",
-            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+            "text": "<p>Résultats prouvés, validés par la science</p>"
           }
         }
       },
@@ -84,7 +84,7 @@
           "settings": {
             "image": "shopify://shop_images/imgcollection-finelines.png",
             "image_mobile": "shopify://shop_images/imgcollection-finelines-mob.png",
-            "text": "<p>“This is an amazing product that you will not regret in purchasing it.  I really see the change in my skin.”</p>",
+            "text": "<p>\"C'est un produit incroyable que vous ne regretterez pas d'avoir acheté. Je constate vraiment le changement sur ma peau.\"</p>",
             "client": "Ellie V.",
             "position": "1"
           }
@@ -93,9 +93,9 @@
           "type": "doctor_card",
           "settings": {
             "image": "shopify://shop_images/collection_drShah.webp",
-            "header": "Trusted and recommended by world-leading dermatologists",
-            "text": "<p>\"The best LED mask on the market in my opinion at this time, that being said you do need to use this consistently to see results...\"</p>",
-            "client": "Dr Shah, MD Certified Dermatologist",
+            "header": "Validé par des dermatologues de renommée mondiale",
+            "text": "<p><strong>\"</strong>Le meilleur masque LED sur le marché à mon avis en ce moment<strong>, </strong>cela dit, vous devez l'utiliser de manière régulière pour voir des résultats...\"</p>",
+            "client": "Dr Shah, Demartologue certifié par le comité",
             "position": "4"
           }
         },
@@ -105,8 +105,8 @@
             "image": "shopify://shop_images/collectionVogue.webp",
             "image_mobile": "shopify://shop_images/collectionVogue.webp",
             "header": "VOGUE",
-            "text": "<p>One of VOGUE's top LED masks</p>",
-            "button_label": "Discover Now",
+            "text": "<p>L'un des meilleurs masques LED selon VOGUE</p>",
+            "button_label": "Découvrir",
             "button_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
             "position": "7"
           }
