@@ -790,13 +790,13 @@
         "box_eiWUqF": {
           "type": "Box",
           "settings": {
-            "heading": "Dermatologist Approved and Science-Backed",
-            "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals</strong> and <strong>scientific studies</strong> that <strong>prove</strong>; Qure’s skincare <strong>works</strong>.</p>",
+            "heading": "Approuvé par des dermatologues et soutenu par la science",
+            "text": "<p>Soutenu par les <strong>revues dermatologique</strong>s les plus respectées et les <strong>études scientifique</strong>s qui <strong>prouvent</strong> que les soins Qure fonctionnent.</p>",
             "logo": "shopify://shop_images/q_uses_1_12585e4b-1c56-477e-a662-8e2a03b0ea51.webp",
             "logoMob": "shopify://shop_images/q_uses_1Mob.webp",
             "btn_img": "shopify://shop_images/s_q_3.svg",
-            "btn_text": "<p>Science-Backed, Dermatologist Approved</p>",
-            "btn_textm": "<p>Dermatologist Approved</p>"
+            "btn_text": "<p>Approuvé par des dermatologues et soutenu par la science</p>",
+            "btn_textm": "<p>Dermatologues approuvent</p>"
           }
         },
         "box_kKUckK": {
