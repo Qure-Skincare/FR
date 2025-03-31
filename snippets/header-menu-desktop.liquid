@@ -86,12 +86,12 @@
                 {% endif %}
                 <ul class="dropdown-menu-hp mega-dropdown-menu row">
                     <div class="container">
-                        <div class="dropdown_menu_wrap {% if link.title == 'Products' %}menu_product{% endif %}">
+                        <div class="dropdown_menu_wrap {% if link.title == 'Produits' %}menu_product{% endif %}">
                             <div class="dropdown_menu_links" data-index="{{ forloop.index }}">
                                 {%- for childlink in link.links -%}
-                                    {% if childlink.title == 'Shop' %}
+                                    {% if childlink.title == 'Nos produits' %}
                                         <div class="dm_list">
-                                            <div class="dm_list_heading">Shop</div>
+                                            <div class="dm_list_heading">Nos produits</div>
                                             {% if childlink.links.size > 0 %}
                                             <div class="dm_list_two_cols">
                                                 <ul>
@@ -122,7 +122,7 @@
                                                 <ul>
                                                     {% for childChildlink in childlink.links %}
                                                         <li>
-                                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}" {% if childChildlink.title == 'Help center' %} target="_blank"{% endif %}>
+                                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}" {% if childChildlink.title == 'Aide' %} target="_blank"{% endif %}>
                                                                 <span>{{ childChildlink.title | escape }}</span>
                                                             </a>
                                                         </li>
