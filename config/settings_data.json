@@ -221,7 +221,7 @@
             "type": "upsell",
             "settings": {
               "page_url": "https://www.qureskincare.fr/products/q-rejuvalight-pro-facewear",
-              "upsell_product_first": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
+              "upsell_product_first": "micro-infusion-3-month-bundle-hydra-soothing-rejuvenating",
               "upsell_product_first_description": "Protect your LED Device for 1 more year.",
               "upsell_product_second": "fade-firm-bundle-advance",
               "upsell_product_second_description": "Upgrade your treatment & treat multiple skin concerns.",
