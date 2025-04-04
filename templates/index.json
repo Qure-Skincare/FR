@@ -571,6 +571,7 @@
         },
         "product_RV8HgT": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "pd_img": "shopify://shop_images/fav_pdt3.webp",
             "pd_name": "Sérum Visage Tout-en-Un",
@@ -584,6 +585,7 @@
         },
         "product_3hFb8X": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "pd_img": "shopify://shop_images/MITP.png",
             "pd_name": "Patches Ciblés Micro-Infusion",
@@ -603,8 +605,8 @@
         "product_3hFb8X"
       ],
       "settings": {
-        "heading": "Best-Sellers",
-        "btn": "Voir tous les best-sellers",
+        "heading": "Nos Produits",
+        "btn": "Savoir Plus",
         "btn_url": "shopify://collections/best-sellers"
       }
     },
