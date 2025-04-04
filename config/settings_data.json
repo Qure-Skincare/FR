@@ -234,11 +234,11 @@
             "settings": {
               "page_url": "https://qure-france.myshopify.com/pages/microinfusion",
               "upsell_product_first": "",
-              "upsell_product_first_description": "Reduces appearance of fine lines and wrinkles.",
+              "upsell_product_first_description": "",
               "upsell_product_second": "q-rejuvalight-pro-facewear",
               "upsell_product_second_description": "Protect your LED Device for 1 more year.",
               "upsell_product_third": "",
-              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+              "upsell_product_thid_description": ""
             }
           },
           "upsell_a74n8t": {
