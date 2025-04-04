@@ -221,12 +221,12 @@
             "type": "upsell",
             "settings": {
               "page_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
-              "upsell_product_first": "led-mask-extended-1-year-warranty",
+              "upsell_product_first": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
               "upsell_product_first_description": "Protect your LED Device for 1 more year.",
-              "upsell_product_second": "breakout-control-advanced",
+              "upsell_product_second": "fade-firm-bundle-advance",
               "upsell_product_second_description": "Upgrade your treatment & treat multiple skin concerns.",
-              "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Boost your LED light therapy results"
+              "upsell_product_third": "",
+              "upsell_product_thid_description": ""
             }
           },
           "upsell_DQMajg": {
