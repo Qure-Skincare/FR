@@ -85,8 +85,8 @@
             "type": "banner",
             "settings": {
               "image": "shopify://shop_images/Navigation.png",
-              "button_label": "Économisez jusqu'à 55% sur [les packs exclusifs]",
-              "button_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
+              "button_label": "Économisez jusqu'à 43% sur [les packs exclusifs]",
+              "button_url": "shopify://products/fade-firm-bundle-advance"
             }
           },
           "banner_CiNYWN": {
