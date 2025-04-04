@@ -232,12 +232,12 @@
           "upsell_DQMajg": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://www.qureskincare.com/products/neck-decolletage-led",
-              "upsell_product_first": "micro-infusion-targeted-patches-single",
+              "page_url": "https://qure-france.myshopify.com/pages/microinfusion",
+              "upsell_product_first": "",
               "upsell_product_first_description": "Reduces appearance of fine lines and wrinkles.",
-              "upsell_product_second": "nec-and-deck-extended-1-year-warranty",
+              "upsell_product_second": "q-rejuvalight-pro-facewear",
               "upsell_product_second_description": "Protect your LED Device for 1 more year.",
-              "upsell_product_third": "fade-firm-bundle-advance",
+              "upsell_product_third": "",
               "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
             }
           },
