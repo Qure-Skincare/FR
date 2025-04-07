@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_landing_pFmaRH": {
       "type": "header-landing-simple",
@@ -15,7 +15,7 @@
         "navigation_link_qLHgyD": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "CONTENT REQUIREMENTS",
+            "link_label": "EXIGENCES DE CONTENU",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs1.webp"
           }
@@ -23,7 +23,7 @@
         "navigation_link_DgYaFx": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "PRODUCT",
+            "link_label": "PRODUIT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs2.webp"
           }
@@ -31,7 +31,7 @@
         "navigation_link_3X4mrf": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "INSPIRING CONTENT",
+            "link_label": "CONTENU INSPIRANT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs3.webp"
           }
@@ -50,7 +50,7 @@
         "button_LUpm3B": {
           "type": "button",
           "settings": {
-            "button_label": "Learn more about Shower Filter",
+            "button_label": "En savoir plus sur le filtre de douche",
             "button_url": "https://qureskincare.com/products/shower-filter"
           }
         }
@@ -59,18 +59,18 @@
         "button_LUpm3B"
       ],
       "settings": {
-        "heading": "Shower Filter Creative Content Guide",
-        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the Qure Shower Filter with our creative content guide. This brief will help you craft engaging content that showcases how our innovative tool transforms skincare and haircare routines.</p>",
+        "heading": "Guide de contenu créatif pour le filtre de douche",
+        "text": "<p>Salut, passionnés de soins de la peau !</p><p>Prêts à faire passer votre contenu au niveau supérieur ?</p><p>Débloquez tout le potentiel du filtre de douche Qure avec notre guide de contenu créatif. Ce brief vous aidera à créer un contenu captivant qui met en valeur la manière dont notre outil innovant transforme les routines de soin de la peau et des cheveux.</p>",
         "wistia_id": "lz3wlopem0"
       }
     },
     "qure_founder_LkfQUT": {
       "type": "qure-founder",
       "settings": {
-        "heading": "“Throughout my life… living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to... Turns out, there’s an overwhelming amount of data that the water hardness could affect your skin.”",
-        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "heading": "« Tout au long de ma vie… en vivant à Wilmington, [ma] peau était parfaite. Puis j’ai déménagé à Charlotte et… chaque semaine, ma peau s’irritait, surtout après la douche. Même mes cheveux ne se comportaient plus bien. J’étais convaincu que c’était l’eau à laquelle j’étais exposé... Il s’avère qu’il existe une quantité écrasante de données montrant que la dureté de l’eau peut affecter votre peau. »",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Dermatologue certifié</p>",
         "image": "shopify://shop_images/dr.shah_new.webp",
-        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trust_des": "Approuvé et recommandé par les plus grands dermatologues mondiaux",
         "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
       }
     },
@@ -80,19 +80,19 @@
         "header_RA46tw": {
           "type": "header",
           "settings": {
-            "heading": "STEP 1",
-            "text": "Merge Qure into your creatives",
+            "heading": "ÉTAPE 1",
+            "text": "Intégrez Qure dans vos créations",
             "image": "shopify://shop_images/step1_img.webp",
-            "button_label": "Content Requirements"
+            "button_label": "Exigences de contenu"
           }
         },
         "description_mHnPFA": {
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Key Messages",
+            "heading": "Messages clés",
             "image": "shopify://shop_images/key_message.svg",
-            "content": "<p>Key Points to include in the messaging:</p><p></p><ul><li>Easy installation of the triple-filter showerhead for the purest head-to-toe hydration.</li><li>Reduces chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin.</li><li>Reduces limescale buildup which can dry out skin & hair, for smoother & softer skin and tresses.</li><li>Customizable water flow settings: Rainfall, Massage and Power Spray</li></ul>",
+            "content": "<p>Points clés à inclure dans le message :</p><p></p><ul><li>Installation facile de la pomme de douche à triple filtration pour une hydratation pure de la tête aux pieds.</li><li>Réduit le chlore, les métaux lourds et les contaminants qui irritent la peau, pour une peau globalement plus hydratée et nette.</li><li>Réduit l’accumulation de calcaire qui peut assécher la peau et les cheveux, pour une peau et des cheveux plus doux et lisses.</li><li>Réglages personnalisables du débit d’eau : Pluie, Massage et Jet puissant</li></ul>",
             "wistia_id": ""
           }
         },
@@ -100,9 +100,9 @@
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Creative Direction",
+            "heading": "Direction créative",
             "image": "shopify://shop_images/direction.svg",
-            "content": "<ul><li>High-quality, bright lighting and high-resolution imagery/ videography to be supplied. No obvious filters.</li><li>Qure Shower filter to be the feature of the post. The background must be clean and bright.</li><li>When using the product, please do not wear any makeup, or no visible/noticeable makeup. Please include a clip of the filter installation and a before and after of your hair/skin.</li><li>In cover photos for video content always show yourself using the Qure Shower filter, unless otherwise agreed on with Qure’s team.</li></ul>",
+            "content": "<ul><li>Éclairage de haute qualité, lumineux et images/vidéos en haute résolution à fournir. Pas de filtres évidents.</li><li>Le filtre de douche Qure doit être la star de la publication. L’arrière-plan doit être propre et lumineux.</li><li>Lors de l’utilisation du produit, ne portez pas de maquillage ou un maquillage non visible/discret. Incluez un clip de l’installation du filtre et un avant/après de vos cheveux/peau.</li><li>Dans les photos de couverture pour le contenu vidéo, montrez-vous toujours en train d’utiliser le filtre de douche Qure, sauf accord contraire avec l’équipe Qure.</li></ul>",
             "wistia_id": ""
           }
         },
@@ -112,26 +112,26 @@
             "classname": "",
             "heading": "Inclusion",
             "image": "shopify://shop_images/inclusion.svg",
-            "content": "<ul><li>Tag and mention @qureskincare #QureSkincare #showerfilter #Skincare #qureshowerfilter #qurefilter</li><li>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can’t be placed in BIO, include it in linktr.ee or similar.</li></ul>",
+            "content": "<ul><li>Taggez et mentionnez @qureskincare #QureSkincare #showerfilter #Skincare #qureshowerfilter #qurefilter</li><li>Incluez votre lien d’affiliation ou d’autres liens fournis par Qure dans les stories Instagram et les légendes de contenu. Si le lien ne peut pas être placé dans la BIO, incluez-le dans linktr.ee ou similaire.</li></ul>",
             "wistia_id": ""
           }
         },
         "header_LhpN6x": {
           "type": "header",
           "settings": {
-            "heading": "STEP 2",
-            "text": "Get to know Micro-Infusion Targeted Patches",
+            "heading": "ÉTAPE 2",
+            "text": "Découvrez les patchs ciblés à micro-infusion",
             "image": "shopify://shop_images/step2_img.webp",
-            "button_label": "Product Information"
+            "button_label": "Informations sur le produit"
           }
         },
         "description_6WtF8b": {
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Product Details",
+            "heading": "Détails du produit",
             "image": "shopify://shop_images/search.svg",
-            "content": "<p>Triple the Filtration Tech (for Triple the Clean)</p><ul><li>Carbon Fiber Layer - Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</li><li>KDF Layer - Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</li><li>FOF (Filter of Future) - Helps reduce the buildup of hard water minerals such as calcium and magnesium, preventing scale and improving water flow.</li></ul>",
+            "content": "<p>Technologie de filtration triple (pour une triple propreté)</p><ul><li>Couche de fibre de carbone - Élimine jusqu’à 99 % du chlore, réduisant les irritations et la sécheresse de la peau, pour une peau et des cheveux plus sains.</li><li>Couche KDF - Cible et élimine les métaux lourds comme le plomb et le mercure, offrant une eau plus propre pour votre douche.</li><li>FOF (Filtre du Futur) - Aide à réduire l’accumulation de minéraux d’eau dure comme le calcium et le magnésium, prévenant le calcaire et améliorant le débit d’eau.</li></ul>",
             "wistia_id": ""
           }
         },
@@ -139,7 +139,7 @@
           "type": "description",
           "settings": {
             "classname": "faq",
-            "heading": "Usage Instructions",
+            "heading": "Instructions d’utilisation",
             "image": "shopify://shop_images/usage_dir.svg",
             "content": "",
             "wistia_id": ""
@@ -150,8 +150,8 @@
           "settings": {
             "show": false,
             "style": "default",
-            "heading": "Preparing Your Shower Head",
-            "content": "<ul><li>Remove the old shower head and clean the pipe. The Qure Shower Filter has a 2.5 GPM restrictor pre-installed. For compliance with stricter regulations in California, Colorado, Hawaii, Massachusetts, New York, Oregon, Rhode Island, Vermont, and Washington, replace it with the included 1.8 GPM restrictor. Check local guidelines for water flow requirements.</li></ul>",
+            "heading": "Préparer votre pomme de douche",
+            "content": "<ul><li>Retirez l’ancienne pomme de douche et nettoyez le tuyau. Le filtre de douche Qure est livré avec un restrictor de débit de 2,5 GPM préinstallé. Pour respecter les réglementations plus strictes en Californie, au Colorado, à Hawaï, au Massachusetts, à New York, en Oregon, à Rhode Island, au Vermont et à Washington, remplacez-le par le restrictor de 1,8 GPM inclus. Vérifiez les directives locales sur les exigences de débit d’eau.</li></ul>",
             "code": ""
           }
         },
@@ -160,8 +160,8 @@
           "settings": {
             "show": false,
             "style": "default",
-            "heading": "Installation steps",
-            "content": "<ul><li>Remove the Old Shower Head - Use the provided wrench or your hands to unscrew the old shower head by turning it counterclockwise. Discard the old head or keep it for future use.</li><li>Check the Qure Shower Filter - Inspect the neck of the Qure Shower Filter to ensure the filter is properly installed. The filter is already placed inside for convenience, but double-checking will help prevent issues.</li><li>Wrap the Pipe Threads - Use the plumber tape provided in the Qure Shower Filter kit. Wrap it around the pipe threads where the new shower head will attach. Wrap it twice to ensure a watertight seal, then tear the tape.</li><li>Install the Qure Shower Filter - Twist the Qure Shower Filter onto the prepared pipe until it’s securely fastened. Use the wrench to ensure it is tightly secured, but avoid over-tightening.</li><li>Test the Water Flow - Turn on the water and check for any leaks. If no leaks are present, you’re ready to enjoy your new, purified shower experience.</li></ul>",
+            "heading": "Étapes d’installation",
+            "content": "<ul><li>Retirez l’ancienne pomme de douche - Utilisez la clé fournie ou vos mains pour dévisser l’ancienne pomme de douche en tournant dans le sens antihoraire. Jetez l’ancienne tête ou conservez-la pour une utilisation future.</li><li>Vérifiez le filtre de douche Qure - Inspectez le col du filtre de douche Qure pour vous assurer que le filtre est correctement installé. Le filtre est déjà placé à l’intérieur pour plus de commodité, mais une double vérification évitera les problèmes.</li><li>Enroulez les filets du tuyau - Utilisez le ruban de plombier fourni dans le kit du filtre de douche Qure. Enroulez-le autour des filets du tuyau où la nouvelle pomme de douche sera fixée. Enroulez deux fois pour garantir une étanchéité parfaite, puis déchirez le ruban.</li><li>Installez le filtre de douche Qure - Vissez le filtre de douche Qure sur le tuyau préparé jusqu’à ce qu’il soit bien fixé. Utilisez la clé pour vous assurer qu’il est bien serré, mais évitez de trop visser.</li><li>Testez le débit d’eau - Allumez l’eau et vérifiez s’il y a des fuites. S’il n’y a pas de fuites, vous êtes prêt à profiter de votre nouvelle expérience de douche purifiée.</li></ul>",
             "code": ""
           }
         },
@@ -175,25 +175,25 @@
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Product Claims",
+            "heading": "Revendications du produit",
             "image": "shopify://shop_images/product_claims.svg",
-            "content": "<ul><li>Fewer breakouts</li><li>Happier, hydrated skin</li><li>Less redness & irritation</li><li>Shinier & buildup free hair</li><li>Less green hues on dyed hair</li></ul>",
+            "content": "<ul><li>Moins de poussées d’acné</li><li>Peau plus heureuse et hydratée</li><li>Moins de rougeurs et d’irritations</li><li>Cheveux plus brillants et sans accumulation</li><li>Moins de teintes vertes sur les cheveux teints</li></ul>",
             "wistia_id": ""
           }
         },
         "header_AwT6ji": {
           "type": "header",
           "settings": {
-            "heading": "STEP 3",
-            "text": "Get inspired by other content creators",
+            "heading": "ÉTAPE 3",
+            "text": "Inspirez-vous d’autres créateurs de contenu",
             "image": "shopify://shop_images/step3_img.webp",
-            "button_label": "Inspiring Content"
+            "button_label": "Contenu inspirant"
           }
         },
         "heading_YiyFGP": {
           "type": "heading",
           "settings": {
-            "heading": "Show how it works for you"
+            "heading": "Montrez comment ça fonctionne pour vous"
           }
         },
         "video_4Jjjcm": {
@@ -220,7 +220,7 @@
         "heading_fUcJta": {
           "type": "heading",
           "settings": {
-            "heading": "Show how it works for you"
+            "heading": "Montrez comment ça fonctionne pour vous"
           }
         },
         "video_H9fmrV": {
@@ -268,7 +268,7 @@
         "video_6gLP6V"
       ],
       "settings": {
-        "heading": "All you need to know before you start creating your amazing content"
+        "heading": "Tout ce que vous devez savoir avant de commencer à créer votre contenu exceptionnel"
       }
     }
   },
