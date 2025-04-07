@@ -1281,7 +1281,7 @@
             "text": "<h5>Filtre de robinet</h5><ul><li>Installez le filtre de robinet Qure sur votre robinet.</li><li>Remplacez le filtre tous les 3 mois (achetez le remplacement sur notre site web).</li></ul>"
           }
         },
-        "how_to_use_bbae8X": {
+                "how_to_use_bbae8X": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_shower_f_sm.svg",
@@ -1329,8 +1329,8 @@
         "how_to_use_bbae8X"
       ],
       "settings": {
-        "heading": "Pro-Aging & Dark Spots Bundles",
-        "subheading": "These bundles are specifically designed to target signs of aging and fade dark spots. ",
+        "heading": "Packs Anti-âge & Taches Sombres",
+        "subheading": "Ces packs sont spécialement conçus pour cibler les signes de vieillissement et atténuer les taches sombres.",
         "supertop": ""
       }
     },
@@ -1340,28 +1340,28 @@
         "icon_dLrXUB": {
           "type": "icon",
           "settings": {
-            "text": "<p>Eliminates bacteria \\n without irritating skin</p>",
+            "text": "<p>Élimine les bactéries \n sans irriter la peau</p>",
             "image": "shopify://shop_images/bf-ftr-bacteria.svg"
           }
         },
         "icon_emhKiz": {
           "type": "icon",
           "settings": {
-            "text": "<p>Clears acne, pimples, \\n and blemishes</p>",
+            "text": "<p>Élimine l’acné, les boutons \n et les imperfections</p>",
             "image": "shopify://shop_images/bf-ftr-acne-pimples.svg"
           }
         },
         "icon_jnweAT": {
           "type": "icon",
           "settings": {
-            "text": "<p>Prevents future breakouts \\n before they happen</p>",
+            "text": "<p>Prévient les futures éruptions \n avant qu’elles n’apparaissent</p>",
             "image": "shopify://shop_images/bf-ftr-breakouts.svg"
           }
         },
         "icon_AQFi8V": {
           "type": "icon",
           "settings": {
-            "text": "<p>Calms and soothes \\n redness</p>",
+            "text": "<p>Apaise et calme \n les rougeurs</p>",
             "image": "shopify://shop_images/bf-ftr-soothes.svg"
           }
         },
@@ -1381,7 +1381,7 @@
             "recommended_text": "",
             "is_top_rated": false,
             "is_preorder": true,
-            "preorder_text": "SHIPS MID APRIL",
+            "preorder_text": "EXPÉDITION MI-AVRIL",
             "classname": "",
             "code": ""
           }
@@ -1389,7 +1389,7 @@
         "include_AJjjKi": {
           "type": "include",
           "settings": {
-            "heading": "Q-Rejuvalight Pro LED Mask",
+            "heading": "Masque LED Q-Rejuvalight Pro",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_mask.webp",
@@ -1403,26 +1403,26 @@
         "include_4wQdLg": {
           "type": "include",
           "settings": {
-            "heading": "Faucet Filter",
+            "heading": "Filtre de robinet",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_faucet.webp",
             "text": "",
-            "count": "23 left",
+            "count": "23 restants",
             "hide": false,
             "hide_variants": false,
-            "code": "<div class=\"bfs_tbx_color\">\n    <select class=\"form-select colorSelector\" aria-label=\"Default select example\">\n        <option value=\"1\" selected=\"\">White</option>\n        <option value=\"2\">Black</option>\n    </select>\n</div>"
+            "code": "<div class=\"bfs_tbx_color\">\n    <select class=\"form-select colorSelector\" aria-label=\"Default select example\">\n        <option value=\"1\" selected=\"\">Blanc</option>\n        <option value=\"2\">Noir</option>\n    </select>\n</div>"
           }
         },
         "include_e4Mq9A": {
           "type": "include",
           "settings": {
-            "heading": "Dermal Mist (120ml)",
+            "heading": "Brume dermique (120ml)",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs-derma-mist.webp",
-            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating</p><h5>Dermal Mist Ingredients List</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
-            "count": "Ships Mid April",
+            "text": "<h5>Brume dermique</h5><p>Testée dermatologiquement, Cliniquement testée, Hypoallergénique, Convient aux peaux sensibles, Approuvée par les dermatologues, Testée contre les allergies, Non irritante.</p><h5>Ingrédients de la brume dermique</h5><p>EAU (Aqua)*, EAU DE FLEUR DE CHRYSANTHELLUM INDICUM, CHLORURE DE SODIUM, PHOSPHATE DE SODIUM, PHOSPHATE DISODIQUE, ACIDE HYPOCHLOREUX. *Eau ultra pure.</p>",
+            "count": "Expédition mi-avril",
             "hide": false,
             "hide_variants": false,
             "code": ""
@@ -1432,21 +1432,21 @@
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_sm_mask.svg",
-            "text": "<h5>Q-Rejuvalight Pro LED Mask </h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+            "text": "<h5>Masque LED Q-Rejuvalight Pro</h5><ul><li>Utilisez quotidiennement.</li><li>Nettoyez et séchez votre visage, puis portez-le pendant seulement 3 minutes et poursuivez avec votre routine de soin.</li></ul>"
           }
         },
         "how_to_use_jmgmhy": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_faucet_filter.svg",
-            "text": "<h5>Faucet Filter</h5><ul><li>Install the Qure Faucet Filter on your faucet.</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+            "text": "<h5>Filtre de robinet</h5><ul><li>Installez le filtre de robinet Qure sur votre robinet.</li><li>Remplacez le filtre tous les 3 mois (achetez le remplacement sur notre site web).</li></ul>"
           }
         },
         "how_to_use_PeiBgM": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
-            "text": "<h5>Dermal Mist (120ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed.</li></ul>"
+            "text": "<h5>Brume dermique (120ml)</h5><ul><li>Vaporisez directement sur la peau sèche, le corps et le visage. Laissez sécher à l’air libre — pas besoin de rincer.</li></ul>"
           }
         },
         "bundle_tiDNpw": {
@@ -1464,7 +1464,7 @@
             "recommended_text": "",
             "is_top_rated": true,
             "is_preorder": true,
-            "preorder_text": "SHIPS MID APRIL",
+            "preorder_text": "EXPÉDITION MI-AVRIL",
             "classname": "",
             "code": ""
           }
@@ -1472,7 +1472,7 @@
         "include_KnwEmf": {
           "type": "include",
           "settings": {
-            "heading": "Q-Rejuvalight Pro LED Mask",
+            "heading": "Masque LED Q-Rejuvalight Pro",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_mask.webp",
@@ -1486,12 +1486,12 @@
         "include_gNNy6j": {
           "type": "include",
           "settings": {
-            "heading": "Dermal Mist (120ml)",
+            "heading": "Brume dermique (120ml)",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs-derma-mist.webp",
-            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating.</p><h5>Dermal Mist Ingredients</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
-            "count": "Ships Mid April",
+            "text": "<h5>Brume dermique</h5><p>Testée dermatologiquement, Cliniquement testée, Hypoallergénique, Convient aux peaux sensibles, Approuvée par les dermatologues, Testée contre les allergies, Non irritante.</p><h5>Ingrédients de la brume dermique</h5><p>EAU (Aqua)*, EAU DE FLEUR DE CHRYSANTHELLUM INDICUM, CHLORURE DE SODIUM, PHOSPHATE DE SODIUM, PHOSPHATE DISODIQUE, ACIDE HYPOCHLOREUX. *Eau ultra pure.</p>",
+            "count": "Expédition mi-avril",
             "hide": false,
             "hide_variants": false,
             "code": ""
@@ -1501,14 +1501,14 @@
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_sm_mask.svg",
-            "text": "<h5>Q-Rejuvalight Pro LED Mask</h5><ul><li>Use daily.</li><li>Cleanse and dry your face, then put it on for just 3 minutes and follow with your skincare routine.</li></ul>"
+            "text": "<h5>Masque LED Q-Rejuvalight Pro</h5><ul><li>Utilisez quotidiennement.</li><li>Nettoyez et séchez votre visage, puis portez-le pendant seulement 3 minutes et poursuivez avec votre routine de soin.</li></ul>"
           }
         },
         "how_to_use_rgHP8b": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
-            "text": "<h5>Dermal Mist (120ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed.</li></ul>"
+            "text": "<h5>Brume dermique (120ml)</h5><ul><li>Vaporisez directement sur la peau sèche, le corps et le visage. Laissez sécher à l’air libre — pas besoin de rincer.</li></ul>"
           }
         },
         "bundle_3RY7qF": {
@@ -1535,21 +1535,21 @@
         "include_hxkWTR": {
           "type": "include",
           "settings": {
-            "heading": "Faucet Filter",
+            "heading": "Filtre de robinet",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_faucet.webp",
             "text": "",
-            "count": "23 left",
+            "count": "23 restants",
             "hide": false,
             "hide_variants": false,
-            "code": "<div class=\"bfs_tbx_color\">\n                                                <select id=\"for\" class=\"form-select form-select-first colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>White</option>\n                                                    <option value=\"2\">Black</option>\n                                                </select>\n                                            </div>"
+            "code": "<div class=\"bfs_tbx_color\">\n                                                <select id=\"for\" class=\"form-select form-select-first colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>Blanc</option>\n                                                    <option value=\"2\">Noir</option>\n                                                </select>\n                                            </div>"
           }
         },
         "include_nwb4HD": {
           "type": "include",
           "settings": {
-            "heading": "Shower Filter",
+            "heading": "Filtre de douche",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_shower_f.webp",
@@ -1557,21 +1557,21 @@
             "count": "",
             "hide": false,
             "hide_variants": false,
-            "code": "<div class=\"bfs_tbx_color\">\n                                                <select class=\"form-select form-select-second colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>White</option>\n                                                    <option value=\"2\">Black</option>\n                                                </select>\n                                            </div>"
+            "code": "<div class=\"bfs_tbx_color\">\n                                                <select class=\"form-select form-select-second colorSelector\"\n                                                    aria-label=\"Default select example\">\n                                                    <option value=\"1\" selected>Blanc</option>\n                                                    <option value=\"2\">Noir</option>\n                                                </select>\n                                            </div>"
           }
         },
         "how_to_use_8WVeGb": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_faucet_filter.svg",
-            "text": "<h5>Faucet Filter</h5><ul><li>Install the Qure Faucet Filter on your faucet.</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+            "text": "<h5>Filtre de robinet</h5><ul><li>Installez le filtre de robinet Qure sur votre robinet.</li><li>Remplacez le filtre tous les 3 mois (achetez le remplacement sur notre site web).</li></ul>"
           }
         },
         "how_to_use_DiytkL": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_shower_f_sm.svg",
-            "text": "<h5>Shower Filter</h5><ul><li>Remove your original shower head and screw on the Qure Shower Filter</li><li>Replace filter every 3 months (purchase replacement via our website).</li></ul>"
+            "text": "<h5>Filtre de douche</h5><ul><li>Retirez votre pommeau de douche original et vissez le filtre de douche Qure.</li><li>Remplacez le filtre tous les 3 mois (achetez le remplacement sur notre site web).</li></ul>"
           }
         },
         "bundle_JmXcGE": {
@@ -1589,7 +1589,7 @@
             "recommended_text": "",
             "is_top_rated": false,
             "is_preorder": true,
-            "preorder_text": "SHIPS MID APRIL",
+            "preorder_text": "EXPÉDITION MI-AVRIL",
             "classname": "",
             "code": ""
           }
@@ -1597,12 +1597,12 @@
         "include_kHjfp7": {
           "type": "include",
           "settings": {
-            "heading": "Dermal Mist (120ml)",
+            "heading": "Brume dermique (120ml)",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs-derma-mist.webp",
-            "text": "<h5>Dermal Mist</h5><p>Dermatologically Tested, Clinically Tested, Hypoallergenic, Suitable for sensitive skin, Dermatologist approved, Allergy Tested, Non-Irritating.</p><h5>Dermal Mist Ingredients</h5><p>WATER (Aqua)*, CHRYSANTHELLUM INDICUM FLOWER WATER, SODIUM CHLORIDE, SODIUM PHOSPHATE, DISODIUM PHOSPHATE, HYPOCHLOROUS ACID. *Ultra Pure Water.</p>",
-            "count": "Ships Mid April",
+            "text": "<h5>Brume dermique</h5><p>Testée dermatologiquement, Cliniquement testée, Hypoallergénique, Convient aux peaux sensibles, Approuvée par les dermatologues, Testée contre les allergies, Non irritante.</p><h5>Ingrédients de la brume dermique</h5><p>EAU (Aqua)*, EAU DE FLEUR DE CHRYSANTHELLUM INDICUM, CHLORURE DE SODIUM, PHOSPHATE DE SODIUM, PHOSPHATE DISODIQUE, ACIDE HYPOCHLOREUX. *Eau ultra pure.</p>",
+            "count": "Expédition mi-avril",
             "hide": false,
             "hide_variants": false,
             "code": ""
@@ -1611,11 +1611,11 @@
         "include_NVFexE": {
           "type": "include",
           "settings": {
-            "heading": "All-In-One Face Serum",
+            "heading": "Sérum visage tout-en-un",
             "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs__one.webp",
-            "text": "<h5>All-In-One Face Serum Full Ingredients List</h5><p>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.</p><p>Water, Glycerin, Propanediol, Caprylic/Capric Triglyceride, Maltodextrin, Sodium Acrylates, Copolymer, Niacinamide, Bakuchiol, 3-O-Ethyl Ascorbic Acid, Glycine Soja (Soybean) Oil, Sucrose Dilaurate, Retinyl Palmitate, Lactic Acid, 1,2-Hexanediol, Glyceryl Oleate Citrate, Caprylyl Glycol, Tocopheryl Acetate, Lecithin, Polyacrylate-13, Retinol, Sodium Hydroxide, Sodium Cocoyl Glutamate, Polyisobutene, Ferulic Acid, Pentaerythrityl Tetra-Di-T-Butyl, Hydroxyhydrocinnamate, Mandelic Acid, Pisum Sativum (Pea) Extract, Artemisia Umbelliformis Flower Extract, Boswellia Serrata Resin Extract, Polysorbate 20, Sorbitan Isostearate, Sodium Benzoate, Potassium Sorbate, Ganoderma Lucidum (Mushroom) Extract, Tropolone, Camellia Sinensis Leaf, Tocopherol, Citric Acid, Acetyl Hexapeptide-8, Terminalia Ferdinandiana Fruit Extract, BHT, Hyaluronic Acid, Ginkgo Biloba Leaf Extract.</p>",
+            "text": "<h5>Liste complète des ingrédients du sérum visage tout-en-un</h5><p>Peptides Argireline®, Rétinol, Bakuchiol, Niacinamide, Vitamine C, Vitamine E, Acide férulique.</p><p>Eau, Glycérine, Propanediol, Triglycéride caprylique/caprique, Maltodextrine, Acrylates de sodium, Copolymère, Niacinamide, Bakuchiol, Acide 3-O-éthyl ascorbique, Huile de Glycine Soja (Soja), Sucrose Dilaurate, Palmitate de rétinyle, Acide lactique, 1,2-Hexanediol, Citrate de glycéryl oléate, Caprylyl Glycol, Acétate de tocophéryle, Lécithine, Polyacrylate-13, Rétinol, Hydroxyde de sodium, Cocoyl glutamate de sodium, Polyisobutène, Acide férulique, Pentaérythrityl tetra-di-t-butyl hydroxyhydrocinnamate, Acide mandélique, Extrait de Pisum Sativum (Pois), Extrait de fleur d’Artemisia Umbelliformis, Extrait de résine de Boswellia Serrata, Polysorbate 20, Isostéarate de sorbitan, Benzoate de sodium, Sorbate de potassium, Extrait de Ganoderma Lucidum (Champignon), Tropolone, Feuille de Camellia Sinensis, Tocophérol, Acide citrique, Acétyl Hexapeptide-8, Extrait de fruit de Terminalia Ferdinandiana, BHT, Acide hyaluronique, Extrait de feuille de Ginkgo Biloba.</p>",
             "count": "",
             "hide": false,
             "hide_variants": false,
@@ -1626,14 +1626,14 @@
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
-            "text": "<h5>Dermal Mist (120ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed.</li></ul>"
+            "text": "<h5>Brume dermique (120ml)</h5><ul><li>Vaporisez directement sur la peau sèche, le corps et le visage. Laissez sécher à l’air libre — pas besoin de rincer.</li></ul>"
           }
         },
         "how_to_use_BfUD4M": {
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_sm_all-in-one.svg",
-            "text": "<h5>All-In-One Face Serum</h5><ul><li>After cleansing, apply 1-2 pumps on the face and neck. Follow with moisturizer.</li></ul>"
+            "text": "<h5>Sérum visage tout-en-un</h5><ul><li>Après le nettoyage, appliquez 1-2 pompes sur le visage et le cou. Poursuivez avec une crème hydratante.</li></ul>"
           }
         }
       },
@@ -1670,9 +1670,9 @@
         "how_to_use_BfUD4M"
       ],
       "settings": {
-        "heading": "Acne Bundles",
-        "subheading": "These bundles are specifically designed to clear acne and heal post-breakout skin",
-        "supertop": "experiencing breakouts?"
+        "heading": "Packs Anti-Acné",
+        "subheading": "Ces packs sont spécialement conçus pour éliminer l’acné et soigner la peau après les éruptions.",
+        "supertop": "vous avez des éruptions ?"
       }
     },
     "icons_list_second": {
@@ -1682,28 +1682,28 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/s_q_3_1.png",
-            "text": "<p>Science-Backed,</p><p>Dermatologist Approved</p>"
+            "text": "<p>Soutenu par la science,</p><p>Approuvé par les dermatologues</p>"
           }
         },
         "icon_PKBzbi": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/derma-ft-lg_1.png",
-            "text": "<p>Safe & Easy to</p><p>Use Devices</p>"
+            "text": "<p>Appareils sûrs et</p><p>faciles à utiliser</p>"
           }
         },
         "icon_MAhtJW": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/money_time.svg",
-            "text": "<p>Saves You Time,</p><p>and Money</p>"
+            "text": "<p>Vous fait gagner du temps</p><p>et de l’argent</p>"
           }
         },
         "icon_PncCDy": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/treat-skin-lg_1.png",
-            "text": "<p>Treat Multiple</p><p>Skin Concerns</p>"
+            "text": "<p>Traite plusieurs</p><p>problèmes de peau</p>"
           }
         }
       },
@@ -1730,15 +1730,15 @@
             "image": "shopify://shop_images/dr_shah_trusted.webp",
             "video": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg",
             "title": "Dr Shah, MD",
-            "des": "Board certified dermatologist"
+            "des": "Dermatologue certifié"
           }
         },
         "text_content_zQrNN6": {
           "type": "text_content",
           "settings": {
             "trust_icon": "shopify://shop_images/verified_design.svg",
-            "trust_des": "Trusted and recommended by world leading Dermatologists",
-            "title": "\"The best LED mask <strong>on the market in my opinion at this time, that being said you do need to </strong>use this consistently to see results…\"",
+            "trust_des": "Approuvé et recommandé par les plus grands dermatologues mondiaux",
+            "title": "\"Le meilleur masque LED <strong>sur le marché à mon avis à ce jour, cela dit, vous devez </strong>l’utiliser régulièrement pour voir des résultats…\"",
             "title_clr": "#000000",
             "title_strong_clr": "#797d7c"
           }
@@ -1764,9 +1764,9 @@
             "video_link": "",
             "youtube_link": "https://www.youtube.com/watch?v=JPWycy8cwN8",
             "wistia_id": "",
-            "badge_txt": "3.03M Subscribers",
-            "title": "There have been studies to show that this will definitely work to help your products penetrate better...",
-            "client_details": "<strong>Dr Shah & Dr Maxfield,</strong>   Certified Dermatologists"
+            "badge_txt": "3,03M abonnés",
+            "title": "Des études ont montré que cela fonctionne définitivement pour aider vos produits à mieux pénétrer...",
+            "client_details": "<strong>Dr Shah & Dr Maxfield,</strong> Dermatologues certifiés"
           }
         },
         "testimonial_niJCUK": {
@@ -1777,9 +1777,9 @@
             "video_link": "https://cdn.shopify.com/videos/c/o/v/d5d0c051b43e4117be7b6308e06e8f66.mp4",
             "youtube_link": "",
             "wistia_id": "",
-            "badge_txt": "155K Followers",
-            "title": "I’ve liked using this in between my in-office treatments. It’s convenient and you get all the benefits of micro-needling treatment from the comfort of your home...",
-            "client_details": "<strong>Dr Brown,</strong>  Medical Doctor"
+            "badge_txt": "155K abonnés",
+            "title": "J’aime l’utiliser entre mes traitements en cabinet. C’est pratique et vous obtenez tous les avantages du microneedling depuis le confort de chez vous...",
+            "client_details": "<strong>Dr Brown,</strong> Médecin"
           }
         },
         "testimonial_d3pmRz": {
@@ -1790,9 +1790,9 @@
             "video_link": "",
             "youtube_link": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
             "wistia_id": "wistia_async_yuqb3gno7g",
-            "badge_txt": "9.77K Subscribers",
-            "title": "Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles",
-            "client_details": "<strong>Dr Greeney</strong>, Certified Dermatologist"
+            "badge_txt": "9,77K abonnés",
+            "title": "Le traitement anti-âge de Qure pénètre profondément dans votre peau pour stimuler le collagène et fait une grande différence sur la texture de la peau, réduisant les ridules et les rides.",
+            "client_details": "<strong>Dr Greeney,</strong> Dermatologue certifié"
           }
         },
         "testimonial_D3CC69": {
@@ -1803,9 +1803,9 @@
             "video_link": "https://cdn.shopify.com/videos/c/o/v/71857fdec6b0497294117ed84cab480e.mp4",
             "youtube_link": "",
             "wistia_id": "",
-            "badge_txt": "2.3M Views",
-            "title": "You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.",
-            "client_details": "<strong>Dr Mona Patel,</strong> Internal Medicine"
+            "badge_txt": "2,3M vues",
+            "title": "Vous verrez une sorte de glow frais après utilisation, mais en quelques jours, votre peau est vraiment incroyable.",
+            "client_details": "<strong>Dr Mona Patel,</strong> Médecine interne"
           }
         },
         "testimonial_FayfUe": {
@@ -1816,9 +1816,9 @@
             "video_link": "",
             "youtube_link": "",
             "wistia_id": "yuqb3gno7g",
-            "badge_txt": "1,154 Followers",
-            "title": "I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.",
-            "client_details": "<strong>Dr Alexandra Hunter</strong>, NHS & Aesthetics Doctor"
+            "badge_txt": "1 154 abonnés",
+            "title": "J’utilise ce masque avec les réglages anti-éruptions, ce qui a été fantastique pour éclaircir mon teint en seulement deux semaines.",
+            "client_details": "<strong>Dr Alexandra Hunter,</strong> Médecin NHS & Esthétique"
           }
         },
         "testimonial_PKTtDU": {
@@ -1829,9 +1829,9 @@
             "video_link": "",
             "youtube_link": "https://www.youtube.com/watch?v=ZMGm5PmWzF0",
             "wistia_id": "",
-            "badge_txt": "53k Followers",
-            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
-            "client_details": "<strong>Dr Alexis Stephens,</strong>  Board-Certified Dermatologist"
+            "badge_txt": "53K abonnés",
+            "title": "Vous pouvez obtenir un traitement clinique à domicile en toute sécurité et commodité... C’est particulièrement bénéfique pour les peaux riches en mélanine.",
+            "client_details": "<strong>Dr Alexis Stephens,</strong> Dermatologue certifiée"
           }
         }
       },
@@ -1867,19 +1867,19 @@
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>saves you time</li><li>comfort and privacy of your own home</li><li>better results with more frequent treatments</li><li>customized approach</li></ul>"
+            "list": "<ul><li>vous fait gagner du temps</li><li>confort et intimité de votre maison</li><li>meilleurs résultats avec des traitements plus fréquents</li><li>approche personnalisée</li></ul>"
           }
         },
         "object_zdxnBH": {
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/beauty_derma1.webp",
-            "heading": "Derm/ Clinic Treatments",
+            "heading": "Traitements en clinique/Dermatologue",
             "mob_text": "",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>time-consuming commute to clinic</li><li>according to clinic’s availability</li><li>less treatments - less results</li><li>ongoing payments required</li></ul>"
+            "list": "<ul><li>déplacements chronophages vers la clinique</li><li>selon la disponibilité de la clinique</li><li>moins de traitements - moins de résultats</li><li>paiements continus requis</li></ul>"
           }
         }
       },
@@ -1890,7 +1890,7 @@
       "settings": {
         "classname": "beauty_skincare section bg-white",
         "sub_head": "",
-        "heading": "Hello make up free days, goodbye clinical costs",
+        "heading": "Bonjour les jours sans maquillage, adieu les coûts cliniques",
         "heading_reduced": "",
         "text": "",
         "text_reduced": "",
@@ -1907,48 +1907,48 @@
         "object_yP9pmA": {
           "type": "object",
           "settings": {
-            "heading": "When can I expect to receive my Qure package?",
-            "text": "<p>We aim to ship your package as quickly as possible. Shipping times vary by location:</p><ul><li><strong>United States:</strong> 8-14 business days</li><li><strong>Canada:</strong> 4-6 business days</li><li><strong>UK & Europe:</strong> 8-14 business days</li><li><strong>Australia:</strong> 8-14 business days</li></ul>",
+            "heading": "Quand puis-je espérer recevoir mon colis Qure ?",
+            "text": "<p>Nous visons à expédier votre colis aussi rapidement que possible. Les délais de livraison varient selon l’emplacement :</p><ul><li><strong>États-Unis :</strong> 8-14 jours ouvrables</li><li><strong>Canada :</strong> 4-6 jours ouvrables</li><li><strong>Royaume-Uni & Europe :</strong> 8-14 jours ouvrables</li><li><strong>Australie :</strong> 8-14 jours ouvrables</li></ul>",
             "code": ""
           }
         },
         "object_fkedKp": {
           "type": "object",
           "settings": {
-            "heading": "Where does Qure ship?",
-            "text": "<p>We ship worldwide via FedEx, USPS, or DHL.</p>",
+            "heading": "Où Qure livre-t-il ?",
+            "text": "<p>Nous livrons dans le monde entier via FedEx, USPS ou DHL.</p>",
             "code": ""
           }
         },
         "object_N7CUPa": {
           "type": "object",
           "settings": {
-            "heading": "When will my order ship?",
-            "text": "<p>Processing takes 1-3 business days. You’ll receive an email with tracking info once your package ships.</p>",
+            "heading": "Quand ma commande sera-t-elle expédiée ?",
+            "text": "<p>Le traitement prend 1 à 3 jours ouvrables. Vous recevrez un email avec les informations de suivi une fois votre colis expédié.</p>",
             "code": ""
           }
         },
         "object_DxnHRi": {
           "type": "object",
           "settings": {
-            "heading": "Do I need to pay for taxes and duties?",
-            "text": "<p>If you’re in the US, Canada, or Australia, you don’t need to worry about duties. For other countries, you may be liable to pay local taxes and duties on receipt of your order. We recommend contacting your local customs department to find out more.</p>",
+            "heading": "Dois-je payer des taxes et des droits ?",
+            "text": "<p>Si vous êtes aux États-Unis, au Canada ou en Australie, pas de souci pour les droits. Pour les autres pays, vous pourriez devoir payer des taxes et droits locaux à la réception de votre commande. Nous vous recommandons de contacter votre service des douanes local pour plus d’informations.</p>",
             "code": ""
           }
         },
         "object_VbMGr7": {
           "type": "object",
           "settings": {
-            "heading": "Can I update or cancel my order?",
-            "text": "<p>You have a 60-minute window after placing your order to request cancellation or adjustments. If your order hasn’t shipped yet, email us at<a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>ASAP, and we’ll do our best to assist.</p>",
+            "heading": "Puis-je modifier ou annuler ma commande ?",
+            "text": "<p>Vous disposez d’une fenêtre de 60 minutes après avoir passé votre commande pour demander une annulation ou des ajustements. Si votre commande n’a pas encore été expédiée, envoyez-nous un email à <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> dès que possible, et nous ferons de notre mieux pour vous aider.</p>",
             "code": ""
           }
         },
         "object_MM4RV9": {
           "type": "object",
           "settings": {
-            "heading": "What is SecureShip?",
-            "text": "<p>SecureShip is our optional protection plan that covers lost or damaged items during transit, giving you peace of mind when shopping. We highly recommend adding it to your order to ensure a hassle-free experience if anything unexpected happens. Without SecureShip, we won’t be able to cover claims for lost or damaged items, so it’s a great way to protect your purchase.</p>",
+            "heading": "Qu’est-ce que SecureShip ?",
+            "text": "<p>SecureShip est notre plan de protection optionnel qui couvre les articles perdus ou endommagés pendant le transport, vous offrant une tranquillité d’esprit lors de vos achats. Nous vous recommandons vivement de l’ajouter à votre commande pour garantir une expérience sans tracas en cas d’imprévu. Sans SecureShip, nous ne pourrons pas couvrir les réclamations pour les articles perdus ou endommagés, c’est donc un excellent moyen de protéger votre achat.</p>",
             "code": ""
           }
         }
@@ -1964,10 +1964,10 @@
       "settings": {
         "background": "bg_yellow",
         "classname": "bg_yellow",
-        "heading": "The answers to your questions",
+        "heading": "Les réponses à vos questions",
         "text": "",
-        "button_label": "Show More Questions",
-        "button_hide_label": "Hide More Questions"
+        "button_label": "Voir plus de questions",
+        "button_hide_label": "Masquer les questions"
       }
     }
   },
