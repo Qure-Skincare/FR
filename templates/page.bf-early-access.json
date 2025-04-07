@@ -15,12 +15,12 @@
 
       ],
       "settings": {
-        "text": "Buy before anyone else \\n whilst stocks last. \\n Save up to 55%",
+        "text": "Achetez avant tout le monde \\n jusqu’à épuisement des stocks. \\n Économisez jusqu’à 55 %",
         "image": "shopify://shop_images/black_friday-banner.webp",
         "image_mobile": "shopify://shop_images/black_friday-bannerMob.webp",
         "timer": "2024-10-31T23:59:59",
         "password": "EXCLUSIVE31241F",
-        "password_wrong": "The password is wrong",
+        "password_wrong": "Le mot de passe est incorrect",
         "destination_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
       }
     }
