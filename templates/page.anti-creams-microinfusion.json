@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_landing_yzqaEc": {
       "type": "header-landing",
@@ -15,8 +15,8 @@
         "announcement_QmXGJK": {
           "type": "announcement",
           "settings": {
-            "heading": "FREE World-Wide Shipping | SAVE 50% Limited Time Offer Ends This Month",
-            "heading_mobile": "Limited Time Offer | Ends This Month!",
+            "heading": "LIVRAISON MONDIALE GRATUITE | ÉCONOMISEZ 50% Offre Limitée Jusqu’à Fin du Mois",
+            "heading_mobile": "Offre Limitée | Jusqu’à Fin du Mois !",
             "color": "white",
             "font_size_desktop": 12,
             "font_size_mobile": 12
@@ -25,7 +25,7 @@
         "navigation_link_97aJVY": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "BENEFITS",
+            "link_label": "AVANTAGES",
             "link_url": "#reasons_section",
             "image": "shopify://shop_images/nav_1.png"
           }
@@ -33,7 +33,7 @@
         "navigation_link_CmRG9V": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "RESULTS",
+            "link_label": "RÉSULTATS",
             "link_url": "#result_section",
             "image": "shopify://shop_images/header_2.webp"
           }
@@ -41,7 +41,7 @@
         "navigation_link_wMtKmt": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "FAQ'S",
+            "link_label": "FAQ",
             "link_url": "#faq_section",
             "image": "shopify://shop_images/header_4.webp"
           }
@@ -57,7 +57,7 @@
         ".header_gift_btn {display: none;}"
       ],
       "settings": {
-        "button_label": "SAVE UP TO 50%",
+        "button_label": "ÉCONOMISEZ JUSQU’À 50%",
         "button_url": "#productSubscription"
       }
     },
@@ -67,25 +67,25 @@
         "option_WNAxLk": {
           "type": "option",
           "settings": {
-            "text": "Visible results after your very first treatment."
+            "text": "Résultats visibles dès votre premier traitement."
           }
         },
         "option_wfkdLK": {
           "type": "option",
           "settings": {
-            "text": "Only takes 5-minutes every 2 weeks."
+            "text": "Seulement 5 minutes toutes les 2 semaines."
           }
         },
         "option_dwBXRf": {
           "type": "option",
           "settings": {
-            "text": "Virtually painless with minimal downtime."
+            "text": "Quasiment indolore avec un temps de récupération minimal."
           }
         },
         "button_qBUjKA": {
           "type": "button",
           "settings": {
-            "button_label": "Discover Confident skin",
+            "button_label": "Découvrez une peau confiante",
             "button_url": "#new-landing-purchase"
           }
         }
@@ -97,9 +97,9 @@
         "button_qBUjKA"
       ],
       "settings": {
-        "heading": "Fed Up With Creams That Don't Work The Way You Want?",
+        "heading": "Marre des crèmes qui ne fonctionnent pas comme vous le souhaitez ?",
         "heading_tag": "h2",
-        "text": "<p>Qure’s Micro-Infusion System stamps your skin and gets <strong>past your skin's </strong>defences to deliver active ingredients <strong>exactly where you need them, </strong>reducing the appearance of wrinkles and fine lines, and fading the look of dark spots.</p>",
+        "text": "<p>Le système de micro-infusion Qure stimule votre peau et contourne <strong>ses défenses naturelles</strong> pour livrer des ingrédients actifs <strong>exactement là où il faut,</strong> réduisant l’apparence des rides et ridules, et atténuant les taches sombres.</p>",
         "wistia_id": "ri7eb8c11y"
       }
     },
@@ -157,34 +157,34 @@
         "heading_dWVwNp": {
           "type": "heading",
           "settings": {
-            "heading": "Your quest for the “one product that finally works” ends here."
+            "heading": "Votre quête du « produit qui fonctionne enfin » s’arrête ici."
           }
         },
         "option_QEaCxV": {
           "type": "option",
           "settings": {
-            "text": "<p><strong>2-in-1 system </strong>stimulates skin rejuvenation while infusing serum deeper for <strong>faster results.</strong></p>",
+            "text": "<p><strong>Système 2-en-1</strong> qui stimule la régénération de la peau tout en infusant le sérum plus profondément pour des <strong>résultats plus rapides.</strong></p>",
             "image": "shopify://shop_images/deeply-hydrates.svg"
           }
         },
         "option_UKXe3x": {
           "type": "option",
           "settings": {
-            "text": "<p>With just one easy, virtually painless, <strong>at-home 5-minute treatment </strong>every 2 weeks.</p>",
+            "text": "<p>Avec un seul traitement simple, quasi indolore, <strong>à domicile en 5 minutes</strong> toutes les 2 semaines.</p>",
             "image": "shopify://shop_images/TIME_4de7163b-8d89-43a3-b353-636fd21536b4.svg"
           }
         },
         "option_EMzXUb": {
           "type": "option",
           "settings": {
-            "text": "<p>At a price up to <strong>30X lower </strong>than any professional in-clinc treatment!</p>",
+            "text": "<p>À un prix jusqu’à <strong>30 fois inférieur</strong> à tout traitement professionnel en clinique !</p>",
             "image": "shopify://shop_images/MONEY_5d92e21e-7f2c-4b8c-b8d3-09315a988e9d.svg"
           }
         },
         "button_dJqtnK": {
           "type": "button",
           "settings": {
-            "button_label": "Discover Qure",
+            "button_label": "Découvrez Qure",
             "button_url": "#new-landing-purchase"
           }
         }
@@ -197,13 +197,13 @@
         "button_dJqtnK"
       ],
       "settings": {
-        "heading": "Qure’s Micro-Infusion System goes where your skin creams can’t…",
+        "heading": "Le système de micro-infusion Qure va là où vos crèmes ne peuvent pas…",
         "heading_tag": "h2",
-        "text": "<p>Tired of constantly switching skincare products and still <strong>not seeing results?</strong></p><p><strong>Topical skincare alone isn't effective </strong>because many ingredients in face creams and serums are too large to penetrate deep enough into the skin, where your skin needs them most.</p>",
+        "text": "<p>Marre de changer constamment de produits sans <strong>voir de résultats ?</strong></p><p><strong>Les soins topiques seuls ne suffisent pas</strong> car beaucoup d’ingrédients des crèmes et sérums sont trop gros pour pénétrer profondément dans la peau, là où elle en a le plus besoin.</p>",
         "wistia_id": "9gjsppjkja",
-        "wistia_id_label": "Topical creams",
+        "wistia_id_label": "Crèmes topiques",
         "wistia_id_second": "na8z16hdlx",
-        "wistia_id_second_label": "Stamping Your Skin with \\n Micro-Infusion System"
+        "wistia_id_second_label": "Stimuler votre peau avec \\n le système de micro-infusion"
       }
     },
     "results-simple": {
@@ -214,7 +214,7 @@
           "settings": {
             "image": "shopify://shop_images/results_jess1.webp",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United Stated",
+            "text_country": "États-Unis",
             "client": "Jess"
           }
         },
@@ -223,7 +223,7 @@
           "settings": {
             "image": "shopify://shop_images/results_ellie.webp",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United Stated",
+            "text_country": "États-Unis",
             "client": "Ellie V."
           }
         },
@@ -232,7 +232,7 @@
           "settings": {
             "image": "shopify://shop_images/results-Ramandeep.png",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Ramandeep"
           }
         }
@@ -243,7 +243,7 @@
         "result_Cg3zJX"
       ],
       "settings": {
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Client vérifié"
       }
     },
     "trusted-second": {
@@ -252,9 +252,9 @@
         "wistia_gNathA": {
           "type": "wistia",
           "settings": {
-            "heading": "Dr Maxfield and Dr Shah",
-            "subheading": "Board-Certified Dermatologists",
-            "text": "\"...[Qure's Micro-Infusion] will help your products penetrate better\"",
+            "heading": "Dr Maxfield et Dr Shah",
+            "subheading": "Dermatologues certifiés",
+            "text": "« …[la micro-infusion de Qure] aide vos produits à mieux pénétrer »",
             "image": "shopify://shop_images/trusted_dr1.webp",
             "wistia_id": "9bv0lzoi1d",
             "likes": "2.8M"
@@ -264,8 +264,8 @@
           "type": "video",
           "settings": {
             "heading": "Dr Anthony Youn",
-            "subheading": "Board-Certified Plastic Surgeon",
-            "text": "“Qure’s System is the closest thing that you can get to bringing ...\"",
+            "subheading": "Chirurgien plasticien certifié",
+            "text": "« Le système Qure est ce qui se rapproche le plus d’amener votre esthéticien chez vous ! »",
             "image": "shopify://shop_images/trusted_dr2.webp",
             "video_url": "https://www.youtube.com/watch?v=gGVKgTHloXw",
             "likes": "5.1M"
@@ -275,8 +275,8 @@
           "type": "video",
           "settings": {
             "heading": "Dr Mona Patel",
-            "subheading": "Internal Medicine Doctor",
-            "text": "\"My skin is brighter, more hydrated, and my products absorb better...\"",
+            "subheading": "Médecin en médecine interne",
+            "text": "« Ma peau est plus lumineuse, hydratée, et mes produits pénètrent mieux… »",
             "image": "shopify://shop_images/trusted_dr3.webp",
             "video_url": "",
             "video": "shopify://files/videos/71857fdec6b0497294117ed84cab480e.HD-1080p-2.5Mbps-13573985.mp4",
@@ -287,8 +287,8 @@
           "type": "video",
           "settings": {
             "heading": "Dr Aleksandra Brown",
-            "subheading": "Board-Certified Dermatologist",
-            "text": "\"I have liked this in between my in-office treatments. It’s convenient...\"",
+            "subheading": "Dermatologue certifiée",
+            "text": "« J’aime l’utiliser entre mes traitements en cabinet. C’est pratique… »",
             "image": "shopify://shop_images/trusted_dr4.webp",
             "video_url": "",
             "video": "shopify://files/videos/d5d0c051b43e4117be7b6308e06e8f66.mp4",
@@ -303,7 +303,7 @@
         "video_HUH8JC"
       ],
       "settings": {
-        "heading": "Dermatologist's go-to choice for their own skin",
+        "heading": "Le choix des dermatologues pour leur propre peau",
         "heading_tag": "h2"
       }
     },
@@ -319,23 +319,23 @@
         "option_RjVYMf": {
           "type": "option",
           "settings": {
-            "heading": "Minimizing the look of \\n Fine Lines and Wrinkles",
-            "text": "<p>Our powerful Hydra-Soothing Serum gets deep into your skin where it can be quickly absorbed, <strong>fading </strong>the appearance of wrinkles, <strong>reducing </strong>fine lines, and <strong>deeply hydrating </strong>for a dewy glow. </p>",
+            "heading": "Réduire l’apparence des \\n ridules et rides",
+            "text": "<p>Notre puissant sérum Hydra-Soothing pénètre profondément dans votre peau pour être rapidement absorbé, <strong>atténuant</strong> l’apparence des rides, <strong>réduisant</strong> les ridules et <strong>hydratant intensément</strong> pour un éclat frais.</p>",
             "image": "shopify://shop_images/Lines_Wrinkles.svg"
           }
         },
         "option_WQWEz3": {
           "type": "option",
           "settings": {
-            "heading": "Reducing the appearance of Dark Spots \\n and Hyperpigmentation",
-            "text": "<p>Our scientifically-backed rejuvenating serum gets deep into your skin where it can be quickly absorbed, <strong>reducing pigmentation </strong>and <strong>fading dark spots </strong>while <strong>evening the look of the skin </strong>and reducing the size appearance of pores. </p>",
+            "heading": "Atténuer les taches sombres \\n et l’hyperpigmentation",
+            "text": "<p>Notre sérum rajeunissant, soutenu par la science, pénètre profondément dans votre peau pour être rapidement absorbé, <strong>réduisant la pigmentation</strong>, <strong>atténuant les taches sombres</strong> tout en <strong>unifiant le teint</strong> et en diminuant l’apparence des pores.</p>",
             "image": "shopify://shop_images/dark_spots_1428ac89-c09a-4f7b-bb00-4ff0e67c6b13.svg"
           }
         },
         "button_P998T8": {
           "type": "button",
           "settings": {
-            "button_label": "Get Confident Skin",
+            "button_label": "Obtenez une peau confiante",
             "button_url": "#new-landing-purchase"
           }
         }
@@ -347,8 +347,8 @@
         "button_P998T8"
       ],
       "settings": {
-        "heading": "How does “stamping your skin” work?",
-        "text": "<p>Qure’s microneedles <strong>bypass the stratum corneum</strong> (the tough protective outer layer of skin) to <strong>deliver our scientifically-backed serum</strong> where it is needed to give you faster, better results.</p><p>It also triggers your <strong>natural recovery process</strong> giving your skin a rejuvenating boost.</p>",
+        "heading": "Comment fonctionne le « stamping » de votre peau ?",
+        "text": "<p>Les micro-aiguilles de Qure <strong>contournent le stratum corneum</strong> (la couche externe protectrice de la peau) pour <strong>livrer notre sérum scientifiquement prouvé</strong> là où il est nécessaire, pour des résultats plus rapides et efficaces.</p><p>Elles déclenchent aussi votre <strong>processus naturel de récupération</strong>, offrant un coup de jeune à votre peau.</p>",
         "custom_class": "mw-680",
         "custom_class2": ""
       }
@@ -365,24 +365,24 @@
         "option_FT3hkJ": {
           "type": "option",
           "settings": {
-            "heading": "AFTER 1 treatment",
-            "text": "<p>reported more hydrated and glowy skin*</p>",
+            "heading": "APRÈS 1 traitement",
+            "text": "<p>ont signalé une peau plus hydratée et éclatante*</p>",
             "percent_bar": 93
           }
         },
         "option_jj4b6n": {
           "type": "option",
           "settings": {
-            "heading": "AFTER 2 treatments",
-            "text": "<p>agreed their fine lines looked smoother*</p>",
+            "heading": "APRÈS 2 traitements",
+            "text": "<p>ont trouvé leurs ridules plus lisses*</p>",
             "percent_bar": 70
           }
         },
         "option_kcwiy8": {
           "type": "option",
           "settings": {
-            "heading": "AFTER 6 treatments",
-            "text": "<p>noticed even better results after 6 treatments*</p>",
+            "heading": "APRÈS 6 traitements",
+            "text": "<p>ont remarqué des résultats encore meilleurs après 6 traitements*</p>",
             "percent_bar": 83
           }
         },
@@ -390,7 +390,7 @@
           "type": "before_after",
           "settings": {
             "image": "shopify://shop_images/ec_b_a.webp",
-            "text": "Data collected from an independent user study over 6 treatments."
+            "text": "Données recueillies lors d’une étude indépendante sur 6 traitements."
           }
         }
       },
@@ -402,7 +402,7 @@
         "before_after_mXCbRp"
       ],
       "settings": {
-        "heading": "More effective than face creams.  More affordable than clinics."
+        "heading": "Plus efficace que les crèmes. Plus abordable que les cliniques."
       }
     },
     "accelerate-results": {
@@ -412,7 +412,7 @@
           "type": "product",
           "settings": {
             "image": "shopify://shop_images/serum_d1380379-a3b9-410d-b292-baa573e30451.png",
-            "heading": "For fine lines and wrinkles",
+            "heading": "Pour les ridules et rides",
             "text": ""
           }
         },
@@ -420,7 +420,7 @@
           "type": "option",
           "settings": {
             "heading": "Beta Glucon",
-            "text": "<p>A hydrating boost for your skin. Improves skin barrier, smooths skin, and is packed with antioxidants.</p>",
+            "text": "<p>Un boost d’hydratation pour votre peau. Renforce la barrière cutanée, lisse la peau et regorge d’antioxydants.</p>",
             "image": "shopify://shop_images/pi_caffeine.webp"
           }
         },
@@ -428,15 +428,15 @@
           "type": "option",
           "settings": {
             "heading": "Niacinamide",
-            "text": "<p>Helps with most skin concerns from soothing, brightening, hydrating and clarifying, to reducing the look of fine lines and wrinkles.</p>",
+            "text": "<p>Aide à résoudre la plupart des problèmes de peau : apaise, éclaircit, hydrate, clarifie et réduit l’apparence des ridules et rides.</p>",
             "image": "shopify://shop_images/pi_niacinamide.webp"
           }
         },
         "option_WGKQBQ": {
           "type": "option",
           "settings": {
-            "heading": "Copper Peptide GHK-Cu",
-            "text": "<p>Known for its powerful anti-aging properties. This switch boosts collagen production and skin healing and gives the serum its distinctive blue hue.</p>",
+            "heading": "Peptide de cuivre GHK-Cu",
+            "text": "<p>Reconnu pour ses puissantes propriétés anti-âge. Stimule la production de collagène, favorise la cicatrisation et donne au sérum sa teinte bleue distinctive.</p>",
             "image": "shopify://shop_images/pi_acetyl.webp"
           }
         },
@@ -444,15 +444,15 @@
           "type": "product",
           "settings": {
             "image": "shopify://shop_images/serhum.png",
-            "heading": "For dark spots and uneven skintone",
+            "heading": "Pour les taches sombres et le teint irrégulier",
             "text": ""
           }
         },
         "option_KtDdRN": {
           "type": "option",
           "settings": {
-            "heading": "Epidermal Growth Factor",
-            "text": "<p>Works at a cellular level to repair and rejuvenate skin. Reduces appearance of wrinkles, improves hydration, and prevents pigmentation.</p>",
+            "heading": "Facteur de croissance épidermique",
+            "text": "<p>Agit au niveau cellulaire pour réparer et rajeunir la peau. Réduit l’apparence des rides, améliore l’hydratation et prévient la pigmentation.</p>",
             "image": "shopify://shop_images/pi_epidermal.webp"
           }
         },
@@ -460,22 +460,22 @@
           "type": "option",
           "settings": {
             "heading": "Niacinamide",
-            "text": "<p>Helps with most skin concerns from soothing, brightening, hydrating and clarifying, to reducing the look of fine lines and wrinkles.</p>",
+            "text": "<p>Aide à résoudre la plupart des problèmes de peau : apaise, éclaircit, hydrate, clarifie et réduit l’apparence des ridules et rides.</p>",
             "image": "shopify://shop_images/pi_niacinamide.webp"
           }
         },
         "option_a7pDtr": {
           "type": "option",
           "settings": {
-            "heading": "Tranexamic Acid",
-            "text": "<p>Helps to fade the look of dark spots and discolouration. Assists with brightening and evening skin tone and reducing the appearance of texture.</p>",
+            "heading": "Acide tranexamique",
+            "text": "<p>Aide à atténuer les taches sombres et la décoloration. Favorise l’éclat, unifie le teint et réduit l’apparence de la texture.</p>",
             "image": "shopify://shop_images/pi_licorice.webp"
           }
         },
         "button_7UNUk3": {
           "type": "button",
           "settings": {
-            "button_label": "Regain Your Confidence",
+            "button_label": "Retrouver votre confiance",
             "button_url": "#new-landing-purchase"
           }
         }
@@ -492,7 +492,7 @@
         "button_7UNUk3"
       ],
       "settings": {
-        "heading": "Accelerate your results with our scientifically backed serums"
+        "heading": "Accélérez vos résultats avec nos sérums scientifiquement prouvés"
       }
     },
     "liquid_87wfLd": {
@@ -511,9 +511,9 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/cl_anthony.webp",
-            "text": "\"The Qure’s System is the closest thing that you can get to bringing your aesthetician home with you!\"",
+            "text": "« Le système Qure est ce qui se rapproche le plus d’amener votre esthéticien chez vous ! »",
             "client": "Dr Anthony Youn",
-            "client_text": "Board-Certified Plastic Surgeon"
+            "client_text": "Chirurgien plasticien certifié"
           }
         }
       },
@@ -521,7 +521,7 @@
         "result_ypTbFr"
       ],
       "settings": {
-        "heading": "The dermatologist's choice for safety and effectiveness…",
+        "heading": "Le choix des dermatologues pour la sécurité et l’efficacité…",
         "image": "shopify://shop_images/trusted_anthony_main.webp",
         "video_url": "https://www.youtube.com/watch?v=gGVKgTHloXw"
       }
@@ -533,30 +533,30 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/cl_doireann.webp",
-            "text": "\"It’s an amazing 5-minute facial with minimal to no downtime! I absolutely love this. Ten out of ten from me.\"",
+            "text": "« C’est un incroyable soin du visage de 5 minutes avec peu ou pas de temps de récupération ! J’adore ça. Dix sur dix pour moi. »",
             "client": "Dr Doireann O’Leary",
-            "client_text": "Medical Doctor"
+            "client_text": "Médecin"
           }
         },
         "option_PMAgRt": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/sw_1.webp",
-            "text": "<p>Built-in safety mechanism for <strong>safe and even stamping </strong>and effortless 5-minute treatments</p>"
+            "text": "<p>Mécanisme de sécurité intégré pour un <strong>stamping sûr et uniforme</strong> et des traitements de 5 minutes sans effort</p>"
           }
         },
         "option_pHxCBf": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/sw_2.webp",
-            "text": "<p>Sterile 24k gold plated <strong>disposable needleheads </strong>for better hygiene and safety</p>"
+            "text": "<p>Têtes d’aiguilles jetables plaquées or 24k <strong>stériles</strong> pour une meilleure hygiène et sécurité</p>"
           }
         },
         "option_gUg3qD": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/sw_3.webp",
-            "text": "<p>Almost painless with <strong>minimal downtime</strong></p>"
+            "text": "<p>Quasiment indolore avec un <strong>temps de récupération minimal</strong></p>"
           }
         }
       },
@@ -567,8 +567,8 @@
         "option_gUg3qD"
       ],
       "settings": {
-        "heading": "The safest way to microneedle at home…",
-        "text": "<p>Qure Micro-Infusion system is designed to be as <strong>safe, sterile and, painless as possible.</strong> Each 24k gold plated microneedle head is single use, <strong>limiting any risk of infection.</strong></p><p>Bypass your skin’s outer defensive layer and stamp your way to younger looking skin.</p>",
+        "heading": "La manière la plus sûre de microneedling à domicile…",
+        "text": "<p>Le système de micro-infusion Qure est conçu pour être aussi <strong>sûr, stérile et indolore que possible.</strong> Chaque tête d’aiguille plaquée or 24k est à usage unique, <strong>limitant tout risque d’infection.</strong></p><p>Contournez la couche externe défensive de votre peau et stimulez une apparence plus jeune.</p>",
         "image": "shopify://shop_images/Framef_11452.png"
       }
     },
@@ -578,7 +578,7 @@
         "option_LbQPJe": {
           "type": "option",
           "settings": {
-            "text": "More effective than topical treatments",
+            "text": "Plus efficace que les traitements topiques",
             "first_option": true,
             "second_option": false
           }
@@ -586,7 +586,7 @@
         "option_DQ8yMX": {
           "type": "option",
           "settings": {
-            "text": "Penetrates the skin barrier",
+            "text": "Pénètre la barrière cutanée",
             "first_option": true,
             "second_option": false
           }
@@ -594,7 +594,7 @@
         "option_GFHCL3": {
           "type": "option",
           "settings": {
-            "text": "Deliver ingredients deep into the skin",
+            "text": "Livre les ingrédients en profondeur dans la peau",
             "first_option": true,
             "second_option": false
           }
@@ -602,7 +602,7 @@
         "option_NjTEdb": {
           "type": "option",
           "settings": {
-            "text": "Visible results after one treatment",
+            "text": "Résultats visibles après un traitement",
             "first_option": true,
             "second_option": false
           }
@@ -610,7 +610,7 @@
         "option_U86Ach": {
           "type": "option",
           "settings": {
-            "text": "Only takes 5 minutes",
+            "text": "Seulement 5 minutes",
             "first_option": true,
             "second_option": false
           }
@@ -618,7 +618,7 @@
         "option_CaqPix": {
           "type": "option",
           "settings": {
-            "text": "Reviewed by dermatologists",
+            "text": "Évalué par des dermatologues",
             "first_option": true,
             "second_option": true
           }
@@ -626,7 +626,7 @@
         "button_3T9LFx": {
           "type": "button",
           "settings": {
-            "button_label": "Try It Now",
+            "button_label": "Essayez-le maintenant",
             "button_url": "#new-landing-purchase"
           }
         }
@@ -641,11 +641,11 @@
         "button_3T9LFx"
       ],
       "settings": {
-        "heading": "Why choose Qure?",
+        "heading": "Pourquoi choisir Qure ?",
         "image_first": "shopify://shop_images/Group_1806_8fe54e0d-030d-484d-ba60-eaa0b8743f24.png",
         "text_first": "Qure",
         "image_second": "shopify://shop_images/face_cream.png",
-        "text_second": "Face Creams"
+        "text_second": "Crèmes pour le visage"
       }
     },
     "results_3LEkF8": {
@@ -655,11 +655,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_glorija.webp",
-            "heading": "The best natural glow",
-            "text": "<p>“I was hesitant at first as I didn’t know how much it would hurt but to my surprise it was pretty painless. The 2nd day after the treatment, my skin has the best natural glow!</p><p>I was also happy to to see how much my pigmentation had lightened after 3rd treatment :) I switch between the serums depending on how my skin is before the treatment.”</p>",
+            "heading": "Le meilleur éclat naturel",
+            "text": "<p>« J’hésitais au début, ne sachant pas si ça ferait mal, mais à ma surprise, c’était presque indolore. Le lendemain du traitement, ma peau avait le meilleur éclat naturel !</p><p>J’étais aussi ravie de voir combien ma pigmentation s’était éclaircie après le 3e traitement :) Je change de sérum selon l’état de ma peau avant chaque traitement. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
-            "text_country": "Australia",
+            "text_country": "Australie",
             "client": "Glorija",
             "code": ""
           }
@@ -668,11 +668,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_ellie.webp",
-            "heading": "my skin RETURNED to LIFE!",
-            "text": "<p>\"I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "heading": "Ma peau EST REVENUE À LA VIE !",
+            "text": "<p>« Je viens d’avoir 57 ans. Ma peau était extrêmement sèche et avec ce produit, ma peau EST REVENUE À LA VIE ! Je suis tellement impressionnée ! Mes collègues me demandent ce que j’utilise… et je leur dis. Facile à utiliser, les aiguilles sont meilleures qu’un stylo de microneedling. C’est un produit incroyable que vous ne regretterez pas d’acheter. Je vois vraiment le changement sur ma peau. Excellent travail QURE ! »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Ellie V.",
             "code": ""
           }
@@ -681,11 +681,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_mona.webp",
-            "heading": "Fade after just two treatments",
-            "text": "<p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
+            "heading": "Atténuation après deux traitements",
+            "text": "<p>« Personnellement, je pense que mes produits pénètrent mieux, ma peau est un peu plus lumineuse et cette grosse cicatrice d’acné sur ma joue droite a commencé à s’atténuer après seulement DEUX traitements ! »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Mona P.",
             "code": ""
           }
@@ -694,11 +694,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_ela.webp",
-            "heading": "Shocked at the results",
-            "text": "<p>\"Shocked at the results after just one treatment! I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!</p><p>Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "heading": "Choquée par les résultats",
+            "text": "<p>« Choquée par les résultats après un seul traitement ! Je ne laisse pas souvent d’avis… mais j’étais stupéfaite de voir ma peau le lendemain matin !</p><p>La texture était tellement plus lisse, ma peau semblait nette, éclatante et saine. Le système est si facile à utiliser, j’ai hâte du prochain traitement. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Ela O.",
             "code": ""
           }
@@ -707,11 +707,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_ann.webp",
-            "heading": "I LOVE the results",
-            "text": "<p>“I heard about micro-infusion in clinics but couldn’t afford to fork out hundreds of dollars for a treatment. So when I saw this online I jumped at buying it instantly. Yes, it doesn’t stamp in botox and filler BUT personally I LOVE the results and how easy it is to use myself at home. It works great for my skin, I have noticed my skin texture is much smoother and brighter.”</p>",
+            "heading": "J’ADORE les résultats",
+            "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas dépenser des centaines de dollars. Quand j’ai vu ça en ligne, j’ai sauté sur l’occasion. Oui, ça n’injecte pas de botox ou de fillers, MAIS j’ADORE les résultats et la facilité d’utilisation à la maison. Ça marche super bien pour ma peau, ma texture est bien plus lisse et lumineuse. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
-            "text_country": "Australia",
+            "text_country": "Australie",
             "client": "Ann",
             "code": ""
           }
@@ -720,11 +720,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_chelsea.webp",
-            "heading": "Amazing results!",
-            "text": "<p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"</p>",
+            "heading": "Résultats incroyables !",
+            "text": "<p>« Résultats incroyables. Je suis bluffée par l’état de ma peau. Ce produit a été génial pour l’hyperpigmentation et l’acné kystique hormonale. Je continuerai à soutenir cette marque car elle a ramené la peau que je connais. J’étais à bout avec une poussée hormonale et une forte hyperpigmentation. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Chelsea J.",
             "code": ""
           }
@@ -733,11 +733,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_jess1.webp",
-            "heading": "IT REALLY WORKS!!",
-            "text": "<p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
+            "heading": "ÇA MARCHE VRAIMENT !!",
+            "text": "<p>« J’ai opté pour le pack 3 mois et après 6 traitements (toutes les 2 semaines), je suis TROP contente des résultats !!! Mes pores sont plus petits et j’ai surtout vu une différence dans la texture de ma peau. Elle rougit un peu juste après, mais ça disparaît vite. Un peu inconfortable sur le front, mais ailleurs ça va. Vraiment worth it !!! »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Jess",
             "code": ""
           }
@@ -746,11 +746,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_akina.webp",
-            "heading": "I love this product",
-            "text": "<p>“I used three time so far. I can see the results from first time I used. I love this product but only thing is it’s take time to apply till used all serum per application. I tried many different way to press to my skin so the serum come out more but then a lot of time not.”</p>",
+            "heading": "J’aime ce produit",
+            "text": "<p>« Je l’ai utilisé trois fois jusqu’à présent. J’ai vu des résultats dès la première fois. J’aime ce produit, mais le seul hic, c’est que ça prend du temps à appliquer jusqu’à ce que tout le sérum soit utilisé. J’ai essayé plusieurs façons de presser pour que le sérum sorte plus, mais souvent ça ne marche pas. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Akina M.",
             "code": ""
           }
@@ -759,11 +759,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_andrea-a.webp",
-            "heading": "Absolutely love it!",
-            "text": "<p>“I have used many topicals to help with post acne marks. This micro-infusion system has given me the most consistent results. Absolutely love it!”</p>",
+            "heading": "J’adore absolument !",
+            "text": "<p>« J’ai utilisé beaucoup de topiques pour mes marques post-acné. Ce système de micro-infusion m’a donné les résultats les plus constants. J’adore absolument ! »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Andrea A.",
             "code": ""
           }
@@ -772,11 +772,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_priya.webp",
-            "heading": "Plumper, more hydrated!",
-            "text": "<p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
+            "heading": "Plus pulpeuse, plus hydratée !",
+            "text": "<p>« Après la première utilisation d’EGF, ma peau était plus pulpeuse, hydratée et mon teint s’est radicalement amélioré, littéralement le lendemain. J’adore ce produit, je vais en racheter car il a vraiment lissé mes ridules aussi. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/england_f.webp",
-            "text_country": "United Kingdom",
+            "text_country": "Royaume-Uni",
             "client": "Priya P.",
             "code": ""
           }
@@ -785,11 +785,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_ann.webp",
-            "heading": "How easy it is to use",
-            "text": "<p>\"I heard about micro-infusion in clinics but couldn’t afford to fork out hundreds of dollars for a treatment. So when I saw this online I jumped at buying it instantly. Yes, it doesn’t stamp in botox and filler BUT personally I LOVE the results and how easy it is to use myself at home. It works great for my skin, I have noticed my skin texture is much smoother and brighter.”</p>",
+            "heading": "Tellement facile à utiliser",
+            "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas dépenser des centaines de dollars. Quand j’ai vu ça en ligne, j’ai sauté sur l’occasion. Oui, ça n’injecte pas de botox ou de fillers, MAIS j’ADORE les résultats et la facilité d’utilisation à la maison. Ça marche super bien pour ma peau, ma texture est bien plus lisse et lumineuse. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
-            "text_country": "Australia",
+            "text_country": "Australie",
             "client": "Ann",
             "code": ""
           }
@@ -798,11 +798,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_andrea-g.webp",
-            "heading": "Definitely be re-ordering",
-            "text": "<p>“Still a newbie but so far so great! I have dermarolled for more than a decade -still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved- but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
+            "heading": "Je vais clairement recommander",
+            "text": "<p>« Encore novice, mais pour l’instant, génial ! J’ai fait du dermarolling pendant plus de dix ans - encore une fois par semaine avec 0,25. J’évitais les stylos car trop compliqué - mais le système Qure est juste top. Super facile, convivial et ma peau adore le sérum ! Je fais mon troisième traitement samedi et je vais clairement recommander 🤗 »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Andrea G.",
             "code": ""
           }
@@ -811,11 +811,11 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results-Ramandeep.png",
-            "heading": "I definitely see a difference",
-            "text": "<p>“I have done 2 treatments - 1 for rejuvenating and 2 for hydration with 3 week gap in between treatments. I definitely see a difference in before and after pictures. I am sure I need 4-8 more treatments but this did make a difference.”</p>",
+            "heading": "Je vois clairement une différence",
+            "text": "<p>« J’ai fait 2 traitements - 1 pour rajeunir et 2 pour hydrater, avec 3 semaines d’écart. Je vois clairement une différence sur les photos avant/après. Je suis sûr qu’il me faut 4 à 8 traitements de plus, mais ça a déjà fait une différence. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Ramandeep",
             "code": ""
           }
@@ -823,7 +823,7 @@
         "button_p7WMyp": {
           "type": "button",
           "settings": {
-            "button_label": "Experience The Difference",
+            "button_label": "Vivez la différence",
             "button_url": "#new-landing-purchase",
             "custom_class": "mw-452"
           }
@@ -847,10 +847,10 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes",
+        "heading": "Des résultats que vous verrez de vos propres yeux",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
-        "text_reviewed": "Reviewed in"
+        "text_verified_customer": "Client vérifié",
+        "text_reviewed": "Évalué à"
       }
     },
     "videos_list_rXDbHD": {
@@ -914,10 +914,10 @@
         "wistia_WQehBR"
       ],
       "settings": {
-        "heading": "Confident skin starts here",
+        "heading": "Une peau confiante commence ici",
         "sub_heading": "",
         "classname": "section videosQure",
-        "btn": "Join Thousands Of Women",
+        "btn": "Rejoignez des milliers de femmes",
         "btn_url": "#new-landing-purchase",
         "ctm_cls_btn": "",
         "desk_slide": 6,
@@ -931,32 +931,32 @@
         "tab_AwmhHK": {
           "type": "Tab",
           "settings": {
-            "tab_txt": "Prepare",
-            "tab_desc": "<p>Twist open the chamber of the device and fill with one ampule of serum.<br/>Twist on needle head with lid to close it tight.</p><p>Leave the device upside down for 1-2 minutes.<br/>During this time, wash your face and make sure your hands are clean.</p>",
+            "tab_txt": "Préparer",
+            "tab_desc": "<p>Dévisser la chambre de l’appareil et remplir avec une ampoule de sérum.<br/>Visser la tête d’aiguille avec le capuchon pour bien fermer.</p><p>Laisser l’appareil à l’envers pendant 1 à 2 minutes.<br/>Pendant ce temps, lavez votre visage et assurez-vous que vos mains sont propres.</p>",
             "image": "shopify://shop_images/6_ea9ed242-a7b5-4cdc-941b-ad54c7da2260.png"
           }
         },
         "tab_yTEcfK": {
           "type": "Tab",
           "settings": {
-            "tab_txt": "Treatment",
-            "tab_desc": "<p>Once the serum has had enough time to make its way into the needles, you can take off the lid and start micro-infusing!</p><p>Start at the centre of the face and work your way outward to cover the full face. Perform 2/3 passes. Take any leftover serum from the device and pat it onto your face and neck to leave on overnight.</p>",
+            "tab_txt": "Traitement",
+            "tab_desc": "<p>Une fois que le sérum a eu le temps de pénétrer dans les aiguilles, retirez le capuchon et commencez la micro-infusion !</p><p>Commencez au centre du visage et progressez vers l’extérieur pour couvrir tout le visage. Faites 2 à 3 passages. Prenez le sérum restant dans l’appareil et tapotez-le sur votre visage et cou pour le laisser agir toute la nuit.</p>",
             "image": "shopify://shop_images/1a_3.png"
           }
         },
         "tab_QqVtHE": {
           "type": "Tab",
           "settings": {
-            "tab_txt": "Aftercare",
-            "tab_desc": "<p>Once treatment is completed, place lid back on the needle head.</p><p>Twist the lid off and dispose safely.</p><p>Open a new sterile needle head and put it on the device ready for your next treatment.</p>",
+            "tab_txt": "Après-soin",
+            "tab_desc": "<p>Une fois le traitement terminé, remettez le capuchon sur la tête d’aiguille.</p><p>Dévisser le capuchon et jetez-le en toute sécurité.</p><p>Ouvrez une nouvelle tête d’aiguille stérile et placez-la sur l’appareil pour le prochain traitement.</p>",
             "image": "shopify://shop_images/1a_4tt.png"
           }
         },
         "tab_gUbBCP": {
           "type": "Tab",
           "settings": {
-            "tab_txt": "Storage",
-            "tab_desc": "<p>Once treatment is completed, place lid back on the needle head.</p><p>Twist the lid off and dispose safely.</p><p>Open a new sterile needle head and put it on the device ready for your next treatment.</p>",
+            "tab_txt": "Rangement",
+            "tab_desc": "<p>Une fois le traitement terminé, remettez le capuchon sur la tête d’aiguille.</p><p>Dévisser le capuchon et jetez-le en toute sécurité.</p><p>Ouvrez une nouvelle tête d’aiguille stérile et placez-la sur l’appareil pour le prochain traitement.</p>",
             "image": "shopify://shop_images/image_storage.png"
           }
         },
@@ -976,7 +976,7 @@
       ],
       "settings": {
         "ctm_cls_use": "",
-        "heading": "How to use"
+        "heading": "Comment utiliser"
       }
     },
     "anti-creams-microinfusion-page-break": {
@@ -986,35 +986,35 @@
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/q_w_derma.svg",
-            "text": "Real results after your very first treatment."
+            "text": "Résultats réels dès votre premier traitement."
           }
         },
         "option_LKBaRk": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/q-w_effective.svg",
-            "text": "More effective than topical creams."
+            "text": "Plus efficace que les crèmes topiques."
           }
         },
         "option_yRNWRF": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/q_w_plus.svg",
-            "text": "Clinic-like skincare without clinic prices."
+            "text": "Soin de niveau clinique sans les prix des cliniques."
           }
         },
         "option_r3MNVN": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/q_w_time.svg",
-            "text": "Saves you time."
+            "text": "Vous fait gagner du temps."
           }
         },
         "option_Njxw7i": {
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/q_w_needles.svg",
-            "text": "Virtually painless, minimal to no downtime."
+            "text": "Quasiment indolore, peu ou pas de temps de récupération."
           }
         }
       },
@@ -1026,7 +1026,7 @@
         "option_Njxw7i"
       ],
       "settings": {
-        "heading": "Break through your skin’s barrier and rejuvenate from the inside out.",
+        "heading": "Traversez la barrière de votre peau et rajeunissez de l’intérieur.",
         "image": "shopify://shop_images/skin_barrier.webp"
       }
     },
@@ -1037,7 +1037,7 @@
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/rg_item_1.webp",
-            "text": "<p>noticed a difference in their skin the day after their first treatment.</p>",
+            "text": "<p>ont remarqué une différence sur leur peau le lendemain du premier traitement.</p>",
             "percent_bar": 93
           }
         },
@@ -1045,7 +1045,7 @@
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/rg_item_2.webp",
-            "text": "<p>agreed their skin appeared more hydrated and dewy.</p>",
+            "text": "<p>ont trouvé leur peau plus hydratée et éclatante.</p>",
             "percent_bar": 93
           }
         },
@@ -1053,7 +1053,7 @@
           "type": "option",
           "settings": {
             "image": "shopify://shop_images/rg_item_3.webp",
-            "text": "<p>prefer the convenience of Qure’s Micro-Infusion System to in-clinic treatments</p>",
+            "text": "<p>préfèrent la praticité du système de micro-infusion Qure aux traitements en clinique</p>",
             "percent_bar": 87
           }
         }
@@ -1064,7 +1064,7 @@
         "option_tPPYDt"
       ],
       "settings": {
-        "heading": "Reveal your glow and renew your confidence."
+        "heading": "Révélez votre éclat et renouvelez votre confiance."
       }
     },
     "faq_CBfhyg": {
@@ -1073,96 +1073,96 @@
         "object_QiNmNp": {
           "type": "object",
           "settings": {
-            "heading": "What is the Qure Micro-Infusion System?",
-            "text": "<p>The Qure Micro-Infusion System is a skincare device that combines micro-needling with a special serum to rejuvenate your skin, helping to reduce the appearance of fine lines, wrinkles, dark spots, and improve overall skin brightness and plumpness.</p>",
+            "heading": "Qu’est-ce que le système de micro-infusion Qure ?",
+            "text": "<p>Le système de micro-infusion Qure est un appareil de soin qui combine le microneedling avec un sérum spécial pour rajeunir votre peau, aidant à réduire l’apparence des ridules, rides, taches sombres, et améliorer la luminosité et la fermeté globale.</p>",
             "code": ""
           }
         },
         "object_4yYPQ4": {
           "type": "object",
           "settings": {
-            "heading": "How does the Qure Micro-Infusion System work?",
-            "text": "<p>It uses 0.5mm 24k gold needles to create microchannels in the skin, allowing our science-backed Rejuvenating Serum to penetrate deeply and be more effective. This process stimulates the skin's natural recovery, promoting a youthful appearance.</p>",
+            "heading": "Comment fonctionne le système de micro-infusion Qure ?",
+            "text": "<p>Il utilise des aiguilles en or 24k de 0,5 mm pour créer des microcanaux dans la peau, permettant à notre sérum rajeunissant scientifiquement prouvé de pénétrer profondément et d’être plus efficace. Ce processus stimule la récupération naturelle de la peau, favorisant une apparence jeune.</p>",
             "code": ""
           }
         },
         "object_faRVVk": {
           "type": "object",
           "settings": {
-            "heading": "Is the Qure Micro-Infusion System safe to use?",
-            "text": "<p>Yes, the system has been tested and reviewed by leading dermatologists and is designed to be sterile and hygienic with minimal downtime, making it a safe option for at-home skin treatment.</p>",
+            "heading": "Le système de micro-infusion Qure est-il sûr ?",
+            "text": "<p>Oui, le système a été testé et approuvé par des dermatologues de renom. Il est conçu pour être stérile et hygiénique avec un temps de récupération minimal, en faisant une option sûre pour un traitement à domicile.</p>",
             "code": ""
           }
         },
         "object_7ViJwh": {
           "type": "object",
           "settings": {
-            "heading": "How often should I use the Qure Micro-Infusion System?",
-            "text": "<p>For best results, we recommend a 10-minute treatment every 2 weeks.</p>",
+            "heading": "À quelle fréquence dois-je utiliser le système de micro-infusion Qure ?",
+            "text": "<p>Pour de meilleurs résultats, nous recommandons un traitement de 10 minutes toutes les 2 semaines.</p>",
             "code": ""
           }
         },
         "object_tERiWN": {
           "type": "object",
           "settings": {
-            "heading": "Can I use the Qure Micro-Infusion System if I have sensitive skin?",
-            "text": "<p>While the system is designed to be gentle and has been loved by dermatologists, we recommend checking with a healthcare professional if you have concerns about using it on sensitive skin.</p>",
+            "heading": "Puis-je utiliser le système si j’ai la peau sensible ?",
+            "text": "<p>Bien que le système soit conçu pour être doux et apprécié des dermatologues, nous conseillons de consulter un professionnel de santé si vous avez des inquiétudes concernant son utilisation sur une peau sensible.</p>",
             "code": ""
           }
         },
         "object_b4xRkF": {
           "type": "object",
           "settings": {
-            "heading": "What are the benefits of using the Qure Micro-Infusion System?",
-            "text": "<p>Benefits include fading the appearance of fine lines and wrinkles, reducing dark spots and scarring, plumping and brightening dull skin, and activating the body's natural anti-aging mechanisms.</p>",
+            "heading": "Quels sont les avantages du système de micro-infusion Qure ?",
+            "text": "<p>Les avantages incluent l’atténuation des ridules et rides, la réduction des taches sombres et cicatrices, le repulpage et l’éclaircissement d’une peau terne, et l’activation des mécanismes naturels anti-âge du corps.</p>",
             "code": ""
           }
         },
         "object_qfXzf3": {
           "type": "object",
           "settings": {
-            "heading": "Can’t I just use a derma roller?",
-            "text": "<p>Qure’s Micro-Infusion System features a one time per treatment head. This means it is typically safer and more hygienic than a derma roller. It also infuses the skin at the same time making it much more time efficient and effective than a derma roller.</p>",
+            "heading": "Ne puis-je pas simplement utiliser un dermaroller ?",
+            "text": "<p>Le système de micro-infusion Qure utilise une tête à usage unique par traitement, ce qui est généralement plus sûr et hygiénique qu’un dermaroller. Il infuse aussi la peau en même temps, le rendant bien plus rapide et efficace.</p>",
             "code": ""
           }
         },
         "object_9UagXp": {
           "type": "object",
           "settings": {
-            "heading": "How do I use the Qure Micro-Infusion System?",
-            "text": "<p>The process involves filling the device with serum, creating microchannels with the needle head, applying the serum through stamping motions on the face, and disposing of the needle head after use. Detailed instructions are included with the system.</p>",
+            "heading": "Comment utiliser le système de micro-infusion Qure ?",
+            "text": "<p>Le processus consiste à remplir l’appareil avec du sérum, créer des microcanaux avec la tête d’aiguille, appliquer le sérum par des mouvements de stamping sur le visage, et jeter la tête d’aiguille après usage. Des instructions détaillées sont incluses avec le système.</p>",
             "code": ""
           }
         },
         "object_KJWRnn": {
           "type": "object",
           "settings": {
-            "heading": "What's the full ingredients list?",
-            "text": "<p><strong>Rejuvenating Serum, All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol 1,3, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum indicum extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, sh-Oligopeptide-1.</p><p><strong>Hydra-Soothing Serum, All ingredients:</strong></p><p>Rosa Damascena Flower Water, Propanediol 1,3, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia leaf /stem extract, Water, Butylene glycol, 4'Hydroxyacetophenone, Copper Tripeptide-1, Oat Beta Glucan, Chrysanthellum indicum extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>",
+            "heading": "Quelle est la liste complète des ingrédients ?",
+            "text": "<p><strong>Sérum rajeunissant, tous les ingrédients :</strong><br/>Eau de fleur de Rosa Damascena, Propanediol 1,3, Glycérine, Acide tranexamique, Niacinamide, Panthénol, Extrait de Chrysanthellum indicum, Éthylhexylglycérine, Tripeptide-1, Gomme de xanthane, Allantoïne, sh-Oligopeptide-1.</p><p><strong>Sérum Hydra-Soothing, tous les ingrédients :</strong></p><p>Eau de fleur de Rosa Damascena, Propanediol 1,3, Glycérine, Panthénol, Niacinamide, Extrait de feuille/tige de Myrothamnus Flabellifolia, Eau, Butylène glycol, 4'Hydroxyacétophénone, Tripeptide de cuivre-1, Beta Glucan d’avoine, Extrait de Chrysanthellum indicum, Éthylhexylglycérine, Hyaluronate de sodium, Allantoïne, Gomme de xanthane.</p><p>Notez que, en raison d’innovations et de changements réglementaires, la liste des ingrédients ici peut légèrement différer de celle sur nos emballages et sites distributeurs.</p>",
             "code": ""
           }
         },
         "object_iNjJHr": {
           "type": "object",
           "settings": {
-            "heading": "What makes the Qure Micro-Infusion System different from clinic treatments?",
-            "text": "<p>It offers a convenient, affordable, and less invasive alternative to clinical treatments, allowing you to achieve similar benefits without the need for costly and time-consuming clinic visits.</p>",
+            "heading": "En quoi le système Qure diffère-t-il des traitements en clinique ?",
+            "text": "<p>Il offre une alternative pratique, abordable et moins invasive aux traitements cliniques, vous permettant d’obtenir des bénéfices similaires sans les visites coûteuses et chronophages en clinique.</p>",
             "code": ""
           }
         },
         "object_jh9h8Y": {
           "type": "object",
           "settings": {
-            "heading": "What is included in the purchase of a Qure Micro-Infusion System?",
-            "text": "<p>You will receive the Micro-Infusion device, sterile 24k gold plated microneedle heads, Qure’s science-backed Rejuvenating Serum, free worldwide shipping over $100, 24/7 customer support, and a 90-day risk-free money-back guarantee.</p>",
+            "heading": "Que comprend l’achat du système de micro-infusion Qure ?",
+            "text": "<p>Vous recevrez l’appareil de micro-infusion, des têtes d’aiguilles stériles plaquées or 24k, le sérum rajeunissant scientifiquement prouvé de Qure, la livraison mondiale gratuite pour les commandes de plus de 100 $, un support client 24/7, et une garantie de remboursement sans risque de 90 jours.</p>",
             "code": ""
           }
         },
         "object_n7R7ar": {
           "type": "object",
           "settings": {
-            "heading": "What if I'm not satisfied with my results?",
-            "text": "<p>Qure offers a 90-day risk-free money-back guarantee. If you're not satisfied with the results after using the system as recommended, you can return it for a full refund.</p>",
+            "heading": "Et si je ne suis pas satisfait des résultats ?",
+            "text": "<p>Qure offre une garantie de remboursement sans risque de 90 jours. Si vous n’êtes pas satisfait des résultats après avoir utilisé le système comme recommandé, vous pouvez le retourner pour un remboursement complet.</p>",
             "code": ""
           }
         }
@@ -1184,10 +1184,10 @@
       "settings": {
         "background": "bg-lightGrey",
         "classname": "",
-        "heading": "The answers to your questions",
+        "heading": "Les réponses à vos questions",
         "text": "",
-        "button_label": "Show More Questions",
-        "button_hide_label": "Hide More Questions"
+        "button_label": "Voir plus de questions",
+        "button_hide_label": "Masquer les questions"
       }
     }
   },
