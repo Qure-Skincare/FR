@@ -16,29 +16,29 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>97% customer satisfaction rate</p>"
+            "text": "<p>Taux de satisfaction client de 97 %</p>"
           }
         },
         "list_azYRbY": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Reduces Impurities and prevents breakouts without stripping or drying out the skin.</li><li>Secret weapon for keeping skin calm, clear, and ready for whatever comes next- no rising, no fuss.</li><li>Dermatologically tested, versatile and safe for use on your face, body, and devices.</li></ul>"
+            "text": "<ul><li>Réduit les impuretés et prévient les éruptions sans dessécher ni agresser la peau.</li><li>Arme secrète pour garder une peau calme, nette et prête à tout affronter – sans rinçage, sans tracas.</li><li>Testé dermatologiquement, polyvalent et sûr pour une utilisation sur le visage, le corps et les appareils.</li></ul>"
           }
         },
         "supply_CTrVRQ": {
           "type": "supply",
           "settings": {
-            "heading": "Next batch ships 15th of April 2025:",
-            "heading_mobile": "Next batch ships 04/15:",
-            "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
-            "first_option_date": "January 20th",
-            "first_option_text": "SOLD OUT",
+            "heading": "Prochain lot expédié le 15 avril 2025 :",
+            "heading_mobile": "Prochain lot expédié le 15/04 :",
+            "text": "<p>En raison d’une forte demande, nous sommes en rupture de stock. Commandez maintenant et réservez le vôtre pour la prochaine expédition.</p>",
+            "first_option_date": "20 janvier",
+            "first_option_text": "ÉPUISÉ",
             "first_option_percent": 100,
-            "second_option_date": "April 15th",
-            "second_option_text": "67% Reserved",
+            "second_option_date": "15 avril",
+            "second_option_text": "67 % réservé",
             "second_option_percent": 67,
-            "third_option_date": "May 30th",
-            "third_option_text": "In Production",
+            "third_option_date": "30 mai",
+            "third_option_text": "En production",
             "third_option_percent": 0
           }
         }
@@ -49,17 +49,17 @@
         "supply_CTrVRQ"
       ],
       "settings": {
-        "seo_heading": "Hypochlorous Acid Spray Dermal Mist",
-        "heading": "Purify your skin anytime, anywhere with Dermal Mist",
-        "heading_mobile": "Purify your skin anytime, anywhere with Dermal Mist",
+        "seo_heading": "Brume dermique à l’acide hypochloreux",
+        "heading": "Purifiez votre peau à tout moment, partout avec la brume dermique",
+        "heading_mobile": "Purifiez votre peau à tout moment, partout avec la brume dermique",
         "wistia_id": "",
         "product_images_limit": 3,
-        "product_button_label": "Product",
+        "product_button_label": "Produit",
         "before_after_images_limit": 0,
-        "before_after_button_label": "Before & After",
+        "before_after_button_label": "Avant & Après",
         "reserve": true,
-        "underbutton_text_left": "Dermatologist Approved",
-        "underbutton_text_right": "Free Shipping Over US$100",
+        "underbutton_text_left": "Approuvé par des dermatologues",
+        "underbutton_text_right": "Livraison gratuite pour les commandes de plus de 100 $ US",
         "selected_design": "new",
         "text_label_real_result_1": "",
         "text_label_real_result_2": "",
@@ -130,52 +130,52 @@
         "heading_QaXLcc": {
           "type": "heading",
           "settings": {
-            "heading": "5 Reasons Dermal Mist deserves a VIP spot in your routine"
+            "heading": "5 raisons pour lesquelles la brume dermique mérite une place VIP dans votre routine"
           }
         },
         "content_cXqUPn": {
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/bacteria.svg",
-            "text": "<p><strong>Purifies Beyond The Surface:</strong></p><p>Removes impurities and bacteria, helping to prevent irritation and breakouts.</p>",
+            "text": "<p><strong>Purifie au-delà de la surface :</strong></p><p>Élimine les impuretés et les bactéries, aidant à prévenir les irritations et les éruptions.</p>",
             "iconMob": "shopify://shop_images/bacteria.svg",
-            "textMob": "<p><strong>It Cleanses Beyond The Surface:</strong></p><p>Dermal Mist works to remove impurities and bacteria, helping to prevent irritation and breakouts.</p>"
+            "textMob": "<p><strong>Nettoie au-delà de la surface :</strong></p><p>La brume dermique élimine les impuretés et les bactéries, aidant à prévenir les irritations et les éruptions.</p>"
           }
         },
         "content_8qnDQ8": {
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/Soothes.svg",
-            "text": "<p><strong>Soothes Redness and Irritation:</strong></p><p>Hypochlorous Acid calms your skin, providing relief from everyday stressors and is safe for those prone to allergies or sensitive skin.</p>",
+            "text": "<p><strong>Apaise les rougeurs et les irritations :</strong></p><p>L’acide hypochloreux calme votre peau, soulageant les stress quotidiens, et est sûr pour les peaux sujettes aux allergies ou sensibles.</p>",
             "iconMob": "shopify://shop_images/Soothes.svg",
-            "textMob": "<p><strong>It Soothes Redness And Irritation:</strong></p><p>Hypochlorous acid helps to calm your skin, providing relief from everyday stressors.</p>"
+            "textMob": "<p><strong>Apaise les rougeurs et les irritations :</strong></p><p>L’acide hypochloreux aide à calmer votre peau, soulageant les stress quotidiens.</p>"
           }
         },
         "content_frTXnG": {
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/Dry-skin.svg",
-            "text": "<p><strong>Doesn’t Dry Out Skin:</strong></p><p>Our alcohol-free formula is designed to be gentle and kind to skin, leaving it comfortable and not dry.</p>",
+            "text": "<p><strong>Ne dessèche pas la peau :</strong></p><p>Notre formule sans alcool est conçue pour être douce et respectueuse de la peau, la laissant confortable et non sèche.</p>",
             "iconMob": "shopify://shop_images/Dry-skin.svg",
-            "textMob": "<p><strong>It Doesn’t Dry You Out:</strong></p><p>The alcohol-free formula is designed to be gentle, leaving your skin comfortable, not tight or dry.</p>"
+            "textMob": "<p><strong>Ne dessèche pas :</strong></p><p>La formule sans alcool est conçue pour être douce, laissant votre peau confortable, sans tiraillement ni sécheresse.</p>"
           }
         },
         "content_67QpDY": {
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/spray.svg",
-            "text": "<p><strong>Super Versatile:</strong></p><p>From your face and body to your devices, this mist fits effortlessly into different parts of your day.</p>",
+            "text": "<p><strong>Super polyvalente :</strong></p><p>Du visage au corps en passant par vos appareils, cette brume s’intègre sans effort à différents moments de votre journée.</p>",
             "iconMob": "shopify://shop_images/spray.svg",
-            "textMob": "<p><strong>It’s Super Versatile:</strong></p><p>From your face and body to your devices, this mist fits effortlessly into different parts of your day.</p>"
+            "textMob": "<p><strong>Super polyvalente :</strong></p><p>Du visage au corps en passant par vos appareils, cette brume s’intègre sans effort à différents moments de votre journée.</p>"
           }
         },
         "content_FwmGpt": {
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/sparkling.svg",
-            "text": "<p><strong>Fits Into Any Routine:</strong></p><p>Just spray, let it dry, and continue with your routine—no extra steps needed.</p>",
+            "text": "<p><strong>S’intègre à toute routine :</strong></p><p>Vaporisez simplement, laissez sécher et poursuivez votre routine – aucune étape supplémentaire nécessaire.</p>",
             "iconMob": "shopify://shop_images/sparkling.svg",
-            "textMob": "<p><strong>It Fits Into Any Routine:</strong></p><p>Just spray, let it dry, and continue with your routine—no extra steps needed.</p>"
+            "textMob": "<p><strong>S’intègre à toute routine :</strong></p><p>Vaporisez simplement, laissez sécher et poursuivez votre routine – aucune étape supplémentaire nécessaire.</p>"
           }
         }
       },
@@ -199,32 +199,32 @@
           "type": "dropdown",
           "settings": {
             "cap_image": "shopify://shop_images/post-workout.png",
-            "text": "Post- Workout Essential:",
-            "drop_text": "<p>Spray right after a gym session to help keep breakouts at bay before you can get to a full cleanse.</p>"
+            "text": "Indispensable après le sport :",
+            "drop_text": "<p>Vaporisez juste après une séance de sport pour aider à prévenir les éruptions avant un nettoyage complet.</p>"
           }
         },
         "dropdown_j7LX3d": {
           "type": "dropdown",
           "settings": {
             "cap_image": "shopify://shop_images/pillowcase.png",
-            "text": "Pillowcase Protector:",
-            "drop_text": "<p>In between washes, a spray on your pillowcase can help keep breakout-causing germs under control.</p>"
+            "text": "Protecteur de taie d’oreiller :",
+            "drop_text": "<p>Entre deux lavages, une vaporisation sur votre taie d’oreiller peut aider à contrôler les germes responsables des éruptions.</p>"
           }
         },
         "dropdown_KGCPEr": {
           "type": "dropdown",
           "settings": {
             "cap_image": "shopify://shop_images/pre-treatment-purifier.png",
-            "text": "Pre-Treatment Purifier:",
-            "drop_text": "<p>Before Micro-Infusion, give your skin a spritz to cleanse and prep for better results.</p>"
+            "text": "Purificateur avant traitement :",
+            "drop_text": "<p>Avant une micro-infusion, vaporisez votre peau pour la nettoyer et la préparer à de meilleurs résultats.</p>"
           }
         },
         "dropdown_iJEgLx": {
           "type": "dropdown",
           "settings": {
             "cap_image": "shopify://shop_images/device-defender.png",
-            "text": "Device Defender:",
-            "drop_text": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</p>"
+            "text": "Défenseur d’appareils :",
+            "drop_text": "<p>Après avoir utilisé votre Q-Rejuvalight Pro, une légère vaporisation et un essuyage à l’intérieur de votre appareil le maintiennent propre.</p>"
           }
         }
       },
@@ -236,8 +236,8 @@
       ],
       "settings": {
         "background": "bg_clr_transparent",
-        "heading": "Purify anything, anywhere, anytime.",
-        "text": "From post-workout refreshes to prepping your skin for treatments, Dermal Mist is your secret weapon for keeping things calm, clear, and ready for whatever comes next —no rinsing, no fuss."
+        "heading": "Purifiez tout, partout, à tout moment.",
+        "text": "Des rafraîchissements après le sport à la préparation de votre peau pour des traitements, la brume dermique est votre arme secrète pour garder les choses calmes, nettes et prêtes à tout affronter – sans rinçage, sans complications."
       }
     },
     "text_with_video_tyRqaL": {
@@ -249,15 +249,15 @@
             "image": "shopify://shop_images/Dermal_Mist_video_cover.png",
             "video": "https://www.youtube.com/watch?v=EjLx0IvKh7g",
             "title": "Dr Shah & Dr Maxfield",
-            "des": "Board certified dermatologists"
+            "des": "Dermatologues certifiés"
           }
         },
         "text_content_QDJUbt": {
           "type": "text_content",
           "settings": {
             "trust_icon": "shopify://shop_images/verified_design.svg",
-            "trust_des": "Trusted and recommended by world leading Dermatologists",
-            "title": "\"...Spray your skin to sanitize it before using your Micro-Infusion device. It's absolutely genius.\"",
+            "trust_des": "Approuvé et recommandé par des dermatologues de renommée mondiale",
+            "title": "« ...Vaporisez votre peau pour la désinfecter avant d’utiliser votre appareil de micro-infusion. C’est absolument génial. »",
             "title_clr": "#000000",
             "title_strong_clr": "#797d7c"
           }
@@ -279,24 +279,24 @@
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/dermal-mist.webp",
-            "heading": "Qure Dermal Mist",
+            "heading": "Brume dermique Qure",
             "mob_text": "",
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>Powered by <strong>Hypochlorous Acid</strong> and enriched with Chamomile</li><li>Safe for <strong>face, body, and surfaces</strong></li><li><strong>Hypoallergenic</strong> and suitable for <strong>sensitive skin</strong></li><li><strong>Clinically proven</strong> to reduce bacteria and inflammation</li><li><strong>Non-drying</strong> and leaves <strong>no residue</strong></li><li>Light, natural <strong>HOCl scent</strong> that dissipates quickly</li></ul>"
+            "list": "<ul><li>Propulsée par l’<strong>acide hypochloreux</strong> et enrichie en camomille</li><li>Sûre pour le <strong>visage, le corps et les surfaces</strong></li><li><strong>Hypoallergénique</strong> et adaptée aux <strong>peaux sensibles</strong></li><li><strong>Prouvée cliniquement</strong> pour réduire les bactéries et l’inflammation</li><li><strong>Non desséchante</strong> et ne laisse <strong>aucun résidu</strong></li><li>Léger parfum naturel d’<strong>HOCl</strong> qui se dissipe rapidement</li></ul>"
           }
         },
         "object_CYfhxK": {
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/skin-mist.webp",
-            "heading": "Traditional Skin Mists",
+            "heading": "Brumes cutanées traditionnelles",
             "mob_text": "",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>Often <strong>alcohol-based</strong> or contain added fragrances</li><li>Primarily designed for <strong>facial use only</strong></li><li>May contain <strong>irritants</strong> not ideal for sensitive skin</li><li>Usually <strong>focused on hydration</strong> without these benefits</li><li>May leave <strong>sticky residue</strong> or cause dryness</li><li>Often has a <strong>fragrance</strong> which can cause irritation</li></ul>"
+            "list": "<ul><li>Souvent à base d’<strong>alcool</strong> ou contenant des parfums ajoutés</li><li>Principalement conçues pour une <strong>utilisation faciale uniquement</strong></li><li>Peuvent contenir des <strong>irritants</strong> non idéaux pour les peaux sensibles</li><li>Généralement axées sur l’<strong>hydratation</strong> sans ces avantages</li><li>Peuvent laisser un <strong>résidu collant</strong> ou causer de la sécheresse</li><li>Souvent parfumées, ce qui peut provoquer des <strong>irritations</strong></li></ul>"
           }
         }
       },
@@ -307,7 +307,7 @@
       "settings": {
         "classname": "beauty_skincare section bg-white",
         "sub_head": "",
-        "heading": "A mist that does more than refresh",
+        "heading": "Une brume qui fait plus que rafraîchir",
         "heading_reduced": "",
         "text": "",
         "text_reduced": "",
@@ -322,8 +322,8 @@
           "settings": {
             "slide_image": "shopify://shop_images/as_3.webp",
             "slide_imageMob": "shopify://shop_images/as_3-mob.webp",
-            "heading": "Breakouts:",
-            "text": "Reduces bacteria that can cause breakouts, helping to reduce and prevent acne without harsh chemicals."
+            "heading": "Éruptions :",
+            "text": "Réduit les bactéries pouvant causer des éruptions, aidant à diminuer et prévenir l’acné sans produits chimiques agressifs."
           }
         },
         "slide_C4C9W9": {
@@ -331,8 +331,8 @@
           "settings": {
             "slide_image": "shopify://shop_images/as_5.webp",
             "slide_imageMob": "shopify://shop_images/as_5-mob.webp",
-            "heading": "Sensitivity:",
-            "text": "Gentle and non-irritating, Dermal Mist is safe for even the most sensitive skin, helping to calm and protect without causing flare-ups."
+            "heading": "Sensibilité :",
+            "text": "Douce et non irritante, la brume dermique est sûre même pour les peaux les plus sensibles, aidant à calmer et protéger sans provoquer de réactions."
           }
         },
         "slide_Te6XVw": {
@@ -340,8 +340,8 @@
           "settings": {
             "slide_image": "shopify://shop_images/as_6.webp",
             "slide_imageMob": "shopify://shop_images/as_6-mob.webp",
-            "heading": "Irritation:",
-            "text": "By reducing inflammation and soothing irritated skin, Dermal Mist helps to restore balance and calm redness or discomfort."
+            "heading": "Irritation :",
+            "text": "En réduisant l’inflammation et en apaisant les peaux irritées, la brume dermique aide à rétablir l’équilibre et à calmer les rougeurs ou l’inconfort."
           }
         }
       },
@@ -352,8 +352,8 @@
       ],
       "settings": {
         "background": "bg_clr_transparent",
-        "heading": "Helps with blemishes,\nredness, and irritation...",
-        "text": "Our skin faces daily exposure to harmful bacteria and irritants that can disrupt its natural balance. Dermal Mist helps to protect and soothe the skin by eliminating these harmful elements while being gentle enough for everyday use. It not only works to restore calm but also soothes irritated skin."
+        "heading": "Aide contre les imperfections,\nles rougeurs et les irritations...",
+        "text": "Notre peau est exposée quotidiennement à des bactéries et irritants nocifs qui peuvent perturber son équilibre naturel. La brume dermique protège et apaise la peau en éliminant ces éléments nuisibles tout en étant suffisamment douce pour une utilisation quotidienne. Elle restaure non seulement le calme, mais apaise également les peaux irritées."
       }
     },
     "faq_UUdrDJ": {
@@ -362,80 +362,80 @@
         "object_EJVLkK": {
           "type": "object",
           "settings": {
-            "heading": "What makes Dermal Mist different from other facial sprays?",
-            "text": "<p>Dermal Mist is powered by hypochlorous acid and enriched with chamomile, offering anti-inflammatory and antibacterial benefits without any harsh chemicals. It's pH balanced and gentle enough for all skin types, making it a versatile addition to your daily routine.</p>",
+            "heading": "Qu’est-ce qui distingue la brume dermique des autres sprays faciaux ?",
+            "text": "<p>La brume dermique est propulsée par l’acide hypochloreux et enrichie en camomille, offrant des bienfaits anti-inflammatoires et antibactériens sans produits chimiques agressifs. Équilibrée en pH et douce pour tous les types de peau, elle est un ajout polyvalent à votre routine quotidienne.</p>",
             "code": ""
           }
         },
         "object_7zitHk": {
           "type": "object",
           "settings": {
-            "heading": "Can I use Dermal Mist on sensitive skin?",
-            "text": "<p>Absolutely. Dermal Mist is dermatologically tested, hypoallergenic, and formulated specifically to be kind to even the most sensitive skin. It’s designed to soothe, purify, and protect without causing irritation.</p>",
+            "heading": "Puis-je utiliser la brume dermique sur une peau sensible ?",
+            "text": "<p>Absolument. La brume dermique est testée dermatologiquement, hypoallergénique et formulée pour être douce même sur les peaux les plus sensibles. Elle est conçue pour apaiser, purifier et protéger sans provoquer d’irritation.</p>",
             "code": ""
           }
         },
         "object_hCXLPF": {
           "type": "object",
           "settings": {
-            "heading": "How should I incorporate Dermal Mist into my skincare routine?",
-            "text": "<p>You can use Dermal Mist morning and evening as a purifying step before applying treatments. It’s also great for refreshing your skin throughout the day, post-workout, or to disinfect surfaces like your skincare tools.</p>",
+            "heading": "Comment intégrer la brume dermique dans ma routine de soin ?",
+            "text": "<p>Vous pouvez utiliser la brume dermique matin et soir comme une étape purifiante avant d’appliquer vos traitements. Elle est également idéale pour rafraîchir votre peau tout au long de la journée, après le sport, ou pour désinfecter des surfaces comme vos outils de soin.</p>",
             "code": ""
           }
         },
         "object_tRGKQP": {
           "type": "object",
           "settings": {
-            "heading": "Why does Dermal Mist have a faint “pool water” smell?",
-            "text": "<p>The natural smell comes from hypochlorous acid, the active ingredient. We don’t add any fragrances or masking agents, so what you’re smelling is simply the product working its magic. The scent is light and fades quickly.</p>",
+            "heading": "Pourquoi la brume dermique a-t-elle une légère odeur d’« eau de piscine » ?",
+            "text": "<p>L’odeur naturelle provient de l’acide hypochloreux, l’ingrédient actif. Nous n’ajoutons ni parfums ni agents masquants, donc ce que vous sentez est simplement le produit en action. L’odeur est légère et se dissipe rapidement.</p>",
             "code": ""
           }
         },
         "object_Lka3dg": {
           "type": "object",
           "settings": {
-            "heading": "Is Dermal Mist safe to use around my eyes?",
-            "text": "<p>Yes, it’s safe for facial use, including around the eye area. Just be sure to close your eyes when spraying and allow the mist to air dry—no need to rinse off.</p>",
+            "heading": "Est-il sûr d’utiliser la brume dermique autour des yeux ?",
+            "text": "<p>Oui, elle est sûre pour une utilisation faciale, y compris autour des yeux. Assurez-vous simplement de fermer les yeux lors de la vaporisation et laissez la brume sécher à l’air – pas besoin de rincer.</p>",
             "code": ""
           }
         },
         "object_Mkee9H": {
           "type": "object",
           "settings": {
-            "heading": "Can I use Dermal Mist on surfaces, too?",
-            "text": "<p>Yes, Dermal Mist is versatile enough to be used on your face, body, and even surfaces like your pillowcase or skincare tools. It’s a gentle yet effective way to keep bacteria at bay.</p>",
+            "heading": "Puis-je aussi utiliser la brume dermique sur des surfaces ?",
+            "text": "<p>Oui, la brume dermique est suffisamment polyvalente pour être utilisée sur le visage, le corps et même des surfaces comme votre taie d’oreiller ou vos outils de soin. C’est une manière douce mais efficace de tenir les bactéries à distance.</p>",
             "code": ""
           }
         },
         "object_r9ziUD": {
           "type": "object",
           "settings": {
-            "heading": "Is this product vegan and cruelty-free?",
-            "text": "<p>Yes, Dermal Mist is both vegan and cruelty-free. We are committed to creating products that are kind to both your skin and the environment.</p>",
+            "heading": "Ce produit est-il végan et non testé sur les animaux ?",
+            "text": "<p>Oui, la brume dermique est à la fois végane et non testée sur les animaux. Nous nous engageons à créer des produits respectueux de votre peau et de l’environnement.</p>",
             "code": ""
           }
         },
         "object_WJHFVy": {
           "type": "object",
           "settings": {
-            "heading": "What’s the concentration of hypochlorous acid in Dermal Mist?",
-            "text": "<p>Dermal Mist contains a precise 0.02% concentration of hypochlorous acid, which is effective enough to deliver antibacterial and anti-inflammatory benefits while remaining gentle on the skin.</p>",
+            "heading": "Quelle est la concentration d’acide hypochloreux dans la brume dermique ?",
+            "text": "<p>La brume dermique contient une concentration précise de 0,02 % d’acide hypochloreux, suffisamment efficace pour offrir des bienfaits antibactériens et anti-inflammatoires tout en restant douce pour la peau.</p>",
             "code": ""
           }
         },
         "object_H3YLF3": {
           "type": "object",
           "settings": {
-            "heading": "How should I store Dermal Mist?",
-            "text": "<p>Store Dermal Mist at room temperature, away from direct sunlight and heat. This will help maintain its effectiveness and prolong its shelf life.</p>",
+            "heading": "Comment dois-je conserver la brume dermique ?",
+            "text": "<p>Conservez la brume dermique à température ambiante, à l’abri de la lumière directe du soleil et de la chaleur. Cela aidera à maintenir son efficacité et à prolonger sa durée de conservation.</p>",
             "code": ""
           }
         },
         "object_br8Tty": {
           "type": "object",
           "settings": {
-            "heading": "Will Dermal Mist dry out my skin?",
-            "text": "<p>No, Dermal Mist is formulated to be non-drying and won’t leave any residue. It’s designed to cleanse and soothe your skin, helping it stay hydrated and balanced.</p>",
+            "heading": "La brume dermique va-t-elle dessécher ma peau ?",
+            "text": "<p>Non, la brume dermique est formulée pour ne pas dessécher et ne laisse aucun résidu. Elle est conçue pour nettoyer et apaiser votre peau, l’aidant à rester hydratée et équilibrée.</p>",
             "code": ""
           }
         },
@@ -464,17 +464,17 @@
       "settings": {
         "background": "bg_yellow",
         "classname": "bg_yellow",
-        "heading": "Your burning questions, our glowing answers",
+        "heading": "Vos questions brûlantes, nos réponses éclatantes",
         "text": "",
-        "button_label": "Show More Questions",
-        "button_hide_label": "Hide More Questions"
+        "button_label": "Afficher plus de questions",
+        "button_hide_label": "Masquer les questions supplémentaires"
       }
     },
     "heading_gcGk9w": {
       "type": "heading",
       "settings": {
-        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
-        "heading_mobile": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>"
+        "heading": "<h2>Avis réels, résultats réels</h2><h2>de personnes comme vous.</h2>",
+        "heading_mobile": "<h2>Avis réels, résultats réels</h2><h2>de personnes comme vous.</h2>"
       }
     },
     "17303964104bda0932": {
