@@ -43,7 +43,7 @@
       "faucet-filter"
     ],
     "show_order_by_receive_by": true,
-    "today_text": "Order today",
+    "today_text": "Commandez aujourd’hui",
     "start_time_order": "2024-10-30T23:00",
     "end_time_order": "2024-11-04T23:59",
     "show_order_by_receive_by_us": false,
@@ -53,7 +53,7 @@
     "enable_product_gift": false,
     "product_free_gift": "",
     "dont_enable_gift_urls": "/pages/led-mask-offer-2\n/pages/q-rejuvalight-pro-offer",
-    "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
+    "copy_get_product_free": "<p>Il vous manque &price-left& pour obtenir <strong>un(e) &product-title& gratuit(e)</strong> d’une valeur de &product-price& !</p>",
     "icon_product_gift_clean": "shopify://shop_images/Gift-grey1.svg",
     "icon_product_gift_gradient": "shopify://shop_images/Gift-grey2.svg",
     "icon_product_gift_full": "shopify://shop_images/Gift-black.svg",
@@ -85,7 +85,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify://shop_images/Navigation.png",
-              "button_label": "Économisez jusqu'à 43% sur [les packs exclusifs]",
+              "button_label": "Économisez jusqu’à 43% sur [les packs exclusifs]",
               "button_url": "shopify://products/fade-firm-bundle-advance"
             }
           },
@@ -101,7 +101,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify://shop_images/header_drop4.webp",
-              "button_label": "See Micro-Infusion [Guide détaillé]",
+              "button_label": "Découvrez Micro-Infusion [Guide détaillé]",
               "button_url": "https://www.qureskincare.com/pages/microinfusion-safety-guide"
             }
           },
@@ -109,7 +109,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify://shop_images/header_drop1.webp",
-              "button_label": "Shop [Micro-Infusion]: atténue les rides",
+              "button_label": "Achetez [Micro-Infusion] : atténue les rides",
               "button_url": "https://www.qureskincare.com/pages/microinfusion"
             }
           },
@@ -165,7 +165,7 @@
             "type": "content",
             "settings": {
               "heading": "Téléchargez notre application",
-              "text": "Personnalisez vos traitements avec des fonctionnalités supplémentaires."
+              "text": "Personnalisez vos soins avec des fonctionnalités supplémentaires."
             }
           },
           "link_c3yUqG": {
@@ -202,7 +202,7 @@
             "type": "saving",
             "disabled": true,
             "settings": {
-              "text": "Black Friday Savings",
+              "text": "Économies Black Friday",
               "color": "#c4121a"
             }
           },
@@ -222,9 +222,9 @@
             "settings": {
               "page_url": "https://www.qureskincare.fr/products/q-rejuvalight-pro-facewear",
               "upsell_product_first": "micro-infusion-3-month-bundle-hydra-soothing-rejuvenating",
-              "upsell_product_first_description": "Protect your LED Device for 1 more year.",
+              "upsell_product_first_description": "Protégez votre appareil LED pendant 1 an supplémentaire.",
               "upsell_product_second": "",
-              "upsell_product_second_description": "Upgrade your treatment & treat multiple skin concerns.",
+              "upsell_product_second_description": "Améliorez votre soin et traitez plusieurs problèmes de peau.",
               "upsell_product_third": "",
               "upsell_product_thid_description": ""
             }
@@ -236,7 +236,7 @@
               "upsell_product_first": "",
               "upsell_product_first_description": "",
               "upsell_product_second": "q-rejuvalight-pro-facewear",
-              "upsell_product_second_description": "Protect your LED Device for 1 more year.",
+              "upsell_product_second_description": "Protégez votre appareil LED pendant 1 an supplémentaire.",
               "upsell_product_third": "",
               "upsell_product_thid_description": ""
             }
@@ -246,11 +246,11 @@
             "settings": {
               "page_url": "https://www.qureskincare.com/products/face-serum",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
-              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
               "upsell_product_second": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
-              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_second_description": "Révélez une peau plus lisse et éclatante",
               "upsell_product_third": "line-refine-bundle-pro",
-              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+              "upsell_product_thid_description": "Complétez votre soin et traitez plusieurs problèmes de peau."
             }
           },
           "upsell_ej4ULU": {
@@ -258,11 +258,11 @@
             "settings": {
               "page_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches",
               "upsell_product_first": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
-              "upsell_product_first_description": "Reveal smoother, radiant skin",
+              "upsell_product_first_description": "Révélez une peau plus lisse et éclatante",
               "upsell_product_second": "dermal-mist",
-              "upsell_product_second_description": "Purifies and refreshes",
+              "upsell_product_second_description": "Purifie et rafraîchit",
               "upsell_product_third": "fade-firm-bundle-essentials",
-              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+              "upsell_product_thid_description": "Complétez votre soin et traitez plusieurs problèmes de peau."
             }
           },
           "upsell_GiyUV9": {
@@ -270,11 +270,11 @@
             "settings": {
               "page_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle",
               "upsell_product_first": "micro-infusion-darkspots-treatments",
-              "upsell_product_first_description": "Reveal Smoother, Radiant Skin",
+              "upsell_product_first_description": "Révélez une peau plus lisse et éclatante",
               "upsell_product_second": "face-serum",
-              "upsell_product_second_description": "Plump, smooth & brighten in just one step",
+              "upsell_product_second_description": "Repulpez, lissez et illuminez en une seule étape",
               "upsell_product_third": "q-rejuvalight-pro-facewear",
-              "upsell_product_thid_description": "Rejuvenate skin where the first signs of aging show"
+              "upsell_product_thid_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent"
             }
           },
           "upsell_UiGexh": {
@@ -282,11 +282,11 @@
             "settings": {
               "page_url": "https://qureskincare.com/products/faucet-filter",
               "upsell_product_first": "fade-firm-bundle-advance",
-              "upsell_product_first_description": "Complete your treatment & treat multiple skin concerns.",
+              "upsell_product_first_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
               "upsell_product_second": "shower-filter",
-              "upsell_product_second_description": "Reduces irritants in water for clearer, hydrated skin.",
+              "upsell_product_second_description": "Réduit les irritants dans l’eau pour une peau plus claire et hydratée.",
               "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
+              "upsell_product_thid_description": "Repulpez, lissez et illuminez en une seule étape"
             }
           },
           "upsell_MBrVMA": {
@@ -294,11 +294,11 @@
             "settings": {
               "page_url": "https://qureskincare.com/products/dermal-mist",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
-              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
               "upsell_product_second": "fade-firm-bundle-essentials",
-              "upsell_product_second_description": "Complete your treatment & treat multiple skin concerns.2",
+              "upsell_product_second_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
               "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Plump, smooth & brighten in just one step."
+              "upsell_product_thid_description": "Repulpez, lissez et illuminez en une seule étape."
             }
           },
           "upsell_zaLtWh": {
@@ -306,11 +306,11 @@
             "settings": {
               "page_url": "https://qureskincare.com/pages/microinfusion",
               "upsell_product_first": "micro-infusion-darkspots-treatments",
-              "upsell_product_first_description": "Reveal smoother, radiant skin.",
+              "upsell_product_first_description": "Révélez une peau plus lisse et éclatante.",
               "upsell_product_second": "breakout-control-advanced",
-              "upsell_product_second_description": "Reduces appearance of fine lines and wrinkles.",
+              "upsell_product_second_description": "Réduit l’apparence des rides et ridules.",
               "upsell_product_third": "dermal-mist",
-              "upsell_product_thid_description": "Complete your treatment & treat multiple skin concerns."
+              "upsell_product_thid_description": "Complétez votre soin et traitez plusieurs problèmes de peau."
             }
           },
           "upsell_pDFytd": {
@@ -318,11 +318,11 @@
             "settings": {
               "page_url": "https://qureskincare.com/products/shower-filter",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
-              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
               "upsell_product_second": "line-refine-bundle-advanced",
-              "upsell_product_second_description": "Complete your treatment & treat multiple skin concerns.",
+              "upsell_product_second_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
               "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Plump, smooth & brighten in just one step."
+              "upsell_product_thid_description": "Repulpez, lissez et illuminez en une seule étape."
             }
           }
         },
@@ -341,22 +341,22 @@
         ],
         "custom_css": [],
         "settings": {
-          "upsell_heading": "Achieve your skin goals faster",
+          "upsell_heading": "Atteignez vos objectifs de peau plus rapidement",
           "upsell_product_first": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
-          "upsell_product_first_description": "Add the ultimate skincare investment to your routine",
+          "upsell_product_first_description": "Ajoutez l’investissement ultime en soin de peau à votre routine",
           "upsell_product_second": "",
-          "upsell_product_second_description": "Rejuvenate skin where the first signs of aging show",
+          "upsell_product_second_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
           "upsell_product_third": "",
-          "upsell_product_third_description": "Plump, smooth & brighten in just one step",
+          "upsell_product_third_description": "Repulpez, lissez et illuminez en une seule étape",
           "sidecart_timer_old_enable": false,
           "sidecart_timer_new_enable": true,
           "start_date": "12-10-2024 00:00",
           "finish_date": "12-25-2024 11:59",
-          "label_ends": "Holidays Sale Ends In:",
-          "label_days": "DAYS",
-          "label_hours": "HOURS",
+          "label_ends": "La vente des fêtes se termine dans :",
+          "label_days": "JOURS",
+          "label_hours": "HEURES",
           "label_minutes": "MINUTES",
-          "label_seconds": "SECONDS",
+          "label_seconds": "SECONDES",
           "enable_free_shipping_treshold": true,
           "enable_product_gift": true,
           "product_free_gift": "face-serum",
@@ -365,12 +365,12 @@
           "icon_gift_width": 18,
           "icon_gift_height": 26,
           "enable_show_gift_price": true,
-          "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
-          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Face Serum </strong>worth &product-price&</p>",
-          "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
+          "copy_get_free_shipping": "<p>Il vous manque &price-left& pour bénéficier de la <strong>livraison gratuite !</strong></p>",
+          "copy_get_product_free": "<p>Il vous manque &price-left& pour obtenir un <strong>sérum visage GRATUIT</strong> d’une valeur de &product-price&</p>",
+          "copy_congrats": "<p>Félicitations ! Vous avez débloqué votre &product-title& gratuit(e)</p>",
           "show_urgency_note": true,
-          "urgency_note_content": "Due to high demand, [] $quantity_label only saved for 30 minutes.",
-          "urgency_note_label_single": "Checkout now!",
+          "urgency_note_content": "En raison d’une forte demande, [] $quantity_label réservé(e) pendant 30 minutes seulement.",
+          "urgency_note_label_single": "Passez à la caisse maintenant !",
           "urgency_note_product_list": [
             "breakout-control-pro-1",
             "fade-firm-bundle-pro",
@@ -382,10 +382,10 @@
       "footer-landing": {
         "type": "footer-landing",
         "settings": {
-          "heading": "Have More Questions? Contact Us!",
-          "text": "<p>Our beauty experts will answer any questions you may have and provide professional guidance in using your Qure Micro-Infusion System</p>",
+          "heading": "Plus de questions ? Contactez-nous !",
+          "text": "<p>Nos experts beauté répondront à toutes vos questions et vous guideront professionnellement dans l’utilisation de votre système Micro-Infusion Qure</p>",
           "menu": "footer-bottom-menu",
-          "text_bottom": "<p>Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice.</p>"
+          "text_bottom": "<p>Nos produits ne sont pas destinés à diagnostiquer, guérir ou prévenir des maladies ou conditions médicales spécifiques. Le site web de Qure est uniquement destiné à des fins éducatives et informatives et ne constitue pas un conseil médical ni un substitut au conseil médical.</p>"
         }
       }
     },
