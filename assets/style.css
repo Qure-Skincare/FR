@@ -29717,7 +29717,7 @@ a:focus {
 
 @font-face {
     font-family: 'Canela Web';
-    src: url(../assets/Canela-Medium-Trial.otf);
+    src: url('../assets/Canela-Medium.ttf');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

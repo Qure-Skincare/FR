@@ -16,10 +16,10 @@
           "type": "banner",
           "disabled": true,
           "settings": {
-            "heading": "INTERNATIONAL WOMEN’S DAY",
-            "subheading": "<h3>Claim a FREE Micro-Infusion Bundle</h3>",
+            "heading": "JOURNÉE INTERNATIONALE DE LA FEMME",
+            "subheading": "<h3>Obtenez un pack Micro-Infusion GRATUIT</h3>",
             "link_url": "https://qureskincare.com/pages/international-womens-offer",
-            "link_label": "SHOP & SAVE $357"
+            "link_label": "ACHETEZ & ÉCONOMISEZ $357"
           }
         }
       },
@@ -41,28 +41,28 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Livraison gratuite à partir de 100$</p>"
           }
         },
         "icon_PKBzbi": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Achetez maintenant, payez plus tard</p>"
           }
         },
         "icon_MAhtJW": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/derma-ftr.svg",
-            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+            "text": "<p>Testés et approuvés par des dermatos</p>"
           }
         },
         "icon_PncCDy": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/science-ftr.svg",
-            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+            "text": "<p>Résultats prouvés, validés par la science</p>"
           }
         }
       },
@@ -84,7 +84,7 @@
           "settings": {
             "image": "shopify://shop_images/imgcollection-finelines.png",
             "image_mobile": "shopify://shop_images/imgcollection-finelines-mob.png",
-            "text": "<p>“This is an amazing product that you will not regret in purchasing it.  I really see the change in my skin.”</p>",
+            "text": "<p>\"C'est un produit incroyable que vous ne regretterez pas d'avoir acheté. Je constate vraiment le changement sur ma peau.\"</p>",
             "client": "Ellie V.",
             "position": "1"
           }
@@ -93,9 +93,9 @@
           "type": "doctor_card",
           "settings": {
             "image": "shopify://shop_images/collection_drShah.webp",
-            "header": "Trusted and recommended by world-leading dermatologists",
-            "text": "<p>\"The best LED mask on the market in my opinion at this time, that being said you do need to use this consistently to see results...\"</p>",
-            "client": "Dr Shah, MD Certified Dermatologist",
+            "header": "Validé par des dermatologues de renommée mondiale",
+            "text": "<p><strong>\"</strong>Le meilleur masque LED sur le marché à mon avis en ce moment<strong>, </strong>cela dit, vous devez l'utiliser de manière régulière pour voir des résultats...\"</p>",
+            "client": "Dr Shah, Demartologue certifié par le comité",
             "position": "4"
           }
         },
@@ -105,8 +105,8 @@
             "image": "shopify://shop_images/collectionVogue.webp",
             "image_mobile": "shopify://shop_images/collectionVogue.webp",
             "header": "VOGUE",
-            "text": "<p>One of VOGUE's top LED masks</p>",
-            "button_label": "Discover Now",
+            "text": "<p>L'un des meilleurs masques LED selon VOGUE</p>",
+            "button_label": "Découvrir",
             "button_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
             "position": "7"
           }
@@ -126,8 +126,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_teresa.webp",
-            "heading": "IT REALLY WORKS!!",
-            "text": "<p>“I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.\"</p>",
+            "heading": "ÇA MARCHE VRAIMENT !!!",
+            "text": "<p>\"J'étais très sceptique lorsque mon mari m'a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J'ai essayé de nombreux sérums pour mes taches de soleil, mais rien n'a fonctionné jusqu'à ce que j'utilise ce masque. L'investissement vaut le coup.\"</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -139,8 +139,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_tiffany.webp",
-            "heading": "Renewed Skin!",
-            "text": "<p>\"My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!\"</p>",
+            "heading": "Peau renouvelée !",
+            "text": "<p>\"Mon masque Qure a été incroyable ! En tant que personne qui lutte contre l'acné et la rosacée, votre masque de luminothérapie LED a tellement amélioré ma peau que je me sens désormais à l'aise sans maquillage. Je suis très contente de ce produit !\"</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -152,8 +152,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_anton.webp",
-            "heading": "Can’t go a day without it",
-            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.</p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"</p>",
+            "heading": "Je ne peux plus m'en passer !",
+            "text": "<p>J'ai commencé à avoir de l'acné à l'adolescence. Et ça n'a fait qu'empirer. J'ai tout essayé : des régimes (je suis devenue complètement vegan), j'ai testé toutes sortes de soins de peau (chers comme moins chers), sans résultat. Avec Qure, dès le début, j'ai remarqué des résultats. Après la 1ère semaine, je n'avais plus de boutons. </p><p>Les gens me demandent maintenant comment j'ai réussi à avoir une peau hydratée, sans acné, lumineuse et sans rougeurs. Je ne peux que leur recommander Qure, perso je ne peux plus m'en passer.</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
             "text_country": "Australia",
@@ -165,8 +165,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_michelle.webp",
-            "heading": "Zero Maskne for 8 weeks",
-            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”</p>",
+            "heading": "Aucune acné pendant 8 semaines",
+            "text": "<p>« Je pensais que cela ne fonctionnait que pour mes boutons, aucune acné pendant 8 semaines maintenant. MAIS merci aux avant-après car même moi j’étais surprise ! Mes abonnés ont remarqué la différence sur ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme, mais suffisamment pour repousser la chirurgie, que je ne peux pas me permettre en ce moment. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -178,8 +178,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_june.webp",
-            "heading": "Amazing results!",
-            "text": "<p>“Amazing! I never expected this miracle. I’ve had red blotches above my lips for years and they are vastly improved after using the mask daily for only 6 weeks. I bought it hoping for better skin texture and less wrinkles. It has improved those, but having the redness gone is what I’m<br/>most excited about.”</p>",
+            "heading": "Résultats incroyables !",
+            "text": "<p>« Incroyable ! Je ne m'attendais pas à ce miracle. J'avais des taches rouges au-dessus de mes lèvres depuis des années et elles se sont estompées après avoir utilisé le masque quotidiennement pendant seulement 6 semaines. Je l'ai acheté en espérant améliorer le grain de ma peau et réduire les rides. Cela a amélioré ces aspects, mais ce qui me réjouie le plus, c'est que la rougeur a disparu. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -191,8 +191,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_jess.webp",
-            "heading": "So much smoother",
-            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”</p>",
+            "heading": "Tellement plus doux",
+            "text": "<p>« Après quelques semaines d'utilisation quotidienne, je remarque déjà une différence sur ma peau : elle est beaucoup plus lisse, moins rouge et irritée, les pores sont plus petits et j'ai moins de boutons. »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
@@ -204,8 +204,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_john.webp",
-            "heading": "Healthier-looking glow",
-            "text": "<p>“My skin feels a lot more clear, considerably less oily, and all round a healthier-looking glow. My breakout scars had even been reduced!”</p>",
+            "heading": "Apparence plus saine",
+            "text": "<p>« Ma peau est beaucoup plus claire, beaucoup moins grasse, et a un éclat plus sain dans l'ensemble. Mes cicatrices d’acné ont même été réduites ! »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
@@ -217,8 +217,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_bj_nardi.webp",
-            "heading": "Completely qured my acne",
-            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "heading": "A complètement guéri mon acné",
+            "text": "<p>« C'est la première fois en DEUX ANS que je n'ai pas d'acné sur le visage. J'utilise mon masque Qure depuis 1 mois maintenant et il a complètement guéri mon acné. C'est parti ET il guérit toutes mes cicatrices et marques. J'étais littéralement au bord du suicide à cause de ma peau horrible. Cet appareil M'A SAUVÉ LA VIE !!! »</p>",
             "see-more": "",
             "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
@@ -239,10 +239,10 @@
       ],
       "settings": {
         "classname": "mi_landing_result all_bg_gradient_green_tb",
-        "heading": "Results you‘ll see with your own eyes",
+        "heading": "Des résultats que vous verrez de vos propres yeux",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
-        "text_reviewed": "Reviewed in"
+        "text_verified_customer": "Avis vérifié",
+        "text_reviewed": "Avis provenant"
       }
     }
   },

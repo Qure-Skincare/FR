@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_landing_pFmaRH": {
       "type": "header-landing-simple",
@@ -15,7 +15,7 @@
         "navigation_link_qLHgyD": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "CONTENT REQUIREMENTS",
+            "link_label": "EXIGENCES DE CONTENU",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs1.webp"
           }
@@ -23,7 +23,7 @@
         "navigation_link_DgYaFx": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "PRODUCT",
+            "link_label": "PRODUIT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs2.webp"
           }
@@ -31,7 +31,7 @@
         "navigation_link_3X4mrf": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "INSPIRING CONTENT",
+            "link_label": "CONTENU INSPIRANT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs3.webp"
           }
@@ -42,8 +42,7 @@
         "navigation_link_DgYaFx",
         "navigation_link_3X4mrf"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "section1": {
       "type": "guide-header",
@@ -51,7 +50,7 @@
         "button_LUpm3B": {
           "type": "button",
           "settings": {
-            "button_label": "Learn more about Micro-Infusion Targeted Patches",
+            "button_label": "En savoir plus sur les patchs ciblés à micro-infusion",
             "button_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
           }
         }
@@ -60,18 +59,18 @@
         "button_LUpm3B"
       ],
       "settings": {
-        "heading": "Neck & Décolletage LED Creative Content Guide",
-        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the Neck & Décolletage LED Device with our creative content guide. This brief will help you craft engaging content that showcases how our innovative tool transforms skincare routines for radiant, glowing skin.</p>",
+        "heading": "Guide de contenu créatif pour le cou et le décolleté LED",
+        "text": "<p>Salut, passionnés de soins de la peau !</p><p>Prêts à faire passer votre contenu au niveau supérieur ?</p><p>Découvrez tout le potentiel de l’appareil LED pour le cou et le décolleté grâce à notre guide de contenu créatif. Ce brief vous aidera à créer un contenu captivant qui met en valeur la manière dont notre outil innovant transforme les routines de soin pour une peau éclatante et radieuse.</p>",
         "wistia_id": "f9a8svw294"
       }
     },
     "qure_founder_LkfQUT": {
       "type": "qure-founder",
       "settings": {
-        "heading": "\"LED light targets fibroblasts to increase collagen production and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"",
-        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "heading": "« La lumière LED cible les fibroblastes pour augmenter la production de collagène et offre des bienfaits anti-âge, surtout si vous voyez des rides et des lignes sur votre cou... »",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Dermatologue certifié</p>",
         "image": "shopify://shop_images/dr.shah_new.webp",
-        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trust_des": "Approuvé et recommandé par les plus grands dermatologues mondiaux",
         "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
       }
     },
@@ -81,59 +80,59 @@
         "header_RA46tw": {
           "type": "header",
           "settings": {
-            "heading": "STEP 1",
-            "text": "Merge Qure into your creatives",
+            "heading": "ÉTAPE 1",
+            "text": "Intégrez Qure dans vos créations",
             "image": "shopify://shop_images/ac_step4.webp",
-            "button_label": "Content Requirements"
+            "button_label": "Exigences de contenu"
           }
         },
         "description_mHnPFA": {
           "type": "description",
           "settings": {
             "classname": "faq",
-            "heading": "Key Messages",
+            "heading": "Messages clés",
             "image": "shopify://shop_images/key_message.svg",
-            "content": "<p>Key Points to include in the messaging:</p>",
+            "content": "<p>Points clés à inclure dans le message :</p>",
             "wistia_id": ""
           }
         },
         "collapsed_aNzhwA": {
           "type": "collapsed",
           "settings": {
-            "heading": "Advanced Technology",
-            "content": "<ul><li>A combination of Red and Near Infra-Red wavelengths reaches deep within the skin to stimulate collagen and elastin production. Specifically designed to repair and rejuvenate neck and decolletage skin where the first signs of aging show.</li></ul>",
+            "heading": "Technologie avancée",
+            "content": "<ul><li>Une combinaison de longueurs d’onde rouges et proches infrarouges pénètre profondément dans la peau pour stimuler la production de collagène et d’élastine. Spécifiquement conçu pour réparer et rajeunir la peau du cou et du décolleté, là où les premiers signes de vieillissement apparaissent.</li></ul>",
             "show": true
           }
         },
         "collapsed_aNzhwB": {
           "type": "collapsed",
           "settings": {
-            "heading": "Time-Saving",
-            "content": "<ul><li>Reclaim time from your busy schedule as this device requires only 10 minutes of your day. Achieve glowing skin without lengthy treatments or going to the clinic.</li></ul>",
+            "heading": "Gain de temps",
+            "content": "<ul><li>Reprenez du temps dans votre emploi du temps chargé, car cet appareil ne nécessite que 10 minutes par jour. Obtenez une peau éclatante sans traitements longs ni visites en clinique.</li></ul>",
             "show": false
           }
         },
         "collapsed_aNzhwC": {
           "type": "collapsed",
           "settings": {
-            "heading": "Clinical results from home - minus the “clinical” costs",
-            "content": "<ul><li>Get smoother, firmer, brighter-looking neck and décolletage skin with consistent treatment. One-time cost investment of the Neck & Décolletage LED Device means unlimited treatments, with no ongoing payments or hassle of attending in-clinic appointments.</li></ul>",
+            "heading": "Résultats cliniques à domicile - sans les coûts « cliniques »",
+            "content": "<ul><li>Obtenez une peau du cou et du décolleté plus lisse, plus ferme et plus lumineuse avec un traitement régulier. Un investissement unique dans l’appareil LED pour le cou et le décolleté signifie des traitements illimités, sans paiements continus ni tracas des rendez-vous en clinique.</li></ul>",
             "show": false
           }
         },
         "collapsed_aNzhwD": {
           "type": "collapsed",
           "settings": {
-            "heading": "Benefits",
-            "content": "<ul><li>Neck & Décolletage LED Device repairs sun-damaged skin, and reduces the appearance of redness, pigmentation, age spots, and fine lines and wrinkles. It evens skin tone and boosts firmness for radiant younger-looking skin</li></ul>",
+            "heading": "Bienfaits",
+            "content": "<ul><li>L’appareil LED pour le cou et le décolleté répare la peau endommagée par le soleil, réduit l’apparence des rougeurs, de la pigmentation, des taches de vieillesse, des ridules et des rides. Il uniformise le teint et renforce la fermeté pour une peau radieuse et d’apparence plus jeune.</li></ul>",
             "show": false
           }
         },
         "collapsed_8awDR6": {
           "type": "collapsed",
           "settings": {
-            "heading": "Portability",
-            "content": "<ul><li>Our fully portable mask allows you to multitask, whether you're working or unwinding, so you never have to compromise on self-care.</li></ul>",
+            "heading": "Portabilité",
+            "content": "<ul><li>Notre masque entièrement portable vous permet de multitâcher, que vous travailliez ou vous détendiez, pour ne jamais avoir à compromettre vos soins personnels.</li></ul>",
             "show": false
           }
         },
@@ -141,9 +140,9 @@
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Creative Direction",
+            "heading": "Direction créative",
             "image": "shopify://shop_images/direction.svg",
-            "content": "<ul><li>High-quality, bright lighting and high-resolution imagery/ videography to be supplied. No obvious filters.</li><li>Qure Neck & Décolletage LED Device to be the feature of the post. The background must be clean and bright.</li><li>When using the device, please do not wear any makeup, or no visible/noticeable makeup.</li><li>In cover photos for video content always show yourself using the Neck & Décolletage LED Device, unless otherwise agreed on with Qure’s team.</li></ul>",
+            "content": "<ul><li>Éclairage de haute qualité, lumineux et images/vidéos en haute résolution à fournir. Pas de filtres évidents.</li><li>L’appareil LED pour le cou et le décolleté Qure doit être la star de la publication. L’arrière-plan doit être propre et lumineux.</li><li>Lors de l’utilisation de l’appareil, ne portez pas de maquillage ou un maquillage non visible/discret.</li><li>Dans les photos de couverture pour le contenu vidéo, montrez-vous toujours en train d’utiliser l’appareil LED pour le cou et le décolleté, sauf accord contraire avec l’équipe Qure.</li></ul>",
             "wistia_id": ""
           }
         },
@@ -153,26 +152,26 @@
             "classname": "",
             "heading": "Inclusion",
             "image": "shopify://shop_images/inclusion.svg",
-            "content": "<ul><li>Tag and mention @qureskincare #QureSkincare #QureLEDMask #LEDlighttherapy #Neck&DécolletageLEDevice</li><li>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can’t be placed in BIO, include it in linktr.ee or similar</li></ul>",
+            "content": "<ul><li>Taggez et mentionnez @qureskincare #QureSkincare #QureLEDMask #LEDlighttherapy #Neck&DécolletageLEDevice</li><li>Incluez votre lien d’affiliation ou autres liens fournis par Qure dans les stories Instagram et les légendes de contenu. Si le lien ne peut pas être placé dans la BIO, incluez-le dans linktr.ee ou similaire.</li></ul>",
             "wistia_id": ""
           }
         },
         "header_LhpN6x": {
           "type": "header",
           "settings": {
-            "heading": "STEP 2",
-            "text": "Get to know your Neck & Décolletage LED",
+            "heading": "ÉTAPE 2",
+            "text": "Découvrez votre appareil LED pour le cou et le décolleté",
             "image": "shopify://shop_images/ac_step5.webp",
-            "button_label": "Product Information"
+            "button_label": "Informations sur le produit"
           }
         },
         "description_6WtF8b": {
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Product Details",
+            "heading": "Détails du produit",
             "image": "shopify://shop_images/search.svg",
-            "content": "<ul><li><strong>TREATMENT TIME: </strong>10 minutes</li><li><strong>USE: </strong>5-7 times per week</li><li><strong>WAVELENGTH: </strong>633nm (Red), 830nm (Near-Infrared)</li><li><strong>CHARGING TIME: </strong>4 hours</li><li><strong>LEDs: </strong>55 dual core<br/><br/><a href=\"https://www.qureskincare.com/products/neck-decolletage-led\" title=\"https://www.qureskincare.com/products/neck-decolletage-led\">Learn more about the Neck & Décolletage LED &gt;</a></li></ul>",
+            "content": "<ul><li><strong>TEMPS DE TRAITEMENT : </strong>10 minutes</li><li><strong>UTILISATION : </strong>5 à 7 fois par semaine</li><li><strong>LONGUEUR D’ONDE : </strong>633 nm (Rouge), 830 nm (Proche infrarouge)</li><li><strong>TEMPS DE CHARGE : </strong>4 heures</li><li><strong>LEDS : </strong>55 à double cœur<br/><br/><a href=\"https://www.qureskincare.com/products/neck-decolletage-led\" title=\"https://www.qureskincare.com/products/neck-decolletage-led\">En savoir plus sur l’appareil LED pour le cou et le décolleté ></a></li></ul>",
             "wistia_id": ""
           }
         },
@@ -180,7 +179,7 @@
           "type": "description",
           "settings": {
             "classname": "faq",
-            "heading": "Usage Instructions",
+            "heading": "Instructions d’utilisation",
             "image": "shopify://shop_images/usage_dir.svg",
             "content": "",
             "wistia_id": ""
@@ -189,24 +188,24 @@
         "collapsed_N6miTX": {
           "type": "collapsed",
           "settings": {
-            "heading": "Prepare & set",
-            "content": "<ul><li>Cleanse and dry your skin to prepare it for ultimate LED light absorption.</li><li>Secure the device around your neck using the adjustable velcro straps.</li></ul>",
+            "heading": "Préparer et ajuster",
+            "content": "<ul><li>Nettoyez et séchez votre peau pour préparer une absorption optimale de la lumière LED.</li><li>Fixez l’appareil autour de votre cou avec les sangles velcro ajustables.</li></ul>",
             "show": true
           }
         },
         "collapsed_xhxiYz": {
           "type": "collapsed",
           "settings": {
-            "heading": "Quick Start",
-            "content": "<ul><li>Press & hold to start your 10-minute treatment.</li></ul>",
+            "heading": "Démarrage rapide",
+            "content": "<ul><li>Appuyez et maintenez pour démarrer votre traitement de 10 minutes.</li></ul>",
             "show": false
           }
         },
         "collapsed_EJJWTr": {
           "type": "collapsed",
           "settings": {
-            "heading": "Aftercare",
-            "content": "<ul><li>The device will automatically shut off after 10 minutes. Remove the device and gently wipe it down. Follow up with your usual skincare routine. That’s it!</li></ul>",
+            "heading": "Après-soin",
+            "content": "<ul><li>L’appareil s’éteint automatiquement après 10 minutes. Retirez l’appareil et essuyez-le doucement. Poursuivez avec votre routine de soin habituelle. C’est tout !</li></ul>",
             "show": false
           }
         },
@@ -214,25 +213,25 @@
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Product Claims",
+            "heading": "Revendications du produit",
             "image": "shopify://shop_images/product_claims.svg",
-            "content": "<ul><li>This device features LED lights placed in the center of the chest where most fine lines appear.</li><li>Our LED uses clinical-grade technology to deliver safe, concentrated wavelengths deep into the layers of the skin where even the best creams and serums can’t reach. That’s where the magic happens.</li><li>Your skin absorbs the natural light, kickstarting production of elastin, collagen, and fibroblasts – known to enhance skin firmness and smoothness. It’s truly working to repair and rejuvenate your skin from the inside out!</li></ul>",
+            "content": "<ul><li>Cet appareil dispose de lumières LED placées au centre de la poitrine, là où les ridules apparaissent le plus.</li><li>Notre LED utilise une technologie de grade clinique pour délivrer des longueurs d’onde sûres et concentrées profondément dans les couches de la peau, là où même les meilleures crèmes et sérums ne peuvent pas atteindre. C’est là que la magie opère.</li><li>Votre peau absorbe la lumière naturelle, stimulant la production d’élastine, de collagène et de fibroblastes – connus pour améliorer la fermeté et la douceur de la peau. Il travaille vraiment à réparer et rajeunir votre peau de l’intérieur !</li></ul>",
             "wistia_id": ""
           }
         },
         "header_AwT6ji": {
           "type": "header",
           "settings": {
-            "heading": "STEP 3",
-            "text": "Get inspired by other content creators",
+            "heading": "ÉTAPE 3",
+            "text": "Inspirez-vous d’autres créateurs de contenu",
             "image": "shopify://shop_images/ac_step6.webp",
-            "button_label": "Inspiring Content"
+            "button_label": "Contenu inspirant"
           }
         },
         "heading_YiyFGP": {
           "type": "heading",
           "settings": {
-            "heading": "Show how it works"
+            "heading": "Montrez comment ça fonctionne"
           }
         },
         "video_4Jjjcm": {
@@ -259,7 +258,7 @@
         "heading_fUcJta": {
           "type": "heading",
           "settings": {
-            "heading": "What experts say"
+            "heading": "Ce que disent les experts"
           }
         },
         "video_H9fmrV": {
@@ -320,7 +319,7 @@
         "video_WTaxf8"
       ],
       "settings": {
-        "heading": "All you need to know before you start creating your amazing content"
+        "heading": "Tout ce que vous devez savoir avant de commencer à créer votre contenu exceptionnel"
       }
     }
   },

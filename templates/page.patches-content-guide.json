@@ -15,7 +15,7 @@
         "navigation_link_qLHgyD": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "CONTENT REQUIREMENTS",
+            "link_label": "EXIGENCES DE CONTENU",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs1.webp"
           }
@@ -23,7 +23,7 @@
         "navigation_link_DgYaFx": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "PRODUCT",
+            "link_label": "PRODUIT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs2.webp"
           }
@@ -31,7 +31,7 @@
         "navigation_link_3X4mrf": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "INSPIRING CONTENT",
+            "link_label": "CONTENU INSPIRANT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs3.webp"
           }
@@ -42,8 +42,7 @@
         "navigation_link_DgYaFx",
         "navigation_link_3X4mrf"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "section1": {
       "type": "guide-header",
@@ -51,7 +50,7 @@
         "button_LUpm3B": {
           "type": "button",
           "settings": {
-            "button_label": "Learn more about Micro-Infusion Targeted Patches",
+            "button_label": "En savoir plus sur les patchs ciblés à micro-infusion",
             "button_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
           }
         }
@@ -60,18 +59,18 @@
         "button_LUpm3B"
       ],
       "settings": {
-        "heading": "Micro-Infusion Targeted Patches Creative Content Guide",
-        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Our creative guide will help you showcase the magic of the Qure Micro-Infusion Targeted Patches. Let's create stunning, engaging content that highlights how this game-changing product transforms skincare routines!</p>",
+        "heading": "Guide de contenu créatif pour les patchs ciblés à micro-infusion",
+        "text": "<p>Salut, passionnés de soins de la peau !</p><p>Prêts à faire passer votre contenu au niveau supérieur ?</p><p>Notre guide créatif vous aidera à mettre en lumière la magie des patchs ciblés à micro-infusion Qure. Créons ensemble un contenu époustouflant et captivant qui montre comment ce produit révolutionnaire transforme les routines de soin !</p>",
         "wistia_id": "0gi4vtjhzc"
       }
     },
     "qure_founder_LkfQUT": {
       "type": "qure-founder",
       "settings": {
-        "heading": "“To have argireline in a very targeted patch is GENIUS; it’s a botox-like peptide that really helps with fine lines”",
-        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Board certified dermatologist</p>",
+        "heading": "« Avoir de l’argireline dans un patch très ciblé est GÉNIAL ; c’est un peptide semblable au botox qui aide vraiment avec les ridules »",
+        "sub_heading": "<p><strong>- Dr. Muneeb Shah, MD</strong>, Dermatologue certifié</p>",
         "image": "shopify://shop_images/dr.shah_new.webp",
-        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trust_des": "Approuvé et recommandé par les plus grands dermatologues mondiaux",
         "trusted_image_mob": "shopify://shop_images/Dr_Muneeb.webp"
       }
     },
@@ -81,60 +80,60 @@
         "header_RA46tw": {
           "type": "header",
           "settings": {
-            "heading": "STEP 1",
-            "text": "Merge Qure into your creatives",
+            "heading": "ÉTAPE 1",
+            "text": "Intégrez Qure dans vos créations",
             "image": "shopify://shop_images/ac_pro4.webp",
-            "button_label": "Content Requirements"
+            "button_label": "Exigences de contenu"
           }
         },
         "description_mHnPFA": {
           "type": "description",
           "settings": {
             "classname": "faq",
-            "heading": "Key Messages",
+            "heading": "Messages clés",
             "image": "shopify://shop_images/key_message.svg",
-            "content": "<p>Key Points to include in the messaging:</p>",
+            "content": "<p>Points clés à inclure dans le message :</p>",
             "wistia_id": ""
           }
         },
         "collapsed_aNzhwA": {
           "type": "collapsed",
           "settings": {
-            "heading": "Deeper Delivery",
-            "content": "<ul><li>Self-dissolving micro-darts infuse serum below the skin's surface for enhanced absorption and faster results.</li></ul>",
+            "heading": "Livraison plus profonde",
+            "content": "<ul><li>Les micro-dards auto-dissolvants infusent le sérum sous la surface de la peau pour une absorption améliorée et des résultats plus rapides.</li></ul>",
             "show": true
           }
         },
         "collapsed_aNzhwB": {
           "type": "collapsed",
           "settings": {
-            "heading": "Quick Application",
-            "content": "<ul><li>Patches self-dissolve in as little as two hours, providing powerful results quickly.</li></ul>",
+            "heading": "Application rapide",
+            "content": "<ul><li>Les patchs se dissolvent en aussi peu que deux heures, offrant des résultats puissants rapidement.</li></ul>",
             "show": false
           }
         },
         "collapsed_aNzhwC": {
           "type": "collapsed",
           "settings": {
-            "heading": "Target Multiple Concerns",
-            "content": "<ul><li>Effectively treats fine lines, wrinkles, dark circles, puffiness, and under-eye bags. </li></ul>",
+            "heading": "Cible plusieurs préoccupations",
+            "content": "<ul><li>Traite efficacement les ridules, les rides, les cernes, les poches et les sacs sous les yeux.</li></ul>",
             "show": false
           }
         },
         "collapsed_aNzhwD": {
           "type": "collapsed",
           "settings": {
-            "heading": "Versatile Treatment",
-            "content": "<ul><li>Ultimate all-in-one patches that contain <strong>science backed,</strong> age-defying ingredients such as <strong>retinol, caffeine, niacinamide, licorice, and peptides</strong> for brighter-looking, smoother-feeling skin.</li></ul>",
+            "heading": "Traitement polyvalent",
+            "content": "<ul><li>Patchs tout-en-un ultimes contenant des ingrédients <strong>scientifiquement validés</strong> défiant l’âge comme le <strong>rétinol, la caféine, la niacinamide, la réglisse et les peptides</strong> pour une peau plus lumineuse et plus lisse au toucher.</li></ul>",
             "show": false
           }
         },
         "description_tVQDHe": {
           "type": "description",
           "settings": {
-            "heading": "Creative Direction",
+            "heading": "Direction créative",
             "image": "shopify://shop_images/direction.svg",
-            "content": "<ul><li>High quality, bright lighting and high-resolution imagery/videography to be supplied. No obvious filters.</li><li>Micro-Infusion Targeted Patches to be the feature of the post. The background must be clean and bright.</li><li>When wearing the product, please do not wear any make-up, or no visible/noticeable makeup.</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
+            "content": "<ul><li>Éclairage de haute qualité, lumineux et images/vidéos en haute résolution à fournir. Pas de filtres évidents.</li><li>Les patchs ciblés à micro-infusion doivent être la star de la publication. L’arrière-plan doit être propre et lumineux.</li><li>Lors du port du produit, ne portez pas de maquillage ou un maquillage non visible/discret.</li><li>Images avant et après pour mettre en valeur les résultats, si possible.</li></ul>",
             "wistia_id": ""
           }
         },
@@ -143,34 +142,34 @@
           "settings": {
             "heading": "Inclusion",
             "image": "shopify://shop_images/inclusion.svg",
-            "content": "<ul><li>Tag and mention @qureskincare, #qureskincare, #microinfusion, #eyepatches, #targetedpatches, #skincare, #skincaretips, #skincarehacks, #qurepatches for a chance to be featured on Qure Skincare social media pages.</li><li>Please include your affiliate link or link provided by Qure in Instagram stories and in captions of YouTube videos. If can’t be placed in BIO then please include in linktr.ee or similar.</li></ul>",
+            "content": "<ul><li>Taggez et mentionnez @qureskincare, #qureskincare, #microinfusion, #eyepatches, #targetedpatches, #skincare, #skincaretips, #skincarehacks, #qurepatches pour avoir une chance d’être mis en avant sur les pages de réseaux sociaux de Qure Skincare.</li><li>Veuillez inclure votre lien d’affiliation ou le lien fourni par Qure dans les stories Instagram et dans les légendes des vidéos YouTube. Si le lien ne peut pas être placé dans la BIO, incluez-le dans linktr.ee ou similaire.</li></ul>",
             "wistia_id": ""
           }
         },
         "header_LhpN6x": {
           "type": "header",
           "settings": {
-            "heading": "STEP 2",
-            "text": "Get to know Micro-Infusion Targeted Patches",
+            "heading": "ÉTAPE 2",
+            "text": "Découvrez les patchs ciblés à micro-infusion",
             "image": "shopify://shop_images/ac_pro5.webp",
-            "button_label": "Product Information"
+            "button_label": "Informations sur le produit"
           }
         },
         "description_6WtF8b": {
           "type": "description",
           "settings": {
-            "heading": "Product Details",
+            "heading": "Détails du produit",
             "image": "shopify://shop_images/search.svg",
-            "content": "<ul><li>80 self-dissolving micro-darts in each patch that melt into the skin for deeper ingredient delivery</li><li>Stay comfortably for 2-6 hours, or overnight for best results</li><li>Continually works to give a rejuvenated look to your skin</li></ul><p><br/><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">Learn more about Micro-Infusion Targeted Patches &gt;</a></p>",
+            "content": "<ul><li>80 micro-dards auto-dissolvants dans chaque patch qui fondent dans la peau pour une livraison plus profonde des ingrédients.</li><li>Tiennent confortablement pendant 2 à 6 heures, ou toute la nuit pour des résultats optimaux.</li><li>Agissent en continu pour donner un aspect rajeuni à votre peau.</li></ul><p><br/><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">En savoir plus sur les patchs ciblés à micro-infusion ></a></p>",
             "wistia_id": ""
           }
         },
         "description_BNpxL3": {
           "type": "description",
           "settings": {
-            "heading": "Usage Instructions",
+            "heading": "Instructions d’utilisation",
             "image": "shopify://shop_images/usage_dir.svg",
-            "content": "<ul><li>After cleansing, simply peel off the adhesive strips.</li><li>Gently press for 5-10 seconds. The micro-cones dissolve the concentrated serum directly into the skin!</li><li>Wear for at least two hours. For best results, leave them on overnight!</li></ul>",
+            "content": "<ul><li>Après le nettoyage, décollez simplement les bandes adhésives.</li><li>Appuyez doucement pendant 5 à 10 secondes. Les micro-cônes dissolvent le sérum concentré directement dans la peau !</li><li>Portez-les pendant au moins deux heures. Pour des résultats optimaux, laissez-les toute la nuit !</li></ul>",
             "wistia_id": "yy9nv8vwsn"
           }
         },
@@ -178,25 +177,25 @@
           "type": "description",
           "settings": {
             "classname": "ingredient_text",
-            "heading": "Ingredient Details",
+            "heading": "Détails des ingrédients",
             "image": "shopify://shop_images/product_claims.svg",
-            "content": "<p><strong>Retinol</strong><br/>A natural derivative of vitamin A, this hero ingredient speeds up the removal of old skin cells to reveal your best, most rejuvenated skin underneath.</p><p><strong>Niacinamide</strong><br/>A type of vitamin B3, this powerhouse ingredient helps maintain skin health for a brighter, more even skin tone. It also helps smooth the look of wrinkles – especially when combined with retinol.</p><p><strong>Caffeine</strong><br/>Caffeine works through micro-circulation, helping to fade the look of dark circles and under-eye bags – like a pick-me-up for the skin.</p><p><strong>Acetyl Hexapeptide-8-Peptides</strong><br/>This safe, synthetic form of Botox visibly reduces the appearance of fine lines and wrinkles & boosts collagen production. It’s the first peptide designed to target expression lines.</p><p><strong>Copper Peptides</strong><br/>Copper peptides promote collagen and elastin production which helps plump and tighten the skin. They also serve as an antioxidant, working to protect the skin against further barrier damage.</p><p><strong>Licorice</strong><br/>Licorice boasts anti-inflammatory properties that work wonders in reducing puffiness and soothing irritated skin.</p><p><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">See FAQs for more information here</a></p>",
+            "content": "<p><strong>Rétinol</strong><br/>Un dérivé naturel de la vitamine A, cet ingrédient héroïque accélère l’élimination des vieilles cellules cutanées pour révéler votre peau la plus belle et rajeunie en dessous.</p><p><strong>Niacinamide</strong><br/>Une forme de vitamine B3, cet ingrédient puissant aide à maintenir la santé de la peau pour un teint plus lumineux et uniforme. Il contribue également à lisser l’apparence des rides – surtout lorsqu’il est combiné au rétinol.</p><p><strong>Caféine</strong><br/>La caféine agit par la micro-circulation, aidant à estomper l’apparence des cernes et des poches sous les yeux – comme un coup de boost pour la peau.</p><p><strong>Peptides Acetyl Hexapeptide-8</strong><br/>Cette forme synthétique et sûre de Botox réduit visiblement l’apparence des ridules et des rides et stimule la production de collagène. C’est le premier peptide conçu pour cibler les lignes d’expression.</p><p><strong>Peptides de cuivre</strong><br/>Les peptides de cuivre favorisent la production de collagène et d’élastine, ce qui aide à repulper et raffermir la peau. Ils agissent également comme antioxydant, protégeant la peau contre d’autres dommages à la barrière.</p><p><strong>Réglisse</strong><br/>La réglisse possède des propriétés anti-inflammatoires qui font des merveilles pour réduire les poches et apaiser les peaux irritées.</p><p><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">Voir les FAQ pour plus d’informations ici</a></p>",
             "wistia_id": ""
           }
         },
         "header_AwT6ji": {
           "type": "header",
           "settings": {
-            "heading": "STEP 3",
-            "text": "Get inspired by other content creators",
+            "heading": "ÉTAPE 3",
+            "text": "Inspirez-vous d’autres créateurs de contenu",
             "image": "shopify://shop_images/ac_pro6.webp",
-            "button_label": "Inspiring Content"
+            "button_label": "Contenu inspirant"
           }
         },
         "heading_YiyFGP": {
           "type": "heading",
           "settings": {
-            "heading": "Show how it works for you"
+            "heading": "Montrez comment ça fonctionne pour vous"
           }
         },
         "video_4Jjjcm": {
@@ -230,7 +229,7 @@
         "heading_fUcJta": {
           "type": "heading",
           "settings": {
-            "heading": "Explain the science behind"
+            "heading": "Expliquez la science derrière"
           }
         },
         "video_H9fmrV": {
@@ -280,7 +279,7 @@
         "video_6gLP6V"
       ],
       "settings": {
-        "heading": "All you need to know before you start creating your amazing content"
+        "heading": "Tout ce que vous devez savoir avant de commencer à créer votre contenu exceptionnel"
       }
     }
   },

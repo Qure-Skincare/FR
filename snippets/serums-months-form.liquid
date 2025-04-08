@@ -97,7 +97,8 @@
                                             </div>
                                         </label>
                                     </div>
-                                    <div class="planBlock {{ section_id }}_productPeriodObject">
+
+                                    {% comment %} <div class="planBlock {{ section_id }}_productPeriodObject">
                                         {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
                                         {% assign divided_price = product.price | divided_by: 4 %}
                                         {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
@@ -134,7 +135,7 @@
                                                 <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
                                             </div>
                                         </label>
-                                    </div>
+                                    </div> {% endcomment %}
                                 </div>
                             </div>
                         </div>

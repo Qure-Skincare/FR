@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner_QBbh6a": {
@@ -6,7 +15,7 @@
         "button_hD4WnF": {
           "type": "button",
           "settings": {
-            "button_label": "Submit                                        stockist enquiry",
+            "button_label": "Soumettre une demande de partenariat",
             "button_url": "#stocklist_form",
             "classname": "btn_white m-0"
           }
@@ -16,7 +25,7 @@
         "button_hD4WnF"
       ],
       "settings": {
-        "heading": "Will you be our next professional partner?",
+        "heading": "Serez-vous notre prochain partenaire professionnel ?",
         "text": "",
         "image": "shopify:\/\/shop_images\/distributor_desk.png",
         "image_mobile": "shopify:\/\/shop_images\/distributor_mob.png",
@@ -87,8 +96,8 @@
         "heading_KAPtPX": {
           "type": "heading",
           "settings": {
-            "heading": "Qure’s Professional Skincare Revolution",
-            "text": "<p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.<\/p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.<\/p><p>Gain maximum advantage of the industry’s consistent growth.<\/p><p>Join the revolution and ecome our professional partner.<\/p>",
+            "heading": "La révolution des soins professionnels par Qure",
+            "text": "<p>Grâce à une technologie scientifiquement validée, des recherches approfondies et des perspectives tournées vers l’avenir, Qure développe des solutions visionnaires, établissant une nouvelle référence dans l’industrie de la beauté.</p><p>En réunissant des experts de renommée mondiale, des designers de produits et des ingénieurs, nous bouleversons l’industrie dermatologique et repensons la manière de donner aux gens le pouvoir de traiter leur peau à domicile avec des thérapies DIY éprouvées, à un prix abordable.</p><p>Tirez pleinement parti de la croissance constante de l’industrie.</p><p>Rejoignez la révolution et devenez notre partenaire professionnel.</p>",
             "code": "",
             "classname": "section_header mb-3 text-center"
           }
@@ -106,13 +115,13 @@
     "liquid_TJkaw9": {
       "type": "liquid",
       "settings": {
-        "code": "<div class=\"stocklist_ftr\">\n        <div class=\"s_f_wrapper\">\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑25.1%<\/div>\n                <p class=\"d-none d-md-block\">Growth of home\n                    beauty devices<\/p>\n                <p class=\"d-block d-md-none\">Growth of home<br>\n                    beauty devices<\/p>\n            <\/div>\n            <div class=\"s_f_item active\">\n                <div class=\"s_f_num\">↑ 5.1%<\/div>\n                <p class=\"d-none d-md-block\">Growth of light\n                    therapy market <\/p>\n                <p class=\"d-block d-md-none\">Growth of light<br>\n                    therapy market <\/p>\n            <\/div>\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑5.6%<\/div>\n                <p class=\"d-none d-md-block\">Growth of blue light therapy market, driven by preference for\n                    non-invasive acne treatment<\/p>\n                <p class=\"d-block d-md-none\">Blue light therapy<br>\n                    non-invasive acne<br> treatment<\/p>\n            <\/div>\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑4.5%<\/div>\n                <p class=\"d-none d-md-block\">Growth of red light therapy market driven by demand of non-invasive\n                    skin rejuvenation\n                    treatment<\/p>\n                <p class=\"d-block d-md-none\">Red light therapy<br>\n                    non-invasive skin<br> rejuvenation treatment<\/p>\n            <\/div>\n        <\/div>\n    <\/div>"
+        "code": "<div class=\"stocklist_ftr\">\n        <div class=\"s_f_wrapper\">\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑25,1 %</div>\n                <p class=\"d-none d-md-block\">Croissance des appareils\n                    de beauté à domicile</p>\n                <p class=\"d-block d-md-none\">Croissance des<br>\n                    appareils de beauté<br> à domicile</p>\n            </div>\n            <div class=\"s_f_item active\">\n                <div class=\"s_f_num\">↑5,1 %</div>\n                <p class=\"d-none d-md-block\">Croissance du marché\n                    de la luminothérapie</p>\n                <p class=\"d-block d-md-none\">Croissance du marché<br>\n                    de la luminothérapie</p>\n            </div>\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑5,6 %</div>\n                <p class=\"d-none d-md-block\">Croissance du marché de la thérapie par lumière bleue, portée par la préférence pour\n                    les traitements non invasifs contre l’acné</p>\n                <p class=\"d-block d-md-none\">Thérapie lumière bleue<br>\n                    traitement non invasif<br> contre l’acné</p>\n            </div>\n            <div class=\"s_f_item\">\n                <div class=\"s_f_num\">↑4,5 %</div>\n                <p class=\"d-none d-md-block\">Croissance du marché de la thérapie par lumière rouge, portée par la demande de traitements\n                    non invasifs pour le rajeunissement de la peau</p>\n                <p class=\"d-block d-md-none\">Thérapie lumière rouge<br>\n                    rajeunissement non invasif<br> de la peau</p>\n            </div>\n        </div>\n    </div>"
       }
     },
     "liquid_JtRXPD": {
       "type": "liquid",
       "settings": {
-        "code": "<div class=\"stocklist_form\" id=\"stocklist_form\">\n    <div class=\"container\">\n        {% form 'contact' %}\n\n{{ form.errors | default_errors }}\n\n            {% if form.posted_successfully? %}\n                <p class=\"errors\">\n                  Thank you! Your email has been sent!\n                <\/p>\n            {% endif %}\n\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_name\" name=\"contact[name]\" class=\"qure_input_field\" placeholder=\"Name\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_company\" name=\"contact[company]\" class=\"qure_input_field\" placeholder=\"Company Name\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"number\" id=\"s_pNumber\" name=\"contact[phone]\" class=\"qure_input_field\" placeholder=\"Phone Number\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"email\" id=\"s_email\" name=\"contact[email]\" class=\"qure_input_field\" placeholder=\"Email\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_location\" name=\"contact[location]\" class=\"qure_input_field\" placeholder=\"Location(City & Country)\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_website\" name=\"contact[website]\" class=\"qure_input_field\" placeholder=\"Website URL\">\n            <\/div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_company\" name=\"contact[message]\" class=\"qure_input_field\" placeholder=\"Message\">\n            <\/div>\n            <div class=\"qure_form_btn my-4 d-block\">\n                <button type=\"submit\" class=\"btn btn-lg btn-primary buy_btn\">Submit Now<img src=\"{{ 'arrow_right.svg' | asset_url }}\"><\/button>\n            <\/div>\n        <\/form>\n        {% endform %}\n    <\/div>\n<\/div>"
+        "code": "<div class=\"stocklist_form\" id=\"stocklist_form\">\n    <div class=\"container\">\n        {% form 'contact' %}\n\n{{ form.errors | default_errors }}\n\n            {% if form.posted_successfully? %}\n                <p class=\"errors\">\n                  Merci ! Votre email a été envoyé !\n                </p>\n            {% endif %}\n\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_name\" name=\"contact[name]\" class=\"qure_input_field\" placeholder=\"Nom\">\n            </div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_company\" name=\"contact[company]\" class=\"qure_input_field\" placeholder=\"Nom de l’entreprise\">\n            </div>\n            <div class=\"qure_input\">\n                <input type=\"number\" id=\"s_pNumber\" name=\"contact[phone]\" class=\"qure_input_field\" placeholder=\"Numéro de téléphone\">\n            </div>\n            <div class=\"qure_input\">\n                <input type=\"email\" id=\"s_email\" name=\"contact[email]\" class=\"qure_input_field\" placeholder=\"Email\">\n            </div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_location\" name=\"contact[location]\" class=\"qure_input_field\" placeholder=\"Localisation (Ville et Pays)\">\n            </div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_website\" name=\"contact[website]\" class=\"qure_input_field\" placeholder=\"URL du site web\">\n            </div>\n            <div class=\"qure_input\">\n                <input type=\"text\" id=\"s_company\" name=\"contact[message]\" class=\"qure_input_field\" placeholder=\"Message\">\n            </div>\n            <div class=\"qure_form_btn my-4 d-block\">\n                <button type=\"submit\" class=\"btn btn-lg btn-primary buy_btn\">Envoyer maintenant<img src=\"{{ 'arrow_right.svg' | asset_url }}\"></button>\n            </div>\n        </form>\n        {% endform %}\n    </div>\n</div>"
       }
     }
   },

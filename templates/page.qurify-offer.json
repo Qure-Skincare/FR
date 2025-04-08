@@ -15,14 +15,14 @@
         "announcement_68YDyx": {
           "type": "announcement",
           "settings": {
-            "heading": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee",
-            "heading_mobile": "Subscribe & SAVE 30% | 30-Day Money-Back Guarantee"
+            "heading": "Abonnez-vous et ÉCONOMISEZ 30 % | Garantie de remboursement de 30 jours",
+            "heading_mobile": "Abonnez-vous et ÉCONOMISEZ 30 % | Garantie de remboursement de 30 jours"
           }
         },
         "navigation_link_enLf8t": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "Shop",
+            "link_label": "Boutique",
             "link_url": "#shop",
             "image": "shopify:\/\/shop_images\/header-lp-shop.webp"
           }
@@ -30,7 +30,7 @@
         "navigation_link_wPNEr9": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "WHY Q-URIFY",
+            "link_label": "POURQUOI Q-URIFY",
             "link_url": "https:\/\/www.qureskincare.com\/pages\/why-qurify",
             "image": "shopify:\/\/shop_images\/header_2.webp"
           }
@@ -38,7 +38,7 @@
         "navigation_link_wVVWXW": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "LOCAL WATER REPORT",
+            "link_label": "RAPPORT LOCAL SUR L’EAU",
             "link_url": "https:\/\/www.qureskincare.com\/pages\/free-water-report",
             "image": "shopify:\/\/shop_images\/header-lp-local.webp"
           }
@@ -51,7 +51,7 @@
         "navigation_link_wVVWXW"
       ],
       "settings": {
-        "button_label": "Get Clearer Skin",
+        "button_label": "Obtenez une peau plus nette",
         "button_url": "#shop"
       }
     },
@@ -61,23 +61,23 @@
         "list_UkDdaw": {
           "type": "list",
           "settings": {
-            "text": "<ul><li><strong>Reduces irritants from tap water<\/strong><\/li><li><strong>Improves skin barrier<\/strong><\/li><li><strong>Decreases breakouts<\/strong><\/li><li><strong>Clinically proven to improve hydration<\/strong><\/li><\/ul>"
+            "text": "<ul><li><strong>Réduit les irritants de l’eau du robinet<\/strong><\/li><li><strong>Améliore la barrière cutanée<\/strong><\/li><li><strong>Diminue les poussées d’acné<\/strong><\/li><li><strong>Prouvé cliniquement pour améliorer l’hydratation<\/strong><\/li><\/ul>"
           }
         },
         "button_ELUk7N": {
           "type": "button",
           "settings": {
-            "button_label": "Get Clearer Skin",
+            "button_label": "Obtenez une peau plus nette",
             "button_url": "#shop",
-            "text_first": "Dermatologist-Reviewed",
-            "text_second": "30-Day Money-Back Guarantee"
+            "text_first": "Évalué par des dermatologues",
+            "text_second": "Garantie de remboursement de 30 jours"
           }
         },
         "rating_ppPzFa": {
           "type": "rating",
           "settings": {
             "image": "shopify:\/\/shop_images\/star-half_fill.svg",
-            "text": "<p><span style=\"text-decoration:underline\">43,893+ Happy Customers<\/span><\/p>"
+            "text": "<p><span style=\"text-decoration:underline\">Plus de 43 893 clients satisfaits<\/span><\/p>"
           }
         },
         "product_in_page_gepBJh": {
@@ -141,12 +141,12 @@
         ".img-fluid {border-radius: unset !important;}"
       ],
       "settings": {
-        "top_heading": "<h5>TRANSFORM YOUR <strong>FACIAL ROUTINE:<\/strong><\/h5>",
-        "heading": "Wash Your Way To Clearer, Hydrated Skin with Q-urify Water Filter",
-        "heading_mobile": "Wash Your Way To Clearer, Hydrated Skin with Q-urify Water Filter",
-        "text_label_real_result_1": "Product",
-        "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Dermatologist"
+        "top_heading": "<h5>TRANSFORMEZ VOTRE <strong>ROUTINE FACIALE :<\/strong><\/h5>",
+        "heading": "Lavez-vous le visage pour une peau plus nette et hydratée avec le filtre à eau Q-urify",
+        "heading_mobile": "Lavez-vous le visage pour une peau plus nette et hydratée avec le filtre à eau Q-urify",
+        "text_label_real_result_1": "Produit",
+        "text_label_real_result_2": "Résultats réels",
+        "text_label_real_result_3": "Dermatologue"
       }
     },
     "featuredin_tFi6Ki": {
@@ -193,8 +193,7 @@
       "custom_css": [
         ".press_bl {background-color: rgb(251 251 251) !important;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "clinicallyproven": {
       "type": "custom-qurify-filter-lp-clinicallyproven",
@@ -203,14 +202,14 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/cp3-upscaled.webp",
-            "text": "<p><strong>In a clinical study conducted by Regulatory Consultants:<\/strong><\/p>"
+            "text": "<p><strong>Dans une étude clinique menée par des consultants réglementaires :<\/strong><\/p>"
           }
         },
         "object_JtUqbW": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/cp_graph.webp",
-            "text": "<p><strong>Clinically proven to improve skin hydration in 14 days<\/strong><\/p>"
+            "text": "<p><strong>Prouvé cliniquement pour améliorer l’hydratation de la peau en 14 jours<\/strong><\/p>"
           }
         }
       },
@@ -219,8 +218,8 @@
         "object_JtUqbW"
       ],
       "settings": {
-        "heading": "Clinically proven to improve skin hydration in just 2 weeks",
-        "heading_mobile": "Clinically proven to improve skin hydration in just 2 weeks"
+        "heading": "Prouvé cliniquement pour améliorer l’hydratation de la peau en seulement 2 semaines",
+        "heading_mobile": "Prouvé cliniquement pour améliorer l’hydratation de la peau en seulement 2 semaines"
       }
     },
     "trusted": {
@@ -231,27 +230,27 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_main.webp",
             "video_url": "https:\/\/www.youtube.com\/watch?v=QuJ3puVLKzU",
-            "video_label": "Click To Watch Review",
-            "likes": "4.4K",
-            "views": "48K views"
+            "video_label": "Cliquez pour voir l’avis",
+            "likes": "4,4K",
+            "views": "48K vues"
           }
         },
         "feedback_HrCXGR": {
           "type": "feedback",
           "settings": {
-            "heading": "<h2>\"You wanna look for something that’s gonna reduce both <strong>calcium carbonate<\/strong> and <strong>chlorine<\/strong> from your water...[Q-urify does both.]\"<\/h2>",
+            "heading": "<h2>\"Il faut chercher quelque chose qui réduit à la fois le <strong>carbonate de calcium<\/strong> et le <strong>chlore<\/strong> dans votre eau... [Q-urify fait les deux.]\"<\/h2>",
             "image": "shopify:\/\/shop_images\/dr.shah.webp",
             "name": "<p>Dr. Shah, MD<\/p>",
-            "text": "<p>Board-Certified Dermatologist<\/p>"
+            "text": "<p>Dermatologue certifié<\/p>"
           }
         },
         "button_kGa8Ek": {
           "type": "button",
           "settings": {
-            "button_label": "Q-urify My Water",
+            "button_label": "Q-urifier mon eau",
             "button_url": "#shop",
-            "text_first": "Dermatologist-Reviewed",
-            "text_second": "30-Day Money-Back Guarantee"
+            "text_first": "Évalué par des dermatologues",
+            "text_second": "Garantie de remboursement de 30 jours"
           }
         }
       },
@@ -263,8 +262,7 @@
       "custom_css": [
         ".trusted_bl_lp {background-color: rgb(251 251 251) !important;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "slider": {
       "type": "custom-qurify-filter-slider",
@@ -273,42 +271,42 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/s_q_1.svg",
-            "heading": "Filters out the “nasties”",
-            "text": "<p>Reduces the contaminants and metal ions that make your tap water “hard” and irritate your skin–like calcium, magnesium and chlorine.<\/p>"
+            "heading": "Filtre les « indésirables »",
+            "text": "<p>Réduit les contaminants et les ions métalliques qui rendent l’eau du robinet « dure » et irritent votre peau, comme le calcium, le magnésium et le chlore.<\/p>"
           }
         },
         "object_TEfTYV": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/s_q_2.svg",
-            "heading": "Enhances skin health",
-            "text": "<p>Improves your skin barrier, decreases breakouts, enhances radiance, and improves redness and irritation.<\/p>"
+            "heading": "Améliore la santé de la peau",
+            "text": "<p>Renforce votre barrière cutanée, réduit les poussées d’acné, améliore l’éclat et atténue les rougeurs et irritations.<\/p>"
           }
         },
         "object_aRfrwY": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/s_q_3.svg",
-            "heading": "Backed by science",
-            "text": "<p>Scientifically developed, plus recommended and trusted by world-leading dermatologists.<\/p>"
+            "heading": "Soutenu par la science",
+            "text": "<p>Développé scientifiquement, recommandé et approuvé par les plus grands dermatologues mondiaux.<\/p>"
           }
         },
         "object_7GmtwY": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/s_q_4.svg",
-            "heading": "Dermatologist-reviewed",
-            "text": "<p>Recommended and trusted by world-leading dermatologists.<\/p>"
+            "heading": "Évalué par des dermatologues",
+            "text": "<p>Recommandé et approuvé par les plus grands dermatologues mondiaux.<\/p>"
           }
         },
         "result_kykmPe": {
           "type": "result",
           "settings": {
             "image": "shopify:\/\/shop_images\/results_hanna.webp",
-            "heading": "Hydrated more than ever",
-            "text": "<p>\"I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used.<br\/>I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”<\/p>",
+            "heading": "Plus hydratée que jamais",
+            "text": "<p>« Je n’avais jamais eu de gros problèmes de peau avant de déménager. Puis j’ai commencé à avoir des irritations et mon maquillage devenait pâteux car ma peau était toujours sèche, peu importe la crème hydratante utilisée.<br\/>Je n’ai rien changé à ma routine de soin sauf l’eau filtrée. Je ne laverai plus jamais mon visage avec autre chose que de l’eau Q-urifiée car ma peau est tellement mieux maintenant. »<\/p>",
             "image_country": "shopify:\/\/shop_images\/england_f.webp",
-            "text_country": "United Kingdom",
+            "text_country": "Royaume-Uni",
             "client": "Hanna"
           }
         },
@@ -316,10 +314,10 @@
           "type": "result",
           "settings": {
             "image": "shopify:\/\/shop_images\/results_josie.webp",
-            "heading": "Acne and dryness gone",
-            "text": "<p>\"My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”<\/p>",
+            "heading": "Acné et sécheresse disparues",
+            "text": "<p>« Ma peau s’est tellement améliorée grâce à Qure ! J’utilise le masque LED et le filtre à eau tous les jours, et ça a éliminé mon acné, mon teint est beaucoup plus lisse et moins rouge ! Ma peau est douce et hydratée. Je peux enfin sortir sans maquillage. MERCI QURE !!! »<\/p>",
             "image_country": "shopify:\/\/shop_images\/usa_89e25711-f730-4521-8931-83b3307204af.png",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Josie"
           }
         },
@@ -327,10 +325,10 @@
           "type": "result",
           "settings": {
             "image": "shopify:\/\/shop_images\/results_kim_l.webp",
-            "heading": "Source of my unclear skin",
-            "text": "<p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”<\/p>",
+            "heading": "Source de ma peau impure",
+            "text": "<p>« Je n’avais pas réalisé à quel point l’eau avait un impact sur notre peau... Je m’étais presque habituée à ce que ma peau ne soit jamais mieux que moyenne, mais ce filtre à eau a tout changé dans ma routine de soin. »<\/p>",
             "image_country": "shopify:\/\/shop_images\/australia_f.webp",
-            "text_country": "Australia",
+            "text_country": "Australie",
             "client": "Kim L."
           }
         }
@@ -348,8 +346,8 @@
         ".section_header .title-lg {max-width: 480px;}"
       ],
       "settings": {
-        "heading": "Clean Water, Clear Skin with Q-urify Water Filter",
-        "text": "<p>A dermatologist-reviewed water filter that improves skin hydration in just 14 days. (AKA, the new “step zero” of your skincare routine.)<\/p>"
+        "heading": "Eau propre, peau nette avec le filtre à eau Q-urify",
+        "text": "<p>Un filtre à eau évalué par des dermatologues qui améliore l’hydratation de la peau en seulement 14 jours. (En d’autres termes, la nouvelle « étape zéro » de votre routine de soin.)<\/p>"
       }
     },
     "effectivetable": {
@@ -358,31 +356,31 @@
         "text_NakFgq": {
           "type": "text",
           "settings": {
-            "text": "<p>Specifically designed for skincare<\/p>"
+            "text": "<p>Spécialement conçu pour les soins de la peau<\/p>"
           }
         },
         "text_eFhdCq": {
           "type": "text",
           "settings": {
-            "text": "<p>Reduces chlorine, calcium, and magnesium<\/p>"
+            "text": "<p>Réduit le chlore, le calcium et le magnésium<\/p>"
           }
         },
         "text_TM7YpL": {
           "type": "text",
           "settings": {
-            "text": "<p>Clinically proven to improve skin hydration in 2 weeks<\/p>"
+            "text": "<p>Prouvé cliniquement pour améliorer l’hydratation de la peau en 2 semaines<\/p>"
           }
         },
         "text_zRrmFi": {
           "type": "text",
           "settings": {
-            "text": "<p>Dermatologist-tested<\/p>"
+            "text": "<p>Testé par des dermatologues<\/p>"
           }
         },
         "text_7R38Ub": {
           "type": "text",
           "settings": {
-            "text": "<p>30-day money-back guarantee<\/p>"
+            "text": "<p>Garantie de remboursement de 30 jours<\/p>"
           }
         }
       },
@@ -397,7 +395,7 @@
         ".effective_table {background-color: rgb(251 251 251) !important;}"
       ],
       "settings": {
-        "heading": "More effective and safer than other filters",
+        "heading": "Plus efficace et plus sûr que les autres filtres",
         "image": "shopify:\/\/shop_images\/e_table_1.webp",
         "image_second": "shopify:\/\/shop_images\/e_table_2.webp"
       }
@@ -409,14 +407,14 @@
           "type": "list",
           "settings": {
             "image": "shopify:\/\/shop_images\/tq_1.svg",
-            "text": "Improves skin barrier, less breakouts"
+            "text": "Améliore la barrière cutanée, moins de poussées"
           }
         },
         "list_7gREHx": {
           "type": "list",
           "settings": {
             "image": "shopify:\/\/shop_images\/tq_2.svg",
-            "text": "Increases skin hydration and radiance"
+            "text": "Augmente l’hydratation et l’éclat de la peau"
           }
         },
         "image_8kEcPx": {
@@ -460,12 +458,12 @@
         "image_qt4bEH"
       ],
       "settings": {
-        "heading": "Q-urify Water Filter",
-        "text": "Reduce unwanted irritants from your tap water and kick dry, acne-prone skin down the drain.",
-        "rating_text": "90% of users prefer filtered water",
+        "heading": "Filtre à eau Q-urify",
+        "text": "Éliminez les irritants indésirables de votre eau du robinet et dites adieu à la peau sèche et sujette à l’acné.",
+        "rating_text": "90 % des utilisateurs préfèrent l’eau filtrée",
         "rating_image": "shopify:\/\/shop_images\/star-half_fill.svg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=QuJ3puVLKzU",
-        "video_label": "See it in action"
+        "video_label": "Voir en action"
       }
     },
     "videos": {
@@ -524,8 +522,8 @@
         "wistia_EGexBi"
       ],
       "settings": {
-        "heading": "No Filters Were Used \\n In The Making Of These Videos",
-        "text": "<p>To clarify, we mean no editing filters were used in the making of these videos:<\/p>"
+        "heading": "Aucun filtre n’a été utilisé \\n dans la réalisation de ces vidéos",
+        "text": "<p>Pour clarifier, nous voulons dire qu’aucun filtre de montage n’a été utilisé dans la réalisation de ces vidéos :<\/p>"
       }
     },
     "reasons": {
@@ -535,41 +533,41 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/eq_img_1.webp",
-            "heading": "1. Leads to Fewer Breakouts",
-            "text": "<p>Reap the benefits of clear, acne-free skin, including more confidence and more makeup-free days.<\/p>"
+            "heading": "1. Moins de poussées",
+            "text": "<p>Profitez des bienfaits d’une peau nette et sans acné, avec plus de confiance et de jours sans maquillage.<\/p>"
           }
         },
         "text_wKdN6V": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/eq_img_2.webp",
-            "heading": "2. Enhances Radiance",
-            "text": "<p>Reduced redness and irritation for a glowing, more hydrated, and more even complexion.<\/p>"
+            "heading": "2. Améliore l’éclat",
+            "text": "<p>Réduit les rougeurs et les irritations pour un teint plus éclatant, hydraté et uniforme.<\/p>"
           }
         },
         "text_PDg3LE": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/eq_img_3.webp",
-            "heading": "3. Strengthens Your Skin Barrier",
-            "text": "<p>Your skin will become more self-sufficient, better retaining moisture while also fending off irritating environmental aggressors on its own.<\/p>"
+            "heading": "3. Renforce votre barrière cutanée",
+            "text": "<p>Votre peau devient plus autonome, retenant mieux l’hydratation tout en repoussant seule les agressions environnementales irritantes.<\/p>"
           }
         },
         "text_ej7Qzi": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/eq_img_4.webp",
-            "heading": "4. Dermatologist-Developed",
-            "text": "<p>Tried and trusted by leading Dermatologists. Expertly crafted for you skin’s finest care.<\/p>"
+            "heading": "4. Développé par des dermatologues",
+            "text": "<p>Testé et approuvé par des dermatologues de renom. Conçu avec expertise pour les meilleurs soins de votre peau.<\/p>"
           }
         },
         "button_wLppY4": {
           "type": "button",
           "settings": {
-            "button_label": "Get Clearer Skin",
+            "button_label": "Obtenez une peau plus nette",
             "button_url": "#shop",
-            "text_first": "Dermatologist-Reviewed",
-            "text_second": "30-Day Money-Back Guarantee"
+            "text_first": "Évalué par des dermatologues",
+            "text_second": "Garantie de remboursement de 30 jours"
           }
         }
       },
@@ -584,8 +582,8 @@
         ".everyones_qurify {background-color: #ffffff !important;}"
       ],
       "settings": {
-        "heading": "Everyone’s Q-urifying their water",
-        "text": "<p>Here are 4 reasons why:<\/p>"
+        "heading": "Tout le monde Q-urifie son eau",
+        "text": "<p>Voici 4 raisons pourquoi :<\/p>"
       }
     },
     "truthtap": {
@@ -594,37 +592,37 @@
         "object_rMX9Fa": {
           "type": "object",
           "settings": {
-            "heading": "95% of tap water is chlorinated",
+            "heading": "95 % de l’eau du robinet est chlorée",
             "svg": "<svg class=\"vMQQx\" height=\"77\" width=\"77\" viewbox=\"-29 -29 58 58\">\n                                        <defs>\n                                            <lineargradient id=\"gradient\" x1=\"0\" x2=\"0\" y1=\"1\" y2=\"0\">\n                                                <stop offset=\"0%\" stop-color=\"#C7E7DC\"><\/stop>\n                                                <stop offset=\"100%\" stop-color=\"#C7E7DC\"><\/stop>\n                                            <\/lineargradient>\n                                        <\/defs>\n                                        <circle stroke=\"rgba(221, 224, 228, 1)\" fill=\"none\" pathlength=\"100\" class=\"K4v4P\" r=\"24\" style=\"stroke-width: 1px;\"><\/circle>\n                                        <circle visibility=\"visible\" fill=\"none\" pathlength=\"100\" transform=\"rotate(-90)\" class=\"OKwUu\" r=\"24\" stroke=\"#C92127\" style=\"stroke-dasharray: 100; stroke-dashoffset: 5; stroke-width: 5px;\">\n                                        <\/circle>\n                                    <\/svg>",
-            "percent": "95%",
-            "text": "<p>Chlorine is a drying and dehydrates the skin.<\/p>"
+            "percent": "95 %",
+            "text": "<p>Le chlore assèche et déshydrate la peau.<\/p>"
           }
         },
         "object_iHDVWa": {
           "type": "object",
           "settings": {
-            "heading": "60% of tap water has turbidity",
+            "heading": "60 % de l’eau du robinet est trouble",
             "svg": "<svg class=\"vMQQx\" height=\"77\" width=\"77\" viewbox=\"-29 -29 58 58\">\n                                        <defs>\n                                            <lineargradient id=\"gradient\" x1=\"0\" x2=\"0\" y1=\"1\" y2=\"0\">\n                                                <stop offset=\"0%\" stop-color=\"#C7E7DC\"><\/stop>\n                                                <stop offset=\"100%\" stop-color=\"#C7E7DC\"><\/stop>\n                                            <\/lineargradient>\n                                        <\/defs>\n                                        <circle stroke=\"rgba(221, 224, 228, 1)\" fill=\"none\" pathlength=\"100\" class=\"K4v4P\" r=\"24\" style=\"stroke-width: 1px;\"><\/circle>\n                                        <circle visibility=\"visible\" fill=\"none\" pathlength=\"100\" transform=\"rotate(-90)\" class=\"OKwUu\" r=\"24\" stroke=\"#C92127\" style=\"stroke-dasharray: 100; stroke-dashoffset: 40; stroke-width: 5px;\">\n                                        <\/circle>\n                                    <\/svg>",
-            "percent": "60%",
-            "text": "<p>Mud, rust and micro-contaminants in water can irritate sensitive skin.<\/p>"
+            "percent": "60 %",
+            "text": "<p>La boue, la rouille et les micro-contaminants dans l’eau peuvent irriter les peaux sensibles.<\/p>"
           }
         },
         "object_tErdGz": {
           "type": "object",
           "settings": {
-            "heading": "95% of tap water has micro-plastics",
+            "heading": "95 % de l’eau du robinet contient des microplastiques",
             "svg": "<svg class=\"vMQQx\" height=\"77\" width=\"77\" viewbox=\"-29 -29 58 58\">\n                                        <defs>\n                                            <lineargradient id=\"gradient\" x1=\"0\" x2=\"0\" y1=\"1\" y2=\"0\">\n                                                <stop offset=\"0%\" stop-color=\"#C7E7DC\"><\/stop>\n                                                <stop offset=\"100%\" stop-color=\"#C7E7DC\"><\/stop>\n                                            <\/lineargradient>\n                                        <\/defs>\n                                        <circle stroke=\"rgba(221, 224, 228, 1)\" fill=\"none\" pathlength=\"100\" class=\"K4v4P\" r=\"24\" style=\"stroke-width: 1px;\"><\/circle>\n                                        <circle visibility=\"visible\" fill=\"none\" pathlength=\"100\" transform=\"rotate(-90)\" class=\"OKwUu\" r=\"24\" stroke=\"#C92127\" style=\"stroke-dasharray: 100; stroke-dashoffset: 5; stroke-width: 5px;\">\n                                        <\/circle>\n                                    <\/svg>",
-            "percent": "95%",
-            "text": "<p>These can cause micro-abrasions and damage sensitive skin.<\/p>"
+            "percent": "95 %",
+            "text": "<p>Ces microplastiques peuvent causer des micro-abrasions et endommager les peaux sensibles.<\/p>"
           }
         },
         "object_yr37B3": {
           "type": "object",
           "settings": {
-            "heading": "85% of tap water is too hard",
+            "heading": "85 % de l’eau du robinet est trop dure",
             "svg": "<svg class=\"vMQQx\" height=\"77\" width=\"77\" viewbox=\"-29 -29 58 58\">\n                                        <defs>\n                                            <lineargradient id=\"gradient\" x1=\"0\" x2=\"0\" y1=\"1\" y2=\"0\">\n                                                <stop offset=\"0%\" stop-color=\"#C7E7DC\"><\/stop>\n                                                <stop offset=\"100%\" stop-color=\"#C7E7DC\"><\/stop>\n                                            <\/lineargradient>\n                                        <\/defs>\n                                        <circle stroke=\"rgba(221, 224, 228, 1)\" fill=\"none\" pathlength=\"100\" class=\"K4v4P\" r=\"24\" style=\"stroke-width: 1px;\"><\/circle>\n                                        <circle visibility=\"visible\" fill=\"none\" pathlength=\"100\" transform=\"rotate(-90)\" class=\"OKwUu\" r=\"24\" stroke=\"#C92127\" style=\"stroke-dasharray: 100; stroke-dashoffset: 15; stroke-width: 5px;\">\n                                        <\/circle>\n                                    <\/svg>",
-            "percent": "85%",
-            "text": "<p>Hard water can have hard metals or excess Mg2+ and Ca2+ that can clog and the irritate skin.<\/p>"
+            "percent": "85 %",
+            "text": "<p>L’eau dure peut contenir des métaux lourds ou un excès de Mg2+ et Ca2+ qui peuvent obstruer et irriter la peau.<\/p>"
           }
         }
       },
@@ -638,8 +636,8 @@
         ".truth_tap {background-color: rgb(251 251 251) !important;}"
       ],
       "settings": {
-        "heading": "The truth about tap water",
-        "text": "<p>Our tap water is contaminated <strong>with over 320 chemicals. <\/strong>And our skin? It’s absorbing them daily.<\/p>"
+        "heading": "La vérité sur l’eau du robinet",
+        "text": "<p>Notre eau du robinet est contaminée <strong>par plus de 320 produits chimiques.<\/strong> Et notre peau ? Elle les absorbe quotidiennement.<\/p>"
       }
     },
     "skinirritants": {
@@ -649,35 +647,35 @@
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_micro-organism.svg",
-            "text": "<p>Micro \\n Organisms<\/p>"
+            "text": "<p>Micro-<br\/>organismes<\/p>"
           }
         },
         "text_Qw3Kkc": {
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_chlorine.svg",
-            "text": "<p>Chlorine<\/p>"
+            "text": "<p>Chlore<\/p>"
           }
         },
         "text_CpeRYg": {
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_micro-plastics.svg",
-            "text": "<p>Micro \\n Plastics<\/p>"
+            "text": "<p>Micro-<br\/>plastiques<\/p>"
           }
         },
         "text_epBtzp": {
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_magnesium.svg",
-            "text": "<p>Magnesium<\/p>"
+            "text": "<p>Magnésium<\/p>"
           }
         },
         "text_b6eFDL": {
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_algae.svg",
-            "text": "<p>Algae<\/p>"
+            "text": "<p>Algues<\/p>"
           }
         },
         "text_axJCjC": {
@@ -691,14 +689,14 @@
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_lead-particles.svg",
-            "text": "<p>Lead \\n Particles<\/p>"
+            "text": "<p>Particules<br\/>de plomb<\/p>"
           }
         },
         "text_YhQaeU": {
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/ingredients_rust.svg",
-            "text": "<p>Rust<\/p>"
+            "text": "<p>Rouille<\/p>"
           }
         }
       },
@@ -713,7 +711,7 @@
         "text_YhQaeU"
       ],
       "settings": {
-        "heading": "Reduce skin irritants in tap water that are destroying your skin"
+        "heading": "Réduisez les irritants cutanés de l’eau du robinet qui abîment votre peau"
       }
     },
     "reasonslist": {
@@ -723,8 +721,8 @@
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/harm_water_1.webp",
-            "heading": "Dryness",
-            "text": "<p>Depletion of your skin's natural oils, causing it to be dry and damaged.<\/p>"
+            "heading": "Sécheresse",
+            "text": "<p>Élimination des huiles naturelles de votre peau, la rendant sèche et endommagée.<\/p>"
           }
         },
         "object_TadgqY": {
@@ -732,48 +730,48 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/harm_water_2.webp",
             "heading": "Irritation",
-            "text": "<p>Irritation of your skin, causing sensitivity and redness.<\/p>"
+            "text": "<p>Irritation de votre peau, provoquant sensibilité et rougeurs.<\/p>"
           }
         },
         "object_aX4EcB": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/harm_water_3.webp",
-            "heading": "Premature Aging",
-            "text": "<p>Breakdown of collagen barrier causing signs of premature aging.<\/p>"
+            "heading": "Vieillissement prématuré",
+            "text": "<p>Dégradation de la barrière de collagène causant des signes de vieillissement prématuré.<\/p>"
           }
         },
         "object_JVbn8V": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/harm_water_4.webp",
-            "heading": "Breakouts",
-            "text": "<p>Clogs pores, skin also produces oils when natural oils are stripped.<\/p>"
+            "heading": "Poussées d’acné",
+            "text": "<p>Obstrue les pores, la peau produit également des huiles lorsque les huiles naturelles sont éliminées.<\/p>"
           }
         },
         "object_gT4NHn": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/harm_water_5.webp",
-            "heading": "Skin Conditions",
-            "text": "<p>For certain skin conditions like eczema or psoriasis, the chemicals can aggravate symptoms.<\/p>"
+            "heading": "Affections cutanées",
+            "text": "<p>Pour certaines affections comme l’eczéma ou le psoriasis, les produits chimiques peuvent aggraver les symptômes.<\/p>"
           }
         },
         "object_8cTKkF": {
           "type": "object",
           "settings": {
             "image": "shopify:\/\/shop_images\/harm_water_6.webp",
-            "heading": "Sensitivity",
-            "text": "<p>Weakened skin barrier function<\/p>"
+            "heading": "Sensibilité",
+            "text": "<p>Affaiblissement de la fonction de la barrière cutanée<\/p>"
           }
         },
         "button_ygEcjQ": {
           "type": "button",
           "settings": {
-            "button_label": "Get Clearer Skin",
+            "button_label": "Obtenez une peau plus nette",
             "button_url": "#shop",
-            "text_first": "Dermatologist-Reviewed",
-            "text_second": "30-Day Money-Back Guarantee"
+            "text_first": "Évalué par des dermatologues",
+            "text_second": "Garantie de remboursement de 30 jours"
           }
         }
       },
@@ -790,8 +788,8 @@
         ".water_harm {background-color: rgb(251 251 251) !important;}"
       ],
       "settings": {
-        "heading": "How does tap water harm your skin?",
-        "text": "<p>Your skin barrier acts as a protector against toxins and contaminants from the external environment. But the chemicals and contaminants in tap water can seep through & also break down this barrier causing:<\/p>",
+        "heading": "Comment l’eau du robinet abîme-t-elle votre peau ?",
+        "text": "<p>Votre barrière cutanée agit comme un bouclier contre les toxines et contaminants de l’environnement extérieur. Mais les produits chimiques et contaminants de l’eau du robinet peuvent la traverser et la dégrader, causant :<\/p>",
         "image": "shopify:\/\/shop_images\/harm_water_main_669ef9d7-9434-4266-ab2a-5f1a5bc65687.webp"
       }
     },
@@ -801,10 +799,10 @@
         "button_jbTNzG": {
           "type": "button",
           "settings": {
-            "button_label": "Get Clearer Skin",
+            "button_label": "Obtenez une peau plus nette",
             "button_url": "#shop",
-            "text_first": "Dermatologist-Reviewed",
-            "text_second": "30-Day Money-Back Guarantee"
+            "text_first": "Évalué par des dermatologues",
+            "text_second": "Garantie de remboursement de 30 jours"
           }
         }
       },
@@ -815,8 +813,8 @@
         ".single_step {background-color: #ffffff !important;}"
       ],
       "settings": {
-        "heading": "Get clearer skin in just 1 single step",
-        "text": "<p>The Only Step: Attach the Filter<\/p><p>Follow the included instructions to securely attach the filter to your faucet. Then wash your face morning and night with your preferred cleanser and Q-urified water and enjoy smoother, more hydrated skin after just a few weeks of consistent use.<\/p><p>Check <a href=\"https:\/\/crm.aronwebsolutions.com\/Qure-Html-2.0\/Qure-Html-2.0\/qurify-water-filter-lp.html#faucet_faq\">here<\/a> to see if Q-urify Water Filter is compatible with your faucet.<\/p>",
+        "heading": "Obtenez une peau plus nette en une seule étape",
+        "text": "<p>La seule étape : Fixez le filtre<\/p><p>Suivez les instructions incluses pour fixer solidement le filtre à votre robinet. Ensuite, lavez votre visage matin et soir avec votre nettoyant préféré et de l’eau Q-urifiée, et profitez d’une peau plus lisse et hydratée après seulement quelques semaines d’utilisation régulière.<\/p><p>Vérifiez <a href=\"https:\/\/crm.aronwebsolutions.com\/Qure-Html-2.0\/Qure-Html-2.0\/qurify-water-filter-lp.html#faucet_faq\">ici<\/a> si le filtre à eau Q-urify est compatible avec votre robinet.<\/p>",
         "image": "shopify:\/\/shop_images\/filter2.gif"
       }
     },
@@ -877,8 +875,8 @@
       ],
       "disabled": true,
       "settings": {
-        "heading": "Will it fit my faucet?",
-        "text": "<p>Q-urify is compatible with almost every circular removable aerator, and each filter comes with 8 adaptors to help fit different faucet sizes. However, please note that it will NOT fit faucets that are square shaped, pull out, hand-held, spray-style, or faucets with a sensor.<\/p>"
+        "heading": "S’adaptera-t-il à mon robinet ?",
+        "text": "<p>Q-urify est compatible avec presque tous les aérateurs circulaires amovibles, et chaque filtre est livré avec 8 adaptateurs pour s’adapter à différentes tailles de robinets. Cependant, veuillez noter qu’il NE convient PAS aux robinets de forme carrée, extensibles, portatifs, à jet ou équipés d’un capteur.<\/p>"
       }
     },
     "moneyback": {
@@ -888,8 +886,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/money-back-lg.svg",
-        "heading": "100% Money-Back Guarantee",
-        "text": "<p>Try out Q-urify for 30 days and, if it’s not for you, mail it back to us for a full refund. Returns and exchanges must be initiated within 30 days upon receiving your order to qualify. For more information, read our Return Policy here.<\/p>"
+        "heading": "Garantie de remboursement à 100 %",
+        "text": "<p>Essayez Q-urify pendant 30 jours et, s’il ne vous convient pas, renvoyez-le-nous pour un remboursement complet. Les retours et échanges doivent être initiés dans les 30 jours suivant la réception de votre commande pour être éligibles. Pour plus d’informations, consultez notre politique de retour ici.<\/p>"
       }
     },
     "icons_list_PGhTEi": {
@@ -899,28 +897,28 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
+            "text": "<p>Livraison gratuite<\/p><p>Commandes de plus de 100 $<\/p>"
           }
         },
         "icon_mWkFBX": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
-            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
+            "text": "<p>Achetez maintenant,<\/p><p>Payez plus tard<\/p>"
           }
         },
         "icon_whLn6R": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/derma-ftr.svg",
-            "text": "<p>Dermatologist<\/p><p>Reviewed<\/p>"
+            "text": "<p>Évalué par des<\/p><p>dermatologues<\/p>"
           }
         },
         "icon_yNR7xG": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/science-ftr.svg",
-            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
+            "text": "<p>Résultats prouvés,<\/p><p>Soutenus par la science<\/p>"
           }
         }
       },
@@ -933,8 +931,7 @@
       "custom_css": [
         ".featured_promotion {background-color: transparent !important;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "faq_inpriy": {
       "type": "faq",
@@ -942,64 +939,64 @@
         "object_x3Hjbc": {
           "type": "object",
           "settings": {
-            "heading": "How does tap water harm my skin?",
-            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:<\/p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.<\/li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.<\/li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.<\/li><\/ul>",
+            "heading": "Comment l’eau du robinet abîme-t-elle ma peau ?",
+            "text": "<p>La peau du visage est plus sensible que celle du reste du corps. Votre barrière cutanée agit comme un bouclier contre les menaces extérieures. Mais les substances présentes dans l’eau du robinet peuvent l’endommager, entraînant :<\/p><ul><li>Peau sèche et abîmée : L’eau du robinet peut éliminer les huiles naturelles de votre peau, la laissant sèche et endommagée.<\/li><li>Irritation cutanée : Elle peut aussi provoquer une irritation, rendant la peau sensible et rouge.<\/li><li>Vieillissement prématuré : Les produits chimiques dans l’eau du robinet peuvent accélérer le processus de vieillissement, causant rides et ridules.<\/li><\/ul>",
             "code": ""
           }
         },
         "object_gX847a": {
           "type": "object",
           "settings": {
-            "heading": "What does it filter in the water?",
-            "text": "<p>Q-urify water filter uses both physical and chemical filtration components to help remove known as skin irritants that make your tap water “hard” – like calcium, magnesium and chlorine.<\/p>",
+            "heading": "Que filtre-t-il dans l’eau ?",
+            "text": "<p>Le filtre à eau Q-urify utilise des composants de filtration physique et chimique pour aider à éliminer les irritants connus qui rendent votre eau du robinet « dure » – comme le calcium, le magnésium et le chlore.<\/p>",
             "code": ""
           }
         },
         "object_eqabLi": {
           "type": "object",
           "settings": {
-            "heading": "Will it fit my faucet?",
-            "text": "<p>It’s compatible with almost every circular removable aerator! Each Q-urify Water Filter kit comes with 8 adaptors to help fit different faucet sizes. Please note that it will NOT fit faucets that are square shaped, pull out, hand-held, spray-style, or faucets with a sensor.<\/p>",
+            "heading": "S’adaptera-t-il à mon robinet ?",
+            "text": "<p>Il est compatible avec presque tous les aérateurs circulaires amovibles ! Chaque kit de filtre à eau Q-urify est livré avec 8 adaptateurs pour s’adapter à différentes tailles de robinets. Veuillez noter qu’il NE convient PAS aux robinets de forme carrée, extensibles, portatifs, à jet ou équipés d’un capteur.<\/p>",
             "code": "<div class=\"faq_img_wrap\">\n                                        <img src=\"{{ 'qurify_faq_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <img src=\"{{ 'qurify_faq_2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <img src=\"{{ 'qurify_faq_3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <img src=\"{{ 'qurify_faq_4.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <img src=\"{{ 'qurify_faq_5.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <img src=\"{{ 'qurify_faq_6.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <img src=\"{{ 'qurify_faq_7.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/div>"
           }
         },
         "object_7mQT3Y": {
           "type": "object",
           "settings": {
-            "heading": "What skin types can benefit from Q-urify Water Filter?",
-            "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne.<\/p>",
+            "heading": "Quels types de peau peuvent bénéficier du filtre à eau Q-urify ?",
+            "text": "<p>Tous les types de peau ! Particulièrement utile pour ceux qui souffrent de peau sensible, de vieillissement prématuré, de peau sèche et d’acné.<\/p>",
             "code": ""
           }
         },
         "object_whc9NL": {
           "type": "object",
           "settings": {
-            "heading": "How often do I need to replace my filter?",
-            "text": "<p>With daily use, your Q-urify water filter needs to be replaced at least once every three months for your skin to look and feel its best. Once it gets past the 3 month mark, your filter starts to lose its efficacy. We wash our face everyday so make sure you are looking after your skin.<\/p>",
+            "heading": "À quelle fréquence dois-je remplacer mon filtre ?",
+            "text": "<p>Avec une utilisation quotidienne, votre filtre à eau Q-urify doit être remplacé au moins tous les trois mois pour que votre peau reste au top. Après 3 mois, son efficacité commence à diminuer. Nous lavons notre visage tous les jours, alors prenez soin de votre peau.<\/p>",
             "code": ""
           }
         },
         "object_6WVDd3": {
           "type": "object",
           "settings": {
-            "heading": "Where can I buy replacement filters?",
-            "text": "<p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer subscription plans for your convenience and ease.<\/p>",
+            "heading": "Où puis-je acheter des filtres de rechange ?",
+            "text": "<p>Les filtres de rechange peuvent être achetés sur notre site pour 3 mois d’eau pure. Nous proposons également des abonnements pour votre commodité et simplicité.<\/p>",
             "code": ""
           }
         },
         "object_bHKJKy": {
           "type": "object",
           "settings": {
-            "heading": "Can I turn OFF the filtered water?",
-            "text": "<p>Yes! The Q-urify Water Filter has the option of switching off filtered water. You can turn on and on the purified water by switching to this option on the right side.<\/p>",
+            "heading": "Puis-je désactiver l’eau filtrée ?",
+            "text": "<p>Oui ! Le filtre à eau Q-urify offre la possibilité de désactiver l’eau filtrée. Vous pouvez activer ou désactiver l’eau purifiée en basculant cette option sur le côté droit.<\/p>",
             "code": ""
           }
         },
         "object_TXdLjU": {
           "type": "object",
           "settings": {
-            "heading": "What’s the difference between ‘hard water’ and ‘soft water’?",
-            "text": "<p>Hard water is water that contains a high quantity of dissolved minerals (like calcium and magnesium). Where soft water has been treated, so that the only ion remaining is sodium. When rainwater falls, it is naturally soft. <\/p><p>However, as water makes its way through the ground and into our waterways, it picks up minerals like chalk, lime, calcium and magnesium and becomes hard water. Hard water is to blame for dishes with spots, dingy looking clothes, and residue and soap scums in bathrooms. Soap and cleansers are also less effective with hard water due to its reaction to the magnesium and calcium, which makes the lather not as rich and bubbly and leaves hair feeling sticky and dull.<\/p>",
+            "heading": "Quelle est la différence entre « eau dure » et « eau douce » ?",
+            "text": "<p>L’eau dure est une eau qui contient une grande quantité de minéraux dissous (comme le calcium et le magnésium). L’eau douce, quant à elle, a été traitée pour que le seul ion restant soit le sodium. Lorsque l’eau de pluie tombe, elle est naturellement douce.<\/p><p>Cependant, en traversant le sol et en rejoignant nos cours d’eau, elle capte des minéraux comme la craie, la chaux, le calcium et le magnésium, devenant ainsi une eau dure. L’eau dure est responsable des taches sur la vaisselle, des vêtements ternes et des résidus et écumes dans les salles de bain. Les savons et nettoyants sont également moins efficaces avec l’eau dure en raison de sa réaction avec le magnésium et le calcium, ce qui rend la mousse moins riche et laisse les cheveux collants et ternes.<\/p>",
             "code": ""
           }
         }
@@ -1019,10 +1016,10 @@
       ],
       "settings": {
         "classname": "bg_yellow",
-        "heading": "Have questions?",
-        "text": "<p>We have answers.<\/p>",
-        "button_label": "Show More Questions",
-        "button_hide_label": "Hide More Questions"
+        "heading": "Des questions ?",
+        "text": "<p>Nous avons les réponses.<\/p>",
+        "button_label": "Afficher plus de questions",
+        "button_hide_label": "Masquer les questions supplémentaires"
       }
     }
   },

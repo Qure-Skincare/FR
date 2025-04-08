@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_landing_pFmaRH": {
       "type": "header-landing-simple",
@@ -15,7 +15,7 @@
         "navigation_link_qLHgyD": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "CONTENT REQUIREMENTS",
+            "link_label": "EXIGENCES DE CONTENU",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs1.webp"
           }
@@ -23,7 +23,7 @@
         "navigation_link_DgYaFx": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "PRODUCT",
+            "link_label": "PRODUIT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs2.webp"
           }
@@ -31,7 +31,7 @@
         "navigation_link_3X4mrf": {
           "type": "navigation-link",
           "settings": {
-            "link_label": "INSPIRING CONTENT",
+            "link_label": "CONTENU INSPIRANT",
             "link_url": "#tabsAccordion",
             "image": "shopify://shop_images/header_cs3.webp"
           }
@@ -50,7 +50,7 @@
         "button_LUpm3B": {
           "type": "button",
           "settings": {
-            "button_label": "Learn more about All-In-One Face Serum",
+            "button_label": "En savoir plus sur le Sérum Visage Tout-en-Un",
             "button_url": "https://qureskincare.com/products/face-serum"
           }
         }
@@ -59,8 +59,8 @@
         "button_LUpm3B"
       ],
       "settings": {
-        "heading": "All-In-One Face Serum Creative Content Guide",
-        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the All-In-One Face Serum with our creative content guide. This brief will help you craft engaging content that showcases how the science-backed ingredients transform skincare routines for radiant, glowing skin.</p>",
+        "heading": "Guide de Contenu Créatif pour le Sérum Visage Tout-en-Un",
+        "text": "<p>Salut les passionnés de soins de la peau !</p><p>Prêts à faire passer votre contenu au niveau supérieur ?</p><p>Découvrez tout le potentiel du Sérum Visage Tout-en-Un avec notre guide de contenu créatif. Ce brief vous aidera à créer un contenu captivant qui met en valeur comment les ingrédients scientifiquement prouvés transforment les routines pour une peau éclatante et lumineuse.</p>",
         "wistia_id": "xy0i3qbm8p"
       }
     },
@@ -70,10 +70,10 @@
         "@media(max-width:767px) {.qure_founder_info {display: none; }}"
       ],
       "settings": {
-        "heading": "“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. It can really help simplify and consolidate steps!”",
-        "sub_heading": "<p>- <strong>Dr. Luke Maxfield, MD</strong>,Board certified dermatologist</p>",
+        "heading": "« Qure propose un sérum incroyable… avec du rétinol et du Bakuchiol, un duo complémentaire génial, des antioxydants puissants, de l’Argireline, de la vitamine C. Il simplifie et regroupe vraiment les étapes ! »",
+        "sub_heading": "<p>- <strong>Dr. Luke Maxfield, MD</strong>, Dermatologue certifié</p>",
         "image": "shopify://shop_images/dr.luke.webp",
-        "trust_des": "Trusted and recommended by world leading Dermatologists",
+        "trust_des": "Approuvé et recommandé par des dermatologues de renommée mondiale",
         "trusted_image_mob": "shopify://shop_images/dr.luke_mob.webp"
       }
     },
@@ -83,19 +83,19 @@
         "header_RA46tw": {
           "type": "header",
           "settings": {
-            "heading": "STEP 1",
-            "text": "Merge Qure into your creatives",
+            "heading": "ÉTAPE 1",
+            "text": "Intégrez Qure dans vos créations",
             "image": "shopify://shop_images/ac_step7.webp",
-            "button_label": "Content Requirements"
+            "button_label": "Exigences de Contenu"
           }
         },
         "description_mHnPFA": {
           "type": "description",
           "settings": {
             "classname": "faq",
-            "heading": "Key Messages",
+            "heading": "Messages Clés",
             "image": "shopify://shop_images/key_message.svg",
-            "content": "<p>Key Points to include in the messaging:</p>",
+            "content": "<p>Points clés à inclure dans le message :</p>",
             "wistia_id": ""
           }
         },
@@ -104,8 +104,8 @@
           "settings": {
             "show": true,
             "style": "default",
-            "heading": "Science-backed active ingredients",
-            "content": "<ul><li>Formulated with a unique blend of the world’s most trusted active ingredients that help brighten, plump, and smooth the look of your skin.</li></ul>",
+            "heading": "Ingrédients actifs scientifiquement prouvés",
+            "content": "<ul><li>Formulé avec un mélange unique des ingrédients actifs les plus reconnus au monde, qui aident à éclaircir, repulper et lisser l’apparence de votre peau.</li></ul>",
             "code": ""
           }
         },
@@ -114,8 +114,8 @@
           "settings": {
             "show": false,
             "style": "default",
-            "heading": "Treat multiple skin concerns",
-            "content": "<ul><li>Treat fine lines and wrinkles, dark spots and discoloration, dull and uneven skin tone in just one step.</li></ul>",
+            "heading": "Traiter plusieurs problèmes de peau",
+            "content": "<ul><li>Traite les rides et ridules, les taches brunes et la décoloration, le teint terne et irrégulier en une seule étape.</li></ul>",
             "code": ""
           }
         },
@@ -124,8 +124,8 @@
           "settings": {
             "show": false,
             "style": "default",
-            "heading": "All-In-One",
-            "content": "<ul><li>This one “pick-me-up” serum helps save money and time: no need for multi-layering or multi-step routines.</li></ul>",
+            "heading": "Tout-en-Un",
+            "content": "<ul><li>Ce sérum « coup de boost » unique permet d’économiser temps et argent : fini les routines multi-étapes ou superpositions.</li></ul>",
             "code": ""
           }
         },
@@ -133,9 +133,9 @@
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Creative Direction",
+            "heading": "Direction Créative",
             "image": "shopify://shop_images/direction.svg",
-            "content": "<ul><li>High-quality, bright lighting and high-resolution imagery/ videography to be supplied. No obvious filters.</li><li>Qure All-In-One Face Serum to be the feature of the post. The background must be clean and bright.</li><li>When using the product, please do not wear any makeup, or no visible/noticeable makeup.</li><li>In cover photos for video content always show yourself using the All-In-One Face Serum, unless otherwise agreed on with Qure’s team.</li></ul>",
+            "content": "<ul><li>Images/vidéos de haute qualité, bien éclairées et en haute résolution à fournir. Pas de filtres évidents.</li><li>Le Sérum Visage Tout-en-Un Qure doit être la star du contenu. L’arrière-plan doit être propre et lumineux.</li><li>Lors de l’utilisation du produit, ne portez pas de maquillage, ou un maquillage discret/non visible.</li><li>Dans les photos de couverture pour les vidéos, montrez-vous toujours en train d’utiliser le Sérum Visage Tout-en-Un, sauf accord contraire avec l’équipe Qure.</li></ul>",
             "wistia_id": ""
           }
         },
@@ -143,28 +143,28 @@
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Inclusion",
+            "heading": "Inclusions",
             "image": "shopify://shop_images/inclusion.svg",
-            "content": "<ul><li>Tag and mention @qureskincare #QureSkincare #FaceSerum #Skincare #Argireline #Retinol</li><li>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can’t be placed in BIO, include it in linktr.ee or similar.</li></ul>",
+            "content": "<ul><li>Taggez et mentionnez @qureskincare #QureSkincare #SérumVisage #SoinsPeau #Argireline #Rétinol</li><li>Incluez votre lien d’affiliation ou autres liens fournis par Qure dans les Stories Instagram et les légendes. Si le lien ne peut pas être mis en BIO, utilisez linktr.ee ou similaire.</li></ul>",
             "wistia_id": ""
           }
         },
         "header_LhpN6x": {
           "type": "header",
           "settings": {
-            "heading": "STEP 2",
-            "text": "Get to know All-In-One Face Serum",
+            "heading": "ÉTAPE 2",
+            "text": "Découvrez le Sérum Visage Tout-en-Un",
             "image": "shopify://shop_images/ac_step8.webp",
-            "button_label": "Product Information"
+            "button_label": "Informations sur le Produit"
           }
         },
         "description_BNpxL3": {
           "type": "description",
           "settings": {
             "classname": "",
-            "heading": "Usage Instructions",
+            "heading": "Instructions d’Utilisation",
             "image": "shopify://shop_images/usage_dir.svg",
-            "content": "<ul><li>After cleansing, apply 1-2 pumps onto the already cleansed face and neck.</li><li>Use every second night during the first two weeks of use whilst your skin builds tolerance.</li><li>Then use daily for best results.</li><li>PATCH TEST: Apply a small amount of the product on a discreet area of your skin, such as the inner forearm. Wait 24 hours before applying the serum to a larger area. Refrain from using the serum and consult a dermatologist if any adverse reactions occur, such as redness, irritation, or itching.</li></ul>",
+            "content": "<ul><li>Après le nettoyage, appliquez 1 à 2 pompes sur le visage et le cou déjà nettoyés.</li><li>Utilisez tous les deux soirs pendant les deux premières semaines pour habituer votre peau.</li><li>Ensuite, utilisez quotidiennement pour des résultats optimaux.</li><li>TEST PATCH : Appliquez une petite quantité sur une zone discrète, comme l’intérieur de l’avant-bras. Attendez 24 heures avant une application plus large. Évitez d’utiliser le sérum et consultez un dermatologue en cas de réaction indésirable (rougeurs, irritations, démangeaisons).</li></ul>",
             "wistia_id": ""
           }
         },
@@ -172,25 +172,25 @@
           "type": "description",
           "settings": {
             "classname": "ingredient_text",
-            "heading": "Ingredient Details",
+            "heading": "Détails des Ingrédients",
             "image": "shopify://shop_images/product_claims.svg",
-            "content": "<p><strong>Argireline Peptides</strong><br/>The most trusted anti-aging peptide in the world. Stimulates collagen, which aids in reducing fine lines and boosting moisture for a firmer, youthful-looking complexion!</p><p><strong>Bakuchiol</strong><br/>Get the benefits of retinol - in a more natural way! Bakuchiol helps to stimulate cell turnover to make your skin look smooth and firm.</p><p><strong>Retinol (Vitamin A)</strong><br/>Encourages new cells to the surface to help reduce the visibility of wrinkles and age spots, and smooth skin texture.</p><p><strong>Niacinamide</strong><br/>All-star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.</p><p><strong>Lactic & Mandelic acid (Gentle Exfoliators)</strong><br/>Gentle chemical exfoliants gobble up the top layer of dead cells which can reveal clearer, smoother skin.</p><p><strong>Ethyl Ascorbic Acid (Vitamin C)</strong><br/>Known for its brightening, wrinkle reduction, firming, benefits. It helps with fading hyperpigmentation to restore a more even skin tone and helps maintain smooth, supple skin.</p><p><strong>Ferulic Acid</strong><br/>Works to stop all the damage that comes from extrinsic aging. Helps reduce the formation of fine lines and wrinkles, dark spots.</p><p><strong>Actiwhite™</strong><br/>Work to visibly brighten and even skin tone for a more radiant complexion. Actiwhite™ helps reduce the appearance of dark spots and works to prevent discoloration (by inhibiting melanin) with continued use.</p><p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">See FAQs for more information here</a></p>",
+            "content": "<p><strong>Peptides Argireline</strong><br/>Le peptide anti-âge le plus reconnu au monde. Stimule le collagène, réduisant les ridules et boostant l’hydratation pour une peau plus ferme et jeune !</p><p><strong>Bakuchiol</strong><br/>Les bienfaits du rétinol, naturellement ! Le Bakuchiol favorise le renouvellement cellulaire pour une peau lisse et ferme.</p><p><strong>Rétinol (Vitamine A)</strong><br/>Pousse les nouvelles cellules à la surface pour atténuer rides, taches de vieillesse et lisser la texture.</p><p><strong>Niacinamide</strong><br/>Ingrédient star qui clarifie et unifie le teint, réduit les pores dilatés, l’acné et les rougeurs.</p><p><strong>Acides Lactique & Mandélique (Exfoliants doux)</strong><br/>Exfoliants chimiques doux qui éliminent la couche de cellules mortes pour une peau plus claire et lisse.</p><p><strong>Acide Éthyl Ascorbique (Vitamine C)</strong><br/>Réputé pour éclaircir, réduire les rides, raffermir. Atténue l’hyperpigmentation pour un teint uniforme et une peau souple.</p><p><strong>Acide férulique</strong><br/>Protège contre le vieillissement extrinsèque, réduisant rides et taches brunes.</p><p><strong>Actiwhite™</strong><br/>Éclaircit visiblement le teint pour plus d’éclat. Réduit les taches et prévient la décoloration (en inhibant la mélanine) avec une utilisation continue.</p><p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Voir la FAQ pour plus d’infos ici</a></p>",
             "wistia_id": ""
           }
         },
         "header_AwT6ji": {
           "type": "header",
           "settings": {
-            "heading": "STEP 3",
-            "text": "Get inspired by other content creators",
+            "heading": "ÉTAPE 3",
+            "text": "Inspirez-vous d’autres créateurs",
             "image": "shopify://shop_images/ac_step9.webp",
-            "button_label": "Inspiring Content"
+            "button_label": "Contenu Inspirant"
           }
         },
         "heading_YiyFGP": {
           "type": "heading",
           "settings": {
-            "heading": "Show how it works for you"
+            "heading": "Montrez comment ça marche pour vous"
           }
         },
         "video_4Jjjcm": {
@@ -224,7 +224,7 @@
         "heading_fUcJta": {
           "type": "heading",
           "settings": {
-            "heading": "Explain the science behind"
+            "heading": "Expliquez la science derrière"
           }
         },
         "video_H9fmrV": {
@@ -275,7 +275,7 @@
         "#target_block_desktop_2 .ac_desc_grid {grid-template-columns: 1fr 1fr; position: relative;}"
       ],
       "settings": {
-        "heading": "All you need to know before you start creating your amazing content"
+        "heading": "Tout ce que vous devez savoir avant de créer votre contenu incroyable"
       }
     }
   },

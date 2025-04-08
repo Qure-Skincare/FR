@@ -143,7 +143,7 @@
                                             </label>
                                         </a>
                                         
-                                        {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
+                                        {% comment %} {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
                                         {% assign divided_price = product.price | divided_by: 4 %}
                                         {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
                                         {% assign soldout_percentage = discount_percentage %}
@@ -183,7 +183,7 @@
                                                     <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
                                                 </div>
                                             </label>
-                                        </a>
+                                        </a> {% endcomment %}
                                     </div>
                                     <div class="tab_content content" id="month_3">
                                         <div class="plan_bundle_detail">
