@@ -7,6 +7,15 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT : Le contenu de ce fichier est généré automatiquement.
+ *
+ * Ce fichier peut être mis à jour par l’éditeur de thème de l’administration Shopify
+ * ou des systèmes associés. Veuillez faire preuve de prudence car toute modification
+ * apportée à ce fichier risque d’être écrasée.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -16,13 +25,13 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>97% customer satisfaction rate</p>"
+            "text": "<p>Taux de satisfaction client de 97 %</p>"
           }
         },
         "list_EVK9TV": {
           "type": "list",
           "settings": {
-            "text": "<ul><li><strong>FDA-cleared </strong>device that treats acne, fine lines, wrinkles and dark spots.</li><li><strong>Customizable</strong> treatment on 5 facial areas for <strong>your specific</strong> skin concerns.</li><li>Quick <strong>3 minute,</strong> wireless daily treatments with convenient hands-free operation.</li></ul>"
+            "text": "<ul><li>Appareil <strong>approuvé par la FDA</strong> qui traite l’acné, les ridules, les rides et les taches brunes.</li><li>Traitement <strong>personnalisable</strong> sur 5 zones du visage pour répondre <strong>spécifiquement</strong> à vos préoccupations cutanées.</li><li>Traitement quotidien rapide de <strong>3 minutes</strong>, sans fil, avec une utilisation pratique mains libres.</li></ul>"
           }
         },
         "before_and_after_KfYL7X": {
@@ -50,23 +59,23 @@
           "type": "timer",
           "disabled": true,
           "settings": {
-            "heading": "Save $50 on any LED device",
-            "text": "<p>Get <em><strong>$50 OFF</strong></em><strong> </strong>with code: <strong>GLOWON50</strong></p>",
+            "heading": "Économisez 50 $ sur tout appareil LED",
+            "text": "<p>Obtenez <em><strong>50 $ de réduction</strong></em> avec le code : <strong>GLOWON50</strong></p>",
             "timer": "2024-09-30T23:59:59"
           }
         },
         "list_reduced_yep6j9": {
           "type": "list_reduced",
           "settings": {
-            "text": "<ul><li><strong>Treats acne</strong>, fine lines, wrinkles, and dark spots</li><li>Adaptable to <strong>your unique skin concerns</strong></li><li><strong>Quick 3-minute</strong>, wireless, daily treatment</li><li><strong>FDA-cleared</strong></li></ul>"
+            "text": "<ul><li><strong>Traite l’acné</strong>, les ridules, les rides et les taches brunes</li><li>Adaptable à <strong>vos préoccupations cutanées uniques</strong></li><li>Traitement quotidien <strong>rapide de 3 minutes</strong>, sans fil</li><li><strong>Approuvé par la FDA</strong></li></ul>"
           }
         },
         "free_gift_EC9AgX": {
           "type": "free_gift",
           "disabled": true,
           "settings": {
-            "heading": "Boost your LED results.",
-            "text": "<p>Get a FREE All-In-One Face Serum ($79) with purchase</p>"
+            "heading": "Boostez vos résultats LED.",
+            "text": "<p>Recevez un sérum visage tout-en-un GRATUIT (79 $) avec votre achat</p>"
           }
         }
       },
@@ -80,19 +89,19 @@
         "free_gift_EC9AgX"
       ],
       "settings": {
-        "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
-        "heading_mobile": "Customizable LED Light Therapy Mask",
+        "heading": "Réparez et rajeunissez votre peau avec notre masque de thérapie lumineuse",
+        "heading_mobile": "Masque de thérapie lumineuse LED personnalisable",
         "product_images_limit": 5,
-        "product_button_label": "Product",
+        "product_button_label": "Produit",
         "before_after_images_limit": 2,
-        "before_after_button_label": "Before & After",
+        "before_after_button_label": "Avant & Après",
         "reserve": false,
-        "underbutton_text_left": "Dermatologist Reviewed",
-        "underbutton_text_right": "Free Shipping Over $100",
+        "underbutton_text_left": "Approuvé par des dermatologues",
+        "underbutton_text_right": "Livraison gratuite pour les commandes de plus de 100 $",
         "selected_design": "new",
-        "text_label_real_result_1": "Product",
-        "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Dermatologist"
+        "text_label_real_result_1": "Produit",
+        "text_label_real_result_2": "Résultats réels",
+        "text_label_real_result_3": "Dermatologue"
       }
     },
     "featuredin_yT6yRP": {
@@ -107,7 +116,7 @@
         "text_hjVp7i": {
           "type": "text",
           "settings": {
-            "text": "<p>“The professional grade is the perfect addition to any at-home skincare routine.”</p>"
+            "text": "<p>« La qualité professionnelle est l’ajout parfait à toute routine de soin à domicile. »</p>"
           }
         },
         "image_XrzjQ3": {
@@ -119,7 +128,7 @@
         "text_t9tnXK": {
           "type": "text",
           "settings": {
-            "text": "<p>\"Treatment time is only three minutes—among the fastest of all devices.\"</p>"
+            "text": "<p>« Le temps de traitement n’est que de trois minutes – parmi les plus rapides de tous les appareils. »</p>"
           }
         },
         "image_PmUxLt": {
@@ -131,7 +140,7 @@
         "text_bxTn4H": {
           "type": "text",
           "settings": {
-            "text": "<p>\"A multi-use LED mask with five different light setting options to plump smooth and rejuvenate all skin types.\"<br/>                                    </p>"
+            "text": "<p>« Un masque LED polyvalent avec cinq options de réglages lumineux pour repulper, lisser et rajeunir tous les types de peau. »<br/></p>"
           }
         },
         "image_hNLLqX": {
@@ -143,7 +152,7 @@
         "text_k6KEBE": {
           "type": "text",
           "settings": {
-            "text": "<p>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”<br/>                            </p>"
+            "text": "<p>« La combinaison de couleurs vous permet de personnaliser les lumières utilisées, maximisant ses bienfaits pour aider votre peau… »<br/></p>"
           }
         },
         "image_ebp8NW": {
@@ -155,7 +164,7 @@
         "text_Mnmb4P": {
           "type": "text",
           "settings": {
-            "text": "<p>“The Qure mask is the FIRST mask in the world that adapts to your skin!...There is an app that reminds you of the treatments too.”</p>"
+            "text": "<p>« Le masque Qure est le PREMIER masque au monde qui s’adapte à votre peau !... Il y a aussi une application qui vous rappelle les traitements. »</p>"
           }
         },
         "image_iy6yaC": {
@@ -167,7 +176,7 @@
         "text_EnENJU": {
           "type": "text",
           "settings": {
-            "text": "<p> “Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</p>"
+            "text": "<p>« Le Q-Rejuvalight Pro exploite la puissance des lumières, du bleu à l’infrarouge, pour répondre à presque toutes les préoccupations cutanées imaginables. »</p>"
           }
         }
       },
@@ -186,7 +195,7 @@
         "text_EnENJU"
       ],
       "settings": {
-        "heading": "FEATURED IN",
+        "heading": "MIS EN AVANT DANS",
         "slider_type": "five_slides"
       }
     },
@@ -196,67 +205,67 @@
         "slide_kaXzTH": {
           "type": "slide",
           "settings": {
-            "heading": "Fine Lines and Wrinkles",
+            "heading": "Ridules et rides",
             "product": "",
             "product_title": "",
             "product_url": "",
             "image_before": "shopify://shop_images/michelle_before_img.webp",
-            "text_before": "BEFORE",
+            "text_before": "AVANT",
             "image_after": "shopify://shop_images/michelle_after_img.webp",
-            "text_after": "AFTER 8 WEEKS",
+            "text_after": "APRÈS 8 SEMAINES",
             "image_country": "shopify://shop_images/america_f.webp",
             "client": "Michelle S.",
             "progress": 87,
-            "progress_text": "<p><strong>smoother </strong>facial wrinkles and fine lines</p>",
-            "text": "<ul><li>Reduces depth of wrinkles and <strong>smooths fine lines.</strong></li><li>Stimulates natural collagen for <strong>firmer, fuller skin.</strong></li><li>Calms redness and promotes a <strong>healthy, glowing complexion.</strong></li></ul>",
-            "feedback_title": "In a Clinical Trial...",
-            "feedback_text": "<p><strong>...8 out of 10 </strong>subjects reported a significant <strong>reduction in periorbital wrinkles</strong></p>",
-            "popup_link_text": "Read more about clinical Study",
-            "popup_content": "<p>87% experienced a reduction in the Fitzpatrick wrinkling severity score via a blinded clinical assessment. Improvements in skin appearance observed in LED-treated individuals suggested that LED at 660 nm is a safe and effective collagen-enhancement strategy. No adverse events or downtime were reported.</p><p><strong>About the clinical trial</strong></p><p>Clinical trial was conducted and investigated the potential of light-emitting diode (LED) treatments with a 660 nm. LED effects were then assessed in aged/photoaged individuals in a split-face single-blinded study.</p><p>Reference: SOURCE: J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038/jid.2009.186. Epub 2009 Jul 9</p>"
+            "progress_text": "<p>Ridules et rides faciales <strong>plus lisses</strong></p>",
+            "text": "<ul><li>Réduit la profondeur des rides et <strong>lisse les ridules.</strong></li><li>Stimule le collagène naturel pour une peau <strong>plus ferme et plus pleine.</strong></li><li>Apaise les rougeurs et favorise un <strong>teint sain et éclatant.</strong></li></ul>",
+            "feedback_title": "Dans un essai clinique...",
+            "feedback_text": "<p><strong>8 personnes sur 10</strong> ont signalé une réduction significative des <strong>rides périorbitaires</strong></p>",
+            "popup_link_text": "En savoir plus sur l’étude clinique",
+            "popup_content": "<p>87 % ont constaté une réduction du score de gravité des rides selon Fitzpatrick grâce à une évaluation clinique en aveugle. Les améliorations de l’apparence de la peau observées chez les individus traités par LED suggèrent que le LED à 660 nm est une stratégie sûre et efficace pour stimuler le collagène. Aucun effet indésirable ni temps d’arrêt n’a été signalé.</p><p><strong>À propos de l’essai clinique</strong></p><p>L’essai clinique a étudié le potentiel des traitements par diode électroluminescente (LED) à 660 nm. Les effets du LED ont été évalués chez des individus âgés/photovieillis dans une étude à visage divisé en aveugle.</p><p>Référence : SOURCE : J Invest Dermatol. 2009 Dec;129(12):2751-9. doi: 10.1038/jid.2009.186. Epub 2009 Jul 9</p>"
           }
         },
         "slide_Und9N8": {
           "type": "slide",
           "settings": {
-            "heading": "Dark Spots and Uneven Skin Tone",
+            "heading": "Taches brunes et teint irrégulier",
             "product": "",
             "product_title": "",
             "product_url": "",
             "image_before": "shopify://shop_images/LED_MASK_c63c2766-4fb5-4f74-bbde-3d2d41a09663.png",
-            "text_before": "BEFORE",
+            "text_before": "AVANT",
             "image_after": "shopify://shop_images/LED_MASK_AFTER.png",
-            "text_after": "AFTER 4 WEEKS",
+            "text_after": "APRÈS 4 SEMAINES",
             "image_country": "shopify://shop_images/america_f.webp",
             "client": "Teresa S.",
             "progress": 91,
-            "progress_text": "<p><strong>improved </strong>skin tone and enhanced smoothness</p>",
-            "text": "<ul><li><strong>Soothing, anti-inflammatory</strong> benefits reduces redness and inflammation.</li><li><strong>Fades appearance of</strong> <strong>dark spots</strong> for more radiant, even-toned skin.</li><li><strong>Heals</strong> and <strong>rejuvenates</strong> skin, helping with sun damage, hyperpigmentation.</li></ul>",
-            "feedback_title": "In a Clinical Trial...",
-            "feedback_text": "<p><strong>...10 out of 10</strong> subjects experienced <strong>improved skin complexion and collagen density</strong></p>",
-            "popup_link_text": "Read more about clinical Study",
-            "popup_content": "<p>Treatment of the periorbital region was reported more effective than the nasolabial region. At 12-week follow-up, 91% of subjects reported improved skin tone, and 82% reported enhanced smoothness of skin in the treatment area.</p><p><strong>About the clinical trial</strong></p><p>Thirteen subjects with sun damage signs followed a 5-week course of LED therapy with combined wavelengths of 633 and 830 nm and assessed the subject's perception of the treatment. Sun-damage reduction was assessed at 6, 9, and 12 weeks by clinical photography and patient satisfaction scores.</p><p><em>Reference</em><em><strong>:</strong></em><em> J Cosmet Dermatol. 2007 Sep;6(3):189-94. doi: 10.1111/j.1473-2165.2007.00329.x.</em></p>"
+            "progress_text": "<p>Teint et douceur de la peau <strong>améliorés</strong></p>",
+            "text": "<ul><li>Bienfaits <strong>apaisants et anti-inflammatoires</strong> réduisant les rougeurs et l’inflammation.</li><li><strong>Estompe l’apparence</strong> des <strong>taches brunes</strong> pour une peau plus éclatante et uniforme.</li><li><strong>Répare</strong> et <strong>rajeunit</strong> la peau, aidant à traiter les dommages solaires et l’hyperpigmentation.</li></ul>",
+            "feedback_title": "Dans un essai clinique...",
+            "feedback_text": "<p><strong>10 personnes sur 10</strong> ont constaté un <strong>teint amélioré et une densité de collagène accrue</strong></p>",
+            "popup_link_text": "En savoir plus sur l’étude clinique",
+            "popup_content": "<p>Le traitement de la région périorbitale a été signalé comme plus efficace que la région nasolabiale. À un suivi de 12 semaines, 91 % des sujets ont rapporté un teint amélioré, et 82 % ont signalé une douceur accrue dans la zone traitée.</p><p><strong>À propos de l’essai clinique</strong></p><p>Treize sujets présentant des signes de dommages solaires ont suivi un traitement LED de 5 semaines avec des longueurs d’onde combinées de 633 et 830 nm. La réduction des dommages solaires a été évaluée à 6, 9 et 12 semaines par photographie clinique et scores de satisfaction des patients.</p><p><em>Référence</em><em><strong> :</strong></em><em> J Cosmet Dermatol. 2007 Sep;6(3):189-94. doi: 10.1111/j.1473-2165.2007.00329.x.</em></p>"
           }
         },
         "slide_gNaBhW": {
           "type": "slide",
           "settings": {
-            "heading": "Acne and Breakouts",
+            "heading": "Acné et éruptions",
             "product": "",
             "product_title": "",
             "product_url": "",
             "image_before": "shopify://shop_images/bj_nardi_before_img.webp",
-            "text_before": "BEFORE",
+            "text_before": "AVANT",
             "image_after": "shopify://shop_images/bj_nardi_after_img.webp",
-            "text_after": "AFTER 4 WEEKS",
+            "text_after": "APRÈS 4 SEMAINES",
             "image_country": "shopify://shop_images/canada_f.svg",
             "client": "BJ Nardi.",
             "progress": 83,
-            "progress_text": "<p><strong>reduction </strong>of acne breakouts</p>",
-            "text": "<ul><li><strong>Reduces acne</strong> and <strong>prevents future breakouts</strong> by eliminating bacteria.</li><li>Heals and fades post breakout marks for more <strong>even tone skin.</strong></li><li>Rapidly <strong>reduces inflammation</strong> and regulates oil production.</li></ul>",
-            "feedback_title": "In a Clinical Trial...",
-            "feedback_text": "<p>...Acne count was significantly <strong>reduced by 46%</strong> after 4 weeks </p>",
-            "popup_link_text": "Read more about clinical Study",
-            "popup_content": "<p><strong>After 4 weeks: </strong>The mean lesion count reduction was significant at 46%</p><p><strong>After 12 weeks: </strong>The mean lesion count reduction was also significant at 81%.</p><p>Patient and dermatologist assessments were similar. Severe acne showed a marginally better response than mild acne. Side effects were minimal and transitory. Comedones did not respond as well as inflammatory lesions.</p><p><strong>About the clinical trial</strong></p><p>Clinical trial was conducted on twenty-four subjects, Fitzpatrick skin types II-V, with mild to severe symmetric facial acne vulgaris. Subjects were treated, alternating between 415 nm blue light and 633 nm red light from a light-emitting diode (LED)-based therapy system. Acne was assessed at baseline and at weeks 2, 4, 8 and 12.</p><p><em>Reference: J Cosmet Laser Ther. 2006 Jun;8(2):71-5. doi: 10.1080/14764170600735912.</em></p>"
+            "progress_text": "<p>Réduction <strong>des éruptions acnéiques</strong></p>",
+            "text": "<ul><li><strong>Réduit l’acné</strong> et <strong>prévient les futures éruptions</strong> en éliminant les bactéries.</li><li>Guérit et estompe les marques post-éruption pour un teint <strong>plus uniforme.</strong></li><li>Réduit rapidement l’<strong>inflammation</strong> et régule la production de sébum.</li></ul>",
+            "feedback_title": "Dans un essai clinique...",
+            "feedback_text": "<p>...Le nombre d’acnés a été significativement <strong>réduit de 46 %</strong> après 4 semaines</p>",
+            "popup_link_text": "En savoir plus sur l’étude clinique",
+            "popup_content": "<p><strong>Après 4 semaines :</strong> La réduction moyenne du nombre de lésions était significative à 46 %</p><p><strong>Après 12 semaines :</strong> La réduction moyenne du nombre de lésions était également significative à 81 %.</p><p>Les évaluations des patients et des dermatologues étaient similaires. L’acné sévère a montré une réponse légèrement meilleure que l’acné légère. Les effets secondaires étaient minimes et transitoires. Les comédons n’ont pas répondu aussi bien que les lésions inflammatoires.</p><p><strong>À propos de l’essai clinique</strong></p><p>L’essai clinique a été mené sur vingt-quatre sujets, types de peau Fitzpatrick II-V, avec une acné vulgaire faciale symétrique légère à sévère. Les sujets ont été traités, alternant entre la lumière bleue de 415 nm et la lumière rouge de 633 nm d’un système de thérapie par LED. L’acné a été évaluée au départ et aux semaines 2, 4, 8 et 12.</p><p><em>Référence : J Cosmet Laser Ther. 2006 Jun;8(2):71-5. doi: 10.1080/14764170600735912.</em></p>"
           }
         }
       },
@@ -281,15 +290,15 @@
             "image": "shopify://shop_images/trusted_2.jpg",
             "video": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg",
             "title": "Dr Shah, MD",
-            "des": "Board certified dermatologist"
+            "des": "Dermatologue certifié"
           }
         },
         "text_content_zQrNN6": {
           "type": "text_content",
           "settings": {
             "trust_icon": "shopify://shop_images/verified_design.svg",
-            "trust_des": "Trusted and recommended by world leading Dermatologists",
-            "title": "\"The best LED mask <strong>on the market in my opinion at this time, that being said you do need to </strong>use this consistently to see results…\"",
+            "trust_des": "Approuvé et recommandé par des dermatologues de renommée mondiale",
+            "title": "« Le meilleur masque LED <strong>sur le marché à mon avis à ce jour, cela dit, il faut </strong>l’utiliser régulièrement pour voir des résultats… »",
             "title_clr": "#000000",
             "title_strong_clr": "#797d7c"
           }
@@ -316,8 +325,8 @@
             "youtube_link": "https://www.youtube.com/watch?v=_w8yWCPeijg",
             "wistia_id": "",
             "badge_txt": "",
-            "title": "Qure has a fully customized mask which has 5 clinical-grade wavelength for anti-ageing, hyperpigmentation and acne and app makes it very easy to customize and control...",
-            "client_details": "<strong>Dr Prem,</strong>   Board Certified Dermatologist"
+            "title": "Qure propose un masque entièrement personnalisé avec 5 longueurs d’onde de qualité clinique pour l’anti-âge, l’hyperpigmentation et l’acné, et l’application facilite grandement la personnalisation et le contrôle...",
+            "client_details": "<strong>Dr Prem,</strong> Dermatologue certifié"
           }
         },
         "testimonial_d3pmRz": {
@@ -329,8 +338,8 @@
             "youtube_link": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
             "wistia_id": "",
             "badge_txt": "",
-            "title": "Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles",
-            "client_details": "<strong>Dr Greeney</strong>, Certified Dermatologist"
+            "title": "Le traitement anti-âge de Qure pénètre profondément dans votre peau pour stimuler le collagène et fait une grande différence dans la texture de la peau, réduisant les ridules et les rides",
+            "client_details": "<strong>Dr Greeney,</strong> Dermatologue certifié"
           }
         },
         "testimonial_D3CC69": {
@@ -342,8 +351,8 @@
             "youtube_link": "https://www.youtube.com/watch?v=AeksxRPZyrA",
             "wistia_id": "",
             "badge_txt": "",
-            "title": "This is one of my faves from @qureskincare. It’s a high quality mask and personalizable",
-            "client_details": "<strong>Dr Maxfield,</strong> Board Certified Dermatologist"
+            "title": "C’est l’un de mes préférés chez @qureskincare. C’est un masque de haute qualité et personnalisable",
+            "client_details": "<strong>Dr Maxfield,</strong> Dermatologue certifié"
           }
         },
         "testimonial_FayfUe": {
@@ -355,8 +364,8 @@
             "youtube_link": "",
             "wistia_id": "",
             "badge_txt": "",
-            "title": "I like this one because it allows you to customize your treatment... This is a great skin care investment",
-            "client_details": "<strong>Dr Natasha Henry, </strong>Medical Doctor"
+            "title": "J’aime celui-ci car il vous permet de personnaliser votre traitement... C’est un excellent investissement pour les soins de la peau",
+            "client_details": "<strong>Dr Natasha Henry,</strong> Médecin"
           }
         },
         "testimonial_PKTtDU": {
@@ -368,8 +377,8 @@
             "youtube_link": "",
             "wistia_id": "wistia_async_yhzax4egvh",
             "badge_txt": "",
-            "title": "Qure’s LED mask combines red lights and blue lights, meaning it can benefit EVERYONE",
-            "client_details": "<strong>Dr Sarah Too,</strong>  Medical Doctor"
+            "title": "Le masque LED de Qure combine les lumières rouges et bleues, ce qui signifie qu’il peut bénéficier à TOUS",
+            "client_details": "<strong>Dr Sarah Too,</strong> Médecin"
           }
         },
         "testimonial_epJ3rN": {
@@ -381,8 +390,8 @@
             "youtube_link": "",
             "wistia_id": "wistia_async_gpf4liwnyn",
             "badge_txt": "",
-            "title": "It's the only LED mask on the market that pairs with an app and is customizable",
-            "client_details": "<strong>Dr Zeitany,</strong> Board Certified Dermatologist"
+            "title": "C’est le seul masque LED sur le marché qui se connecte à une application et est personnalisable",
+            "client_details": "<strong>Dr Zeitany,</strong> Dermatologue certifié"
           }
         },
         "testimonial_PjwcFL": {
@@ -394,8 +403,8 @@
             "youtube_link": "",
             "wistia_id": "",
             "badge_txt": "",
-            "title": "I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.",
-            "client_details": "<strong>Dr Hunter, </strong>NHS & Aesthetics Doctor"
+            "title": "J’utilise ce masque avec les réglages anti-éruptions, ce qui a été fantastique pour éclaircir mon teint en seulement deux semaines.",
+            "client_details": "<strong>Dr Hunter,</strong> Médecin NHS et esthétique"
           }
         },
         "testimonial_GfkxXA": {
@@ -406,9 +415,9 @@
             "video_link": "",
             "youtube_link": "https://youtu.be/ZMGm5PmWzF0?t=649",
             "wistia_id": "",
-            "badge_txt": "Subscriber/Views/Followers",
-            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
-            "client_details": "<strong>Dr Alexis Stephens</strong>,  Board-Certified Dermatologist"
+            "badge_txt": "Abonnés/Vues/Suiveurs",
+            "title": "Vous pouvez obtenir un traitement clinique à domicile en toute sécurité et commodité... Il est particulièrement bénéfique pour les peaux riches en mélanine",
+            "client_details": "<strong>Dr Alexis Stephens,</strong> Dermatologue certifié"
           }
         }
       },
@@ -441,28 +450,28 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 $</p>"
           }
         },
         "icon_E9efAW": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Achetez maintenant,</p><p>Payez plus tard</p>"
           }
         },
         "icon_dHBPYp": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/derma-ftr.svg",
-            "text": "<p>Dermatologist</p><p>Reviewed & Approved</p>"
+            "text": "<p>Approuvé</p><p>par des dermatologues</p>"
           }
         },
         "icon_yPyPhx": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/science-ftr.svg",
-            "text": "<p>Proven Results,</p><p>Backed by science</p>"
+            "text": "<p>Résultats prouvés,</p><p>Soutenus par la science</p>"
           }
         }
       },
@@ -483,10 +492,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_teresa.webp",
-            "heading": "IT REALLY WORKS!!",
-            "text": "<p>“I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.\"</p>",
+            "heading": "ÇA MARCHE VRAIMENT !!",
+            "text": "<p>« J’étais très sceptique quand mon mari m’a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J’ai essayé de nombreux sérums pour mes taches solaires, mais rien n’a fonctionné jusqu’à ce que j’utilise ce masque. Ça vaut vraiment l’investissement. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Teresa S.",
             "code": ""
           }
@@ -495,10 +504,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/Sophie_Richards_Desktop.png",
-            "heading": "Amazing!",
-            "text": "<p><em>Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.</em></p>",
+            "heading": "Incroyable !",
+            "text": "<p><em>Ça a eu un impact énorme sur mon acné. J’ai encore des éruptions, mais elles disparaissent beaucoup plus vite. Ça a pris peut-être 2 jours pour commencer à agir. Les photos montrent une différence d’environ 3 semaines.</em></p>",
             "image_country": "shopify://shop_images/New_zealand_image.png",
-            "text_country": "New Zealand",
+            "text_country": "Nouvelle-Zélande",
             "client": "Sophie R.",
             "code": ""
           }
@@ -507,10 +516,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_tiffany.webp",
-            "heading": "Renewed Skin!",
-            "text": "<p>\"My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!\"</p>",
+            "heading": "Peau renouvelée !",
+            "text": "<p>« Mon masque Qure est incroyable ! En tant que personne qui lutte contre l’acné et la rosacée, votre masque de thérapie lumineuse a tellement amélioré ma peau que je me sens maintenant à l’aise sans maquillage. Je suis très satisfaite de ce produit ! »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Tiffany L.",
             "code": ""
           }
@@ -519,10 +528,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/Terri_P_results.png",
-            "heading": "Wish I had this technology years ago!",
-            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old! Photos below are after 6 weeks.”</p>",
+            "heading": "J’aurais aimé avoir cette technologie il y a des années !",
+            "text": "<p>« Après deux semaines, j’ai commencé à voir des résultats et après six semaines, les changements sur ma peau étaient spectaculaires. J’utilise Qure depuis six mois maintenant et j’adore les compliments ! J’ai acheté des masques pour mes filles pour Noël afin qu’elles puissent commencer plus jeunes… J’aurais aimé que cette technologie soit disponible quand j’étais plus jeune. J’ai 76 ans ! Les photos ci-dessous datent d’après 6 semaines. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Terri P.",
             "code": ""
           }
@@ -531,8 +540,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_bj_nardi.webp",
-            "heading": "Completely qured my acne",
-            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my<br/>face. I’ve been using my Qure for 1 month now and it has completely<br/>qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "heading": "A complètement guéri mon acné",
+            "text": "<p>« C’est la première fois en DEUX ANS que je n’ai pas d’acné active sur mon visage. J’utilise mon Qure depuis 1 mois maintenant et il a complètement guéri mon acné. C’est parti ET ça guérit toutes mes cicatrices et marques. J’étais littéralement au bord du suicide à cause de ma peau horrible. Cet appareil M’A SAUVÉ LA VIE !!! »</p>",
             "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
             "client": "BJ Nardi",
@@ -543,10 +552,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_michelle.webp",
-            "heading": "Zero Maskne for 8 weeks",
-            "text": "<p>“I thought it was only working on my breakouts, zero Maskne for 8 weeks now, BUT thank goodness for Before and After because even I was shocked! My followers have noticed a difference in my skin the past few weeks and now I understand what they’re seeing. The difference isn’t huge but enough that it postpones surgery which I can’t afford right now.”</p>",
+            "heading": "Zéro acné de masque depuis 8 semaines",
+            "text": "<p>« Je pensais qu’il ne fonctionnait que sur mes éruptions, zéro acné de masque depuis 8 semaines maintenant, MAIS heureusement pour les avant/après car même moi j’étais choquée ! Mes abonnés ont remarqué une différence dans ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme mais suffisante pour repousser une chirurgie que je ne peux pas me permettre pour l’instant. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Michelle S.",
             "code": ""
           }
@@ -555,10 +564,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_anton.webp",
-            "heading": "Can’t go a day without it",
-            "text": "<p>\"I started getting the usual teenage acne. It got very bad. I tried everything, I tried diets, I went completely vegan. I tried all sorts ofskincare, expensive and cheap. Straight away I noticed results with Qure, after the first week I had noactive breakouts anymore.</p><p>People ask me now how have I got my skin to be hydrated, acne-free,looking bright with no redness. I'm so reliant on the Qure mask now. Idon't think I can go a day without using it.\"</p>",
+            "heading": "Je ne peux pas passer une journée sans",
+            "text": "<p>« J’ai commencé à avoir de l’acné typique des adolescents. C’est devenu très grave. J’ai tout essayé, des régimes, je suis devenu complètement végan. J’ai essayé toutes sortes de soins, chers et bon marché. Dès le départ, j’ai remarqué des résultats avec Qure, après la première semaine, je n’avais plus d’éruptions actives. Les gens me demandent maintenant comment j’ai rendu ma peau hydratée, sans acné, lumineuse sans rougeurs. Je suis tellement dépendant du masque Qure maintenant. Je ne pense pas pouvoir passer une journée sans l’utiliser. »</p>",
             "image_country": "shopify://shop_images/australia_f.webp",
-            "text_country": "Australia",
+            "text_country": "Australie",
             "client": "Anton M.",
             "code": ""
           }
@@ -567,10 +576,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_june.webp",
-            "heading": "Amazing results!",
-            "text": "<p>“Amazing! I never expected this miracle. I’ve had red blotches above my lips for years and they are vastly improved after using the mask daily<br/>for only 6 weeks. I bought it hoping for better skin texture and less wrinkles. It has improved those, but having the redness gone is what I’m<br/>most excited about.”</p>",
+            "heading": "Résultats incroyables !",
+            "text": "<p>« Incroyable ! Je ne m’attendais jamais à ce miracle. J’avais des taches rouges au-dessus des lèvres depuis des années et elles se sont grandement améliorées après avoir utilisé le masque quotidiennement pendant seulement 6 semaines. Je l’ai acheté en espérant une meilleure texture de peau et moins de rides. Cela a amélioré ces aspects, mais voir les rougeurs disparaître est ce qui m’enthousiasme le plus. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "June T.",
             "code": ""
           }
@@ -580,10 +589,10 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/results_jess.webp",
-            "heading": "So much smoother",
-            "text": "<p>“After few weeks of using it everyday I already can see a difference in my skin - so much more smooth, less red and itchy, pores are smaller and I have less congestion bumps.”</p>",
+            "heading": "Tellement plus lisse",
+            "text": "<p>« Après quelques semaines d’utilisation quotidienne, je vois déjà une différence dans ma peau – tellement plus lisse, moins rouge et irritée, les pores sont plus petits et j’ai moins de bosses de congestion. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Jess",
             "code": ""
           }
@@ -592,8 +601,8 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/results_john.webp",
-            "heading": "Healthier-looking glow",
-            "text": "<p>“My skin feels a lot more clear, considerably less oily, and all round a healthier-looking glow. My breakout scars had even been reduced!”</p>",
+            "heading": "Éclat d’apparence plus saine",
+            "text": "<p>« Ma peau semble beaucoup plus nette, nettement moins grasse, et globalement un éclat d’apparence plus saine. Même mes cicatrices d’éruptions ont été réduites ! »</p>",
             "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
             "client": "John P.",
@@ -604,10 +613,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/Jessica_k_led_mask_b_a.png",
-            "heading": "Thrilled with the results!",
-            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. I haven’t had a single breakout since I started using the mask, plus I notice a definite smoothing of fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\"</p>",
+            "heading": "Ravie des résultats !",
+            "text": "<p>« J’ai 45 ans, donc je lutte contre les signes de l’âge, mais je dois encore gérer des poussées d’acné. Je n’ai eu aucune éruption depuis que j’ai commencé à utiliser le masque, et je remarque un lissage définitif des ridules sur mes joues et autour de mes yeux. Je recommande ce produit à tout le monde. Vraiment un bon investissement. »</p>",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
-            "text_country": "US",
+            "text_country": "États-Unis",
             "client": "Jessica K.",
             "code": ""
           }
@@ -616,10 +625,10 @@
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/Amiee_LED.png",
-            "heading": "Highly recommend!",
-            "text": "<p>“I have only been using it for a month. Prior to using this my skin was flaky & dry. My skin barrier has been severely damaged for the past 2 years where almost anything I use burns, but in 1 month this mask has lightened my hyperpigmentation considerably as well as helped to give a bit of a boost to the area under my eye (a delightful surprise). My friends have mentioned that my skin is definitely glowing. Highly recommend!”</p>",
+            "heading": "Je recommande vivement !",
+            "text": "<p>« Je l’utilise depuis seulement un mois. Avant cela, ma peau était squameuse et sèche. Ma barrière cutanée a été gravement endommagée ces deux dernières années, presque tout ce que j’utilisais me brûlait, mais en un mois, ce masque a considérablement éclairci mon hyperpigmentation et donné un petit coup de boost sous mes yeux (une agréable surprise). Mes amis ont remarqué que ma peau rayonne vraiment. Je recommande vivement ! »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
-            "text_country": "United States",
+            "text_country": "États-Unis",
             "client": "Aimee",
             "code": ""
           }
@@ -641,10 +650,10 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes",
-        "heading_reduced": "Results you see with your own eyes",
-        "text_verified_customer": "Verified customer",
-        "text_reviewed": "Reviewed in"
+        "heading": "Des résultats que vous verrez de vos propres yeux",
+        "heading_reduced": "Des résultats visibles avec vos propres yeux",
+        "text_verified_customer": "Client vérifié",
+        "text_reviewed": "Évalué dans"
       }
     },
     "two_column_box_xCB6mV": {
@@ -660,7 +669,7 @@
         "content_rgPkBx": {
           "type": "content",
           "settings": {
-            "text": "<h2>All the skin firming, smoothing, clearing benefits with just 1 device. </h2><p>A portable, <strong>FDA-cleared</strong>, at-home LED light therapy treatment that is <strong>scientifically proven</strong> to change your skin for the better. That makes you feel better, too.</p><p>Q-Rejuvalight Pro utilizes utilizes a combination of 5 market-leading light wavelengths to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach.</p><p></p>",
+            "text": "<h2>Tous les bienfaits raffermissants, lissants et purifiants avec un seul appareil.</h2><p>Un traitement LED portable, <strong>approuvé par la FDA</strong>, à domicile, <strong>prouvé scientifiquement</strong> pour améliorer votre peau. Et vous faire sentir mieux aussi.</p><p>Le Q-Rejuvalight Pro utilise une combinaison de 5 longueurs d’onde lumineuses leaders sur le marché pour traiter une multitude de préoccupations cutanées en profondeur, là où même les meilleurs crèmes et sérums ne peuvent atteindre.</p><p></p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -668,7 +677,7 @@
         "content_reduced_PFHmVD": {
           "type": "content_reduced",
           "settings": {
-            "text": "<h2>Our LED light therapy mask is unlike any other</h2><p>One device, all the skin-firming, smoothing, and clearing benefits<br/></p><ul><li>Portable, <strong>FDA-cleared</strong>, at-home LED light therapy treatment</li><li><strong>Scientifically proven</strong> to change your skin for the better</li><li><strong>Three treatment options</strong>: anti-breakouts, anti-aging, and custom treatment zones</li></ul>",
+            "text": "<h2>Notre masque de thérapie lumineuse LED est unique en son genre</h2><p>Un appareil, tous les bienfaits raffermissants, lissants et purifiants<br/></p><ul><li>Traitement LED portable, <strong>approuvé par la FDA</strong>, à domicile</li><li><strong>Prouvé scientifiquement</strong> pour améliorer votre peau</li><li><strong>Trois options de traitement</strong> : anti-éruptions, anti-âge et zones de traitement personnalisées</li></ul>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -692,35 +701,35 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/led_icon_b1.svg",
-            "text": "<p>Reduce fine lines and wrinkles</p>"
+            "text": "<p>Réduit les ridules et les rides</p>"
           }
         },
         "icon_j9GPM4": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/led_icon_b2.svg",
-            "text": "<p>Clear and prevent acne breakouts</p>"
+            "text": "<p>Élimine et prévient les éruptions acnéiques</p>"
           }
         },
         "icon_Vb9YQm": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/led_icon_b3.svg",
-            "text": "<p>Even skin tone and fade dark spots</p>"
+            "text": "<p>Uniformise le teint et estompe les taches brunes</p>"
           }
         },
         "icon_LggUJf": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/led_icon_b4.svg",
-            "text": "<p>Calm redness and reduce inflammation</p>"
+            "text": "<p>Apaise les rougeurs et réduit l’inflammation</p>"
           }
         },
         "icon_kix3Pp": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/led_icon_b5.svg",
-            "text": "<p>Lift and firm sagging skin</p>"
+            "text": "<p>Relève et raffermit la peau relâchée</p>"
           }
         },
         "icon_MFAAy9": {
@@ -728,7 +737,7 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/led_icon_b6.svg",
-            "text": "<p>Promote a healthy, glowing complexion</p>"
+            "text": "<p>Favorise un teint sain et éclatant</p>"
           }
         }
       },
@@ -759,7 +768,7 @@
         "content_WQADAK": {
           "type": "content",
           "settings": {
-            "text": "<h2>Clinical-grade LED, personalized to your skin.</h2><h3>See transformative results in less than 12 weeks. [image_mobile]</h3><p>Safe, <strong>clinically proven</strong> wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for <strong>immediate and long lasting results</strong>.</p><p>[details]</p>",
+            "text": "<h2>LED de qualité clinique, personnalisé pour votre peau.</h2><h3>Voyez des résultats transformateurs en moins de 12 semaines. [image_mobile]</h3><p>Des longueurs d’onde lumineuses sûres et <strong>prouvées cliniquement</strong> pénètrent les couches de la peau à différentes profondeurs pour déclencher des réactions cellulaires naturelles qui traitent les préoccupations cutanées de l’intérieur, pour des <strong>résultats immédiats et durables</strong>.</p><p>[details]</p>",
             "column_content": 0,
             "classname": "section_header text-start pb-0"
           }
@@ -767,21 +776,21 @@
         "details_dcD8rL": {
           "type": "details",
           "settings": {
-            "heading": "Technical specifications",
-            "text": "<p><strong>TREATMENT TIME:</strong> 3 minutes</p><p><strong>CERTIFICATES:</strong> FDA, TGA, CE, UKCA</p><p><strong>OPERATION:</strong> Wireless, hands-free</p><p><strong>WAVELENGTH:</strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>CHARGING TIME:</strong> 2 hours</p><p><strong>LEDs:</strong> 160 dual core</p>"
+            "heading": "Spécifications techniques",
+            "text": "<p><strong>TEMPS DE TRAITEMENT :</strong> 3 minutes</p><p><strong>CERTIFICATS :</strong> FDA, TGA, CE, UKCA</p><p><strong>FONCTIONNEMENT :</strong> Sans fil, mains libres</p><p><strong>LONGUEURS D’ONDE :</strong> 415 nm (Bleu), 605 nm (Ambre), 630 nm (Rouge), 660 nm (Rouge profond), 880 nm (Infrarouge)</p><p><strong>TEMPS DE CHARGE :</strong> 2 heures</p><p><strong>LED :</strong> 160 double cœur</p>"
           }
         },
         "details_3XnYk4": {
           "type": "details",
           "settings": {
-            "heading": "Treatment details",
-            "text": "<p><strong>USE:</strong> Use daily after cleansing, before topical skincare</p><p><strong>ANTI-AGING TREATMENT:</strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>ANTI-BREAKOUT TREATMENT: </strong>415nm (Blue), 630nm (Red)</p><p><strong>CUSTOMIZED TREATMENT:</strong> Choose treatment modes on 5 different facial areas</p><p><strong>SKIN TYPE:</strong> Most suitable for Fitzpatrick Skin Types I-IV</p>"
+            "heading": "Détails du traitement",
+            "text": "<p><strong>UTILISATION :</strong> Utiliser quotidiennement après le nettoyage, avant les soins topiques</p><p><strong>TRAITEMENT ANTI-ÂGE :</strong> 415 nm (Bleu), 605 nm (Ambre), 630 nm (Rouge), 660 nm (Rouge profond), 880 nm (Infrarouge)</p><p><strong>TRAITEMENT ANTI-ÉRUPTIONS :</strong> 415 nm (Bleu), 630 nm (Rouge)</p><p><strong>TRAITEMENT PERSONNALISÉ :</strong> Choisir les modes de traitement sur 5 zones faciales différentes</p><p><strong>TYPE DE PEAU :</strong> Plus adapté aux types de peau Fitzpatrick I-IV</p>"
           }
         },
         "content_reduced_EApyeE": {
           "type": "content_reduced",
           "settings": {
-            "text": "<h2>Personalized clinical-grade LED</h2><h3>See transformative results in less than 12 weeks. <br/>[image_mobile]</h3><p>Safe, clinically proven light wavelengths <strong>penetrate various skin layers to trigger natural cellular regeneration processes</strong>, treating the skin from the inside out for immediate, long-lasting results. </p><p>[details]</p>",
+            "text": "<h2>LED de qualité clinique personnalisé</h2><h3>Voyez des résultats transformateurs en moins de 12 semaines.<br/>[image_mobile]</h3><p>Des longueurs d’onde lumineuses sûres et cliniquement prouvées <strong>pénètrent différentes couches de la peau pour déclencher des processus de régénération cellulaire naturels</strong>, traitant la peau de l’intérieur pour des résultats immédiats et durables.</p><p>[details]</p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -806,7 +815,7 @@
         "content_TwGCn9": {
           "type": "content",
           "settings": {
-            "text": "<h2>Qure Mobile App</h2><h3>The only FDA-cleared LED light therapy mask with an app.</h3><p>[image_mobile] </p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between three treatment modes, “Anti-Breakout”, “Anti-Aging” or custom treatment zones. <strong>Select a treatment mode on five different facial areas to treat and target what your skin needs today.</strong> So you can help prevent breakouts on your chin while smoothing the appearance of “crow’s feet” at the same time.  </p><p>You’ll never miss a treatment with Qure mobile app <strong>planner</strong> and phone reminders.</p>",
+            "text": "<h2>Application mobile Qure</h2><h3>Le seul masque de thérapie lumineuse LED approuvé par la FDA avec une application.</h3><p>[image_mobile]</p><p>Votre peau est unique, votre traitement devrait l’être aussi.</p><p>Choisissez entre trois modes de traitement : « Anti-Éruptions », « Anti-Âge » ou zones de traitement personnalisées. <strong>Sélectionnez un mode de traitement sur cinq zones faciales différentes pour traiter et cibler ce dont votre peau a besoin aujourd’hui.</strong> Ainsi, vous pouvez prévenir les éruptions sur votre menton tout en lissant l’apparence des « pattes d’oie » en même temps.</p><p>Vous ne manquerez jamais un traitement grâce au <strong>planificateur</strong> et aux rappels téléphoniques de l’application mobile Qure.</p>",
             "column_content": 0,
             "classname": "section_header text-start pb-0"
           }
@@ -821,7 +830,7 @@
         "content_reduced_aRr6Ap": {
           "type": "content_reduced",
           "settings": {
-            "text": "<h2>Qure Mobile App</h2><h3>Get the best results by personalizing your treatment and setting daily reminders</h3><p>[image_mobile] </p><p><strong>Use Qure’s LED Light Therapy Mask app to:</strong></p><ul><li>Target and treat what your skin needs today</li><li>Select from our range of treatments across five different facial areas</li><li>Set daily reminders so you’ll never miss a treatment</li></ul>",
+            "text": "<h2>Application mobile Qure</h2><h3>Obtenez les meilleurs résultats en personnalisant votre traitement et en définissant des rappels quotidiens</h3><p>[image_mobile]</p><p><strong>Utilisez l’application du masque de thérapie lumineuse LED Qure pour :</strong></p><ul><li>Cibler et traiter ce dont votre peau a besoin aujourd’hui</li><li>Choisir parmi notre gamme de traitements sur cinq zones faciales différentes</li><li>Définir des rappels quotidiens pour ne jamais manquer un traitement</li></ul>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-3"
           }
@@ -895,7 +904,7 @@
         "video_f9Laey"
       ],
       "settings": {
-        "heading": "Confident skin starts here. Just ask the internet.",
+        "heading": "Une peau confiante commence ici. Demandez à Internet.",
         "classname": "section videosQure",
         "btn": "",
         "btn_url": ""
@@ -904,7 +913,7 @@
     "liquid_xkpFwR": {
       "type": "liquid",
       "settings": {
-        "code": "<div class=\"affect_skin section affect_howToUse\">\n            <div class=\"dsn-right-container\">\n                <div class=\"section_header ms-0 d-block d-md-none\">\n                    <h2 class=\"title-lg paddingB\">How to use</h2>\n                </div>\n                <div class=\"video_with_slide justify-content-end\">\n                    <div class=\"actVideo_block\">\n                        <div class=\"ctmVideo__block\">\n                            <div class=\"player\">\n                                <div class=\"wistia_responsive_padding\"\n                                    style=\"position:relative;\">\n                                    <div class=\"wistia_responsive_wrapper\"\n                                        style=\"height:100%;left:0;position:absolute;top:0;width:100%;\">\n                                        <div class=\"wistia_embed wistia_async_jlz3itwzrb seo=false videoFoam=true\"\n                                            style=\"height:100%;position:relative;width:100%\">\n                                            <div class=\"wistia_swatch\"\n                                                style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\">\n                                                <img src=\"https://fast.wistia.com/embed/medias/jlz3itwzrb/swatch\"\n                                                    style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\"\n                                                    alt=\"\" aria-hidden=\"true\"\n                                                    onload=\"this.parentNode.style.opacity=1;\" />\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"affect_skinContent\">\n                        <div class=\"section_header ms-0 d-none d-md-block\">\n                            <h2 class=\"title-lg paddingB\">How to use</h2>\n                        </div>\n                        <div class=\"get_compliment_wrap\">\n                            <div class=\"tab-content\" id=\"pills-tabContent1\">\n                                <div class=\"tab-pane fade show active\" id=\"pills-specs\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-specs-tab\">\n                                    <div class=\"gc_img_wrap\">\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp4.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp5.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp6.webp\">\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-quick\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-profile-tab\">\n                                    <div class=\"gc_img_wrap\">\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp5.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp6.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp4.webp\">\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-customize\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-customize-tab\">\n                                    <div class=\"gc_img_wrap\">\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp6.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp4.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp5.webp\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <ul class=\"nav nav-pills\" id=\"pills-tab-skin\" role=\"tablist\">\n                                <li class=\"nav-item\" role=\"presentation\">\n                                    <button class=\"nav-link active\" id=\"pills-specs-tab\" data-bs-toggle=\"pill\"\n                                        data-bs-target=\"#pills-specs\" type=\"button\" role=\"tab\"\n                                        aria-controls=\"pills-specs\" aria-selected=\"true\">Prepare</button>\n                                </li>\n                                <li class=\"nav-item\" role=\"presentation\">\n                                    <button class=\"nav-link\" id=\"pills-quick-tab\" data-bs-toggle=\"pill\"\n                                        data-bs-target=\"#pills-quick\" type=\"button\" role=\"tab\"\n                                        aria-controls=\"pills-quick\" aria-selected=\"false\">Treatment</button>\n                                </li>\n                                <li class=\"nav-item\" role=\"presentation\">\n                                    <button class=\"nav-link\" id=\"pills-customize-tab\" data-bs-toggle=\"pill\"\n                                        data-bs-target=\"#pills-customize\" type=\"button\" role=\"tab\"\n                                        aria-controls=\"pills-customize\" aria-selected=\"false\">Aftercare</button>\n                                </li>\n                            </ul>\n                            <div class=\"tab-content\" id=\"pills-tabContent2\">\n                                <div class=\"tab-pane fade show active\" id=\"pills-specs\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-specs-tab\">\n                                    <p>Wash and dry your face prior to use, removing all makeup.</p>\n                                    <p>Then place and position the Q-Rejuvalight Pro on your face and adjust the strap so it fits comfortably.</p>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-quick\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-quick-tab\">\n                                    <p>Hold button for 2-3 seconds to turn device ON. Press button once to activate the Anti-Aging treatment mode, \n                                        press again to activate the Anti-Breakout treatment mode or download the Qure Skincare app to customize your \n                                        treatment by selecting which treatment (Anti-Aging or Anti-Breakout) you want on 5 facial areas.</p>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-customize\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-customize-tab\">\n                                    <p>The treatment will automatically turn OFF after 3 minutes.</p>\n                                    <p>Remove the Q-Rejuvalight Pro from face and clean with wipe. </p>\n                                    <p>Then follow Qure All-In-One Face Serum or your regular skin care routine.</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>"
+        "code": "<div class=\"affect_skin section affect_howToUse\">\n            <div class=\"dsn-right-container\">\n                <div class=\"section_header ms-0 d-block d-md-none\">\n                    <h2 class=\"title-lg paddingB\">Comment utiliser</h2>\n                </div>\n                <div class=\"video_with_slide justify-content-end\">\n                    <div class=\"actVideo_block\">\n                        <div class=\"ctmVideo__block\">\n                            <div class=\"player\">\n                                <div class=\"wistia_responsive_padding\"\n                                    style=\"position:relative;\">\n                                    <div class=\"wistia_responsive_wrapper\"\n                                        style=\"height:100%;left:0;position:absolute;top:0;width:100%;\">\n                                        <div class=\"wistia_embed wistia_async_jlz3itwzrb seo=false videoFoam=true\"\n                                            style=\"height:100%;position:relative;width:100%\">\n                                            <div class=\"wistia_swatch\"\n                                                style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\">\n                                                <img src=\"https://fast.wistia.com/embed/medias/jlz3itwzrb/swatch\"\n                                                    style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\"\n                                                    alt=\"\" aria-hidden=\"true\"\n                                                    onload=\"this.parentNode.style.opacity=1;\" />\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"affect_skinContent\">\n                        <div class=\"section_header ms-0 d-none d-md-block\">\n                            <h2 class=\"title-lg paddingB\">Comment utiliser</h2>\n                        </div>\n                        <div class=\"get_compliment_wrap\">\n                            <div class=\"tab-content\" id=\"pills-tabContent1\">\n                                <div class=\"tab-pane fade show active\" id=\"pills-specs\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-specs-tab\">\n                                    <div class=\"gc_img_wrap\">\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp4.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp5.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp6.webp\">\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-quick\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-profile-tab\">\n                                    <div class=\"gc_img_wrap\">\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp5.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp6.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp4.webp\">\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-customize\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-customize-tab\">\n                                    <div class=\"gc_img_wrap\">\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp6.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp4.webp\">\n                                        </div>\n                                        <div class=\"gc_img\">\n                                            <img src=\"https://qureskincaredns.com/new/assets/howUse_pdp5.webp\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <ul class=\"nav nav-pills\" id=\"pills-tab-skin\" role=\"tablist\">\n                                <li class=\"nav-item\" role=\"presentation\">\n                                    <button class=\"nav-link active\" id=\"pills-specs-tab\" data-bs-toggle=\"pill\"\n                                        data-bs-target=\"#pills-specs\" type=\"button\" role=\"tab\"\n                                        aria-controls=\"pills-specs\" aria-selected=\"true\">Préparer</button>\n                                </li>\n                                <li class=\"nav-item\" role=\"presentation\">\n                                    <button class=\"nav-link\" id=\"pills-quick-tab\" data-bs-toggle=\"pill\"\n                                        data-bs-target=\"#pills-quick\" type=\"button\" role=\"tab\"\n                                        aria-controls=\"pills-quick\" aria-selected=\"false\">Traitement</button>\n                                </li>\n                                <li class=\"nav-item\" role=\"presentation\">\n                                    <button class=\"nav-link\" id=\"pills-customize-tab\" data-bs-toggle=\"pill\"\n                                        data-bs-target=\"#pills-customize\" type=\"button\" role=\"tab\"\n                                        aria-controls=\"pills-customize\" aria-selected=\"false\">Après-soin</button>\n                                </li>\n                            </ul>\n                            <div class=\"tab-content\" id=\"pills-tabContent2\">\n                                <div class=\"tab-pane fade show active\" id=\"pills-specs\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-specs-tab\">\n                                    <p>Lavez et séchez votre visage avant utilisation, en enlevant tout maquillage.</p>\n                                    <p>Ensuite, placez et positionnez le Q-Rejuvalight Pro sur votre visage et ajustez la sangle pour qu’il soit confortable.</p>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-quick\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-quick-tab\">\n                                    <p>Maintenez le bouton enfoncé pendant 2 à 3 secondes pour allumer l’appareil. Appuyez une fois sur le bouton pour activer le mode de traitement anti-âge, appuyez à nouveau pour activer le mode anti-éruptions ou téléchargez l’application Qure Skincare pour personnaliser votre traitement en sélectionnant le traitement (Anti-Âge ou Anti-Éruptions) que vous souhaitez sur 5 zones faciales.</p>\n                                </div>\n                                <div class=\"tab-pane fade\" id=\"pills-customize\" role=\"tabpanel\"\n                                    aria-labelledby=\"pills-customize-tab\">\n                                    <p>Le traitement s’éteindra automatiquement après 3 minutes.</p>\n                                    <p>Retirez le Q-Rejuvalight Pro de votre visage et nettoyez-le avec une lingette.</p>\n                                    <p>Ensuite, appliquez le sérum visage tout-en-un Qure ou suivez votre routine de soin habituelle.</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>"
       }
     },
     "easy_guide_E8KQFR": {
@@ -914,21 +923,21 @@
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/LED_mask_app_step1.png",
-            "text": "<p>Download the Qure Skincare app and follow the instructions to set up your profile. Then turn on your Bluetooth and pair your Q-Rejuvalight Pro Facewear with the app.</p>"
+            "text": "<p>Téléchargez l’application Qure Skincare et suivez les instructions pour configurer votre profil. Ensuite, activez votre Bluetooth et associez votre Q-Rejuvalight Pro Facewear à l’application.</p>"
           }
         },
         "object_nF4p39": {
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/led_quick_step_2.webp",
-            "text": "<p>Wash and dry your face prior to use, removing all makeup. Then place and position the Q-Rejuvalight Pro on your face and adjust the strap so it fits comfortably. Hold button for 2-3 seconds to turn device ON</p>"
+            "text": "<p>Lavez et séchez votre visage avant utilisation, en enlevant tout maquillage. Ensuite, placez et positionnez le Q-Rejuvalight Pro sur votre visage et ajustez la sangle pour qu’il soit confortable. Maintenez le bouton enfoncé pendant 2 à 3 secondes pour allumer l’appareil.</p>"
           }
         },
         "object_LqkmQ4": {
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/LED_mask_app_step3.png",
-            "text": "<p>Open the Qure Skincare app and customize your treatment by selecting which treatment (Anti-Aging or Anti-Breakout) you want on 5 facial areas. Once programmed, then press start.</p>"
+            "text": "<p>Ouvrez l’application Qure Skincare et personnalisez votre traitement en sélectionnant le traitement (Anti-Âge ou Anti-Éruptions) que vous souhaitez sur 5 zones faciales. Une fois programmé, appuyez sur démarrer.</p>"
           }
         },
         "object_dnNYjT": {
