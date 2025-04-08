@@ -1130,23 +1130,23 @@
             "or_txt": "ou"
           }
         },
-        "serum_BEc6Lf": {
+                "serum_BEc6Lf": {
           "type": "Serum",
           "settings": {
             "background": "bg-grey",
             "pd_img": "shopify://shop_images/serum4x.png",
             "name": "",
-            "serum_type": "Fine Lines & Wrinkles",
-            "benefit1": "Reduces the look of  fine lines & wrinkles",
+            "serum_type": "Ridules et rides",
+            "benefit1": "Réduit l’apparence des ridules et rides",
             "icon1": "shopify://shop_images/unique_plump_fine.svg",
-            "benefit2": "Helps soothe  redness",
+            "benefit2": "Aide à apaiser les rougeurs",
             "icon2": "shopify://shop_images/unique_soothes_5240f732-2b27-4ebf-ba29-be729b08ac71.svg",
-            "benefit3": "Boosts  hydration",
+            "benefit3": "Stimule l’hydratation",
             "icon3": "shopify://shop_images/unique_hydrates_drop_b01213be-21ee-4f0a-a64e-8f4bafa5e86d.svg",
-            "title1": "What can it do for your skin",
-            "drop_txt1": "<p><strong>Ultra hydration.</strong> Hydrates to help plump skin, reducing the look of fine lines and wrinkles, reduce redness, and supports the skin barrier for firmer-feeling, supple looking skin.</p><p><strong>Skin Concerns:</strong> Designed for dull looking skin with wrinkles, fine lines, dehydration, dryness and redness.</p>",
-            "title2": "All Ingredients",
-            "drop_txt2": "<p><strong>Beta Glucan:</strong> A tall glass of water for your skin. Boosts skin barrier, smooths skin, antioxidant.</p><p><strong>Niacinamide:</strong> Superstar ingredient that helps with most skin concerns from soothing to brightening and clarifying, and reducing fine lines and wrinkles.</p><p><strong>Copper Peptide GHK-Cu</strong>: known for its powerful anti-aging properties. This switch boosts collagen production and skin healing and gives the serum its distinctive blue hue. </p><p><strong>Sodium Hyaluronate: </strong>Hydrating power to lock in moisture more effectively and plump the skin for a firmer, fresher complexion.</p><p><strong>All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>",
+            "title1": "Que peut-il faire pour votre peau",
+            "drop_txt1": "<p><strong>Ultra-hydratation.</strong> Hydrate pour aider à repulper la peau, réduisant l’apparence des ridules et des rides, diminuant les rougeurs et renforçant la barrière cutanée pour une peau d’apparence plus ferme et souple.</p><p><strong>Problèmes de peau :</strong> Conçu pour les peaux ternes avec rides, ridules, déshydratation, sécheresse et rougeurs.</p>",
+            "title2": "Tous les ingrédients",
+            "drop_txt2": "<p><strong>Bêta-glucane :</strong> Un grand verre d’eau pour votre peau. Renforce la barrière cutanée, lisse la peau, antioxydant.</p><p><strong>Niacinamide :</strong> Ingrédient superstar qui aide à résoudre la plupart des problèmes de peau, de l’apaisement à l’éclaircissement et à la clarification, en réduisant les ridules et les rides.</p><p><strong>Peptide de cuivre GHK-Cu :</strong> Reconnu pour ses puissantes propriétés anti-âge. Cet élément stimule la production de collagène et la guérison de la peau, et donne au sérum sa teinte bleue distinctive.</p><p><strong>Hyaluronate de sodium :</strong> Pouvoir hydratant pour retenir l’humidité plus efficacement et repulper la peau pour un teint plus ferme et frais.</p><p><strong>Tous les ingrédients :</strong><br/>Eau de fleur de Rosa Damascena, Propanediol, Glycérine, Panthénol, Niacinamide, Extrait de feuille/tige de Myrothamnus Flabellifolia, Eau, Butylène glycol, Hydroxyacétophénone, Tripeptide-1 de cuivre, Bêta-glucane, Extrait de Chrysanthellum Indicum, Ethylhexylglycérine, Hyaluronate de sodium, Allantoïne, Gomme de xanthane.</p><p>Veuillez noter que, en raison d’innovations et de modifications des réglementations, les listes d’ingrédients fournies ici peuvent légèrement différer de celles sur nos emballages et sites de distributeurs.</p>",
             "title3": "",
             "drop_txt3": "",
             "review": "",
@@ -1161,9 +1161,9 @@
         "serum_BEc6Lf"
       ],
       "settings": {
-        "heading": "Science-backed Micro-Infusion serums",
-        "subheading": "<p><strong>Choose the exact serum to use in your Micro-Infusion</strong> treatment, or get both and mix them together to experience a complete set of benefits that <strong>addresses your specific skin concerns.</strong></p>",
-        "bottom_txt": "Can't decide?",
+        "heading": "Sérums de micro-infusion validés par la science",
+        "subheading": "<p><strong>Choisissez le sérum exact à utiliser dans votre traitement de micro-infusion</strong>, ou prenez les deux et mélangez-les pour profiter d’un ensemble complet d’avantages qui <strong>répondent à vos préoccupations cutanées spécifiques.</strong></p>",
+        "bottom_txt": "Vous ne pouvez pas décider ?",
         "desk_img": "shopify://shop_images/Group_2160_ffbda153-73a3-44cb-a304-27c046e928fc.png",
         "mob_img": "shopify://shop_images/Group_mobile_2159.png"
       }
@@ -1181,112 +1181,112 @@
         "object_WNxKBg": {
           "type": "object",
           "settings": {
-            "heading": "When will I see results?",
-            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll notice a radiance boost, smaller pores, more hydrated and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive! This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin  glowing long-term.</p><h2></h2>",
+            "heading": "Quand verrai-je des résultats ?",
+            "text": "<p>Le traitement de micro-infusion est un soin booster efficace, et vous remarquerez un éclat de radiance, des pores plus petits, une peau plus hydratée et un teint frais et sain dès le lendemain ou deux jours après.</p><p>Plus vous effectuez de traitements, plus les bienfaits pour la peau s’accumulent avec le temps ! Ce soin rapide et facile à domicile est parfait à réaliser un ou deux jours avant un grand événement, lorsque vous avez besoin de booster rapidement votre teint.</p><p>N’oubliez pas de maintenir votre routine de soin quotidienne pour amplifier l’efficacité des résultats de la micro-infusion et garder une peau éclatante à long terme.</p><h2></h2>",
             "code": ""
           }
         },
         "object_6XgKtW": {
           "type": "object",
           "settings": {
-            "heading": "Is it painful? Does it hurt?",
-            "text": "<p>You get to experience minimal discomfort and maximum results with Qure's Micro-Infusion System! Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>",
+            "heading": "Est-ce douloureux ?",
+            "text": "<p>Avec le système de micro-infusion de Qure, vous ressentez un inconfort minime pour des résultats maximums ! Bien que les aiguilles soient plus longues que celles de la plupart des systèmes de micro-aiguilletage à domicile (ce qui le rend plus efficace), les aiguilles ultra-fines sont plus minces qu’un cheveu humain, ce qui signifie que vous ressentirez peu ou pas de douleur pendant le traitement.</p><p>Au début du traitement, vous pourriez ressentir une légère sensation ou un picotement lorsque les aiguilles entrent en contact avec la peau, mais vous vous y habituerez rapidement.</p>",
             "code": ""
           }
         },
         "object_WNKprC": {
           "type": "object",
           "settings": {
-            "heading": "Can you use it around the eyes and on the neck?",
-            "text": "<p>Yes, you can micro-infuse around the eye area to help smooth crows feet. Just ensure to apply a very gentle pressure and only do 1 pass. Monitor your skin accordingly as everyone’s skin is different!</p><p>Performing Micro-Infusion on the neck can help improve the appearance of fine lines, and rejuvenate skin. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and youthfulness of the skin.</p>",
+            "heading": "Peut-on l’utiliser autour des yeux et sur le cou ?",
+            "text": "<p>Oui, vous pouvez utiliser la micro-infusion autour des yeux pour aider à lisser les pattes d’oie. Assurez-vous simplement d’appliquer une pression très légère et de ne faire qu’un seul passage. Surveillez votre peau en conséquence car chaque peau est différente !</p><p>Effectuer une micro-infusion sur le cou peut aider à améliorer l’apparence des ridules et rajeunir la peau. Cela peut cibler des problèmes comme les plis du cou, les lignes horizontales et les préoccupations liées à l’âge pour améliorer la texture, le tonus et la jeunesse de la peau.</p>",
             "code": ""
           }
         },
         "object_eNwFNH": {
           "type": "object",
           "settings": {
-            "heading": "How often can I do the treatment?",
-            "text": "<p>We recommend a Micro-Infusion treatment every 2 weeks for the best results!</p>",
+            "heading": "À quelle fréquence puis-je faire le traitement ?",
+            "text": "<p>Nous recommandons un traitement de micro-infusion toutes les 2 semaines pour les meilleurs résultats !</p>",
             "code": ""
           }
         },
         "object_AemyD4": {
           "type": "object",
           "settings": {
-            "heading": "When is the best time to perform a Micro-Infusion treatment?",
-            "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after the treatment. For more information on post treatment care, <a href=\"https://www.qureskincare.com/pages/microinfusion-safety-guide\">visit our safety guide.</a></p>",
+            "heading": "Quel est le meilleur moment pour effectuer un traitement de micro-infusion ?",
+            "text": "<p>Nous recommandons de faire le traitement le soir avant de vous coucher. Évitez le soleil et le maquillage pendant 24 heures après le traitement. Pour plus d’informations sur les soins post-traitement, <a href=\"https://www.qureskincare.com/pages/microinfusion-safety-guide\">consultez notre guide de sécurité.</a></p>",
             "code": ""
           }
         },
         "object_CTEVqW": {
           "type": "object",
           "settings": {
-            "heading": "How many treatments do I get out of one Micro-Infusion device?",
-            "text": "<p>Each needle head is to be used one time per treatment, and disposed of after each treatment. This minimizes the risk of infection and unnecessary damage to the skin. Use 1 full serum ampoule per treatment.</p>",
+            "heading": "Combien de traitements puis-je obtenir avec un seul appareil de micro-infusion ?",
+            "text": "<p>Chaque tête d’aiguille doit être utilisée une seule fois par traitement et jetée après. Cela minimise le risque d’infection et de dommages inutiles à la peau. Utilisez une ampoule complète de sérum par traitement.</p>",
             "code": ""
           }
         },
         "object_UFGfFB": {
           "type": "object",
           "settings": {
-            "heading": "Can I use any serum?",
-            "text": "<p>Please keep in mind that not all serums are suitable for Micro-Infusion. Some may cause irritation and should be avoided! We have developed our potent serum ampoules that are perfect for Qure’s micro infusion system. They are formulated to have low risk of irritation and with no fragrance.</p>",
+            "heading": "Puis-je utiliser n’importe quel sérum ?",
+            "text": "<p>Gardez à l’esprit que tous les sérums ne conviennent pas à la micro-infusion. Certains peuvent causer des irritations et doivent être évités ! Nous avons développé nos ampoules de sérum puissantes, parfaites pour le système de micro-infusion de Qure. Elles sont formulées pour présenter un faible risque d’irritation et sans parfum.</p>",
             "code": ""
           }
         },
         "object_tCEdpR": {
           "type": "object",
           "settings": {
-            "heading": "What is the length of the needles?",
-            "text": "<p>Qure’s Micro-Infusion system needle heads are 0.5mm length for “epidermal-needling” which is designed to enhance skin-care ingredient absorption and skin texture.</p>",
+            "heading": "Quelle est la longueur des aiguilles ?",
+            "text": "<p>Les têtes d’aiguilles du système de micro-infusion de Qure mesurent 0,5 mm de longueur pour un « aiguilletage épidermique » conçu pour améliorer l’absorption des ingrédients de soin et la texture de la peau.</p>",
             "code": ""
           }
         },
         "object_Gf8DdA": {
           "type": "object",
           "settings": {
-            "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>The needles of the Micro-Infusion device and the stamping action triggers the body’s natural healing process and in turn boosts the production of collage, making your skin look firmer and fine lines look softer.</p><p>The serum booster that you choose to infuse during your Micro-Infusion will determine the major benefits of your treatment. Very fine needles infuse micro-droplets of concentrated serum at a specific depth into the dermis (top layer) of your skin precisely where they are needed to accelerate absorption of active ingredients that target specific skin concerns.</p><p>You can switch up your treatments and even mix the two serums together!</p><p>A few more benefits:</p><ul><li>More even skin tone and texture</li><li>Glowing, fresh complexion</li><li>Softer fine lines</li><li>Firmer, rejuvenated skin</li></ul>",
+            "heading": "Quels sont les avantages de la micro-infusion ?",
+            "text": "<p>Les aiguilles de l’appareil de micro-infusion et l’action de tamponnage déclenchent le processus de guérison naturel du corps et stimulent la production de collagène, rendant votre peau plus ferme et les ridules plus douces.</p><p>Le sérum booster que vous choisissez d’infuser pendant votre micro-infusion déterminera les principaux avantages de votre traitement. Des aiguilles très fines infusent des micro-gouttelettes de sérum concentré à une profondeur spécifique dans le derme (couche supérieure) de votre peau, précisément là où elles sont nécessaires pour accélérer l’absorption des ingrédients actifs ciblant des préoccupations cutanées spécifiques.</p><p>Vous pouvez alterner vos traitements et même mélanger les deux sérums !</p><p>Quelques avantages supplémentaires :</p><ul><li>Teint et texture plus uniformes</li><li>Teint éclatant et frais</li><li>Ridules adoucies</li><li>Peau plus ferme et rajeunie</li></ul>",
             "code": ""
           }
         },
         "object_6HMPfm": {
           "type": "object",
           "settings": {
-            "heading": "Are there any side effects?",
-            "text": "<p>Everyone’s skin is different. You may experience a bit of skin redness for the first few hours after treatment. However, this should be minimal and disappear quickly.</p><p>We recommend consulting with your dermatologist or doctor before use if you suffer from any skin condition. A patch test on an area of your skin that isn't too exposed prior to treatment is also recommended, to have a better understanding of how your skin will react and the downtime you should expect.</p><h2></h2>",
+            "heading": "Y a-t-il des effets secondaires ?",
+            "text": "<p>Chaque peau est différente. Vous pourriez ressentir une légère rougeur pendant les premières heures après le traitement. Cependant, cela devrait être minime et disparaître rapidement.</p><p>Nous recommandons de consulter votre dermatologue ou médecin avant utilisation si vous souffrez d’une condition cutanée. Un test sur une petite zone de peau peu exposée avant le traitement est également conseillé pour mieux comprendre comment votre peau réagira et le temps d’arrêt à prévoir.</p><h2></h2>",
             "code": ""
           }
         },
         "object_47WrBh": {
           "type": "object",
           "settings": {
-            "heading": "What’s the difference between home micro-needling rolling and micro-infusion?",
-            "text": "<p>Micro-needling focuses on stimulating your body's own collagen by creating micro-injuries. But it doesn’t deliver any ingredients directly into your skin.</p><p>With microinfusion, you not only reap the benefits of micro-needling, but also deliver active ingredient solutions to target your specific skin concerns - This makes it work quicker and more effectively.</p>",
+            "heading": "Quelle est la différence entre le micro-aiguilletage à domicile avec rouleau et la micro-infusion ?",
+            "text": "<p>Le micro-aiguilletage se concentre sur la stimulation du collagène de votre corps en créant des micro-blessures. Mais il ne délivre aucun ingrédient directement dans votre peau.</p><p>Avec la micro-infusion, vous profitez non seulement des avantages du micro-aiguilletage, mais vous délivrez également des solutions d’ingrédients actifs pour cibler vos préoccupations cutanées spécifiques – ce qui le rend plus rapide et plus efficace.</p>",
             "code": ""
           }
         },
         "object_TtFbyk": {
           "type": "object",
           "settings": {
-            "heading": "Is there any aftercare that I should follow post treatment?",
-            "text": "<p>After you’ve infused your skin with all that skin boosting serum, try to keep the skin clean for 24 hours and follow these post treatment guidelines:</p><ul><li>Users may experience minor redness and irritation after the procedure but should quickly subside. Skin may experience mild swelling, peeling or flaking. You can minimize these effects by keeping the skin moisturized, which will reduce shedding and alleviate tightness.</li><li>Skip makeup for as long as you can, but at minimum, at least 24 hours.</li><li>No exercising or strenuous activity for the first 24 hours post-treatment. Sweating and gym environments are harmful, rife with bacteria, and may cause adverse reactions.</li><li>Keep in mind, anything you put on your skin after using Qure Microinfusion will absorb more easily, so it’s important to keep the skin clean and use products that don’t have harsh ingredients (no acids!).</li><li>Avoid touching your face, especially with dirty hands that haven’t been sanitized.</li><li>Avoid swimming, saunas and steam rooms for at least 24 hours post-treatment.</li><li>Avoid applying skincare products containing fragrances, active ingredients or acids such as Alpha Hydroxy Acids, Beta Hydroxy Acid, Retinol (Vitamin A), Vitamin C or anything perceived as ‘active’ skincare including scrubs or toners for at least 2-3 days post-treatment, as it may cause irritation.</li><li>Avoid exfoliating products for 2-3 days after treatment because they can be abrasive on skin when it is in that kind of condition.</li><li>Avoid direct sun exposure immediately after treatment. Apply a high protection sunscreen when going outdoors, and avoid prolonged sun exposure. Use good quality non-comedogenic sunscreen if going in the sun.</li></ul><p>By the next day, you should be free to resume your normal activities, skincare routine, and any makeup you want to apply—but you may not even need it. Just ensure you monitor your skin’s reaction.</p>",
+            "heading": "Y a-t-il des soins à suivre après le traitement ?",
+            "text": "<p>Après avoir infusé votre peau avec ce sérum booster, essayez de garder la peau propre pendant 24 heures et suivez ces directives post-traitement :</p><ul><li>Les utilisateurs peuvent ressentir une légère rougeur et irritation après la procédure, mais cela devrait rapidement s’atténuer. La peau peut présenter un léger gonflement, desquamation ou écaillage. Vous pouvez minimiser ces effets en gardant la peau hydratée, ce qui réduira la desquamation et soulagera la sensation de tiraillement.</li><li>Évitez le maquillage aussi longtemps que possible, mais au minimum 24 heures.</li><li>Pas d’exercice ou d’activité intense pendant les 24 premières heures après le traitement. La transpiration et les environnements de gym sont nocifs, pleins de bactéries, et peuvent causer des réactions indésirables.</li><li>Gardez à l’esprit que tout ce que vous mettez sur votre peau après avoir utilisé la micro-infusion Qure sera plus facilement absorbé, il est donc important de garder la peau propre et d’utiliser des produits sans ingrédients agressifs (pas d’acides !).</li><li>Évitez de toucher votre visage, surtout avec des mains sales non désinfectées.</li><li>Évitez la natation, les saunas et les hammams pendant au moins 24 heures après le traitement.</li><li>Évitez d’appliquer des produits de soin contenant des parfums, des ingrédients actifs ou des acides tels que les acides alpha-hydroxylés, bêta-hydroxylés, le rétinol (vitamine A), la vitamine C ou tout produit perçu comme ‘actif’, y compris les gommages ou toniques pendant au moins 2 à 3 jours après le traitement, car ils peuvent causer des irritations.</li><li>Évitez les produits exfoliants pendant 2 à 3 jours après le traitement car ils peuvent être abrasifs sur la peau dans cet état.</li><li>Évitez l’exposition directe au soleil immédiatement après le traitement. Appliquez un écran solaire haute protection lorsque vous sortez, et évitez une exposition prolongée au soleil. Utilisez un écran solaire non comédogène de bonne qualité si vous allez au soleil.</li></ul><p>Le lendemain, vous devriez pouvoir reprendre vos activités normales, votre routine de soin et tout maquillage que vous souhaitez appliquer – mais vous n’en aurez peut-être même pas besoin. Assurez-vous simplement de surveiller la réaction de votre peau.</p>",
             "code": ""
           }
         },
         "object_hKQ7GW": {
           "type": "object",
           "settings": {
-            "heading": "How do I clean the device?",
-            "text": "<p>Once you’ve finished stamping your way to brighter and plumper skin, follow the below cleaning instructions:</p><ul><li>Twist off the needle head with the cap attached and safely dispose.</li><li>Wash the chamber out with water and gentle cleanser.</li><li>Let the device air dry completely, on a clean surface, before packing away.</li><li>Open a brand new needle head and attach the needle head onto the device. Ensure hands are clean and don’t open the cap of the needle head.</li></ul>",
+            "heading": "Comment nettoyer l’appareil ?",
+            "text": "<p>Une fois que vous avez fini de tamponner pour obtenir une peau plus lumineuse et repulpée, suivez les instructions de nettoyage ci-dessous :</p><ul><li>Dévissez la tête d’aiguille avec le capuchon attaché et jetez-la en toute sécurité.</li><li>Lavez la chambre avec de l’eau et un nettoyant doux.</li><li>Laissez l’appareil sécher complètement à l’air libre, sur une surface propre, avant de le ranger.</li><li>Ouvrez une nouvelle tête d’aiguille stérile et fixez-la sur l’appareil. Assurez-vous que vos mains sont propres et ne retirez pas le capuchon de la tête d’aiguille.</li></ul>",
             "code": ""
           }
         },
         "object_AmtYTe": {
           "type": "object",
           "settings": {
-            "heading": "How does the 90-day money back guarantee work?",
-            "text": "<p>You have 90 days to try Qure’s Micro Infusion System and see the results for yourself. If you don’t see any difference in your skin— if you do not experience firmer, brighter, younger-looking skin, simply contact us and we will gladly refund your money. This guarantee applies to the 3 month supply bundle. You’ll just need to provide before and after photos after each 2 week treatment to qualify.</p>",
+            "heading": "Comment fonctionne la garantie de remboursement de 90 jours ?",
+            "text": "<p>Vous avez 90 jours pour essayer le système de micro-infusion de Qure et voir les résultats par vous-même. Si vous ne voyez aucune différence dans votre peau – si vous ne ressentez pas une peau plus ferme, plus lumineuse, plus jeune, contactez-nous simplement et nous vous rembourserons volontiers. Cette garantie s’applique au pack de 3 mois. Il vous suffira de fournir des photos avant et après chaque traitement de 2 semaines pour être éligible.</p>",
             "code": ""
           }
         },
@@ -1319,17 +1319,17 @@
       "settings": {
         "background": "bg_yellow",
         "classname": "bg_yellow",
-        "heading": "The answers to your questions",
+        "heading": "Les réponses à vos questions",
         "text": "",
-        "button_label": "Show More Questions",
-        "button_hide_label": "Hide More Questions"
+        "button_label": "Afficher plus de questions",
+        "button_hide_label": "Masquer les questions supplémentaires"
       }
     },
     "reviews_LMxgH7": {
       "type": "reviews",
       "settings": {
-        "heading": "<h2>Real reviews, real results<br/>from people just like you.</h2>",
-        "heading_mobile": "<h2>Real reviews, real results<br/>from people just like you.</h2>",
+        "heading": "<h2>Avis réels, résultats réels<br/>de personnes comme vous.</h2>",
+        "heading_mobile": "<h2>Avis réels, résultats réels<br/>de personnes comme vous.</h2>",
         "product": "micro-infusion-3-month-bundle-hydra-soothing-rejuvenating"
       }
     },
