@@ -42,7 +42,6 @@
         assign new_design = false
     endif
 %}
-
 <!-- -- main banner start -- -->
 <div class="refill_bl pt-0 tabSlider">
     <div class="container">
@@ -144,7 +143,7 @@
                             <div class="free-shipping-badge-container free-shipping-guarentee-variant" data-products="{{products_to_render_shipping_badge }}">
                                 {% render 'pdm_icons', icon: "free-shipping-truck" %}
                                 <p class="free-shipping-badge-container__label">{{ 'products.product.unlocks_free_shipping_label' | t }}
-                                    <span class="green-color">{{ 'site_gamification.free_shipping.label' | t }}</span>
+                                    <span class="green-color">{{ 'site_gamification.free_shipping.label' | t | replace: 'Free Shipping', 'Livraison Gratuite' }}</span>
                                 </p>
                             </div>
                         {% endif %}
@@ -194,11 +193,11 @@
 
                                     {% if block.settings.product != blank %}
                                         {%- assign discount_price_additional = all_products[block.settings.product.handle].price | times: 0.7 | money_without_trailing_zeros %}
-                                    {% endif %}
+ Bose                                    {% endif %}
 
                                     <div class="subscribe_save_wrapper with_subscription mt-2">
                                         <div class="subscribeTopInfo">
-                                            <p>Over 1,000 people chose subscription</p>
+                                            <p>Plus de 1 000 personnes ont choisi l’abonnement</p>
                                         </div>
                                         <div class="subscriptionType active" data-subscription="subscription">
                                             <div class="subscribe_save_bx">
@@ -225,7 +224,7 @@
                                         <div class="subscriptionType" data-subscription="no-subscription">
                                             <div class="noSubscription">
                                                 <div class="noSubscriptionText">
-                                                    One time purchase
+                                                    Achat unique
                                                 </div>
                                                 <div class="noSubscriptionPrice">
                                                     {{ product.price | money_without_trailing_zeros }}
@@ -236,9 +235,9 @@
                                             {% endunless %}
 
                                             {% if product.variants.first.available %}
-                                                <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
+                                                <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Réserver maintenant{% else %}Acheter maintenant{% endif %}</a>
                                             {% else %}
-                                                <a class="btn btn-lg btn-primary without_subscription buy_btn" href="#">{% if section.settings.reserve == true %}Reserve now{% else %}Sold Out{% endif %}</a>
+                                                <a class="btn btn-lg btn-primary without_subscription buy_btn" href="#">{% if section.settings.reserve == true %}Réserver maintenant{% else %}Épuisé{% endif %}</a>
                                             {% endif %}
 
                                             {% capture sticky-button-classname %}without_subscription{% endcapture %}
@@ -251,7 +250,7 @@
                                             %}
 
                                             <div class="payment_method without_subscription">
-                                                <p>OR pay 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
+                                                <p>OU payez 4 mensualités de {{ product.price | divided_by: 4 | money_without_trailing_zeros }} avec</p>
                                                 <div class="pmt_img ps-2">
                                                     <img src="{{ 'klarna.svg' | asset_url }}" alt="">
                                                     <img src="{{ 'sezzle.svg' | asset_url }}" alt=""><img src="{{ 'afterpay.svg' | asset_url }}"
@@ -265,7 +264,7 @@
                                         <form method="post" action="/cart/add" accept-charset="UTF-8" id="SubscriptionForm" class="shopify-product-form buy-form-{{ section_id }} form-test-id" enctype="multipart/form-data" data-form-id="{{ product_id }}">
                                             <input type="hidden" name="selling_plan" value="{{ block.settings.plan }}">
                                             <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn" onclick="setEventProductHandler('{{ product.handle | escape }}')" name="Submit" value="Submit">
-                                                Subscribe Now
+                                                S’abonner maintenant
                                             </button>
                                             <input type="hidden" name="id" value="{{ product_variant_id }}" />
                                         </form>
@@ -287,9 +286,9 @@
                             {% render 'pdm_orderby' %}
                         {% endunless %}
                             {% if product.variants.first.available %}
-                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
+                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Réserver maintenant{% else %}Acheter maintenant{% endif %}</a>
                             {% else %}
-                                <a class="btn btn-lg btn-primary buy_btn" href="#">{% if section.settings.reserve == true %}Reserve now{% else %}Sold Out{% endif %}</a>
+                                <a class="btn btn-lg btn-primary buy_btn" href="#">{% if section.settings.reserve == true %}Réserver maintenant{% else %}Épuisé{% endif %}</a>
                             {% endif %}
 
                             {% if product.compare_at_price != blank %}
@@ -315,8 +314,8 @@
                             {% endif %}
 
                             <div class="payment_method">
-                                <p class="d-none d-md-block">OR pay 4 monthly payments of <span class="igInstallmentPrice" data-product-id="{{ product.id }}"> {{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
-                                <p class="d-block d-md-none">OR 4 monthly payments of {{ product.price | divided_by: 4 | money_without_trailing_zeros }} with</p>
+                                <p class="d-none d-md-block">OU payez 4 mensualités de <span class="igInstallmentPrice" data-product-id="{{ product.id }}"> {{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> avec</p>
+                                <p class="d-block d-md-none">OU 4 mensualités de {{ product.price | divided_by: 4 | money_without_trailing_zeros }} avec</p>
                                 <div class="pmt_img ps-2">
                                     <img src="{{ 'klarna.svg' | asset_url }}" alt="">
                                     <img src="{{ 'sezzle.svg' | asset_url }}" alt="">
@@ -350,7 +349,7 @@
                             {% if render_qrejuvalight_shipping_badge or render_neck_decotellage_shipping_badge  %}
                                 <div class="shipping-badges-container__money-back free-shipping-guarentee-variant">
                                     {% render 'pdm_icons', icon: 'money-back-guarantee' %}
-                                    <div class="shipping-badges-container__money-back--label">{{ settings.money_back_guarantee_label }}</div>
+                                    <div class="shipping-badges-container__money-back--label">{{ settings.money_back_guarantee_label | replace: 'Money Back Guarantee', 'Garantie de remboursement' }}</div>
                                 </div>
                             {% endif %}
                         </div>
@@ -403,7 +402,7 @@
                                             {% else %}
                                                 {% if media.media_type == 'video' %}
 
-                                                    {% if media.sources[1].url != blank %}
+                                                    {% if media.sources and  media.sources[1].url != blank %}
                                                         {% assign video_source_url = media.sources[1].url %}
                                                     {% else %}
                                                         {% assign video_source_url = media.sources[0].url %}
@@ -515,7 +514,6 @@
     </div>
 </div>
 <!-- -- main banner end -- -->
-
 {% assign current_variant = product.selected_or_first_available_variant %}
 <script type="application/ld+json">
 {
@@ -637,7 +635,7 @@
                 "type": "text",
                 "id": "underbutton_text_right",
                 "label": "t:common.text.label",
-                "default": "Free Shipping Over $100"
+                "default": "Free Shipping Over €100"
             },
             {
                 "type": "header",
@@ -1003,7 +1001,7 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "t:common.text.label",
-                        "default": "<p>Get a FREE All-In-One Face Serum ($79) with purchase</p>"
+                        "default": "<p>Get a FREE All-In-One Face Serum (€79) with purchase</p>"
                     }
                 ]
             }        

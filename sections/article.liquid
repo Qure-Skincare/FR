@@ -130,22 +130,22 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Update all Facebook share links
         document.querySelectorAll(".facebook-share").forEach(link => {
-            link.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+            link.href = `https://www.facebook.com/sharer/sharer.php?u=€{encodeURIComponent(pageUrl)}`;
         });
 
         // Update all Pinterest share links
         document.querySelectorAll(".pinterest-share").forEach(link => {
-            link.href = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(imageUrl)}&description=${encodeURIComponent(description)}`;
+            link.href = `https://pinterest.com/pin/create/button/?url=€{encodeURIComponent(pageUrl)}&media=€{encodeURIComponent(imageUrl)}&description=€{encodeURIComponent(description)}`;
         });
 
         // Update all Email share links
         document.querySelectorAll(".email-share").forEach(link => {
-            link.href = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=Check%20this%20out:%20${encodeURIComponent(pageUrl)}`;
+            link.href = `mailto:?subject=€{encodeURIComponent(emailSubject)}&body=Check%20this%20out:%20€{encodeURIComponent(pageUrl)}`;
         });
 
         // Update all WhatsApp share links
         document.querySelectorAll(".whatsapp-share").forEach(link => {
-            link.href = `https://wa.me/?text=${encodeURIComponent(pageUrl)}`;
+            link.href = `https://wa.me/?text=€{encodeURIComponent(pageUrl)}`;
         });
     });
 </script>

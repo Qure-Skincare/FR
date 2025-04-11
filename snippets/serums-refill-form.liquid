@@ -184,7 +184,7 @@
                                                 buyButtonSubscription.textContent = 'Reserve';
                                             } else {
                                                 nextBatchBl.style.display = "none";
-                                                buyButton.textContent = 'Buy Now';
+                                                buyButton.textContent = 'Acheter maintenant';
                                                 buyButtonSubscription.textContent = 'Subscribe Now';
                                             }
                                         }
@@ -198,7 +198,7 @@
                                 </script>
                             {% endif %}
 
-                            <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }}" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now</a>
+                            <a class="btn btn-lg btn-primary without_subscription buy_btn buy-button-{{ section_id }}" href="{{ routes.cart_add_url }}?id={{ product_variant_id  }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Acheter maintenant</a>
 
                             {% capture sticky-button-classname %}buy-button-{{ section_id }} without_subscription{% endcapture %}
 
@@ -255,8 +255,8 @@
         </div>
         <div class="s_bx">
             <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-            <p class="d-none d-md-block">Free Shipping Over $100</p>
-            <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+            <p class="d-none d-md-block">Free Shipping Over €100</p>
+            <p class="d-block d-md-none">Free World-Wide Shipping Over €100</p>
         </div>
     </div>
 {% endif %}

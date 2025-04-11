@@ -43,7 +43,7 @@ async function tick() {
 
     var mins = Math.floor(secs / 60);
     secs %= 60;
-    var pretty = `${mins < 10 ? "0" : ""}${mins}:${secs < 10 ? "0" : ""}${secs}`;
+    var pretty = `€{mins < 10 ? "0" : ""}€{mins}:€{secs < 10 ? "0" : ""}€{secs}`;
 
 		if (document.getElementById("countdown")) {
 				document.getElementById("countdown").innerHTML = pretty;

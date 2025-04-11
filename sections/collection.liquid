@@ -117,7 +117,7 @@
                                                                             <div class="mi_bndl_women">
                                                                                 <div class="mi_bndl_dv mb-1">
                                                                                     <h4 class="mi_bndl_text">Micro-Infusion Bundle</h4>
-                                                                                    <p class="valued_at">VALUED AT <strong>$357</strong></p>
+                                                                                    <p class="valued_at">VALUED AT <strong>€357</strong></p>
                                                                                 </div>
                                                                                 <p class="free_text justify-content-start"><span class="discount_badge">FREE</span></p>
                                                                             </div>
@@ -144,7 +144,7 @@
 
                     {% assign amount = 357 | times: 100 | money_without_trailing_zeros %}
 
-                    {{ banner |  replace: '$357', amount }}
+                    {{ banner |  replace: '€357', amount }}
         {% endcase %}
     {% endfor %}
 {% else %}

@@ -237,8 +237,8 @@
                                     </div>
 
 
-                                    <!-- Buy Now Button -->
-                                    <button class="buy-now" id="buy-now-button">Buy Now & Save</button>
+                                    <!-- Acheter maintenant Button -->
+                                    <button class="buy-now" id="buy-now-button">Acheter maintenant & Save</button>
 
                                     <!-- Payment Methods -->
                                     <div class="payment_method">
@@ -298,22 +298,22 @@
         const totalDiscount = product.discount + warranty.discount;
 
         // Update DOM elements
-        document.getElementById('total-price').innerText = currentCurrency + `${totalPrice}`;
-        document.getElementById('savings').innerText = currentCurrency + `${totalDiscount}`;
-        document.getElementById('original-total-price').innerText = currentCurrency + `${originalTotalPrice}`; // Update original total price
+        document.getElementById('total-price').innerText = currentCurrency + `€{totalPrice}`;
+        document.getElementById('savings').innerText = currentCurrency + `€{totalDiscount}`;
+        document.getElementById('original-total-price').innerText = currentCurrency + `€{originalTotalPrice}`; // Update original total price
 
         // Update installment price
         const installmentAmount = (totalPrice / 4).toFixed(2);
-        document.querySelector('.instalments').innerText = currentCurrency + `${installmentAmount}`;
+        document.querySelector('.instalments').innerText = currentCurrency + `€{installmentAmount}`;
 
         // Update button text dynamically
         const button = document.querySelector('.buy-now'); // Replace with the actual button class or ID
         if (button) {
-            // If no savings (1-year warranty with default pricing), set button to "Buy Now"
+            // If no savings (1-year warranty with default pricing), set button to "Acheter maintenant"
             if (totalDiscount === 0) {
-                button.innerText = `Buy Now`;
+                button.innerText = `Acheter maintenant`;
             } else {
-                button.innerText = `Buy Now & Save $${totalDiscount}`;
+                button.innerText = `Acheter maintenant & Save €€{totalDiscount}`;
             }
         }
     }
@@ -350,10 +350,10 @@
         const warrantyPrice = warrantyPrices['extended'][selectedProduct];
 
         // Update displayed discounted price
-        document.getElementById('extended-warranty-price').innerText = currentCurrency + `${warrantyPrice.price}`;
+        document.getElementById('extended-warranty-price').innerText = currentCurrency + `€{warrantyPrice.price}`;
 
         // Update displayed original price dynamically
-        document.getElementById('extended-warranty-mrp').innerText = currentCurrency + `${warrantyPrice.originalPrice}`;
+        document.getElementById('extended-warranty-mrp').innerText = currentCurrency + `€{warrantyPrice.originalPrice}`;
 
         // Update savings text
         const savingsText = selectedProduct === 'mask-only'

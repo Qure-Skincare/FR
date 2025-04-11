@@ -439,12 +439,12 @@
                 </p>
                 <div style="display: flex; flex-direction: row; justify-content: flex-start; gap: 10px;">
                   <p style="font-size: 0.8em; margin: 0 0 10px 0; font-weight: 600;">
-                    $
+                    €
                     {{- product.variants[0].price | divided_by: 1.00 | times: section.settings.discount | append: '0' }}
                   </p>
                   {% if section.settings.show_compare == 'true' %}
                     <p style="font-size: 0.8em; margin: 0 0 10px 0; font-weight: 400; text-decoration: line-through;">
-                      $
+                      €
                       {{- product.variants[0].price | divided_by: 1.00 | append: '.00' }}
                     </p>
                   {% endif %}
@@ -502,11 +502,11 @@
                 </p>
                 <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 10px;">
                   <p style="font-size: 0.8em; margin: 0 0 10px 0; color: {{section.settings.product_text_color}}; font-weight: 600;">
-                    ${{ product.variants[0].price | times: section.settings.discount | round: 0 }}
+                    €{{ product.variants[0].price | times: section.settings.discount | round: 0 }}
                   </p>
                   {% if section.settings.show_compare == 'true' %}
                     <p style="font-size: 0.8em; margin: 0 0 10px 0; color: {{section.settings.product_text_color}}; font-weight: 400; text-decoration: line-through;">
-                      ${{ product.variants[0].price | round: 0 }}
+                      €{{ product.variants[0].price | round: 0 }}
                     </p>
                   {% endif %}
                 </div>

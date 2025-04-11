@@ -15,8 +15,8 @@
         "announcement_68YDyx": {
           "type": "announcement",
           "settings": {
-            "heading": "[Offre à durée limitée] ÉCONOMISEZ JUSQU’À 250 $",
-            "heading_mobile": "[Offre à durée limitée] ÉCONOMISEZ JUSQU’À 250 $",
+            "heading": "[Offre à durée limitée] ÉCONOMISEZ JUSQU’À 250 €",
+            "heading_mobile": "[Offre à durée limitée] ÉCONOMISEZ JUSQU’À 250 €",
             "color": "vert",
             "font_size_desktop": 14,
             "font_size_mobile": 13
@@ -102,12 +102,12 @@
         "desc": "<ul><li>Masque LED à domicile approuvé par la FDA</li><li>Traite l’acné, les ridules, les rides et plus encore</li><li>Personnalisez, suivez et planifiez vos traitements avec l’application</li><li>Traitement rapide et pratique de 3 minutes sans fil</li></ul>",
         "rating_text": "Plus de 43 893 clients satisfaits",
         "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-        "btn_txt": "Économisez jusqu’à 250 $",
+        "btn_txt": "Économisez jusqu’à 250 €",
         "btn_url": "#shop",
         "d_icon": "shopify://shop_images/derma-sm.svg",
         "recomand": "Évalué par des dermatologues",
         "underbutton_text_left": "Évalué par des dermatologues",
-        "underbutton_text_right": "Livraison gratuite dès 100 $",
+        "underbutton_text_right": "Livraison gratuite dès 100 €",
         "order_mob": false
       }
     },
@@ -195,7 +195,7 @@
         "text_KwkbRg"
       ],
       "settings": {
-        "heading": "MIS EN AVANT DANS",
+        "heading": "VU DANS",
         "slider_type": "five_slides",
         "slide_per_view_desktop": 3,
         "slide_per_view_mobile": 3
@@ -668,7 +668,7 @@
           "type": "subheading",
           "settings": {
             "badge_text": "DANS UNE ÉTUDE...",
-            "text": "Taux de satisfaction client de 97 %"
+            "text": "97% des clients satisfaits"
           }
         },
         "heading_i8NCVD": {
@@ -687,7 +687,7 @@
         "button_mxBJWm": {
           "type": "button",
           "settings": {
-            "btn_text": "ÉCONOMISEZ 50 $ avec le code : BF50",
+            "btn_text": "ÉCONOMISEZ 50 € avec le code : BF50",
             "w_icon": "shopify://shop_images/money-sm.svg",
             "warranty": "Garantie gratuite d’un an",
             "d_icon": "shopify://shop_images/derma-sm.svg",
@@ -722,7 +722,7 @@
         "abt_product": "<p>Combinaison parfaite avec le masque LED Q-Rejuvalight Pro pour une expérience ultime de rajeunissement de la peau.</p>",
         "benefits": "<ul><li>Traitez au-delà du visage pour une apparence jeune globale</li><li>Lissez les ridules, réduisez l’apparence des rides et renforcez la fermeté</li><li>Estompez les taches sombres et réparez la peau endommagée par le soleil pour un teint uniforme</li></ul>",
         "btn_txt": "Regroupez et ÉCONOMISEZ",
-        "rating_text": "Taux de satisfaction client de 97 %",
+        "rating_text": "97% des clients satisfaits",
         "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
         "m_benefits": "<ul><li>Traitez au-delà du visage pour une apparence jeune globale</li><li>Lissez les ridules et les rides</li><li>Uniformisez le teint et lissez la texture</li></ul>",
         "image_mobile": "shopify://shop_images/led_neck_bundle_mob.webp"
@@ -751,7 +751,7 @@
             "heading": "Masque LED Q-Rejuvalight Pro",
             "mob_text": "",
             "text": "<p><strong>coût unique</strong></p>",
-            "price": "379 $",
+            "price": "379 €",
             "style": "correctCircle",
             "list": "<ul><li>seulement 3 minutes par jour</li><li>à votre propre rythme</li><li><strong>traitements illimités</strong></li><li><strong>confort de votre maison</strong></li><li>paiement unique et simple</li></ul>"
           }
@@ -763,7 +763,7 @@
             "heading": "Traitements en clinique ou chez le dermatologue",
             "mob_text": "",
             "text": "<p><strong>par traitement de 6 séances</strong></p>",
-            "price": "900 $",
+            "price": "900 €",
             "style": "incorrectCircle",
             "list": "<ul><li>plus d’1 heure en clinique</li><li>quand (et si) vous obtenez un rendez-vous</li><li>traitements limités</li><li>inconfort d’un cabinet inconnu</li><li>paiements continus frustrants</li></ul>"
           }

@@ -45,7 +45,7 @@
                         </a>
                     </div>
                     <div class="payment_method">
-                        <p>OR pay 4 monthly payments of $<span class="resultPrice">{{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
+                        <p>OR pay 4 monthly payments of €<span class="resultPrice">{{ product.price | divided_by: 4 | money_without_trailing_zeros }}</span> with</p>
                         <div class="pmt_img ps-2">
                             <img src="{{ 'klarna.svg' | asset_url }}" alt="">
                             <img src="{{ 'sezzle.svg' | asset_url }}" alt="">

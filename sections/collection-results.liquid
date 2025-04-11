@@ -1,7 +1,7 @@
 <!-- -- featured promotion end -- -->
 <div class="container cus-bradcamp">
     <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
-        <a href="/" title="Home">Home</a>
+        <a href="/" title="Accueil">Accueil</a>
         <span aria-hidden="true">›</span>
         <span>{{ collection.title }}</span>
     </nav>
@@ -41,7 +41,7 @@
                                             <div class="product_card_userName">{{ block.settings.client }}</div>
                                         {% endif %}
                                         <div class="product_verified">
-                                            <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Verified Customer
+                                            <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Client vérifié
                                         </div>
                                     </div>
                                 </div>
@@ -154,8 +154,8 @@
                         {% endif %}
                     </div>
                     <div class="product-grid__atc-form-wrapper collection-form">
-                        <a class="button_primary" style="cursor:pointer;" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now</a>
-                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
+                        <a class="button_primary" style="cursor:pointer;" data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Acheter maintenant</a>
+                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Découvrir</a>
                     </div>
                 </div>
             </div>

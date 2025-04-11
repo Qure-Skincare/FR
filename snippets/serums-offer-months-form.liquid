@@ -122,7 +122,7 @@
     {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
 
     <a class="btn btn-lg btn-primary buy_btn submit_btn_top reserve_btn mt-4" href="/cart/add?id={{ product_variant_id }}&amp;quantity=1" onclick="setEventProductHandler('{{ product.handle }}')" data-ajax-cart-request-button>
-        Buy Now <span class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="https://qureskincaredns.com/new/assets/arrow_right.svg" alt="">
+        Acheter maintenant <span class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="https://qureskincaredns.com/new/assets/arrow_right.svg" alt="">
     </a>
 
     <script>
@@ -135,25 +135,25 @@
                 const variantIdTop = $(this).data('variantid');
 
                 if (submitBtnTop && variantIdTop) {
-                    submitBtnTop.href = submitBtnTop.href.replace(/id=\d+/, `id=${variantIdTop}`);
+                    submitBtnTop.href = submitBtnTop.href.replace(/id=\d+/, `id=€{variantIdTop}`);
                 }
 
                 if (stickyBtn && variantIdTop) {
-                    stickyBtn.href = stickyBtn.href.replace(/id=\d+/, `id=${variantIdTop}`);
+                    stickyBtn.href = stickyBtn.href.replace(/id=\d+/, `id=€{variantIdTop}`);
                 }
             });
         });
     </script>
 
     <div class="payment_method">
-        <p>OR 4 monthly payments of <span class="payment_price">$36.75</span> with</p>
+        <p>OR 4 monthly payments of <span class="payment_price">€36.75</span> with</p>
         <div class="pmt_img ps-2">
             <img src="{{ 'klarna.svg' | asset_url }}" alt=""><img src="{{ 'sezzle.svg' | asset_url }}" alt=""><img src="{{ 'afterpay.svg' | asset_url }}" alt="">
         </div>
     </div>
     <div class="certified_derm mb-4 mb-md-5">
         <img src="{{ 'certified_derma.webp' | asset_url }}" alt="">
-        <p><b>50+ Board Certified Dermatologists</b> recommended Qure to their patients. <a href="https://qureskincare.com/pages/derm-reviews" class="text-black text-decoration-underline">See More</a> </p>
+        <p><b>Plus de 50 dermatologues certifiés</b> ont recommandé Qure à leurs patients. <a href="https://qureskincare.com/pages/derm-reviews" class="text-black text-decoration-underline">Voir plus</a> </p>
     </div>
     <div class="shipping shipping_bg bg-transparent py-md-0 px-0 free-shipping-guarentee-original">
         <div class="s_bx">
@@ -162,8 +162,8 @@
         </div>
         <div class="s_bx">
             <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-            <p class="d-none d-md-block">Free Shipping Over $100</p>
-            <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+            <p class="d-none d-md-block">Free Shipping Over €100</p>
+            <p class="d-block d-md-none">Free World-Wide Shipping Over €100</p>
         </div>
     </div>
     {% if settings.show_icons_product_microinfusion_targeted %}

@@ -1010,7 +1010,7 @@
                                   <div class="product_card_userName">{{ block.settings.client }}</div>
                                 {% endif %}
                                 <div class="product_verified">
-                                  <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Verified Customer
+                                  <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Client vérifié
                                 </div>
                               </div>
                             </div>
@@ -1209,9 +1209,9 @@
                           data-ajax-cart-request-button="/cart/add?id={{ product.variants.first.id }}&quantity=1"
                           onclick="setEventProductHandler('{{ product.handle | escape }}')"
                           data-ajax-cart-request-button
-                          >Buy Now</a
+                          >Acheter maintenant</a
                         >
-                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Learn More</a>
+                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -1312,7 +1312,7 @@
                             alt="Icon"
                             style="width: 20px; height: 20px; margin-right: 10px;"
                         >
-                        <p style="margin: 0; line-height: 1.2">${tag}</p>
+                        <p style="margin: 0; line-height: 1.2">€{tag}</p>
                     `;
                     benefitsContainer.appendChild(tagElement);
                 });

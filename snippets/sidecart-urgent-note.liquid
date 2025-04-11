@@ -57,7 +57,7 @@
 
   assign bold_text = settings.urgency_note_content
   assign bold_text = bold_text | replace: "[]", product_titles
-  assign bold_text = bold_text | replace: "$quantity_label ", label_subject
+  assign bold_text = bold_text | replace: "€quantity_label ", label_subject
 %}
 
 {% if has_cart_urgency_products %}

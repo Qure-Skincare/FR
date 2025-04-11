@@ -115,10 +115,10 @@
   document.querySelectorAll('.slider').forEach(slider => {
     slider.addEventListener('input', (e) => {
       const blockId = e.target.getAttribute('data-block-id');
-      const container = document.querySelector(`.comparsion_inner[data-block-id="${blockId}"]`);
+      const container = document.querySelector(`.comparsion_inner[data-block-id="€{blockId}"]`);
       
       if (container) {
-        container.style.setProperty('--position', `${e.target.value}%`);
+        container.style.setProperty('--position', `€{e.target.value}%`);
       }
     });
   });

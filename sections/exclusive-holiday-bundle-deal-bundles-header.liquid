@@ -75,7 +75,7 @@
                         //console.log('variantTitle [' + this.value + '] variantId [' + variantId + ']');
 
                         if (button) {
-                            button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+                            button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=€{variantId}&quantity=1`);
                         }
                     }
                 }
@@ -110,7 +110,7 @@
                         //console.log('variantTitle [' + variantTitle + '] variantId [' + variantId + ']');
 
                         if (button) {
-                            button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+                            button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=€{variantId}&quantity=1`);
                         }
                     }
                 }

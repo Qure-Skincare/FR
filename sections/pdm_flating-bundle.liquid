@@ -32,7 +32,7 @@
     </div>
     <div class="cart-bundle-message__wrapper">
       <div class="cart-bundle-message__unused-bundle hidden">
-        {% assign text_unused_bundle = section.settings.text_bubble_bundle_unused | replace: "${bundle-title}", "<strong>Personalized Skincare Bundle</strong>" %}
+        {% assign text_unused_bundle = section.settings.text_bubble_bundle_unused | replace: "€{bundle-title}", "<strong>Personalized Skincare Bundle</strong>" %}
         {{ text_unused_bundle }}
       </div>
       <div class="cart-bundle-message__used-bundle hidden">
@@ -113,8 +113,8 @@
       "type": "text",
       "id": "text_bubble_bundle_unused",
       "label": "Text Bubble Bundle Unused",
-      "default": "${bundle-title}  successfully added to your cart.",
-      "info": "Use ${bundle-title} to set the product title, This message will be displayed when the bundle is added to the cart."
+      "default": "€{bundle-title}  successfully added to your cart.",
+      "info": "Use €{bundle-title} to set the product title, This message will be displayed when the bundle is added to the cart."
     },
     {
       "type": "text",

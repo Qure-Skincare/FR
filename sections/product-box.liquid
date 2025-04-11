@@ -68,7 +68,7 @@
                                 {% endif %}
 
                                 {% if block.settings.product != blank %}
-                                    <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.root_url }}products/{{ block.settings.product.handle }}" role="button" style="cursor:pointer;">Buy Now - <span class="igPrice" data-product-id="{{ product.id }}"> {{ block.settings.product.price | money_without_trailing_zeros }} </span>
+                                    <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.root_url }}products/{{ block.settings.product.handle }}" role="button" style="cursor:pointer;">Acheter maintenant - <span class="igPrice" data-product-id="{{ product.id }}"> {{ block.settings.product.price | money_without_trailing_zeros }} </span>
                                         <img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
                                     </a>
                                 {% endif %}

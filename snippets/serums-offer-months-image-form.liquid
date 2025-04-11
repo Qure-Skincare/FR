@@ -35,7 +35,7 @@
                                     <span>Over 7,000 people chose this supply</span>
                                 </div>
                                 <input type="radio" name="monthlyPlan" id="3_month" checked>
-                                <label class="monthly_plans" for="3_month" payment-price="${{ product_price_divided | money_without_trailing_zeros }}">
+                                <label class="monthly_plans" for="3_month" payment-price="€{{ product_price_divided | money_without_trailing_zeros }}">
                                     <div class="plan_des">
                                         <div class="plan_hdr">
                                             <h3>3 Month Supply</h3>
@@ -103,7 +103,7 @@
                             {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
 
                             <a class="btn btn-atc submit_btn_down mt-md-2 mt-4" href="/cart/add?id={{ product_variant_id }}&amp;quantity=1" onclick="setEventProductHandler('{{ product.handle }}')" data-ajax-cart-request-button>
-                                Buy Now <span class="btn_value">&amp; SAVE {{ discount_percentage }}%</span>
+                                Acheter maintenant <span class="btn_value">&amp; SAVE {{ discount_percentage }}%</span>
                             </a>
 
                             <script>
@@ -117,7 +117,7 @@
                                         const variantIdDown = $(this).data('variantid');
 
                                         if (submitBtnDown && variantIdDown) {
-                                            submitBtnDown.href = submitBtnDown.href.replace(/id=\d+/, `id=${variantIdDown}`);
+                                            submitBtnDown.href = submitBtnDown.href.replace(/id=\d+/, `id=€{variantIdDown}`);
                                         }
                                     });
                                 });

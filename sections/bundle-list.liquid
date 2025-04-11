@@ -155,7 +155,7 @@
                                     </button>
                                 {% else %}
                                     <button class="bf-buy-button" style="--bgPercent:{{ 100 | minus: block.settings.percent }}%; --bgMobPercent:{{ block.settings.percent }}%" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button="/cart/add?id={{ product_variant }}&quantity=1">
-                                        <span class="bf_btn_text">Buy Now <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt=""></span>
+                                        <span class="bf_btn_text">Acheter maintenant <img src="{{ 'reserved_btn_arrow.svg' | asset_url }}" alt=""></span>
                                         <span class="buy-sold-wrapper">
                                             <span class="buy-sold buy-sold-mobile">
                                                 <span class="buy-sold__top">{{ block.settings.percent }}%</span>
