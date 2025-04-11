@@ -70,7 +70,7 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "<p><strong>Livraison gratuite</strong> dès 100$ d'achat.</p>",
+              "heading": "<p><strong>Livraison gratuite</strong> dès 100€ d'achat.</p>",
               "button_label": "ACHETER MAINTENANT",
               "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
             }
@@ -369,7 +369,7 @@
           "copy_get_product_free": "<p>Il vous manque &price-left& pour obtenir un <strong>sérum visage GRATUIT</strong> d’une valeur de &product-price&</p>",
           "copy_congrats": "<p>Félicitations ! Vous avez débloqué votre &product-title& gratuit(e)</p>",
           "show_urgency_note": true,
-          "urgency_note_content": "En raison d’une forte demande, [] $quantity_label réservé(e) pendant 30 minutes seulement.",
+          "urgency_note_content": "En raison d’une forte demande, [] €quantity_label réservé(e) pendant 30 minutes seulement.",
           "urgency_note_label_single": "Passez à la caisse maintenant !",
           "urgency_note_product_list": [
             "breakout-control-pro-1",

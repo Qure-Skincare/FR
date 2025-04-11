@@ -897,7 +897,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
-            "text": "<p>Livraison gratuite<\/p><p>Commandes de plus de 100 $<\/p>"
+            "text": "<p>Livraison gratuite<\/p><p>Commandes de plus de 100 €<\/p>"
           }
         },
         "icon_mWkFBX": {

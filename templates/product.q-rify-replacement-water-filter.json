@@ -73,7 +73,7 @@
         "before_after_button_label": "Real results",
         "reserve": false,
         "underbutton_text_left": "Dermatologist Reviewed",
-        "underbutton_text_right": "Free Shipping Over $100",
+        "underbutton_text_right": "Free Shipping Over €100",
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
@@ -227,7 +227,7 @@
         "classname": "mi_landing_result",
         "heading": "Clearer, hydrated skin, on tap",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
+        "text_verified_customer": "Client vérifié",
         "text_reviewed": "Reviewed in"
       }
     },

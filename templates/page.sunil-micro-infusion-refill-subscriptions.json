@@ -16,7 +16,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>Taux de satisfaction client de 97 %</p>",
+            "text": "<p>97% des clients satisfaits</p>",
             "product": "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum"
           }
         },

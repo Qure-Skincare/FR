@@ -96,7 +96,7 @@
         "before_after_button_label": "Before & After",
         "reserve": false,
         "underbutton_text_left": "Dermatologist Approved",
-        "underbutton_text_right": "Free Shipping Over US$100",
+        "underbutton_text_right": "Free Shipping Over US€100",
         "selected_design": "new",
         "text_label_real_result_1": "",
         "text_label_real_result_2": "",
@@ -451,14 +451,14 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Free Shipping</p><p>Orders Over €100</p>"
           }
         },
         "icon_N4CkkF": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Acheter maintenant,</p><p>Pay Later</p>"
           }
         },
         "icon_nL6NqF": {
@@ -577,7 +577,7 @@
         "classname": "mi_landing_result",
         "heading": "Qure filtering technology results",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
+        "text_verified_customer": "Client vérifié",
         "text_reviewed": "Reviewed in"
       }
     },

@@ -214,14 +214,14 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Free Shipping</p><p>Orders Over €100</p>"
           }
         },
         "icon_mjJWLK": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Acheter maintenant,</p><p>Pay Later</p>"
           }
         },
         "icon_Ji4cFE": {
@@ -392,7 +392,7 @@
         "classname": "mi_landing_result",
         "heading": "Confidence changing results, from people just like you",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
+        "text_verified_customer": "Client vérifié",
         "text_reviewed": "Reviewed in"
       }
     },
@@ -1056,7 +1056,7 @@
             "heading": "Shipping & Orders",
             "image": "shopify://shop_images/faq-shipping.svg",
             "image2": "shopify://shop_images/faq-shippingGreen.svg",
-            "text": "<p><strong>We ship FREE, worldwide on orders over $100. </strong></p><p>Here’s how it works for products that are in stock: you order, we process, then we ship. Processing time is 1 to 3 business days. Orders are shipped from our warehouse in the U.S then one of our carriers takes it from there. You’ll get an email with your tracking number as soon as your package is on its way!</p>",
+            "text": "<p><strong>We ship FREE, worldwide on orders over €100. </strong></p><p>Here’s how it works for products that are in stock: you order, we process, then we ship. Processing time is 1 to 3 business days. Orders are shipped from our warehouse in the U.S then one of our carriers takes it from there. You’ll get an email with your tracking number as soon as your package is on its way!</p>",
             "code": "",
             "text2": "<p><strong>What is the estimated shipping time?</strong></p><p>United States: 3-6 business days<br/>Australia: 7-14 business days<br/>Canada: 3-10 business days<br/>United Kingdom: 7-10 business days<br/>Europe: 7-14 business days</p>",
             "code2": "",

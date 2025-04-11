@@ -10,7 +10,8 @@
 {
   "sections": {
     "main": {
-      "type": "temp-page-shower-filter-try-now"
+      "type": "temp-page-shower-filter-try-now",
+      "settings": {}
     }
   },
   "order": [

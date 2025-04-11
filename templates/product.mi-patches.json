@@ -16,7 +16,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>Taux de satisfaction client de 97 %</p>",
+            "text": "<p>97% des clients satisfaits</p>",
             "product": "micro-infusion-3-month-refill-3x-b-g-serum-3x-e-g-f-serum"
           }
         },
@@ -82,7 +82,7 @@
         ".swiper-wrapper {justify-content: center !important;}"
       ],
       "settings": {
-        "heading": "MIS EN AVANT DANS",
+        "heading": "VU DANS",
         "slider_type": "five_slides",
         "slide_per_view_desktop": 3,
         "slide_per_view_mobile": 3
@@ -392,7 +392,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 $</p>"
+            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 €</p>"
           }
         },
         "icon_kpXUbm": {

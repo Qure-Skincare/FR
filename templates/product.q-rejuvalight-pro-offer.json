@@ -15,8 +15,8 @@
         "announcement_68YDyx": {
           "type": "announcement",
           "settings": {
-            "heading": "[Limited Time Offer] SAVE $50 | Use Code: GLOWON50",
-            "heading_mobile": "SAVE $50 | Use Code: GLOWON50",
+            "heading": "[Limited Time Offer] SAVE €50 | Use Code: GLOWON50",
+            "heading_mobile": "SAVE €50 | Use Code: GLOWON50",
             "color": "green",
             "font_size_desktop": 14,
             "font_size_mobile": 13
@@ -99,7 +99,7 @@
         "desc": "<ul><li>FDA-cleared at-home LED mask</li><li>Treat acne, fine lines, wrinkles & more</li><li>Customize, track & schedule treatments with app</li><li>Quick & convenient 3-minute wireless treatments</li></ul>",
         "rating_text": "43,893+ Happy Customers",
         "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-        "btn_txt": "Save Up To $250",
+        "btn_txt": "Save Up To €250",
         "btn_url": "#shop",
         "d_icon": "shopify://shop_images/derma-sm.svg",
         "recomand": "Dermatologist-Reviewed"
@@ -506,7 +506,7 @@
         "slide3": "shopify://shop_images/free-shipping-ftr.svg",
         "text3": "FREE World-Wide Shipping",
         "slide4": "shopify://shop_images/buy-now-ftr.svg",
-        "text4": "Buy Now, Pay Later"
+        "text4": "Acheter maintenant, Pay Later"
       }
     },
     "videos_list_niD9zY": {
@@ -678,7 +678,7 @@
         "button_mxBJWm": {
           "type": "button",
           "settings": {
-            "btn_text": "SAVE $50 use code: BF50",
+            "btn_text": "SAVE €50 use code: BF50",
             "w_icon": "shopify://shop_images/money-sm.svg",
             "warranty": "FREE 1-Year Warranty",
             "d_icon": "shopify://shop_images/derma-sm.svg",
@@ -742,7 +742,7 @@
             "heading": "Q-Rejuvalight Pro LED Mask",
             "mob_text": "",
             "text": "<p><strong>one-time cost</strong></p>",
-            "price": "$379",
+            "price": "€379",
             "style": "correctCircle",
             "list": "<ul><li>just 3 minutes a day</li><li>on your own watch</li><li><strong>unlimited treatments</strong></li><li><strong>comfort of your home</strong></li><li>simple, one-time payment</li></ul>"
           }
@@ -754,7 +754,7 @@
             "heading": "Derm or Clinic Treatments",
             "mob_text": "",
             "text": "<p><strong>per 6 session treatment</strong></p>",
-            "price": "$900",
+            "price": "€900",
             "style": "incorrectCircle",
             "list": "<ul><li>1 hour+ at the clinic</li><li>when (and if) you get an appointment</li><li>limited treatments</li><li>discomfort of an unfamiliar office</li><li>frustrating ongoing payments</li></ul>"
           }

@@ -16,7 +16,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>Taux de satisfaction client de 97 %</p>"
+            "text": "<p>97% des clients satisfaits</p>"
           }
         },
         "list_azYRbY": {
@@ -59,7 +59,7 @@
         "before_after_button_label": "Avant & Après",
         "reserve": true,
         "underbutton_text_left": "Approuvé par des dermatologues",
-        "underbutton_text_right": "Livraison gratuite pour les commandes de plus de 100 $ US",
+        "underbutton_text_right": "Livraison gratuite pour les commandes de plus de 100 € US",
         "selected_design": "new",
         "text_label_real_result_1": "",
         "text_label_real_result_2": "",

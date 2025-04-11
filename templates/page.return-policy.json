@@ -78,7 +78,7 @@
         "text_awyab8": {
           "type": "text",
           "settings": {
-            "text": "<p>Voici un aperçu des termes et conditions qui s’appliquent à la garantie. Vous pouvez lire les conditions générales complètes <a href=\"https:\/\/www.qureskincare.com\/pages\/terms-and-conditions\">ici<\/a>.<br\/><br\/><\/p><ul><li>30 jours pour retourner OU échanger avec un remboursement complet.<\/li><li>Les retours doivent d’abord être approuvés par le support Qure.<\/li><li>Le produit doit être neuf, non utilisé avec le sceau intact.<\/li><li>Les frais d’expédition ne sont pas remboursables.<\/li><li>Des frais de restockage de 10 $ seront déduits du remboursement.<\/li><\/ul>",
+            "text": "<p>Voici un aperçu des termes et conditions qui s’appliquent à la garantie. Vous pouvez lire les conditions générales complètes <a href=\"https:\/\/www.qureskincare.com\/pages\/terms-and-conditions\">ici<\/a>.<br\/><br\/><\/p><ul><li>30 jours pour retourner OU échanger avec un remboursement complet.<\/li><li>Les retours doivent d’abord être approuvés par le support Qure.<\/li><li>Le produit doit être neuf, non utilisé avec le sceau intact.<\/li><li>Les frais d’expédition ne sont pas remboursables.<\/li><li>Des frais de restockage de 10 € seront déduits du remboursement.<\/li><\/ul>",
             "btn_text": "",
             "btn_url": "",
             "custom_class": "it_info subscriptions_section m-0",
@@ -247,7 +247,7 @@
           "type": "object",
           "settings": {
             "heading": "Y a-t-il des frais de restockage ?",
-            "text": "<p>Oui, des frais de retour seront déduits du remboursement pour couvrir les coûts d’entrepôt liés au retour du produit. Ces frais s’élèvent à 10 $ pour tous les produits. Les agents du service client peuvent fournir un coût plus précis si le produit retourné est soumis à des frais d’expédition.<\/p>",
+            "text": "<p>Oui, des frais de retour seront déduits du remboursement pour couvrir les coûts d’entrepôt liés au retour du produit. Ces frais s’élèvent à 10 € pour tous les produits. Les agents du service client peuvent fournir un coût plus précis si le produit retourné est soumis à des frais d’expédition.<\/p>",
             "code": ""
           }
         }

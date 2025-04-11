@@ -115,19 +115,19 @@
         "type": "text",
         "id": "frontrow_health_heading",
         "label": "Heading",
-        "default": "50+ Board Certified Dermatologists"
+        "default": "Plus de 50 dermatologues certifiés"
       },
       {
         "type": "textarea",
         "id": "frontrow_health_description",
         "label": "Description",
-        "default": "recommended Qure to their patients."
+        "default": "ont recommandé Qure à leurs patients."
       },
       {
         "type": "text",
         "id": "frontrow_health_link_text",
         "label": "Link Text",
-        "default": "See More"
+        "default": "Voir plus"
       },
       {
         "type": "url",
@@ -325,7 +325,7 @@
         "id": "copy_get_product_free",
         "label": "t:sections.slidecart.settings.copy_get_product_free.label",
         "info": "t:sections.slidecart.settings.copy_get_product_free.info",
-        "default": "<p>You’re &price-left& away from <strong>Free &product-title& <\/strong>worth $100!<\/p>"
+        "default": "<p>You’re &price-left& away from <strong>Free &product-title& <\/strong>worth €100!<\/p>"
       },
       {
         "type": "richtext",

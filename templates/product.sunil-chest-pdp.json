@@ -49,8 +49,8 @@
           "type": "timer",
           "disabled": true,
           "settings": {
-            "heading": "Save $50 on any LED device",
-            "text": "<p>Get <em><strong>$50 OFF</strong></em><strong> </strong>with code: <strong>GLOWON50</strong></p>",
+            "heading": "Save €50 on any LED device",
+            "text": "<p>Get <em><strong>€50 OFF</strong></em><strong> </strong>with code: <strong>GLOWON50</strong></p>",
             "timer": "2024-09-30T23:59:59"
           }
         },
@@ -92,7 +92,7 @@
         "before_after_button_label": "Before & After",
         "reserve": false,
         "underbutton_text_left": "Dermatologist Reviewed",
-        "underbutton_text_right": "Free Shipping Over $100",
+        "underbutton_text_right": "Free Shipping Over €100",
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
@@ -294,7 +294,7 @@
         "heading": "Achieve your skincare goals",
         "text": "",
         "slide_count": true,
-        "text_verified_customer": "Verified customer"
+        "text_verified_customer": "Client vérifié"
       }
     },
     "icons_list_MaLwqY": {
@@ -304,14 +304,14 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Free Shipping</p><p>Orders Over $100</p>"
+            "text": "<p>Free Shipping</p><p>Orders Over €100</p>"
           }
         },
         "icon_P8hUBd": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/buy-now-ftr.svg",
-            "text": "<p>Buy Now,</p><p>Pay Later</p>"
+            "text": "<p>Acheter maintenant,</p><p>Pay Later</p>"
           }
         },
         "icon_4hAMfr": {
@@ -511,7 +511,7 @@
         "classname": "mi_landing_result",
         "heading": "Results you‘ll see with your own eyes",
         "heading_reduced": "",
-        "text_verified_customer": "Verified customer",
+        "text_verified_customer": "Client vérifié",
         "text_reviewed": "Reviewed in"
       }
     },
@@ -650,7 +650,7 @@
             "heading": "Qure Neck & Décolletage LED",
             "mob_text": "",
             "text": "<p><strong>one time-cost</strong></p>",
-            "price": "$299",
+            "price": "€299",
             "style": "correctCircle",
             "list": "<ul><li>Complete in just 10 minutes</li><li>Comfortable & convenient at home</li><li>Unlimited treatments & maintenance</li><li>Only one-time payment</li></ul>"
           }
@@ -659,10 +659,10 @@
           "type": "object",
           "settings": {
             "image": "shopify://shop_images/beauty_derma.webp",
-            "heading": "Derm/ Clinic Treatments",
+            "heading": "Traitements dermato/cliniques",
             "mob_text": "",
             "text": "<p><strong>yearly cost*</strong></p>",
-            "price": "$1,200 +",
+            "price": "€1,200 +",
             "style": "incorrectCircle",
             "list": "<ul><li>Time-consuming commute to clinic</li><li>According to clinic’s availability</li><li>Limited treatments</li><li>Ongoing payments required</li></ul>"
           }
