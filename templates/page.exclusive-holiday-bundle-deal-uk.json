@@ -117,7 +117,7 @@
           "settings": {
             "heading": "Pack Line Refine Essentiels",
             "discount": 32,
-            "image": "shopify://shop_images/bf_mh_3.webp",
+            "image": "shopify://shop_images/bf_mh_3_fr.webp",
             "product_url": "#line-refine-bundle-essentials"
           }
         },
@@ -163,7 +163,7 @@
           "settings": {
             "heading": "Pack Filtre Familial",
             "discount": 52,
-            "image": "shopify://shop_images/bf_mh_8.webp",
+            "image": "shopify://shop_images/bf_mh_8_fr.webp",
             "product_url": "#filter-family-bundle"
           }
         },
@@ -172,7 +172,7 @@
           "settings": {
             "heading": "Contrôle des Éruptions Pro",
             "discount": 40,
-            "image": "shopify://shop_images/bf_mh_9.webp",
+            "image": "shopify://shop_images/bf_mh_9_fr.webp",
             "product_url": "#breakout-control-pro-1"
           }
         },
@@ -181,7 +181,7 @@
           "settings": {
             "heading": "Contrôle des Éruptions Avancé",
             "discount": 33,
-            "image": "shopify://shop_images/bf_mh_10.webp",
+            "image": "shopify://shop_images/bf_mh_10_fr.webp",
             "product_url": "#breakout-control-advanced"
           }
         },
@@ -190,7 +190,7 @@
           "settings": {
             "heading": "Contrôle des Éruptions Débutant",
             "discount": 52,
-            "image": "shopify://shop_images/bf_mh_11.webp",
+            "image": "shopify://shop_images/bf_mh_11_fr.webp",
             "product_url": "#breakout-control-starter"
           }
         },
@@ -199,7 +199,7 @@
           "settings": {
             "heading": "Contrôle des Éruptions Essentiels",
             "discount": 30,
-            "image": "shopify://shop_images/bf_mh_12.webp",
+            "image": "shopify://shop_images/bf_mh_12_fr.webp",
             "product_url": "#breakout-control-essentials"
           }
         }
@@ -346,7 +346,7 @@
         "image_a8KMPg"
       ],
       "settings": {
-        "heading": "MIS EN AVANT DANS",
+        "heading": "VU DANS",
         "slider_type": "five_slides",
         "slide_per_view_desktop": 3,
         "slide_per_view_mobile": 3

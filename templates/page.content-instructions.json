@@ -52,7 +52,7 @@
           "type": "button",
           "settings": {
             "button_label": "En savoir plus sur le système de micro-infusion",
-            "button_url": "https://www.qureskincare.com/pages/microinfusion"
+            "button_url": "https://www.qureskincare.fr/pages/microinfusion"
           }
         }
       },
@@ -167,7 +167,7 @@
             "heading": "Détails du produit",
             "image": "shopify://shop_images/search.svg",
             "image_large": "shopify://shop_images/img_col_e8f6043d-3dfd-4e45-b20d-8d9a3bf04339.png",
-            "content": "<ul><li>Aiguilles de 0,5 mm créent des microcanaux de profondeur contrôlée dans la couche supérieure de votre peau via une technique de « stamping ». Cela « trompe » votre peau pour activer son processus naturel de guérison.</li><li>Têtes d’aiguilles stériles à usage unique plaquées or 24 carats aident à minimiser les risques d’infection ou d’irritation.</li><li>Le sérum de votre choix (pour les rides / pour les taches sombres) est infusé directement sous la barrière cutanée, accélérant l’absorption des ingrédients actifs pour des résultats plus rapides.</li></ul><p><a href=\"https://www.qureskincare.com/pages/microinfusion\" title=\"https://www.qureskincare.com/pages/microinfusion\">En savoir plus sur le système de micro-infusion ></a></p>",
+            "content": "<ul><li>Aiguilles de 0,5 mm créent des microcanaux de profondeur contrôlée dans la couche supérieure de votre peau via une technique de « stamping ». Cela « trompe » votre peau pour activer son processus naturel de guérison.</li><li>Têtes d’aiguilles stériles à usage unique plaquées or 24 carats aident à minimiser les risques d’infection ou d’irritation.</li><li>Le sérum de votre choix (pour les rides / pour les taches sombres) est infusé directement sous la barrière cutanée, accélérant l’absorption des ingrédients actifs pour des résultats plus rapides.</li></ul><p><a href=\"https://www.qureskincare.fr/pages/microinfusion\" title=\"https://www.qureskincare.fr/pages/microinfusion\">En savoir plus sur le système de micro-infusion ></a></p>",
             "wistia_id": ""
           }
         },
@@ -177,7 +177,7 @@
             "classname": "faq",
             "heading": "Instructions d’utilisation",
             "image": "shopify://shop_images/usage_dir.svg",
-            "content": "<ul><li>Traitement toutes les 2 semaines, le soir, pour des résultats optimaux.</li><li>Suivez le protocole avant et après traitement.</li><li>Assurez-vous de scanner le QR code sur l’emballage avant utilisation ou consultez le protocole détaillé <a href=\"https://www.qureskincare.com/pages/microinfusion-safety-guide\">ici</a>.</li></ul>",
+            "content": "<ul><li>Traitement toutes les 2 semaines, le soir, pour des résultats optimaux.</li><li>Suivez le protocole avant et après traitement.</li><li>Assurez-vous de scanner le QR code sur l’emballage avant utilisation ou consultez le protocole détaillé <a href=\"https://www.qureskincare.fr/pages/microinfusion-safety-guide\">ici</a>.</li></ul>",
             "wistia_id": "yy9nv8vwsn"
           }
         },
@@ -185,7 +185,7 @@
           "type": "button",
           "settings": {
             "button_label": "Guide détaillé d’utilisation",
-            "button_url": "https://www.qureskincare.com/pages/microinfusion-safety-guide"
+            "button_url": "https://www.qureskincare.fr/pages/microinfusion-safety-guide"
           }
         },
         "description_GE3PNL": {

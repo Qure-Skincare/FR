@@ -64,7 +64,7 @@
         "slider_tAXEtF": {
           "type": "slider",
           "settings": {
-            "s_image": "shopify://shop_images/all_serum_result_5.webp",
+            "s_image": "shopify://shop_images/all_serum_result_5_fr.webp",
             "wistia_id": "",
             "thumbnail": "shopify://shop_images/aio_thumb-3.webp"
           }
@@ -72,7 +72,7 @@
         "slider_F7Vq3q": {
           "type": "slider",
           "settings": {
-            "s_image": "shopify://shop_images/all_serum_result_7.webp",
+            "s_image": "shopify://shop_images/all_serum_result_7_fr.webp",
             "wistia_id": "",
             "thumbnail": "shopify://shop_images/aio_thumb-1.webp"
           }
@@ -80,7 +80,7 @@
         "slider_x7iC9L": {
           "type": "slider",
           "settings": {
-            "s_image": "shopify://shop_images/all_serum_result_6.webp",
+            "s_image": "shopify://shop_images/all_serum_result_6_fr.webp",
             "wistia_id": "",
             "thumbnail": "shopify://shop_images/aio_thumb-2.webp"
           }
@@ -160,7 +160,7 @@
         "btn_url": "#choose_bundle",
         "recomand": "",
         "underbutton_text_left": "Approuvé par les dermatologues",
-        "underbutton_text_right": "Livraison gratuite dès 100 $",
+        "underbutton_text_right": "Livraison gratuite dès 100 €",
         "order_mob": true
       }
     },
@@ -266,11 +266,7 @@
           }
         }
       },
-      "block_order": [
-        "object_3RRxn9",
-        "object_LVMq4F",
-        "object_APNw94"
-      ],
+      "block_order": ["object_3RRxn9", "object_LVMq4F", "object_APNw94"],
       "custom_css": [
         ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}",
         ".skincare_right .accordion-body p {font-size: 11px; line-height: 16px; font-weight: 300;}",
@@ -281,7 +277,7 @@
         "heading": "Texture de Peau Irrégulière",
         "r_heading": "Texture de Peau Irrégulière",
         "text": "<p>Clarifie et unifie le teint, réduit les pores dilatés, renforce la barrière cutanée, diminue les éruptions.</p>",
-        "image": "shopify://shop_images/bethany_skincare.webp",
+        "image": "shopify://shop_images/bethany_skincare_fr.webp",
         "image_country": "shopify://shop_images/canada_f.svg",
         "client": "Bethany N."
       }
@@ -352,7 +348,7 @@
         "heading": "Ridules et Rides",
         "r_heading": "Ridules et Rides",
         "text": "<p>Hydratez profondément pour rendre les ridules moins visibles et booster l’hydratation de votre peau !</p>",
-        "image": "shopify://shop_images/shannon_skincare.webp",
+        "image": "shopify://shop_images/shannon_skincare_fr.webp",
         "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
         "client": "Shannon"
       }
@@ -388,11 +384,7 @@
           }
         }
       },
-      "block_order": [
-        "object_agNLip",
-        "object_mdgwky",
-        "object_WBFref"
-      ],
+      "block_order": ["object_agNLip", "object_mdgwky", "object_WBFref"],
       "custom_css": [
         ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}",
         ".skincare_right .accordion-body p {font-size: 11px; line-height: 16px; font-weight: 300;}",
@@ -403,7 +395,7 @@
         "heading": "Taches Sombres et Décoloration",
         "r_heading": "Taches Sombres et Décoloration",
         "text": "<p>Unifie le teint pour une peau plus éclatante. Réduit l’apparence des taches sombres et aide à prévenir la décoloration avec une utilisation continue.</p>",
-        "image": "shopify://shop_images/Elizabeth_skincare.webp",
+        "image": "shopify://shop_images/Elizabeth_skincare_fr.webp",
         "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
         "client": "Elizabeth R."
       }
@@ -428,10 +420,7 @@
           }
         }
       },
-      "block_order": [
-        "object_4YzLLW",
-        "object_EcjYEK"
-      ],
+      "block_order": ["object_4YzLLW", "object_EcjYEK"],
       "custom_css": [
         ".accordionTechnologyWrapper {padding-top: 0;}",
         "@media (max-width: 767px) {.accordionTechnologyWrapper > #accordionTechnology {grid-template-columns: 1fr; gap: 0; }}"
@@ -457,7 +446,7 @@
         "result_YCMcrf": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_vanessa_adb4e75a-c0f9-4bf9-b630-3d1af87e3e9b.webp",
+            "image": "shopify://shop_images/results_vanessa_adb4e75a-c0f9-4bf9-b630-3d1af87e3e9b_fr.webp",
             "heading": "Mon acné kystique a disparu.",
             "text": "<p>« Jusqu’ici, j’adore ! J’ai eu un peu de purge le premier jour, mais une fois calmé, wow, quel résultat. Mon acné kystique a disparu. Il me reste quelques hyperpigmentations et petits boutons occasionnels, mais rien à voir avec la douleur de l’acné kystique. »</p>",
             "see-more": "",
@@ -483,7 +472,7 @@
         "result_pEAJKU": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_chery.webp",
+            "image": "shopify://shop_images/results_chery_fr.webp",
             "heading": "JE VOIS LA DIFFÉRENCE !!",
             "text": "<p>« JE VOIS LA DIFFÉRENCE !! Ce produit est un incontournable. Après 2 semaines d’utilisation, il y a vraiment un grand changement sur ma peau !! Mes taches solaires se sont éclaircies, surtout sur le dos de mes mains. Les rougeurs et décolorations du visage ont diminué ! Très satisfaite de ce sérum. »</p>",
             "see-more": "",
@@ -509,7 +498,7 @@
         "result_LQ93LC": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_bethany.webp",
+            "image": "shopify://shop_images/results_bethany_fr.webp",
             "heading": "Ça a changé ma vie !",
             "text": "<p>« Ce produit a changé ma vie ! Ma peau est plus lumineuse, nette et uniforme ! Je l’utiliserai pour toujours ! »</p>",
             "see-more": "",
@@ -535,7 +524,7 @@
         "result_wKDmdr": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jessica.webp",
+            "image": "shopify://shop_images/results_jessica1_fr.webp",
             "heading": "Meilleure expérience",
             "text": "<p>« Meilleure expérience. Excellent service client, très attentifs à mes questions et produits de grande qualité. Je leur donne 100/100. Ma peau avait des petites éruptions, des pores dilatés et était fatiguée ; après un seul traitement de micro-infusion, elle a radicalement changé en 3 jours. Je rachèterai ! »</p>",
             "see-more": "",
@@ -548,7 +537,7 @@
         "result_Km8EJp": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_dorothy.webp",
+            "image": "shopify://shop_images/results_dorothy_fr.webp",
             "heading": "La beauté n’a pas d’âge",
             "text": "<p>« J’ai 76 ans. Il y a trois mois, j’ai partagé ma découverte du sérum Tout-en-1 de Qure et l’achat du masque à lumière rouge six semaines avant. Je les utilise quotidiennement. Quel boost pour ma routine anti-âge en 3-4 minutes ! Le système de micro-aiguilles à domicile et les sérums ciblés de Qure renforcent la thérapie par lumière rouge et le sérum Tout-en-1, et ça me fait économiser ! Les produits Qure ont visiblement amélioré la texture, l’éclat et le teint de ma peau. »</p>",
             "see-more": "",
@@ -561,7 +550,7 @@
         "result_m3HaCy": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_white.webp",
+            "image": "shopify://shop_images/results_white_fr.webp",
             "heading": "Le meilleur sérum !!",
             "text": "<p>« Incroyable ! En 2 mois d’utilisation, les résultats sur ma peau sont époustouflants. Je n’ai plus besoin de maquillage lourd ni de correcteur pour cacher mes imperfections. Ce sérum a fait des miracles ! »</p>",
             "see-more": "",
@@ -615,10 +604,7 @@
           }
         }
       },
-      "block_order": [
-        "video_zJajWc",
-        "text_content_tYknEA"
-      ],
+      "block_order": ["video_zJajWc", "text_content_tYknEA"],
       "settings": {
         "padding_top": 30,
         "padding_bottom": 0
@@ -682,11 +668,7 @@
           }
         }
       },
-      "block_order": [
-        "product_wBM938",
-        "product_fm3HF3",
-        "product_mBUti7"
-      ],
+      "block_order": ["product_wBM938", "product_fm3HF3", "product_mBUti7"],
       "disabled": true,
       "settings": {
         "rating": "Noté 5.0/5.0 par les clients",
@@ -714,7 +696,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 $</p>"
+            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 €</p>"
           }
         },
         "icon_fQHwti": {

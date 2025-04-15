@@ -18,20 +18,18 @@
           "settings": {
             "heading": "JOURNÉE INTERNATIONALE DE LA FEMME",
             "subheading": "<h3>Obtenez un pack Micro-Infusion GRATUIT</h3>",
-            "link_url": "https://qureskincare.com/pages/international-womens-offer",
-            "link_label": "ACHETEZ & ÉCONOMISEZ $357"
+            "link_url": "https://qureskincare.fr/pages/international-womens-offer",
+            "link_label": "ACHETEZ & ÉCONOMISEZ €357"
           }
         }
       },
-      "block_order": [
-        "banner_he7ceb"
-      ],
+      "block_order": ["banner_he7ceb"],
       "settings": {
         "heading": "",
         "heading_mobile": "",
-        "image": "shopify://shop_images/banner_best_sellers.png",
-        "image_mobile": "shopify://shop_images/banner_best_sellers_mobile.png",
-        "link_url": "https://qureskincare.com/collections/best-sellers"
+        "image": "shopify://shop_images/banner_best_sellers_fr.webp",
+        "image_mobile": "shopify://shop_images/banner_best_sellers_mobile_fr.png",
+        "link_url": "https://qureskincare.fr/collections/best-sellers"
       }
     },
     "icons_list_BUTDmx": {
@@ -41,7 +39,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Livraison gratuite à partir de 100$</p>"
+            "text": "<p>Livraison gratuite à partir de 100€</p>"
           }
         },
         "icon_PKBzbi": {
@@ -82,7 +80,7 @@
         "client_card_BHKtXC": {
           "type": "client_card",
           "settings": {
-            "image": "shopify://shop_images/imgcollection-finelines.png",
+            "image": "shopify://shop_images/imgcollection-finelines_fr.webp",
             "image_mobile": "shopify://shop_images/imgcollection-finelines-mob.png",
             "text": "<p>\"C'est un produit incroyable que vous ne regretterez pas d'avoir acheté. Je constate vraiment le changement sur ma peau.\"</p>",
             "client": "Ellie V.",
@@ -107,7 +105,7 @@
             "header": "VOGUE",
             "text": "<p>L'un des meilleurs masques LED selon VOGUE</p>",
             "button_label": "Découvrir",
-            "button_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "button_url": "https://www.qureskincare.fr/products/q-rejuvalight-pro-facewear",
             "position": "7"
           }
         }
@@ -125,7 +123,7 @@
         "result_ecrrRm": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_teresa.webp",
+            "image": "shopify://shop_images/results_teresa_fr.webp",
             "heading": "ÇA MARCHE VRAIMENT !!!",
             "text": "<p>\"J'étais très sceptique lorsque mon mari m'a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J'ai essayé de nombreux sérums pour mes taches de soleil, mais rien n'a fonctionné jusqu'à ce que j'utilise ce masque. L'investissement vaut le coup.\"</p>",
             "see-more": "",
@@ -138,7 +136,7 @@
         "result_bNqVyU": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_tiffany.webp",
+            "image": "shopify://shop_images/results_tiffany_fr.webp",
             "heading": "Peau renouvelée !",
             "text": "<p>\"Mon masque Qure a été incroyable ! En tant que personne qui lutte contre l'acné et la rosacée, votre masque de luminothérapie LED a tellement amélioré ma peau que je me sens désormais à l'aise sans maquillage. Je suis très contente de ce produit !\"</p>",
             "see-more": "",
@@ -151,7 +149,7 @@
         "result_YDr83e": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_anton.webp",
+            "image": "shopify://shop_images/results_anton_fr.webp",
             "heading": "Je ne peux plus m'en passer !",
             "text": "<p>J'ai commencé à avoir de l'acné à l'adolescence. Et ça n'a fait qu'empirer. J'ai tout essayé : des régimes (je suis devenue complètement vegan), j'ai testé toutes sortes de soins de peau (chers comme moins chers), sans résultat. Avec Qure, dès le début, j'ai remarqué des résultats. Après la 1ère semaine, je n'avais plus de boutons. </p><p>Les gens me demandent maintenant comment j'ai réussi à avoir une peau hydratée, sans acné, lumineuse et sans rougeurs. Je ne peux que leur recommander Qure, perso je ne peux plus m'en passer.</p>",
             "see-more": "",
@@ -164,7 +162,7 @@
         "result_47bjXc": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_michelle.webp",
+            "image": "shopify://shop_images/results_michelle_fr.webp",
             "heading": "Aucune acné pendant 8 semaines",
             "text": "<p>« Je pensais que cela ne fonctionnait que pour mes boutons, aucune acné pendant 8 semaines maintenant. MAIS merci aux avant-après car même moi j’étais surprise ! Mes abonnés ont remarqué la différence sur ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme, mais suffisamment pour repousser la chirurgie, que je ne peux pas me permettre en ce moment. »</p>",
             "see-more": "",
@@ -177,7 +175,7 @@
         "result_NmwfpJ": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_june.webp",
+            "image": "shopify://shop_images/results_june_fr.webp",
             "heading": "Résultats incroyables !",
             "text": "<p>« Incroyable ! Je ne m'attendais pas à ce miracle. J'avais des taches rouges au-dessus de mes lèvres depuis des années et elles se sont estompées après avoir utilisé le masque quotidiennement pendant seulement 6 semaines. Je l'ai acheté en espérant améliorer le grain de ma peau et réduire les rides. Cela a amélioré ces aspects, mais ce qui me réjouie le plus, c'est que la rougeur a disparu. »</p>",
             "see-more": "",
@@ -190,7 +188,7 @@
         "result_JCcEmh": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jess.webp",
+            "image": "shopify://shop_images/results_jess_fr.webp",
             "heading": "Tellement plus doux",
             "text": "<p>« Après quelques semaines d'utilisation quotidienne, je remarque déjà une différence sur ma peau : elle est beaucoup plus lisse, moins rouge et irritée, les pores sont plus petits et j'ai moins de boutons. »</p>",
             "see-more": "",
@@ -203,7 +201,7 @@
         "result_AnCMPk": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_john.webp",
+            "image": "shopify://shop_images/results_john_fr.webp",
             "heading": "Apparence plus saine",
             "text": "<p>« Ma peau est beaucoup plus claire, beaucoup moins grasse, et a un éclat plus sain dans l'ensemble. Mes cicatrices d’acné ont même été réduites ! »</p>",
             "see-more": "",
@@ -216,7 +214,7 @@
         "result_AqGUDT": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_bj_nardi.webp",
+            "image": "shopify://shop_images/results_bj_nardi_fr.webp",
             "heading": "A complètement guéri mon acné",
             "text": "<p>« C'est la première fois en DEUX ANS que je n'ai pas d'acné sur le visage. J'utilise mon masque Qure depuis 1 mois maintenant et il a complètement guéri mon acné. C'est parti ET il guérit toutes mes cicatrices et marques. J'étais littéralement au bord du suicide à cause de ma peau horrible. Cet appareil M'A SAUVÉ LA VIE !!! »</p>",
             "see-more": "",
@@ -246,10 +244,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "icons_list_BUTDmx",
-    "main_results",
-    "results_NPPBwQ"
-  ]
+  "order": ["main", "icons_list_BUTDmx", "main_results", "results_NPPBwQ"]
 }

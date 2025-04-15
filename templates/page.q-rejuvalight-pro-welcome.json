@@ -16,28 +16,28 @@
           "type": "navigation-link",
           "settings": {
             "link_label": "COMMENT L’UTILISER",
-            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#how-to-use"
+            "link_url": "https://www.qureskincare.fr/pages/q-rejuvalight-pro-LED-mask-guide#how-to-use"
           }
         },
         "navigation_link_LteKNY": {
           "type": "navigation-link",
           "settings": {
             "link_label": "APPLICATION QURE",
-            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#getting-started"
+            "link_url": "https://www.qureskincare.fr/pages/q-rejuvalight-pro-LED-mask-guide#getting-started"
           }
         },
         "navigation_link_bzjzjf": {
           "type": "navigation-link",
           "settings": {
             "link_label": "DÉPANNAGE",
-            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#troubleshooting"
+            "link_url": "https://www.qureskincare.fr/pages/q-rejuvalight-pro-LED-mask-guide#troubleshooting"
           }
         },
         "navigation_link_4nUk64": {
           "type": "navigation-link",
           "settings": {
             "link_label": "ENTRETIEN",
-            "link_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-LED-mask-guide#take-care"
+            "link_url": "https://www.qureskincare.fr/pages/q-rejuvalight-pro-LED-mask-guide#take-care"
           }
         }
       },
@@ -59,7 +59,7 @@
             "image": "shopify://shop_images/knowledge.svg",
             "text": "<p>Tout ce que vous devez savoir pour démarrer votre aventure avec le Q-Rejuvalight Pro.</p>",
             "button_label": "Guide de démarrage rapide",
-            "button_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide",
+            "button_url": "https://www.qureskincare.fr/pages/q-rejuvalight-pro-led-mask-guide",
             "button_image": "shopify://shop_images/quick_start.svg",
             "button_label_second": "Télécharger le manuel complet",
             "button_url_second": "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Q-Rejuvalight_Pro_Facewear-Manual-Jan-2025-160x140mm_5.pdf?v=1738945249",
@@ -88,7 +88,7 @@
         "btm_text": "<p>Si vous avez des questions, notre équipe est là pour vous aider !</p>",
         "wistia_id": "2jl8ah5r5n",
         "btn_label": "Contactez-nous",
-        "btn_url": "https://www.qureskincare.com/pages/contact-us"
+        "btn_url": "https://www.qureskincare.fr/pages/contact-us"
       }
     }
   },

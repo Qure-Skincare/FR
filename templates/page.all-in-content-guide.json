@@ -51,7 +51,7 @@
           "type": "button",
           "settings": {
             "button_label": "En savoir plus sur le Sérum Visage Tout-en-Un",
-            "button_url": "https://qureskincare.com/products/face-serum"
+            "button_url": "https://qureskincare.fr/products/face-serum"
           }
         }
       },
@@ -174,7 +174,7 @@
             "classname": "ingredient_text",
             "heading": "Détails des Ingrédients",
             "image": "shopify://shop_images/product_claims.svg",
-            "content": "<p><strong>Peptides Argireline</strong><br/>Le peptide anti-âge le plus reconnu au monde. Stimule le collagène, réduisant les ridules et boostant l’hydratation pour une peau plus ferme et jeune !</p><p><strong>Bakuchiol</strong><br/>Les bienfaits du rétinol, naturellement ! Le Bakuchiol favorise le renouvellement cellulaire pour une peau lisse et ferme.</p><p><strong>Rétinol (Vitamine A)</strong><br/>Pousse les nouvelles cellules à la surface pour atténuer rides, taches de vieillesse et lisser la texture.</p><p><strong>Niacinamide</strong><br/>Ingrédient star qui clarifie et unifie le teint, réduit les pores dilatés, l’acné et les rougeurs.</p><p><strong>Acides Lactique & Mandélique (Exfoliants doux)</strong><br/>Exfoliants chimiques doux qui éliminent la couche de cellules mortes pour une peau plus claire et lisse.</p><p><strong>Acide Éthyl Ascorbique (Vitamine C)</strong><br/>Réputé pour éclaircir, réduire les rides, raffermir. Atténue l’hyperpigmentation pour un teint uniforme et une peau souple.</p><p><strong>Acide férulique</strong><br/>Protège contre le vieillissement extrinsèque, réduisant rides et taches brunes.</p><p><strong>Actiwhite™</strong><br/>Éclaircit visiblement le teint pour plus d’éclat. Réduit les taches et prévient la décoloration (en inhibant la mélanine) avec une utilisation continue.</p><p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Voir la FAQ pour plus d’infos ici</a></p>",
+            "content": "<p><strong>Peptides Argireline</strong><br/>Le peptide anti-âge le plus reconnu au monde. Stimule le collagène, réduisant les ridules et boostant l’hydratation pour une peau plus ferme et jeune !</p><p><strong>Bakuchiol</strong><br/>Les bienfaits du rétinol, naturellement ! Le Bakuchiol favorise le renouvellement cellulaire pour une peau lisse et ferme.</p><p><strong>Rétinol (Vitamine A)</strong><br/>Pousse les nouvelles cellules à la surface pour atténuer rides, taches de vieillesse et lisser la texture.</p><p><strong>Niacinamide</strong><br/>Ingrédient star qui clarifie et unifie le teint, réduit les pores dilatés, l’acné et les rougeurs.</p><p><strong>Acides Lactique & Mandélique (Exfoliants doux)</strong><br/>Exfoliants chimiques doux qui éliminent la couche de cellules mortes pour une peau plus claire et lisse.</p><p><strong>Acide Éthyl Ascorbique (Vitamine C)</strong><br/>Réputé pour éclaircir, réduire les rides, raffermir. Atténue l’hyperpigmentation pour un teint uniforme et une peau souple.</p><p><strong>Acide férulique</strong><br/>Protège contre le vieillissement extrinsèque, réduisant rides et taches brunes.</p><p><strong>Actiwhite™</strong><br/>Éclaircit visiblement le teint pour plus d’éclat. Réduit les taches et prévient la décoloration (en inhibant la mélanine) avec une utilisation continue.</p><p><a href=\"https://qureskincare.fr/products/face-serum\" title=\"https://qureskincare.fr/products/face-serum\">Voir la FAQ pour plus d’infos ici</a></p>",
             "wistia_id": ""
           }
         },

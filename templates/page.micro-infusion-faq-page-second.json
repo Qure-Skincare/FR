@@ -23,9 +23,7 @@
           }
         }
       },
-      "block_order": [
-        "announcement_Jg3bwh"
-      ],
+      "block_order": ["announcement_Jg3bwh"],
       "custom_css": [
         ".nav__item.cart_btn,.nav__item.header_gift_btn {display: none !important;}"
       ],
@@ -67,11 +65,7 @@
           }
         }
       },
-      "block_order": [
-        "content_LyN4jJ",
-        "content_NBW9R8",
-        "image_ahLEwD"
-      ],
+      "block_order": ["content_LyN4jJ", "content_NBW9R8", "image_ahLEwD"],
       "custom_css": [
         ".faq_title h1 {font-size: 45px; letter-spacing: 0.36px; line-height: 55px;}",
         ".faq_sub h5 {font-size: 24px; font-weight: 400; line-height: 39px; letter-spacing: 0.3px;}",
@@ -103,10 +97,7 @@
           }
         }
       },
-      "block_order": [
-        "content_FWJRzx",
-        "content_6p66aP"
-      ],
+      "block_order": ["content_FWJRzx", "content_6p66aP"],
       "settings": {
         "classname": "technology_light",
         "column_image": 6,
@@ -133,10 +124,7 @@
           }
         }
       },
-      "block_order": [
-        "content_hYU3L6",
-        "content_BFxnaf"
-      ],
+      "block_order": ["content_hYU3L6", "content_BFxnaf"],
       "settings": {
         "classname": "technology_light pt-5",
         "column_image": 6,
@@ -167,11 +155,7 @@
           }
         }
       },
-      "block_order": [
-        "video_9ChCdJ",
-        "option_ypREtU",
-        "option_JFE37P"
-      ],
+      "block_order": ["video_9ChCdJ", "option_ypREtU", "option_JFE37P"],
       "custom_css": [
         "@media (max-width: 767px) {.stamping_skin-gif {padding-bottom: 40px; }}"
       ],
@@ -194,9 +178,7 @@
           }
         }
       },
-      "block_order": [
-        "content_9nC84W"
-      ],
+      "block_order": ["content_9nC84W"],
       "settings": {
         "classname": "technology_light section pt-0",
         "column_image": 6,
@@ -223,10 +205,7 @@
           }
         }
       },
-      "block_order": [
-        "content_CCLQXk",
-        "content_VwQ8UA"
-      ],
+      "block_order": ["content_CCLQXk", "content_VwQ8UA"],
       "settings": {
         "classname": "technology_light",
         "column_image": 6,
@@ -324,11 +303,7 @@
           }
         }
       },
-      "block_order": [
-        "content_WQrEdd",
-        "image_9caNcq",
-        "content_CBz9Lw"
-      ],
+      "block_order": ["content_WQrEdd", "image_9caNcq", "content_CBz9Lw"],
       "settings": {
         "classname": "technology_light",
         "column_image": 10,
@@ -363,11 +338,7 @@
           }
         }
       },
-      "block_order": [
-        "image_99WJBt",
-        "content_xaamYe",
-        "content_n8zyBU"
-      ],
+      "block_order": ["image_99WJBt", "content_xaamYe", "content_n8zyBU"],
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 10,
@@ -396,17 +367,13 @@
         "content_P9NBhw": {
           "type": "content",
           "settings": {
-            "text": "<p>Chez Qure, nous nous engageons à rendre les solutions de soin avancées accessibles et abordables pour tous.<br/><br/>Nous avons fixé un prix compétitif pour notre système de micro-infusion, car nous savons que des soins de qualité ne devraient pas ruiner votre budget. Les traitements professionnels peuvent être coûteux et chronophages, mais avec Qure, <strong>vous pouvez obtenir des résultats similaires à domicile pour une fraction du prix.<br/><br/></strong>Le système de micro-infusion Qure, qui inclut l’appareil et une réserve de sérums pour 3 mois, est habituellement vendu à 297 $. Cependant, pour une durée limitée, vous pouvez l’obtenir pour seulement <strong>149 $ avec notre meilleur pack, soit 43% d’économie.<br/><br/></strong>Nous croyons que chacun mérite de se sentir au mieux de sa forme sans les coûts élevés des traitements professionnels.</p>",
+            "text": "<p>Chez Qure, nous nous engageons à rendre les solutions de soin avancées accessibles et abordables pour tous.<br/><br/>Nous avons fixé un prix compétitif pour notre système de micro-infusion, car nous savons que des soins de qualité ne devraient pas ruiner votre budget. Les traitements professionnels peuvent être coûteux et chronophages, mais avec Qure, <strong>vous pouvez obtenir des résultats similaires à domicile pour une fraction du prix.<br/><br/></strong>Le système de micro-infusion Qure, qui inclut l’appareil et une réserve de sérums pour 3 mois, est habituellement vendu à 297 €. Cependant, pour une durée limitée, vous pouvez l’obtenir pour seulement <strong>149 € avec notre meilleur pack, soit 43% d’économie.<br/><br/></strong>Nous croyons que chacun mérite de se sentir au mieux de sa forme sans les coûts élevés des traitements professionnels.</p>",
             "column_content": 0,
             "classname": "it_info p-0 pt-0 pt-md-2"
           }
         }
       },
-      "block_order": [
-        "image_hRnHyD",
-        "content_dLPeAa",
-        "content_P9NBhw"
-      ],
+      "block_order": ["image_hRnHyD", "content_dLPeAa", "content_P9NBhw"],
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 10,
@@ -427,24 +394,20 @@
         "image_nWBFP3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/qure_mi_faq5.webp",
+            "image": "shopify://shop_images/qure_mi_faq5_fr.webp",
             "classname": "mw-mob-100"
           }
         },
         "content_L9wmUd": {
           "type": "content",
           "settings": {
-            "text": "<p>Vous pouvez acheter le système de micro-infusion Qure directement sur notre site officiel. Cela garantit que vous recevez le produit authentique avec la qualité et les résultats que vous attendez.<br/><br/>Évitez les imitations et contrefaçons en achetant uniquement sur notre site. Nous avons conçu notre système pour être efficace et sûr, et seul notre site officiel peut vous garantir l’original.<br/><br/><a href=\"https://www.qureskincare.com/pages/qure-microinfusion-offer\" title=\"https://www.qureskincare.com/pages/qure-microinfusion-offer\">Visitez notre site pour commander votre système de micro-infusion Qure dès aujourd’hui.</a></p>",
+            "text": "<p>Vous pouvez acheter le système de micro-infusion Qure directement sur notre site officiel. Cela garantit que vous recevez le produit authentique avec la qualité et les résultats que vous attendez.<br/><br/>Évitez les imitations et contrefaçons en achetant uniquement sur notre site. Nous avons conçu notre système pour être efficace et sûr, et seul notre site officiel peut vous garantir l’original.<br/><br/><a href=\"https://www.qureskincare.fr/pages/qure-microinfusion-offer\" title=\"https://www.qureskincare.fr/pages/qure-microinfusion-offer\">Visitez notre site pour commander votre système de micro-infusion Qure dès aujourd’hui.</a></p>",
             "column_content": 5,
             "classname": "it_info p-0 pt-md-3 pe-md-5 me-md-4"
           }
         }
       },
-      "block_order": [
-        "content_yRWtLt",
-        "image_nWBFP3",
-        "content_L9wmUd"
-      ],
+      "block_order": ["content_yRWtLt", "image_nWBFP3", "content_L9wmUd"],
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 6,
@@ -471,10 +434,7 @@
           }
         }
       },
-      "block_order": [
-        "content_EN7NXD",
-        "content_KfpUeD"
-      ],
+      "block_order": ["content_EN7NXD", "content_KfpUeD"],
       "settings": {
         "classname": "technology_light",
         "column_image": 6,
@@ -501,10 +461,7 @@
           }
         }
       },
-      "block_order": [
-        "content_YDeVer",
-        "content_zPaetw"
-      ],
+      "block_order": ["content_YDeVer", "content_zPaetw"],
       "settings": {
         "classname": "technology_light py-4",
         "column_image": 6,
@@ -564,9 +521,7 @@
           }
         }
       },
-      "block_order": [
-        "content_dfH8Un"
-      ],
+      "block_order": ["content_dfH8Un"],
       "settings": {
         "classname": "technology_light d-none d-md-block",
         "column_image": 6,
@@ -593,10 +548,7 @@
           }
         }
       },
-      "block_order": [
-        "content_rpAr6E",
-        "content_mCh8Ji"
-      ],
+      "block_order": ["content_rpAr6E", "content_mCh8Ji"],
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 10,
@@ -626,11 +578,7 @@
           }
         }
       },
-      "block_order": [
-        "product_MR9QfU",
-        "about_wYz6Xb",
-        "button_mrJ4bc"
-      ],
+      "block_order": ["product_MR9QfU", "about_wYz6Xb", "button_mrJ4bc"],
       "settings": {
         "heading": "Prenez en main vos soins avec Qure. Offre à durée limitée :",
         "custom_class": "mw-932 text-md-left ms-0"
@@ -660,7 +608,7 @@
         "result_QTJ4Lf": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_glorija_fr.webp",
+            "image": "shopify://shop_images/results_glorija_fr_fr.webp",
             "heading": "Le meilleur éclat naturel",
             "text": "<p>« J’hésitais au début car je ne savais pas si ça ferait mal, mais à ma grande surprise, c’était assez indolore. Le 2e jour après le traitement, ma peau avait le meilleur éclat naturel ! J’étais aussi ravie de voir à quel point ma pigmentation s’était éclaircie après le 3e traitement :) Je change de sérums selon l’état de ma peau avant le traitement. »</p>",
             "see-more": "",
@@ -673,7 +621,7 @@
         "result_xbM48x": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ellie_fr.webp",
+            "image": "shopify://shop_images/results_ellie_fr_fr.webp",
             "heading": "Ma peau a repris vie !",
             "text": "<p>« Je viens d’avoir 57 ans. Ma peau était extrêmement sèche et en utilisant ce produit, ma peau A REPRIS VIE ! Je suis tellement impressionnée ! Mes collègues me demandent ce que j’utilise pour ma peau... et je leur dis. Produit facile à utiliser et les aiguilles sont meilleures qu’un stylo pour le micro-aiguillage. C’est un produit incroyable que vous ne regretterez pas d’acheter. Je vois vraiment le changement sur ma peau. Excellent travail QURE ! »</p>",
             "see-more": "",
@@ -686,7 +634,7 @@
         "result_CFBYbJ": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_mona.webp",
+            "image": "shopify://shop_images/results_mona_fr.webp",
             "heading": "Estompées après seulement deux traitements",
             "text": "<p>« Personnellement, je pense que mes produits ont été mieux absorbés, ma peau semble un peu plus lumineuse et cette grosse cicatrice d’acné sur ma joue droite a commencé à s’estomper après seulement DEUX traitements ! »</p>",
             "see-more": "",
@@ -699,7 +647,7 @@
         "result_VHdyDc": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/ela_o.png",
+            "image": "shopify://shop_images/ela_o_fr.webp",
             "heading": "Choquée par les résultats",
             "text": "<p>« Choquée par les résultats après un seul traitement !<br/>Je ne suis pas du genre à laisser des avis... mais j’ai été choquée de voir à quel point ma peau était belle le lendemain matin de mon premier traitement !<br/><br/>La texture était tellement plus lisse, ma peau semblait nette, éclatante et saine. Le système était tellement facile à utiliser et j’ai hâte de faire mon prochain traitement. »</p>",
             "see-more": "",
@@ -712,7 +660,7 @@
         "result_EWwHHp": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/ann.png",
+            "image": "shopify://shop_images/ann_fr.webp",
             "heading": "J’ADORE les résultats",
             "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas me permettre de dépenser des centaines de dollars pour un traitement. Alors quand j’ai vu ça en ligne, j’ai sauté sur l’occasion de l’acheter immédiatement. Oui, il n’injecte pas de botox ou de fillers, MAIS personnellement, J’ADORE les résultats et la facilité d’utilisation à domicile. <br/>Ça fonctionne super bien pour ma peau, j’ai remarqué que ma texture cutanée est beaucoup plus lisse et lumineuse. »</p>",
             "see-more": "",
@@ -725,7 +673,7 @@
         "result_NHiAPE": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/chelsea.png",
+            "image": "shopify://shop_images/chelsea_fr.webp",
             "heading": "Résultats incroyables !",
             "text": "<p>« Résultats incroyables. Je suis juste sous le choc de voir à quel point ma peau est belle. Ce produit a été incroyable pour l’hyperpigmentation et aussi pour de l’acné kystique hormonale. Je continuerai à soutenir cette marque car elle a ramené la peau que je connais. J’étais à bout avec une poussée hormonale et une mauvaise hyperpigmentation. »</p>",
             "see-more": "",
@@ -738,7 +686,7 @@
         "result_9PRMG3": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/jess.png",
+            "image": "shopify://shop_images/jess_fr.webp",
             "heading": "ÇA FONCTIONNE VRAIMENT !!",
             "text": "<p>« Je me suis engagée dans le pack économique de 3 mois et après 6 traitements (toutes les 2 semaines), je suis TELLEMENT satisfaite des résultats !!! Mes pores sont plus petits et j’ai surtout remarqué une différence dans la texture de ma peau. Ma peau devient un peu rouge juste après le traitement, mais ça disparaît rapidement. C’est un peu inconfortable sur mon front, mais ça va partout ailleurs. Vraiment worth it !!! »</p>",
             "see-more": "",
@@ -751,7 +699,7 @@
         "result_bjpWTz": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/andrea.png",
+            "image": "shopify://shop_images/andrea_fr.webp",
             "heading": "J’adore absolument !",
             "text": "<p>« J’ai utilisé beaucoup de produits topiques pour aider avec les marques post-acnéiques. Ce système de micro-infusion m’a donné les résultats les plus constants. J’adore absolument ! »</p>",
             "see-more": "",
@@ -764,7 +712,7 @@
         "result_PjbTmU": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/priya.png",
+            "image": "shopify://shop_images/priya_fr.webp",
             "heading": "Plus pleine, plus hydratée !",
             "text": "<p>« Après la première utilisation d’EGF, ma peau était plus pleine, plus hydratée et mon teint s’est radicalement amélioré, littéralement le lendemain. J’adore ce produit, je vais certainement en acheter plus car il a vraiment aidé à lisser les ridules aussi. »</p>",
             "see-more": "",
@@ -777,7 +725,7 @@
         "result_be4ecU": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_andrea-g.webp",
+            "image": "shopify://shop_images/results_andrea-g_fr.webp",
             "heading": "Je vais certainement en recommander",
             "text": "<p>« Encore novice mais jusqu’ici tout va bien ! J’ai utilisé un dermaroller pendant plus d’une décennie - je le fais encore avec 0,25 au moins une fois par semaine. J’ai évité d’acheter un stylo car il y a trop de choses à gérer - mais le système Qure est tout simplement génial. Tellement facile et convivial, et ma peau adore le sérum ! Je fais mon troisième traitement samedi et je vais certainement en recommander 🤗 »</p>",
             "see-more": "",
@@ -790,7 +738,7 @@
         "result_LhjGpR": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/ramandeep.png",
+            "image": "shopify://shop_images/ramandeep_fr.webp",
             "heading": "Je vois définitivement une différence",
             "text": "<p>« J’ai fait 2 traitements - 1 pour le rajeunissement et 2 pour l’hydratation avec un intervalle de 3 semaines entre les traitements. Je vois définitivement une différence sur les photos avant et après. Je suis sûr qu’il me faut encore 4 à 8 traitements, mais ça a déjà fait une différence. »</p>",
             "see-more": "",

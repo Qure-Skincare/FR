@@ -15,8 +15,8 @@
         "announcement_68YDyx": {
           "type": "announcement",
           "settings": {
-            "heading": "ÉCONOMISEZ 100 $ | LIVRAISON GRATUITE DANS LE MONDE ENTIER",
-            "heading_mobile": "ÉCONOMISEZ 100 $ | LIVRAISON GRATUITE DANS LE MONDE ENTIER",
+            "heading": "ÉCONOMISEZ 100 € | LIVRAISON GRATUITE DANS LE MONDE ENTIER",
+            "heading_mobile": "ÉCONOMISEZ 100 € | LIVRAISON GRATUITE DANS LE MONDE ENTIER",
             "color": "blanc",
             "font_size_desktop": 12,
             "font_size_mobile": 12
@@ -27,7 +27,7 @@
           "settings": {
             "link_label": "AVIS",
             "link_url": "#result_section",
-            "image": "shopify:\/\/shop_images\/headerLanding-2.png"
+            "image": "shopify://shop_images/headerLanding-2.png"
           }
         },
         "navigation_link_wPNEr9": {
@@ -35,7 +35,7 @@
           "settings": {
             "link_label": "OFFRE SPÉCIALE",
             "link_url": "#shop",
-            "image": "shopify:\/\/shop_images\/header_specialOffer.webp"
+            "image": "shopify://shop_images/header_specialOffer.webp"
           }
         },
         "navigation_link_wVVWXW": {
@@ -43,7 +43,7 @@
           "settings": {
             "link_label": "FAQ",
             "link_url": "#faq_section",
-            "image": "shopify:\/\/shop_images\/headerLanding-4.png"
+            "image": "shopify://shop_images/headerLanding-4.png"
           }
         }
       },
@@ -54,7 +54,7 @@
         "navigation_link_wVVWXW"
       ],
       "settings": {
-        "button_label": "Économisez 299 $",
+        "button_label": "Économisez 299 €",
         "button_url": "#shop"
       }
     },
@@ -65,11 +65,11 @@
           "type": "Tab",
           "settings": {
             "btn_text": "Produit",
-            "image": "shopify:\/\/shop_images\/led-lp-product-1_c8f7ebeb-33b7-49b0-b1f5-46bd187d948f.webp",
-            "image2": "shopify:\/\/shop_images\/led-lp-product-2_a34438d7-0aba-4590-a45d-39a24ddb1753.webp",
-            "image3": "shopify:\/\/shop_images\/led-lp-product-3.webp",
-            "image4": "shopify:\/\/shop_images\/led-lp-product-5_1.webp",
-            "image5": "shopify:\/\/shop_images\/led-lp-product-6.webp",
+            "image": "shopify://shop_images/led-lp-product-1_c8f7ebeb-33b7-49b0-b1f5-46bd187d948f.webp",
+            "image2": "shopify://shop_images/led-lp-product-2_a34438d7-0aba-4590-a45d-39a24ddb1753.webp",
+            "image3": "shopify://shop_images/led-lp-product-3.webp",
+            "image4": "shopify://shop_images/led-lp-product-5_1.webp",
+            "image5": "shopify://shop_images/led-lp-product-6.webp",
             "wistia": ""
           }
         },
@@ -77,10 +77,10 @@
           "type": "Tab",
           "settings": {
             "btn_text": "Résultats réels",
-            "image": "shopify:\/\/shop_images\/led-lp-result-1.webp",
-            "image2": "shopify:\/\/shop_images\/led-lp-result-2-2.png",
-            "image3": "shopify:\/\/shop_images\/led-lp-result-3.png",
-            "image4": "shopify:\/\/shop_images\/led-lp-result-4_1.webp",
+            "image": "shopify://shop_images/led-lp-result-1_fr.webp",
+            "image2": "shopify://shop_images/led-lp-result-2-2_fr.webp",
+            "image3": "shopify://shop_images/led-lp-result-3_fr.webp",
+            "image4": "shopify://shop_images/led-lp-result-4_1_fr.webp",
             "wistia": ""
           }
         },
@@ -92,22 +92,18 @@
           }
         }
       },
-      "block_order": [
-        "tab_8aHHH3",
-        "tab_NMdxwM",
-        "tab_Hnrtqt"
-      ],
+      "block_order": ["tab_8aHHH3", "tab_NMdxwM", "tab_Hnrtqt"],
       "settings": {
         "display_type": "tab",
         "seo_heading": "",
         "heading": "Retrouver confiance sans maquillage avec Q-Rejuvalight Pro",
         "heading_size": "title-lg",
-        "desc": "<ul><li>Masque LED à domicile approuvé par la FDA<\/li><li>Traite l’acné, les ridules, les rides et plus encore<\/li><li>Personnalisez, suivez et planifiez vos traitements avec l’application<\/li><li>Traitement sans fil rapide et pratique de 3 minutes<\/li><\/ul>",
+        "desc": "<ul><li>Masque LED à domicile approuvé par la FDA</li><li>Traite l’acné, les ridules, les rides et plus encore</li><li>Personnalisez, suivez et planifiez vos traitements avec l’application</li><li>Traitement sans fil rapide et pratique de 3 minutes</li></ul>",
         "rating_text": "43 893+ clients satisfaits",
-        "stars": "shopify:\/\/shop_images\/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-        "btn_txt": "Transformer ma peau et économiser 299 $",
+        "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
+        "btn_txt": "Transformer ma peau et économiser 299 €",
         "btn_url": "#shop",
-        "d_icon": "shopify:\/\/shop_images\/derma-sm.svg",
+        "d_icon": "shopify://shop_images/derma-sm.svg",
         "recomand": "Recommandé par des dermatologues",
         "recomand_mob": "Évalué par des dermatologues",
         "underbutton_text_left": "",
@@ -118,7 +114,7 @@
     "liquid_QdAfKJ": {
       "type": "liquid",
       "settings": {
-        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    var event = new Event('click', {\n        'bubbles': true,\n        'cancelable': true\n    });\n    document.querySelector(\"#pills-tab_NMdxwM\").dispatchEvent(event);\n});\n<\/script>",
+        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    var event = new Event('click', {\n        'bubbles': true,\n        'cancelable': true\n    });\n    document.querySelector(\"#pills-tab_NMdxwM\").dispatchEvent(event);\n});\n</script>",
         "popup_micro_infusion_enabled": true
       }
     },
@@ -128,7 +124,7 @@
         "image_tPPgAi": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue-black.svg"
+            "image": "shopify://shop_images/vogue-black.svg"
           }
         },
         "text_kFHVfn": {
@@ -140,7 +136,7 @@
         "image_6XPXNa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/womenshealth_e1cfba2e-29da-4232-9235-69184bd9d1a3.svg"
+            "image": "shopify://shop_images/womenshealth_e1cfba2e-29da-4232-9235-69184bd9d1a3.svg"
           }
         },
         "text_9tkGR4": {
@@ -152,7 +148,7 @@
         "image_jY7qnH": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elle-black.svg"
+            "image": "shopify://shop_images/elle-black.svg"
           }
         },
         "text_My3KDd": {
@@ -164,7 +160,7 @@
         "image_cBdUWP": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/si_showcase.svg"
+            "image": "shopify://shop_images/si_showcase.svg"
           }
         },
         "text_6ULPW7": {
@@ -176,7 +172,7 @@
         "image_JgnAqk": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gq_logo.png"
+            "image": "shopify://shop_images/gq_logo.png"
           }
         },
         "text_XiyPXm": {
@@ -199,7 +195,7 @@
         "text_XiyPXm"
       ],
       "settings": {
-        "heading": "MIS EN AVANT DANS",
+        "heading": "VU DANS",
         "slider_type": "five_slides",
         "slide_per_view_desktop": 3,
         "slide_per_view_mobile": 3
@@ -213,7 +209,7 @@
           "settings": {
             "heading": "Approuvé par les plus grands dermatologues mondiaux",
             "text": "<p>Le Dr Shah, dermatologue certifié MD, a estimé que c’est « le meilleur masque LED sur le marché, à mon avis. »</p>",
-            "image": "shopify:\/\/shop_images\/cus_acc_1.webp"
+            "image": "shopify://shop_images/cus_acc_1.webp"
           }
         },
         "column_BCLeCz": {
@@ -221,7 +217,7 @@
           "settings": {
             "heading": "Résultats prouvés en moins de 12 semaines",
             "text": "<p>Les clients ont signalé une réduction des rougeurs, une diminution des ridules et des rides, et un teint éclatant et rajeuni après plusieurs semaines d’utilisation régulière.</p>",
-            "image": "shopify:\/\/shop_images\/cus_acc_2.webp"
+            "image": "shopify://shop_images/cus_acc_2.webp"
           }
         },
         "column_6c9hfh": {
@@ -229,7 +225,7 @@
           "settings": {
             "heading": "Soulage de nombreux problèmes de peau",
             "text": "<p>Choisissez entre un traitement anti-âge, un traitement anti-éruptions, ou des modes personnalisés pour chaque zone du visage.</p>",
-            "image": "shopify:\/\/shop_images\/cus_acc_3.webp"
+            "image": "shopify://shop_images/cus_acc_3.webp"
           }
         },
         "column_Eed893": {
@@ -237,7 +233,7 @@
           "settings": {
             "heading": "Suivez vos traitements avec l’application mobile Qure",
             "text": "<p>Se connecte facilement à notre application mobile (iPhone et Android) pour planifier, suivre et programmer vos traitements. Ne manquez jamais un traitement grâce aux rappels intégrés.</p>",
-            "image": "shopify:\/\/shop_images\/cus_acc_4.webp"
+            "image": "shopify://shop_images/cus_acc_4.webp"
           }
         }
       },
@@ -286,11 +282,7 @@
           }
         }
       },
-      "block_order": [
-        "column_fHQEF9",
-        "column_6FAKU7",
-        "column_peNbPJ"
-      ],
+      "block_order": ["column_fHQEF9", "column_6FAKU7", "column_peNbPJ"],
       "settings": {
         "section_heading": "Preuves en chiffres",
         "ctm_cls_prog": "",
@@ -306,8 +298,8 @@
             "heading": "A complètement guéri mon acné",
             "product": "",
             "text": "<p>« C’est la première fois en DEUX ANS que je n’ai pas d’acné active sur le visage. J’utilise mon Qure depuis 1 mois maintenant et il a complètement guéri mon acné. C’est fini ET il cicatrise toutes mes cicatrices et marques. J’étais littéralement au bord du suicide à cause de ma peau horrible. Cet appareil a SAUVÉ MA VIE !!! »</p>",
-            "image": "shopify:\/\/shop_images\/results_bj_nardi_fd924eb5-aaaf-4d31-a054-0e3cdf45f063.webp",
-            "image_country": "shopify:\/\/shop_images\/canada_f_86ff77c5-0cf3-4351-a4e1-6329f56f151f.svg",
+            "image": "shopify://shop_images/results_bj_nardi_fd924eb5-aaaf-4d31-a054-0e3cdf45f063_fr.webp",
+            "image_country": "shopify://shop_images/canada_f_86ff77c5-0cf3-4351-a4e1-6329f56f151f.svg",
             "client": "BJ Nardi",
             "concerns": "Acné",
             "verified": true
@@ -319,8 +311,8 @@
             "heading": "J’aimerais avoir eu cette technologie il y a des années !",
             "product": "",
             "text": "<p>« Après deux semaines, j’ai commencé à voir des résultats et après six semaines, les changements sur ma peau étaient spectaculaires. Cela fait maintenant six mois que j’utilise Qure et j’adore les compliments ! J’ai acheté des masques pour mes filles à Noël pour qu’elles puissent commencer plus jeunes… J’aimerais que cette technologie ait été disponible quand j’étais plus jeune. J’ai 76 ans ! Les photos ci-dessous sont après 6 semaines. »</p>",
-            "image": "shopify:\/\/shop_images\/results_terri.webp",
-            "image_country": "shopify:\/\/shop_images\/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
+            "image": "shopify://shop_images/results_terri_fr.webp",
+            "image_country": "shopify://shop_images/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
             "client": "Terri P.",
             "concerns": "Ridules et rides",
             "verified": true
@@ -331,9 +323,9 @@
           "settings": {
             "heading": "Zéro acné de masque depuis 8 semaines",
             "product": "",
-            "text": "<p>« Je pensais qu’il ne fonctionnait que sur mes éruptions, zéro acné de masque depuis 8 semaines maintenant, MAIS heureusement que j’ai des avant\/après car même moi j’étais choquée ! Mes abonnés ont remarqué une différence sur ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme mais suffisante pour repousser une chirurgie que je ne peux pas me permettre pour l’instant. »</p>",
-            "image": "shopify:\/\/shop_images\/results_michelle_bea5bba9-6469-46b8-b59a-4456973a4b3c.webp",
-            "image_country": "shopify:\/\/shop_images\/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
+            "text": "<p>« Je pensais qu’il ne fonctionnait que sur mes éruptions, zéro acné de masque depuis 8 semaines maintenant, MAIS heureusement que j’ai des avant/après car même moi j’étais choquée ! Mes abonnés ont remarqué une différence sur ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme mais suffisante pour repousser une chirurgie que je ne peux pas me permettre pour l’instant. »</p>",
+            "image": "shopify://shop_images/results_michelle_bea5bba9-6469-46b8-b59a-4456973a4b3c_fr.webp",
+            "image_country": "shopify://shop_images/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
             "client": "Michelle S.",
             "concerns": "Ridules et rides, Acné",
             "verified": true
@@ -345,8 +337,8 @@
             "heading": "Résultats incroyables !",
             "product": "",
             "text": "<p>« Incroyable ! Je n’attendais pas ce miracle. J’avais des taches rouges au-dessus des lèvres depuis des années et elles se sont grandement améliorées après seulement 6 semaines d’utilisation quotidienne du masque. Je l’ai acheté dans l’espoir d’améliorer la texture de ma peau et de réduire les rides. Cela a fonctionné, mais voir les rougeurs disparaître est ce qui m’enthousiasme le plus. »</p>",
-            "image": "shopify:\/\/shop_images\/results_june_4f06e4e8-529a-404e-b15c-ae472849d9bc.webp",
-            "image_country": "shopify:\/\/shop_images\/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
+            "image": "shopify://shop_images/results_june_fr.webp",
+            "image_country": "shopify://shop_images/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
             "client": "June T.",
             "concerns": "Ridules et rides, Texture de la peau",
             "verified": true
@@ -358,8 +350,8 @@
             "heading": "Peau renouvelée !",
             "product": "",
             "text": "<p>Mon masque Qure est incroyable ! En tant que personne qui lutte contre l’acné et la rosacée, votre masque de thérapie par lumière LED a tellement amélioré ma peau que je me sens maintenant à l’aise sans maquillage. Je suis très satisfaite de ce produit !</p>",
-            "image": "shopify:\/\/shop_images\/results_tiffany_d43313a3-80f7-4452-a45b-c864ceedae03.webp",
-            "image_country": "shopify:\/\/shop_images\/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
+            "image": "shopify://shop_images/results_tiffany_fr.webp",
+            "image_country": "shopify://shop_images/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
             "client": "Tiffany L.",
             "concerns": "Acné, rosacée",
             "verified": true
@@ -371,8 +363,8 @@
             "heading": "Je ne peux pas passer une journée sans",
             "product": "",
             "text": "<p>« J’ai commencé à avoir de l’acné typique de l’adolescence. C’est devenu très grave. J’ai tout essayé... Dès le départ, j’ai vu des résultats avec Qure, après la première semaine, je n’avais plus d’éruptions actives. Les gens me demandent maintenant comment j’ai rendu ma peau hydratée, sans acné, éclatante... Je suis tellement dépendant du masque Qure maintenant. Je ne pense pas pouvoir passer une journée sans l’utiliser. »</p>",
-            "image": "shopify:\/\/shop_images\/results_anton_cdc44f21-b8dc-4a5f-a020-6741e12ac25e.webp",
-            "image_country": "shopify:\/\/shop_images\/australia_f_68e81c2a-7254-4dea-b7a9-c636268a0c27.webp",
+            "image": "shopify://shop_images/results_anton_cdc44f21-b8dc-4a5f-a020-6741e12ac25e_fr.webp",
+            "image_country": "shopify://shop_images/australia_f_68e81c2a-7254-4dea-b7a9-c636268a0c27.webp",
             "client": "Anton",
             "concerns": "Acné",
             "verified": true
@@ -384,8 +376,8 @@
             "heading": "Ravie des résultats !",
             "product": "",
             "text": "<p>« J’ai 45 ans, donc je lutte contre les signes de vieillissement, mais je fais aussi encore face à des poussées d’acné. Je n’ai eu aucune éruption depuis que j’ai commencé à utiliser le masque, et je remarque un lissage net des fines rides sur mes joues et autour de mes yeux. Je recommande ce produit à tout le monde. Ça vaut vraiment l’investissement. »</p>",
-            "image": "shopify:\/\/shop_images\/results_jessica1.webp",
-            "image_country": "shopify:\/\/shop_images\/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
+            "image": "shopify://shop_images/results_jessica1_fr.webp",
+            "image_country": "shopify://shop_images/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
             "client": "Jessica K.",
             "concerns": "Acné",
             "verified": true
@@ -397,8 +389,8 @@
             "heading": "Incroyable !",
             "product": "",
             "text": "<p>« Incroyable ! Cela a eu un impact énorme sur mon acné. J’ai encore des éruptions, mais elles disparaissent beaucoup plus vite. Il a fallu peut-être 2 jours pour commencer à agir. Les photos montrent environ 3 semaines de différence. »</p>",
-            "image": "shopify:\/\/shop_images\/Sophie_after_qure.png",
-            "image_country": "shopify:\/\/shop_images\/australia_f_68e81c2a-7254-4dea-b7a9-c636268a0c27.webp",
+            "image": "shopify://shop_images/Sophie_after_qure_fr.webp",
+            "image_country": "shopify://shop_images/australia_f_68e81c2a-7254-4dea-b7a9-c636268a0c27.webp",
             "client": "Sophie R.",
             "concerns": "Acné",
             "verified": true
@@ -410,8 +402,8 @@
             "heading": "Produits incroyables !",
             "product": "",
             "text": "<p>« Je suis tellement heureuse, j’utilise les produits depuis 2 mois et ils ont fait une énorme différence sur ma peau. J’avais essayé beaucoup de produits auparavant, mais avec une seule bouteille de sérum, en restant constante avec le masque et en faisant quelques traitements de micro-infusion pour les cicatrices, j’ai vu un changement incroyable sur ma peau. »</p>",
-            "image": "shopify:\/\/shop_images\/result_ana_1.webp",
-            "image_country": "shopify:\/\/shop_images\/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
+            "image": "shopify://shop_images/result_ana_1_fr.webp",
+            "image_country": "shopify://shop_images/america_f_85c3552f-2c5a-48e4-9ca5-78539e5139ca.webp",
             "client": "Ana L",
             "concerns": "Acné",
             "verified": true
@@ -420,7 +412,7 @@
         "button_AqAqD3": {
           "type": "button",
           "settings": {
-            "button_label": "Transformer ma peau et économiser 299 $",
+            "button_label": "Transformer ma peau et économiser 299 €",
             "button_url": "#shop"
           }
         }
@@ -441,7 +433,7 @@
         "ctm_cls_results": "my-0 my-md-4 ctm_cls_glowing",
         "heading": "Des milliers de personnes surmontent leurs complexes avec éclat",
         "rating_text": "4,7/5 basé sur 48 847 utilisateurs",
-        "stars": "shopify:\/\/shop_images\/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg"
+        "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg"
       }
     },
     "how_to_use_CQkLpj": {
@@ -452,7 +444,7 @@
           "settings": {
             "tab_txt": "Spécifications",
             "tab_desc": "<ul><li>TEMPS DE TRAITEMENT : 3 minutes</li><li>CERTIFICATIONS : FDA, TGA, CE, UKCA</li><li>FONCTIONNEMENT : Sans fil, mains libres</li><li>LONGUEUR D’ONDE : 415 nm (Bleu), 605 nm (Ambre), 630 nm (Rouge), 660 nm (Rouge profond), 880 nm (Infrarouge)</li><li>TEMPS DE CHARGE : 2 heures</li><li>LED : 160 double cœur</li></ul>",
-            "image": "shopify:\/\/shop_images\/get_specs.webp"
+            "image": "shopify://shop_images/get_specs.webp"
           }
         },
         "tab_TFTyrC": {
@@ -460,7 +452,7 @@
           "settings": {
             "tab_txt": "Démarrage rapide",
             "tab_desc": "<ul><li>Nettoyez et séchez soigneusement votre peau avant utilisation.</li><li>Maintenez le bouton enfoncé pendant 2 à 3 secondes pour allumer.</li><li>Ajustez le masque pour qu’il s’adapte confortablement à votre visage.</li><li>Pour un traitement anti-âge : Appuyez une fois sur le bouton.</li><li>Pour un traitement anti-éruptions : Appuyez deux fois sur le bouton.</li><li>Après trois minutes, l’appareil s’éteindra automatiquement.</li></ul>",
-            "image": "shopify:\/\/shop_images\/get_quickstart.webp"
+            "image": "shopify://shop_images/get_quickstart.webp"
           }
         },
         "tab_er9ahR": {
@@ -468,7 +460,7 @@
           "settings": {
             "tab_txt": "Personnaliser le traitement",
             "tab_desc": "<p>Téléchargez l’application Qure Skincare et connectez votre Q-Rejuvalight Pro. Choisissez un traitement anti-âge ou anti-éruptions sur 5 zones différentes du visage. Définissez des rappels pour ne jamais manquer un traitement !</p>",
-            "image": "shopify:\/\/shop_images\/get_customize.webp"
+            "image": "shopify://shop_images/get_customize.webp"
           }
         },
         "tab_W4FnfE": {
@@ -476,7 +468,7 @@
           "settings": {
             "tab_txt": "Entretien",
             "tab_desc": "<p>Pensez à essuyer le masque après chaque traitement.</p><p>Lorsqu’il n’est pas utilisé, placez votre Q-Rejuvalight Pro dans le sac de luxe fourni et rangez-le dans un endroit frais, à l’abri de l’humidité.</p>",
-            "image": "shopify:\/\/shop_images\/get_aftercare.webp"
+            "image": "shopify://shop_images/get_aftercare.webp"
           }
         },
         "wistia_prGGCT": {
@@ -501,13 +493,13 @@
     "services_slider_kERVyr": {
       "type": "services-slider",
       "settings": {
-        "slide1": "shopify:\/\/shop_images\/derma-lp.svg",
+        "slide1": "shopify://shop_images/derma-lp.svg",
         "text1": "Testé et approuvé par des dermatologues",
-        "slide2": "shopify:\/\/shop_images\/hp_icon4.svg",
+        "slide2": "shopify://shop_images/hp_icon4.svg",
         "text2": "Résultats prouvés, soutenus par la science",
-        "slide3": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+        "slide3": "shopify://shop_images/free-shipping-ftr.svg",
         "text3": "Livraison gratuite dans le monde entier",
-        "slide4": "shopify:\/\/shop_images\/buy-now-ftr.svg",
+        "slide4": "shopify://shop_images/buy-now-ftr.svg",
         "text4": "Achetez maintenant, payez plus tard"
       }
     },
@@ -581,7 +573,7 @@
         "heading": "Testé, essayé et approuvé par des dermatologues",
         "sub_heading": "",
         "classname": "section videosQure videosQure_dropdown",
-        "btn": "Transformer ma peau et économiser 299 $",
+        "btn": "Transformer ma peau et économiser 299 €",
         "btn_url": "#shop",
         "ctm_cls_btn": "mw-402",
         "desk_slide": 4,
@@ -616,7 +608,7 @@
         "image_TjAbDE": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/light_therapy.webp",
+            "image": "shopify://shop_images/light_therapy.webp",
             "custom_img": "",
             "order_mob": true,
             "color1": "#000000",
@@ -627,10 +619,7 @@
           }
         }
       },
-      "block_order": [
-        "text_FxxnrJ",
-        "image_TjAbDE"
-      ],
+      "block_order": ["text_FxxnrJ", "image_TjAbDE"],
       "settings": {
         "background": "bg-lightGrey",
         "heading": "Pourquoi la thérapie par lumière est prouvée efficace",
@@ -648,11 +637,11 @@
         "object_ErPtzb": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beauty_ledmask1_7162818b-1c00-4d06-9205-9db7248329dd.webp",
+            "image": "shopify://shop_images/beauty_ledmask1_7162818b-1c00-4d06-9205-9db7248329dd.webp",
             "heading": "Masque LED Q-Rejuvalight Pro",
             "mob_text": "",
             "text": "<p><strong>coût unique</strong></p>",
-            "price": "399 $",
+            "price": "399 €",
             "style": "correctCircle",
             "list": "<ul><li>seulement 3 minutes par jour</li><li>à votre convenance</li><li><strong>traitements illimités</strong></li><li><strong>confort de votre maison</strong></li><li>paiement unique simple</li></ul>"
           }
@@ -660,20 +649,17 @@
         "object_EpBLnG": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beauty_derma1_90642ea5-ff15-455f-b874-a3a8a051ae4a.webp",
+            "image": "shopify://shop_images/beauty_derma1_90642ea5-ff15-455f-b874-a3a8a051ae4a.webp",
             "heading": "Traitements en clinique/Dermatologue",
             "mob_text": "",
             "text": "<p><strong>par traitement de 6 séances</strong></p>",
-            "price": "900 $",
+            "price": "900 €",
             "style": "incorrectCircle",
             "list": "<ul><li>plus d’1 heure en clinique</li><li>quand (et si) vous obtenez un rendez-vous</li><li>traitements limités</li><li>inconfort d’un bureau inconnu</li><li>paiements continus frustrants</li></ul>"
           }
         }
       },
-      "block_order": [
-        "object_ErPtzb",
-        "object_EpBLnG"
-      ],
+      "block_order": ["object_ErPtzb", "object_EpBLnG"],
       "settings": {
         "classname": "beauty_skincare section bg-white price_lg_weight ctm_cls_clinical",
         "sub_head": "",
@@ -754,7 +740,7 @@
         "button_tL4CTE": {
           "type": "button",
           "settings": {
-            "ext_btn": "Transformer ma peau et économiser 299 $",
+            "ext_btn": "Transformer ma peau et économiser 299 €",
             "ext_url": "#shop",
             "ctm_cls_btn": "mw-402"
           }

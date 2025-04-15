@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner_dMm43V": {
@@ -15,24 +15,26 @@
         "code_bV7dw4": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"app_img justify-content-md-start\">\n                                <div class=\"app_item\">\n                                    <a href=\"https:\/\/apps.apple.com\/us\/app\/qure-skincare\/id1537832613\" target=\"_blank\">\n                                        <img src=\"{{ 'app_appstore_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/a>\n                                <\/div>\n                                <div class=\"app_item\">\n                                    <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure\"\n                                        target=\"_blank\">\n                                        <img src=\"{{ 'app_googleplay_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    <\/a>\n                                <\/div>\n                            <\/div>"
+            "code": "<div class=\"app_img justify-content-md-start\">\n                                <div class=\"app_item\">\n                                    <a href=\"https://apps.apple.com/us/app/qure-skincare/id1537832613\" target=\"_blank\">\n                                        <img src=\"{{ 'app_appstore_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    </a>\n                                </div>\n                                <div class=\"app_item\">\n                                    <a href=\"https://play.google.com/store/apps/details?id=com.lighttreeventures.qure\"\n                                        target=\"_blank\">\n                                        <img src=\"{{ 'app_googleplay_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    </a>\n                                </div>\n                            </div>"
           }
         }
       },
-      "block_order": [
-        "code_bV7dw4"
-      ],
+      "block_order": ["code_bV7dw4"],
       "custom_css": [
         ".main_b_wrapper {color: #000000 !important; background: none !important;}",
         ".banner_content {max-width: unset;}",
         ".section_header {text-align: center !important;}",
+        ".main_banner .main_b_wrapper .app_img { max-width: 310px; }",
+        ".app_item { flex: 1 1 0px; }",
+        "h1 { text-align: left; }",
+        ".app_item img { width: 100%;display: block;",
         "@media (min-width: 769px) {.section_header {text-align: left !important; }}"
       ],
       "settings": {
         "heading": "Le seul masque de thérapie par lumière LED approuvé par la FDA avec une application.",
         "text": "",
-        "image": "shopify:\/\/shop_images\/app_banner_desk_f8b82910-1f85-4d4c-af17-e64fb3525eda.webp",
-        "image_mobile": "shopify:\/\/shop_images\/app_banner_mob_3898342a-6a2f-4a55-bae9-5064651d0855.webp",
+        "image": "shopify://shop_images/app_banner_desk_f8b82910-1f85-4d4c-af17-e64fb3525eda.webp",
+        "image_mobile": "shopify://shop_images/app_banner_mob_3898342a-6a2f-4a55-bae9-5064651d0855.webp",
         "align_center": false,
         "classname": "bg_gradient_mob text-light"
       }
@@ -45,7 +47,7 @@
           "settings": {
             "heading": "Personnalisez vos traitements",
             "text": "<p>Personnalisez vos traitements LED pour un programme adapté à votre profil cutané unique. Choisissez entre le traitement Anti-Âge ou Anti-Imperfections sur 5 zones du visage pour répondre à vos préoccupations spécifiques, et à celles de personne d’autre.</p>",
-            "image": "shopify:\/\/shop_images\/app_out_2.webp"
+            "image": "shopify://shop_images/app_out_2.webp"
           }
         },
         "object_XGWAbF": {
@@ -53,7 +55,7 @@
           "settings": {
             "heading": "Planifiez et organisez",
             "text": "<p>Le planificateur Qure affiche votre historique de traitements et vos traitements programmés dans un calendrier mensuel. Consultez votre résumé total des défis complétés, ainsi que vos traitements mensuels et annuels.</p>",
-            "image": "shopify:\/\/shop_images\/app_out_3.webp"
+            "image": "shopify://shop_images/app_out_3.webp"
           }
         },
         "object_HPr94A": {
@@ -61,15 +63,11 @@
           "settings": {
             "heading": "Recevez des rappels",
             "text": "<p>Programmez vos traitements LED à votre convenance. Recevez des rappels directement sur votre téléphone pour ne jamais manquer un traitement – la régularité est la clé pour obtenir les meilleurs résultats !</p>",
-            "image": "shopify:\/\/shop_images\/app_out_1_b51ad891-7107-4a61-8748-a2d4d8152438.webp"
+            "image": "shopify://shop_images/app_out_1_b51ad891-7107-4a61-8748-a2d4d8152438.webp"
           }
         }
       },
-      "block_order": [
-        "object_HQFWDh",
-        "object_XGWAbF",
-        "object_HPr94A"
-      ],
+      "block_order": ["object_HQFWDh", "object_XGWAbF", "object_HPr94A"],
       "settings": {
         "heading": "Une application pour des soins hors du commun",
         "text": "<p>Votre peau est unique. Votre traitement devrait l’être aussi. Plongez dans l’univers des soins personnalisés avec l’application Qure Skincare. Elle vous donne un contrôle total sur vos traitements de thérapie par lumière LED de grade clinique. Fini les visites en clinique esthétique, fini les salles d’attente chez le dermatologue.</p>"
@@ -105,25 +103,25 @@
         "image_Rhx8ET": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue-black.svg"
+            "image": "shopify://shop_images/vogue-black.svg"
           }
         },
         "image_MXxkM8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/womenshealth.svg"
+            "image": "shopify://shop_images/womenshealth.svg"
           }
         },
         "image_MXBcNW": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elle-black.svg"
+            "image": "shopify://shop_images/elle-black.svg"
           }
         },
         "image_YiXJH9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/si_showcase.svg"
+            "image": "shopify://shop_images/si_showcase.svg"
           }
         }
       },
@@ -155,24 +153,24 @@
         "image_NDd43Y": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/app_qure.gif",
+            "image": "shopify://shop_images/app_qure_2f67f12d-15ce-4b48-8a44-8f38ab861e50.gif",
             "classname": "fs-img pb-4 pb-md-0 text-center"
           }
         },
         "code_7Rb7mm": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"section_header text-center pb-0\">\n                            <h2 class=\"title-lg paddingB d-none d-md-block\">Des soins<br> hors du commun vous\n                                attendent\n                            </h2>\n                            <h2 class=\"title-lg paddingB d-block d-md-none\">Des soins hors<br> du commun vous\n                                attendent\n                            </h2>\n                            <div class=\"app_img\">\n                                <div class=\"app_item me-md-4\">\n                                    <a href=\"https:\/\/apps.apple.com\/us\/app\/qure-skincare\/id1537832613\" target=\"_blank\">\n                                        <img src=\"{{ 'app_appstore_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    </a>\n                                </div>\n                                <div class=\"app_item\">\n                                    <a href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.lighttreeventures.qure\"\n                                        target=\"_blank\">\n                                        <img src=\"{{ 'app_googleplay_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    </a>\n                                </div>\n                            </div>\n                        </div>"
+            "code": "<div class=\"section_header text-center pb-0\">\n                            <h2 class=\"title-lg paddingB d-none d-md-block\">Des soins<br> hors du commun vous\n                                attendent\n                            </h2>\n                            <h2 class=\"title-lg paddingB d-block d-md-none\">Des soins hors<br> du commun vous\n                                attendent\n                            </h2>\n                            <div class=\"app_img\">\n                                <div class=\"app_item me-md-4\">\n                                    <a href=\"https://apps.apple.com/us/app/qure-skincare/id1537832613\" target=\"_blank\">\n                                        <img src=\"{{ 'app_appstore_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    </a>\n                                </div>\n                                <div class=\"app_item\">\n                                    <a href=\"https://play.google.com/store/apps/details?id=com.lighttreeventures.qure\"\n                                        target=\"_blank\">\n                                        <img src=\"{{ 'app_googleplay_big.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                    </a>\n                                </div>\n                            </div>\n                        </div>"
           }
         }
       },
-      "block_order": [
-        "content_JDmYWK",
-        "image_NDd43Y",
-        "code_7Rb7mm"
-      ],
+      "block_order": ["content_JDmYWK", "image_NDd43Y", "code_7Rb7mm"],
       "custom_css": [
-        ".row {align-items: center !important;}"
+        ".row {align-items: center !important;}",
+        ".app_img { max-width: 310px; }",
+        ".app_item { flex: 1 1 0px; }",
+        "h1 { text-align: left; }",
+        ".app_item img { width: 100%;display: block;"
       ],
       "settings": {
         "classname": "technology_light px-4 px-md-auto py-5 py-md-0 pt-md-4",

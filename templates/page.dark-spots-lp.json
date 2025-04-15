@@ -92,7 +92,7 @@
         "media_4iwCUn": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp-product-2.webp",
+            "image": "shopify://shop_images/mi_pdp-product-2_fr.webp",
             "wistia_id": "jg8c1a3bee"
           }
         },
@@ -329,13 +329,13 @@
             "percent_bar_second-info": 93,
             "text_third-info": "<p>des participants disent que leur peau semblait <strong>plus lumineuse et au teint plus uniforme.</strong></p>",
             "percent_bar_third-info": 70,
-            "image_slide_first": "shopify://shop_images/sn_1.webp",
+            "image_slide_first": "shopify://shop_images/sn_1_fr.webp",
             "text_slide_first": "<p>Prouvé pour améliorer visuellement les <strong>ridules et rides</strong></p>",
-            "image_slide_second": "shopify://shop_images/sn_2.webp",
+            "image_slide_second": "shopify://shop_images/sn_2_fr.webp",
             "text_slide_second": "<p>Prouvé pour améliorer visuellement les <strong>pores dilatés et la texture de la peau</strong></p>",
-            "image_slide_third": "shopify://shop_images/sn_3.webp",
+            "image_slide_third": "shopify://shop_images/sn_3_fr.webp",
             "text_slide_third": "<p>Prouvé pour améliorer visuellement les <strong>taches sombres et la texture</strong></p>",
-            "image_slide_fourth": "shopify://shop_images/sn_4.webp",
+            "image_slide_fourth": "shopify://shop_images/sn_4_fr.webp",
             "text_slide_fourth": "<p>Prouvé pour améliorer visuellement le <strong>teint irrégulier</strong></p>"
           }
         }
@@ -761,7 +761,7 @@
         "result_VCJwgD": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ellie.webp",
+            "image": "shopify://shop_images/results_ellie_fr.webp",
             "heading": "Ma peau EST REVENUE À LA VIE !",
             "text": "<p>« Je viens d’avoir 57 ans. Ma peau était extrêmement sèche et avec ce produit, ma peau EST REVENUE À LA VIE ! Je suis tellement impressionnée ! Mes collègues me demandent ce que j’utilise pour ma peau… et je leur dis. Produit facile à utiliser et les aiguilles sont meilleures qu’un stylo de microneedling. C’est un produit incroyable que vous ne regretterez pas d’acheter. Je vois vraiment la différence sur ma peau. Excellent travail QURE ! »</p>",
             "see-more": "",
@@ -787,7 +787,7 @@
         "result_ThnNPK": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ann.webp",
+            "image": "shopify://shop_images/results_ann_fr.webp",
             "heading": "J’ADORE les résultats",
             "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas dépenser des centaines de dollars. Quand j’ai vu ça en ligne, j’ai sauté sur l’occasion. Oui, ça n’injecte pas de botox ou de fillers, MAIS j’ADORE les résultats et la facilité d’utilisation à la maison. Ça marche super bien pour ma peau, ma texture est bien plus lisse et lumineuse. »</p>",
             "see-more": "",
@@ -826,7 +826,7 @@
         "result_YbRNi7": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_mona.webp",
+            "image": "shopify://shop_images/results_mona_fr.webp",
             "heading": "Atténuation après seulement deux traitements",
             "text": "<p>« Personnellement, je pense que mes produits pénètrent mieux, ma peau est un peu plus lumineuse et cette grosse cicatrice d’acné sur ma joue droite a commencé à s’atténuer après seulement DEUX traitements ! »</p>",
             "see-more": "",
@@ -839,7 +839,7 @@
         "result_URKRDq": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jess1.webp",
+            "image": "shopify://shop_images/results_jess1_fr.webp",
             "heading": "Vraiment génial !!!",
             "text": "<p>« J’ai opté pour le pack 3 mois et après 6 traitements (toutes les 2 semaines), je suis TROP contente des résultats !!! Mes pores sont plus petits et j’ai surtout vu une différence dans la texture de ma peau.</p><p>Ma peau rougit un peu juste après le traitement, mais ça disparaît vite. C’est un peu inconfortable sur le front, mais ailleurs ça va. Vraiment génial !!! »</p>",
             "see-more": "",
@@ -852,7 +852,7 @@
         "result_BU6egp": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ela.webp",
+            "image": "shopify://shop_images/results_ela_fr.webp",
             "heading": "Choquée par les résultats",
             "text": "<p>« Choquée par les résultats après un seul traitement ! Je ne laisse pas souvent d’avis… mais j’étais stupéfaite de voir ma peau le lendemain matin !</p><p>La texture était tellement plus lisse, ma peau semblait nette, éclatante et saine. Le système est si facile à utiliser, j’ai hâte du prochain traitement. »</p>",
             "see-more": "",
@@ -865,7 +865,7 @@
         "result_DckD68": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_glorija.webp",
+            "image": "shopify://shop_images/results_glorija_fr.webp",
             "heading": "Le meilleur éclat naturel",
             "text": "<p>« J’hésitais au début, ne sachant pas si ça ferait mal, mais à ma surprise, c’était presque indolore. Le lendemain du traitement, ma peau avait le meilleur éclat naturel !</p><p>J’étais aussi ravie de voir combien ma pigmentation s’était éclaircie après le 3e traitement :) Je change de sérum selon l’état de ma peau avant chaque traitement. »</p>",
             "see-more": "",
@@ -891,7 +891,7 @@
         "result_TJXM8n": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_andrea-a.webp",
+            "image": "shopify://shop_images/results_andrea-a_fr.webp",
             "heading": "J’adore absolument !",
             "text": "<p>« J’ai utilisé beaucoup de topiques pour mes marques post-acné. Ce système de micro-infusion m’a donné les résultats les plus constants. J’adore absolument ! »</p>",
             "see-more": "",
@@ -905,7 +905,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_priya.webp",
+            "image": "shopify://shop_images/results_priya_fr.webp",
             "heading": "Plus pulpeuse, plus hydratée !",
             "text": "<p>« Après la première utilisation d’EGF, ma peau était plus pulpeuse, hydratée et mon teint s’est radicalement amélioré, littéralement le lendemain. J’adore ce produit, je vais en racheter car il a vraiment lissé mes ridules aussi. »</p>",
             "see-more": "",
@@ -919,7 +919,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_chelsea.webp",
+            "image": "shopify://shop_images/results_chelsea_fr.webp",
             "heading": "Résultats incroyables !",
             "text": "<p>« Résultats incroyables. Je suis bluffée par l’état de ma peau. Ce produit a été génial pour l’hyperpigmentation et l’acné kystique hormonale. Je continuerai à soutenir cette marque car elle a ramené la peau que je connais. J’étais à bout avec une poussée hormonale et une forte hyperpigmentation. »</p>",
             "see-more": "",
@@ -1126,7 +1126,7 @@
             "mark2": "tick",
             "point7": "Temps de récupération minimal et quasi indolore",
             "mark3": "tick",
-            "point8": "Moins de 20 $ par traitement",
+            "point8": "Moins de 20 € par traitement",
             "mark4": "tick"
           }
         },
@@ -1141,7 +1141,7 @@
             "mark2": "tick",
             "point7": "Temps de récupération minimal et quasi indolore",
             "mark3": "tick",
-            "point8": "Environ 300 $ par traitement",
+            "point8": "Environ 300 € par traitement",
             "mark4": "cross"
           }
         },
@@ -1156,7 +1156,7 @@
             "mark2": "cross",
             "point7": "Effets secondaires possibles",
             "mark3": "cross",
-            "point8": "10 $ par traitement",
+            "point8": "10 € par traitement",
             "mark4": "tick"
           }
         }
@@ -1169,7 +1169,7 @@
       "settings": {
         "heading": "Offrez-vous un éclat de qualité clinique sans les prix cliniques",
         "heading2": "Comparons",
-        "point1": "Résultats en",
+        "point1": "Résultats",
         "point2": "Personnalisé",
         "point3": "Sûr pour la peau",
         "point4": "Coût"
@@ -1330,7 +1330,7 @@
         "button_label": "OFFRE DES FÊTES ÉCONOMISEZ 59%",
         "button_url": "#productSubscription",
         "underbutton_text_left": "Garantie de remboursement de 90 jours",
-        "underbutton_text_right": "Livraison mondiale gratuite pour les commandes de plus de 100 $"
+        "underbutton_text_right": "Livraison mondiale gratuite pour les commandes de plus de 100 €"
       }
     },
     "line_F6nAKn": {
@@ -1712,7 +1712,7 @@
         "code_fXbXkm": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                        <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                            href=\"#productSubscription\">ACHETEZ MAINTENANT ET ÉCONOMISEZ JUSQU’À 59% </a>\n                        <div class=\"progress_bar d-block d-md-block\">\n                            <div class=\"loading_bar_wrap\">\n                                <div class=\"loading_bar\" style=\"width:52%\">\n                                </div>\n                            </div>\n                            <p>Se vend rapidement</p>\n                        </div>\n                        <div class=\"shipping shipping_bg bg-transparent my-3 pe-0 ps-2\">\n                            <div class=\"s_bx\">\n                                <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                <p>Garantie de remboursement<br> de 90 jours </p>\n                            </div>\n                            <div class=\"s_bx\">\n                                <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                <p>Livraison mondiale<br> gratuite pour plus de 100 $</p>\n                            </div>\n                        </div>\n                    </div>"
+            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                        <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                            href=\"#productSubscription\">ACHETEZ MAINTENANT ET ÉCONOMISEZ JUSQU’À 59% </a>\n                        <div class=\"progress_bar d-block d-md-block\">\n                            <div class=\"loading_bar_wrap\">\n                                <div class=\"loading_bar\" style=\"width:52%\">\n                                </div>\n                            </div>\n                            <p>Se vend rapidement</p>\n                        </div>\n                        <div class=\"shipping shipping_bg bg-transparent my-3 pe-0 ps-2\">\n                            <div class=\"s_bx\">\n                                <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                <p>Garantie de remboursement<br> de 90 jours </p>\n                            </div>\n                            <div class=\"s_bx\">\n                                <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                <p>Livraison mondiale<br> gratuite pour plus de 100 €</p>\n                            </div>\n                        </div>\n                    </div>"
           }
         }
       },

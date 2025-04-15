@@ -145,7 +145,7 @@
                                         {% assign divided_price = product.price | divided_by: 4 %}
 
                                         <a class="planBlock active {{ section_id }}_productPeriodObject" href="month_3" data-tab="month_3"
-                                            data-per="& SAVE 33%" data-pay="€{{ divided_price | money_without_currency }}" data-image="{{ 'MI2x-mixed-1.jpg' | asset_url }}">
+                                            data-per="& SAVE 33%" data-pay="${{ divided_price | money_without_currency }}" data-image="{{ 'MI2x-mixed-1.jpg' | asset_url }}">
                                             <input type="radio" name="monthlyPlan" id="3_month" checked data-product-period="3">
                                             <label class="monthly_plans" for="3_month">
                                                 <div class="plan_des">
@@ -166,7 +166,7 @@
                                         {% assign divided_price = product.price | divided_by: 4 %}
 
                                         <a class="planBlock {{ section_id }}_productPeriodObject new_block" href="month_2" data-tab="month_2"
-                                            data-per="& GET ONE FOR FREE" data-pay="€{{ divided_price | money_without_currency }}" data-image="{{ 'MI4x-mixed.jpg' | asset_url }}">
+                                            data-per="& GET ONE FOR FREE" data-pay="${{ divided_price | money_without_currency }}" data-image="{{ 'MI4x-mixed.jpg' | asset_url }}">
                                             <div class="plan_choosed text-md-center mw-100">
                                                 <span class="px-3 d-md-inline d-none">BUY ONE & GET ONE <strong>FREE</strong></span>
                                                 <span class="d-md-none d-md-inline me-4">BUY ONE & GET ONE <strong>FREE</strong></span>
@@ -194,7 +194,7 @@
                                         {% assign divided_price = product.price | divided_by: 4 %}
 
                                         <a class="planBlock {{ section_id }}_productPeriodObject new_block" href="month_1" data-tab="month_1"
-                                            data-per="" data-pay="€{{ divided_price | money_without_currency }}" data-image="{{ 'treatment.png' | asset_url }}">
+                                            data-per="" data-pay="${{ divided_price | money_without_currency }}" data-image="{{ 'treatment.png' | asset_url }}">
                                             <input type="radio" name="monthlyPlan" id="1_month" data-product-period="1">
                                             <label class="monthly_plans" for="1_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
                                                 <div class="plan_des">

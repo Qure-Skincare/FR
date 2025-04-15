@@ -1372,7 +1372,7 @@
                                         malfunctions,
                                         reduced performance, or property damage). </p>
                                     <p>To make a claim, contact our <a
-                                            href="https://qureskincare.com/pages/contact-us"
+                                            href="https://qureskincare.fr/pages/contact-us"
                                             class="text-black text-decoration-underline">Customer Support</a>
                                         via email or live chat. Be
                                         sure
@@ -1394,7 +1394,7 @@
                                     <p><span>Email:</span> <a href="mailto:support@qureskincare.com"
                                             class="text-decoration-underline">support@qureskincare.com</a>
                                     </p>
-                                    <p><span>Website:</span> <a href="https://qureskincare.com/"
+                                    <p><span>Website:</span> <a href="https://qureskincare.fr/"
                                             class="text-decoration-underline">www.qureskincare.com</a></p>
                                 </div>
                             </div>
@@ -1461,8 +1461,8 @@
             if (currentIndex < steps.length - 1) {
                 const nextStep = steps[currentIndex + 1];
                 let nextTabName = nextStep.querySelector('h5').textContent.trim();
-                nextTabName = nextTabName.replace(/^0(\d)/, '$1'); // Remove leading 0 if it exists
-                nextTabName = nextTabName.replace(/^(\d+)/, '$1.'); // Add a dot after the number
+                nextTabName = nextTabName.replace(/^0(\d)/, '€1'); // Remove leading 0 if it exists
+                nextTabName = nextTabName.replace(/^(\d+)/, '€1.'); // Add a dot after the number
                 tabText.textContent = ` ${nextTabName}`; // Show next tab's name in tab-text
                 nextButton.dataset.next = nextStep.id;
                 nextButton.classList.remove('hidden');
@@ -1470,8 +1470,8 @@
             } else {
                 const prevStep = steps[currentIndex - 1];
                 let prevTabName = prevStep.querySelector('h5').textContent.trim();
-                prevTabName = prevTabName.replace(/^0(\d)/, '$1'); // Remove leading 0 if it exists
-                prevTabName = prevTabName.replace(/^(\d+)/, '$1.'); // Add a dot after the number
+                prevTabName = prevTabName.replace(/^0(\d)/, '€1'); // Remove leading 0 if it exists
+                prevTabName = prevTabName.replace(/^(\d+)/, '€1.'); // Add a dot after the number
                 tabText.textContent = ` ${prevTabName}`;
                 nextButton.classList.add('visible_hide');
             }

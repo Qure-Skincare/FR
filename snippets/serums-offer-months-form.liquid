@@ -135,11 +135,11 @@
                 const variantIdTop = $(this).data('variantid');
 
                 if (submitBtnTop && variantIdTop) {
-                    submitBtnTop.href = submitBtnTop.href.replace(/id=\d+/, `id=€{variantIdTop}`);
+                    submitBtnTop.href = submitBtnTop.href.replace(/id=\d+/, `id=${variantIdTop}`);
                 }
 
                 if (stickyBtn && variantIdTop) {
-                    stickyBtn.href = stickyBtn.href.replace(/id=\d+/, `id=€{variantIdTop}`);
+                    stickyBtn.href = stickyBtn.href.replace(/id=\d+/, `id=${variantIdTop}`);
                 }
             });
         });
@@ -153,7 +153,7 @@
     </div>
     <div class="certified_derm mb-4 mb-md-5">
         <img src="{{ 'certified_derma.webp' | asset_url }}" alt="">
-        <p><b>Plus de 50 dermatologues certifiés</b> ont recommandé Qure à leurs patients. <a href="https://qureskincare.com/pages/derm-reviews" class="text-black text-decoration-underline">Voir plus</a> </p>
+        <p><b>Plus de 50 dermatologues certifiés</b> ont recommandé Qure à leurs patients. <a href="https://qureskincare.fr/pages/derm-reviews" class="text-black text-decoration-underline">Voir plus</a> </p>
     </div>
     <div class="shipping shipping_bg bg-transparent py-md-0 px-0 free-shipping-guarentee-original">
         <div class="s_bx">

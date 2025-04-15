@@ -53,9 +53,7 @@
         "navigation_link_CmRG9V",
         "navigation_link_wMtKmt"
       ],
-      "custom_css": [
-        ".header_gift_btn {display: none;}"
-      ],
+      "custom_css": [".header_gift_btn {display: none;}"],
       "settings": {
         "button_label": "ÉCONOMISEZ JUSQU’À 50%",
         "button_url": "#productSubscription"
@@ -212,7 +210,7 @@
         "result_ypQjAB": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jess1.webp",
+            "image": "shopify://shop_images/results_jess1_fr.webp",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "États-Unis",
             "client": "Jess"
@@ -221,7 +219,7 @@
         "result_QjRfkH": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ellie.webp",
+            "image": "shopify://shop_images/results_ellie_fr.webp",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "États-Unis",
             "client": "Ellie V."
@@ -230,18 +228,14 @@
         "result_Cg3zJX": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results-Ramandeep.png",
+            "image": "shopify://shop_images/results-Ramandeep_fr.webp",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "États-Unis",
             "client": "Ramandeep"
           }
         }
       },
-      "block_order": [
-        "result_ypQjAB",
-        "result_QjRfkH",
-        "result_Cg3zJX"
-      ],
+      "block_order": ["result_ypQjAB", "result_QjRfkH", "result_Cg3zJX"],
       "settings": {
         "text_verified_customer": "Client vérifié"
       }
@@ -389,7 +383,7 @@
         "before_after_mXCbRp": {
           "type": "before_after",
           "settings": {
-            "image": "shopify://shop_images/ec_b_a.webp",
+            "image": "shopify://shop_images/ec_b_a_fr.webp",
             "text": "Données recueillies lors d’une étude indépendante sur 6 traitements."
           }
         }
@@ -517,9 +511,7 @@
           }
         }
       },
-      "block_order": [
-        "result_ypTbFr"
-      ],
+      "block_order": ["result_ypTbFr"],
       "settings": {
         "heading": "Le choix des dermatologues pour la sécurité et l’efficacité…",
         "image": "shopify://shop_images/trusted_anthony_main.webp",
@@ -654,7 +646,7 @@
         "result_DckD68": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_glorija.webp",
+            "image": "shopify://shop_images/results_glorija_fr.webp",
             "heading": "Le meilleur éclat naturel",
             "text": "<p>« J’hésitais au début, ne sachant pas si ça ferait mal, mais à ma surprise, c’était presque indolore. Le lendemain du traitement, ma peau avait le meilleur éclat naturel !</p><p>J’étais aussi ravie de voir combien ma pigmentation s’était éclaircie après le 3e traitement :) Je change de sérum selon l’état de ma peau avant chaque traitement. »</p>",
             "see-more": "",
@@ -667,7 +659,7 @@
         "result_VCJwgD": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ellie.webp",
+            "image": "shopify://shop_images/results_ellie_fr.webp",
             "heading": "Ma peau EST REVENUE À LA VIE !",
             "text": "<p>« Je viens d’avoir 57 ans. Ma peau était extrêmement sèche et avec ce produit, ma peau EST REVENUE À LA VIE ! Je suis tellement impressionnée ! Mes collègues me demandent ce que j’utilise… et je leur dis. Facile à utiliser, les aiguilles sont meilleures qu’un stylo de microneedling. C’est un produit incroyable que vous ne regretterez pas d’acheter. Je vois vraiment le changement sur ma peau. Excellent travail QURE ! »</p>",
             "see-more": "",
@@ -680,7 +672,7 @@
         "result_YbRNi7": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_mona.webp",
+            "image": "shopify://shop_images/results_mona_fr.webp",
             "heading": "Atténuation après deux traitements",
             "text": "<p>« Personnellement, je pense que mes produits pénètrent mieux, ma peau est un peu plus lumineuse et cette grosse cicatrice d’acné sur ma joue droite a commencé à s’atténuer après seulement DEUX traitements ! »</p>",
             "see-more": "",
@@ -693,7 +685,7 @@
         "result_BU6egp": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ela.webp",
+            "image": "shopify://shop_images/results_ela_fr.webp",
             "heading": "Choquée par les résultats",
             "text": "<p>« Choquée par les résultats après un seul traitement ! Je ne laisse pas souvent d’avis… mais j’étais stupéfaite de voir ma peau le lendemain matin !</p><p>La texture était tellement plus lisse, ma peau semblait nette, éclatante et saine. Le système est si facile à utiliser, j’ai hâte du prochain traitement. »</p>",
             "see-more": "",
@@ -706,7 +698,7 @@
         "result_dP4njH": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ann.webp",
+            "image": "shopify://shop_images/results_ann_fr.webp",
             "heading": "J’ADORE les résultats",
             "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas dépenser des centaines de dollars. Quand j’ai vu ça en ligne, j’ai sauté sur l’occasion. Oui, ça n’injecte pas de botox ou de fillers, MAIS j’ADORE les résultats et la facilité d’utilisation à la maison. Ça marche super bien pour ma peau, ma texture est bien plus lisse et lumineuse. »</p>",
             "see-more": "",
@@ -719,7 +711,7 @@
         "result_xgWrGm": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_chelsea.webp",
+            "image": "shopify://shop_images/results_chelsea_fr.webp",
             "heading": "Résultats incroyables !",
             "text": "<p>« Résultats incroyables. Je suis bluffée par l’état de ma peau. Ce produit a été génial pour l’hyperpigmentation et l’acné kystique hormonale. Je continuerai à soutenir cette marque car elle a ramené la peau que je connais. J’étais à bout avec une poussée hormonale et une forte hyperpigmentation. »</p>",
             "see-more": "",
@@ -732,7 +724,7 @@
         "result_HKiNeX": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jess1.webp",
+            "image": "shopify://shop_images/results_jess1_fr.webp",
             "heading": "ÇA MARCHE VRAIMENT !!",
             "text": "<p>« J’ai opté pour le pack 3 mois et après 6 traitements (toutes les 2 semaines), je suis TROP contente des résultats !!! Mes pores sont plus petits et j’ai surtout vu une différence dans la texture de ma peau. Elle rougit un peu juste après, mais ça disparaît vite. Un peu inconfortable sur le front, mais ailleurs ça va. Vraiment worth it !!! »</p>",
             "see-more": "",
@@ -745,7 +737,7 @@
         "result_zKUVtE": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_akina.webp",
+            "image": "shopify://shop_images/results_akina_fr.webp",
             "heading": "J’aime ce produit",
             "text": "<p>« Je l’ai utilisé trois fois jusqu’à présent. J’ai vu des résultats dès la première fois. J’aime ce produit, mais le seul hic, c’est que ça prend du temps à appliquer jusqu’à ce que tout le sérum soit utilisé. J’ai essayé plusieurs façons de presser pour que le sérum sorte plus, mais souvent ça ne marche pas. »</p>",
             "see-more": "",
@@ -758,7 +750,7 @@
         "result_TJXM8n": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_andrea-a.webp",
+            "image": "shopify://shop_images/results_andrea-a_fr.webp",
             "heading": "J’adore absolument !",
             "text": "<p>« J’ai utilisé beaucoup de topiques pour mes marques post-acné. Ce système de micro-infusion m’a donné les résultats les plus constants. J’adore absolument ! »</p>",
             "see-more": "",
@@ -771,7 +763,7 @@
         "result_6FrBJW": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_priya.webp",
+            "image": "shopify://shop_images/results_priya_fr.webp",
             "heading": "Plus pulpeuse, plus hydratée !",
             "text": "<p>« Après la première utilisation d’EGF, ma peau était plus pulpeuse, hydratée et mon teint s’est radicalement amélioré, littéralement le lendemain. J’adore ce produit, je vais en racheter car il a vraiment lissé mes ridules aussi. »</p>",
             "see-more": "",
@@ -784,7 +776,7 @@
         "result_ThnNPK": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ann.webp",
+            "image": "shopify://shop_images/results_ann_fr.webp",
             "heading": "Tellement facile à utiliser",
             "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas dépenser des centaines de dollars. Quand j’ai vu ça en ligne, j’ai sauté sur l’occasion. Oui, ça n’injecte pas de botox ou de fillers, MAIS j’ADORE les résultats et la facilité d’utilisation à la maison. Ça marche super bien pour ma peau, ma texture est bien plus lisse et lumineuse. »</p>",
             "see-more": "",
@@ -797,7 +789,7 @@
         "result_MhYCLK": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_andrea-g.webp",
+            "image": "shopify://shop_images/results_andrea-g_fr.webp",
             "heading": "Je vais clairement recommander",
             "text": "<p>« Encore novice, mais pour l’instant, génial ! J’ai fait du dermarolling pendant plus de dix ans - encore une fois par semaine avec 0,25. J’évitais les stylos car trop compliqué - mais le système Qure est juste top. Super facile, convivial et ma peau adore le sérum ! Je fais mon troisième traitement samedi et je vais clairement recommander 🤗 »</p>",
             "see-more": "",
@@ -810,7 +802,7 @@
         "result_cGAEkd": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results-Ramandeep.png",
+            "image": "shopify://shop_images/results-Ramandeep_fr.webp",
             "heading": "Je vois clairement une différence",
             "text": "<p>« J’ai fait 2 traitements - 1 pour rajeunir et 2 pour hydrater, avec 3 semaines d’écart. Je vois clairement une différence sur les photos avant/après. Je suis sûr qu’il me faut 4 à 8 traitements de plus, mais ça a déjà fait une différence. »</p>",
             "see-more": "",
@@ -1036,7 +1028,7 @@
         "option_VjtFxb": {
           "type": "option",
           "settings": {
-            "image": "shopify://shop_images/rg_item_1.webp",
+            "image": "shopify://shop_images/rg_item_1_fr.webp",
             "text": "<p>ont remarqué une différence sur leur peau le lendemain du premier traitement.</p>",
             "percent_bar": 93
           }
@@ -1044,7 +1036,7 @@
         "option_aJEYVL": {
           "type": "option",
           "settings": {
-            "image": "shopify://shop_images/rg_item_2.webp",
+            "image": "shopify://shop_images/rg_item_2_fr.webp",
             "text": "<p>ont trouvé leur peau plus hydratée et éclatante.</p>",
             "percent_bar": 93
           }
@@ -1052,17 +1044,13 @@
         "option_tPPYDt": {
           "type": "option",
           "settings": {
-            "image": "shopify://shop_images/rg_item_3.webp",
+            "image": "shopify://shop_images/rg_item_3_fr.webp",
             "text": "<p>préfèrent la praticité du système de micro-infusion Qure aux traitements en clinique</p>",
             "percent_bar": 87
           }
         }
       },
-      "block_order": [
-        "option_VjtFxb",
-        "option_aJEYVL",
-        "option_tPPYDt"
-      ],
+      "block_order": ["option_VjtFxb", "option_aJEYVL", "option_tPPYDt"],
       "settings": {
         "heading": "Révélez votre éclat et renouvelez votre confiance."
       }
@@ -1154,7 +1142,7 @@
           "type": "object",
           "settings": {
             "heading": "Que comprend l’achat du système de micro-infusion Qure ?",
-            "text": "<p>Vous recevrez l’appareil de micro-infusion, des têtes d’aiguilles stériles plaquées or 24k, le sérum rajeunissant scientifiquement prouvé de Qure, la livraison mondiale gratuite pour les commandes de plus de 100 $, un support client 24/7, et une garantie de remboursement sans risque de 90 jours.</p>",
+            "text": "<p>Vous recevrez l’appareil de micro-infusion, des têtes d’aiguilles stériles plaquées or 24k, le sérum rajeunissant scientifiquement prouvé de Qure, la livraison mondiale gratuite pour les commandes de plus de 100 €, un support client 24/7, et une garantie de remboursement sans risque de 90 jours.</p>",
             "code": ""
           }
         },
