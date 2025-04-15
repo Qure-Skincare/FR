@@ -64,7 +64,7 @@
           "type": "subscribe",
           "settings": {
             "heading": "Abonnez-vous et économisez 30 %",
-            "text": "<p>Recevez un nouveau filtre de remplacement tous les 90 jours pour seulement [discount_price]. Reportez ou annulez à tout moment. <a href=\"https://www.qureskincare.com/pages/subscriptions\" target=\"_blank\">Voir plus de détails</a></p>",
+            "text": "<p>Recevez un nouveau filtre de remplacement tous les 90 jours pour seulement [discount_price]. Reportez ou annulez à tout moment. <a href=\"https://www.qureskincare.fr/pages/subscriptions\" target=\"_blank\">Voir plus de détails</a></p>",
             "product": "",
             "plan": "6180143343",
             "discount": 30

@@ -209,7 +209,7 @@
             "product": "",
             "product_title": "",
             "product_url": "",
-            "image_before": "shopify://shop_images/michelle_before_img.webp",
+            "image_before": "shopify://shop_images/michelle_before_img_fr.webp",
             "text_before": "AVANT",
             "image_after": "shopify://shop_images/michelle_after_img.webp",
             "text_after": "APRÈS 8 SEMAINES",
@@ -255,7 +255,7 @@
             "product_url": "",
             "image_before": "shopify://shop_images/bj_nardi_before_img.webp",
             "text_before": "AVANT",
-            "image_after": "shopify://shop_images/bj_nardi_after_img.webp",
+            "image_after": "shopify://shop_images/bj_nardi_after_img_fr.webp",
             "text_after": "APRÈS 4 SEMAINES",
             "image_country": "shopify://shop_images/canada_f.svg",
             "client": "BJ Nardi.",
@@ -491,7 +491,7 @@
         "result_LwfFir": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_teresa.webp",
+            "image": "shopify://shop_images/results_teresa_fr.webp",
             "heading": "ÇA MARCHE VRAIMENT !!",
             "text": "<p>« J’étais très sceptique quand mon mari m’a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J’ai essayé de nombreux sérums pour mes taches solaires, mais rien n’a fonctionné jusqu’à ce que j’utilise ce masque. Ça vaut vraiment l’investissement. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
@@ -515,7 +515,7 @@
         "result_73PVKN": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_tiffany.webp",
+            "image": "shopify://shop_images/results_tiffany_fr.webp",
             "heading": "Peau renouvelée !",
             "text": "<p>« Mon masque Qure est incroyable ! En tant que personne qui lutte contre l’acné et la rosacée, votre masque de thérapie lumineuse a tellement amélioré ma peau que je me sens maintenant à l’aise sans maquillage. Je suis très satisfaite de ce produit ! »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
@@ -539,7 +539,7 @@
         "result_Mgz3yd": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_bj_nardi.webp",
+            "image": "shopify://shop_images/results_bj_nardi_fr.webp",
             "heading": "A complètement guéri mon acné",
             "text": "<p>« C’est la première fois en DEUX ANS que je n’ai pas d’acné active sur mon visage. J’utilise mon Qure depuis 1 mois maintenant et il a complètement guéri mon acné. C’est parti ET ça guérit toutes mes cicatrices et marques. J’étais littéralement au bord du suicide à cause de ma peau horrible. Cet appareil M’A SAUVÉ LA VIE !!! »</p>",
             "image_country": "shopify://shop_images/canada_f.svg",
@@ -551,7 +551,7 @@
         "result_bbhV3X": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_michelle.webp",
+            "image": "shopify://shop_images/results_michelle_fr.webp",
             "heading": "Zéro acné de masque depuis 8 semaines",
             "text": "<p>« Je pensais qu’il ne fonctionnait que sur mes éruptions, zéro acné de masque depuis 8 semaines maintenant, MAIS heureusement pour les avant/après car même moi j’étais choquée ! Mes abonnés ont remarqué une différence dans ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme mais suffisante pour repousser une chirurgie que je ne peux pas me permettre pour l’instant. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
@@ -563,7 +563,7 @@
         "result_FcTEnw": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_anton.webp",
+            "image": "shopify://shop_images/results_anton_fr.webp",
             "heading": "Je ne peux pas passer une journée sans",
             "text": "<p>« J’ai commencé à avoir de l’acné typique des adolescents. C’est devenu très grave. J’ai tout essayé, des régimes, je suis devenu complètement végan. J’ai essayé toutes sortes de soins, chers et bon marché. Dès le départ, j’ai remarqué des résultats avec Qure, après la première semaine, je n’avais plus d’éruptions actives. Les gens me demandent maintenant comment j’ai rendu ma peau hydratée, sans acné, lumineuse sans rougeurs. Je suis tellement dépendant du masque Qure maintenant. Je ne pense pas pouvoir passer une journée sans l’utiliser. »</p>",
             "image_country": "shopify://shop_images/australia_f.webp",
@@ -575,7 +575,7 @@
         "result_Bwe94z": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_june.webp",
+            "image": "shopify://shop_images/results_june_fr.webp",
             "heading": "Résultats incroyables !",
             "text": "<p>« Incroyable ! Je ne m’attendais jamais à ce miracle. J’avais des taches rouges au-dessus des lèvres depuis des années et elles se sont grandement améliorées après avoir utilisé le masque quotidiennement pendant seulement 6 semaines. Je l’ai acheté en espérant une meilleure texture de peau et moins de rides. Cela a amélioré ces aspects, mais voir les rougeurs disparaître est ce qui m’enthousiasme le plus. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
@@ -588,7 +588,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_jess.webp",
+            "image": "shopify://shop_images/results_jess_fr.webp",
             "heading": "Tellement plus lisse",
             "text": "<p>« Après quelques semaines d’utilisation quotidienne, je vois déjà une différence dans ma peau – tellement plus lisse, moins rouge et irritée, les pores sont plus petits et j’ai moins de bosses de congestion. »</p>",
             "image_country": "shopify://shop_images/america_f.webp",
@@ -600,7 +600,7 @@
         "result_U4khQD": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_john.webp",
+            "image": "shopify://shop_images/results_john_fr.webp",
             "heading": "Éclat d’apparence plus saine",
             "text": "<p>« Ma peau semble beaucoup plus nette, nettement moins grasse, et globalement un éclat d’apparence plus saine. Même mes cicatrices d’éruptions ont été réduites ! »</p>",
             "image_country": "shopify://shop_images/canada_f.svg",

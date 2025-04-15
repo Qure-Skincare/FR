@@ -70,7 +70,7 @@
           "type": "subscribe",
           "settings": {
             "heading": "Abonnez-vous et économisez 30 %",
-            "text": "<p>Le filtre de recharge de 3 mois est livré tous les 90 jours pour seulement [discount_price_additional]. Reportez ou annulez à tout moment. <a href=\"https://www.qureskincare.com/pages/subscriptions\" target=\"_blank\">Voir plus de détails</a></p>",
+            "text": "<p>Le filtre de recharge de 3 mois est livré tous les 90 jours pour seulement [discount_price_additional]. Reportez ou annulez à tout moment. <a href=\"https://www.qureskincare.fr/pages/subscriptions\" target=\"_blank\">Voir plus de détails</a></p>",
             "product": "faucet-filter-refill",
             "plan": "6190465263",
             "discount": 30

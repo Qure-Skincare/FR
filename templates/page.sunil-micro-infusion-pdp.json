@@ -16,7 +16,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>Taux de satisfaction client de 97 %</p>",
+            "text": "<p>97% des clients satisfaits</p>",
             "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum"
           }
         },
@@ -38,7 +38,7 @@
             "image_product_1": "shopify://shop_images/Group_1000008507.png",
             "image_product_text_1": "produit un",
             "video_wistia_id_1": "",
-            "image_product_2": "shopify://shop_images/mi_pdp-product-2.webp",
+            "image_product_2": "shopify://shop_images/mi_pdp-product-2_fr.webp",
             "image_product_text_2": "produit deux",
             "video_wistia_id_2": "jg8c1a3bee",
             "image_product_3": "shopify://shop_images/Monika_MI.png",
@@ -297,28 +297,28 @@
         "image_nXpmCt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_1.webp",
+            "image": "shopify://shop_images/sn_1_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement les <strong>ridules et rides</strong></p>"
           }
         },
         "image_pVyDfg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_2.webp",
+            "image": "shopify://shop_images/sn_2_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement les <strong>grands pores et la texture de la peau</strong></p>"
           }
         },
         "image_pCCQX4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_3.webp",
+            "image": "shopify://shop_images/sn_3_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement les <strong>taches brunes et la texture</strong></p>"
           }
         },
         "image_FVDNMG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_4.webp",
+            "image": "shopify://shop_images/sn_4_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement le <strong>teint irrégulier</strong></p>"
           }
         }
@@ -344,7 +344,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/free-shipping-ftr.svg",
-            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 $</p>"
+            "text": "<p>Livraison gratuite</p><p>Commandes de plus de 100 €</p>"
           }
         },
         "icon_6P7aae": {
@@ -519,7 +519,7 @@
         "result_XcNT6t": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ellie.webp",
+            "image": "shopify://shop_images/results_ellie_fr.webp",
             "heading": "Ma peau est revenue à la vie !",
             "text": "<p>« Je viens d’avoir 57 ans. Ma peau était extrêmement sèche et en utilisant ce produit, ma peau EST REVENUE À LA VIE ! Je suis tellement impressionnée ! Mes collègues me demandent ce que j’utilise pour ma peau... et je leur dis. Le produit est facile à utiliser et les aiguilles sont meilleures qu’un stylo pour le micro-aiguilletage. C’est un produit incroyable que vous ne regretterez pas d’acheter. Je vois vraiment le changement sur ma peau. Excellent travail QURE ! »</p>",
             "see-more": "",
@@ -545,7 +545,7 @@
         "result_Wx7wPb": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_andrea-g.webp",
+            "image": "shopify://shop_images/results_andrea-g_fr.webp",
             "heading": "Je vais certainement recommander",
             "text": "<p>« Encore novice mais jusqu’à présent, c’est génial ! J’ai utilisé un dermaroller pendant plus d’une décennie – je le fais encore avec du 0,25 au moins une fois par semaine. J’ai évité d’acheter un stylo car il y a trop de choses à gérer – mais le système Qure est tout simplement génial. Si facile et convivial, et ma peau adore le sérum ! Je fais mon troisième traitement samedi et je vais certainement recommander 🤗 »</p>",
             "see-more": "",
@@ -585,7 +585,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_mona.webp",
+            "image": "shopify://shop_images/results_mona_fr.webp",
             "heading": "S’estompent après seulement deux traitements",
             "text": "<p>« Je pense personnellement que mes produits sont mieux absorbés, ma peau semble un peu plus lumineuse et cette grosse cicatrice d’acné sur ma joue droite a commencé à s’estomper après seulement DEUX traitements ! »</p>",
             "see-more": "",
@@ -598,7 +598,7 @@
         "result_qpKj4E": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ela.webp",
+            "image": "shopify://shop_images/results_ela_fr.webp",
             "heading": "Choquée par les résultats",
             "text": "<p>« Choquée par les résultats après un seul traitement !<br/>Je ne suis pas du genre à laisser des avis... mais j’étais choquée de voir à quel point ma peau était belle le lendemain matin de mon premier traitement !<br/>La texture était tellement plus lisse, ma peau semblait claire, éclatante et saine. Le système était si facile à utiliser et j’ai hâte de faire mon prochain traitement. »</p>",
             "see-more": "",
@@ -611,7 +611,7 @@
         "result_JQN7Lw": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_ann.webp",
+            "image": "shopify://shop_images/results_ann_fr.webp",
             "heading": "Tellement facile à utiliser",
             "text": "<p>« J’avais entendu parler de la micro-infusion en clinique mais je ne pouvais pas me permettre de dépenser des centaines de dollars pour un traitement. Alors quand j’ai vu ça en ligne, je l’ai acheté immédiatement. Oui, ça ne tamponne pas de botox ou de fillers, MAIS personnellement, J’ADORE les résultats et à quel point c’est facile à utiliser chez moi.<br/>Ça fonctionne super bien pour ma peau, j’ai remarqué que ma texture cutanée est beaucoup plus lisse et lumineuse. »</p>",
             "see-more": "",
@@ -624,7 +624,7 @@
         "result_k44HbH": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_glorija.webp",
+            "image": "shopify://shop_images/results_glorija_fr.webp",
             "heading": "Le meilleur éclat naturel",
             "text": "<p>« J’étais hésitante au début car je ne savais pas à quel point ça ferait mal, mais à ma grande surprise, c’était assez indolore. Le 2e jour après le traitement, ma peau avait le meilleur éclat naturel ! J’étais aussi heureuse de voir à quel point ma pigmentation s’était éclaircie après le 3e traitement :) Je change de sérums selon l’état de ma peau avant le traitement. »</p>",
             "see-more": "",
@@ -651,7 +651,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_chelsea.webp",
+            "image": "shopify://shop_images/results_chelsea_fr.webp",
             "heading": "Des résultats incroyables !",
             "text": "<p>« Des résultats incroyables. Je suis juste choquée de voir à quel point ma peau est belle. Ce produit a été fantastique pour l’hyperpigmentation et aussi pour de l’acné kystique hormonale. Je continuerai à soutenir cette marque car elle a ramené la peau que je connais. J’étais à bout avec une éruption hormonale et une mauvaise hyperpigmentation. »</p>",
             "see-more": "",
@@ -664,7 +664,7 @@
         "result_feQjFD": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jess1.webp",
+            "image": "shopify://shop_images/results_jess1_fr.webp",
             "heading": "Vraiment worth it !!!",
             "text": "<p>« Ma peau semble beaucoup plus nette, considérablement moins grasse, et globalement avec un éclat plus sain. Mes cicatrices d’éruptions ont même été réduites ! »</p>",
             "see-more": "",
@@ -677,7 +677,7 @@
         "result_Lgtaat": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_akina.webp",
+            "image": "shopify://shop_images/results_akina_fr.webp",
             "heading": "J’aime ce produit",
             "text": "<p>« Je l’ai utilisé trois fois jusqu’à présent. J’ai vu des résultats dès la première fois que je l’ai utilisé. J’aime ce produit, mais le seul bémol est qu’il faut du temps pour appliquer tout le sérum par application. J’ai essayé plusieurs façons de presser sur ma peau pour que le sérum sorte davantage, mais souvent ça ne fonctionne pas. »</p>",
             "see-more": "",
@@ -690,7 +690,7 @@
         "result_mMCU7Y": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_andrea-a.webp",
+            "image": "shopify://shop_images/results_andrea-a_fr.webp",
             "heading": "J’adore absolument !",
             "text": "<p>« J’ai utilisé de nombreux topiques pour aider avec les marques post-acné. Ce système de micro-infusion m’a donné les résultats les plus constants. J’adore absolument ! »</p>",
             "see-more": "",
@@ -704,7 +704,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_priya.webp",
+            "image": "shopify://shop_images/results_priya_fr.webp",
             "heading": "Plus rebondie, plus hydratée !",
             "text": "<p>« Après la première utilisation d’EGF, ma peau était plus rebondie, plus hydratée et mon teint s’est radicalement amélioré, littéralement le lendemain. J’adore ce produit, je vais certainement en acheter davantage car il a vraiment aidé à lisser mes ridules aussi »</p>",
             "see-more": "",
@@ -730,7 +730,7 @@
         "result_BDeWPT": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jenniferNay.webp",
+            "image": "shopify://shop_images/results_jenniferNay_fr.webp",
             "heading": "Fonctionne mieux que je ne l’imaginais !",
             "text": "<p>« Je suis vraiment stupéfaite de voir à quel point ce produit fonctionne bien. J’ai eu des séances de micro-aiguilletage professionnelles et je voulais les avantages sans le temps d’arrêt. J’ai fait mon traitement, je suis allée me coucher et le lendemain matin, j’étais prête à sortir. Ma peau n’a pas été aussi belle depuis des années. »</p>",
             "see-more": "",
@@ -973,7 +973,7 @@
           "type": "button",
           "settings": {
             "button_label": "Voir le guide détaillé",
-            "button_url": "https://www.qureskincare.com/pages/microinfusion-safety-guide"
+            "button_url": "https://www.qureskincare.fr/pages/microinfusion-safety-guide"
           }
         }
       },
@@ -1041,7 +1041,7 @@
             "mark2": "tick",
             "point7": "Temps d’arrêt minimal et pratiquement indolore",
             "mark3": "tick",
-            "point8": "Moins de 25 $ par traitement",
+            "point8": "Moins de 25 € par traitement",
             "mark4": "tick"
           }
         },
@@ -1056,7 +1056,7 @@
             "mark2": "tick",
             "point7": "Temps d’arrêt minimal et pratiquement indolore",
             "mark3": "tick",
-            "point8": "Environ 300 $ par traitement",
+            "point8": "Environ 300 € par traitement",
             "mark4": "cross"
           }
         },
@@ -1071,7 +1071,7 @@
             "mark2": "cross",
             "point7": "Effets secondaires possibles",
             "mark3": "cross",
-            "point8": "10 $ par traitement",
+            "point8": "10 € par traitement",
             "mark4": "tick"
           }
         }
@@ -1084,7 +1084,7 @@
       "settings": {
         "heading": "Offrez-vous un éclat de qualité clinique sans les prix cliniques",
         "heading2": "Comparons",
-        "point1": "Résultats en",
+        "point1": "Résultats",
         "point2": "Personnalisé",
         "point3": "Sûr pour la peau",
         "point4": "Coût"
@@ -1214,7 +1214,7 @@
           "type": "object",
           "settings": {
             "heading": "Quel est le meilleur moment pour effectuer un traitement de micro-infusion ?",
-            "text": "<p>Nous recommandons de faire le traitement le soir avant de vous coucher. Évitez le soleil et le maquillage pendant 24 heures après le traitement. Pour plus d’informations sur les soins post-traitement, <a href=\"https://www.qureskincare.com/pages/microinfusion-safety-guide\">consultez notre guide de sécurité.</a></p>",
+            "text": "<p>Nous recommandons de faire le traitement le soir avant de vous coucher. Évitez le soleil et le maquillage pendant 24 heures après le traitement. Pour plus d’informations sur les soins post-traitement, <a href=\"https://www.qureskincare.fr/pages/microinfusion-safety-guide\">consultez notre guide de sécurité.</a></p>",
             "code": ""
           }
         },

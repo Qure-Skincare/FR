@@ -34,7 +34,7 @@
     "frontrow_health_image_1": "shopify://shop_images/frontrow-health1.png",
     "frontrow_health_image_2": "shopify://shop_images/User_Image_1.png",
     "frontrow_health_count_circle_color": "#c8e6dc",
-    "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
+    "frontrow_health_link": "https://qureskincare.fr/pages/derm-reviews",
     "frontrow_product_list_to_exclude": [
       "silk-pillowcase",
       "dermal-mist",
@@ -72,7 +72,7 @@
             "settings": {
               "heading": "<p><strong>Livraison gratuite</strong> dès 100€ d'achat.</p>",
               "button_label": "ACHETER MAINTENANT",
-              "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
+              "button_url": "https://qureskincare.fr/pages/exclusive-holiday-bundle-deal-new"
             }
           },
           "tab_3Wyyea": {
@@ -94,7 +94,7 @@
             "settings": {
               "image": "shopify://shop_images/header_drop3.webp",
               "button_label": "Q-Rejuvalight Pro [Guide de démarrage]",
-              "button_url": "https://www.qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide"
+              "button_url": "https://www.qureskincare.fr/pages/q-rejuvalight-pro-led-mask-guide"
             }
           },
           "banner_9fKdQK": {
@@ -102,7 +102,7 @@
             "settings": {
               "image": "shopify://shop_images/header_drop4.webp",
               "button_label": "Découvrez Micro-Infusion [Guide détaillé]",
-              "button_url": "https://www.qureskincare.com/pages/microinfusion-safety-guide"
+              "button_url": "https://www.qureskincare.fr/pages/microinfusion-safety-guide"
             }
           },
           "banner_jibKaz": {
@@ -110,7 +110,7 @@
             "settings": {
               "image": "shopify://shop_images/header_drop1.webp",
               "button_label": "Achetez [Micro-Infusion] : atténue les rides",
-              "button_url": "https://www.qureskincare.com/pages/microinfusion"
+              "button_url": "https://www.qureskincare.fr/pages/microinfusion"
             }
           },
           "banner_pe7PzR": {
@@ -244,7 +244,7 @@
           "upsell_a74n8t": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://www.qureskincare.com/products/face-serum",
+              "page_url": "https://www.qureskincare.fr/products/face-serum",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
               "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
               "upsell_product_second": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
@@ -256,7 +256,7 @@
           "upsell_ej4ULU": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches",
+              "page_url": "https://www.qureskincare.fr/products/micro-infusion-targeted-patches",
               "upsell_product_first": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
               "upsell_product_first_description": "Révélez une peau plus lisse et éclatante",
               "upsell_product_second": "dermal-mist",
@@ -268,7 +268,7 @@
           "upsell_GiyUV9": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle",
+              "page_url": "https://qureskincare.fr/products/micro-infusion-limited-edition-bundle",
               "upsell_product_first": "micro-infusion-darkspots-treatments",
               "upsell_product_first_description": "Révélez une peau plus lisse et éclatante",
               "upsell_product_second": "face-serum",
@@ -280,7 +280,7 @@
           "upsell_UiGexh": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://qureskincare.com/products/faucet-filter",
+              "page_url": "https://qureskincare.fr/products/faucet-filter",
               "upsell_product_first": "fade-firm-bundle-advance",
               "upsell_product_first_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
               "upsell_product_second": "shower-filter",
@@ -292,7 +292,7 @@
           "upsell_MBrVMA": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://qureskincare.com/products/dermal-mist",
+              "page_url": "https://qureskincare.fr/products/dermal-mist",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
               "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
               "upsell_product_second": "fade-firm-bundle-essentials",
@@ -304,7 +304,7 @@
           "upsell_zaLtWh": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://qureskincare.com/pages/microinfusion",
+              "page_url": "https://qureskincare.fr/pages/microinfusion",
               "upsell_product_first": "micro-infusion-darkspots-treatments",
               "upsell_product_first_description": "Révélez une peau plus lisse et éclatante.",
               "upsell_product_second": "breakout-control-advanced",
@@ -316,7 +316,7 @@
           "upsell_pDFytd": {
             "type": "upsell",
             "settings": {
-              "page_url": "https://qureskincare.com/products/shower-filter",
+              "page_url": "https://qureskincare.fr/products/shower-filter",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
               "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
               "upsell_product_second": "line-refine-bundle-advanced",
