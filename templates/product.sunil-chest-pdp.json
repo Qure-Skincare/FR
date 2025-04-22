@@ -187,6 +187,8 @@
         "text_kaep4N": {
           "type": "text",
           "settings": {
+            "ctm_cls": "",
+            "heading_first": "",
             "text": "<p>Our <strong>safe, non-invasive skin rejuvenation</strong> LED treatment targets a part of the skincare routine many people overlook – the neck and décolletage.<br/><br/>This delicate area is actually where the <strong>first signs of aging show – thin skin, wrinkles, sun spots,</strong> age spots and more.</p><p><br/>Now, you can conveniently boost firmness, even skin tone and texture, plump fine lines for youthful-looking neck and décolletage skin with our clinically-proven portable, at-home LED light therapy treatment.</p><p><br/>No trips to the clinic, and no pain, side effects, or down time. (Your low neckline wardrobe will thank you for it!). </p>",
             "btn_text": "",
             "btn_url": "",
@@ -785,7 +787,8 @@
           "type": "button",
           "settings": {
             "ext_btn": "",
-            "ext_url": ""
+            "ext_url": "",
+            "ctm_cls_btn": ""
           }
         }
       },
