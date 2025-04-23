@@ -4,7 +4,7 @@
 
 {% liquid
   assign enableFreeShipping = settingsGamification.enable_free_shipping_treshold
-  assign freeShippingTreshold = shop.metaobjects['sidecart_gamification_tresholds']['sidecart-gamification-tresholds-swspsm6c']['free_shipping'].value
+  assign freeShippingTreshold = shop.metaobjects.sidecart_gamification_tresholds['sidecart-gamification-tresholds-swspsm6c'].free_shipping.value
 
   assign enableProductGift = settingsGamification.enable_product_gift
 
@@ -14,7 +14,7 @@
 
   assign url_dont_enable_gift = url_dont_enable_gift | strip
 
-  assign giftTresholdPdm = shop.metaobjects['sidecart_gamification_tresholds']['sidecart-gamification-tresholds-swspsm6c']['product_gift'].value
+  assign giftTresholdPdm = shop.metaobjects.sidecart_gamification_tresholds['sidecart-gamification-tresholds-swspsm6c'].product_gift.value
   assign giftProduct = settingsGamification.product_free_gift
 
   assign differenceFreeShipping = freeShippingTreshold | minus: cartTotal
@@ -30,7 +30,6 @@
   assign progress_percentage_free_shipping = freeShippingTreshold | times: 100 | divided_by: treshold
 
   if enableFreeShipping and cartTotal < freeShippingTreshold
-
     if enableProductGift and url_dont_enable_gift == 'true' and freeShippingTreshold > cartTotal and progress_percentage >= 20
       assign progress_percentage = 20
     endif
@@ -55,7 +54,7 @@
     endif
   endif
 
-  assign enableShowGiftPrice = settingsGamification.enable_show_gift_price 
+  assign enableShowGiftPrice = settingsGamification.enable_show_gift_price
   assign copyFreeShipping = settingsGamification.copy_get_free_shipping
   assign copyProductGift = settingsGamification.copy_get_product_free
   assign copyCongrats = settingsGamification.copy_congrats
@@ -67,69 +66,118 @@
 {% if enableFreeShipping or enableProductGift and giftProduct.available %}
   <div class="progress-container pdm-gamification">
     <div class="progress-container__message">
-        {% if enableFreeShipping and differenceFreeShipping > 0 %}
-          {% if differenceFreeShipping > 0 and cartTotal > 0 %}
-            {% assign textToShow = "<i class='money' style='font-style: normal;'>" | append: remainingAmountMoney | append: "</i>" %}
-            {{ copyFreeShipping | replace: "&price-left&", textToShow }}
-          {% endif %}
-        {% elsif  enableProductGift and url_dont_enable_gift == 'true' and giftProduct.available %}
-          {% assign remainingGiftAmount = giftTresholdPdm | minus: cartTotal %}
-          {% assign remainingGiftAmountMoney = remainingGiftAmount | money_without_trailing_zeros %}
-          {% if differenceFreeGift > 0 %}
-            {% assign textToShow = "<i class='money' style='font-style: normal;'>" | append: remainingGiftAmountMoney | append: "</i>" %}
-            {% assign textProductGift = copyProductGift |  replace: "&price-left&", textToShow %}
-            {% if enableShowGiftPrice %}
-              {% assign productGiftPrice = giftProduct.variants.first.price | money_without_trailing_zeros %}
-              {% assign textProductPrice = "<strong>" | append: productGiftPrice  |  append: "</strong>" %}
-              {% assign textProductGift = textProductGift |  replace: "&product-price&", textProductPrice %}
-            {% else %}
-              {% assign textProductGift = textProductGift |  replace: "&product-price&", "" %}
-            {% endif %}
-            {{ textProductGift }}
-          {% else %}
-            {% assign textProductTitle = giftProduct.title |  capitalize  %}
-            {% assign textCongrats = "<strong>" | append:textProductTitle | append: "!</strong>" %}
-            {{ copyCongrats |  replace: "&product-title&", textCongrats }}
-          {% endif %}
-        {% elsif enableFreeShipping and differenceFreeShipping <= 0 %}
-          <p>Congrats you have <strong> Free Shipping! </strong></p>
+      {% if enableFreeShipping and differenceFreeShipping > 0 %}
+        {% if differenceFreeShipping > 0 and cartTotal > 0 %}
+          {% assign textToShow = "<i class='money' style='font-style: normal;'>"
+            | append: remainingAmountMoney
+            | append: '</i>'
+          %}
+          {{ copyFreeShipping | replace: '&price-left&', textToShow }}
         {% endif %}
+      {% elsif enableProductGift
+        and url_dont_enable_gift == 'true'
+        and giftProduct.available
+      %}
+        {% assign remainingGiftAmount = giftTresholdPdm | minus: cartTotal %}
+        {% assign remainingGiftAmountMoney = remainingGiftAmount
+          | money_without_trailing_zeros
+        %}
+        {% if differenceFreeGift > 0 %}
+          {% assign textToShow = "<i class='money' style='font-style: normal;'>"
+            | append: remainingGiftAmountMoney
+            | append: '</i>'
+          %}
+          {% assign textProductGift = copyProductGift
+            | replace: '&price-left&', textToShow
+          %}
+          {% if enableShowGiftPrice %}
+            {% assign productGiftPrice = giftProduct.variants.first.price
+              | money_without_trailing_zeros
+            %}
+            {% assign textProductPrice = '<strong>'
+              | append: productGiftPrice
+              | append: '</strong>'
+            %}
+            {% assign textProductGift = textProductGift
+              | replace: '&product-price&', textProductPrice
+            %}
+          {% else %}
+            {% assign textProductGift = textProductGift
+              | replace: '&product-price&', ''
+            %}
+          {% endif %}
+          {{ textProductGift }}
+        {% else %}
+          {% assign textProductTitle = giftProduct.title | capitalize %}
+          {% assign textCongrats = '<strong>'
+            | append: textProductTitle
+            | append: '!</strong>'
+          %}
+          {{ copyCongrats | replace: '&product-title&', textCongrats }}
+        {% endif %}
+      {% elsif enableFreeShipping and differenceFreeShipping <= 0 %}
+        <p>Bravo, vous avez la <strong> Livraison gratuite ! </strong></p>
+      {% endif %}
     </div>
 
-  <div class="progress-bar-container">
-    <div class="progress-bar">
-      <div class="progress" style="width: {{ progress_percentage }}%;"></div>
-    </div>
-    {% if enableProductGift and url_dont_enable_gift == 'true' and giftProduct.available %}
-      {% assign left_value_align = "20" %}
-    {% else %}
-      {% assign left_value_align = "80" %}
-    {% endif %}
-    <div class="milestone first-milestone" style="left: {{ left_value_align }}%;">
-      <div class="milestone-icon {% if differenceFreeShipping <= 0 and cartTotal > 0 %} backgound-black {% endif %}">
-        {% if differenceFreeShipping > 0 %}
-          {% render 'pdm_svg-car-gamification-gray' %}
-        {% endif %}
-        {% if differenceFreeShipping <= 0 and cartTotal > 0 %}
-          {% render 'pdm_svg-car-gamification-black' %}
-        {% endif %}
+    <div class="progress-bar-container">
+      <div class="progress-bar">
+        <div class="progress" style="width: {{ progress_percentage }}%;"></div>
       </div>
-      <span class="milestone-label">{{ freeShippingTreshold  | money_without_trailing_zeros }}</span>
-    </div>
-    {% if enableProductGift and url_dont_enable_gift == 'true' and giftProduct.available %}
-      <div class="milestone second-milestone"  style="left:80%;">
-        <div class="milestone-icon {% if differenceFreeGift <= 0 %} backgound-black {% endif %}">
-          {% if differenceFreeGift > 0 %}
-            {{ settingsGamification.icon_product_gift_clean | image_url: width: settingsGamification.icon_gift_width, height: settingsGamification.icon_gift_height | image_tag }}
+      {% if enableProductGift
+        and url_dont_enable_gift == 'true'
+        and giftProduct.available
+      %}
+        {% assign left_value_align = '20' %}
+      {% else %}
+        {% assign left_value_align = '80' %}
+      {% endif %}
+      <div
+        class="milestone first-milestone"
+        style="left: {{ left_value_align }}%;"
+      >
+        <div class="milestone-icon {% if differenceFreeShipping <= 0 and cartTotal > 0 %} backgound-black {% endif %}">
+          {% if differenceFreeShipping > 0 %}
+            {% render 'pdm_svg-car-gamification-gray' %}
           {% endif %}
-          {% if differenceFreeGift <= 0 %}
-            {{ settingsGamification.icon_product_gift_full | image_url:  width: settingsGamification.icon_gift_width, height: settingsGamification.icon_gift_height | image_tag }}
+          {% if differenceFreeShipping <= 0 and cartTotal > 0 %}
+            {% render 'pdm_svg-car-gamification-black' %}
           {% endif %}
         </div>
-        <span class="milestone-label">{{ giftTresholdPdm |  money_without_trailing_zeros }}</span>
+        <span class="milestone-label">
+          {{- freeShippingTreshold | money_without_trailing_zeros -}}
+        </span>
       </div>
-    {% endif %}
-  </div>
-
+      {% if enableProductGift
+        and url_dont_enable_gift == 'true'
+        and giftProduct.available
+      %}
+        <div class="milestone second-milestone" style="left:80%;">
+          <div class="milestone-icon {% if differenceFreeGift <= 0 %} backgound-black {% endif %}">
+            {% if differenceFreeGift > 0 %}
+              {{
+                settingsGamification.icon_product_gift_clean
+                | image_url:
+                  width: settingsGamification.icon_gift_width,
+                  height: settingsGamification.icon_gift_height
+                | image_tag
+              }}
+            {% endif %}
+            {% if differenceFreeGift <= 0 %}
+              {{
+                settingsGamification.icon_product_gift_full
+                | image_url:
+                  width: settingsGamification.icon_gift_width,
+                  height: settingsGamification.icon_gift_height
+                | image_tag
+              }}
+            {% endif %}
+          </div>
+          <span class="milestone-label">
+            {{- giftTresholdPdm | money_without_trailing_zeros -}}
+          </span>
+        </div>
+      {% endif %}
+    </div>
   </div>
 {% endif %}

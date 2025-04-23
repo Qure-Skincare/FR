@@ -31,7 +31,7 @@
 		<form action="{{ routes.cart_url }}" method="post" class="my-cart cart_empty_class">
 
 			{% for item in cart.items %}
-				{% if item.title contains 'Q-Rejuvalight Pro Facewear'    %}
+				{% if item.title contains 'Q-Rejuvalight Pro Facewear' %}
 					{% assign progress_Q = 1 %}
 				{% endif %}
 
@@ -158,9 +158,9 @@
 										{% endif %}
 
 										{% if reviews_count > 5 %}
-											<a href="#">{{ reviews_count }} Reviews</a>
+											<a href="#">{{ reviews_count }} Avis</a>
 										{% else %}
-											<a href="#">78 Reviews</a>
+											<a href="#">78 Avis</a>
 										{% endif %}
 									</p>
 									{% endunless %}
@@ -180,7 +180,7 @@
 											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
 												<path d="M0.538462 1.1543C0.214544 1.1543 0 1.36884 0 1.69276V9.23122C0 9.55514 0.214544 9.76968 0.538462 9.76968H1.61538C1.72266 8.85472 2.53035 8.10382 3.5 8.10382C4.46965 8.10382 5.27734 8.85472 5.38462 9.76968H7.53846C7.86238 9.76968 8.07692 9.55514 8.07692 9.23122V1.69276C8.07692 1.36884 7.86238 1.1543 7.53846 1.1543H0.538462ZM5.85577 3.02209C5.94411 3.02209 6.03666 3.05995 6.09135 3.13987L6.41106 3.47641C6.51833 3.58368 6.52254 3.78561 6.36058 3.94757L3.71875 6.58939C3.55679 6.75135 3.33804 6.75135 3.23077 6.58939L1.71635 5.0918C1.55439 4.92984 1.55439 4.71109 1.71635 4.60382L2.05288 4.2841C2.21484 4.12215 2.41677 4.12215 2.52404 4.2841L3.5 5.24324L5.60337 3.13987C5.68329 3.05995 5.76743 3.02209 5.85577 3.02209ZM9.15385 3.30814C8.82993 3.30814 8.61539 3.52269 8.61539 3.8466V9.23122C8.61539 9.50045 8.82993 9.76968 9.15385 9.76968C9.26112 8.85472 10.0688 8.10382 11.0385 8.10382C12.0081 8.10382 12.8158 8.80003 12.9231 9.76968H13.4615C13.7855 9.76968 14 9.55514 14 9.23122V6.53891C14 6.05514 13.5625 5.46199 13.5625 5.46199L12.3846 3.8466C12.1154 3.52269 11.9534 3.30814 11.5769 3.30814H9.15385ZM10.2308 4.38507H11.5264C11.6337 4.38507 11.7452 4.48603 11.7452 4.48603L12.8726 6.05093C12.9799 6.21289 13.0913 6.38116 13.0913 6.48843H10.2308V4.38507ZM3.5 8.79372C2.81641 8.79372 2.25481 9.35532 2.25481 10.0389C2.25481 10.7225 2.81641 11.2841 3.5 11.2841C4.18359 11.2841 4.74519 10.7225 4.74519 10.0389C4.74519 9.35532 4.18359 8.79372 3.5 8.79372ZM11.0385 8.79372C10.3549 8.79372 9.79327 9.35532 9.79327 10.0389C9.79327 10.7225 10.3549 11.2841 11.0385 11.2841C11.7221 11.2841 12.2837 10.7225 12.2837 10.0389C12.2837 9.35532 11.7221 8.79372 11.0385 8.79372Z" fill="#008763"></path>
 											</svg>
-											<a href="#">In stock. Shipped within 2 days</a>
+											<a href="#">En stock. Expedition en 2 jours.</a>
 										</p>
 										{%- endunless -%}
 									{%- endif -%}
@@ -213,7 +213,7 @@
 										{% if free_gift %}
 											<div class="drawer__cart-item-price">
 												<p class="old-price"><span class="money">{{ item.original_line_price | money_without_trailing_zeros }}</span></p>
-												<p class="new-price test"><span class="money">$0</span></p>
+												<p class="new-price test"><span class="money">€0</span></p>
 											</div>
 										{% elsif item.id == 46199907123439 %}
 											<div class="drawer__cart-item-price">
@@ -294,68 +294,68 @@
 
 					{% if cart.item_count == 0 %}
 						<div class="drawer__cart-is-empty">
-							<div class="drawer__cart-empty-text">
-								<h4>Your shopping bag is empty.</h4>
-								<p>Fill it with amazing skincare.</p>
-							</div>
-							<div class="empty-product">
-								<div class="empty-title dekstop-empty">
-									<h4>Micro-Infusion Facial System </h4>
-										<div class="empty-review">
-											<img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="" class="mr-2">
-											&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="/pages/microinfusion">98% of customers loved their skin after one treatment</a>
-										</div>
-								</div>
-								<div class="empty-main">
-									<div class="empty-img">
-										<img src="{{ 'cart_micro_new_400x.webp' | asset_url }}" style="max-width: 160px;">
-										<div class="empty-mobile">
-											<div class="empty-title">
-												<h4>Micro-Infusion Facial System </h4>
-												<div class="empty-review">
-													<img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="">
-													<a href="/pages/microinfusion"> 98% of customers loved their skin after one treatment</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="empty-content">
-										<ul>
-											<li>
-												<span>
-													<img src="https://qureskincaredns.com/new/assets/dark-spots.svg" alt="">
-												</span>
-												Reduce appearance of fine lines, pores and dark spots. 
-											</li>
-											<li>
-												<span>
-													<img src="https://qureskincaredns.com/new/assets/skin.svg" alt="">
-												</span>
-												Infuse active ingredients into your skin. 
-											</li>
-											<li>
-												<span>
-													<img src="https://qureskincaredns.com/new/assets/downtime.svg" alt="">
-												</span> 
-												Immediately visible results, minimal downtime!
-											</li>
-											<li>
-												<span>
-													<img src="https://qureskincaredns.com/new/assets/plus.svg" alt="">
-												</span> 
-												Virtually painless, and performed safely from home.
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="drawer__cart-empty-shop-btn">
-									<a class="drawer__cart-empty-button" href="/pages/microinfusion">
-										<h2 class="lock-checkout">Shop Micro-Infusion </h2>
-									</a> 
-								</div>
-							</div>
-						</div>
+  <div class="drawer__cart-empty-text">
+    <h4>Votre panier est vide.</h4>
+    <p>Remplissez-le avec des produits de soin incroyables.</p>
+  </div>
+  <div class="empty-product">
+    <div class="empty-title dekstop-empty">
+      <h4>Système facial de micro-infusion</h4>
+      <div class="empty-review">
+        <img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="" class="mr-2">
+            
+        <a href="/pages/microinfusion">98 % des clients ont adoré leur peau après un seul traitement</a>
+      </div>
+    </div>
+    <div class="empty-main">
+      <div class="empty-img">
+        <img src="{{ 'cart_micro_new_400x.webp' | asset_url }}" style="max-width: 160px;">
+        <div class="empty-mobile">
+          <div class="empty-title">
+            <h4>Système facial de micro-infusion</h4>
+            <div class="empty-review">
+              <img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="">
+              <a href="/pages/microinfusion">98 % des clients ont adoré leur peau après un seul traitement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty-content">
+        <ul>
+          <li>
+            <span>
+              <img src="https://qureskincaredns.com/new/assets/dark-spots.svg" alt="">
+            </span>
+            Réduit l'apparence des rides, des pores et des taches brunes.
+          </li>
+          <li>
+            <span>
+              <img src="https://qureskincaredns.com/new/assets/skin.svg" alt="">
+            </span>
+            Infuse des ingrédients actifs dans votre peau.
+          </li>
+          <li>
+            <span>
+              <img src="https://qureskincaredns.com/new/assets/downtime.svg" alt="">
+            </span>
+            Résultats visibles immédiatement, temps de récupération minimal !
+          </li>
+          <li>
+            <span>
+              <img src="https://qureskincaredns.com/new/assets/plus.svg" alt="">
+            </span>
+            Pratiquement indolore et réalisé en toute sécurité depuis chez vous.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="drawer__cart-empty-shop-btn">
+      <a class="drawer__cart-empty-button" href="/pages/microinfusion">
+        <h2 class="lock-checkout">Acheter le système de micro-infusion</h2>
+      </a>
+    </div>
+  </div>
+</div>
 					{% endif %}
 				</div>
 			</div>
@@ -413,14 +413,14 @@
 
 				<div class="drawer__cart-subtotal">
 					<div>
-						<p>Subtotal</p>
+						<p>Total</p>
 						{% if cart.item_count > 0  %}
 							{%- if total_cart_compare_price > 0 -%}
 								{% if savings %}
 									{% if custom_saving != blank %}
 										<p class="drawer_savings" style="color: {{ custom_saving.settings.color }}">{{ custom_saving.settings.text }}</p>
 									{% else %}
-										<p class="drawer_savings">You're saving</p>
+										<p class="drawer_savings">Vous économisez</p>
 									{% endif %}
 								{% endif %}
 							{%- endif -%}
@@ -429,7 +429,7 @@
 						{%- if is_only_gift == true -%}
 							<p class="drawer_shipping">&nbsp;</p>
 						{%- else -%}
-							<p style class="drawer_shipping">Shipping</p>
+							<p style class="drawer_shipping">Livraison</p>
 						{%- endif -%}
 					</div>
 
@@ -498,7 +498,7 @@
 							<img src="https://qureskincaredns.com/new/assets/secureship_sm.svg" alt="" class="img-fluid">
 						</div>
 						<div class="insurance__text">
-							<p class="insurance__text--top">Protect Your Order from Loss, Damage & Theft <strong>{{ insurancePrice | money_without_trailing_zeros }}</strong>
+							<p class="insurance__text--top">Protégez votre commande contre la perte, les dommages et le vol <strong>{{ insurancePrice | money_without_trailing_zeros }}</strong>
 							</p>
 						</div>
 						<div class="insurance__switch-wrapper">
@@ -522,14 +522,14 @@
 
 			<div class="cart_total-checkout">
 				<div class="drawer__cart-total">
-					<p class="cart_items_subtotal_price">Your Total</p>
+					<p class="cart_items_subtotal_price">Total</p>
           {% render 'pdm-cart-total-checkout' cartData:cart, totalCartComparePrice: total_cart_compare_price, is_only_gift:is_only_gift %}
 				</div>
 
 				<form action="https://qureskincaredns.com/checkout" method="post" class="insurance-form" id="insuranceForm"></form>
 					<div class="drawer__cart-checkout-btn">
 						<button class="drawer__cart-checkout" type="submit" name="checkout">
-							<h2 class="lock-checkout">CHECKOUT</h2>
+							<h2 class="lock-checkout">PAIEMENT</h2>
 							<svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.30418 6.65385L3.30419 6.36739V6.07022L3.30422 5.78276L3.30419 5.4856V5.19813L3.31088 4.91794L3.34867 4.61318C3.36712 4.48229 3.46457 4.1159 3.52886 4.05135C3.59624 3.79566 3.97413 3.36459 4.11325 3.2384C4.30328 3.06604 4.64307 2.79803 4.97414 2.71228C5.017 2.67909 5.10977 2.65689 5.16864 2.65908C5.22808 2.60386 5.4626 2.58605 5.55854 2.57923L5.60182 2.58411C5.63562 2.56472 5.62319 2.57143 5.67446 2.5669C5.78657 2.55698 6.16692 2.55662 6.22574 2.60079C6.29001 2.59531 6.38519 2.61765 6.42004 2.62823C6.58717 2.65835 6.7395 2.71855 6.88765 2.78372L6.99508 2.83863C7.01395 2.85284 7.00708 2.84691 7.0204 2.86272C7.15756 2.8788 7.58226 3.2556 7.65442 3.3329C7.74103 3.42565 8.08718 3.82507 8.10754 3.98687C8.1964 4.062 8.30446 4.45889 8.32391 4.61269C8.33993 4.68191 8.35281 4.75344 8.34371 4.82069C8.39422 4.89279 8.36852 5.09435 8.36815 5.19328V5.49045V5.77791V6.07507L8.36821 6.36253L8.36806 6.65727L8.36752 6.99232L3.30747 6.99692L3.30418 6.65385ZM5.35999 0.676492C5.35617 0.678669 5.35109 0.680564 5.34789 0.681709L5.15542 0.714034C5.08609 0.724165 5.02528 0.736243 4.95631 0.745877C4.9058 0.761397 4.78294 0.795849 4.71277 0.791452L4.69217 0.803623C4.61389 0.842163 4.74284 0.784877 4.67072 0.813572C4.65827 0.818528 4.64093 0.822693 4.6258 0.826843C4.41553 0.884587 4.16959 0.992551 4.06847 1.01878C4.03925 1.04699 3.8553 1.12496 3.79889 1.15538C3.73264 1.1911 3.57512 1.29298 3.52765 1.30144C3.49359 1.34929 2.87247 1.71579 2.31492 2.41853L1.98818 2.87315C1.98316 2.91588 1.87461 3.10094 1.84923 3.1514C1.8278 3.19399 1.73206 3.41113 1.7176 3.42728L1.60767 3.73654L1.52925 4.01191C1.48957 4.24675 1.44456 4.44374 1.42289 4.69869C1.40146 4.95089 1.40773 5.20233 1.40655 5.45879C1.40535 5.71688 1.40605 5.97529 1.40604 6.23342C1.40604 6.38785 1.42626 6.8819 1.39929 6.99732L0.927328 7.0069C0.884014 7.02489 0.811939 7.03284 0.755858 7.05376C0.723997 7.06564 0.698472 7.07827 0.672748 7.09149C0.626121 7.11544 0.63646 7.11738 0.594571 7.11997C0.578997 7.14014 0.590119 7.12845 0.570343 7.14625L0.479006 7.21728C0.435179 7.25445 0.413668 7.27476 0.375972 7.31889C0.287473 7.4225 0.233522 7.53532 0.205015 7.56186L0.150739 7.78275L0.139893 8.11642V8.41358V8.70104V8.9982V9.28567V9.58283V9.8703V10.1675V10.4549V10.7521V11.0395V11.3367V11.6242V11.9213V12.2088V12.506V12.7934V13.0906V13.3781L0.140495 13.6752C0.147393 13.7992 0.169334 13.8717 0.192943 13.9796C0.233555 14.0426 0.256574 14.1164 0.302079 14.181C0.348513 14.247 0.398 14.3054 0.452315 14.3524C0.579069 14.4621 0.675752 14.5148 0.869898 14.5708L1.1586 14.5935H1.45564H1.74299H2.04004H2.32739H2.62443H2.91179H3.20883H3.49619H3.79323H4.08058H4.37763H4.66498H4.96203H5.24938H5.54643H5.83378H6.13082H6.41817H6.71522H7.00257H7.29962H7.58698H7.88402H8.17137H8.46842H8.75577H9.05281H9.34017H9.63721H9.92457H10.2216L10.508 14.5935L10.7994 14.5712C10.9957 14.5131 11.1054 14.4525 11.2275 14.3452C11.2799 14.2992 11.3306 14.2368 11.3758 14.172C11.4137 14.1175 11.4549 13.9953 11.4961 13.9527L11.5318 13.6704L11.5325 13.3829V13.0857V12.7983V12.5011V12.2137V11.9165V11.629V11.3319V11.0444V10.7472V10.4598V10.1626V9.87514V9.57798V9.29051V8.99336V8.70589V8.40873V8.12126L11.5399 7.87766C11.5147 7.84023 11.5153 7.75042 11.5018 7.69813C11.484 7.62948 11.4611 7.58783 11.4456 7.52496C11.3928 7.47383 11.3872 7.36703 11.1529 7.18355C11.1246 7.16138 11.1186 7.16387 11.1103 7.14192C10.9695 7.08818 10.9183 7.03392 10.7316 7.00724C10.5816 6.9858 10.4053 7.01293 10.2681 6.9898C10.2286 6.26337 10.3027 5.38838 10.2419 4.60677L10.2246 4.38947C10.1824 4.3274 10.169 4.14035 10.1493 4.05486C10.1231 3.94129 10.0903 3.84579 10.0641 3.7374C10.0413 3.68136 9.97964 3.53088 9.97746 3.46656C9.92835 3.42329 9.85695 3.22112 9.8234 3.15131C9.77541 3.05148 9.69697 2.94094 9.66145 2.84266C9.63213 2.82836 9.54382 2.6704 9.5136 2.62752C9.2718 2.28421 8.92561 1.89903 8.59839 1.64319L8.18005 1.32724L7.7184 1.07668C7.6865 1.0612 7.66887 1.05621 7.63804 1.04182C7.62307 1.03483 7.61051 1.02829 7.5986 1.02028C7.57863 1.00685 7.58416 1.01085 7.57095 0.996959C7.56293 0.996943 7.03465 0.823755 7.01953 0.813776L6.62323 0.718906C6.56958 0.726834 6.53355 0.717387 6.47897 0.706514C6.39689 0.69957 6.12083 0.688416 6.07261 0.660156L5.83378 0.66494L5.5467 0.673973C5.48503 0.676791 5.41242 0.690946 5.35999 0.676492Z" fill="#D1D1D1"></path>
 							</svg>
@@ -549,7 +549,7 @@
 									</clipPath>
 								</defs>
 							</svg></span>
-						Free Shipping over <span class="money" style="padding-left:3px">US$100</span>
+						Livraison offerte à partir de €100
 					</p>
 					<p>
 						<span><svg xmlns="http://www.w3.org/2000/svg" width="33" height="24" viewBox="0 0 33 24" fill="none">
@@ -559,7 +559,7 @@
 								<path d="M1.61951 9.52284C1.61951 16.9435 7.65237 22.9764 15.0872 22.9764C22.5221 22.9764 28.391 16.986 28.391 9.56532H31.359L25.7368 1.29492L20.1288 9.56532H24.4868" stroke="black" stroke-width="1.39435" stroke-miterlimit="2.61313" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg>
 						</span>
-						Buy Now, Pay Later
+						Acheter maintenant, Payez après
 					</p>
 				</div>
 			</div>
@@ -793,7 +793,7 @@
 				"type": "text",
 				"id": "urgency_note_content",
 				"label": "Full Content",
-				"default": "Due to high demand, [] $quantity_label only saved for 30 minutes."
+				"default": "Due to high demand, [] €quantity_label only saved for 30 minutes."
 			},
 			{
 				"type": "text",
