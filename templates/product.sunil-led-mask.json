@@ -214,7 +214,7 @@
             "product": "",
             "product_title": "",
             "product_url": "",
-            "image_before": "shopify://shop_images/michelle_before_img.webp",
+            "image_before": "shopify://shop_images/michelle_before_img_fr.webp",
             "text_before": "AVANT",
             "image_after": "shopify://shop_images/michelle_after_img.webp",
             "text_after": "APRÈS 8 SEMAINES",
@@ -260,7 +260,7 @@
             "product_url": "",
             "image_before": "shopify://shop_images/bj_nardi_before_img.webp",
             "text_before": "AVANT",
-            "image_after": "shopify://shop_images/bj_nardi_after_img.webp",
+            "image_after": "shopify://shop_images/bj_nardi_after_img_fr.webp",
             "text_after": "APRÈS 4 SEMAINES",
             "image_country": "shopify://shop_images/canada_f.svg",
             "client": "BJ Nardi.",
@@ -274,11 +274,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_kaXzTH",
-        "slide_Und9N8",
-        "slide_gNaBhW"
-      ],
+      "block_order": ["slide_kaXzTH", "slide_Und9N8", "slide_gNaBhW"],
       "settings": {
         "classname": "skincare_slider bg_gradient_yellow_bt",
         "heading": "",
@@ -309,10 +305,7 @@
           }
         }
       },
-      "block_order": [
-        "video_xLP3b6",
-        "text_content_zQrNN6"
-      ],
+      "block_order": ["video_xLP3b6", "text_content_zQrNN6"],
       "settings": {
         "padding_top": 60,
         "padding_bottom": 60
@@ -483,7 +476,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_teresa.webp",
+            "image": "shopify://shop_images/results_teresa_fr.webp",
             "heading": "ÇA MARCHE VRAIMENT !!",
             "text": "<p>« J’étais très sceptique quand mon mari m’a acheté ce masque. Mais après 6 mois, les résultats sont incroyables !! J’ai essayé de nombreux sérums pour mes taches solaires, mais rien n’a fonctionné jusqu’à ce que j’utilise ce masque. Ça vaut vraiment l’investissement. »</p>",
             "see-more": "",
@@ -496,7 +489,7 @@
         "result_NhAn8a": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Sophie_Richards_Desktop.png",
+            "image": "shopify://shop_images/Sophie_Richards_Desktop_fr.webp",
             "heading": "Incroyable !",
             "text": "<p><em>Ça a eu un impact énorme sur mon acné. J’ai encore des éruptions, mais elles disparaissent beaucoup plus vite. Ça a pris peut-être 2 jours pour commencer à agir. Les photos montrent une différence d’environ 3 semaines.</em></p>",
             "see-more": "",
@@ -509,7 +502,7 @@
         "result_73PVKN": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_tiffany.webp",
+            "image": "shopify://shop_images/results_tiffany_fr.webp",
             "heading": "Peau renouvelée !",
             "text": "<p>« Mon masque Qure est incroyable ! En tant que personne qui lutte contre l’acné et la rosacée, votre masque de thérapie lumineuse a tellement amélioré ma peau que je me sens maintenant à l’aise sans maquillage. Je suis très satisfaite de ce produit ! »</p>",
             "see-more": "",
@@ -522,7 +515,7 @@
         "result_pmCAWA": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Terri_P_results.png",
+            "image": "shopify://shop_images/Terri_P_results_fr.webp",
             "heading": "J’aurais aimé avoir cette technologie il y a des années !",
             "text": "<p>« Après deux semaines, j’ai commencé à voir des résultats et après six semaines, les changements sur ma peau étaient spectaculaires. J’utilise Qure depuis six mois maintenant et j’adore les compliments ! J’ai acheté des masques pour mes filles pour Noël afin qu’elles puissent commencer plus jeunes… J’aurais aimé que cette technologie soit disponible quand j’étais plus jeune. J’ai 76 ans ! Les photos ci-dessous datent d’après 6 semaines. »</p>",
             "see-more": "",
@@ -535,7 +528,7 @@
         "result_Mgz3yd": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_bj_nardi.webp",
+            "image": "shopify://shop_images/results_bj_nardi_fr.webp",
             "heading": "A complètement guéri mon acné",
             "text": "<p>« C’est la première fois en DEUX ANS que je n’ai pas d’acné active sur mon visage. J’utilise mon Qure depuis 1 mois maintenant et il a complètement guéri mon acné. C’est parti ET ça guérit toutes mes cicatrices et marques. J’étais littéralement au bord du suicide à cause de ma peau horrible. Cet appareil M’A SAUVÉ LA VIE !!! »</p>",
             "see-more": "",
@@ -548,7 +541,7 @@
         "result_bbhV3X": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_michelle.webp",
+            "image": "shopify://shop_images/results_michelle_fr.webp",
             "heading": "Zéro acné de masque depuis 8 semaines",
             "text": "<p>« Je pensais qu’il ne fonctionnait que sur mes éruptions, zéro acné de masque depuis 8 semaines maintenant, MAIS heureusement pour les avant/après car même moi j’étais choquée ! Mes abonnés ont remarqué une différence dans ma peau ces dernières semaines et maintenant je comprends ce qu’ils voient. La différence n’est pas énorme mais suffisante pour repousser une chirurgie que je ne peux pas me permettre pour l’instant. »</p>",
             "see-more": "",
@@ -561,7 +554,7 @@
         "result_FcTEnw": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_anton.webp",
+            "image": "shopify://shop_images/results_anton_fr.webp",
             "heading": "Je ne peux pas passer une journée sans",
             "text": "<p>« J’ai commencé à avoir de l’acné typique des adolescents. C’est devenu très grave. J’ai tout essayé, des régimes, je suis devenu complètement végan. J’ai essayé toutes sortes de soins, chers et bon marché. Dès le départ, j’ai remarqué des résultats avec Qure, après la première semaine, je n’avais plus d’éruptions actives. Les gens me demandent maintenant comment j’ai rendu ma peau hydratée, sans acné, lumineuse sans rougeurs. Je suis tellement dépendant du masque Qure maintenant. Je ne pense pas pouvoir passer une journée sans l’utiliser. »</p>",
             "see-more": "",
@@ -574,7 +567,7 @@
         "result_Bwe94z": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_june.webp",
+            "image": "shopify://shop_images/results_june_fr.webp",
             "heading": "Résultats incroyables !",
             "text": "<p>« Incroyable ! Je ne m’attendais jamais à ce miracle. J’avais des taches rouges au-dessus des lèvres depuis des années et elles se sont grandement améliorées après avoir utilisé le masque quotidiennement pendant seulement 6 semaines. Je l’ai acheté en espérant une meilleure texture de peau et moins de rides. Cela a amélioré ces aspects, mais voir les rougeurs disparaître est ce qui m’enthousiasme le plus. »</p>",
             "see-more": "",
@@ -588,7 +581,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/results_jess.webp",
+            "image": "shopify://shop_images/results_jess_fr.webp",
             "heading": "Tellement plus lisse",
             "text": "<p>« Après quelques semaines d’utilisation quotidienne, je vois déjà une différence dans ma peau – tellement plus lisse, moins rouge et irritée, les pores sont plus petits et j’ai moins de bosses de congestion. »</p>",
             "see-more": "",
@@ -601,7 +594,7 @@
         "result_U4khQD": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_john.webp",
+            "image": "shopify://shop_images/results_john_fr.webp",
             "heading": "Éclat d’apparence plus saine",
             "text": "<p>« Ma peau semble beaucoup plus nette, nettement moins grasse, et globalement un éclat d’apparence plus saine. Même mes cicatrices d’éruptions ont été réduites ! »</p>",
             "see-more": "",
@@ -614,7 +607,7 @@
         "result_W8bKNg": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Jessica_k_led_mask_b_a.png",
+            "image": "shopify://shop_images/Jessica_k_led_mask_b_a_fr.webp",
             "heading": "Ravie des résultats !",
             "text": "<p>« J’ai 45 ans, donc je lutte contre les signes de l’âge, mais je dois encore gérer des poussées d’acné. Je n’ai eu aucune éruption depuis que j’ai commencé à utiliser le masque, et je remarque un lissage définitif des ridules sur mes joues et autour de mes yeux. Je recommande ce produit à tout le monde. Vraiment un bon investissement. »</p>",
             "see-more": "",
@@ -627,7 +620,7 @@
         "result_TkKNU8": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Amiee_LED.png",
+            "image": "shopify://shop_images/Amiee_LED_fr.webp",
             "heading": "Je recommande vivement !",
             "text": "<p>« Je l’utilise depuis seulement un mois. Avant cela, ma peau était squameuse et sèche. Ma barrière cutanée a été gravement endommagée ces deux dernières années, presque tout ce que j’utilisais me brûlait, mais en un mois, ce masque a considérablement éclairci mon hyperpigmentation et donné un petit coup de boost sous mes yeux (une agréable surprise). Mes amis ont remarqué que ma peau rayonne vraiment. Je recommande vivement ! »</p>",
             "see-more": "",
@@ -640,7 +633,7 @@
         "result_jtGKYb": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Group_129K9.png",
+            "image": "shopify://shop_images/Group_129K9_fr.webp",
             "heading": "Produits incroyables !",
             "text": "<p>« Je suis tellement heureuse, j’utilise les produits depuis 2 mois et ils ont fait une différence incroyable sur ma peau. J’avais essayé beaucoup de produits auparavant, mais avec une seule bouteille de sérum, en restant constante avec le masque et en faisant quelques traitements de micro-infusion pour les cicatrices, j’ai vu un énorme changement sur ma peau. »</p>",
             "see-more": "",
@@ -653,7 +646,7 @@
         "result_H93Rhe": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Group_1299_f3874fc3-3157-48c1-b479-be960ef088b4.png",
+            "image": "shopify://shop_images/Group_1299_f3874fc3-3157-48c1-b479-be960ef088b4_fr.webp",
             "heading": "Meilleur investissement pour ma peau",
             "text": "<p>« C’est incroyable, tellement facile à utiliser pour commencer. Et je remarque déjà des améliorations massives, la texture de ma peau est passée de rugueuse et bosselée à lisse comme de la soie, et je n’ai plus d’éruptions depuis que j’utilise la fonction lumière bleue. J’adore, je ne pourrais pas le recommander assez ! »</p>",
             "see-more": "",
@@ -666,7 +659,7 @@
         "result_Ude8aB": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Frame2_1664.png",
+            "image": "shopify://shop_images/Frame2_1664_fr.webp",
             "heading": "Teint plus frais",
             "text": "<p>« Le masque est facile à configurer et à utiliser immédiatement. Mon principal souci est la décoloration due à l’exposition au soleil et la prévention des ridules/rides. J’ai une peau très sèche et après 2,5 semaines, je peux constater une différence significative dans l’hydratation de ma peau. Surtout en plein hiver. La décoloration sur mon front s’uniformise également et les taches rouges et irrégulières sur mes joues sont moins enflammées. Je suis très satisfaite de cet investissement et avec une utilisation régulière, j’ai hâte de suivre les progrès de ma peau. »</p>",
             "see-more": "",
@@ -1034,276 +1027,271 @@
             "text": "<p>Appuyez une fois sur le bouton pour le traitement anti-âge, appuyez à nouveau pour le traitement anti-éruptions OU personnalisez votre traitement sur 5 zones faciales avec l’application Qure et appuyez sur démarrer<br/></p>"
           }
         },
-       "object_i8yje9": {
-  "type": "object",
-  "settings": {
-    "image": "shopify://shop_images/led_quick_step_4.webp",
-    "text": "<ol><li>L’appareil s’éteindra automatiquement après 3 minutes ; retirez le masque et nettoyez-le avec une lingette</li><li>Poursuivez avec votre routine de soin habituelle<br/></li></ol>"
-  }
-}
-},
-"block_order": [
-  "object_XmiCkL",
-  "object_JzMwyx",
-  "object_fDk3zG",
-  "object_i8yje9"
-],
-"disabled": true,
-"settings": {
-  "heading": "Démarrage rapide : guide facile pour une peau éclatante",
-  "custom_class": "reduced-copy"
-}
-},
-"compare_GAEKyR": {
-"type": "compare",
-"blocks": {
-  "object_RHiTQp": {
-    "type": "object",
-    "settings": {
-      "image": "shopify://shop_images/compare-1_274fb7f7-5fac-4ee0-81f9-94699d7576c9.png",
-      "heading": "Masque LED Q-Rejuvalight Pro",
-      "mob_text": "",
-      "text": "<p><strong>Investissement à coût unique</strong></p>",
-      "price": "379 €",
-      "style": "correctCircle",
-      "list": "<ul><li>vous fait gagner du temps</li><li>confort et intimité de votre domicile</li><li><strong>traitements illimités</strong></li><li><strong>seulement 3 minutes par jour</strong></li><li>aucun paiement récurrent</li></ul>"
+        "object_i8yje9": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/led_quick_step_4.webp",
+            "text": "<ol><li>L’appareil s’éteindra automatiquement après 3 minutes ; retirez le masque et nettoyez-le avec une lingette</li><li>Poursuivez avec votre routine de soin habituelle<br/></li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "object_XmiCkL",
+        "object_JzMwyx",
+        "object_fDk3zG",
+        "object_i8yje9"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Démarrage rapide : guide facile pour une peau éclatante",
+        "custom_class": "reduced-copy"
+      }
+    },
+    "compare_GAEKyR": {
+      "type": "compare",
+      "blocks": {
+        "object_RHiTQp": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/compare-1_274fb7f7-5fac-4ee0-81f9-94699d7576c9.png",
+            "heading": "Masque LED Q-Rejuvalight Pro",
+            "mob_text": "",
+            "text": "<p><strong>Investissement à coût unique</strong></p>",
+            "price": "379 €",
+            "style": "correctCircle",
+            "list": "<ul><li>vous fait gagner du temps</li><li>confort et intimité de votre domicile</li><li><strong>traitements illimités</strong></li><li><strong>seulement 3 minutes par jour</strong></li><li>aucun paiement récurrent</li></ul>"
+          }
+        },
+        "object_Kxz9qm": {
+          "type": "object",
+          "settings": {
+            "image": "shopify://shop_images/beauty_derma.webp",
+            "heading": "En clinique /\n Dermatologue",
+            "mob_text": "",
+            "text": "<p><strong>coût par traitement de 6 séances</strong></p>",
+            "price": "300 € - 900 €",
+            "style": "incorrectCircle",
+            "list": "<ul><li>trajet <strong>chronophage</strong> vers la clinique</li><li>si et quand vous obtenez un rendez-vous</li><li><strong>traitements limités</strong></li><li>nécessite des <strong>visites régulières</strong></li><li>paiements récurrents requis</li></ul>"
+          }
+        }
+      },
+      "block_order": ["object_RHiTQp", "object_Kxz9qm"],
+      "settings": {
+        "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
+        "heading": "La beauté des résultats cliniques à domicile - sans les coûts ‘cliniques’",
+        "heading_reduced": "Résultats cliniques à domicile – sans le coût « clinique »",
+        "text": "<p>C’est comme aller en clinique, sans les coûts récurrents, l’engagement de temps, les promesses excessives, les ventes incitatives et les tracas.</p>",
+        "text_reduced": "<p>Arrêtez de vous soucier de l’engagement de temps « clinique », des coûts de transport, des promesses excessives, des ventes incitatives et des tracas.</p>",
+        "design": false
+      }
+    },
+    "liquid_Azh7Kn": {
+      "type": "liquid",
+      "settings": {
+        "code": "<!-- Début de la section de comparaison -->\n<div class=\"comparison-section section\">\n    <div class=\"section_header text-md-center mb-3 px-4\">\n        <h2 class=\"title-lg d-none d-md-block pb-2\">\n            Qu’est-ce qui fait de Qure le bon choix pour vous ?\n        </h2>\n        <h2 class=\"title-lg d-block d-md-none pb-2\">\n            Pourquoi Qure est-il fait pour vous ?\n        </h2>\n        <h3>(Voici une comparaison, mais il n’y a vraiment pas de comparaison)</h3>\n    </div>\n    <div class=\"container\">\n        <div class=\"comparison-row header_comp_row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\"></div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0\">\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr bg-default\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'qure.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'Omnilux-Contour-logo_1.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'fight-salon.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid d-none d-md-block\" />\n                                    <img src=\"{{ 'fight-salon-mobile.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid d-block d-md-none\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'dr-dennis.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row border-0\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\"></div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0\">\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr bg-default\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'qure-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'Omnilux-Contour-LED-Mask_525x550_copy_1.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'light-salon-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'dr-g-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Portable</div>\n                        <div class=\"comp-row__subtitle\">Mains libres, sans fil et rechargeable</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Couleurs de lumière</div>\n                        <div class=\"comp-row__subtitle\">Chacune avec des bienfaits spécifiques pour la peau</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default \">\n                                <strong>5 AU TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>2 AU TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>2 AU TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>5 AU TOTAL</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row borderTop-comparison\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\"\n                                style=\"background-color:#803b5a\">Infrarouge</span>\n                            <span class=\"comp-row__title--normal\">Circulation & Protège le collagène</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#A24239\">Rouge profond</span>\n                            <span class=\"comp-row__title--normal\">Réduit les rides & les rougeurs</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#CD574C\">Rouge</span>\n                            <span class=\"comp-row__title--normal\">Stimule le collagène & raffermit</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#E7AA6A\">Ambre</span>\n                            <span class=\"comp-row__title--normal\">Dommages solaires & pigmentation</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#3B75AE\">Bleu</span>\n                            <span class=\"comp-row__title--normal\">Acné & éruptions</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Approuvé par la FDA</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Traitements personnalisables</div>\n                        <div class=\"comp-row__subtitle\">Mains libres, sans fil et rechargeable</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Application compagnon</div>\n                        <div class=\"comp-row__subtitle\">iPhone/Android</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Nombre de diodes</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <strong>160</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>132</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>112</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>162</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Temps de traitement</div>\n                        <div class=\"comp-row__subtitle\">Visage entier</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <strong>3 MIN</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>10 MIN</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>10 MIN</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>3 MIN</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row last-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Prix</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-block d-md-flex align-items-center justify-content-center bg-default\">\n                                <!-- <span class=\"compare_price\">529 €</span> -->\n                                <h5 class=\"regular_price\" style=\"font-weight: 700;\">379 €</h5>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">395 €</span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">527 €</span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">435 €</span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- Fin de la section de comparaison -->",
+        "popup_micro_infusion_enabled": true
+      }
+    },
+    "product_box_JzAAt3": {
+      "type": "product-box",
+      "blocks": {
+        "product_nbWqKG": {
+          "type": "product",
+          "settings": {
+            "heading": "Thérapie lumineuse LED pour le cou et le décolleté",
+            "text": "<p>Traitement LED sûr et non invasif. Nous recommandons trois à cinq traitements de 10 minutes par semaine pour des résultats optimaux.</p><ul><li>Rajeunit la peau là où les premiers signes de vieillissement apparaissent – peau fine, rides, taches solaires, taches de vieillesse et plus encore.</li><li>Répare la peau endommagée par le soleil, réduit l’apparence des rougeurs, des ridules et des rides.</li><li>Uniformise le teint et renforce la fermeté pour une peau éclatante et d’apparence plus jeune.</li></ul>",
+            "product": "neck-decolletage-led"
+          }
+        },
+        "image_J8DbBe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_neck_img.webp"
+          }
+        },
+        "image_Jng6Rj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_c_g_1.webp"
+          }
+        },
+        "image_TPYpmn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_c_g_2.webp"
+          }
+        },
+        "image_i6h3kh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/led_c_g_3.webp"
+          }
+        },
+        "rating_XL67mG": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star4.8.svg",
+            "text": "97% des clients satisfaits"
+          }
+        }
+      },
+      "block_order": [
+        "product_nbWqKG",
+        "image_J8DbBe",
+        "image_Jng6Rj",
+        "image_TPYpmn",
+        "image_i6h3kh",
+        "rating_XL67mG"
+      ],
+      "settings": {
+        "classname": "clinical_grade boost_bl",
+        "heading": "Traitez au-delà du visage",
+        "text": "<p>Combinaison parfaite avec le masque LED Q-Rejuvalight Pro pour une expérience ultime de rajeunissement de la peau. Ciblez la zone délicate du cou et du décolleté, souvent négligée.</p>",
+        "text_reduced": "<p>Associez notre ensemble cou et décolleté à votre masque facial pour un traitement complet.</p>"
+      }
+    },
+    "faq_BgPiYb": {
+      "type": "faq",
+      "blocks": {
+        "object_GPw3Gp": {
+          "type": "object",
+          "settings": {
+            "heading": "Quelles longueurs d’onde lumineuses le Q-Rejuvalight Pro utilise-t-il ?",
+            "text": "<p>Le Q-Rejuvalight Pro Facewear dispose de 5 longueurs d’onde lumineuses cliniquement prouvées et propose deux modes de traitement :</p><ul><li><strong>Lumière infrarouge (880 nm) :</strong> Améliore la circulation, protège le collagène existant et favorise l’absorption des produits.</li><li><strong>Rouge profond (660 nm) :</strong> Accélère la cicatrisation de la peau pour estomper et prévenir les cicatrices. Renforce le collagène pour réduire les rides.</li><li><strong>Rouge (630 nm) :</strong> Stimule la production de collagène et d’élastine, raffermit et repulpe la peau, répare les cellules cutanées et favorise l’hydratation pour réduire l’inflammation, les rougeurs et la rosacée.</li><li><strong>Ambre (605 nm) :</strong> Réduit l’apparence des taches brunes. Apaise la peau et calme les gonflements et l’inflammation.</li><li><strong>Bleu (415 nm) :</strong> Antibactérien, élimine et prévient les éruptions acnéiques. Apaise et calme la peau.</li></ul><p></p><p><span style=\"text-decoration:underline\"><strong>Il existe deux modes de traitement :</strong></span></p><p><strong>Le traitement anti-âge combine les longueurs d’onde rouge, rouge profond, infrarouge et ambre</strong>, ce qui explique pourquoi les lumières LED semblent orangées. Cette combinaison stimule le collagène, aide à réduire les rougeurs, les ridules et les taches brunes tout en encourageant la peau à se guérir et se rajeunir, pour une peau visiblement plus lisse, plus ferme et d’apparence plus jeune.</p><p><strong>Le traitement anti-éruptions combine les longueurs d’onde rouge et bleue</strong> pour détruire les bactéries responsables de l’acné, réguler la production de sébum, réduire les rougeurs et autres symptômes lors d’une poussée, pour une peau plus nette.</p>",
+            "code": ""
+          }
+        },
+        "object_WzL6if": {
+          "type": "object",
+          "settings": {
+            "heading": "Est-il approuvé par la FDA ?",
+            "text": "<p>OUI ! Notre masque LED Q-Rejuvalight Pro est le <strong>premier masque LED personnalisable au monde approuvé par la FDA pour un usage à domicile</strong>, <span style=\"text-decoration:underline\">prouvé</span> comme un traitement efficace et sûr pour l’acné et les problèmes de vieillissement cutané. Vous pouvez trouver plus de détails sur le site de la FDA (K230042).</p>",
+            "code": ""
+          }
+        },
+        "object_zEjFPh": {
+          "type": "object",
+          "settings": {
+            "heading": "Quel type de résultats vais-je voir ? À quelle vitesse ?",
+            "text": "<p>Chaque personne peut réagir différemment aux longueurs d’onde spécifiques, et les résultats dépendent de l’objectif que vous souhaitez atteindre.</p><p>La plupart des utilisateurs constatent une réduction des éruptions acnéiques et des rougeurs plus rapidement qu’ils ne l’espéraient.</p><p>Des lignes plus lisses, un teint amélioré et une fermeté accrue peuvent prendre plus de temps.</p><p>Les changements quotidiens seront subtils, alors assurez-vous de prendre des photos « avant et après » pour suivre vos progrès. Le plus important est de se rappeler que les résultats sont cumulatifs, donc un traitement quotidien constant est essentiel.</p>",
+            "code": ""
+          }
+        },
+        "object_kwgVxd": {
+          "type": "object",
+          "settings": {
+            "heading": "Dois-je porter une protection oculaire avec le Q-Rejuvalight Pro ?",
+            "text": "<p>Le Q-Rejuvalight Pro a été testé et approuvé pour la sécurité oculaire. Il a passé avec succès l’évaluation IEC62471 pour la sécurité des yeux, qui détermine si la sortie lumineuse d’un appareil est sans danger pour les yeux.</p><p>Cependant, nous recommandons de fermer les yeux et de porter des lunettes de protection pendant le traitement. La lumière peut être intense lorsqu’elle est allumée, et certains utilisateurs peuvent ressentir une sensibilité, même les yeux fermés.</p><p>Dans notre engagement indéfectible envers votre sécurité, nous avons pris l’initiative d’inclure GRATUITEMENT des lunettes de protection bloquant la lumière avec notre masque LED Q-Rejuvalight Pro, qui fonctionnent parfaitement pendant votre traitement.</p>",
+            "code": ""
+          }
+        },
+        "object_YiKwdT": {
+          "type": "object",
+          "settings": {
+            "heading": "Est-il sûr pour tous les types de peau ?",
+            "text": "<p>Il est crucial de noter que les types de peau V et VI (échelle de Fitzpatrick) sont plus sensibles à la thérapie lumineuse car ils absorbent plus de lumière que les autres types. Cela est dû à des niveaux plus élevés de mélanine dans la peau. La mélanine dans l’épiderme permet une absorption accrue d’énergie, ce qui augmente le risque d’effets indésirables liés à des lésions épidermiques chez les personnes de types V et VI. C’est pourquoi la FDA recommande la prudence pour ces types de peau.</p><p>D’après notre expérience, de nombreux clients avec des types de peau V et VI ont traité leur peau avec succès avec le Q-Rejuvalight Pro Facewear, rapportant des résultats positifs.</p><p>Pour les clients de types V et VI, nous recommandons vivement de consulter votre dermatologue avant d’utiliser le Q-Rejuvalight Pro Facewear. Cette étape est cruciale car les réactions cutanées peuvent varier d’une personne à l’autre, et ce qui fonctionne bien pour l’un peut ne pas convenir à un autre.</p>",
+            "code": ""
+          }
+        },
+        "object_R4NqQq": {
+          "type": "object",
+          "settings": {
+            "heading": "Le Q-Rejuvalight Pro est-il garanti ?",
+            "text": "<p>Le Q-Rejuvalight Pro Facewear est livré avec une garantie d’un (1) an couvrant tout problème lié à la fabrication découlant d’une utilisation quotidienne du produit. Cependant, cet appareil est conçu pour durer des années ! Fièrement conçu en Australie.</p>",
+            "code": ""
+          }
+        },
+        "object_XmQVbH": {
+          "type": "object",
+          "settings": {
+            "heading": "À quel âge et quand est-il préférable de commencer la thérapie lumineuse LED ?",
+            "text": "<p>La plupart des gens peuvent bénéficier du Q-Rejuvalight Pro. Que l’objectif soit de traiter l’acné, réduire les signes visibles du vieillissement, ou les deux, prévenir vaut mieux que corriger. Plus tôt le Q-Rejuvalight Pro intègre votre routine, mieux c’est.</p>",
+            "code": ""
+          }
+        },
+        "object_94NRej": {
+          "type": "object",
+          "settings": {
+            "heading": "Où le traitement Q-Rejuvalight Pro s’intègre-t-il dans une routine de soin ?",
+            "text": "<p>Le Q-Rejuvalight Pro Facewear peut être utilisé de jour comme de nuit, idéalement après le nettoyage et/ou l’exfoliation.</p><p>Une fois le traitement terminé, poursuivez avec vos produits de soin topiques préférés.</p>",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_GPw3Gp",
+        "object_WzL6if",
+        "object_zEjFPh",
+        "object_kwgVxd",
+        "object_YiKwdT",
+        "object_R4NqQq",
+        "object_XmQVbH",
+        "object_94NRej"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "Les réponses à vos questions",
+        "text": "",
+        "button_label": "Afficher plus de questions",
+        "button_hide_label": "Masquer les questions supplémentaires"
+      }
+    },
+    "heading_fijgLW": {
+      "type": "heading",
+      "settings": {
+        "heading": "<h2>Avis réels, résultats réels</h2><h2>de personnes comme vous.</h2>",
+        "heading_mobile": "<h2>Avis réels, résultats réels<br/>de personnes comme vous.</h2>"
+      }
+    },
+    "1707653061bd3707e6": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_main_widget_A4ebAn": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": ["stamped_product_reviews_ugc_main_widget_A4ebAn"],
+      "settings": {}
+    },
+    "pdm_product_social_proof_data_VREtzd": {
+      "type": "pdm_product-social-proof-data",
+      "settings": {}
     }
   },
-  "object_Kxz9qm": {
-    "type": "object",
-    "settings": {
-      "image": "shopify://shop_images/beauty_derma.webp",
-      "heading": "En clinique /\n Dermatologue",
-      "mob_text": "",
-      "text": "<p><strong>coût par traitement de 6 séances</strong></p>",
-      "price": "300 € - 900 €",
-      "style": "incorrectCircle",
-      "list": "<ul><li>trajet <strong>chronophage</strong> vers la clinique</li><li>si et quand vous obtenez un rendez-vous</li><li><strong>traitements limités</strong></li><li>nécessite des <strong>visites régulières</strong></li><li>paiements récurrents requis</li></ul>"
-    }
-  }
-},
-"block_order": [
-  "object_RHiTQp",
-  "object_Kxz9qm"
-],
-"settings": {
-  "classname": "beauty_skincare section bg-white",
-  "sub_head": "",
-  "heading": "La beauté des résultats cliniques à domicile - sans les coûts ‘cliniques’",
-  "heading_reduced": "Résultats cliniques à domicile – sans le coût « clinique »",
-  "text": "<p>C’est comme aller en clinique, sans les coûts récurrents, l’engagement de temps, les promesses excessives, les ventes incitatives et les tracas.</p>",
-  "text_reduced": "<p>Arrêtez de vous soucier de l’engagement de temps « clinique », des coûts de transport, des promesses excessives, des ventes incitatives et des tracas.</p>",
-  "design": false
-}
-},
-"liquid_Azh7Kn": {
-"type": "liquid",
-"settings": {
-  "code": "<!-- Début de la section de comparaison -->\n<div class=\"comparison-section section\">\n    <div class=\"section_header text-md-center mb-3 px-4\">\n        <h2 class=\"title-lg d-none d-md-block pb-2\">\n            Qu’est-ce qui fait de Qure le bon choix pour vous ?\n        </h2>\n        <h2 class=\"title-lg d-block d-md-none pb-2\">\n            Pourquoi Qure est-il fait pour vous ?\n        </h2>\n        <h3>(Voici une comparaison, mais il n’y a vraiment pas de comparaison)</h3>\n    </div>\n    <div class=\"container\">\n        <div class=\"comparison-row header_comp_row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\"></div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0\">\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr bg-default\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'qure.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'Omnilux-Contour-logo_1.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'fight-salon.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid d-none d-md-block\" />\n                                    <img src=\"{{ 'fight-salon-mobile.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid d-block d-md-none\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_hdr_img\">\n                                    <img src=\"{{ 'dr-dennis.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row border-0\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\"></div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0\">\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr bg-default\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'qure-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'Omnilux-Contour-LED-Mask_525x550_copy_1.png' | asset_url }}\" alt=\"\"\n                                        class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'light-salon-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div class=\"comp-col comp_hdr\">\n                                <div class=\"comp_mask_img\">\n                                    <img src=\"{{ 'dr-g-mask-120x144px.png' | asset_url }}\" alt=\"\" class=\"img-fluid\" />\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Portable</div>\n                        <div class=\"comp-row__subtitle\">Mains libres, sans fil et rechargeable</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Couleurs de lumière</div>\n                        <div class=\"comp-row__subtitle\">Chacune avec des bienfaits spécifiques pour la peau</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default \">\n                                <strong>5 AU TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>2 AU TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>2 AU TOTAL</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>5 AU TOTAL</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row borderTop-comparison\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\"\n                                style=\"background-color:#803b5a\">Infrarouge</span>\n                            <span class=\"comp-row__title--normal\">Circulation & Protège le collagène</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#A24239\">Rouge profond</span>\n                            <span class=\"comp-row__title--normal\">Réduit les rides & les rougeurs</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#CD574C\">Rouge</span>\n                            <span class=\"comp-row__title--normal\">Stimule le collagène & raffermit</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#E7AA6A\">Ambre</span>\n                            <span class=\"comp-row__title--normal\">Dommages solaires & pigmentation</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"comparison-clr-row\">\n                <div class=\"row g-0\">\n                    <div class=\"col-md-4\">\n                        <div class=\"comp-col comp-row__title-wrapper\">\n                            <span class=\"comp-row__title--colored\" style=\"background-color:#3B75AE\">Bleu</span>\n                            <span class=\"comp-row__title--normal\">Acné & éruptions</span>\n                        </div>\n                    </div>\n                    <div class=\"col-md-8\">\n                        <div class=\"row g-0\">\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"cross__checkBox\"></span>\n                                </div>\n                            </div>\n                            <div class=\"col-3\">\n                                <div\n                                    class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                    <span class=\"g__checkBox\"></span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Approuvé par la FDA</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Traitements personnalisables</div>\n                        <div class=\"comp-row__subtitle\">Mains libres, sans fil et rechargeable</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Application compagnon</div>\n                        <div class=\"comp-row__subtitle\">iPhone/Android</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <span class=\"g__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <span class=\"cross__checkBox\"></span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Nombre de diodes</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <strong>160</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>132</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>112</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>162</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Temps de traitement</div>\n                        <div class=\"comp-row__subtitle\">Visage entier</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center bg-default\">\n                                <strong>3 MIN</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>10 MIN</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>10 MIN</strong>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-check d-flex align-items-center justify-content-center\">\n                                <strong>3 MIN</strong>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"comparison-row last-row\">\n            <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                    <div class=\"comp-col comp-row__text-wrapper\">\n                        <div class=\"comp-row__title\">Prix</div>\n                    </div>\n                </div>\n                <div class=\"col-md-8\">\n                    <div class=\"row g-0 h-100\">\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-block d-md-flex align-items-center justify-content-center bg-default\">\n                                <!-- <span class=\"compare_price\">529 €</span> -->\n                                <h5 class=\"regular_price\" style=\"font-weight: 700;\">379 €</h5>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">395 €</span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">527 €</span>\n                            </div>\n                        </div>\n                        <div class=\"col-3\">\n                            <div\n                                class=\"comp-col comp_col-price d-flex align-items-center justify-content-center\">\n                                <span class=\"regular_price\">435 €</span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<!-- Fin de la section de comparaison -->",
-  "popup_micro_infusion_enabled": true
-}
-},
-"product_box_JzAAt3": {
-"type": "product-box",
-"blocks": {
-  "product_nbWqKG": {
-    "type": "product",
-    "settings": {
-      "heading": "Thérapie lumineuse LED pour le cou et le décolleté",
-      "text": "<p>Traitement LED sûr et non invasif. Nous recommandons trois à cinq traitements de 10 minutes par semaine pour des résultats optimaux.</p><ul><li>Rajeunit la peau là où les premiers signes de vieillissement apparaissent – peau fine, rides, taches solaires, taches de vieillesse et plus encore.</li><li>Répare la peau endommagée par le soleil, réduit l’apparence des rougeurs, des ridules et des rides.</li><li>Uniformise le teint et renforce la fermeté pour une peau éclatante et d’apparence plus jeune.</li></ul>",
-      "product": "neck-decolletage-led"
-    }
-  },
-  "image_J8DbBe": {
-    "type": "image",
-    "settings": {
-      "image": "shopify://shop_images/led_neck_img.webp"
-    }
-  },
-  "image_Jng6Rj": {
-    "type": "image",
-    "settings": {
-      "image": "shopify://shop_images/led_c_g_1.webp"
-    }
-  },
-  "image_TPYpmn": {
-    "type": "image",
-    "settings": {
-      "image": "shopify://shop_images/led_c_g_2.webp"
-    }
-  },
-  "image_i6h3kh": {
-    "type": "image",
-    "settings": {
-      "image": "shopify://shop_images/led_c_g_3.webp"
-    }
-  },
-  "rating_XL67mG": {
-    "type": "rating",
-    "settings": {
-      "image": "shopify://shop_images/star4.8.svg",
-      "text": "97% des clients satisfaits"
-    }
-  }
-},
-"block_order": [
-  "product_nbWqKG",
-  "image_J8DbBe",
-  "image_Jng6Rj",
-  "image_TPYpmn",
-  "image_i6h3kh",
-  "rating_XL67mG"
-],
-"settings": {
-  "classname": "clinical_grade boost_bl",
-  "heading": "Traitez au-delà du visage",
-  "text": "<p>Combinaison parfaite avec le masque LED Q-Rejuvalight Pro pour une expérience ultime de rajeunissement de la peau. Ciblez la zone délicate du cou et du décolleté, souvent négligée.</p>",
-  "text_reduced": "<p>Associez notre ensemble cou et décolleté à votre masque facial pour un traitement complet.</p>"
-}
-},
-"faq_BgPiYb": {
-"type": "faq",
-"blocks": {
-  "object_GPw3Gp": {
-    "type": "object",
-    "settings": {
-      "heading": "Quelles longueurs d’onde lumineuses le Q-Rejuvalight Pro utilise-t-il ?",
-      "text": "<p>Le Q-Rejuvalight Pro Facewear dispose de 5 longueurs d’onde lumineuses cliniquement prouvées et propose deux modes de traitement :</p><ul><li><strong>Lumière infrarouge (880 nm) :</strong> Améliore la circulation, protège le collagène existant et favorise l’absorption des produits.</li><li><strong>Rouge profond (660 nm) :</strong> Accélère la cicatrisation de la peau pour estomper et prévenir les cicatrices. Renforce le collagène pour réduire les rides.</li><li><strong>Rouge (630 nm) :</strong> Stimule la production de collagène et d’élastine, raffermit et repulpe la peau, répare les cellules cutanées et favorise l’hydratation pour réduire l’inflammation, les rougeurs et la rosacée.</li><li><strong>Ambre (605 nm) :</strong> Réduit l’apparence des taches brunes. Apaise la peau et calme les gonflements et l’inflammation.</li><li><strong>Bleu (415 nm) :</strong> Antibactérien, élimine et prévient les éruptions acnéiques. Apaise et calme la peau.</li></ul><p></p><p><span style=\"text-decoration:underline\"><strong>Il existe deux modes de traitement :</strong></span></p><p><strong>Le traitement anti-âge combine les longueurs d’onde rouge, rouge profond, infrarouge et ambre</strong>, ce qui explique pourquoi les lumières LED semblent orangées. Cette combinaison stimule le collagène, aide à réduire les rougeurs, les ridules et les taches brunes tout en encourageant la peau à se guérir et se rajeunir, pour une peau visiblement plus lisse, plus ferme et d’apparence plus jeune.</p><p><strong>Le traitement anti-éruptions combine les longueurs d’onde rouge et bleue</strong> pour détruire les bactéries responsables de l’acné, réguler la production de sébum, réduire les rougeurs et autres symptômes lors d’une poussée, pour une peau plus nette.</p>",
-      "code": ""
-    }
-  },
-  "object_WzL6if": {
-    "type": "object",
-    "settings": {
-      "heading": "Est-il approuvé par la FDA ?",
-      "text": "<p>OUI ! Notre masque LED Q-Rejuvalight Pro est le <strong>premier masque LED personnalisable au monde approuvé par la FDA pour un usage à domicile</strong>, <span style=\"text-decoration:underline\">prouvé</span> comme un traitement efficace et sûr pour l’acné et les problèmes de vieillissement cutané. Vous pouvez trouver plus de détails sur le site de la FDA (K230042).</p>",
-      "code": ""
-    }
-  },
-  "object_zEjFPh": {
-    "type": "object",
-    "settings": {
-      "heading": "Quel type de résultats vais-je voir ? À quelle vitesse ?",
-      "text": "<p>Chaque personne peut réagir différemment aux longueurs d’onde spécifiques, et les résultats dépendent de l’objectif que vous souhaitez atteindre.</p><p>La plupart des utilisateurs constatent une réduction des éruptions acnéiques et des rougeurs plus rapidement qu’ils ne l’espéraient.</p><p>Des lignes plus lisses, un teint amélioré et une fermeté accrue peuvent prendre plus de temps.</p><p>Les changements quotidiens seront subtils, alors assurez-vous de prendre des photos « avant et après » pour suivre vos progrès. Le plus important est de se rappeler que les résultats sont cumulatifs, donc un traitement quotidien constant est essentiel.</p>",
-      "code": ""
-    }
-  },
-  "object_kwgVxd": {
-    "type": "object",
-    "settings": {
-      "heading": "Dois-je porter une protection oculaire avec le Q-Rejuvalight Pro ?",
-      "text": "<p>Le Q-Rejuvalight Pro a été testé et approuvé pour la sécurité oculaire. Il a passé avec succès l’évaluation IEC62471 pour la sécurité des yeux, qui détermine si la sortie lumineuse d’un appareil est sans danger pour les yeux.</p><p>Cependant, nous recommandons de fermer les yeux et de porter des lunettes de protection pendant le traitement. La lumière peut être intense lorsqu’elle est allumée, et certains utilisateurs peuvent ressentir une sensibilité, même les yeux fermés.</p><p>Dans notre engagement indéfectible envers votre sécurité, nous avons pris l’initiative d’inclure GRATUITEMENT des lunettes de protection bloquant la lumière avec notre masque LED Q-Rejuvalight Pro, qui fonctionnent parfaitement pendant votre traitement.</p>",
-      "code": ""
-    }
-  },
-  "object_YiKwdT": {
-    "type": "object",
-    "settings": {
-      "heading": "Est-il sûr pour tous les types de peau ?",
-      "text": "<p>Il est crucial de noter que les types de peau V et VI (échelle de Fitzpatrick) sont plus sensibles à la thérapie lumineuse car ils absorbent plus de lumière que les autres types. Cela est dû à des niveaux plus élevés de mélanine dans la peau. La mélanine dans l’épiderme permet une absorption accrue d’énergie, ce qui augmente le risque d’effets indésirables liés à des lésions épidermiques chez les personnes de types V et VI. C’est pourquoi la FDA recommande la prudence pour ces types de peau.</p><p>D’après notre expérience, de nombreux clients avec des types de peau V et VI ont traité leur peau avec succès avec le Q-Rejuvalight Pro Facewear, rapportant des résultats positifs.</p><p>Pour les clients de types V et VI, nous recommandons vivement de consulter votre dermatologue avant d’utiliser le Q-Rejuvalight Pro Facewear. Cette étape est cruciale car les réactions cutanées peuvent varier d’une personne à l’autre, et ce qui fonctionne bien pour l’un peut ne pas convenir à un autre.</p>",
-      "code": ""
-    }
-  },
-  "object_R4NqQq": {
-    "type": "object",
-    "settings": {
-      "heading": "Le Q-Rejuvalight Pro est-il garanti ?",
-      "text": "<p>Le Q-Rejuvalight Pro Facewear est livré avec une garantie d’un (1) an couvrant tout problème lié à la fabrication découlant d’une utilisation quotidienne du produit. Cependant, cet appareil est conçu pour durer des années ! Fièrement conçu en Australie.</p>",
-      "code": ""
-    }
-  },
-  "object_XmQVbH": {
-    "type": "object",
-    "settings": {
-      "heading": "À quel âge et quand est-il préférable de commencer la thérapie lumineuse LED ?",
-      "text": "<p>La plupart des gens peuvent bénéficier du Q-Rejuvalight Pro. Que l’objectif soit de traiter l’acné, réduire les signes visibles du vieillissement, ou les deux, prévenir vaut mieux que corriger. Plus tôt le Q-Rejuvalight Pro intègre votre routine, mieux c’est.</p>",
-      "code": ""
-    }
-  },
-  "object_94NRej": {
-    "type": "object",
-    "settings": {
-      "heading": "Où le traitement Q-Rejuvalight Pro s’intègre-t-il dans une routine de soin ?",
-      "text": "<p>Le Q-Rejuvalight Pro Facewear peut être utilisé de jour comme de nuit, idéalement après le nettoyage et/ou l’exfoliation.</p><p>Une fois le traitement terminé, poursuivez avec vos produits de soin topiques préférés.</p>",
-      "code": ""
-    }
-  }
-},
-"block_order": [
-  "object_GPw3Gp",
-  "object_WzL6if",
-  "object_zEjFPh",
-  "object_kwgVxd",
-  "object_YiKwdT",
-  "object_R4NqQq",
-  "object_XmQVbH",
-  "object_94NRej"
-],
-"settings": {
-  "background": "bg_yellow",
-  "classname": "bg_yellow",
-  "heading": "Les réponses à vos questions",
-  "text": "",
-  "button_label": "Afficher plus de questions",
-  "button_hide_label": "Masquer les questions supplémentaires"
-}
-},
-"heading_fijgLW": {
-"type": "heading",
-"settings": {
-  "heading": "<h2>Avis réels, résultats réels</h2><h2>de personnes comme vous.</h2>",
-  "heading_mobile": "<h2>Avis réels, résultats réels<br/>de personnes comme vous.</h2>"
-}
-},
-"1707653061bd3707e6": {
-"type": "apps",
-"blocks": {
-  "stamped_product_reviews_ugc_main_widget_A4ebAn": {
-    "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-    "settings": {
-      "take_questions": 2,
-      "animation": true,
-      "tags_exclude": "",
-      "tags_include": "",
-      "search": "",
-      "linkify": true,
-      "use_metafields": false,
-      "sku_tagtype": "sku"
-    }
-  }
-},
-"block_order": [
-  "stamped_product_reviews_ugc_main_widget_A4ebAn"
-],
-"settings": {}
-},
-"pdm_product_social_proof_data_VREtzd": {
-"type": "pdm_product-social-proof-data",
-"settings": {}
-}
-},
-"order": [
-"main",
-"featuredin_yT6yRP",
-"before_after_slider_Nfk96E",
-"text_with_video_TwRQhd",
-"testimonials_m84mqf",
-"icons_list_Fkgrmd",
-"results_Yfghzf",
-"two_column_box_xCB6mV",
-"reasons_fpBJjw",
-"two_column_box_KncU38",
-"two_column_box_tq6b9C",
-"videos_list_kLheEB",
-"liquid_xkpFwR",
-"easy_guide_E8KQFR",
-"easy_guide_tn7LxG",
-"compare_GAEKyR",
-"liquid_Azh7Kn",
-"product_box_JzAAt3",
-"faq_BgPiYb",
-"heading_fijgLW",
-"1707653061bd3707e6",
-"pdm_product_social_proof_data_VREtzd"
-]
+  "order": [
+    "main",
+    "featuredin_yT6yRP",
+    "before_after_slider_Nfk96E",
+    "text_with_video_TwRQhd",
+    "testimonials_m84mqf",
+    "icons_list_Fkgrmd",
+    "results_Yfghzf",
+    "two_column_box_xCB6mV",
+    "reasons_fpBJjw",
+    "two_column_box_KncU38",
+    "two_column_box_tq6b9C",
+    "videos_list_kLheEB",
+    "liquid_xkpFwR",
+    "easy_guide_E8KQFR",
+    "easy_guide_tn7LxG",
+    "compare_GAEKyR",
+    "liquid_Azh7Kn",
+    "product_box_JzAAt3",
+    "faq_BgPiYb",
+    "heading_fijgLW",
+    "1707653061bd3707e6",
+    "pdm_product_social_proof_data_VREtzd"
+  ]
 }

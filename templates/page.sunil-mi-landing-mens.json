@@ -135,35 +135,35 @@
         "media_ybipp6": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_refill-result-men-1.webp",
+            "image": "shopify://shop_images/mi_refill-result-men-1.jpg",
             "wistia_id": ""
           }
         },
         "media_RbbRgj": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_refill-result-men-2.webp",
+            "image": "shopify://shop_images/mi_refill-result-men-2.jpg",
             "wistia_id": ""
           }
         },
         "media_CcWwRM": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_refill-result-men-3.webp",
+            "image": "shopify://shop_images/mi_refill-result-men-3.jpg",
             "wistia_id": ""
           }
         },
         "media_T3hK4m": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_refill-result-men-4.webp",
+            "image": "shopify://shop_images/mi_refill-result-men-4.jpg",
             "wistia_id": ""
           }
         },
         "media_qLxHBj": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_refill-result-men-5.webp",
+            "image": "shopify://shop_images/mi_refill-result-men-5.jpg",
             "wistia_id": ""
           }
         },
@@ -504,7 +504,7 @@
         "result_GGg7Kj": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_dylan.webp",
+            "image": "shopify://shop_images/results_dylan.jpg",
             "heading": "Cicatrices d’acné atténuées",
             "text": "<p>« La Micro-Infusion Qure a changé la donne pour moi. Après des années à lutter contre les cicatrices d’acné et les taches brunes, je peux enfin leur dire adieu. Je me sens plus confiant que jamais. À essayer absolument pour ceux qui ont des problèmes de peau similaires. »</p>",
             "see-more": "",
@@ -517,7 +517,7 @@
         "result_eTqtdF": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results_jay.webp",
+            "image": "shopify://shop_images/results_jay.jpg",
             "heading": "Peau plus nette du jour au lendemain",
             "text": "<p>J’ai remarqué d’énormes améliorations après avoir utilisé le système Micro-Infusion de Qure avec une peau plus nette dès le lendemain. Ça a un peu piqué au début, mais je m’y suis vite habitué. Je recommande vraiment 👏🏽</p>",
             "see-more": "",
@@ -992,8 +992,8 @@
         "heading": "Sérums Micro-Infusion soutenus par la science",
         "subheading": "<p>Choisissez le sérum exact à utiliser dans votre soin Micro-Infusion, ou prenez les deux et mélangez-les pour profiter d’un ensemble complet d’avantages qui répondent à vos préoccupations cutanées spécifiques.</p>",
         "bottom_txt": "Vous n’arrivez pas à choisir ?",
-        "desk_img": "shopify://shop_images/Group_2160_ffbda153-73a3-44cb-a304-27c046e928fc.png",
-        "mob_img": "shopify://shop_images/Group_mobile_2159.png"
+        "desk_img": "shopify://shop_images/Group_2160_ffbda153-73a3-44cb-a304-27c046e928fc_fr.webp",
+        "mob_img": "shopify://shop_images/Group_2160_ffbda153-73a3-44cb-a304-27c046e928fc_fr.webp"
       }
     },
     "money_back_guarantee_N8QRW4": {
@@ -1289,14 +1289,14 @@
         "image_fFdePg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/join_to_revolution.png",
+            "image": "shopify://shop_images/join_to_revolution_fr.webp",
             "classname": "mw-mob-100"
           }
         },
         "code_fXbXkm": {
           "type": "code",
           "settings": {
-            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                        <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                            href=\"#productSubscription\">ACHETEZ MAINTENANT ET ÉCONOMISEZ JUSQU’À 43 % </a>\n                        <div class=\"progress_bar d-block d-md-block\">\n                            <div class=\"loading_bar_wrap\">\n                                <div class=\"loading_bar\" style=\"width:52%\">\n                                </div>\n                            </div>\n                            <p>Se vend rapidement</p>\n                        </div>\n                        <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                            <div class=\"s_bx\">\n                                <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                <p>Garantie de remboursement<br> de 90 jours </p>\n                            </div>\n                            <div class=\"s_bx\">\n                                <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                <p>Livraison gratuite dans le monde<br> pour les commandes de plus de 100 €</p>\n                            </div>\n                        </div>\n                    </div>"
+            "code": "<div class=\"mw-486 mb-3 mb-md-0 mt-4 mt-md-0\">\n                        <a class=\"btn btn-lg btn-primary mb-3 d-flex justify-content-center\"\n                            href=\"#productSubscription\">ACHETEZ MAINTENANT ET ÉCONOMISEZ JUSQU’À 43 % </a>\n                        <div class=\"progress_bar d-block d-md-block\">\n                            <div class=\"loading_bar_wrap\">\n                                <div class=\"loading_bar\" style=\"width:52%\">\n                                </div>\n                            </div>\n                            <p>Rupture de stock imminente</p>\n                        </div>\n                        <div class=\"shipping shipping_bg bg-transparent my-3 pe-0  ps-2\">\n                            <div class=\"s_bx\">\n                                <img src=\"{{ '90_days.svg' | asset_url }}\" alt=\"\">\n                                <p>Garantie de remboursement<br> de 90 jours </p>\n                            </div>\n                            <div class=\"s_bx\">\n                                <img src=\"{{ 'shipping.svg' | asset_url }}\" alt=\"\">\n                                <p>Livraison gratuite dans le monde<br> pour les commandes de plus de 100 €</p>\n                            </div>\n                        </div>\n                    </div>"
           }
         }
       },

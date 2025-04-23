@@ -63,15 +63,15 @@
         "before_and_after_i7mAeJ": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify://shop_images/before_and_after_-_m4_b6e97509-f180-4a38-a367-e9deeacf3a0c.png",
+            "image_new_section_1": "shopify://shop_images/before_and_after_-_m4_b6e97509-f180-4a38-a367-e9deeacf3a0c_fr.webp",
             "image_new_section_text_1": "micro-infusion un",
-            "image_new_section_2": "shopify://shop_images/B_a_micro.png",
+            "image_new_section_2": "shopify://shop_images/B_a_micro_fr.webp",
             "image_new_section_text_2": "micro-infusion deux",
-            "image_new_section_3": "shopify://shop_images/before_and_after_-_m3.png",
+            "image_new_section_3": "shopify://shop_images/before_and_after_-_m3_fr.webp",
             "image_new_section_text_3": "micro-infusion trois",
-            "image_new_section_4": "shopify://shop_images/before_and_after_-_m1_d489fd6a-0d41-4ef1-8531-ff2925a28c60.png",
+            "image_new_section_4": "shopify://shop_images/before_and_after_-_m1_d489fd6a-0d41-4ef1-8531-ff2925a28c60_fr.webp",
             "image_new_section_text_4": "micro-infusion quatre",
-            "image_new_section_5": "shopify://shop_images/before_and_after_-_m2.png",
+            "image_new_section_5": "shopify://shop_images/before_and_after_-_m2_fr.webp",
             "image_new_section_text_5": "Micro-infusion cinq",
             "image_new_section_text_6": ""
           }
@@ -184,35 +184,35 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/mi_pdp-reason1.svg",
-            "text": "<p><strong>Économise temps et argent<\/strong> par rapport aux traitements en clinique</p>"
+            "text": "<p><strong>Économise temps et argent</strong> par rapport aux traitements en clinique</p>"
           }
         },
         "icon_rXrKhB": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/mi_pdp-reason2.svg",
-            "text": "<p><strong>Rapide et facile<\/strong> soin du visage DIY de 5 minutes depuis chez vous</p>"
+            "text": "<p><strong>Rapide et facile</strong> soin du visage DIY de 5 minutes depuis chez vous</p>"
           }
         },
         "icon_amVNLB": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/mi_pdp-reason4.svg",
-            "text": "<p>Pratiquement <strong>indolore<\/strong>, peu ou pas de temps d’arrêt</p>"
+            "text": "<p>Pratiquement <strong>indolore</strong>, peu ou pas de temps d’arrêt</p>"
           }
         },
         "icon_HdmMrF": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/mi_pdp-reason3.svg",
-            "text": "<p>Parfait pour transformer une peau terne <strong>avant des événements<\/strong></p>"
+            "text": "<p>Parfait pour transformer une peau terne <strong>avant des événements</strong></p>"
           }
         },
         "icon_TCqtyH": {
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/mi_pdp-reason6.svg",
-            "text": "<p><strong>Système 2-en-1<\/strong> rajeunit la peau et infuse le sérum plus profondément pour des <strong>résultats rapides<\/strong></p>"
+            "text": "<p><strong>Système 2-en-1</strong> rajeunit la peau et infuse le sérum plus profondément pour des <strong>résultats rapides</strong></p>"
           }
         }
       },
@@ -244,7 +244,7 @@
           "settings": {
             "ctm_cls": "",
             "heading_first": "",
-            "text": "<p>Ses minuscules micro-aiguilles plaquées or 24K de 0,5 mm, presque indolores, pénètrent <strong>au-delà de la surface de la peau<\/strong> pour créer doucement un traumatisme contrôlé dans votre peau, ce qui aide à améliorer la sensation de <strong>fermeté, lisser la texture et réduire l’apparence des ridules et des rides.<\/strong><br/><br/>Les micro-canaux invisibles infusent ensuite des <strong>sérums validés par la science<\/strong> dans votre peau, adaptés pour traiter vos préoccupations spécifiques, augmentant l’absorption et <strong>délivrant des ingrédients actifs puissants EXACTEMENT là où ils sont nécessaires !<\/strong></p>",
+            "text": "<p>Ses minuscules micro-aiguilles plaquées or 24K de 0,5 mm, presque indolores, pénètrent <strong>au-delà de la surface de la peau</strong> pour créer doucement un traumatisme contrôlé dans votre peau, ce qui aide à améliorer la sensation de <strong>fermeté, lisser la texture et réduire l’apparence des ridules et des rides.</strong><br/><br/>Les micro-canaux invisibles infusent ensuite des <strong>sérums validés par la science</strong> dans votre peau, adaptés pour traiter vos préoccupations spécifiques, augmentant l’absorption et <strong>délivrant des ingrédients actifs puissants EXACTEMENT là où ils sont nécessaires !</strong></p>",
             "btn_text": "Achetez maintenant",
             "btn_url": "",
             "custom_class": "",
@@ -255,10 +255,7 @@
           }
         }
       },
-      "block_order": [
-        "wistia_DiyAwY",
-        "text_BHGBe4"
-      ],
+      "block_order": ["wistia_DiyAwY", "text_BHGBe4"],
       "settings": {
         "background": "bg_clr_transparent",
         "heading": "La micro-infusion de Qure va là où votre crème ne peut pas…",
@@ -283,7 +280,7 @@
         "option_BHjjLG": {
           "type": "option",
           "settings": {
-            "text": "<p>ont remarqué des <strong>résultats dès le lendemain<\/strong> après le premier traitement de micro-infusion.</p>",
+            "text": "<p>ont remarqué des <strong>résultats dès le lendemain</strong> après le premier traitement de micro-infusion.</p>",
             "percent_bar": 93
           }
         },
@@ -402,10 +399,7 @@
           }
         }
       },
-      "block_order": [
-        "video_cWe83q",
-        "text_content_BRMwjz"
-      ],
+      "block_order": ["video_cWe83q", "text_content_BRMwjz"],
       "settings": {
         "padding_top": 60,
         "padding_bottom": 0
@@ -532,7 +526,7 @@
         "result_JNFBGF": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Tami_trump.png",
+            "image": "shopify://shop_images/Tami_trump_fr.webp",
             "heading": "Vraiment satisfaite",
             "text": "<p>« J’ai commencé à voir beaucoup de changements sur mon visage, il est plus doux et bien plus nourri, rendant certaines lignes autour de ma bouche plus lisses et pleines. J’ai même retrouvé mon teint et mon éclat. Vraiment satisfaite du produit et je vais continuer à utiliser les produits. J’ai aussi acheté le sérum visage et les patchs micro-dards. On verra comment ils fonctionnent aussi. Je suis encore au début, ce week-end sera mon 4e traitement et j’utiliserai aussi les patchs. Restez à l’écoute pour une autre mise à jour bientôt. »</p>",
             "see-more": "",
@@ -558,7 +552,7 @@
         "result_jEQY3N": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/New_review.png",
+            "image": "shopify://shop_images/New_review_fr.webp",
             "heading": "Super achat",
             "text": "<p>« J’ai lutté avec des problèmes de peau comme l’hyperpigmentation, les éruptions et récemment, j’ai remarqué que ma peau semblait terne. J’ai essayé d’innombrables produits de soin, mais rien ne semblait fonctionner à long terme. Bien que certains produits aient montré un peu de promesse, les résultats n’étaient jamais durables. Récemment, j’ai découvert Qure sur mes réseaux, mais j’hésitais à l’essayer car je pensais que ce serait juste un autre produit sans effet. Cependant, j’ai été agréablement surprise ! C’est ma quatrième fiole maintenant, et j’adore absolument les résultats.</p>",
             "see-more": "J’avais l’habitude de faire des traitements de micro-aiguilletage car j’aimais les résultats, mais la micro-infusion Qure offre un effet similaire directement à domicile, et c’est bien plus abordable que les séances professionnelles. Je recommande vivement de l’essayer ; je suis sûre à 99,99 % que vous l’aimerez autant que moi. Je n’écris pas souvent d’avis sur les produits, mais celui-ci le mérite vraiment ! »",
@@ -571,7 +565,7 @@
         "result_NRGNyz": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Linda_b_a_ed1683c6-3cff-4b8a-a7b0-1888bcf2d475.png",
+            "image": "shopify://shop_images/Linda_b_a_ed1683c6-3cff-4b8a-a7b0-1888bcf2d475_fr.webp",
             "heading": "Excellent traitement à domicile",
             "text": "<p>« J’ai beaucoup lu sur les effets positifs du micro-aiguilletage et je voulais l’essayer. L’option de micro-infusion (Hydra-Soothing) de Qure est un excellent moyen d’obtenir les avantages du micro-aiguilletage à domicile sans quitter la maison ! J’ai fait un traitement toutes les 2 à 3 semaines pendant quelques mois et je remarque progressivement une amélioration de l’apparence générale de ma peau, une réduction des ridules ainsi qu’un adoucissement des rides verticales autour de ma bouche. J’adore !! »</p>",
             "see-more": "",
@@ -637,7 +631,7 @@
         "result_FagUhT": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Before_and_after_m.i.png",
+            "image": "shopify://shop_images/Before_and_after_m.i_fr.webp",
             "heading": "Enfin ! Un produit qui fonctionne vraiment !",
             "text": "<p>« Je ne peux pas dire assez de bien de Qure ! J’ai tout essayé pour uniformiser mon teint, minimiser les pores et la texture de ma peau, et réduire les taches solaires sur mon visage. J’étais très sceptique en commandant les produits Qure – soyons honnêtes, beaucoup de produits prétendent être le remède miracle que nous cherchons tous, mais ne font rien du tout ! Qure fait exactement ce qu’il promet et rapidement ! Le processus est facile et presque indolore. Je serai cliente à vie ! »</p>",
             "see-more": "",
@@ -717,7 +711,7 @@
         "result_w99jJL": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/results-Ramandeep.png",
+            "image": "shopify://shop_images/results-Ramandeep_fr.webp",
             "heading": "Je vois définitivement une différence",
             "text": "<p>« J’ai fait 2 traitements - 1 pour rajeunir et 2 pour l’hydratation avec un intervalle de 3 semaines entre les traitements. Je vois définitivement une différence sur les photos avant et après. Je suis sûre d’avoir besoin de 4 à 8 traitements supplémentaires, mais ça a déjà fait une différence. »</p>",
             "see-more": "",
@@ -743,7 +737,7 @@
         "result_RgmxFK": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Petrina.png",
+            "image": "shopify://shop_images/Petrina_fr.webp",
             "heading": "Système de micro-infusion rajeunissant",
             "text": "<p>« Je suis ravie du système de micro-infusion rajeunissante Qure ! Après seulement trois mois d’utilisation, j’ai constaté une réduction notable des ridules sur mon front et une amélioration significative de la profondeur d’une cicatrice profonde sur mon visage. Les résultats ont été si impressionnants que j’ai déjà acheté une recharge pour continuer le traitement pendant trois mois supplémentaires. Je recommande vivement ce produit à quiconque souhaite améliorer l’apparence de sa peau. »</p>",
             "see-more": "",
@@ -757,7 +751,7 @@
           "type": "result",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/B_A_alexandra.png",
+            "image": "shopify://shop_images/B_A_alexandra_fr.webp",
             "heading": "A guéri ma peau PP !",
             "text": "<p>« J’ai essayé des routines de soins haut de gamme, mais aucune n’a pu m’aider avec mes problèmes de peau PP (acné sévère, cicatrices, taches brunes, tout y était ! C’était pire que la puberté ! Mais c’est mon deuxième mois et ma peau est déjà à 90 % revenue à la normale ! Abonnez-vous à cela et tenez-y ! Le service client est aussi exceptionnel, le meilleur ! »</p>",
             "see-more": "",
@@ -770,7 +764,7 @@
         "result_eLJa6L": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Nuala.png",
+            "image": "shopify://shop_images/Nuala_fr.webp",
             "heading": "J’aime ça !",
             "text": "<p>« J’aime ça. Ce n’est pas douloureux du tout. J’ai une rosacée et une peau super sensible et ça ne provoque ni éruptions ni rougeurs. Ça rend ma peau tellement douce aussi. »</p>",
             "see-more": "",
@@ -783,7 +777,7 @@
         "result_DYbUAd": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/Group_1299mi-pdp-RAMANDEEPresults_a5607477-fd56-4e3a-9a6d-19ac2c74d56a.png",
+            "image": "shopify://shop_images/Group_1299mi-pdp-RAMANDEEPresults_a5607477-fd56-4e3a-9a6d-19ac2c74d56a_fr.webp",
             "heading": "J’adore !",
             "text": "<p>« Comme vous pouvez le voir sur mes photos avant et après (deux traitements jusqu’à présent), ma peau s’est raffermie et mes pores diminuent. Hâte de voir les résultats après 6 semaines. »</p>",
             "see-more": "",
@@ -796,7 +790,7 @@
         "result_VFw8Mj": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/ANONYMUS.png",
+            "image": "shopify://shop_images/ANONYMUS_fr.webp",
             "heading": "Premier traitement réussi !",
             "text": "<p>« J’étais très nerveuse au début que ce soit douloureux, mais si quoi que ce soit, c’était étrangement satisfaisant et ça n’a pas fait mal du tout ! J’étais aussi inquiète que ça irrite davantage ma peau car ma peau est très sensible, mais tout ce que j’ai eu, c’est une rougeur temporaire due à la pression et aux aiguilles qui a disparu en quelques heures. Le lendemain, j’ai immédiatement remarqué à quel point mon visage était lisse et rajeuni et j’étais soulagée de voir que ma peau n’avait pas eu une mauvaise réaction au produit et qu’il y avait réellement des résultats, ce qui ne m’était jamais arrivé dans ma vie.</p>",
             "see-more": "Tellement excitée de continuer ce voyage et de voir à quoi ressemblera ma peau dans les prochains mois après d’autres traitements, surtout après la façon dont ce premier traitement s’est déroulé ! »",
@@ -809,7 +803,7 @@
         "result_qKjLeC": {
           "type": "result",
           "settings": {
-            "image": "shopify://shop_images/paul.png",
+            "image": "shopify://shop_images/paul_fr.webp",
             "heading": "WOW, j’en veux plus !",
             "text": "<p>« Quelques jours après mon 1er traitement de micro-infusion, une de mes employées qui était en vacances est entrée dans mon bureau et a littéralement crié « oh mon dieu, tu as l’air si jeune ! » Eh bien, ça m’a convaincu. Je suis un homme, 65 ans, et je prends grand soin de ma peau… ceux-ci ne dureront jamais 3 mois car j’ai hâte de remonter encore plus le temps ! :) »</p>",
             "see-more": "",
@@ -977,9 +971,7 @@
           }
         }
       },
-      "block_order": [
-        "button_8D9gEe"
-      ],
+      "block_order": ["button_8D9gEe"],
       "settings": {
         "heading": "Est-ce votre type de rituel de soin ?",
         "text": "<p>Jetez un œil à nos protocoles et instructions de traitement de micro-infusion</p>"
@@ -1013,10 +1005,7 @@
           }
         }
       },
-      "block_order": [
-        "object_wgMpPE",
-        "object_Q9qBw4"
-      ],
+      "block_order": ["object_wgMpPE", "object_Q9qBw4"],
       "settings": {
         "classname": "beauty_skincare section bg-white",
         "sub_head": "",
@@ -1076,11 +1065,7 @@
           }
         }
       },
-      "block_order": [
-        "column_rBddMQ",
-        "column_PjJ7Q3",
-        "column_cHB7kF"
-      ],
+      "block_order": ["column_rBddMQ", "column_PjJ7Q3", "column_cHB7kF"],
       "settings": {
         "heading": "Offrez-vous un éclat de qualité clinique sans les prix cliniques",
         "heading2": "Comparons",
@@ -1130,7 +1115,7 @@
             "or_txt": "ou"
           }
         },
-                "serum_BEc6Lf": {
+        "serum_BEc6Lf": {
           "type": "Serum",
           "settings": {
             "background": "bg-grey",
@@ -1155,11 +1140,7 @@
           }
         }
       },
-      "block_order": [
-        "serum_pVVLFB",
-        "or_Rw8iX6",
-        "serum_BEc6Lf"
-      ],
+      "block_order": ["serum_pVVLFB", "or_Rw8iX6", "serum_BEc6Lf"],
       "settings": {
         "heading": "Sérums de micro-infusion validés par la science",
         "subheading": "<p><strong>Choisissez le sérum exact à utiliser dans votre traitement de micro-infusion</strong>, ou prenez les deux et mélangez-les pour profiter d’un ensemble complet d’avantages qui <strong>répondent à vos préoccupations cutanées spécifiques.</strong></p>",
