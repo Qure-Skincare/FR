@@ -294,68 +294,71 @@
 
 					{% if cart.item_count == 0 %}
 						<div class="drawer__cart-is-empty">
-  <div class="drawer__cart-empty-text">
-    <h4>Votre panier est vide.</h4>
-    <p>Remplissez-le avec des produits de soin incroyables.</p>
-  </div>
-  <div class="empty-product">
-    <div class="empty-title dekstop-empty">
-      <h4>Système facial de micro-infusion</h4>
-      <div class="empty-review">
-        <img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="" class="mr-2">
-            
-        <a href="/pages/microinfusion">98 % des clients ont adoré leur peau après un seul traitement</a>
-      </div>
-    </div>
-    <div class="empty-main">
-      <div class="empty-img">
-        <img src="{{ 'cart_micro_new_400x.webp' | asset_url }}" style="max-width: 160px;">
-        <div class="empty-mobile">
-          <div class="empty-title">
-            <h4>Système facial de micro-infusion</h4>
-            <div class="empty-review">
-              <img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="">
-              <a href="/pages/microinfusion">98 % des clients ont adoré leur peau après un seul traitement</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="empty-content">
-        <ul>
-          <li>
-            <span>
-              <img src="https://qureskincaredns.com/new/assets/dark-spots.svg" alt="">
-            </span>
-            Réduit l'apparence des rides, des pores et des taches brunes.
-          </li>
-          <li>
-            <span>
-              <img src="https://qureskincaredns.com/new/assets/skin.svg" alt="">
-            </span>
-            Infuse des ingrédients actifs dans votre peau.
-          </li>
-          <li>
-            <span>
-              <img src="https://qureskincaredns.com/new/assets/downtime.svg" alt="">
-            </span>
-            Résultats visibles immédiatement, temps de récupération minimal !
-          </li>
-          <li>
-            <span>
-              <img src="https://qureskincaredns.com/new/assets/plus.svg" alt="">
-            </span>
-            Pratiquement indolore et réalisé en toute sécurité depuis chez vous.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="drawer__cart-empty-shop-btn">
-      <a class="drawer__cart-empty-button" href="/pages/microinfusion">
-        <h2 class="lock-checkout">Acheter le système de micro-infusion</h2>
-      </a>
-    </div>
-  </div>
-</div>
+							<div class="drawer__cart-empty-text">
+								<h4>Votre panier est vide.</h4>
+								<p>Remplissez-le avec des <br /> produits de soin incroyables.</p>
+
+								{% comment %} <h4>Votre panier est vide.</h4> {% endcomment %}
+								{% comment %} <p>Remplissez-le avec des produits de soin incroyables.</p> {% endcomment %}
+							</div>
+							<div class="empty-product">
+								<div class="empty-title dekstop-empty">
+								<h4>Système facial de micro-infusion</h4>
+								<div class="empty-review">
+									<img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="" class="mr-2">
+									    
+									<a href="/pages/microinfusion">98 % des clients ont adoré leur peau après un seul traitement</a>
+								</div>
+								</div>
+								<div class="empty-main">
+								<div class="empty-img">
+									<img src="{{ 'cart_micro_new_400x.webp' | asset_url }}" style="max-width: 160px;">
+									<div class="empty-mobile">
+									<div class="empty-title">
+										<h4>Système facial de micro-infusion</h4>
+										<div class="empty-review">
+										<img src="https://qureskincaredns.com/new/assets/bundle_r_3.svg" alt="">
+										<a href="/pages/microinfusion">98 % des clients ont adoré leur peau après un seul traitement</a>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div class="empty-content">
+									<ul>
+									<li>
+										<span>
+										<img src="https://qureskincaredns.com/new/assets/dark-spots.svg" alt="">
+										</span>
+										Réduit l'apparence des rides, des pores et des taches brunes.
+									</li>
+									<li>
+										<span>
+										<img src="https://qureskincaredns.com/new/assets/skin.svg" alt="">
+										</span>
+										Infuse des ingrédients actifs dans votre peau.
+									</li>
+									<li>
+										<span>
+										<img src="https://qureskincaredns.com/new/assets/downtime.svg" alt="">
+										</span>
+										Résultats visibles immédiatement, temps de récupération minimal !
+									</li>
+									<li>
+										<span>
+										<img src="https://qureskincaredns.com/new/assets/plus.svg" alt="">
+										</span>
+										Pratiquement indolore et réalisé en toute sécurité depuis chez vous.
+									</li>
+									</ul>
+								</div>
+								</div>
+								<div class="drawer__cart-empty-shop-btn">
+								<a class="drawer__cart-empty-button" href="/pages/microinfusion">
+									<h2 class="lock-checkout">Acheter le système de micro-infusion</h2>
+								</a>
+								</div>
+							</div>
+						</div>
 					{% endif %}
 				</div>
 			</div>

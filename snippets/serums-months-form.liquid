@@ -24,8 +24,8 @@
         <div class="serum_bl">
 
             <div class="facial_system">
-                <h3>Micro-Infusion Facial System </h3>
-                <p>(for Dark Spots and Wrinkles)</p>
+                <h3>Système facial de micro-infusion</h3>
+                <p>(pour les taches brunes et les rides)</p>
             </div>
 
             <div class="s_bl_wrapper">
@@ -71,12 +71,12 @@
 
                     <div class="supply_steps month_plan_steps mt-4">
                         <div class="step_block">
-                            <p class="pb-3">Choose supply:</p>
+                            <p class="pb-3">Choisissez l'offre:</p>
                             <div class="step_content">
                                 <div class="step_conten_blocks">
                                     <div class="planBlock {{ section_id }}_productPeriodObject">
                                         <div class="plan_choosed">
-                                            <span>Over 5,000 people chose this supply</span>
+                                            <span>Plus de 5 000 personnes ont choisi ce supplément.</span>
                                         </div>
                                         {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
                                         {% assign divided_price = product.price | divided_by: 4 %}
@@ -86,10 +86,10 @@
                                         <label class="monthly_plans" for="mBanner_3_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
                                             <div class="plan_des">
                                                 <div class="plan_hdr">
-                                                    <h3>3 Month Supply</h3>
-                                                    <span class="saved_price">SAVE {{ discount_percentage }}%</span>
+                                                    <h3>Approvisionnement pour 3 mois</h3>
+                                                    <span class="saved_price">ÉCONOMISEZ {{ discount_percentage }}%</span>
                                                 </div>
-                                                <div class="plan_des">6 Micro-Infusion Treatments</div>
+                                                <div class="plan_des">6 traitements par micro-infusion</div>
                                             </div>
                                             <div class="price">
                                                 <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
@@ -198,11 +198,11 @@
                 class="upsell_popup_btn openPopupUpsell"></button>
             {% endif %}
 
-            <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Buy Now <span
-                    class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
+            <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Acheter <span
+                    class="savedAmount">& ÉCONOMISEZ {{ discount_percentage }}%</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
             </a>
 
-            <a class="btn btn-lg btn-primary buy_btn_soldout mt-3 {{ section_id }}_productButtonSoldOutObject" style="display: none;">Sold Out</a>
+            <a class="btn btn-lg btn-primary buy_btn_soldout mt-3 {{ section_id }}_productButtonSoldOutObject" style="display: none;">Épuisé</a>
         </div>
 
         <div class="upsell_popup_anchor_hover pdp-ajax-container-reserve">
@@ -213,11 +213,11 @@
                 data-ajax-selector=".pdp-ajax-container-reserve .btn.buy_btn_reserve"
                 class="upsell_popup_btn openPopupUpsell"></button>
             {% endif %}
-            <a class="btn btn-lg btn-primary buy_btn_reserve mt-3 {{ section_id }}_productButtonObject" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button style="display: none">Reserve</a>
+            <a class="btn btn-lg btn-primary buy_btn_reserve mt-3 {{ section_id }}_productButtonObject" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button style="display: none">Réserve</a>
         </div>
     
         <div class="payment_method">
-            <p>OR 4 monthly payments of <span class="payment_price">{{ divided_price | money_without_trailing_zeros }}</span> with</p>
+            <p>OU payez 4 mensualités de <span class="payment_price">{{ divided_price | money_without_trailing_zeros }}</span> avec</p>
             <div class="pmt_img ps-2">
                 <img src="{{ 'klarna.svg' | asset_url }}" alt=""><img src="{{ 'afterpay.svg' | asset_url }}" alt=""><img
                     src="{{ 'sezzle.svg' | asset_url }}" alt="">
@@ -229,12 +229,11 @@
         <div class="shipping shipping_bg bg-transparent py-0">
             <div class="s_bx">
                 <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
-                <p>Dermatologist Reviewed</p>
+                <p>Approuvé par des dermatologues</p>
             </div>
             <div class="s_bx">
                 <img src="{{ 'shipping.svg' | asset_url }}" alt="">
-                <p class="d-none d-md-block">Free Shipping Over $100</p>
-                <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+                <p>Livraison gratuite pour les commandes de plus de 100 €</p>
             </div>
         </div>
     </div>
@@ -288,7 +287,7 @@
             if(isSectionSupply())
             {
                 if (savedAmount && buyButtonReserve && buyButtonSoldOut) {
-                    if (savedAmount.textContent.trim() === "& SAVE {{ soldout_percentage }}%") {
+                    if (savedAmount.textContent.trim() === "& ÉCONOMISEZ {{ soldout_percentage }}%") {
                         buyButtonReserve.style.display = "none";
                         buyButtonSticky.style.display = "none";
                         buyButtonSoldOut.style.display = "block";
@@ -302,7 +301,7 @@
             else
             {
                 if (savedAmount && buyButton && buyButtonSoldOut) {
-                    if (savedAmount.textContent.trim() === "& SAVE {{ soldout_percentage }}%") {
+                    if (savedAmount.textContent.trim() === "& ÉCONOMISEZ {{ soldout_percentage }}%") {
                         buyButton.style.display = "none";
                         buyButtonSticky.style.display = "none";
                         buyButtonSoldOut.style.display = "block";

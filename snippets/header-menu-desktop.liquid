@@ -103,15 +103,17 @@
                                                         </li>
                                                     {%- endfor -%}
                                                 </ul>
-                                                <ul>
-                                                    {% for childChildlink in childlink.links offset:4 %}
-                                                        <li>
-                                                            <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
-                                                                <span>{{ childChildlink.title | escape }}</span>
-                                                            </a>
-                                                        </li>
-                                                    {%- endfor -%}
-                                                </ul>
+                                                {% if childlink.links.size > 4 %}
+                                                    <ul>
+                                                        {% for childChildlink in childlink.links offset:4 %}
+                                                            <li>
+                                                                <a href="{{ childChildlink.url }}" aria-label="{{ childChildlink.title | escape }}">
+                                                                    <span>{{ childChildlink.title | escape }}</span>
+                                                                </a>
+                                                            </li>
+                                                        {%- endfor -%}
+                                                    </ul>
+                                                {% endif %}
                                             </div>
                                             {% endif %}
                                         </div>
