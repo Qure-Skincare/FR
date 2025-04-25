@@ -22,22 +22,19 @@
                 {% when 'blog' %}  
                 {% assign articleId = block.settings.article %}
                 
-                    {% if articleId.title != blank %}
-                        <a target="_blank"
-                            href="{{ articleId.url }}"
-                            class="sj_item">
-                            <div class="sj_img">
-                                <img src="{{ articleId.image | img_url: 'master' }}" alt="{{ articleId.image.alt }}" class="img-fluid">
+                    <a target="_blank"
+                        href="{{ articleId.url }}"
+                        class="sj_item">
+                        <div class="sj_img">
+                            <img src="{{ articleId.image | img_url: 'master' }}" alt="{{ articleId.image.alt }}" class="img-fluid">
+                        </div>
+                        <div class="sj_content">
+                            <div class="sj_info">#{{ articleId | split: '/' | first }}
                             </div>
-                            <div class="sj_content">
-                                <div class="sj_info">#{{ articleId | split: '/' | first }}
-                                </div>
-                                <div class="sj_title">{{ articleId.title }}
-                                </div>
+                            <div class="sj_title">{{ articleId.title }}
                             </div>
-                        </a>
-                    {% endif %}
-
+                        </div>
+                    </a>
                 {% endcase %} 
                 {% endfor %}
             </div>

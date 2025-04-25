@@ -1821,12 +1821,12 @@ if (window.location.pathname.includes("/products/face-serum")) {
     if (!buyButton) return;
     if (isTestSelected) {
       if (testType === "a") {
-        buyButton.textContent = "Buy Now & Save 34%";
+        buyButton.textContent = "Acheter maintenant & Save 34%";
       } else if (testType === "b") {
         buyButton.textContent = "Buy Two, Get One FREE";
       }
     } else {
-      buyButton.textContent = "Buy Now"; 
+      buyButton.textContent = "Acheter maintenant"; 
     }
   }
 
