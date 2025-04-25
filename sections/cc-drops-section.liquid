@@ -952,7 +952,11 @@
         <div class="segmented-control">
           {% assign tabstyle = 'tab active' %}
           {% for drop in metaobject['cc-creator-drops'].value %}
-            <button class="{{ tabstyle }}" class="tab" data-target="{{ drop.handle }}">
+            <button
+              class="{{ tabstyle }}"
+              class="tab"
+              data-target="{{ drop.handle }}"
+            >
               {{ drop.title }}
             </button>
             {% assign tabstyle = 'tab' %}
@@ -994,12 +998,18 @@
                             <div class="productBlockGrid">
                               {% if block.settings.image != blank %}
                                 <div class="product-grid__image d-none d-md-block">
-                                  <img src="{{ block.settings.image | img_url: '400x' }}" alt="">
+                                  <img
+                                    src="{{ block.settings.image | img_url: '400x' }}"
+                                    alt=""
+                                  >
                                 </div>
                               {% endif %}
                               {% if block.settings.image_mobile != blank %}
                                 <div class="product-grid__image d-block d-md-none">
-                                  <img src="{{ block.settings.image_mobile | img_url: '400x' }}" alt="">
+                                  <img
+                                    src="{{ block.settings.image_mobile | img_url: '400x' }}"
+                                    alt=""
+                                  >
                                 </div>
                               {% endif %}
                               <div class="collection_card text-center">
@@ -1007,10 +1017,17 @@
                                   {{ block.settings.text }}
                                 </div>
                                 {% if block.settings.client != blank %}
-                                  <div class="product_card_userName">{{ block.settings.client }}</div>
+                                  <div class="product_card_userName">
+                                    {{ block.settings.client }}
+                                  </div>
                                 {% endif %}
                                 <div class="product_verified">
-                                  <img src="{{ 'verified.svg' | asset_url }}" alt="" class="me-1">Client vérifié
+                                  <img
+                                    src="{{ 'verified.svg' | asset_url }}"
+                                    alt=""
+                                    class="me-1"
+
+                                  >Client vérifié
                                 </div>
                               </div>
                             </div>
@@ -1018,7 +1035,10 @@
                             <div class="productBlockGrid">
                               {% if block.settings.image != blank %}
                                 <div class="product-grid__image">
-                                  <img src="{{ block.settings.image | img_url: '400x' }}" alt="collection img">
+                                  <img
+                                    src="{{ block.settings.image | img_url: '400x' }}"
+                                    alt="collection img"
+                                  >
                                 </div>
                               {% endif %}
                               <div class="collection_card text-center doctor_card">
@@ -1027,7 +1047,9 @@
                                 {% endif %}
                                 {{ block.settings.text }}
                                 {% if block.settings.client != blank %}
-                                  <div class="dr_profile">{{ block.settings.client }}</div>
+                                  <div class="dr_profile">
+                                    {{ block.settings.client }}
+                                  </div>
                                 {% endif %}
                               </div>
                             </div>
@@ -1053,7 +1075,10 @@
                                   <h5>{{ block.settings.header }}</h5>
                                 {% endif %}
                                 {% if block.settings.button_label != blank %}
-                                  <a href="{{ block.settings.button_url }}" class="discover_btn">
+                                  <a
+                                    href="{{ block.settings.button_url }}"
+                                    class="discover_btn"
+                                  >
                                     {{- block.settings.button_label -}}
                                   </a>
                                 {% endif %}
@@ -1095,32 +1120,48 @@
                       {% capture product_url %}products/{{ product.handle }}{% endcapture %}
                   {% endcase %}
 
-                  <div class="productBlockGrid fixed_height_btn" id="{{ product.handle }}">
+                  <div
+                    class="productBlockGrid fixed_height_btn"
+                    id="{{ product.handle }}"
+                  >
                     <div class="cus-tag">
                       {% assign show_bf_cm_treadment = false %}
                       {% assign show_corner_product = product.metafields.custom.enable_corner_treatment_bfcm.value %}
-                      {% if show_corner_product and settings.enable_corner_treatment_bfcm %}
+                      {% if show_corner_product
+                        and settings.enable_corner_treatment_bfcm
+                      %}
                         {% assign show_bf_cm_treadment = true %}
                       {% endif %}
 
                       {% assign amount = 0 %}
                       {% for variant in product.variants %}
-                        {% assign saving = variant.compare_at_price | minus: variant.price %}
+                        {% assign saving = variant.compare_at_price
+                          | minus: variant.price
+                        %}
                         {% assign amount = saving | at_least: amount %}
                       {% endfor %}
 
-                      {% if show_bf_cm_treadment and settings.copy_corner_treatment_bfcm != blank %}
+                      {% if show_bf_cm_treadment
+                        and settings.copy_corner_treatment_bfcm != blank
+                      %}
                         <span class="cus-save pdm-corner_bfcm">
                           {{ settings.copy_corner_treatment_bfcm }}
                         </span>
                       {% else %}
                         {% if amount != 0 %}
-                          <span class="cus-save">Save {{ amount | money_without_trailing_zeros }}</span>
+                          <span class="cus-save"
+                            >Économisez
+                            {{ amount | money_without_trailing_zeros -}}
+                          </span>
                         {% endif %}
                       {% endif %}
 
-                      {% if product.metafields.custom.category_displaying.value != blank %}
-                        <span class="cus-seller">{{ product.metafields.custom.category_displaying.value }}</span>
+                      {% if product.metafields.custom.category_displaying.value
+                          != blank
+                      %}
+                        <span class="cus-seller">
+                          {{- product.metafields.custom.category_displaying.value -}}
+                        </span>
                       {% else %}
                         {% for tag in product.tags %}
                           {% if tag contains 'Best Seller' %}
@@ -1130,8 +1171,14 @@
                       {% endif %}
                     </div>
                     <div class="product-grid__image">
-                      <a href="{{ routes.root_url }}{{ product_url }}" class="productLink">
-                        <img src="{{ product.featured_image | img_url: '720x' }}" alt="collection img">
+                      <a
+                        href="{{ routes.root_url }}{{ product_url }}"
+                        class="productLink"
+                      >
+                        <img
+                          src="{{ product.featured_image | img_url: '720x' }}"
+                          alt="collection img"
+                        >
                       </a>
                     </div>
                     <div class="pdt_cln_info">
@@ -1142,10 +1189,13 @@
                         -->
                       </div>
                       <div class="product-grid__title">{{ product.title }}</div>
-                      <div class="collection-description">{{ product.description | strip_html | truncate: 130 }}</div>
+                      <div class="collection-description">
+                        {{ product.description | strip_html | truncate: 130 }}
+                      </div>
                     </div>
                     <div class="pdt_cln_bottom">
-                      {% if cc_creator['cc-collab-discount-type'] == 'Percentage'
+                      {% if cc_creator['cc-collab-discount-type']
+                          == 'Percentage'
                         and cc_creator != ''
                         and cc_creator != null
                       %}
@@ -1155,12 +1205,24 @@
                               class="product-grid__sale-price text-decoration-line-through"
                               data-processed-abconvert-price="true"
                             >
-                              {{- product.compare_at_price | money_without_trailing_zeros -}}
+                              {{-
+                                product.compare_at_price
+                                | money_without_trailing_zeros
+                              -}}
                             </span>
-                            {% assign discount = cc_creator['cc-collab-discount-amount'] | divided_by: 100 %}
-                            {% assign discount_multiplier = 1 | minus: discount %}
-                            {% assign price = product.price | times: discount_multiplier %}
-                            <span class="product-grid__compare-price" data-processed-abconvert-price="true">
+                            {% assign discount = cc_creator['cc-collab-discount-amount']
+                              | divided_by: 100
+                            %}
+                            {% assign discount_multiplier = 1
+                              | minus: discount
+                            %}
+                            {% assign price = product.price
+                              | times: discount_multiplier
+                            %}
+                            <span
+                              class="product-grid__compare-price"
+                              data-processed-abconvert-price="true"
+                            >
                               {{- price | money_without_trailing_zeros -}}
                             </span>
 
@@ -1169,13 +1231,25 @@
                               class="product-grid__sale-price text-decoration-line-through"
                               data-processed-abconvert-price="true"
                             >
-                              {{- product.price | money_without_trailing_zeros -}}
+                              {{-
+                                product.price
+                                | money_without_trailing_zeros
+                              -}}
                             </span>
 
-                            {% assign discount = cc_creator['cc-collab-discount-amount'] | divided_by: 100 %}
-                            {% assign discount_multiplier = 1 | minus: discount %}
-                            {% assign price = product.price | times: discount_multiplier %}
-                            <span class="product-grid__compare-price" data-processed-abconvert-price="true">
+                            {% assign discount = cc_creator['cc-collab-discount-amount']
+                              | divided_by: 100
+                            %}
+                            {% assign discount_multiplier = 1
+                              | minus: discount
+                            %}
+                            {% assign price = product.price
+                              | times: discount_multiplier
+                            %}
+                            <span
+                              class="product-grid__compare-price"
+                              data-processed-abconvert-price="true"
+                            >
                               {{- price | money_without_trailing_zeros -}}
                             </span>
                           {% endif %}
@@ -1188,16 +1262,31 @@
                               class="product-grid__sale-price{% if product.compare_at_price != blank %} text-decoration-line-through{% endif %}"
                               data-processed-abconvert-price="true"
                             >
-                              {{- product.compare_at_price | money_without_trailing_zeros -}}
+                              {{-
+                                product.compare_at_price
+                                | money_without_trailing_zeros
+                              -}}
                             </span>
                             {% if product.compare_at_price != blank %}
-                              <span class="product-grid__compare-price" data-processed-abconvert-price="true">
-                                {{- product.price | money_without_trailing_zeros -}}
+                              <span
+                                class="product-grid__compare-price"
+                                data-processed-abconvert-price="true"
+                              >
+                                {{-
+                                  product.price
+                                  | money_without_trailing_zeros
+                                -}}
                               </span>
                             {% endif %}
                           {% else %}
-                            <span class="product-grid__sale-price" data-processed-abconvert-price="true">
-                              {{- product.price | money_without_trailing_zeros -}}
+                            <span
+                              class="product-grid__sale-price"
+                              data-processed-abconvert-price="true"
+                            >
+                              {{-
+                                product.price
+                                | money_without_trailing_zeros
+                              -}}
                             </span>
                           {% endif %}
                         </div>
@@ -1211,7 +1300,11 @@
                           data-ajax-cart-request-button
                           >Acheter maintenant</a
                         >
-                        <a href="{{ routes.root_url }}{{ product_url }}" class="collec-more">Découvrir</a>
+                        <a
+                          href="{{ routes.root_url }}{{ product_url }}"
+                          class="collec-more"
+                          >Découvrir</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -1235,11 +1328,11 @@
 
     // Handle tabs
     if (tabs.length) {
-      tabs.forEach(tab => {
+      tabs.forEach((tab) => {
         tab.addEventListener('click', function () {
           // Remove active class from all tabs and contents
-          tabs.forEach(t => t.classList.remove('active'));
-          contents.forEach(c => c.classList.remove('active'));
+          tabs.forEach((t) => t.classList.remove('active'));
+          contents.forEach((c) => c.classList.remove('active'));
 
           // Add active class to the clicked tab and its content
           this.classList.add('active');
@@ -1255,149 +1348,149 @@
         const target = this.value;
 
         // Remove active class from all contents
-        contents.forEach(c => c.classList.remove('active'));
+        contents.forEach((c) => c.classList.remove('active'));
 
         // Show the selected content
         document.getElementById(target).classList.add('active');
       });
     }
 
-
-    
-
     console.log('Script is running');
 
     const descriptions = document.querySelectorAll('.drop-description');
     if (descriptions.length === 0) {
-        console.warn('No elements with class .drop-description found.');
-        return;
+      console.warn('No elements with class .drop-description found.');
+      return;
     }
 
-    descriptions.forEach(descriptionElement => {
-        console.log('Found description:', descriptionElement);
+    descriptions.forEach((descriptionElement) => {
+      console.log('Found description:', descriptionElement);
 
-        const descriptionText = descriptionElement.textContent;
-        console.log('Original text:', descriptionText);
+      const descriptionText = descriptionElement.textContent;
+      console.log('Original text:', descriptionText);
 
-        const tagPattern = /#\[(.*?)\]/g;
-        let match;
-        const tags = [];
+      const tagPattern = /#\[(.*?)\]/g;
+      let match;
+      const tags = [];
 
-        // Extract tags and remove them from the description
-        while ((match = tagPattern.exec(descriptionText)) !== null) {
-            tags.push(match[1]);
-        }
+      // Extract tags and remove them from the description
+      while ((match = tagPattern.exec(descriptionText)) !== null) {
+        tags.push(match[1]);
+      }
 
-        console.log('Extracted tags:', tags);
+      console.log('Extracted tags:', tags);
 
-        // Update the description text
-        const updatedDescription = descriptionText.replace(tagPattern, '').trim();
-        descriptionElement.textContent = updatedDescription;
-        console.log('Updated description:', updatedDescription);
+      // Update the description text
+      const updatedDescription = descriptionText.replace(tagPattern, '').trim();
+      descriptionElement.textContent = updatedDescription;
+      console.log('Updated description:', updatedDescription);
 
-        // Find the features-grid
-        const sibling = descriptionElement.closest('.title-wrapper').nextElementSibling;
-        if (sibling) {
-            const benefitsContainer = sibling.querySelector('.features-grid');
-            if (benefitsContainer) {
-                console.log('Adding tags to features-grid:', benefitsContainer);
+      // Find the features-grid
+      const sibling =
+        descriptionElement.closest('.title-wrapper').nextElementSibling;
+      if (sibling) {
+        const benefitsContainer = sibling.querySelector('.features-grid');
+        if (benefitsContainer) {
+          console.log('Adding tags to features-grid:', benefitsContainer);
 
-                tags.forEach(tag => {
-                    const tagElement = document.createElement('div');
-                    tagElement.style.display = 'flex';
-                    tagElement.style.alignItems = 'center';
-                    tagElement.innerHTML = `
+          tags.forEach((tag) => {
+            const tagElement = document.createElement('div');
+            tagElement.style.display = 'flex';
+            tagElement.style.alignItems = 'center';
+            tagElement.innerHTML = `
                         <img
                             src="https://cdn.shopify.com/s/files/1/0872/4345/6800/files/check-circle_1.svg?v=1734074498"
                             alt="Icon"
                             style="width: 20px; height: 20px; margin-right: 10px;"
                         >
-                        <p style="margin: 0; line-height: 1.2">€{tag}</p>
+                        <p style="margin: 0; line-height: 1.2">${tag}</p>
                     `;
-                    benefitsContainer.appendChild(tagElement);
-                });
-            } else {
-                console.warn('No features-grid found for:', descriptionElement);
-            }
+            benefitsContainer.appendChild(tagElement);
+          });
         } else {
-            console.warn('No sibling container found for:', descriptionElement);
+          console.warn('No features-grid found for:', descriptionElement);
         }
+      } else {
+        console.warn('No sibling container found for:', descriptionElement);
+      }
     });
   });
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-          console.log('click');
-          // Add click event listener to checkbox
-          checkbox.addEventListener('click', updateURL);
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+      console.log('click');
+      // Add click event listener to checkbox
+      checkbox.addEventListener('click', updateURL);
 
-          // Add click event listener to closest parent li of the checkbox
-          const parentLi = checkbox.closest('li');
-          if (parentLi) {
-              parentLi.addEventListener('click', function(event) {
-                  // Prevent triggering the event twice if the checkbox itself was clicked
-                  if (event.target !== checkbox) {
-                      checkbox.checked = !checkbox.checked;
-                      updateURL.call(checkbox);
-                  }
-              });
+      // Add click event listener to closest parent li of the checkbox
+      const parentLi = checkbox.closest('li');
+      if (parentLi) {
+        parentLi.addEventListener('click', function (event) {
+          // Prevent triggering the event twice if the checkbox itself was clicked
+          if (event.target !== checkbox) {
+            checkbox.checked = !checkbox.checked;
+            updateURL.call(checkbox);
           }
-      });
+        });
+      }
+    });
 
-      function updateURL() {
-          const paramName = this.name;
-          const paramValue = this.checked ? this.value : '';
-          const newUrl = new URL(window.location.href);
+    function updateURL() {
+      const paramName = this.name;
+      const paramValue = this.checked ? this.value : '';
+      const newUrl = new URL(window.location.href);
 
-          if (paramValue) {
-              newUrl.searchParams.set(paramName, paramValue);
-          } else {
-              newUrl.searchParams.delete(paramName);
-          }
-
-          window.location.href = newUrl.toString();
+      if (paramValue) {
+        newUrl.searchParams.set(paramName, paramValue);
+      } else {
+        newUrl.searchParams.delete(paramName);
       }
 
-      // Add existing sort parameters to current URL
-      document.querySelector('.sort-by').addEventListener('change', function(e) {
-          var value = e.currentTarget.value;
-          Shopify.queryParams.sort_by = value;
-          location.search = new URLSearchParams(Shopify.queryParams).toString();
+      window.location.href = newUrl.toString();
+    }
+
+    // Add existing sort parameters to current URL
+    document.querySelector('.sort-by').addEventListener('change', function (e) {
+      var value = e.currentTarget.value;
+      Shopify.queryParams.sort_by = value;
+      location.search = new URLSearchParams(Shopify.queryParams).toString();
+    });
+
+    setInterval(function () {
+      var classNameRaman = document.getElementById('offcanvasBottom').classList;
+
+      if (classNameRaman.contains('show')) {
+        $('html').addClass('filterActive');
+      } else {
+        $('html').removeClass('filterActive');
+      }
+    });
+
+    document.querySelectorAll('.clear_filter_text').forEach((link) => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const url = new URL(window.location);
+        const baseUrl = url.origin + url.pathname;
+        window.location.href = baseUrl;
       });
-
-      setInterval(
-          function () {
-              var classNameRaman = document.getElementById("offcanvasBottom").classList;
-
-              if (classNameRaman.contains('show')) {
-                  $('html').addClass('filterActive');
-              }
-              else {
-                  $('html').removeClass('filterActive');
-              }
-      })
-
-      document.querySelectorAll('.clear_filter_text').forEach(link => {
-          link.addEventListener('click', function(e) {
-              e.preventDefault();
-              const url = new URL(window.location);
-              const baseUrl = url.origin + url.pathname;
-              window.location.href = baseUrl;
-          });
-      });
-
+    });
   });
 
   Shopify.queryParams = {};
-  if(location.search.length) {
-      for(var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+  if (location.search.length) {
+    for (
+      var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&');
+      i < aCouples.length;
+      i++
+    ) {
       aKeyValue = aCouples[i].split('=');
       if (aKeyValue.length > 1) {
-          Shopify.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+        Shopify.queryParams[decodeURIComponent(aKeyValue[0])] =
+          decodeURIComponent(aKeyValue[1]);
       }
-      }
+    }
   }
 </script>
 
@@ -1407,15 +1500,15 @@
   "tag": "section",
   "class": "section",
   "settings": [
-        {
-  "type": "header",
-  "content": "Heading Settings",
-  "info": "Edit settings for the main header in the section"
-},
-        {
+    {
+      "type": "header",
+      "content": "Heading Settings",
+      "info": "Edit settings for the main header in the section"
+    },
+    {
       "type": "text",
-         "id":"header" ,
-     "label": "Section Header"
+      "id": "header",
+      "label": "Section Header"
     },
     {
       "type": "select",
@@ -1437,7 +1530,7 @@
       "default": "h1",
       "label": "Header Size"
     },
-            {
+    {
       "type": "range",
       "id": "heading_font_size",
       "min": 0,
@@ -1464,34 +1557,34 @@
           "value": "300",
           "label": "300"
         },
-               {
+        {
           "value": "400",
           "label": "400"
         },
-               {
+        {
           "value": "500",
           "label": "500"
         },
-               {
+        {
           "value": "600",
           "label": "600"
         },
-               {
+        {
           "value": "700",
           "label": "700"
         },
-               {
+        {
           "value": "800",
           "label": "800"
         },
-               {
+        {
           "value": "900",
           "label": "900"
         }
       ],
       "default": "400"
     },
-      {
+    {
       "type": "select",
       "id": "heading_style",
       "label": "Heading Font Style",
@@ -1508,12 +1601,12 @@
       "default": "normal"
     },
     {
-   "type": "text_alignment",
-   "id": "heading_alignment",
-   "label": "Heading Alignment",
-   "default": "left"
-},
-            {
+      "type": "text_alignment",
+      "id": "heading_alignment",
+      "label": "Heading Alignment",
+      "default": "left"
+    },
+    {
       "type": "range",
       "id": "header_margin_bottom",
       "min": 0,
@@ -1523,12 +1616,12 @@
       "label": "Margin Bottom",
       "default": 32
     },
-        {
-  "type": "header",
-  "content": "Tab Settings",
-  "info": "Edit tab settings for selecting different drops in the section"
-},
-   {
+    {
+      "type": "header",
+      "content": "Tab Settings",
+      "info": "Edit tab settings for selecting different drops in the section"
+    },
+    {
       "type": "range",
       "id": "tab_radius",
       "min": 0,
@@ -1538,7 +1631,7 @@
       "label": "Tab Corner Radius",
       "default": 0
     },
-            {
+    {
       "type": "range",
       "id": "tab_spacing",
       "min": 0,
@@ -1548,7 +1641,7 @@
       "label": "Tab Spacing",
       "default": 5
     },
-        {
+    {
       "type": "range",
       "id": "tab_border_top_left_right_width_default",
       "min": 0,
@@ -1558,7 +1651,7 @@
       "label": "Tab Border Overall Width Default",
       "default": 0
     },
-            {
+    {
       "type": "range",
       "id": "tab_border_bottom_width_default",
       "min": 0,
@@ -1568,7 +1661,7 @@
       "label": "Tab Border Bottom Width Default",
       "default": 0
     },
-            {
+    {
       "type": "range",
       "id": "tab_border_top_left_right_width_active",
       "min": 0,
@@ -1578,7 +1671,7 @@
       "label": "Tab Border Overall Width Active",
       "default": 0
     },
-            {
+    {
       "type": "range",
       "id": "tab_border_bottom_width_active",
       "min": 0,
@@ -1588,43 +1681,43 @@
       "label": "Tab Border Bottom Width Active",
       "default": 3
     },
-                    {
+    {
       "type": "color",
       "id": "tab_border_color_default",
       "label": "Tab Border Default",
       "default": "#000000"
     },
-                {
+    {
       "type": "color",
       "id": "tab_border_color_active",
       "label": "Tab Border Active",
       "default": "#000000"
     },
-            {
+    {
       "type": "color",
       "id": "tab_background_color_active",
       "label": "Tab Background Active",
       "default": "#ffffff"
     },
-                {
+    {
       "type": "color",
       "id": "tab_background_color_default",
       "label": "Tab Background Default",
       "default": "#ffffff"
     },
-                {
+    {
       "type": "color",
       "id": "tab_text_color_active",
       "label": "Tab Text Active",
       "default": "#000000"
     },
-                {
+    {
       "type": "color",
       "id": "tab_text_color_default",
       "label": "Tab Text Default",
       "default": "#000000"
     },
-                {
+    {
       "type": "range",
       "id": "tab_text_size",
       "min": 0,
@@ -1664,13 +1757,13 @@
       "label": "Tab Border Width",
       "default": 0
     },
-        {
+    {
       "type": "color",
       "id": "tab_section_border_color",
       "label": "Tab Section Border Color",
       "default": "#a1a1a1"
     },
-                {
+    {
       "type": "range",
       "id": "tabs_margin_bottom",
       "min": 0,
@@ -1680,12 +1773,12 @@
       "label": "Margin Bottom",
       "default": 32
     },
-            {
-  "type": "header",
-  "content": "Description Settings",
-  "info": "Edit settings for how drop descriptions are displayed in the section"
-},
-               {
+    {
+      "type": "header",
+      "content": "Description Settings",
+      "info": "Edit settings for how drop descriptions are displayed in the section"
+    },
+    {
       "type": "range",
       "id": "description_font_size",
       "min": 0,
@@ -1712,34 +1805,34 @@
           "value": "300",
           "label": "300"
         },
-               {
+        {
           "value": "400",
           "label": "400"
         },
-               {
+        {
           "value": "500",
           "label": "500"
         },
-               {
+        {
           "value": "600",
           "label": "600"
         },
-               {
+        {
           "value": "700",
           "label": "700"
         },
-               {
+        {
           "value": "800",
           "label": "800"
         },
-               {
+        {
           "value": "900",
           "label": "900"
         }
       ],
       "default": "500"
     },
-      {
+    {
       "type": "select",
       "id": "description_style",
       "label": "Description Font Style",
@@ -1756,12 +1849,12 @@
       "default": "normal"
     },
     {
-   "type": "text_alignment",
-   "id": "description_alignment",
-   "label": "Description Alignment",
-   "default": "left"
-},
-                   {
+      "type": "text_alignment",
+      "id": "description_alignment",
+      "label": "Description Alignment",
+      "default": "left"
+    },
+    {
       "type": "range",
       "id": "description_margin_bottom",
       "min": 0,
@@ -1771,11 +1864,11 @@
       "label": "Margin Bottom",
       "default": 20
     },
-                {
-  "type": "header",
-  "content": "Product Settings",
-  "info": "Edit settings for how products are displayed in the section"
-},
+    {
+      "type": "header",
+      "content": "Product Settings",
+      "info": "Edit settings for how products are displayed in the section"
+    },
     {
       "type": "select",
       "id": "columns_mobile",
@@ -1792,7 +1885,7 @@
       "default": "2",
       "label": "Mobile Columns"
     },
-        {
+    {
       "type": "select",
       "id": "columns_desktop",
       "options": [
@@ -1808,7 +1901,7 @@
       "default": "4",
       "label": "Desktop Columns"
     },
-                       {
+    {
       "type": "range",
       "id": "product_grid_gap",
       "min": 0,
@@ -1818,11 +1911,11 @@
       "label": "Grid Gap",
       "default": 10
     },
-                {
-  "type": "header",
-  "content": "Section Settings",
-  "info": "Edit settings for how the section displays"
-},
+    {
+      "type": "header",
+      "content": "Section Settings",
+      "info": "Edit settings for how the section displays"
+    },
     {
       "type": "range",
       "id": "padding_top",
@@ -1843,7 +1936,7 @@
       "label": "Padding Bottom",
       "default": 36
     },
-        {
+    {
       "type": "range",
       "id": "padding_left",
       "min": 0,
@@ -1853,7 +1946,7 @@
       "label": "Padding Left",
       "default": 20
     },
-        {
+    {
       "type": "range",
       "id": "padding_right",
       "min": 0,
@@ -1863,7 +1956,7 @@
       "label": "Padding Right",
       "default": 20
     },
-            {
+    {
       "type": "range",
       "id": "padding_left_mobile",
       "min": 0,
@@ -1873,7 +1966,7 @@
       "label": "Mobile Padding Left",
       "default": 12
     },
-        {
+    {
       "type": "range",
       "id": "padding_right_mobile",
       "min": 0,
@@ -1882,8 +1975,7 @@
       "unit": "px",
       "label": "Mobile Padding Right",
       "default": 12
-    },
-
+    }
   ],
   "presets": [
     {
