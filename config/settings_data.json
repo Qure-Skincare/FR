@@ -228,116 +228,12 @@
               "upsell_product_third": "",
               "upsell_product_thid_description": ""
             }
-          },
-          "upsell_DQMajg": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://qure-france.myshopify.com/pages/microinfusion",
-              "upsell_product_first": "",
-              "upsell_product_first_description": "",
-              "upsell_product_second": "q-rejuvalight-pro-facewear",
-              "upsell_product_second_description": "Protégez votre appareil LED pendant 1 an supplémentaire.",
-              "upsell_product_third": "",
-              "upsell_product_thid_description": ""
-            }
-          },
-          "upsell_a74n8t": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://www.qureskincare.fr/products/face-serum",
-              "upsell_product_first": "q-rejuvalight-pro-facewear",
-              "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
-              "upsell_product_second": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
-              "upsell_product_second_description": "Révélez une peau plus lisse et éclatante",
-              "upsell_product_third": "line-refine-bundle-pro",
-              "upsell_product_thid_description": "Complétez votre soin et traitez plusieurs problèmes de peau."
-            }
-          },
-          "upsell_ej4ULU": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://www.qureskincare.fr/products/micro-infusion-targeted-patches",
-              "upsell_product_first": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
-              "upsell_product_first_description": "Révélez une peau plus lisse et éclatante",
-              "upsell_product_second": "dermal-mist",
-              "upsell_product_second_description": "Purifie et rafraîchit",
-              "upsell_product_third": "fade-firm-bundle-essentials",
-              "upsell_product_thid_description": "Complétez votre soin et traitez plusieurs problèmes de peau."
-            }
-          },
-          "upsell_GiyUV9": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://qureskincare.fr/products/micro-infusion-limited-edition-bundle",
-              "upsell_product_first": "micro-infusion-darkspots-treatments",
-              "upsell_product_first_description": "Révélez une peau plus lisse et éclatante",
-              "upsell_product_second": "face-serum",
-              "upsell_product_second_description": "Repulpez, lissez et illuminez en une seule étape",
-              "upsell_product_third": "q-rejuvalight-pro-facewear",
-              "upsell_product_thid_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent"
-            }
-          },
-          "upsell_UiGexh": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://qureskincare.fr/products/faucet-filter",
-              "upsell_product_first": "fade-firm-bundle-advance",
-              "upsell_product_first_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
-              "upsell_product_second": "shower-filter",
-              "upsell_product_second_description": "Réduit les irritants dans l’eau pour une peau plus claire et hydratée.",
-              "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Repulpez, lissez et illuminez en une seule étape"
-            }
-          },
-          "upsell_MBrVMA": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://qureskincare.fr/products/dermal-mist",
-              "upsell_product_first": "q-rejuvalight-pro-facewear",
-              "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
-              "upsell_product_second": "fade-firm-bundle-essentials",
-              "upsell_product_second_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
-              "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Repulpez, lissez et illuminez en une seule étape."
-            }
-          },
-          "upsell_zaLtWh": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://qureskincare.fr/pages/microinfusion",
-              "upsell_product_first": "micro-infusion-darkspots-treatments",
-              "upsell_product_first_description": "Révélez une peau plus lisse et éclatante.",
-              "upsell_product_second": "breakout-control-advanced",
-              "upsell_product_second_description": "Réduit l’apparence des rides et ridules.",
-              "upsell_product_third": "dermal-mist",
-              "upsell_product_thid_description": "Complétez votre soin et traitez plusieurs problèmes de peau."
-            }
-          },
-          "upsell_pDFytd": {
-            "type": "upsell",
-            "settings": {
-              "page_url": "https://qureskincare.fr/products/shower-filter",
-              "upsell_product_first": "q-rejuvalight-pro-facewear",
-              "upsell_product_first_description": "Rajeunissez la peau là où les premiers signes de vieillissement apparaissent",
-              "upsell_product_second": "line-refine-bundle-advanced",
-              "upsell_product_second_description": "Complétez votre soin et traitez plusieurs problèmes de peau.",
-              "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Repulpez, lissez et illuminez en une seule étape."
-            }
           }
         },
         "block_order": [
           "saving_FbLdxK",
           "gift_ccQgi4",
-          "upsell_8Karyz",
-          "upsell_DQMajg",
-          "upsell_a74n8t",
-          "upsell_ej4ULU",
-          "upsell_GiyUV9",
-          "upsell_UiGexh",
-          "upsell_MBrVMA",
-          "upsell_zaLtWh",
-          "upsell_pDFytd"
+          "upsell_8Karyz"
         ],
         "custom_css": [],
         "settings": {
