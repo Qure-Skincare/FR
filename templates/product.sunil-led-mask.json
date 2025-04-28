@@ -1095,6 +1095,7 @@
     },
     "product_box_JzAAt3": {
       "type": "product-box",
+      "disabled": true,
       "blocks": {
         "product_nbWqKG": {
           "type": "product",
