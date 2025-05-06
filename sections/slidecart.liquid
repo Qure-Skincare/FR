@@ -117,7 +117,7 @@
 
 						<div class="drawer__cart-product">
 							<div class="drawer__cart-product-image">
-								{%- if item.title contains 'Insurance' -%}
+								{%- if item.title contains 'Assurance' -%}
 									{% assign is_insurance_exists = item.index | plus: 1 %}
 									<a title="{{ item.title }}" href="{{ item.url }}"><img src="{{ item.image | img_url: 'master' }}" style="height:20px !important; width: 90px; margin:40px auto; display:block;"></a>
 								{%- elsif item.title contains 'Gift Card' -%}
@@ -468,37 +468,37 @@
 
 				{% if totalPrice > 0 and totalPrice <= 75 %}
 					{% assign insurancePrice = 150 %}
-					{% assign insuranceId = 43291834220783 %}
+					{% assign insuranceId = 45001217114283 %}
 				{% elsif totalPrice >= 76 and totalPrice <= 100 %}
 					{% assign insurancePrice = 150 %}
-					{% assign insuranceId = 43326164566255 %}
+					{% assign insuranceId = 45001217147051 %}
 				{% elsif totalPrice >= 101 and totalPrice <= 200 %}
 					{% assign insurancePrice = 280 %}
-					{% assign insuranceId = 43326164599023 %}
+					{% assign insuranceId = 45001217179819 %}
 				{% elsif totalPrice >= 201 and totalPrice <= 250 %}
 					{% assign insurancePrice = 325 %}
-					{% assign insuranceId = 43326164631791 %}
+					{% assign insuranceId = 45001217212587 %}
 				{% elsif totalPrice >= 251 and totalPrice <= 300 %}
 					{% assign insurancePrice = 390 %}
-					{% assign insuranceId = 43326164664559 %}
+					{% assign insuranceId = 45001217245355 %}
 				{% elsif totalPrice >= 301 and totalPrice <= 400 %}
 					{% assign insurancePrice = 420 %}
-					{% assign insuranceId = 43326164697327 %}
+					{% assign insuranceId = 45001217278123 %}
 				{% elsif totalPrice >= 401 and totalPrice <= 1000 %}
 					{% assign insurancePrice = 420 %}
-					{% assign insuranceId = 43326164697327 %}
+					{% assign insuranceId = 45001217278123 %}
 				{% elsif totalPrice >= 1001 %}
 					{% assign insurancePrice = 1800 %}
-					{% assign insuranceId = 43326855282927 %}
+					{% assign insuranceId = 45001217704107 %}
 				{% endif %}
 				
 				<div class="insurance-wrapper">
 					<div class="insurance__bottom-wrapper">
 						<div class="insurance__img-wrapper">
-							<img src="https://qureskincaredns.com/new/assets/secureship_sm.svg" alt="" class="img-fluid">
+							<img src="https://qureskincaredns-fr.com/secureship_sm.svg" alt="" class="img-fluid">
 						</div>
 						<div class="insurance__text">
-							<p class="insurance__text--top">Protégez votre commande contre la perte, les dommages et le vol <strong>{{ insurancePrice | money_without_trailing_zeros }}</strong>
+							<p class="insurance__text--top" style="font-size: 8px;">Protégez votre commande contre la perte, les dommages et le vol <strong>{{ insurancePrice | money_without_trailing_zeros }}</strong>
 							</p>
 						</div>
 						<div class="insurance__switch-wrapper">

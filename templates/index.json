@@ -546,7 +546,7 @@
           "settings": {
             "pd_img": "shopify://shop_images/MI_new.png",
             "pd_name": "Système Facial Micro-Infusion",
-            "from": true,
+            "from": false,
             "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
             "bestseller": true,
             "rating": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
