@@ -138,6 +138,7 @@
         "blocks": {
           "form_Wgkcrq": {
             "type": "form",
+            "disabled": true,
             "settings": {
               "form_id": "YpweK2"
             }
