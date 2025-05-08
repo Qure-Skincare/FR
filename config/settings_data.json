@@ -149,7 +149,7 @@
         "settings": {
           "heading": "Recevez les dernières nouveautés de Qure.",
           "social_text": "Suivez-nous",
-          "social_show": true
+          "social_show": false
         }
       },
       "footer": {
