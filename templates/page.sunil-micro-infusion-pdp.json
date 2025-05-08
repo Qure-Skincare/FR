@@ -63,15 +63,11 @@
         "before_and_after_i7mAeJ": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify://shop_images/before_and_after_-_m4_b6e97509-f180-4a38-a367-e9deeacf3a0c_fr.webp",
             "image_new_section_text_1": "micro-infusion un",
             "image_new_section_2": "shopify://shop_images/B_a_micro_fr.webp",
             "image_new_section_text_2": "micro-infusion deux",
-            "image_new_section_3": "shopify://shop_images/before_and_after_-_m3_fr.webp",
             "image_new_section_text_3": "micro-infusion trois",
-            "image_new_section_4": "shopify://shop_images/before_and_after_-_m1_d489fd6a-0d41-4ef1-8531-ff2925a28c60_fr.webp",
             "image_new_section_text_4": "micro-infusion quatre",
-            "image_new_section_5": "shopify://shop_images/before_and_after_-_m2_fr.webp",
             "image_new_section_text_5": "Micro-infusion cinq",
             "image_new_section_text_6": ""
           }
@@ -116,7 +112,7 @@
         "seo_heading": "Système de soin facial par micro-infusion - Une alternative aux dermarollers",
         "heading": "Transformez une peau terne avec le système de micro-infusion",
         "heading_mobile": "Transformez une peau terne avec le système de micro-infusion",
-        "product": "",
+        "product": "micro-infusion-3-month-bundle-hydra-soothing-rejuvenating",
         "product_images_offset": 0,
         "product_images_limit": 8,
         "product_button_label": "Produit",
@@ -255,7 +251,10 @@
           }
         }
       },
-      "block_order": ["wistia_DiyAwY", "text_BHGBe4"],
+      "block_order": [
+        "wistia_DiyAwY",
+        "text_BHGBe4"
+      ],
       "settings": {
         "background": "bg_clr_transparent",
         "heading": "La micro-infusion de Qure va là où votre crème ne peut pas…",
@@ -294,28 +293,24 @@
         "image_nXpmCt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_1_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement les <strong>ridules et rides</strong></p>"
           }
         },
         "image_pVyDfg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_2_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement les <strong>grands pores et la texture de la peau</strong></p>"
           }
         },
         "image_pCCQX4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_3_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement les <strong>taches brunes et la texture</strong></p>"
           }
         },
         "image_FVDNMG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sn_4_fr.webp",
             "text": "<p>Prouvé pour améliorer visuellement le <strong>teint irrégulier</strong></p>"
           }
         }
@@ -399,7 +394,10 @@
           }
         }
       },
-      "block_order": ["video_cWe83q", "text_content_BRMwjz"],
+      "block_order": [
+        "video_cWe83q",
+        "text_content_BRMwjz"
+      ],
       "settings": {
         "padding_top": 60,
         "padding_bottom": 0
@@ -971,7 +969,9 @@
           }
         }
       },
-      "block_order": ["button_8D9gEe"],
+      "block_order": [
+        "button_8D9gEe"
+      ],
       "settings": {
         "heading": "Est-ce votre type de rituel de soin ?",
         "text": "<p>Jetez un œil à nos protocoles et instructions de traitement de micro-infusion</p>"
@@ -1005,7 +1005,10 @@
           }
         }
       },
-      "block_order": ["object_wgMpPE", "object_Q9qBw4"],
+      "block_order": [
+        "object_wgMpPE",
+        "object_Q9qBw4"
+      ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
         "sub_head": "",
@@ -1065,7 +1068,11 @@
           }
         }
       },
-      "block_order": ["column_rBddMQ", "column_PjJ7Q3", "column_cHB7kF"],
+      "block_order": [
+        "column_rBddMQ",
+        "column_PjJ7Q3",
+        "column_cHB7kF"
+      ],
       "settings": {
         "heading": "Offrez-vous un éclat de qualité clinique sans les prix cliniques",
         "heading2": "Comparons",
@@ -1140,7 +1147,11 @@
           }
         }
       },
-      "block_order": ["serum_pVVLFB", "or_Rw8iX6", "serum_BEc6Lf"],
+      "block_order": [
+        "serum_pVVLFB",
+        "or_Rw8iX6",
+        "serum_BEc6Lf"
+      ],
       "settings": {
         "heading": "Sérums de micro-infusion validés par la science",
         "subheading": "<p><strong>Choisissez le sérum exact à utiliser dans votre traitement de micro-infusion</strong>, ou prenez les deux et mélangez-les pour profiter d’un ensemble complet d’avantages qui <strong>répondent à vos préoccupations cutanées spécifiques.</strong></p>",
