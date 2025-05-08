@@ -1160,13 +1160,6 @@
         "mob_img": "shopify://shop_images/Group_mobile_2159.png"
       }
     },
-    "liquid_JJikgW": {
-      "type": "liquid",
-      "settings": {
-        "code": "{% render 'serums-months-image-form' with section_id: section.id %}",
-        "popup_micro_infusion_enabled": true
-      }
-    },
     "faq_4hnCjw": {
       "type": "faq",
       "blocks": {
@@ -1347,7 +1340,6 @@
     "compare_products_y7yjpe",
     "line_RWLxMz",
     "serum_ingredients_FTbJif",
-    "liquid_JJikgW",
     "faq_4hnCjw",
     "reviews_LMxgH7",
     "pdm_product_social_proof_data_XeqhJL"
