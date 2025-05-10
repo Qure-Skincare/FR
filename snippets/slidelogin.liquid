@@ -1,14 +1,14 @@
 {% if customer.id %}
     <div class="offcanvas offcanvas-end slideAccount" tabindex="-1" id="offcanvasAccount" aria-labelledby="offcanvasAccountLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasAccountLabel" form-type="form_create">Sign Out</h5>
+            <h5 id="offcanvasAccountLabel" form-type="form_create">Déconnexion</h5>
             <button type="button" class="btn-close text-reset icon-x" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="form_wrapper">
                 <div class="slideAccountForm" form-type="form_create">
                     <div class="slideAccountForm_btns my-4 d-block">
-                        <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn" onclick="location.href='{{ routes.account_logout_url }}'">Sign Out</button>
+                        <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn" onclick="location.href='{{ routes.account_logout_url }}'">Déconnexion</button>
                     </div>
                 </div>
             </div>
@@ -17,9 +17,9 @@
 {% else %}
     <div class="offcanvas offcanvas-end slideAccount" tabindex="-1" id="offcanvasAccount" aria-labelledby="offcanvasAccountLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasAccountLabel" form-type="form_create">Sign In</h5>
-            <h5 id="offcanvasAccountLabel" form-type="form_reset" class="hidden">RESET PASSWORD</h5>
-            <h5 id="offcanvasAccountLabel" form-type="form_sign" class="hidden">CREATE AN ACCOUNT</h5>
+            <h5 id="offcanvasAccountLabel" form-type="form_create">Connexion</h5>
+            <h5 id="offcanvasAccountLabel" form-type="form_reset" class="hidden">RÉINITIALISER LE MOT DE PASSE</h5>
+            <h5 id="offcanvasAccountLabel" form-type="form_sign" class="hidden">CRÉER UN COMPTE</h5>
             <button type="button" class="btn-close text-reset icon-x" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -27,17 +27,17 @@
                 {% form 'customer_login' %}
                     <div class="slideAccountForm" form-type="form_create">
                         <div class="slideAccountForm_input mb-3">
-                            <input type="email" name="customer[email]" id="sign_email" class="slideAccountForm_field" placeholder="Email">
+                            <input type="email" name="customer[email]" id="sign_email" class="slideAccountForm_field" placeholder="Courriel">
                         </div>
                         <div class="slideAccountForm_input mb-4">
-                            <input type="password" name="customer[password]" id="sign_password" class="slideAccountForm_field" placeholder="Password">
+                            <input type="password" name="customer[password]" id="sign_password" class="slideAccountForm_field" placeholder="Mot de passe">
                         </div>
                         <div class="slideAccountForm_btns my-4 d-block">
-                            <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn">Sign In</button>
+                            <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn">Connexion</button>
                             <a href="javascript:void(0)" class="d-block pt-2" form-type="form_reset" onclick="switchForm('form_reset')">{{ 'customer.login_page.forgot_password' | t }}</a>
                         </div>
 
-                        <p><a style="text-decoration: underline;" href="/a/account/login">Manage your subscription here</a>.</p>
+                        <p><a style="text-decoration: underline;" href="/a/account/login">Gérez votre abonnement ici</a>.</p>
                     </div>
                 {% endform %}
 
@@ -47,7 +47,7 @@
                             <input type="email" name="email" id="sign_email" class="slideAccountForm_field" placeholder="Email">
                         </div>
                         <div class="slideAccountForm_btns my-4 d-block">
-                            <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn">Reset password</button>
+                            <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn">Réinitialiser le mot de passe</button>
                         </div>
                     </div>
                 {% endform %}
@@ -69,14 +69,14 @@
                             <input type="password" name="customer[password]" id="create_password" class="slideAccountForm_field" placeholder="Create a Password">
                         </div>
                         <div class="slideAccountForm_btns my-4 d-block">
-                            <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn">CREATE AN ACCOUNT</button>
+                            <button type="submit" class="btn btn-lg btn-primary slideAccountForm_btn">CRÉER UN COMPTE</button>
                         </div>
                     </div>
                 {% endform %}
 
                 <div class="slideAccountForm_btn_bl">
-                    <button class="btn btn-primary switch_form_btn w-100 slideAccountForm_btn" form-type="form_create" onclick="switchForm('form_create')">SIGN IN</button>
-                    <button class="btn btn-primary switch_form_btn w-100 mb-2 slideAccountForm_btn" form-type="form_sign" onclick="switchForm('form_sign')">CREATE AN ACCOUNT</button>
+                    <button class="btn btn-primary switch_form_btn w-100 slideAccountForm_btn" form-type="form_create" onclick="switchForm('form_create')">CONNEXION</button>
+                    <button class="btn btn-primary switch_form_btn w-100 mb-2 slideAccountForm_btn" form-type="form_sign" onclick="switchForm('form_sign')">CRÉER UN COMPTE</button>
                 </div>
             </div>
         </div>

@@ -9095,6 +9095,7 @@ p.title_mob {
   max-width: fit-content;
   font-size: 12px;
   line-height: 12px;
+  margin-left: 10px;
 }
 
 .upgrade_routine .save_tag {
@@ -9838,6 +9839,7 @@ p.title_mob {
   }
   .upgrade_routine .ur_btn {
     padding: 8px 20px;
+    margin-left: 0px;
   }
 
   .product_title {

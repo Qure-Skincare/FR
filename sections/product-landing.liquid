@@ -172,7 +172,7 @@
                             </div>
 
                             {% if product.variants.first.available %}
-                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
+                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Acheter maintenant{% endif %}</a>
                             {% else %}
                                 <a class="btn btn-lg btn-primary buy_btn" href="#">{% if section.settings.reserve == true %}Reserve now{% else %}Sold Out{% endif %}</a>
                             {% endif %}
@@ -181,7 +181,7 @@
                         {% if section.settings.product != blank %}
 
                             {% if product.variants.first.available %}
-                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
+                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Acheter maintenant{% endif %}</a>
                             {% else %}
                                 <a class="btn btn-lg btn-primary buy_btn" href="#">{% if section.settings.reserve == true %}Reserve now{% else %}Sold Out{% endif %}</a>
                             {% endif %}
@@ -310,7 +310,7 @@
                                     data-autoplay="false" 
                                     data-loop="false" 
                                     data-centerslide="false"
-                                    data-mobile="1.1" 
+                                    data-mobile="1" 
                                     data-tablet="1" 
                                     data-desktop="1" 
                                     data-spacing="10"
@@ -439,7 +439,7 @@
                                     <div class="swiper twa__swiper realResultSlider dot_pagination"
                                         id="twa__swiper-realResultSlider" data-section-id="realResultSlider"
                                         data-autoplay="false" data-loop="false" data-centerslide="false"
-                                        data-mobile="1.1" data-tablet="1" data-desktop="1" data-spacing="10"
+                                        data-mobile="1" data-tablet="1" data-desktop="1" data-spacing="10"
                                         data-arrowleft="realResultSlider-swiper-prev"
                                         data-arrowright="realResultSlider-swiper-next">
                                         <div class="swiper-wrapper">

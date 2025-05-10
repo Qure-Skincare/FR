@@ -31,6 +31,14 @@
     .step_counter_before:before {
       display: none !important;
     }
+
+    a[data-tab="month_1"],
+    a[data-tab="month_2"] {
+      display: none !important;
+    }
+    .step_content .pmtBlock:not(:first-of-type) {
+      display: none !important;
+    }
   </style>
 
   <!-- treatment section start -->
@@ -189,7 +197,7 @@
                 </div>
                 <div class="step_content pdm-step_content_v2">
                   <div class="step_conten_blocks">
-                    {% assign product = all_products['micro-infusion-3-month-bundle-hydra-soothing-rejuvenating'] %}
+                    {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
                     {% assign divided_price = product.price | divided_by: 4 %}
                     {% assign discount_percentage = product.price
                       | times: 1.0
@@ -536,7 +544,7 @@
               </div>
             </div>
 
-            {% assign product = all_products['micro-infusion-3-month-bundle-hydra-soothing-rejuvenating'] %}
+            {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
             {% assign divided_price = product.price | divided_by: 4 %}
             {% assign discount_percentage = product.price
               | times: 1.0

@@ -359,7 +359,7 @@
         bottom: -2px;
     }
     .mi-pdp .shipping {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 }

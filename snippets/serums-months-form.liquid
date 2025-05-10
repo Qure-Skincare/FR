@@ -240,7 +240,7 @@
       {% endif %}
 
       <a
-        class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject"
+        class="btn btn-lg btn-lg-small-text btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject"
         href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1"
         data-ajax-cart-request-button
         >Acheter maintenant
@@ -251,7 +251,7 @@
       </a>
 
       <a
-        class="btn btn-lg btn-primary buy_btn_soldout mt-3 {{ section_id }}_productButtonSoldOutObject"
+        class="btn btn-lg btn-lg-small-text btn-primary buy_btn_soldout mt-3 {{ section_id }}_productButtonSoldOutObject"
         style="display: none;"
         >Sold Out</a
       >
@@ -267,7 +267,7 @@
         ></button>
       {% endif %}
       <a
-        class="btn btn-lg btn-primary buy_btn_reserve mt-3 {{ section_id }}_productButtonObject"
+        class="btn btn-lg btn-lg-small-text btn-primary buy_btn_reserve mt-3 {{ section_id }}_productButtonObject"
         href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1"
         data-ajax-cart-request-button
         style="display: none"

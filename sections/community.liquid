@@ -21,20 +21,24 @@
                 {% case block.type %}
                 {% when 'blog' %}  
                 {% assign articleId = block.settings.article %}
-                
-                    <a target="_blank"
-                        href="{{ articleId.url }}"
-                        class="sj_item">
-                        <div class="sj_img">
-                            <img src="{{ articleId.image | img_url: 'master' }}" alt="{{ articleId.image.alt }}" class="img-fluid">
-                        </div>
-                        <div class="sj_content">
-                            <div class="sj_info">#{{ articleId | split: '/' | first }}
+
+                    {% if articleId.title != blank %}
+                        
+                        <a target="_blank"
+                            href="{{ articleId.url }}"
+                            class="sj_item">
+                            <div class="sj_img">
+                                <img src="{{ articleId.image | img_url: 'master' }}" alt="{{ articleId.image.alt }}" class="img-fluid">
                             </div>
-                            <div class="sj_title">{{ articleId.title }}
+                            <div class="sj_content">
+                                <div class="sj_info">#{{ articleId | split: '/' | first }}
+                                </div>
+                                <div class="sj_title">{{ articleId.title }}
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+
+                    {% endif %}
                 {% endcase %} 
                 {% endfor %}
             </div>

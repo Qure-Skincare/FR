@@ -29964,7 +29964,7 @@ p {
 .btn-lg {
     padding: 20px 40px;
     border-radius: 100px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     max-width: 452px;
     width: 100%;
@@ -30008,11 +30008,18 @@ p {
     letter-spacing: 0.22px;
 }
 
+.btn-lg-small-text {
+    font-size: 15px !important;
+}
+
 @media(max-width:1024px) {
     .btn-lg {
         padding: 15px 20px;
         font-size: 18px;
         line-height: 20px;
+    }
+    .btn-lg-small-text {
+        font-size: 14px !important;
     }
 }
 

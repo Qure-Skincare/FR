@@ -1,3 +1,20 @@
+window._wq = window._wq || [];
+_wq.push({
+  id: "_all",
+  onReady: function(video) {
+    const tryReplace = () => {
+      document.querySelectorAll('span').forEach(span => {
+        if (span.textContent.trim() === 'Tap for sound') {
+          span.textContent = 'Appuyez pour le son';
+        }
+      });
+    };
+
+    setTimeout(tryReplace, 500);
+  }
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     if (window.matchMedia('(max-width: 767px)').matches) {
         document.querySelectorAll('.bf-bundles__item-before').forEach(item => {

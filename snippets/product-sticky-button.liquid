@@ -1,7 +1,7 @@
 {% if variant_id %}
     <div id='green-product-sticky-btn' class="button_sticky_wrapper" data-product-id="{{ product.id }}">
         <a href="{{ routes.cart_add_url }}?id={{ variant_id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button class="button_sticky {{ classname }} event_btn">
-            ADD TO BAG
+            AJOUTER AU PANIER
         </a>
     </div>
 {% endif %}
