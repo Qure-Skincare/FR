@@ -12,14 +12,6 @@
     "main": {
       "type": "product-landing",
       "blocks": {
-        "rating_eLjGX8": {
-          "type": "rating",
-          "settings": {
-            "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>97% des clients satisfaits</p>",
-            "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum"
-          }
-        },
         "list_FatCgk": {
           "type": "list",
           "settings": {
@@ -97,16 +89,24 @@
             "option_wrinkles": true,
             "option_darkspots": false
           }
+        },
+        "rating_EWQYMB": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "<p>97% des clients satisfaits</p>",
+            "product": "micro-infusion-3-month-bundle-hydra-soothing-rejuvenating"
+          }
         }
       },
       "block_order": [
-        "rating_eLjGX8",
         "list_FatCgk",
         "liquid_6AqWXk",
         "product_in_page_x33rFD",
         "before_and_after_i7mAeJ",
         "video_before_and_after_ww3Xa3",
-        "supply_for_refill_VM6N4V"
+        "supply_for_refill_VM6N4V",
+        "rating_EWQYMB"
       ],
       "settings": {
         "seo_heading": "Système de soin facial par micro-infusion - Une alternative aux dermarollers",
