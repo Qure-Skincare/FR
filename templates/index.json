@@ -977,6 +977,10 @@
         "btn_text": "Obtenir ma consultation gratuite",
         "btn_url": "https://www.qureskincare.fr/pages/skin-consultation"
       }
+    },
+    "17470735353193f564": {
+      "type": "apps",
+      "settings": {}
     }
   },
   "order": [
@@ -995,6 +999,7 @@
     "compare_pPhPQJ",
     "tile_JERe9p",
     "community_QPpfkf",
-    "solution_form_wVyepN"
+    "solution_form_wVyepN",
+    "17470735353193f564"
   ]
 }
