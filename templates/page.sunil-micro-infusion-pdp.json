@@ -1312,7 +1312,6 @@
     },
     "reviews_LMxgH7": {
       "type": "reviews",
-      "disabled": true,
       "settings": {
         "heading": "<h2>Avis réels, résultats réels<br/>de personnes comme vous.</h2>",
         "heading_mobile": "<h2>Avis réels, résultats réels<br/>de personnes comme vous.</h2>",
