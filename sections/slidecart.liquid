@@ -83,7 +83,7 @@
 
 					{% for item in cart.items %}
 						{% assign item_index = forloop.index %}
-						{% assign item_new_price = item.quantity | times: item.variant.price  %}
+						{% assign item_new_price = item.quantity | times: item.variant.final_price  %}
 						{% assign item_old_price = item.quantity | times: item.variant.compare_at_price  %}
 
 						{% assign free_gift = false %}
