@@ -97,7 +97,7 @@
     
     <!-- end styles endrock -->
 
-    {% render 'header-scripts' %}
+    {% comment %} {% render 'header-scripts' %} {% endcomment %}
     {% comment %} add swiper  {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -265,6 +265,19 @@
     {% comment %} {% include 'info' %} {% endcomment %}
   <script>function myInit(){ StampedFn.init({apiKey: '5873655a-de56-43fd-bf86-e814eaf30fba',sId: '350297' }); }</script>
 
-<script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+  <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+
+  {% if product.id %}
+      <script>
+        fbq('track', 'ViewContent', {
+          content_ids: ['{{ product.id }}'],
+          content_name: '{{ product.title | escape }}',
+          content_type: 'product',
+          value: {{ product.price | divided_by: 100 }},
+          currency: '{{ shop.currency }}'
+        });
+      </script>
+  {% endif %}
+
 </body>
 </html>
