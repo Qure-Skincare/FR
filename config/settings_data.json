@@ -293,6 +293,11 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
+      },
+      "13477285647392927056": {
+        "type": "shopify://apps/kefi-upsells/blocks/kefi/a54b549a-0a53-4f58-b095-45369cafa8e7",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
