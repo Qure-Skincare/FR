@@ -15,7 +15,7 @@ var updateItemObject = function(product_variant_id)
     //products from https://www.qureskincare.com/pages/microinfusion
     
         //Rejuvenating + Hydra-Soothing
-        variants_to_handles[43216489513199] = 'micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum';   //1 month
+        variants_to_handles[45001216852139] = 'micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum';   //1 month
         variants_to_handles[43216449208559] = 'micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum';   //2 months
         variants_to_handles[43216377217263] = 'micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum';   //3 months
 
@@ -33,7 +33,7 @@ var updateItemObject = function(product_variant_id)
     //products from  https://www.qureskincare.com/pages/micro-infusion-special-offer
 
         //Rejuvenating + Hydra-Soothing
-        variants_to_handles[43216489513199] = 'micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum';   //1 month
+        variants_to_handles[45001216852139] = 'micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum';   //1 month
         variants_to_handles[45889978302703] = 'micro-infusion-2-month-bundle-rejuvenating-hydra-soothing-lp';   //2 months
         variants_to_handles[45889975353583] = 'micro-infusion-3-month-bundle-hydra-soothing-rejuvenating-lp';   //3 months
 

@@ -6,7 +6,7 @@ let s__product_variants = [];
 
 //Rejuvenating + Hydra-Soothing
 s__product_variants[1] = [];  
-s__product_variants[1][1] = 43216489513199; //1 month
+s__product_variants[1][1] = 45001216852139; //1 month
 s__product_variants[1][2] = 45889978302703; //2 months
 s__product_variants[1][3] = 45889975353583; //3 months
 
