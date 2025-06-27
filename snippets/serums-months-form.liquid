@@ -77,9 +77,7 @@
                   <div class="step_conten_blocks">
                     <div class="planBlock {{ section_id }}_productPeriodObject">
                       <div class="plan_choosed">
-                        <span
-                          >Plus de 5 000 personnes ont choisi cette formule</span
-                        >
+                        <span style="background-color: #C92127;">Pour un acheté, le second est offert !</span>
                       </div>
                       {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
                       {% assign divided_price = product.price | divided_by: 4 %}
@@ -241,9 +239,9 @@
       {% endif %}
 
       <a
+        id="offer_button"
         class="btn btn-lg btn-lg-small-text btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject"
         href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1"
-        data-ajax-cart-request-button
         >Acheter maintenant
         <span
           class="savedAmount"
@@ -257,6 +255,48 @@
         >Sold Out</a
       >
     </div>
+
+    <script>
+      document.getElementById("offer_button").addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const href = this.getAttribute("href");
+        const urlParams = new URLSearchParams(href.split('?')[1]);
+        const product_variant_id = urlParams.get('id');
+        let __discount = '';
+        let __items = [];
+
+        if(product_variant_id == '45001216196779') {
+          __discount = 'FREESERUM';
+
+          __items.push({
+              id: product_variant_id,
+              quantity: 1
+          });
+        }
+
+        __items.push({
+            id: product_variant_id,
+            quantity: 1
+        });
+
+        if(__discount)
+        {
+            fetch('/discount/' + __discount).then(async () => {
+                cartRequestAdd({ 
+                    items:  __items
+                }, {} )
+            });
+        }
+        else
+        {
+            cartRequestAdd({ 
+                items:  __items
+            }, {} )
+        }
+      });
+    </script>
+
 
     <div class="upsell_popup_anchor_hover pdp-ajax-container-reserve">
       {% if section.settings.popup_enabled %}
