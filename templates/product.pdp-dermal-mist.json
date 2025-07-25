@@ -473,6 +473,7 @@
     },
     "heading_gcGk9w": {
       "type": "heading",
+      "disabled": true,
       "settings": {
         "heading": "<h2>Avis réels, résultats réels</h2><h2>de personnes comme vous.</h2>",
         "heading_mobile": "<h2>Avis réels, résultats réels</h2><h2>de personnes comme vous.</h2>"
@@ -498,6 +499,7 @@
       "block_order": [
         "stamped_reviews_main_widget_3nURCk"
       ],
+      "disabled": true,
       "settings": {}
     }
   },
