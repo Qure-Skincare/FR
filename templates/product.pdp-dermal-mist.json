@@ -58,7 +58,7 @@
         "product_button_label": "Produit",
         "before_after_images_limit": 0,
         "before_after_button_label": "Avant & Après",
-        "reserve": true,
+        "reserve": false,
         "underbutton_text_left": "Approuvé par des dermatologues",
         "underbutton_text_right": "Livraison gratuite pour les commandes de plus de 100 € US",
         "selected_design": "new",
