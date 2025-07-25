@@ -173,8 +173,6 @@
               </div>
             </div>
           </div>
-
-          <!--
             {% if supply_for_refill != blank %}
                 <div class="next_batch_bl next_batch_highlight mt-4">
                     {% if supply_for_refill.settings.heading != blank %}
@@ -189,7 +187,7 @@
                         {{ supply_for_refill.settings.text }}
                     {% endif %}
 
-                    <div class="batch_h batch_h_fade mt-3 mt-md-4">
+                    <div class="batch_h mt-3 mt-md-4">
                         <div class="batch_h_month">{{ supply_for_refill.settings.first_option_date }}</div>
                         <div class="batch_h_info sold_out_h" style="--bgPercent:{{ supply_for_refill.settings.first_option_percent }}%;">
                             <span>{{ supply_for_refill.settings.first_option_text }}</span></div>
@@ -198,13 +196,13 @@
                         <div class="batch_h_month">{{ supply_for_refill.settings.second_option_date }}</div>
                         <div class="batch_h_info" style="--bgPercent:{{ supply_for_refill.settings.second_option_percent }}%;">{{ supply_for_refill.settings.second_option_text }}</div>
                     </div>
-                    <div class="batch_h batch_h_fade">
+                    {% comment %} <div class="batch_h batch_h_fade"> {% endcomment %}
+                    <div class="batch_h">
                         <div class="batch_h_month">{{ supply_for_refill.settings.third_option_date }}</div>
                         <div class="batch_h_info" style="--bgPercent:{{ supply_for_refill.settings.third_option_percent }}%;"><span>{{ supply_for_refill.settings.third_option_text }}</span></div>
                     </div>
                 </div>
             {% endif %}
-          -->
         </div>
       </div>
     </div>
@@ -242,7 +240,7 @@
         id="offer_button"
         class="btn btn-lg btn-lg-small-text btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject"
         href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1"
-        >Acheter maintenant
+        >Précommande
         <span
           class="savedAmount"
           >& ÉCONOMISEZ {{ discount_percentage }}%</span
