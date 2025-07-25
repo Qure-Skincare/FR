@@ -27,6 +27,7 @@
         },
         "supply_CTrVRQ": {
           "type": "supply",
+          "disabled": true,
           "settings": {
             "heading": "Prochain lot expédié le 15 avril 2025 :",
             "heading_mobile": "Prochain lot expédié le 15/04 :",
@@ -278,7 +279,6 @@
         "object_9Y86Br": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/dermal-mist.webp",
             "heading": "Brume dermique Qure",
             "mob_text": "",
             "text": "",
