@@ -72,6 +72,7 @@
         },
         "supply_for_refill_VM6N4V": {
           "type": "supply_for_refill",
+          "disabled": true,
           "settings": {
             "heading": "Prochain lot expédié le 4 août 2025 :",
             "heading_mobile": "Prochain lot expédié le 04/08 :",

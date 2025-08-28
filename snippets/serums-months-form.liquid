@@ -8,7 +8,7 @@
 
   {% assign section_id = section.id %}
 
-  {%- assign supply_for_refill = 0 -%}
+  {%- assign supply_for_refill = blank -%}
 
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -240,7 +240,7 @@
         id="offer_button"
         class="btn btn-lg btn-lg-small-text btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject"
         href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1"
-        >Précommande
+        >Acheter maintenant
         <span
           class="savedAmount"
           >& ÉCONOMISEZ {{ discount_percentage }}%</span
