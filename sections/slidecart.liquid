@@ -84,6 +84,10 @@
 					{% for item in cart.items %}
 						{% assign item_compare_at_price = item.variant.compare_at_price %}
 
+						{% if item.id == 45001216196779 %}
+							{% assign item_compare_at_price = 0 %}
+						{% endif %}
+
 						{% assign item_index = forloop.index %}
 						{% assign item_new_price = item.quantity | times: item.final_price  %}
 						{% assign item_old_price = item.quantity | times: item_compare_at_price  %}
