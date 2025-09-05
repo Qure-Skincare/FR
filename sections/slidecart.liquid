@@ -82,9 +82,11 @@
 					{% assign is_insurance_exists = false %}
 
 					{% for item in cart.items %}
+						{% assign item_compare_at_price = item.variant.compare_at_price %}
+
 						{% assign item_index = forloop.index %}
 						{% assign item_new_price = item.quantity | times: item.final_price  %}
-						{% assign item_old_price = item.quantity | times: item.variant.compare_at_price  %}
+						{% assign item_old_price = item.quantity | times: item_compare_at_price  %}
 
 						{% assign free_gift = false %}
 						{% assign popup_discount = false %}
@@ -107,8 +109,8 @@
 							{%- assign is_not_only_gift = true -%}
 						{%- endif -%}
 
-						{%- if item.variant.compare_at_price -%}
-							{% assign compare_price = item.variant.compare_at_price | times: item.quantity %} 
+						{%- if item_compare_at_price -%}
+							{% assign compare_price = item_compare_at_price | times: item.quantity %} 
 						{%- else -%}
 							{%- assign compare_price = item.variant.price -%}
 						{%- endif -%}
@@ -262,12 +264,12 @@
 														<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
 															<span class="money">{{ item_new_price | money_without_trailing_zeros }}</span>
 														</p>
-														{% if item.variant.compare_at_price > item.variant.price %}
+														{% if item_compare_at_price > item.variant.price %}
 															<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
-																{% comment %} <span class="money">{{ item_old_price | money_without_trailing_zeros }}</span> {% endcomment %}
+																<span class="money">{{ item_old_price | money_without_trailing_zeros }}</span>
 															</p>
-															{% comment %} {% assign comparedPrices = item.variant.compare_at_price | minus: item.variant.price | times: item.quantity %} {% endcomment %}
-															{% comment %} {% assign savings = savings | plus: comparedPrices %} {% endcomment %}
+															{% assign comparedPrices = item_compare_at_price | minus: item.variant.price | times: item.quantity %}
+															{% assign savings = savings | plus: comparedPrices %}
 														{% endif %}
 													{% endif %}
 												{%- endif -%}
