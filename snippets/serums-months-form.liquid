@@ -143,7 +143,7 @@
                                   <div class="plan_des">6 traitements de micro-infusion</div>
                               </div>
                               <div class="price">
-                                  <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                                  {% comment %} <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div> {% endcomment %}
                                   <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
                               </div>
                           </label>
