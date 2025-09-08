@@ -79,7 +79,7 @@
                       <div class="plan_choosed">
                         <span style="background-color: #000000;">plus de 5 000 personnes ont choisi cette offre</span>
                       </div>
-                      {% assign product = all_products['microinfusion-offer-6-month-supply'] %}
+                      {% assign product = all_products['pack-avance-effet-lissant-fermete-1'] %}
                       {% assign divided_price = product.price | divided_by: 4 %}
                       {% assign discount_percentage = product.price
                         | times: 1.0
@@ -205,7 +205,7 @@
       </div>
     </div>
 
-    {% assign product = all_products['microinfusion-offer-6-month-supply'] %}
+    {% assign product = all_products['pack-avance-effet-lissant-fermete-1'] %}
     {% assign discount_percentage = product.price
       | times: 1.0
       | divided_by: product.compare_at_price
