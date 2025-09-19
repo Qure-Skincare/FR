@@ -19,6 +19,6 @@
 {%- endif -%}
 
 <p class="drawer__cart-total-price pdm-Total-Checkout">
-  <span class="old_price-cart" data-compare-price="{{ totalCartComparePrice | money_without_currency }}">{% if totalCartComparePrice > cartData.items_subtotal_price %}{{ totalCartComparePrice | money_without_trailing_zeros }}{% endif %}</span>
+  {% comment %} <span class="old_price-cart" data-compare-price="{{ totalCartComparePrice | money_without_currency }}">{% if totalCartComparePrice > cartData.items_subtotal_price %}{{ totalCartComparePrice | money_without_trailing_zeros }}{% endif %}</span> {% endcomment %}
   <span class="cart_items_subtotal_price money" id="cart_items_subtotal_price" data-value="{{ subtotal_price }}">{{ subtotal_price }}</span>
 </p>

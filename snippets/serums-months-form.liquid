@@ -77,13 +77,15 @@
                   <div class="step_conten_blocks">
                     <div class="planBlock {{ section_id }}_productPeriodObject">
                       <div class="plan_choosed">
-                        <span style="background-color: #000000;">plus de 5 000 personnes ont choisi cette offre</span>
+                        <span style="background-color: #d61414;">Achetez-en un, obtenez-en un gratuitement</span>
                       </div>
-                      {% assign product = all_products['pack-avance-effet-lissant-fermete-1'] %}
+                      {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
                       {% assign divided_price = product.price | divided_by: 4 %}
+                      {% assign product_compare_at_price = 38900 %}
+
                       {% assign discount_percentage = product.price
                         | times: 1.0
-                        | divided_by: product.compare_at_price
+                        | divided_by: product_compare_at_price
                         | minus: 1
                         | abs
                         | times: 100
@@ -104,20 +106,19 @@
                       >
                         <div class="plan_des">
                           <div class="plan_hdr">
-                            <h3>Formule 6 mois</h3>
+                            <h3>Formule 3 mois</h3>
                             <span class="saved_price"
                               >ÉCONOMISEZ {{ discount_percentage }}%</span
                             >
                           </div>
                           <div class="plan_des">
-                            12 traitements de micro-infusion
+                            6 traitements de micro-infusion
                           </div>
                         </div>
                         <div class="price">
                           <div class="plan_prc regular_price">
                             {{
-                              product.compare_at_price
-                              | money_without_trailing_zeros
+                              product_compare_at_price | money_without_trailing_zeros
                             }}
                           </div>
                           <div class="plan_prc sale_price ">
@@ -128,22 +129,23 @@
                     </div>
 
                       <div class="planBlock {{ section_id }}_productPeriodObject">
-                          {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
+                          {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
                           {% assign divided_price = product.price | divided_by: 4 %}
-                          {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+                          {% assign product_compare_at_price = 20600 %}
+                          {% assign discount_percentage = product.price | times: 1.0 | divided_by: product_compare_at_price | minus: 1 | abs | times: 100 | ceil %}
                           {% assign soldout_percentage = discount_percentage %}
 
                           <input type="radio" name="mBanner_monthlyPlan" id="mBanner_2_month" data-product-period="2">
                           <label class="monthly_plans" for="mBanner_2_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
                               <div class="plan_des">
                                   <div class="plan_hdr">
-                                      <h3>Formule 3 mois</h3>
-                                      <!-- <span class="saved_price">ÉCONOMISEZ {{ discount_percentage }}%</span> -->
+                                      <h3>Formule 2 mois</h3>
+                                      <span class="saved_price">ÉCONOMISEZ {{ discount_percentage }}%</span>
                                   </div>
-                                  <div class="plan_des">6 traitements de micro-infusion</div>
+                                  <div class="plan_des">4 traitements de micro-infusion</div>
                               </div>
                               <div class="price">
-                                  {% comment %} <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div> {% endcomment %}
+                                  <div class="plan_prc regular_price">{{ product_compare_at_price | money_without_trailing_zeros }}</div>
                                   <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
                               </div>
                           </label>
@@ -205,10 +207,11 @@
       </div>
     </div>
 
-    {% assign product = all_products['pack-avance-effet-lissant-fermete-1'] %}
+    {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
+    {% assign product_compare_at_price = 38900 %}
     {% assign discount_percentage = product.price
       | times: 1.0
-      | divided_by: product.compare_at_price
+      | divided_by: product_compare_at_price
       | minus: 1
       | abs
       | times: 100
@@ -262,15 +265,15 @@
         let __discount = '';
         let __items = [];
 
-        // if(product_variant_id == '45001216196779') {
+        if(product_variant_id == '45001216196779') {
 
-        //   __discount = 'FREESERUM';
+          __discount = 'FREESERUM';
 
-        //   __items.push({
-        //       id: product_variant_id,
-        //       quantity: 1
-        //   });
-        // }
+          __items.push({
+              id: product_variant_id,
+              quantity: 1
+          });
+        }
 
         __items.push({
             id: product_variant_id,
