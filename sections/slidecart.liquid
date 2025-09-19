@@ -245,29 +245,29 @@
 													<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
 														<span class="money">{{ item.selling_plan_allocation.price | money_without_trailing_zeros }}</span>
 													</p>
-													<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
+													{% comment %} <p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
 														<span class="money">{{ item_new_price | money_without_trailing_zeros }}</span>
-													</p>
+													</p> {% endcomment %}
 												{%- else -%}
 													{% if item.original_price > item.discounted_price %}
 														<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
 															<span class="money">{{ item.discounted_price | money_without_trailing_zeros }}</span>
 														</p>
-														<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
+														{% comment %} <p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
 															<span class="money">{{ item_old_price | money_without_trailing_zeros }}</span>
-														</p>
-														{% assign comparedPrices = item.original_price | minus: item.discounted_price | times: item.quantity %}
-														{% assign savings = savings | plus: comparedPrices %}
+														</p> {% endcomment %}
+														{% comment %} {% assign comparedPrices = item.original_price | minus: item.discounted_price | times: item.quantity %} {% endcomment %}
+														{% comment %} {% assign savings = savings | plus: comparedPrices %} {% endcomment %}
 													{% else %}
 														<p class="new-price test igPrice" data-price-multiplier="{{ item.quantity }}">
 															<span class="money">{{ item_new_price | money_without_trailing_zeros }}</span>
 														</p>
 														{% if item.variant.compare_at_price > item.variant.price %}
-															<p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
+															{% comment %} <p class="old-price igComparePrice" data-price-multiplier="{{ item.quantity }}">
 																<span class="money">{{ item_old_price | money_without_trailing_zeros }}</span>
-															</p>
-															{% assign comparedPrices = item.variant.compare_at_price | minus: item.variant.price | times: item.quantity %}
-															{% assign savings = savings | plus: comparedPrices %}
+															</p> {% endcomment %}
+															{% comment %} {% assign comparedPrices = item.variant.compare_at_price | minus: item.variant.price | times: item.quantity %} {% endcomment %}
+															{% comment %} {% assign savings = savings | plus: comparedPrices %} {% endcomment %}
 														{% endif %}
 													{% endif %}
 												{%- endif -%}
@@ -436,9 +436,9 @@
 					<div class="drawer__cart-subtotal-end">
 						<div class="sub_total_og">
 							<p class="drawer__cart-subtotal-price-end" data-total_price="{% if subtotal_price_temp %}{{ subtotal_price_nocurrency_temp }}{% else %}{{ subtotal_price_nocurrency }}{% endif %}">
-								{% if total_cart_compare_price > cart.items_subtotal_price %}
+								{% comment %} {% if total_cart_compare_price > cart.items_subtotal_price %}
 									<span class="drawer_original_price pe-1 money" style="text-decoration: line-through;color: #C4C4C4;">{{ total_cart_compare_price | money_without_trailing_zeros | remove:'USD' }}</span>
-								{% endif %}
+								{% endif %} {% endcomment %}
 								{%- if subtotal_price_temp -%}
 									<span class="money">{{ subtotal_price_temp }}</span>
 								{%- else -%}
