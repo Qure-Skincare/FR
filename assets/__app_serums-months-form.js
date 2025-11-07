@@ -1,6 +1,6 @@
 let product_type = 1; //default type
 let product_period = 3; //default period
-let product_variant = 45001216196779; //default product variant
+let product_variant = 45591937122475; //default product variant
 
 let product_variants = [];
 
@@ -8,7 +8,7 @@ let product_variants = [];
 product_variants[1] = [];  
 product_variants[1][1] = 45001216852139; //1 month
 product_variants[1][2] = 45001216458923; //2 months
-product_variants[1][3] = 45001216196779; //3 months
+product_variants[1][3] = 45591937122475; //3 months
 
 //Rejuvenating
 product_variants[2] = []; 
