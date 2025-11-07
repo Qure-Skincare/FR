@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -117,7 +117,7 @@
           "settings": {
             "link_label": "Voir nos best-sellers",
             "link_label_mobile": "Voir nos best-sellers",
-            "link_url": "shopify://collections/best-sellers"
+            "link_url": "https://qureskincare.fr/pages/microinfusion"
           }
         },
         "product_BANXY7": {
@@ -151,8 +151,8 @@
         "subheading": "<h3>Obtenez des résultats professionnels</h3><h4>depuis chez vous sans les coûts cliniques</h4>",
         "subheading_mobile": "<h3>Obtenez des résultats professionnels</h3><h4>depuis chez vous sans les coûts cliniques</h4>",
         "text": "<p><strong>+50,000 </strong>client(es) ont aujourd'hui plus confiance en leur peau.</p>",
-        "image": "shopify://shop_images/hm_banner_clinic_results.webp",
-        "image_mobile": "shopify://shop_images/hm_banner_clinic_results.png_mob.webp",
+        "image": "shopify://shop_images/banner-bf-fr-main.webp",
+        "image_mobile": "shopify://shop_images/banner-bf-fr-main-mobile.webp",
         "wistia_id": ""
       }
     },
