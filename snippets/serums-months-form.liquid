@@ -21,6 +21,22 @@
     {% render 'bf-price-displaying', product: product %}
   {% endif %}
 
+  <style>
+    .cross-line{
+        position:relative;
+    }
+    .cross-line:after{
+        position:absolute;
+        top:50%;
+        right:0;
+        left:0;
+        height:4px;
+        background:#a9a9a9;
+        transform:rotate(-8deg);
+        content:'';
+    }
+  </style>
+
   <div class="mw-402 form-{{ section_id }}">
     <div class="serum_bl">
       <div class="facial_system">
@@ -129,9 +145,9 @@
                     </div>
 
                       <div class="planBlock {{ section_id }}_productPeriodObject">
-                          {% assign product = all_products['micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum'] %}
+                          {% assign product = all_products['micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum'] %}
                           {% assign divided_price = product.price | divided_by: 4 %}
-                          {% assign product_compare_at_price = 20600 %}
+                          {% assign product_compare_at_price = 30900 %}
                           {% assign discount_percentage = product.price | times: 1.0 | divided_by: product_compare_at_price | minus: 1 | abs | times: 100 | ceil %}
                           {% assign soldout_percentage = discount_percentage %}
 
@@ -139,10 +155,10 @@
                           <label class="monthly_plans" for="mBanner_2_month" payment-price="{{ divided_price | money_without_trailing_zeros }}">
                               <div class="plan_des">
                                   <div class="plan_hdr">
-                                      <h3>Formule 2 mois</h3>
+                                      <h3>Formule 3 mois</h3>
                                       <span class="saved_price">ÉCONOMISEZ {{ discount_percentage }}%</span>
                                   </div>
-                                  <div class="plan_des">4 traitements de micro-infusion</div>
+                                  <div class="plan_des">6 traitements de micro-infusion</div>
                               </div>
                               <div class="price">
                                   <div class="plan_prc regular_price">{{ product_compare_at_price | money_without_trailing_zeros }}</div>
@@ -151,7 +167,10 @@
                           </label>
                       </div>
 
-                      <div class="planBlock {{ section_id }}_productPeriodObject">
+                      <div class="planBlock {{ section_id }}_productPeriodObject cross-line" onclick="event.preventDefault(); event.stopPropagation();" style="pointer-events: none; opacity: 0.6;">
+                          <div class="plan_choosed">
+                            <span style="background-color: #a9a9a9;">En rupture de stock</span>
+                          </div>
                           {% assign product = all_products['micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum'] %}
                           {% assign divided_price = product.price | divided_by: 4 %}
                           <input type="radio" name="mBanner_monthlyPlan" id="mBanner_1_month" data-product-period="1">
@@ -247,12 +266,6 @@
           >& ÉCONOMISEZ {{ discount_percentage }}%</span
         ><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
       </a>
-
-      <a
-        class="btn btn-lg btn-lg-small-text btn-primary buy_btn_soldout mt-3 {{ section_id }}_productButtonSoldOutObject"
-        style="display: none;"
-        >Sold Out</a
-      >
     </div>
 
     <script>
@@ -265,6 +278,7 @@
         let __discount = '';
         let __items = [];
 
+        /*
         if(product_variant_id == '45001216196779') {
 
           __discount = 'FREESERUM';
@@ -274,6 +288,7 @@
               quantity: 1
           });
         }
+        */
 
         __items.push({
             id: product_variant_id,
@@ -374,103 +389,8 @@
     let isOptionForWrinkles = false;
     let isOptionForDarkSpots = false;
 
-    const selectSerum = () => {
-        toogleSectionSupply();
-        setTimeout(() => {
-            toogleButtonSoldOut();
-        }, 100)
-    };
-
-    const toogleSectionSupply = () => {
-        if (isSectionSupply()) {
-            nextBatchBl.style.display = "block";
-            buyButtonSoldOut.style.display = "none";
-            buyButton.style.display = "none";
-            buyButtonReserve.style.display = "block";
-        } else {
-            nextBatchBl.style.display = "none";
-            buyButton.style.display = "block";
-            buyButtonReserve.style.display = "none";
-        }
-    }
-
-    const toogleButtonSoldOut = () => {
-
-        if(isSectionSupply())
-        {
-            if (savedAmount && buyButtonReserve && buyButtonSoldOut) {
-                if (savedAmount.textContent.trim() === "& SAVE {{ soldout_percentage }}%") {
-                    buyButtonReserve.style.display = "none";
-                    buyButtonSticky.style.display = "none";
-                    buyButtonSoldOut.style.display = "block";
-                } else {
-                    buyButtonReserve.style.display = "block";
-                    buyButtonSticky.style.display = "block";
-                    buyButtonSoldOut.style.display = "none";
-                }
-            }
-        }
-        else
-        {
-            if (savedAmount && buyButton && buyButtonSoldOut) {
-                if (savedAmount.textContent.trim() === "& SAVE {{ soldout_percentage }}%") {
-                    buyButton.style.display = "none";
-                    buyButtonSticky.style.display = "none";
-                    buyButtonSoldOut.style.display = "block";
-                } else {
-                    buyButton.style.display = "block";
-                    buyButtonSticky.style.display = "block";
-                    buyButtonSoldOut.style.display = "none";
-                }
-            }
-        }
-    }
-
-    const isSectionSupply = () => {
-
-        let selectedSerum = document.querySelector('.form-{{ section_id }} input[name="mBanner_serum"]:checked');
-
-        if(selectedSerum.id == 'option_for_wrinkles_darkspots')
-        {
-            {% if supply_for_refill.settings.option_wrinkles_darkspots %}
-                return true;
-            {% endif %}
-        }
-
-        if(selectedSerum.id == 'option_for_wrinkles')
-        {
-            {% if supply_for_refill.settings.option_wrinkles %}
-                return true;
-            {% endif %}
-        }
-
-        if(selectedSerum.id == 'option_for_darkspots')
-        {
-            {% if supply_for_refill.settings.option_darkspots %}
-                return true;
-            {% endif %}
-        }
-
-        return false;
-    }
-
     document.addEventListener("DOMContentLoaded", () => {
-
         selectProduct('{{ section_id }}_');
-
-        /*
-        selectSerum();
-
-        const observer = new MutationObserver(toogleButtonSoldOut);
-
-        if (savedAmount) {
-            observer.observe(savedAmount, { childList: true, subtree: true });
-        }
-
-        serumOptions.forEach((option) => {
-            option.addEventListener("change", selectSerum);
-        });
-        */
     });
   </script>
 {% endif %}
