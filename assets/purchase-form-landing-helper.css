@@ -1,0 +1,136 @@
+:root{
+    --qure-charcoal:#212428;
+    --white-color:#fff;
+    --color-orange:#FF5429;
+    --charcoal-light:#8B8C8E;
+}
+.purchase-form-landing-helper .mt-20 { margin-top: 20px !important; }
+.purchase-form-landing-helper .mb-15 { margin-bottom: 15px !important; }
+.purchase-form-landing-helper .mt-30{margin-top:30px!important}
+.purchase-form-landing-helper .mt-md-30{margin-top:30px!important}
+.purchase-form-landing-helper .mb-10 { margin-bottom: 10px !important; }
+.purchase-form-landing-helper .fs-10 { font-size: 10px !important; }
+.purchase-form-landing-helper .fs-12 { font-size: 12px !important; }
+.purchase-form-landing-helper .fs-14 { font-size: 14px !important; line-height: 18px; }
+.purchase-form-landing-helper .fs-16 { font-size: 16px !important; line-height: 20px; }
+.purchase-form-landing-helper .fs-18 { font-size: 18px !important; }
+.purchase-form-landing-helper .fs-20 { font-size: 20px !important; }
+.purchase-form-landing-helper .col-gap{gap:var(--col-gap,20px)}
+.purchase-form-landing-helper .gap-2 {gap: .5rem !important}
+.purchase-form-landing-helper .all-in-one-bf .vp-best-value { max-width: 130px !important}
+.purchase-form-landing-helper div { font-size: 14px; }
+.purchase-form-landing-helper .btn--primary,.btn {
+    background-color:#212428;
+    color:#fff;
+    border-color:#212428;
+}
+.purchase-form-landing-helper .btn,.btn--primary{
+    font-weight:var(--btn-font-weight, 600);
+    text-transform:var(--btn-uppercase, initial);
+    font-size:var(--btn-font-size, 20px);
+    line-height:var(--btn-line-height, 22px);
+    border-width:var(--btn-width-border, 2px);
+    border-style:solid;
+    border-radius:var(--btn-border-radius, 50px);
+    letter-spacing:var(--btn-letter-spacing, normal);
+    transition:var(--qure-transition);
+    display:inline-block;
+    font-family:'Poppins';
+    padding:var(--btn-padding, 17px 40px);
+    max-width:var(--btn-mx-w, auto);
+    text-align: center;
+}
+.purchase-form-landing-helper .btn:hover {
+    color:#fff !important;
+}
+
+.purchase-form-landing-helper .vp-grid {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+    align-items:flex-end;
+}
+
+.purchase-form-landing-helper .patch__value-pack {
+    text-align:center;
+}
+
+.purchase-form-landing-helper .patch__value-pack>input {
+    display:none;
+}
+  
+.purchase-form-landing-helper .patch__value-pack .vp-pack {
+    padding:12px 0 24px;
+    border:1px solid #dfe0e0;
+    width:100%;
+    border-radius:10px;
+    position:relative;
+    cursor:pointer;
+}
+  
+.purchase-form-landing-helper .vp-price {
+    display:flex;
+    gap:0 6px;
+    justify-content:center;
+}
+  
+.purchase-form-landing-helper .vp-price .vp-price-sale {
+    color:var(--charcoal-light);
+    text-decoration:line-through;
+}
+  
+.purchase-form-landing-helper .vp-price .vp-price-reg {
+    color:var(--color-orange);
+}
+  
+.purchase-form-landing-helper .vp-img>img {
+    max-height:50px;
+    margin-bottom:12px;
+}
+  
+.purchase-form-landing-helper .patch__value-pack .vp-pack .vp-badge {
+    background:#ffeeea;
+    color:var(--color-orange);
+    font-size:14px;
+    padding:1px 8px;
+    display:inline-block;
+    border-radius:40px;
+    position:absolute;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    bottom:-12px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    font-weight:600;
+}
+  
+.purchase-form-landing-helper .patch__value-pack>input:checked+.vp-pack {
+    border-color:var(--qure-charcoal);
+    border-width:2px;
+    background-color:#f6f6f7;
+}
+
+.purchase-form-landing-helper .patch__value-pack>input:checked+.vp-pack .vp-badge {
+    background:var(--color-orange);
+    color:var(--white-color);
+}
+
+.purchase-form-landing-helper .patch__value-pack .vp-pack.vp-best-pack .vp-best-value {
+    background:var(--qure-charcoal);
+    color:var(--white-color);
+    font-size:14px;
+    border-radius:7px 7px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0 10px;
+    padding-bottom:2px;
+    margin-bottom:10px;
+}
+
+.purchase-form-landing-helper .patch__value-pack .vp-pack.vp-best-pack .vp-best-value i {
+    font-size:9px;
+    margin-top:1px;
+}

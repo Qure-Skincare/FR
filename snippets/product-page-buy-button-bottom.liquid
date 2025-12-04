@@ -1,0 +1,23 @@
+{% doc %}
+  Renders a product buy button bottom snippet .
+
+  @param {string} product_price_divided - A string value.
+  @param {string} button_link - A string value.
+
+  @example
+  {% render 'product-page-buy-button-payments', product_price_divided: '' %}
+{% enddoc %}
+
+{% render 'pdm_pdp-frontrow-health' %}
+
+<div class="shipping shipping_bg bg-transparent py-0">
+  <div class="s_bx">
+    <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">
+    <p>Approuvé par des dermatologues</p>
+  </div>
+  <div class="s_bx">
+    <img src="{{ 'shipping.svg' | asset_url }}" alt="">
+    <p class="d-none d-md-block">Livraison gratuite dès 100 €</p>
+    <p class="d-block d-md-none">Livraison mondiale gratuite dès 100 €</p>
+  </div>
+</div>

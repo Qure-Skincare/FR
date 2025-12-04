@@ -278,6 +278,8 @@
                       {% endif %}
                     {% endif %}
 
+                    {% render 'product-page-async-section', section: section, block: block %}
+
                     {% if supply_count == 0 %}
                         {% if liquid_count %}
                             {%- for block in section.blocks -%}
@@ -692,6 +694,18 @@
             }
         ],
         "blocks": [
+            {
+                "type": "section",
+                "name": "t:common.section",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "section_id",
+                        "label": "t:common.section_id"
+                    }
+                ]
+            },
             {
                 "type": "subheading",
                 "name": "t:common.subheading.label",
