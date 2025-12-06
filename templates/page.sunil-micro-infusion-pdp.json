@@ -18,8 +18,15 @@
             "text": "<ul><li>Aide à réduire l’apparence des <strong>ridules, lisse la texture</strong> tout en facilitant l’infusion d’ingrédients actifs dans votre peau.</li><li>Pratiquement <strong>indolore</strong> et réalisable dans le confort et la commodité de votre maison.</li><li>Temps d’arrêt minimal à <strong>aucun temps d’arrêt</strong> avec des résultats visibles.</li></ul>"
           }
         },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
         "liquid_6AqWXk": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "code": "{% render 'serums-months-form' with section: section %}"
           }
@@ -102,6 +109,7 @@
       },
       "block_order": [
         "list_FatCgk",
+        "section_A0",
         "liquid_6AqWXk",
         "product_in_page_x33rFD",
         "before_and_after_i7mAeJ",
@@ -127,6 +135,245 @@
         "enable_jump_to_section": true,
         "text_jump_to_section": "Aller à",
         "popup_enabled": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 septembre",
+            "percent": 55,
+            "date_soldout": "28 juillet",
+            "date_reserved": "3 août"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Taches brunes",
+            "image": "shopify://shop_images/Dark_Spots_6.png",
+            "preselected": true
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pack-6-mois-pour-les-taches-sombres",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "Formule 6 mois",
+            "subheading": "(12 traitements de micro-infusion)",
+            "image": "shopify://shop_images/3m_dark_spot.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pack-3-mois-pour-les-taches-sombres",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "Formule 3 mois",
+            "subheading": "(6 traitements de micro-infusion)",
+            "image": "shopify://shop_images/MI_2_month_DS.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 juillet",
+            "preorder_date_reserved": "15 août",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pack-1-mois-pour-les-taches-sombres-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "Formule 1 mois",
+            "subheading": "(2 traitements de micro-infusion)",
+            "image": "shopify://shop_images/1m_dark_spot.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Rides",
+            "image": "shopify://shop_images/Frame_1073714897.png",
+            "preselected": false
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pack-6-mois-pour-les-rides",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "Formule 6 mois",
+            "subheading": "(12 traitements de micro-infusion)",
+            "image": "shopify://shop_images/3m_wrinkles.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pack-3-mois-pour-les-rides",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "Formule 3 mois",
+            "subheading": "(6 traitements de micro-infusion)",
+            "image": "shopify://shop_images/MI_2_month_W.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pack-1-mois-pour-les-taches-sombres",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "Formule 1 mois",
+            "subheading": "(2 traitements de micro-infusion)",
+            "image": "shopify://shop_images/1m_wrinkles.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "disabled": true,
+          "settings": {
+            "heading": "Mixed",
+            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "preselected": false
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-pack-6-mois-pour-les-rides-taches-sombres",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "Formule 6 mois",
+            "subheading": "(12 traitements de micro-infusion)",
+            "image": "shopify://shop_images/3m_mix.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_hD69Aq": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "Formule 3 mois",
+            "subheading": "(6 traitements de micro-infusion)",
+            "image": "shopify://shop_images/MI_2_month_DS_W.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots-microinfsn-1mth-egf-bg",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "Formule 1 mois",
+            "subheading": "(2 traitements de micro-infusion)",
+            "image": "shopify://shop_images/1m_mix.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_NEgEkN",
+        "product_gbPf3J",
+        "product_RBCPe8",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_EKAAzA",
+        "product_nyJ9n7",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_DBd4ef",
+        "product_hD69Aq",
+        "product_Xf8A6C"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": false,
+        "type": "list"
       }
     },
     "custom_qurify_filter_lp_featuredin_iXk4TL": {
@@ -1347,6 +1594,7 @@
   },
   "order": [
     "main",
+    "purchase-form-landing",
     "custom_qurify_filter_lp_featuredin_iXk4TL",
     "reasons_zpLx7x",
     "image_text_k9WAez",

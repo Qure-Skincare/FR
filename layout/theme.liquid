@@ -25,6 +25,23 @@
     <meta name="msvalidate.01" content="E6D2CFAEB841C8D3C13C6473265B99B6" /> 
 
     <link rel="preload" href="{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}" as="script" fetchpriority="high">
+
+    <script>
+      // JS loading Script
+      function loadScriptOnce(id, src, callback) {
+          if (!document.getElementById(id)) {
+            const script = document.createElement('script');
+            script.id = id;
+            script.src = src;
+            script.onload = function () {
+            if (typeof callback === 'function') callback();
+            };
+            document.head.appendChild(script);
+          } else if (typeof callback === 'function') {
+            callback();
+          }
+      }
+    </script>
   
     {% capture seo_title %}
       {{ page_title }}
@@ -101,7 +118,11 @@
     {% comment %} {% render 'header-scripts' %} {% endcomment %}
     {% comment %} add swiper  {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- {%- if content_for_header contains "elevateab.app" -%}{%- unless request.design_mode -%} <script>try{window.eab_data={selectors:JSON.parse(`{{shop.metafields.elevateab.select}}`)||{},allTests:JSON.parse(`{{shop.metafields.elevateab.tests}}`)||{},currencyFormat:{% if settings.currency_code_enabled %}"{{ shop.money_with_currency_format}}"{% else %}"{{ shop.money_format}}"{% endif %}};}catch(error){console.log(error);window.eab_data={selectors:{},allTests:{},currencyFormat:{% if settings.currency_code_enabled %}"{{ shop.money_with_currency_format}}"{% else %}"{{ shop.money_format}}"{% endif %}};}</script><script src="https://ds0wlyksfn0sb.cloudfront.net/redirect.js"></script> {%- endunless -%}{%- endif -%} </head>
+    {%- if content_for_header contains "elevateab.app" -%}{%- unless request.design_mode -%} <script>try{window.eab_data={selectors:JSON.parse(`{{shop.metafields.elevateab.select}}`)||{},allTests:JSON.parse(`{{shop.metafields.elevateab.tests}}`)||{},currencyFormat:{% if settings.currency_code_enabled %}"{{ shop.money_with_currency_format}}"{% else %}"{{ shop.money_format}}"{% endif %}};}catch(error){console.log(error);window.eab_data={selectors:{},allTests:{},currencyFormat:{% if settings.currency_code_enabled %}"{{ shop.money_with_currency_format}}"{% else %}"{{ shop.money_format}}"{% endif %}};}</script><script src="https://ds0wlyksfn0sb.cloudfront.net/redirect.js"></script> {%- endunless -%}{%- endif -%} 
+  
+    <script src="https://qureskincaredns.com/shopify/js/datalayer.js"></script>
+
+  </head>
 
 <body class="{{ template }}">
     {% if product.handle == 'personalized-skincare-plan' %}

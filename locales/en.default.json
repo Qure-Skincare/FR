@@ -17,6 +17,112 @@
 * ------------------------------------------------------------
 */
 {
+  "product": {
+    "settings": {
+      "buy-button-label": "Buy Now ",
+      "reserved-button-label": "Reserve Now",
+      "soldout-button-label": "Sold Out",
+      "save": "SAVE",
+      "buy-and-save-button-label": "Buy Now & Save",
+      "reserve-and-save-button-label": "Reserve Now & Save",
+      "limited-edition": "Limited Edition",
+      "discount-text": "OFF",
+      "coming_soon": "Coming soon",
+      "buy-button-bottom": {
+        "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
+        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
+        "guaranteed_text": "30-Day Money-Back Guarantee",
+        "shipping_text": "Free Shipping over $100"
+      },
+      "saveup": {
+        "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
+        "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns.com/assets/images/arrow_right.svg' alt='arrow'></a>"
+      },
+      "benefits-list": {
+        "guaranteed_text": "90-Day Money-Back Guarantee",
+        "shipping_text": "Free World-Wide Shipping over $100",
+        "science_text": "Backed by Science"
+      },
+      "cross-sell": {
+        "header": "Get The Best Results With",
+        "buy-button-label": "Add",
+        "soldout-button-label": "Sold Out"
+      },
+      "product-next-ships": {
+        "header": "Next batch ships",
+        "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
+        "soldout": "SOLD OUT",
+        "reserved": "% Reserved"
+      },
+      "product-rating": {
+        "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
+      },
+      "product-buy-button-sticky": {
+        "color": "Set color",
+        "white": "White",
+        "black": "Black",
+        "button-label": "Secure Now",
+        "text": "580 Units Reserved in last 48 hours"
+      },
+      "jumpto": {
+        "header": "Jump To"
+      },
+      "limited-offer": {
+        "header": "Black Friday Sale",
+        "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
+        "days": "DAYS",
+        "hours": "HOURS",
+        "minutes": "MINUTES",
+        "seconds": "SECONDS"
+      },
+      "you-may-also-like": {
+        "header": "You may also like..."
+      },
+      "black-friday-discount": {
+        "header": "BLACK FRIDAY",
+        "save": "SAVE EXTRA"
+      },
+      "money-back": {
+        "image": "moneyback_90.webp",
+        "header": "90-Day Money Back Guarantee",
+        "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
+      },
+      "reviews-videos": {
+        "header": "Hear What People Are Saying About Qure"
+      }
+    }
+  },
+  "purchase-form": {
+    "settings": {
+      "buy-button-label": "Buy Now",
+      "subscribe-button-label": "Subscribe Now",
+      "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
+      "reserve-and-save-button-label": "Reserve Now & Save {{ value }}%",
+      "reserve-button-label": "Reserve Now",
+      "soldout-button-label": "Sold Out",
+      "select-type": "Select Your Serum:",
+      "select-product": "Select Your supply:",
+      "select-product-variant": "Select Your Color:",
+      "select-product-delivery": "Select Your Delivery:",
+      "and": "&",
+      "save": "Save",
+      "off": "OFF",
+      "best": "Best Value",
+      "subscribe": "Subscribe",
+      "payment-option": "Select A Payment Option",
+      "pay-full": "Pay in full",
+      "onetime": "One-Time Purchase",
+      "onetime-payment": "One-time payment with:",
+      "subscription-onetime-option": "One Time:",
+      "subscription-days-option": "Every 90 days:",
+      "pay-today": "Pay today only",
+      "per-treatment": "Only {{ price }} per treatment",
+      "kit-left": "{{ count }} kits left",
+      "monthly-payment": "Monthly interest-free payments with:",
+      "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='/pages/contact-us' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
+      "more_details_html": "<div class='fs-14'>Skip, pause or cancel anytime. <a href='/pages/subscriptions' class='text-decoration-underline' style='--base-color: #212428;'>See more details</a></div>"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Entrez dans la boutique avec un mot de passe :",

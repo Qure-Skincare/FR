@@ -294,14 +294,14 @@
         "disabled": false,
         "settings": {}
       },
-      "13477285647392927056": {
-        "type": "shopify://apps/kefi-upsells/blocks/kefi/a54b549a-0a53-4f58-b095-45369cafa8e7",
-        "disabled": false,
-        "settings": {}
-      },
       "377650522495455440": {
         "type": "shopify://apps/elevate-ab-testing/blocks/abtester/4ce51acb-a9f5-4e05-ae92-4c018aa51124",
         "disabled": false,
+        "settings": {}
+      },
+      "13477285647392927056": {
+        "type": "shopify://apps/kefi-bundle-builder/blocks/kefi/a54b549a-0a53-4f58-b095-45369cafa8e7",
+        "disabled": true,
         "settings": {}
       }
     }
