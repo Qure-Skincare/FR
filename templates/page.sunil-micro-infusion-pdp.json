@@ -25,8 +25,8 @@
           }
         },
         "liquid_6AqWXk": {
-          "disabled": true,
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "code": "{% render 'serums-months-form' with section: section %}"
           }
@@ -154,7 +154,6 @@
           "settings": {}
         },
         "product_type_QKQhNr": {
-          "disabled": false,
           "type": "product_type",
           "settings": {
             "heading": "Taches brunes",
@@ -163,7 +162,6 @@
           }
         },
         "product_NEgEkN": {
-          "disabled": false,
           "type": "product",
           "settings": {
             "product": "micro-infusion-pack-6-mois-pour-les-taches-sombres",
@@ -182,7 +180,6 @@
           }
         },
         "product_gbPf3J": {
-          "disabled": false,
           "type": "product",
           "settings": {
             "product": "micro-infusion-pack-3-mois-pour-les-taches-sombres",
@@ -201,7 +198,6 @@
           }
         },
         "product_RBCPe8": {
-          "disabled": false,
           "type": "product",
           "settings": {
             "product": "micro-infusion-pack-1-mois-pour-les-taches-sombres-1",
@@ -224,7 +220,6 @@
           "settings": {}
         },
         "product_type_VLXcAn": {
-          "disabled": false,
           "type": "product_type",
           "settings": {
             "heading": "Rides",
@@ -233,7 +228,6 @@
           }
         },
         "product_EKAAzA": {
-          "disabled": false,
           "type": "product",
           "settings": {
             "product": "micro-infusion-pack-6-mois-pour-les-rides",
@@ -252,7 +246,6 @@
           }
         },
         "product_nyJ9n7": {
-          "disabled": false,
           "type": "product",
           "settings": {
             "product": "micro-infusion-pack-3-mois-pour-les-rides",
@@ -271,7 +264,6 @@
           }
         },
         "product_eiY89h": {
-          "disabled": false,
           "type": "product",
           "settings": {
             "product": "micro-infusion-pack-1-mois-pour-les-taches-sombres",
@@ -294,8 +286,8 @@
           "settings": {}
         },
         "product_type_YrPQrV": {
-          "disabled": true,
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
